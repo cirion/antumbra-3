@@ -1,0 +1,626 @@
+triggers {
+  name: "Spawn Embers"
+  events {
+  }
+  conditions {
+  }
+  actions {
+    ops {
+      functionName: "Activate Actor Spawner By Tag"
+      args {
+        call_value {
+          functionName: "Get Map Item (SenseTagList)"
+          args {
+            string_value: "ember"
+          }
+        }
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "53670b7d36623624090084fc"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
+regions {
+  name: "Camera"
+  position {
+    x: -39
+    y: -23
+    width: 50
+    height: 26
+  }
+  enabledAtStart: true
+  is_camera_region: true
+  idRef {
+    id: "536703813662362409008473"
+  }
+  highlight_color {
+    r: 0
+    g: 0
+    b: 0
+    a: 1
+  }
+  visible_at_start: false
+  is_teleporter_region: false
+  directional_light_dir {
+    x: -0.5
+    y: -1
+    z: -0.75
+  }
+  directional_light_color {
+    r: 0.50196081
+    g: 0.50196081
+    b: 0.50196081
+    a: 1
+  }
+  ambient_light_color {
+    r: 0.50196081
+    g: 0.50196081
+    b: 0.50196081
+    a: 1
+  }
+  ambience_template: ""
+  combat_music: ""
+  default_music: ""
+  loop_combat_music: true
+  loop_default_music: false
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: 15
+    y: 0
+    z: -41
+  }
+  orientation: ORIENTATION_E
+  GeneralTags: "norton"
+  displayName: "Lazarus"
+  idRef {
+    id: "5367035b3662362409008471"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Seattle:Creature/CreatureHellhound"
+    character_sheet_id: "Hellhound (normal)"
+    equipment_sheet_id: "Hellhound Critter Powers"
+    character_mod {
+      stats {
+        body: -1
+        quickness: -1
+        strength: -2
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        magic: 0
+        hp: 0
+        ap: 0
+        armor: 0
+        force: 0
+        morale: -1
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+        ranged_combat: 0
+        close_combat: -2
+        throwing_weapons: 0
+        spellcasting: -3
+        decking: 0
+        conjuring: 0
+        spirit_summoning: 0
+        drone_control: 0
+        biotech: 0
+        dodge: 0
+        etiquette_corporate: 0
+        etiquette_security: 0
+        etiquette_gang: 0
+        etiquette_socialite: 0
+        chi_casting: 0
+        etiquette_shadowrunner: 0
+        etiquette_street: 0
+        etiquette_academic: 0
+      }
+      specializations {
+        pistol: 0
+        rifle: 0
+        shotgun: 0
+        smg: 0
+        edged: 0
+        unarmed: 0
+        spirit_control: 0
+        esp_control: 0
+        drone_combat: 0
+      }
+      archetypeName: "Guard - Hunt And Destroy"
+      attitude: AttitudeAggressive
+      vulnerabilities {
+      }
+    }
+    equipment {
+      prefab_name: "Dante Fireball"
+    }
+    team_id: "Civilians"
+    char_name: "Lazarus"
+    GeneralTags: "norton"
+    pc_spawn_number: -1
+    hiring_type: HiringType_None
+    disable_pickups: true
+    portrait {
+      filename: "npc_dog_dantecombat"
+    }
+    karma: 45
+    hiring_cost_override: 1000
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: 17
+    y: 0
+    z: -40
+  }
+  orientation: ORIENTATION_E
+  GeneralTags: "norton"
+  GeneralTags: "isNorton"
+  displayName: "Norton"
+  idRef {
+    id: "5367035b3662362409008472"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Seattle:Core/HumanMale"
+    character_sheet_id: "Lvl3_Dwarf_Shaman"
+    character_mod {
+      stats {
+        body: 0
+        quickness: -1
+        strength: -2
+        charisma: 0
+        intelligence: -1
+        willpower: 0
+        essence: 0
+        magic: 0
+        hp: 0
+        ap: 0
+        armor: 0
+        force: 0
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+        ranged_combat: -2
+        close_combat: 0
+        throwing_weapons: 0
+        spellcasting: 4
+        decking: 0
+        conjuring: 0
+        spirit_summoning: 0
+        drone_control: 0
+        biotech: 0
+        dodge: 0
+        etiquette_corporate: 0
+        etiquette_security: 0
+        etiquette_gang: 0
+        etiquette_socialite: 0
+        chi_casting: 0
+        etiquette_shadowrunner: 0
+        etiquette_street: 0
+        etiquette_academic: 0
+      }
+      specializations {
+        pistol: -1
+        rifle: 0
+        shotgun: 0
+        smg: 0
+        edged: 0
+        unarmed: 0
+        spirit_control: 0
+        esp_control: 0
+        drone_combat: 0
+      }
+      archetypeName: "Guard - Hunt And Destroy"
+      attitude: AttitudeBoss
+      vulnerabilities {
+      }
+    }
+    equipment {
+      prefab_name: "Outfit_Cult Follower"
+    }
+    equipment {
+      prefab_name: "Spell Haste 2"
+    }
+    equipment {
+      prefab_name: "Spell Slow 2"
+    }
+    equipment {
+      prefab_name: "Spell Heal 1"
+    }
+    equipment {
+      prefab_name: "Spell Armor 1"
+    }
+    equipment {
+      prefab_name: "HealthPack_med"
+    }
+    equipment {
+      prefab_name: "Air Barrier 4"
+    }
+    equipment {
+      prefab_name: "Spell Aim 2"
+    }
+    team_id: "Civilians"
+    char_name: "Emperor Norton"
+    GeneralTags: "norton"
+    GeneralTags: "isNorton"
+    pc_spawn_number: -1
+    unkillable: true
+    portrait {
+      filename: "EmperorNorton"
+    }
+    description_bio: "Emperor of California and Protector of UCAS"
+    portrait_code_override: "s5h5c6b1c6"
+    karma: 65
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: 18
+    y: 0
+    z: -41
+  }
+  orientation: ORIENTATION_E
+  GeneralTags: "norton"
+  displayName: "Bummer"
+  idRef {
+    id: "536705653662362409008484"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Seattle:Creature/CreatureHellhound"
+    character_sheet_id: "Hellhound (normal)"
+    character_mod {
+      stats {
+        body: -1
+        quickness: -1
+        strength: -2
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        magic: 0
+        hp: 0
+        ap: 0
+        armor: 0
+        force: 0
+        morale: -1
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+        ranged_combat: 0
+        close_combat: -2
+        throwing_weapons: 0
+        spellcasting: -3
+        decking: 0
+        conjuring: 0
+        spirit_summoning: 0
+        drone_control: 0
+        biotech: 0
+        dodge: 0
+        etiquette_corporate: 0
+        etiquette_security: 0
+        etiquette_gang: 0
+        etiquette_socialite: 0
+        chi_casting: 0
+        etiquette_shadowrunner: 0
+        etiquette_street: 0
+        etiquette_academic: 0
+      }
+      specializations {
+        pistol: 0
+        rifle: 0
+        shotgun: 0
+        smg: 0
+        edged: 0
+        unarmed: 0
+        spirit_control: 0
+        esp_control: 0
+        drone_combat: 0
+      }
+      archetypeName: "Guard - Hunt And Destroy"
+      attitude: AttitudeAggressive
+      vulnerabilities {
+      }
+    }
+    equipment {
+      prefab_name: "Dante Chomp"
+    }
+    equipment {
+      prefab_name: "Dante Petrify"
+    }
+    team_id: "Civilians"
+    char_name: "Bummer"
+    GeneralTags: "norton"
+    pc_spawn_number: -1
+    hiring_type: HiringType_None
+    disable_pickups: true
+    portrait {
+      filename: "npc_dog_dante"
+    }
+    karma: 45
+    hiring_cost_override: 1000
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: 16
+    y: 0
+    z: -38
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "ember"
+  displayName: "Fire Elemental 1"
+  idRef {
+    id: "536706773662362409008486"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    conversationPoint {
+      conversationID: "532f0ce0366236840d003d6f"
+      turnToFace: false
+    }
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Seattle:Spirit/SpiritFire"
+    character_sheet_id: "AGChemie_Cyberzombie_Lv1"
+    character_mod {
+      stats {
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        hp: 0
+        ap: 0
+        armor: 0
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+        ranged_combat: 0
+        close_combat: 0
+        dodge: 0
+      }
+      specializations {
+        rifle: 0
+        edged: 0
+        unarmed: 0
+      }
+      vulnerabilities {
+      }
+    }
+    team_id: "Civilians"
+    char_name: "Fire Elemental"
+    GeneralTags: "ember"
+    pc_spawn_number: -1
+    portrait {
+      filename: "generic_spirit_fire"
+    }
+    karma: 177
+    has_fist: false
+  }
+}
+characters {
+  name: "system_spawner_playerSpawner"
+  gridPoint {
+    x: -34
+    y: 0
+    z: -17
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "536708f936623624090084be"
+  }
+  lod: 0
+  character_instance {
+    character_mod {
+      archetypeName: "Player"
+    }
+    team_id: "Shadowrunners"
+    char_name: "New Actor"
+    enabled_at_start: true
+    pc_spawn_number: 0
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -13
+    y: 0
+    z: -16
+  }
+  orientation: ORIENTATION_S
+  displayName: "Tophet"
+  idRef {
+    id: "536709f336623624090084c0"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    conversationPoint {
+      conversationID: "532f0ce0366236840d003d6f"
+      turnToFace: false
+    }
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Seattle:Spirit/SpiritFire"
+    character_sheet_id: "AGChemie_Cyberzombie_Lv1"
+    character_mod {
+      stats {
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        hp: 0
+        ap: 0
+        armor: 0
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+        ranged_combat: 0
+        close_combat: 0
+        dodge: 0
+      }
+      specializations {
+        rifle: 0
+        edged: 0
+        unarmed: 0
+      }
+      vulnerabilities {
+      }
+    }
+    team_id: "Civilians"
+    char_name: "Tophet"
+    enabled_at_start: false
+    pc_spawn_number: -1
+    portrait {
+      filename: "generic_spirit_fire"
+    }
+    karma: 177
+  }
+}
+variables {
+  bool_value: false
+  variableref_value {
+    scope: TsVariableScope_Scene
+    name: "nortonConvo1Done"
+    typeName: "bool"
+  }
+}
+variables {
+  bool_value: false
+  variableref_value {
+    scope: TsVariableScope_Scene
+    name: "tophetConvoDone"
+    typeName: "bool"
+  }
+}
+worldMapLocation {
+  filename: ""
+  location {
+    x: 0
+    y: 0
+  }
+}
+mapName: "TheFive"
+parentStory: ""
+scene_title: "A Call to Arms"
+scene_subtitle: "Somewhere on Interstate Five..."
+scene_synopsis: "You\342\200\231ve been running a long time. It feels like forever. Running from your enemies, running from your fans, running from the past. A shadowrunner whose face is known makes an easy target, and you\342\200\231ve headed even deeper into the shadows to try and lose your pursuers.\n\nLeaving behind the madness of San Francisco, you have found a limited solace in the wild regions of the California Free State. The ineffectual central government in Sacramento keeps a loose grasp on its citizens, and you can eke out a low-profile lifestyle on milk runs for the water gangs and California Rangers.\n\nWhile you have outrun your past, your past never stopped chasing you, and it\342\200\231s about to catch up..."
+scene_image: ""
+scene_continue_button_skip: false
+scene_restore_runner_health: true
+directional_light_dir {
+  x: -0.5
+  y: -1
+  z: -0.75
+}
+directional_light_color {
+  r: 0.50196081
+  g: 0.50196081
+  b: 0.50196081
+}
+ambient_light_color {
+  r: 0.50196081
+  g: 0.50196081
+  b: 0.50196081
+}
+allow_drawn_weapons: false
+team_affiliations {
+  team_name: "Shadowrunners"
+  affiliation: 0
+  affiliation: 1
+  affiliation: 1
+  affiliation: 0
+}
+team_affiliations {
+  team_name: "Gangers"
+  affiliation: 1
+  affiliation: 0
+  affiliation: 1
+  affiliation: 0
+}
+team_affiliations {
+  team_name: "LoneStar"
+  affiliation: 1
+  affiliation: 1
+  affiliation: 0
+  affiliation: 0
+}
+team_affiliations {
+  team_name: "Civilians"
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+}
+scene_dimensions {
+  dimension_name: "Default"
+}
+character_roster {
+}
+show_hiring_screen_on_scene_load: false
+scene_hiring_prerequisites {
+  prereq_description: ""
+  prereq_conditions {
+  }
+}
+hiring_slot_count: 0
+hiring_minimum_karma: 0
+hiring_maximum_karma: 0
+roster_overrides {
+}
+use_hiring_cost_warning: false
+hiring_average_cost: 99999
+override_hiring_average_cost: true
+show_equip_screen_on_scene_load: false
+can_move_outside_camera_regions: false
+can_start_before_triggers: true
