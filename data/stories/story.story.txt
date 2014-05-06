@@ -1,5 +1,17 @@
 id: "Continue your adventures in CalFree"
 variables {
+  name: "CharacterScaleAmount"
+  typeName: "int"
+  defaultValue {
+    int_value: 3
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "CharacterScaleAmount"
+      typeName: "int"
+    }
+  }
+}
+variables {
   name: "hiringNorton"
   typeName: "int"
   defaultValue {
@@ -14,6 +26,7 @@ variables {
 startScene: "Scrachpad"
 resalePercent: 75
 upgradeToThreeApLevel: 117
+upgradeToFourApLevel: -1
 show_conversation_triggering_actor: true
 character_roster {
   roster_entries {
