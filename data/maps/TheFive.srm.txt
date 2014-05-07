@@ -9895,7 +9895,7 @@ props {
   gridPoint {
     x: 7
     y: 0
-    z: -14
+    z: -13
   }
   orientation: ORIENTATION_S
   idRef {
@@ -12699,6 +12699,45 @@ props {
   properties {
     property_id: "fxScript"
     string_value: "EnvironmentLoopBarrelFire"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_nonsolidProp"
+  gridPoint {
+    x: 10
+    y: 0
+    z: -8
+  }
+  orientation: ORIENTATION_S
+  displayName: "Exit Waypoint"
+  idRef {
+    id: "5369ad10366236081d0078db"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    dummyInteraciton {
+    }
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_nonsolidProp"
+  gridPoint {
+    x: -25
+    y: 0
+    z: -19
+  }
+  orientation: ORIENTATION_S
+  displayName: "Equipment"
+  idRef {
+    id: "5369ad38366236081d0078dd"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    interactionIcon: InteractionIcon_ItemPickup
   }
   lod: 0
 }

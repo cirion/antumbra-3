@@ -21,7 +21,56 @@ nodes {
   index: 1
   text: ""
   branches {
-    responseText: "{{CC}}Spirit control 4{{/CC}} Attempt to banish the spirit."
+    responseText: "{{CC}}Spirit Control: 4{{/CC}} {{GM}}Attempt to banish the spirit.{{/GM}}"
+    conditions {
+      ops {
+        functionName: "Compare Actor Specialization"
+        args {
+          call_value {
+            functionName: "Get Map Item (Player)"
+            args {
+              int_value: 0
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "BaseOrCurrent"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "ActorSpecializations"
+            }
+            args {
+              int_value: 7
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 3
+            }
+          }
+        }
+        args {
+          int_value: 4
+        }
+      }
+    }
     nextNodeIndex: 2
   }
   branches {
@@ -48,7 +97,7 @@ nodes {
     id: "53670abc36623624090084d1"
   }
   index: 3
-  text: "Indeed, that is what the situation demands! Begone, foul spirit, and oppress my loyal subject no further!\n\n{{GM}}Norton screws his face into an expression even more wildly twisted than usual. Defiant pride rapidly transforms into shock, then anger, then fear.{{/GM}}"
+  text: "Indeed, that is what the situation demands! Begone, foul spirit, and oppress my loyal subject no further!\n\n{{GM}}Norton screws his face into an expression even more wildly contorted than usual. Defiant pride rapidly transforms into shock, then anger, then fear.{{/GM}}"
   branches {
     responseText: ""
     nextNodeIndex: 4
@@ -136,7 +185,21 @@ nodes {
     id: "53670aee36623624090084da"
   }
   index: 6
-  text: "{{GM}}The spirit pauses briefly, angling its form slightly away from you. After a moment a nimbus of flame flares out and quickly vanishes.{{/GM}}\n\nTophet: MY ALLY REQUIRES ASSISTANCE. THE EMBERS SHALL COMPLETE THE JOB. FAREWELL. FAREWELL. FAREWELL."
+  text: "{{GM}}The spirit pauses briefly, angling its form slightly away from you. After a moment a nimbus of flame flares out and quickly vanishes.{{/GM}}\n\nMY ALLY REQUIRES ASSISTANCE. THE EMBERS SHALL COMPLETE THE JOB. FAREWELL. FAREWELL. FAREWELL."
+  branches {
+    responseText: "Do you think we can take them?"
+    nextNodeIndex: 7
+    auxiliaryLink: true
+  }
+  branches {
+    responseText: "So THIS is what that gypsy woman meant!"
+    nextNodeIndex: 7
+    auxiliaryLink: true
+  }
+  branches {
+    responseText: "Let\342\200\231s do this!"
+    nextNodeIndex: 7
+  }
   nodeType: ConversationNodeType_Simple
   actions {
     ops {
@@ -154,6 +217,206 @@ nodes {
           functionName: "Get Variable (bool)"
           args {
             string_value: "tophetConvoDone"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Trigger: Run Alternate Trigger"
+      args {
+        call_value {
+          functionName: "Get Map Item (Trigger)"
+          args {
+            string_value: "53670b7d36623624090084fc"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WaitOrNot"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "5369a025366236081d0076f1"
+  }
+  index: 7
+  text: "{{GM}}Norton lets out a long, high whistle.{{/GM}}\n\nBummer! Lazarus! Come here, boys!"
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Activate Actor Spawner"
+      args {
+        call_value {
+          functionName: "Get Map Item (Actor Reference)"
+          args {
+            string_value: "536705653662362409008484"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Activate Actor Spawner"
+      args {
+        call_value {
+          functionName: "Get Map Item (Actor Reference)"
+          args {
+            string_value: "5367035b3662362409008471"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Change Actor Team"
+      args {
+        call_value {
+          functionName: "All Actors With Tag"
+          args {
+            call_value {
+              functionName: "Get Map Item (SenseTagList)"
+              args {
+                string_value: "norton"
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Preset Value (int)"
+              args {
+                string_value: "AllOrAny"
+              }
+              args {
+                int_value: 0
+              }
+            }
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SceneDimension)"
+          args {
+            string_value: "Default"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Change Actor Control"
+      args {
+        call_value {
+          functionName: "All Actors on Team"
+          args {
+            call_value {
+              functionName: "Get Preset Value (string)"
+              args {
+                string_value: "FactionList"
+              }
+              args {
+                int_value: 0
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Preset Value (int)"
+              args {
+                string_value: "AllOrAny"
+              }
+              args {
+                int_value: 0
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Map Item (SceneDimension)"
+              args {
+                string_value: "Default"
+              }
+            }
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "PlayerOrAI"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Kill Actor"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Actor)"
+              args {
+                string_value: "536709f336623624090084c0"
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "DeathMethod"
+          }
+          args {
+            int_value: 0
           }
         }
       }

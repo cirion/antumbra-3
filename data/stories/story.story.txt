@@ -1,5 +1,89 @@
 id: "Continue your adventures in CalFree"
 variables {
+  name: "a1_beatGame"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "a1_beatGame"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "a1_helpedKali"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "a1_helpedKali"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "a2_beatGame"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "a2_beatGame"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "a2_killedShavarus"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "a2_killedShavarus"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "a2_musicGenre"
+  typeName: "string"
+  defaultValue {
+    string_value: "thrumming"
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "a2_musicGenre"
+      typeName: "string"
+    }
+  }
+}
+variables {
+  name: "a2_recordedMusic"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "a2_recordedMusic"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "a2_savedShavarus"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "a2_savedShavarus"
+      typeName: "bool"
+    }
+  }
+}
+variables {
   name: "CharacterScaleAmount"
   typeName: "int"
   defaultValue {
@@ -12,6 +96,42 @@ variables {
   }
 }
 variables {
+  name: "Global_WorkForCorps"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "Global_WorkForCorps"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "Global_WorkForPeople"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "Global_WorkForPeople"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "Global_WorkForSelf"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "Global_WorkForSelf"
+      typeName: "bool"
+    }
+  }
+}
+variables {
   name: "hiringNorton"
   typeName: "int"
   defaultValue {
@@ -20,6 +140,18 @@ variables {
       scope: TsVariableScope_Story
       name: "hiringNorton"
       typeName: "int"
+    }
+  }
+}
+variables {
+  name: "LordLady"
+  typeName: "string"
+  defaultValue {
+    string_value: "Lord"
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "LordLady"
+      typeName: "string"
     }
   }
 }

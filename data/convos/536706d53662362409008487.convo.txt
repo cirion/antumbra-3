@@ -88,22 +88,7 @@ nodes {
   }
   index: 5
   text: "War is coming, $(l.name)! A confrontation so violent that it will make that incident with Shavarus look like a promenade! Kali has sent me to\342\200\246."
-  branches {
-    responseText: ""
-    nextNodeIndex: 6
-  }
   nodeType: ConversationNodeType_Simple
-}
-nodes {
-  idRef {
-    id: "5367082d36623624090084b6"
-  }
-  index: 6
-  text: "CEASE, MORTAL"
-  nodeType: ConversationNodeType_Simple
-  sourceInSceneRef {
-    id: "5367065f3662362409008485"
-  }
   actions {
     ops {
       functionName: "Set Variable (bool)"
