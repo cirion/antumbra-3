@@ -216,6 +216,18 @@ variables {
   }
 }
 variables {
+  name: "Global_Destroyed_NativeCalifornianSleaze"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "Global_Destroyed_NativeCalifornianSleaze"
+      typeName: "bool"
+    }
+  }
+}
+variables {
   name: "Global_Manpower"
   typeName: "int"
   defaultValue {

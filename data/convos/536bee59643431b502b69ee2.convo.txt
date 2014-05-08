@@ -13,15 +13,122 @@ nodes {
     nextNodeIndex: 1
   }
   branches {
-    responseText: ""
-    nextNodeIndex: -1
+    responseText: "Locate the People\'s University."
+    conditions {
+      ops {
+        functionName: "Comparison (int)"
+        args {
+          call_value {
+            functionName: "Get Story Variable (int)"
+            args {
+              string_value: "531d26a736623648180018bf"
+            }
+            args {
+              string_value: "Global_SideMissionState_PeoplesU"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+        args {
+          int_value: 1
+        }
+      }
+    }
+    nextNodeIndex: 51
   }
   branches {
-    responseText: ""
-    nextNodeIndex: -1
+    responseText: "{{CC}}Contact list{{/CC}} }Return the records to the People\342\200\231s University."
+    conditions {
+      ops {
+        functionName: "Evaluate If Actor Has Item"
+        args {
+          call_value {
+            functionName: "Specific Actor"
+            args {
+              call_value {
+                functionName: "Triggering Actor"
+              }
+            }
+            args {
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "HasOrHasNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Map Item (Item)"
+            args {
+              string_value: "a3-pu_saito_records"
+            }
+          }
+        }
+      }
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Story Variable (bool)"
+            args {
+              string_value: "531d26a736623648180018bf"
+            }
+            args {
+              string_value: "Global_Destroyed_NativeCalifornianSleaze"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 59
+    hideIfUnavailable: true
+    onlyOnce: true
+    idRef {
+      id: "536c078b643431b502b6a6b5"
+    }
   }
   branches {
-    responseText: ""
+    responseText: "Nothing."
     nextNodeIndex: -1
   }
   nodeType: ConversationNodeType_Simple
@@ -2617,6 +2724,397 @@ nodes {
     auxiliaryLink: true
   }
   nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "536c04c1643431b502b6a5d8"
+  }
+  index: 51
+  text: "{{GM}}It\342\200\231s difficult to find any recent contact information. Much of their data has been censored from the Matrix, and the links you can find appear to be broken.{{/GM}}"
+  branches {
+    responseText: "{{CC}}Decking: 5{{/CC}} {{GM}}Decrypt live communications related to the University.{{/GM}}\n"
+    conditions {
+      ops {
+        functionName: "Compare Actor Skill"
+        args {
+          call_value {
+            functionName: "Triggering Actor"
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "BaseOrCurrent"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "ActorSkills"
+            }
+            args {
+              int_value: 5
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 3
+            }
+          }
+        }
+        args {
+          int_value: 5
+        }
+      }
+    }
+    nextNodeIndex: 52
+  }
+  branches {
+    responseText: "{{CC}}Academic{{/CC}} {{GM}}Investigate links to public academic institutions.{{/GM}}"
+    conditions {
+      ops {
+        functionName: "Compare Actor Skill"
+        args {
+          call_value {
+            functionName: "Triggering Actor"
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "BaseOrCurrent"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "ActorSkills"
+            }
+            args {
+              int_value: 19
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 2
+            }
+          }
+        }
+        args {
+          int_value: 0
+        }
+      }
+    }
+    nextNodeIndex: 56
+  }
+  branches {
+    responseText: "{{CC}}Socialite{{/CC}} {{GM}}Investigate the Berkeley connections.{{/GM}}"
+    conditions {
+      ops {
+        functionName: "Compare Actor Skill"
+        args {
+          call_value {
+            functionName: "Triggering Actor"
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "BaseOrCurrent"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "ActorSkills"
+            }
+            args {
+              int_value: 16
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 2
+            }
+          }
+        }
+        args {
+          int_value: 0
+        }
+      }
+    }
+    nextNodeIndex: 57
+  }
+  branches {
+    responseText: "{{CC}}\302\245750{//CC}} {{GM}}Hire a decker to locate the University.{{/GM}}"
+    conditions {
+      ops {
+        functionName: "Evaluate Nuyen"
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 3
+            }
+          }
+        }
+        args {
+          int_value: 750
+        }
+      }
+    }
+    nextNodeIndex: 58
+  }
+  branches {
+    responseText: "{{GM}}Sign off.{{/GM}}"
+    nextNodeIndex: -1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "536c0523643431b502b6a5df"
+  }
+  index: 52
+  text: "{{GM}}You locate a node that\342\200\231s still running an outdated crypto package. You forge a certificate for the other side, then intercept the traffic with a man-in-the-middle attack. Before long you have cleartext contact information for a University representative.{{/GM}}"
+  branches {
+    responseText: ""
+    nextNodeIndex: 53
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "536c0529643431b502b6a5e2"
+  }
+  index: 53
+  text: "W3 @R3 TH3 P30PL3\342\200\231$ UN1V3RS1TY. Y0U CAN H3LP U$, @ND W3 C@N H3LP Y0U."
+  branches {
+    responseText: ""
+    nextNodeIndex: 54
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "536c0633643431b502b6a5f3"
+  }
+  index: 54
+  text: "1 0F N0RT0N\342\200\231$ @RMY F0UND A L1$T 0F S@IT0\342\200\231S SP13S. W3 L0$T C0NT@CT W1TH H1M IN COLMA. F1ND THE L1$T @ND R3TURN 1T T0 U$.\n\nTH3 N@T1V3 C@L1F0RN1@N$ PL@N T0 @TT@CK 0UR N3TW0RK. D3STR0Y TH31R $L3@Z3 PR0GR@M F1R$T."
+  branches {
+    responseText: ""
+    nextNodeIndex: 55
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "536c0667643431b502b6a5f6"
+  }
+  index: 55
+  text: "D0 TH3S3 TH1NG$, @ND W3 W1LL KN0W Y0U @$ @ FR13ND @ND H3LP Y0UR F1GHT @G@1N$T T1R. G00D LUCK."
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Set Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (int)"
+          args {
+            string_value: "531d26a736623648180018bf"
+          }
+          args {
+            string_value: "Global_SideMissionState_PeoplesU"
+          }
+        }
+      }
+      args {
+        int_value: 2
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "536c056b643431b502b6a5e4"
+  }
+  index: 56
+  text: "{{GM}}Posing as a sociologist writing a monograph on ad-hoc social networks, you follow a trail of scholarly associations until you find a spokesperson for the University.{{/GM}}"
+  branches {
+    responseText: ""
+    nextNodeIndex: 53
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "536c059d643431b502b6a5ea"
+  }
+  index: 57
+  text: "{{GM}}You speak with elite members of the East Bay aristocracy, who gradually let slip which of their relatives have kept up the local tradition of organized dissent. Before long you\342\200\231ve found a willing spokesperson for the University.{{/GM}}"
+  branches {
+    responseText: ""
+    nextNodeIndex: 53
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "536c05ed643431b502b6a5ee"
+  }
+  index: 58
+  text: "{{GM}}Your hired decker is quick and efficient, to the point where you suspect he already knew the contact in question.{{/GM}}"
+  branches {
+    responseText: ""
+    nextNodeIndex: 53
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Remove Nuyen"
+      args {
+        int_value: 750
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "536c076e643431b502b6a6b4"
+  }
+  index: 59
+  text: "TH@NK Y0U. Y0U @R3 @ TRU3 FR13ND 0F TH3 P30PL3. W3 H@V3 H@CK3D S@1T0\342\200\231$ SH1PP1NG C0MPUT3R @ND @R3 $3ND1NG H1$ $UPPL13$ T0 Y0U. U$3 TH3M W3LL 1N Y0UR F1GHT @G@1N$T T1R. TH3 P30PL3 W1LL R1$3."
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Remove Item from Actor"
+      args {
+        call_value {
+          functionName: "Get Map Item (Item)"
+          args {
+            string_value: "a3-trivid_recorder"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Triggering Actor"
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Add Actor Karma"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Triggering Actor"
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        int_value: 2
+      }
+    }
+    ops {
+      functionName: "Set Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (int)"
+          args {
+            string_value: "531d26a736623648180018bf"
+          }
+          args {
+            string_value: "Global_SideMissionState_PeoplesU"
+          }
+        }
+      }
+      args {
+        int_value: 3
+      }
+    }
+    ops {
+      functionName: "Add To Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (int)"
+          args {
+            string_value: "531d26a736623648180018bf"
+          }
+          args {
+            string_value: "Global_Supplies"
+          }
+        }
+      }
+      args {
+        int_value: 1
+      }
+    }
+  }
 }
 roots {
   nextNodeIndex: 0
