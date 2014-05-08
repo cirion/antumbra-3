@@ -288,6 +288,18 @@ variables {
   }
 }
 variables {
+  name: "Global_RecruitedOmphalos"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "Global_RecruitedOmphalos"
+      typeName: "bool"
+    }
+  }
+}
+variables {
   name: "Global_SideMissionState_PeoplesU"
   typeName: "int"
   defaultValue {
@@ -320,6 +332,18 @@ variables {
       scope: TsVariableScope_Story
       name: "Global_Supplies"
       typeName: "int"
+    }
+  }
+}
+variables {
+  name: "Global_Trideo_Genre"
+  typeName: "string"
+  defaultValue {
+    string_value: ""
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "Global_Trideo_Genre"
+      typeName: "string"
     }
   }
 }
@@ -524,6 +548,162 @@ variables {
       scope: TsVariableScope_Story
       name: "LordLady"
       typeName: "string"
+    }
+  }
+}
+variables {
+  name: "Redding_Convo_Kali_Dalmin"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "Redding_Convo_Kali_Dalmin"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "Redding_Convo_Kali_Hailey"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "Redding_Convo_Kali_Hailey"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "Redding_Convo_Kali_Orion"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "Redding_Convo_Kali_Orion"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "Redding_Convo_Kali_OtherContacts"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "Redding_Convo_Kali_OtherContacts"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "Redding_Convo_Kali_OtherMissions"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "Redding_Convo_Kali_OtherMissions"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "Redding_Convo_Kali_PostMission"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "Redding_Convo_Kali_PostMission"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "Redding_Convo_Kali_PostTrideo"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "Redding_Convo_Kali_PostTrideo"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "Redding_Convo_Kali_PreHailey"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "Redding_Convo_Kali_PreHailey"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "Redding_Convo_Kali_PreMission"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "Redding_Convo_Kali_PreMission"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "Redding_Convo_Kali_PreTrideo"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "Redding_Convo_Kali_PreTrideo"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "Redding_Convo_Kali_Prospects"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "Redding_Convo_Kali_Prospects"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "Redding_Convo_Kali_Royalties"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "Redding_Convo_Kali_Royalties"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "Redding_Convo_Kali_Saito"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "Redding_Convo_Kali_Saito"
+      typeName: "bool"
     }
   }
 }
