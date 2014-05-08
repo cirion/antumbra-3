@@ -1,0 +1,142 @@
+idRef {
+  id: "536c17df643431b502b6ac30"
+}
+ui_name: "a3-redding-Hailey"
+nodes {
+  idRef {
+    id: "536c17e5643431b502b6ac36"
+  }
+  index: 0
+  text: "Heya, $(l.name)! Glad ya could drop by!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "536c189e643431b502b6ac42"
+  }
+  index: 1
+  text: ""
+  branches {
+    responseText: "What are you working on?"
+    conditions {
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Story Variable (bool)"
+            args {
+              string_value: "531d26a736623648180018bf"
+            }
+            args {
+              string_value: "Redding_Convo_Hailey_WhatWorkingOn"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 2
+    hideIfUnavailable: true
+    onlyOnce: true
+    idRef {
+      id: "536c1869643431b502b6ac3d"
+    }
+  }
+  branches {
+    responseText: ""
+    nextNodeIndex: -1
+  }
+  branches {
+    responseText: ""
+    nextNodeIndex: -1
+  }
+  branches {
+    responseText: ""
+    nextNodeIndex: -1
+  }
+  branches {
+    responseText: ""
+    nextNodeIndex: -1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "536c18a7643431b502b6ac48"
+  }
+  index: 2
+  text: "Oh, I\342\200\231m just upgrading your commlink. It was built on some old milspec protocols, but I recently got some new code from People\342\200\231s University that should make it hella hard to decrypt."
+  branches {
+    responseText: ""
+    nextNodeIndex: 3
+  }
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (bool)"
+          args {
+            string_value: "531d26a736623648180018bf"
+          }
+          args {
+            string_value: "Redding_Convo_Hailey_WhatWorkingOn"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "536c18d8643431b502b6ac4f"
+  }
+  index: 3
+  text: "Of course, if anyone really wants to tap it and has enough hardware, they\342\200\231ll eventually be able to crack your codes, but this should help prevent random hackers from listening in on your top-secret battle planning strategy sessions. Or learning about what stimsense packs you\342\200\231ve been downloading.\n\n{{GM}}Cough.{{/GM}}"
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+roots {
+  nextNodeIndex: 0
+}

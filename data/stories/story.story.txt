@@ -564,6 +564,234 @@ variables {
   }
 }
 variables {
+  name: "Redding_Convo_Amelia_BelieveRumors"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "Redding_Convo_Amelia_BelieveRumors"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "Redding_Convo_Amelia_Met"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "Redding_Convo_Amelia_Met"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "Redding_Convo_Amelia_WhereSupplied"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "Redding_Convo_Amelia_WhereSupplied"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "Redding_Convo_Amelia_WhyHere"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "Redding_Convo_Amelia_WhyHere"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "Redding_Convo_Hailey_KaliDoing"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "Redding_Convo_Hailey_KaliDoing"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "Redding_Convo_Hailey_SFEvents"
+  typeName: "int"
+  defaultValue {
+    int_value: 0
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "Redding_Convo_Hailey_SFEvents"
+      typeName: "int"
+    }
+  }
+}
+variables {
+  name: "Redding_Convo_Hailey_ShavarusAlive"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "Redding_Convo_Hailey_ShavarusAlive"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "Redding_Convo_Hailey_ShavarusDead"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "Redding_Convo_Hailey_ShavarusDead"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "Redding_Convo_Hailey_WhatWorkingOn"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "Redding_Convo_Hailey_WhatWorkingOn"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "Redding_Convo_Horatio_Familiar"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "Redding_Convo_Horatio_Familiar"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "Redding_Convo_Horatio_HowHere"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "Redding_Convo_Horatio_HowHere"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "Redding_Convo_Horatio_Met"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "Redding_Convo_Horatio_Met"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "Redding_Convo_Horatio_StuffAdvanced"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "Redding_Convo_Horatio_StuffAdvanced"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "Redding_Convo_Horatio_StuffNormal"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "Redding_Convo_Horatio_StuffNormal"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "Redding_Convo_Horatio_WhereSupply"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "Redding_Convo_Horatio_WhereSupply"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "Redding_Convo_Hrafna_HowGoodGear"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "Redding_Convo_Hrafna_HowGoodGear"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "Redding_Convo_Hrafna_Met"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "Redding_Convo_Hrafna_Met"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "Redding_Convo_Hrafna_WhatStory"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "Redding_Convo_Hrafna_WhatStory"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "Redding_Convo_Hrafna_WhyCharging"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "Redding_Convo_Hrafna_WhyCharging"
+      typeName: "bool"
+    }
+  }
+}
+variables {
   name: "Redding_Convo_Kali_Dalmin"
   typeName: "bool"
   defaultValue {
