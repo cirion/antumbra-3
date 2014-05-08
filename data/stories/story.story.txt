@@ -1,4 +1,4 @@
-id: "Continue your adventures in CalFree"
+id: "Lead CalFree\'s Defense Against Tir Tairngire"
 variables {
   name: "a1_beatGame"
   typeName: "bool"
@@ -96,6 +96,234 @@ variables {
   }
 }
 variables {
+  name: "Global_Banter_Dorbi_Solo"
+  typeName: "int"
+  defaultValue {
+    int_value: 0
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "Global_Banter_Dorbi_Solo"
+      typeName: "int"
+    }
+  }
+}
+variables {
+  name: "Global_Banter_Elorn_Dorbi"
+  typeName: "int"
+  defaultValue {
+    int_value: 0
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "Global_Banter_Elorn_Dorbi"
+      typeName: "int"
+    }
+  }
+}
+variables {
+  name: "Global_Banter_Elorn_Solo"
+  typeName: "int"
+  defaultValue {
+    int_value: 0
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "Global_Banter_Elorn_Solo"
+      typeName: "int"
+    }
+  }
+}
+variables {
+  name: "Global_Banter_Hailey_Dorbi"
+  typeName: "int"
+  defaultValue {
+    int_value: 0
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "Global_Banter_Hailey_Dorbi"
+      typeName: "int"
+    }
+  }
+}
+variables {
+  name: "Global_Banter_Hailey_Elorn"
+  typeName: "int"
+  defaultValue {
+    int_value: 0
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "Global_Banter_Hailey_Elorn"
+      typeName: "int"
+    }
+  }
+}
+variables {
+  name: "Global_Banter_Hailey_Norton"
+  typeName: "int"
+  defaultValue {
+    int_value: 0
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "Global_Banter_Hailey_Norton"
+      typeName: "int"
+    }
+  }
+}
+variables {
+  name: "Global_Banter_Hailey_Solo"
+  typeName: "int"
+  defaultValue {
+    int_value: 0
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "Global_Banter_Hailey_Solo"
+      typeName: "int"
+    }
+  }
+}
+variables {
+  name: "Global_Banter_Norton_Dorbi"
+  typeName: "int"
+  defaultValue {
+    int_value: 0
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "Global_Banter_Norton_Dorbi"
+      typeName: "int"
+    }
+  }
+}
+variables {
+  name: "Global_Banter_Norton_Elorn"
+  typeName: "int"
+  defaultValue {
+    int_value: 0
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "Global_Banter_Norton_Elorn"
+      typeName: "int"
+    }
+  }
+}
+variables {
+  name: "Global_Banter_Norton_Solo"
+  typeName: "int"
+  defaultValue {
+    int_value: 0
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "Global_Banter_Norton_Solo"
+      typeName: "int"
+    }
+  }
+}
+variables {
+  name: "Global_Manpower"
+  typeName: "int"
+  defaultValue {
+    int_value: 0
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "Global_Manpower"
+      typeName: "int"
+    }
+  }
+}
+variables {
+  name: "Global_MissionState_Colma"
+  typeName: "int"
+  defaultValue {
+    int_value: 0
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "Global_MissionState_Colma"
+      typeName: "int"
+    }
+  }
+}
+variables {
+  name: "Global_MissionState_Dam"
+  typeName: "int"
+  defaultValue {
+    int_value: 0
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "Global_MissionState_Dam"
+      typeName: "int"
+    }
+  }
+}
+variables {
+  name: "Global_MissionState_Five"
+  typeName: "int"
+  defaultValue {
+    int_value: 0
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "Global_MissionState_Five"
+      typeName: "int"
+    }
+  }
+}
+variables {
+  name: "Global_MissionState_SF"
+  typeName: "int"
+  defaultValue {
+    int_value: 0
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "Global_MissionState_SF"
+      typeName: "int"
+    }
+  }
+}
+variables {
+  name: "Global_numMissionsCompleted"
+  typeName: "int"
+  defaultValue {
+    int_value: 0
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "Global_numMissionsCompleted"
+      typeName: "int"
+    }
+  }
+}
+variables {
+  name: "Global_SideMissionState_PeoplesU"
+  typeName: "int"
+  defaultValue {
+    int_value: 0
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "Global_SideMissionState_PeoplesU"
+      typeName: "int"
+    }
+  }
+}
+variables {
+  name: "Global_SideMissionState_VideoStar"
+  typeName: "int"
+  defaultValue {
+    int_value: 0
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "Global_SideMissionState_VideoStar"
+      typeName: "int"
+    }
+  }
+}
+variables {
+  name: "Global_Supplies"
+  typeName: "int"
+  defaultValue {
+    int_value: 0
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "Global_Supplies"
+      typeName: "int"
+    }
+  }
+}
+variables {
   name: "Global_WorkForCorps"
   typeName: "bool"
   defaultValue {
@@ -144,6 +372,150 @@ variables {
   }
 }
 variables {
+  name: "isBummerDead"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "isBummerDead"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "isBummerRecruited"
+  typeName: "bool"
+  defaultValue {
+    bool_value: true
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "isBummerRecruited"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "isDorbiDead"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "isDorbiDead"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "isDorbiRecruited"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "isDorbiRecruited"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "isElornDead"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "isElornDead"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "isElornRecruited"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "isElornRecruited"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "isHaileyDead"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "isHaileyDead"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "isHaileyRecruited"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "isHaileyRecruited"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "isLazarusDead"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "isLazarusDead"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "isLazarusRecruited"
+  typeName: "bool"
+  defaultValue {
+    bool_value: true
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "isLazarusRecruited"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "isNortonDead"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "isNortonDead"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "isNortonRecruited"
+  typeName: "bool"
+  defaultValue {
+    bool_value: true
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "isNortonRecruited"
+      typeName: "bool"
+    }
+  }
+}
+variables {
   name: "LordLady"
   typeName: "string"
   defaultValue {
@@ -151,6 +523,42 @@ variables {
     variableref_value {
       scope: TsVariableScope_Story
       name: "LordLady"
+      typeName: "string"
+    }
+  }
+}
+variables {
+  name: "Redding_PendingKarma"
+  typeName: "int"
+  defaultValue {
+    int_value: 0
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "Redding_PendingKarma"
+      typeName: "int"
+    }
+  }
+}
+variables {
+  name: "Redding_PendingNuyen"
+  typeName: "int"
+  defaultValue {
+    int_value: 0
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "Redding_PendingNuyen"
+      typeName: "int"
+    }
+  }
+}
+variables {
+  name: "Redding_Synopsis"
+  typeName: "string"
+  defaultValue {
+    string_value: ""
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "Redding_Synopsis"
       typeName: "string"
     }
   }
