@@ -312,6 +312,18 @@ variables {
   }
 }
 variables {
+  name: "Global_SideMissionState_Mercenaries"
+  typeName: "int"
+  defaultValue {
+    int_value: 0
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "Global_SideMissionState_Mercenaries"
+      typeName: "int"
+    }
+  }
+}
+variables {
   name: "Global_SideMissionState_PeoplesU"
   typeName: "int"
   defaultValue {
@@ -607,6 +619,126 @@ variables {
     variableref_value {
       scope: TsVariableScope_Story
       name: "Redding_Convo_Amelia_WhyHere"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "Redding_Convo_Dorbi_Goodbye"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "Redding_Convo_Dorbi_Goodbye"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "Redding_Convo_Dorbi_HowJoinedGangs"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "Redding_Convo_Dorbi_HowJoinedGangs"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "Redding_Convo_Dorbi_HowJoinedGangsCount"
+  typeName: "int"
+  defaultValue {
+    int_value: 0
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "Redding_Convo_Dorbi_HowJoinedGangsCount"
+      typeName: "int"
+    }
+  }
+}
+variables {
+  name: "Redding_Convo_Dorbi_Met"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "Redding_Convo_Dorbi_Met"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "Redding_Convo_Dorbi_Plans"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "Redding_Convo_Dorbi_Plans"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "Redding_Convo_Dorbi_Worried"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "Redding_Convo_Dorbi_Worried"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "Redding_Convo_Elorn_Hostage"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "Redding_Convo_Elorn_Hostage"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "Redding_Convo_Elorn_Redding"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "Redding_Convo_Elorn_Redding"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "Redding_Convo_Elorn_TirInvasion"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "Redding_Convo_Elorn_TirInvasion"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "Redding_Convo_Elorn_Training"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "Redding_Convo_Elorn_Training"
       typeName: "bool"
     }
   }
@@ -943,6 +1075,162 @@ variables {
     variableref_value {
       scope: TsVariableScope_Story
       name: "Redding_Convo_Kali_Saito"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "Redding_Convo_Norton_ArmyArriving"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "Redding_Convo_Norton_ArmyArriving"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "Redding_Convo_Norton_Kali"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "Redding_Convo_Norton_Kali"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "Redding_Convo_Norton_OpinionOfCamp"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "Redding_Convo_Norton_OpinionOfCamp"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "Redding_Convo_Norton_UCAS"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "Redding_Convo_Norton_UCAS"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "Redding_Convo_Selene_ChancesAgainstTir"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "Redding_Convo_Selene_ChancesAgainstTir"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "Redding_Convo_Selene_HowFoundUs"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "Redding_Convo_Selene_HowFoundUs"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "Redding_Convo_Selene_Job"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "Redding_Convo_Selene_Job"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "Redding_Convo_Selene_Met"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "Redding_Convo_Selene_Met"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "Redding_Convo_Selene_Who"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "Redding_Convo_Selene_Who"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "Redding_Convo_Tomas_Kali"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "Redding_Convo_Tomas_Kali"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "Redding_Convo_Tomas_Met"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "Redding_Convo_Tomas_Met"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "Redding_Convo_Tomas_Who"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "Redding_Convo_Tomas_Who"
+      typeName: "bool"
+    }
+  }
+}
+variables {
+  name: "Redding_Convo_Tomas_WhyRedding"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "Redding_Convo_Tomas_WhyRedding"
       typeName: "bool"
     }
   }

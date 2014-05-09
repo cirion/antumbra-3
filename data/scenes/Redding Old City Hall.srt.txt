@@ -1356,6 +1356,7 @@ characters {
     z: 13
   }
   orientation: ORIENTATION_N
+  GeneralTags: "isHailey"
   displayName: "Hailey"
   idRef {
     id: "536b159a366236e0040077df"
@@ -1471,6 +1472,7 @@ characters {
     }
     team_id: "Civilians"
     char_name: "Hailey"
+    GeneralTags: "isHailey"
     pc_spawn_number: -1
     cyberware_eyes: "Vision Magnification Eyes"
     cyberware_jack: "Datajack"
@@ -1490,6 +1492,7 @@ characters {
     z: 5
   }
   orientation: ORIENTATION_S
+  GeneralTags: "isElorn"
   displayName: "Elorn"
   idRef {
     id: "536c40ed366236d41e0026a7"
@@ -1533,6 +1536,7 @@ characters {
     }
     team_id: "Civilians"
     char_name: "Elorn"
+    GeneralTags: "isElorn"
     pc_spawn_number: -1
     portrait {
       filename: "pc_elfmale_06_dreads"
@@ -1974,8 +1978,50 @@ variables {
     typeName: "bool"
   }
 }
+variables {
+  bool_value: false
+  variableref_value {
+    scope: TsVariableScope_Scene
+    name: "dorbiMentionedPractice"
+    typeName: "bool"
+  }
+}
+variables {
+  int_value: 0
+  variableref_value {
+    scope: TsVariableScope_Scene
+    name: "dorbiGangFollowUps"
+    typeName: "int"
+  }
+}
+variables {
+  bool_value: false
+  variableref_value {
+    scope: TsVariableScope_Scene
+    name: "seleneCheckedStatus"
+    typeName: "bool"
+  }
+}
+variables {
+  bool_value: false
+  variableref_value {
+    scope: TsVariableScope_Scene
+    name: "tomasCheckedStatus"
+    typeName: "bool"
+  }
+}
 goals {
   name: "Convince the San Francisco Megacorps to Help You"
+  type: GoalType_Primary
+  status: GoalStatus_Hidden
+}
+goals {
+  name: "Recruit Norton\'s Army from Colma"
+  type: GoalType_Primary
+  status: GoalStatus_Hidden
+}
+goals {
+  name: "Secure Your Supply Lines on Interstate 5"
   type: GoalType_Primary
   status: GoalStatus_Hidden
 }
