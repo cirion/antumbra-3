@@ -935,7 +935,7 @@ triggers {
             string_value: "WithOrWithout"
           }
           args {
-            int_value: 0
+            int_value: 1
           }
         }
       }
@@ -962,6 +962,50 @@ triggers {
         }
       }
     }
+    ops {
+      functionName: "Display Text at Screen Position"
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "TextPopupStyle"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        string_value: "INITIALIZED VARS"
+      }
+      args {
+        float_value: 0
+      }
+      args {
+        float_value: 0
+      }
+      args {
+        float_value: 0
+      }
+      args {
+        float_value: 0
+      }
+      args {
+        float_value: 0
+      }
+      args {
+        float_value: 0
+      }
+      args {
+        float_value: 5
+      }
+      args {
+        float_value: 3
+      }
+      args {
+        float_value: 0
+      }
+    }
   }
   isActive: true
   idRef {
@@ -980,23 +1024,77 @@ triggers {
       functionName: "OR"
       args {
         call_value {
-          functionName: "Get Story Variable (bool)"
+          functionName: "Comparison (bool)"
           args {
-            string_value: "531d26a736623648180018bf"
+            call_value {
+              functionName: "Get Story Variable (bool)"
+              args {
+                string_value: "531d26a736623648180018bf"
+              }
+              args {
+                string_value: "a2_killedShavarus"
+              }
+            }
           }
           args {
-            string_value: "a2_killedShavarus"
+            call_value {
+              functionName: "Get Preset Value (int)"
+              args {
+                string_value: "IsOrIsNot"
+              }
+              args {
+                int_value: 1
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Preset Value (int)"
+              args {
+                string_value: "bool"
+              }
+              args {
+                int_value: 1
+              }
+            }
           }
         }
       }
       args {
         call_value {
-          functionName: "Get Story Variable (bool)"
+          functionName: "Comparison (bool)"
           args {
-            string_value: "531d26a736623648180018bf"
+            call_value {
+              functionName: "Get Story Variable (bool)"
+              args {
+                string_value: "531d26a736623648180018bf"
+              }
+              args {
+                string_value: "a2_savedShavarus"
+              }
+            }
           }
           args {
-            string_value: "a2_savedShavarus"
+            call_value {
+              functionName: "Get Preset Value (int)"
+              args {
+                string_value: "IsOrIsNot"
+              }
+              args {
+                int_value: 1
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Preset Value (int)"
+              args {
+                string_value: "bool"
+              }
+              args {
+                int_value: 1
+              }
+            }
           }
         }
       }
@@ -1028,12 +1126,100 @@ triggers {
         }
       }
     }
+    ops {
+      functionName: "Display Text at Screen Position"
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "TextPopupStyle"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        string_value: "BEAT GAME"
+      }
+      args {
+        float_value: 0
+      }
+      args {
+        float_value: 0
+      }
+      args {
+        float_value: 0
+      }
+      args {
+        float_value: 0
+      }
+      args {
+        float_value: 0
+      }
+      args {
+        float_value: 0
+      }
+      args {
+        float_value: 5
+      }
+      args {
+        float_value: 3
+      }
+      args {
+        float_value: 0
+      }
+    }
   }
   isActive: true
   idRef {
     id: "5369a4f6366236081d00771c"
   }
   elseActions {
+    ops {
+      functionName: "Display Text at Screen Position"
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "TextPopupStyle"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        string_value: "DID NOT BEAT GAME"
+      }
+      args {
+        float_value: 0
+      }
+      args {
+        float_value: 0
+      }
+      args {
+        float_value: 0
+      }
+      args {
+        float_value: 0
+      }
+      args {
+        float_value: 0
+      }
+      args {
+        float_value: 0
+      }
+      args {
+        float_value: 5
+      }
+      args {
+        float_value: 3
+      }
+      args {
+        float_value: 0
+      }
+    }
   }
   is_oneshot: true
 }
@@ -1044,7 +1230,10 @@ triggers {
       functionName: "On Region Enter"
       args {
         call_value {
-          functionName: "Triggering Region"
+          functionName: "Get Map Item (Region)"
+          args {
+            string_value: "5369ac82366236081d0078d8"
+          }
         }
       }
     }
@@ -1130,7 +1319,7 @@ triggers {
   }
   elseActions {
   }
-  is_oneshot: true
+  is_oneshot: false
 }
 triggers {
   name: "Open Stash"

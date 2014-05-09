@@ -93,6 +93,7 @@ nodes {
       }
     }
     nextNodeIndex: 51
+    hideIfUnavailable: true
   }
   branches {
     responseText: "{{CC}}Contact list{{/CC}} }Return the records to the People\342\200\231s University."
@@ -180,6 +181,9 @@ nodes {
     nextNodeIndex: -1
   }
   nodeType: ConversationNodeType_Simple
+  sourceInSceneRef {
+    id: "536c5f88366236d41e0027f2"
+  }
 }
 nodes {
   idRef {
@@ -328,6 +332,9 @@ nodes {
     nextNodeIndex: 45
   }
   nodeType: ConversationNodeType_Simple
+  sourceInSceneRef {
+    id: "536c5f88366236d41e0027f2"
+  }
   actions {
     ops {
       functionName: "Set Variable (bool)"
@@ -613,6 +620,34 @@ nodes {
               int_value: 0
             }
           }
+        }
+      }
+      ops {
+        functionName: "Comparison (int)"
+        args {
+          call_value {
+            functionName: "Get Story Variable (int)"
+            args {
+              string_value: "531d26a736623648180018bf"
+            }
+            args {
+              string_value: "Global_numMissionsCompleted"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 2
+            }
+          }
+        }
+        args {
+          int_value: 2
         }
       }
     }
@@ -1046,6 +1081,34 @@ nodes {
             }
             args {
               int_value: 0
+            }
+          }
+        }
+        args {
+          int_value: 0
+        }
+      }
+      ops {
+        functionName: "Comparison (int)"
+        args {
+          call_value {
+            functionName: "Get Story Variable (int)"
+            args {
+              string_value: "531d26a736623648180018bf"
+            }
+            args {
+              string_value: "Global_numMissionsCompleted"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 2
             }
           }
         }
@@ -1492,7 +1555,7 @@ nodes {
     id: "536bf8c3643431b502b6a060"
   }
   index: 12
-  text: "You should ask around the base if you haven\342\200\231t already. I\342\200\231m not as familiar with the central valley as I am with San Francisco, but I\342\200\231m sure that there are opportunities out there to strengthen your position.\n"
+  text: "You should ask around the base if you haven\342\200\231t already. I\342\200\231m not as familiar with the Central Valley as I am with San Francisco, but I\342\200\231m sure that there are opportunities out there to strengthen your position.\n"
   branches {
     responseText: ""
     nextNodeIndex: 3
@@ -1664,7 +1727,7 @@ nodes {
     id: "536bfb20643431b502b6a107"
   }
   index: 17
-  text: "Hailey has been very helpful. I\342\200\231ve been making use of her services recently as my personal decker here in San Francisco. If you\342\200\231re looking for a skilled decker to join your team, I recommend making the trip out here to pick her up."
+  text: "Hailey has been very helpful. I\342\200\231ve hired her as my personal decker here in San Francisco. If you\342\200\231re looking for a skilled decker to join your team, I recommend making the trip out here to pick her up."
   branches {
     responseText: ""
     nextNodeIndex: 3
@@ -1707,7 +1770,46 @@ nodes {
   text: "Why, yes, I am. Antumbra Enterprises is a smaller portion of my portfolio these days, but I still enjoy putting together songs and trideos.\n\nActually, come to think of it, this could be a great branding opportunity. We could both make some money, and you\342\200\231d increase your stature for the war effort. What do you say? Are you interested in becoming a trideo star?"
   branches {
     responseText: "I\342\200\231d like to focus on my music. Maybe some sort of concert trid."
+    conditions {
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Story Variable (bool)"
+            args {
+              string_value: "531d26a736623648180018bf"
+            }
+            args {
+              string_value: "a2_recordedMusic"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+      }
+    }
     nextNodeIndex: 19
+    hideIfUnavailable: true
   }
   branches {
     responseText: "I\342\200\231ve always been partial to dramas."
@@ -1786,7 +1888,7 @@ nodes {
     id: "536bfc8a643431b502b6a119"
   }
   index: 20
-  text: "Let\342\200\231s see\342\200\246 I\342\200\231ll be able to handle production, marketing, and distribution from my headquarters in San Francisco. To get the best bang for our buck, though, we should actually shoot the program on site in Redding. If nothing else, it will help put your base on the map."
+  text: "Let\342\200\231s see\342\200\246 I\342\200\231ll be able to handle production, marketing, and distribution from my headquarters in Eclipse. To get the best bang for our buck, though, we should actually shoot the program on site in Redding. If nothing else, it will help put your base on the map."
   branches {
     responseText: ""
     nextNodeIndex: 21
@@ -2981,6 +3083,9 @@ nodes {
     nextNodeIndex: -1
   }
   nodeType: ConversationNodeType_Simple
+  sourceInSceneRef {
+    id: "536c5f88366236d41e0027f2"
+  }
 }
 nodes {
   idRef {
@@ -2993,6 +3098,9 @@ nodes {
     nextNodeIndex: 53
   }
   nodeType: ConversationNodeType_Simple
+  sourceInSceneRef {
+    id: "536c5f88366236d41e0027f2"
+  }
 }
 nodes {
   idRef {
@@ -3005,6 +3113,9 @@ nodes {
     nextNodeIndex: 54
   }
   nodeType: ConversationNodeType_Simple
+  sourceInSceneRef {
+    id: "536c5ffd366236d41e0027f3"
+  }
 }
 nodes {
   idRef {
@@ -3017,6 +3128,9 @@ nodes {
     nextNodeIndex: 55
   }
   nodeType: ConversationNodeType_Simple
+  sourceInSceneRef {
+    id: "536c5ffd366236d41e0027f3"
+  }
 }
 nodes {
   idRef {
@@ -3025,6 +3139,9 @@ nodes {
   index: 55
   text: "D0 TH3S3 TH1NG$, @ND W3 W1LL KN0W Y0U @$ @ FR13ND @ND H3LP Y0UR F1GHT @G@1N$T T1R. G00D LUCK."
   nodeType: ConversationNodeType_Simple
+  sourceInSceneRef {
+    id: "536c5ffd366236d41e0027f3"
+  }
   actions {
     ops {
       functionName: "Set Variable (int)"
@@ -3057,6 +3174,9 @@ nodes {
     auxiliaryLink: true
   }
   nodeType: ConversationNodeType_Simple
+  sourceInSceneRef {
+    id: "536c5f88366236d41e0027f2"
+  }
 }
 nodes {
   idRef {
@@ -3070,6 +3190,9 @@ nodes {
     auxiliaryLink: true
   }
   nodeType: ConversationNodeType_Simple
+  sourceInSceneRef {
+    id: "536c5ffd366236d41e0027f3"
+  }
 }
 nodes {
   idRef {
@@ -3083,6 +3206,9 @@ nodes {
     auxiliaryLink: true
   }
   nodeType: ConversationNodeType_Simple
+  sourceInSceneRef {
+    id: "536c5f88366236d41e0027f2"
+  }
   actions {
     ops {
       functionName: "Remove Nuyen"
@@ -3099,6 +3225,9 @@ nodes {
   index: 59
   text: "TH@NK Y0U. Y0U @R3 @ TRU3 FR13ND 0F TH3 P30PL3. W3 H@V3 H@CK3D S@1T0\342\200\231$ SH1PP1NG C0MPUT3R @ND @R3 $3ND1NG H1$ $UPPL13$ T0 Y0U. U$3 TH3M W3LL 1N Y0UR F1GHT @G@1N$T T1R. TH3 P30PL3 W1LL R1$3."
   nodeType: ConversationNodeType_Simple
+  sourceInSceneRef {
+    id: "536c5ffd366236d41e0027f3"
+  }
   actions {
     ops {
       functionName: "Remove Item from Actor"

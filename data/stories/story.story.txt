@@ -625,13 +625,13 @@ variables {
 }
 variables {
   name: "Redding_Convo_Hailey_SFEvents"
-  typeName: "int"
+  typeName: "bool"
   defaultValue {
-    int_value: 0
+    bool_value: false
     variableref_value {
       scope: TsVariableScope_Story
       name: "Redding_Convo_Hailey_SFEvents"
-      typeName: "int"
+      typeName: "bool"
     }
   }
 }

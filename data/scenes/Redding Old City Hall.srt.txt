@@ -498,6 +498,178 @@ triggers {
   }
   is_oneshot: true
 }
+triggers {
+  name: "Set Animations"
+  events {
+    ops {
+      functionName: "On Map Start"
+    }
+  }
+  conditions {
+  }
+  actions {
+    ops {
+      functionName: "Set Animation State Of Actor To Animation Modifier"
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "AnimationState"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (Actor)"
+          args {
+            string_value: "536b159a366236e0040077df"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (AnimationModifiers)"
+          args {
+            string_value: "repairing"
+          }
+          args {
+            string_value: "repairing"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Animation State Of Actor To Animation Modifier"
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "AnimationState"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (Actor)"
+          args {
+            string_value: "536b0d3a366236e0040077d5"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (AnimationModifiers)"
+          args {
+            string_value: "spiritTalk"
+          }
+          args {
+            string_value: "spiritTalk"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Actor Wander Range"
+      args {
+        call_value {
+          functionName: "All Actors With Tag"
+          args {
+            call_value {
+              functionName: "Get Map Item (SenseTagList)"
+              args {
+                string_value: "isWanderer"
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Preset Value (int)"
+              args {
+                string_value: "AllOrAny"
+              }
+              args {
+                int_value: 0
+              }
+            }
+          }
+        }
+      }
+      args {
+        int_value: 20
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "536c5de5366236d41e0027ee"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
+triggers {
+  name: "Use Computer"
+  events {
+    ops {
+      functionName: "On Item Interaction"
+      args {
+        call_value {
+          functionName: "Get Map Item (InteractableObject)"
+          args {
+            string_value: "536c5f37366236d41e0027f0"
+          }
+        }
+      }
+    }
+  }
+  conditions {
+  }
+  actions {
+    ops {
+      functionName: "Start Conversation"
+      args {
+        call_value {
+          functionName: "Get Map Item (Conversation)"
+          args {
+            string_value: "536bee59643431b502b69ee2"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (Actor)"
+          args {
+            string_value: "536b159a366236e0040077dd"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "536c5f42366236d41e0027f1"
+  }
+  elseActions {
+  }
+  is_oneshot: false
+}
 regions {
   name: "Camera"
   position {
@@ -646,6 +818,8 @@ characters {
   }
   orientation: ORIENTATION_S
   GeneralTags: "isLazarus"
+  GeneralTags: "isDog"
+  GeneralTags: "isWanderer"
   displayName: "Lazarus"
   idRef {
     id: "536b0d3a366236e0040077d3"
@@ -719,6 +893,8 @@ characters {
     team_id: "Civilians"
     char_name: "Lazarus"
     GeneralTags: "isLazarus"
+    GeneralTags: "isDog"
+    GeneralTags: "isWanderer"
     enabled_at_start: true
     pc_spawn_number: -1
     unkillable: true
@@ -741,6 +917,8 @@ characters {
   }
   orientation: ORIENTATION_W
   GeneralTags: "isBummer"
+  GeneralTags: "isDog"
+  GeneralTags: "isWanderer"
   displayName: "Bummer"
   idRef {
     id: "536b0d3a366236e0040077d4"
@@ -816,6 +994,8 @@ characters {
     team_id: "Civilians"
     char_name: "Bummer"
     GeneralTags: "isBummer"
+    GeneralTags: "isDog"
+    GeneralTags: "isWanderer"
     enabled_at_start: true
     pc_spawn_number: -1
     unkillable: true
@@ -1171,9 +1351,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -70
+    x: -64
     y: 0
-    z: 12
+    z: 13
   }
   orientation: ORIENTATION_N
   displayName: "Hailey"
@@ -1300,6 +1480,490 @@ characters {
     }
     portrait_code_override: "s6h1c11"
     karma: 83
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -81
+    y: 0
+    z: 5
+  }
+  orientation: ORIENTATION_S
+  displayName: "Elorn"
+  idRef {
+    id: "536c40ed366236d41e0026a7"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Seattle:Gangers/ElfMaleGangerDreads"
+    character_sheet_id: "AGChemie_Cyberzombie_Lv1"
+    character_mod {
+      stats {
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        hp: 0
+        ap: 0
+        armor: 0
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+        ranged_combat: 0
+        close_combat: 0
+        dodge: 0
+      }
+      specializations {
+        rifle: 0
+        edged: 0
+        unarmed: 0
+      }
+      vulnerabilities {
+      }
+    }
+    team_id: "Civilians"
+    char_name: "Elorn"
+    pc_spawn_number: -1
+    portrait {
+      filename: "pc_elfmale_06_dreads"
+    }
+    portrait_code_override: "s1h1c4b0t0"
+    karma: 177
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -77
+    y: 0
+    z: -6
+  }
+  orientation: ORIENTATION_S
+  displayName: "Hrafna"
+  idRef {
+    id: "536c4409366236d41e0026a8"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Seattle:Core/OrkFemale"
+    character_sheet_id: "AGChemie_Cyberzombie_Lv1"
+    character_mod {
+      stats {
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        hp: 0
+        ap: 0
+        armor: 0
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+        ranged_combat: 0
+        close_combat: 0
+        dodge: 0
+      }
+      specializations {
+        rifle: 0
+        edged: 0
+        unarmed: 0
+      }
+      vulnerabilities {
+      }
+    }
+    equipment {
+      prefab_name: "ShamanSkirted"
+    }
+    team_id: "Civilians"
+    char_name: "Hrafna"
+    pc_spawn_number: -1
+    portrait {
+      filename: "pc_orkfemale_06a"
+    }
+    portrait_code_override: "s2h7c6b0t0"
+    karma: 177
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -56
+    y: 0
+    z: -4
+  }
+  orientation: ORIENTATION_S
+  displayName: "Amelia"
+  idRef {
+    id: "536c4ab7366236d41e0026ab"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    conversationPoint {
+      conversationID: "52251d073662369c1a001bd1"
+      turnToFace: true
+    }
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Story/WeaponsDealer"
+    character_sheet_id: "BaseCivilian"
+    equipment_sheet_id: "Merchant_Weapons_Mid"
+    equipment_sheet_id: "Merchant_Outfit_Med"
+    character_mod {
+      stats {
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        hp: 0
+        ap: 0
+        morale: 24
+        discipline: 0
+        awareness: 24
+        perception: 0
+        authority: 0
+        protect_tether_range: 5
+        move_speed: 6
+      }
+      skills {
+      }
+      specializations {
+      }
+      archetypeName: "Non-Combatant"
+      vulnerabilities {
+      }
+    }
+    team_id: "Civilians"
+    char_name: "Amelia"
+    pc_spawn_number: -1
+    portrait {
+      filename: "npc_humanfemale_weaponstechdealer"
+    }
+    karma: 6
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -58
+    y: 0
+    z: -25
+  }
+  orientation: ORIENTATION_W
+  displayName: "The Dave"
+  idRef {
+    id: "536c4ab7366236d41e0026ac"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    conversationPoint {
+      conversationID: "522518733662369c1a001b45"
+      turnToFace: true
+    }
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Core/TrollMale"
+    character_sheet_id: "BaseCivilian"
+    equipment_sheet_id: "Merchant_Tech_Mid"
+    equipment_sheet_id: "Merchant_Doctor_Mid"
+    character_mod {
+      stats {
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        hp: 0
+        ap: 0
+        morale: 24
+        awareness: 24
+        protect_tether_range: 5
+        move_speed: 6
+      }
+      skills {
+      }
+      specializations {
+      }
+      archetypeName: "Non-Combatant"
+    }
+    equipment {
+      prefab_name: "RiggerTrenchcoat"
+    }
+    team_id: "Civilians"
+    char_name: "The Dave"
+    pc_spawn_number: -1
+    portrait {
+      filename: "backer_trollmale_chriskluwe_sympathyplan"
+    }
+    portrait_code_override: "s6h4c6b5h10"
+    karma: 6
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -41
+    y: 0
+    z: -2
+  }
+  orientation: ORIENTATION_S
+  displayName: "Tomas"
+  idRef {
+    id: "536c4e8c366236d41e00278f"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Seattle:Core/TrollMale"
+    character_sheet_id: "AGChemie_Cyberzombie_Lv1"
+    character_mod {
+      stats {
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        hp: 0
+        ap: 0
+        armor: 0
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+        ranged_combat: 0
+        close_combat: 0
+        dodge: 0
+      }
+      specializations {
+        rifle: 0
+        edged: 0
+        unarmed: 0
+      }
+      vulnerabilities {
+      }
+    }
+    equipment {
+      prefab_name: "SamuraiMilitary"
+    }
+    team_id: "Civilians"
+    char_name: "Tomas"
+    pc_spawn_number: -1
+    portrait {
+      filename: "backerpc_trollmale_isaacnagel_bryanlitelightner"
+    }
+    portrait_code_override: "s6h0c6b0t13"
+    karma: 177
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -60
+    y: 0
+    z: -2
+  }
+  orientation: ORIENTATION_S
+  displayName: "Selene"
+  idRef {
+    id: "536c5182366236d41e002790"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Seattle:Core/ElfFemale"
+    character_sheet_id: "AGChemie_Cyberzombie_Lv1"
+    character_mod {
+      stats {
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        hp: 0
+        ap: 0
+        armor: 0
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+        ranged_combat: 0
+        close_combat: 0
+        dodge: 0
+      }
+      specializations {
+        rifle: 0
+        edged: 0
+        unarmed: 0
+      }
+      vulnerabilities {
+      }
+    }
+    equipment {
+      prefab_name: "RiggerFlightsuit"
+    }
+    team_id: "Civilians"
+    char_name: "Selene"
+    pc_spawn_number: -1
+    portrait {
+      filename: "pc_elffemale_02a_samurai"
+    }
+    portrait_code_override: "s4h2c3b0t0"
+    karma: 177
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -57
+    y: 0
+    z: -25
+  }
+  orientation: ORIENTATION_S
+  displayName: "Terminal"
+  idRef {
+    id: "536c5f88366236d41e0027f2"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Seattle:Core/TrollMale"
+    character_sheet_id: "AGChemie_Cyberzombie_Lv1"
+    character_mod {
+      stats {
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        hp: 0
+        ap: 0
+        armor: 0
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+        ranged_combat: 0
+        close_combat: 0
+        dodge: 0
+      }
+      specializations {
+        rifle: 0
+        edged: 0
+        unarmed: 0
+      }
+      vulnerabilities {
+      }
+    }
+    team_id: "Civilians"
+    char_name: "Terminal"
+    pc_spawn_number: -1
+    portrait {
+      filename: "generic_esp_kamikaze"
+    }
+    karma: 177
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -58
+    y: 0
+    z: -24
+  }
+  orientation: ORIENTATION_S
+  displayName: "People\'s University"
+  idRef {
+    id: "536c5ffd366236d41e0027f3"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Seattle:Core/TrollMale"
+    character_sheet_id: "AGChemie_Cyberzombie_Lv1"
+    character_mod {
+      stats {
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        hp: 0
+        ap: 0
+        armor: 0
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+        ranged_combat: 0
+        close_combat: 0
+        dodge: 0
+      }
+      specializations {
+        rifle: 0
+        edged: 0
+        unarmed: 0
+      }
+      vulnerabilities {
+      }
+    }
+    team_id: "Civilians"
+    char_name: "TH3 P30PL3\'$ UN1V3R$1TY"
+    pc_spawn_number: -1
+    portrait {
+      filename: "pc_orkmale_00b"
+    }
+    karma: 177
   }
 }
 variables {

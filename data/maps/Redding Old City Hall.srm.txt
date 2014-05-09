@@ -6983,3 +6983,91 @@ props {
   }
   lod: 0
 }
+props {
+  name: "secretLab_wall_4x4fill"
+  gridPoint {
+    x: -46
+    y: 0
+    z: 18
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "secretLab_wall_4x4fill"
+  gridPoint {
+    x: -47
+    y: 0
+    z: 18
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "536c4b3e366236d41e0026ad"
+  }
+  lod: 0
+}
+props {
+  name: "secretLab_wall_4x4fill"
+  gridPoint {
+    x: -58
+    y: 0
+    z: 18
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "536c4b41366236d41e0026ae"
+  }
+  lod: 0
+}
+props {
+  name: "secretLab_wall_4x4fill"
+  gridPoint {
+    x: -70
+    y: 0
+    z: 20
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "536c4b44366236d41e0026af"
+  }
+  lod: 0
+}
+props {
+  name: "factory_tech_cyberTerminal01"
+  gridPoint {
+    x: -71
+    y: 0
+    z: 8
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "haven_tech_missionComputer"
+  gridPoint {
+    x: -72
+    y: 0
+    z: 10
+  }
+  orientation: ORIENTATION_S
+  displayName: "Mission Computer"
+  idRef {
+    id: "536c5f37366236d41e0027f0"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    interactionIcon: InteractionIcon_Matrix
+  }
+  lod: 0
+}
+props {
+  name: "undergroundBase_tech_computerWorkstation01"
+  gridPoint {
+    x: -67
+    y: 0
+    z: 10
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}

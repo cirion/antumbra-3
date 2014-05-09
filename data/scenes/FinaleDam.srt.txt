@@ -1,80 +1,14 @@
-regions {
-  name: "Camera"
-  position {
-    x: -32
-    y: -59
-    width: 51
-    height: 118
-  }
-  enabledAtStart: true
-  is_camera_region: true
-  idRef {
-    id: "5366874d3662362409008236"
-  }
-  highlight_color {
-    r: 0
-    g: 0
-    b: 0
-    a: 1
-  }
-  visible_at_start: false
-  is_teleporter_region: false
-  directional_light_dir {
-    x: -0.5
-    y: -1
-    z: -0.75
-  }
-  directional_light_color {
-    r: 0.50196081
-    g: 0.50196081
-    b: 0.50196081
-    a: 1
-  }
-  ambient_light_color {
-    r: 0.50196081
-    g: 0.50196081
-    b: 0.50196081
-    a: 1
-  }
-  ambience_template: ""
-  combat_music: ""
-  default_music: ""
-  loop_combat_music: true
-  loop_default_music: false
-}
-characters {
-  name: "system_spawner_playerSpawner"
-  gridPoint {
-    x: -1
-    y: 0
-    z: 54
-  }
-  orientation: ORIENTATION_W
-  idRef {
-    id: "536687713662362409008237"
-  }
-  lod: 0
-  character_instance {
-    character_mod {
-      archetypeName: "Player"
-    }
-    team_id: "Shadowrunners"
-    char_name: "New Actor"
-    enabled_at_start: true
-    pc_spawn_number: 0
-  }
-}
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -60
+    x: -1
     y: 0
-    z: -59
+    z: -33
   }
   orientation: ORIENTATION_S
   displayName: "Tabitha"
   idRef {
-    id: "536c591d366236d41e002791"
+    id: "536c5c82366236d41e0027ab"
   }
   interactionRoot {
     isEnabled: true
@@ -133,19 +67,26 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -3
+    x: -1
     y: 0
-    z: -33
+    z: -35
   }
   orientation: ORIENTATION_S
-  GeneralTags: "isBullion"
-  displayName: "Ted Bullion"
+  displayName: "Hans Brackhaus"
   idRef {
-    id: "536c5969366236d41e0027a9"
+    id: "536c5c82366236d41e0027ac"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    conversationPoint {
+      conversationID: "532f0ce0366236840d003d6f"
+      turnToFace: false
+    }
   }
   lod: 0
   character_instance {
-    prefab_name: "Seattle:Core/HumanMale"
+    prefab_name: "Seattle:Story/HansBrackhaus"
     character_sheet_id: "AGChemie_Cyberzombie_Lv1"
     character_mod {
       stats {
@@ -180,17 +121,78 @@ characters {
       vulnerabilities {
       }
     }
-    equipment {
-      prefab_name: "SamuraiBunnyMaskless"
-    }
     team_id: "Civilians"
-    char_name: "Ted Bullion"
-    GeneralTags: "isBullion"
+    char_name: "Lofwyr"
     pc_spawn_number: -1
     portrait {
-      filename: "backer_humanmale_randynickel_snick"
+      filename: "npc_humanmale_hansbrackhaus"
     }
-    portrait_code_override: "s5h0c6b4c4t0"
+    karma: 177
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -1
+    y: 0
+    z: -37
+  }
+  orientation: ORIENTATION_S
+  displayName: "Tophet"
+  idRef {
+    id: "536c5c82366236d41e0027ad"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    conversationPoint {
+      conversationID: "532f0ce0366236840d003d6f"
+      turnToFace: false
+    }
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Seattle:Spirit/SpiritFire"
+    character_sheet_id: "AGChemie_Cyberzombie_Lv1"
+    character_mod {
+      stats {
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        hp: 0
+        ap: 0
+        armor: 0
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+        ranged_combat: 0
+        close_combat: 0
+        dodge: 0
+      }
+      specializations {
+        rifle: 0
+        edged: 0
+        unarmed: 0
+      }
+      vulnerabilities {
+      }
+    }
+    team_id: "Civilians"
+    char_name: "Tophet"
+    pc_spawn_number: -1
+    portrait {
+      filename: "generic_spirit_fire"
+    }
     karma: 177
   }
 }
@@ -271,12 +273,12 @@ scene_hiring_prerequisites {
 }
 hiring_slot_count: 0
 hiring_minimum_karma: 0
-hiring_maximum_karma: 0
+hiring_maximum_karma: 25
 roster_overrides {
 }
 use_hiring_cost_warning: false
 hiring_average_cost: 99999
 override_hiring_average_cost: true
 show_equip_screen_on_scene_load: false
-can_move_outside_camera_regions: false
+can_move_outside_camera_regions: true
 can_start_before_triggers: true
