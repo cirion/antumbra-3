@@ -64,6 +64,172 @@ characters {
     pc_spawn_number: 0
   }
 }
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -35
+    y: 0
+    z: -66
+  }
+  orientation: ORIENTATION_W
+  displayName: "Orion"
+  idRef {
+    id: "536d4f796434317b17cbac7f"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    conversationPoint {
+      conversationID: "5227e222366236a018006791"
+      turnToFace: true
+    }
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Core/OrkMale"
+    character_sheet_id: "BaseCivilian"
+    character_mod {
+      stats {
+        body: 5
+        quickness: 4
+        strength: 1
+        charisma: 1
+        intelligence: 1
+        willpower: 1
+        essence: 0
+        hp: 8
+        ap: 0
+        armor: 5
+        morale: 24
+        discipline: 0
+        awareness: 24
+        perception: 0
+        authority: 0
+        protect_tether_range: 5
+        move_speed: 0
+      }
+      skills {
+        ranged_combat: 4
+        close_combat: 2
+        throwing_weapons: 2
+        dodge: 3
+        etiquette_gang: 0
+        etiquette_academic: 0
+      }
+      specializations {
+        rifle: 4
+      }
+    }
+    equipment {
+      prefab_name: "AdeptStreetMonk"
+    }
+    equipment {
+      prefab_name: "HealthPack_med"
+    }
+    equipment {
+      prefab_name: "HealthPack_med"
+    }
+    equipment {
+      prefab_name: "Grenade 2 (Frag)"
+    }
+    equipment {
+      prefab_name: "Grenade 2 (Frag)"
+    }
+    equipment {
+      prefab_name: "Grenade 2 (Flash)"
+    }
+    equipment {
+      prefab_name: "Sword 1 Machete"
+    }
+    equipment {
+      prefab_name: "AR 2 HK G12A3z (Smartlink)"
+    }
+    team_id: "Civilians"
+    char_name: "Orion"
+    pc_spawn_number: -1
+    cyberware_jack: "Datajack"
+    cyberware_right_leg: "Obvious Cyberleg"
+    portrait {
+      filename: "pc_orkmale_01c_soldier"
+    }
+    portrait_code_override: "s7h5c4b8"
+    karma: 80
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -20
+    y: 0
+    z: -59
+  }
+  orientation: ORIENTATION_S
+  displayName: "Tophet"
+  idRef {
+    id: "536d4fa66434317b17cbac80"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    conversationPoint {
+      conversationID: "532f0ce0366236840d003d6f"
+      turnToFace: false
+    }
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Seattle:Spirit/SpiritFire"
+    character_sheet_id: "AGChemie_Cyberzombie_Lv1"
+    character_mod {
+      stats {
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        hp: 0
+        ap: 0
+        armor: 0
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+        ranged_combat: 0
+        close_combat: 0
+        dodge: 0
+      }
+      specializations {
+        rifle: 0
+        edged: 0
+        unarmed: 0
+      }
+      vulnerabilities {
+      }
+    }
+    team_id: "Civilians"
+    char_name: "Tophet"
+    pc_spawn_number: -1
+    portrait {
+      filename: "generic_spirit_fire"
+    }
+    karma: 177
+  }
+}
+variables {
+  bool_value: false
+  variableref_value {
+    scope: TsVariableScope_Scene
+    name: "RescuedChildrenInTime"
+    typeName: "bool"
+  }
+}
 worldMapLocation {
   filename: ""
   location {
@@ -73,9 +239,9 @@ worldMapLocation {
 }
 mapName: "Crypt"
 parentStory: ""
-scene_title: "New Scene"
+scene_title: "The Crypt"
 scene_subtitle: ""
-scene_synopsis: ""
+scene_synopsis: "The deceptively small entrance provides entrance to a grand crypt. You walk down, and down, and down. The hairs on the back of your neck begin to stiffen as you hear faint sobs come from far down the corridors\342\200\246\n"
 scene_image: ""
 scene_continue_button_skip: false
 scene_restore_runner_health: false
@@ -141,12 +307,12 @@ scene_hiring_prerequisites {
 }
 hiring_slot_count: 0
 hiring_minimum_karma: 0
-hiring_maximum_karma: 25
+hiring_maximum_karma: 0
 roster_overrides {
 }
 use_hiring_cost_warning: false
 hiring_average_cost: 99999
 override_hiring_average_cost: true
 show_equip_screen_on_scene_load: false
-can_move_outside_camera_regions: true
+can_move_outside_camera_regions: false
 can_start_before_triggers: true

@@ -64,6 +64,200 @@ characters {
     pc_spawn_number: 0
   }
 }
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: 15
+    y: 0
+    z: -15
+  }
+  orientation: ORIENTATION_S
+  displayName: "Ranger Rick"
+  idRef {
+    id: "536d5ffa6434317b17cbaec5"
+  }
+  lod: 0
+  character_instance {
+    team_id: "Civilians"
+    char_name: "Rick"
+    pc_spawn_number: -1
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: 15
+    y: 0
+    z: -17
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "isBullion"
+  displayName: "Claude Bullion"
+  idRef {
+    id: "536d60ab6434317b17cbaec6"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Seattle:Core/HumanMale"
+    character_sheet_id: "AGChemie_Cyberzombie_Lv1"
+    character_mod {
+      stats {
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        hp: 0
+        ap: 0
+        armor: 0
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+        ranged_combat: 0
+        close_combat: 0
+        dodge: 0
+      }
+      specializations {
+        rifle: 0
+        edged: 0
+        unarmed: 0
+      }
+      vulnerabilities {
+      }
+    }
+    equipment {
+      prefab_name: "SamuraiBunnyMaskless"
+    }
+    team_id: "Civilians"
+    char_name: "Claude Bullion"
+    GeneralTags: "isBullion"
+    pc_spawn_number: -1
+    portrait {
+      filename: "backer_humanmale_randynickel_snick"
+    }
+    portrait_code_override: "s5h0c6b4c4t0"
+    karma: 177
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: 15
+    y: 0
+    z: -19
+  }
+  orientation: ORIENTATION_S
+  displayName: "Water Gang Leader"
+  idRef {
+    id: "536d60af6434317b17cbaec7"
+  }
+  lod: 0
+  character_instance {
+    team_id: "Civilians"
+    char_name: "Water Gang Leader"
+    pc_spawn_number: -1
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: 15
+    y: 0
+    z: -13
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "isDorbi"
+  displayName: "Dorbi"
+  idRef {
+    id: "536d60fe6434317b17cbaec8"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    conversationPoint {
+      conversationID: "532f0ce0366236840d003d6f"
+      turnToFace: true
+    }
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Seattle:Core/DwarfFemale"
+    character_sheet_id: "AGChemie_Cyberzombie_Lv1"
+    character_mod {
+      stats {
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        hp: 0
+        ap: 0
+        armor: 0
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+        ranged_combat: 0
+        close_combat: 0
+        dodge: 0
+      }
+      specializations {
+        rifle: 0
+        edged: 0
+        unarmed: 0
+      }
+      vulnerabilities {
+      }
+    }
+    equipment {
+      prefab_name: "RiggerTrenchcoat"
+    }
+    team_id: "Civilians"
+    char_name: "Dorbi"
+    GeneralTags: "isDorbi"
+    enabled_at_start: true
+    pc_spawn_number: -1
+    portrait {
+      filename: "pc_dwarffemale_06"
+    }
+    portrait_code_override: "s4h4c11b0t0"
+    karma: 177
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: 13
+    y: 0
+    z: -19
+  }
+  orientation: ORIENTATION_S
+  displayName: "Commlink"
+  idRef {
+    id: "536d61a36434317b17cbaee4"
+  }
+  lod: 0
+  character_instance {
+    team_id: "Civilians"
+    char_name: "Commlink"
+    pc_spawn_number: -1
+  }
+}
 worldMapLocation {
   filename: ""
   location {
@@ -130,8 +324,6 @@ scene_dimensions {
   dimension_name: "Matrix"
   initial_alarm_state: 20
   turns_per_round: 3
-}
-character_roster {
 }
 show_hiring_screen_on_scene_load: false
 scene_hiring_prerequisites {
