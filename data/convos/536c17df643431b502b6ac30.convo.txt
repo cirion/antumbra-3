@@ -483,13 +483,37 @@ nodes {
     nextNodeIndex: 13
   }
   nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "talkedToHailey"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
 }
 nodes {
   idRef {
     id: "536c18a7643431b502b6ac48"
   }
   index: 2
-  text: "Oh, I\342\200\231m just upgrading your commlink. It was built on some old milspec protocols, but I recently got some new code from People\342\200\231s University that should make it hella hard to decrypt."
+  text: "Oh, I\342\200\231m just upgrading your commlink. It was built on old milspec protocols, but I recently got some new code from People\342\200\231s University that should make it hella hard to decrypt."
   branches {
     responseText: ""
     nextNodeIndex: 3
@@ -528,7 +552,7 @@ nodes {
     id: "536c18d8643431b502b6ac4f"
   }
   index: 3
-  text: "Of course, if anyone really wants to tap it and has enough hardware, they\342\200\231ll eventually be able to crack your codes, but this should help prevent random hackers from listening in on your top-secret battle planning strategy sessions. Or learning about what stimsense packs you\342\200\231ve been downloading.\n\n{{GM}}Cough.{{/GM}}"
+  text: "Of course, if anyone really wants to tap it and has enough hardware, they\342\200\231ll eventually be able to crack your codes, but this should help prevent random hackers from listening in on your top-secret battle planning strategy sessions. \n\nOr learning about what stimsense packs you\342\200\231ve been downloading.\n\n{{GM}}Cough.{{/GM}}"
   branches {
     responseText: ""
     nextNodeIndex: 1
@@ -737,7 +761,7 @@ nodes {
     id: "536c4e05366236d41e00275b"
   }
   index: 11
-  text: "Hm\342\200\246 you could try contacting the People\342\200\231s University, I suppose. A bunch of my friends from Berkeley started it a few years back. It\342\200\231s like a big, decentralized peer-to-peer school, with classes both in the matrix and in meatspace. They\342\200\231re really friendly to metahumans, and would probably like to help out with your project here."
+  text: "Hm\342\200\246 you could try contacting the People\342\200\231s University, I suppose. \n\nA bunch of my friends from Berkeley started it a few years back. It\342\200\231s like a big, decentralized peer-to-peer school, with classes both in the matrix and in meatspace. \n\nThey\342\200\231re really friendly to metahumans, and would probably like to help out with your project here."
   branches {
     responseText: ""
     nextNodeIndex: 12

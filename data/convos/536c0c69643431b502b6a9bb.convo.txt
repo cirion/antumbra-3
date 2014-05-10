@@ -292,6 +292,34 @@ nodes {
           }
         }
       }
+      ops {
+        functionName: "Comparison (int)"
+        args {
+          call_value {
+            functionName: "Get Story Variable (int)"
+            args {
+              string_value: "531d26a736623648180018bf"
+            }
+            args {
+              string_value: "Global_numMissionsCompleted"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 2
+            }
+          }
+        }
+        args {
+          int_value: 1
+        }
+      }
     }
     nextNodeIndex: 7
     hideIfUnavailable: true
@@ -420,6 +448,7 @@ nodes {
       }
     }
     nextNodeIndex: 11
+    hideIfUnavailable: true
   }
   branches {
     responseText: "{{GM}}Leave.{{/GM}}"
@@ -523,7 +552,7 @@ nodes {
     id: "536c0e2c643431b502b6a9e1"
   }
   index: 5
-  text: "I\342\200\231ve been studying implantation techniques, too, and hope to start a business as a street doc. I\342\200\231m not ready quite yet, but should be in the near future, so save your nuyen if you\342\200\231re planning to have work done.\n"
+  text: "I\342\200\231ve been studying implantation techniques, too, and hope to start a business as a street doc. \n\nI\342\200\231m not ready quite yet, but should be in the near future, so save your nuyen if you\342\200\231re planning to have work done.\n"
   branches {
     responseText: ""
     nextNodeIndex: 1
@@ -576,9 +605,9 @@ nodes {
     id: "536c0fc3643431b502b6aa19"
   }
   index: 7
-  text: ""
+  text: "Well, Kali remembered me from our time together in Antumbra, and I guess she was impressed enough by my work to front me some startup capital. She has strong connections with Mitsuhama, and was able to send some surplus gear my way.\n\nI\342\200\231m pretty self-sustaining now, and am cutting deals with local gangs to get more supplies. Still, Kali continues to offer good advice, and is earning her cut of my profits."
   branches {
-    responseText: "Well, Kali remembered me from our time together in Antumbra, and I guess she was impressed enough by my work to front me some startup capital. She has strong connections with Mitsuhama, and was able to send some surplus gear my way.\n\nI\342\200\231m pretty self-sustaining now, and am cutting deals with local gangs to get more supplies. Still, Kali continues to offer good advice, and is earning her cut of my profits."
+    responseText: ""
     nextNodeIndex: 1
     auxiliaryLink: true
   }
@@ -668,7 +697,7 @@ nodes {
     id: "536c107a643431b502b6aa4a"
   }
   index: 10
-  text: ""
+  text: "There. Those were my supplies."
   branches {
     responseText: ""
     nextNodeIndex: 1
@@ -691,7 +720,7 @@ nodes {
     id: "536c10c4643431b502b6aa4e"
   }
   index: 11
-  text: ""
+  text: "Right, then."
   branches {
     responseText: ""
     nextNodeIndex: 1
@@ -704,6 +733,46 @@ nodes {
       args {
         call_value {
           functionName: "Triggering Target Actor"
+        }
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "536dadcc366236081a00305e"
+  }
+  index: 12
+  text: "Hey. How\342\200\231s it going. \n\n{{GM}}The dwarf casts a long, disinterested stare in your direction.{{/GM}}\n\nI have some stuff here, if you\342\200\231re interested."
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (bool)"
+          args {
+            string_value: "531d26a736623648180018bf"
+          }
+          args {
+            string_value: "Redding_Convo_Horatio_Met"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
         }
       }
     }
@@ -749,4 +818,8 @@ roots {
     }
   }
   nextNodeIndex: 0
+}
+roots {
+  responseText: ""
+  nextNodeIndex: 12
 }

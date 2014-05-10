@@ -59,6 +59,34 @@ nodes {
           }
         }
       }
+      ops {
+        functionName: "Comparison (int)"
+        args {
+          call_value {
+            functionName: "Get Story Variable (int)"
+            args {
+              string_value: "531d26a736623648180018bf"
+            }
+            args {
+              string_value: "Global_numMissionsCompleted"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 2
+            }
+          }
+        }
+        args {
+          int_value: 0
+        }
+      }
     }
     nextNodeIndex: 2
     hideIfUnavailable: true
@@ -104,6 +132,34 @@ nodes {
               int_value: 0
             }
           }
+        }
+      }
+      ops {
+        functionName: "Comparison (int)"
+        args {
+          call_value {
+            functionName: "Get Story Variable (int)"
+            args {
+              string_value: "531d26a736623648180018bf"
+            }
+            args {
+              string_value: "Global_numMissionsCompleted"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 2
+            }
+          }
+        }
+        args {
+          int_value: 1
         }
       }
     }
@@ -229,7 +285,7 @@ nodes {
     id: "536c0b20643431b502b6a928"
   }
   index: 4
-  text: "Honey, war isn\342\200\231t a rumor, it\342\200\231s a certainty. Tir has dropped so much dough into its armaments that it can\342\200\231t afford not to go to war. They\342\200\231re still sore over getting driven back from Redding in 2037, and have spent the past sixteen years plotting how to reclaim that territory. They\342\200\231ll be sweeping in with overwhelming force. Come to think of it, it won\342\200\231t be a war at all. It\342\200\231ll be a slaughter."
+  text: "Honey, war isn\342\200\231t a rumor, it\342\200\231s a certainty. \n\nTir has dropped so much dough into its armaments that it can\342\200\231t afford not to go to war. They\342\200\231re still sore over getting driven back from Redding in 2037, and have spent the past sixteen years plotting how to reclaim that territory. They\342\200\231ll be sweeping in with overwhelming force. \n\nCome to think of it, it won\342\200\231t be a war at all. It\342\200\231ll be a slaughter."
   branches {
     responseText: ""
     nextNodeIndex: 5
@@ -302,7 +358,7 @@ nodes {
     id: "536c0b80643431b502b6a93a"
   }
   index: 7
-  text: "In the short term, absolutely! Look, even if Kali could somehow convince the megacorps and Saito and Sacramento to all join forces together, it would still be no match for a concerted assault from Tir. In reality, all of those players are looking out for their own interests and don\342\200\231t trust the others, so none of them are likely to commit any resources until it\342\200\231s too late."
+  text: "In the short term, absolutely! \n\nLook, even if Kali could somehow convince the megacorps and Saito and Sacramento to all join forces together, it would still be no match for a concerted assault from Tir. In reality, all of those players are looking out for their own interests and don\342\200\231t trust the others, so none of them are likely to commit any resources until it\342\200\231s too late."
   branches {
     responseText: ""
     nextNodeIndex: 8
@@ -327,7 +383,7 @@ nodes {
     id: "536c0bcb643431b502b6a963"
   }
   index: 9
-  text: ""
+  text: "Not bad, huh?"
   branches {
     responseText: ""
     nextNodeIndex: 1
@@ -341,7 +397,7 @@ nodes {
         call_value {
           functionName: "Get Map Item (Actor)"
           args {
-            string_value: "536b0cf7366236e0040077d2"
+            string_value: "536c4ab7366236d41e0026ab"
           }
         }
       }

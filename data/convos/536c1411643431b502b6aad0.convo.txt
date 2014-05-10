@@ -59,6 +59,34 @@ nodes {
           }
         }
       }
+      ops {
+        functionName: "Comparison (int)"
+        args {
+          call_value {
+            functionName: "Get Story Variable (int)"
+            args {
+              string_value: "531d26a736623648180018bf"
+            }
+            args {
+              string_value: "Global_numMissionsCompleted"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 2
+            }
+          }
+        }
+        args {
+          int_value: 0
+        }
+      }
     }
     nextNodeIndex: 2
     hideIfUnavailable: true
@@ -131,7 +159,7 @@ nodes {
           }
         }
         args {
-          int_value: 0
+          int_value: 1
         }
       }
     }
@@ -282,7 +310,7 @@ nodes {
     id: "536c152c643431b502b6aaeb"
   }
   index: 3
-  text: "War is a terrible thing, but capitalism doesn\342\200\231t stop when it approaches. Everybody does their part. Yes, you\342\200\231ll be doing more than the rest of us, but you still need to feed the machine."
+  text: "War is a terrible thing, but capitalism doesn\342\200\231t stop when it approaches. Everybody does their part. \n\nYes, you\342\200\231ll be doing more than the rest of us, but you still need to feed the machine."
   branches {
     responseText: ""
     nextNodeIndex: 1
@@ -487,6 +515,58 @@ nodes {
     auxiliaryLink: true
   }
   nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Set Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (int)"
+          args {
+            string_value: "531d26a736623648180018bf"
+          }
+          args {
+            string_value: "Global_MissionState_Dam"
+          }
+        }
+      }
+      args {
+        int_value: 1
+      }
+    }
+    ops {
+      functionName: "Set Goal Status"
+      args {
+        call_value {
+          functionName: "Get Map Item (Goal)"
+          args {
+            string_value: "Investigate the Native Californians at Shasta Dam"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "GoalStatus"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
 }
 nodes {
   idRef {
@@ -519,7 +599,7 @@ nodes {
     id: "536c174e643431b502b6ab9f"
   }
   index: 17
-  text: "The best you\342\200\231ll find in town, that\342\200\231s for sure! I mean, I can\342\200\231t compete against the merchants in Pueblo or Tir. The materials in those \342\200\234traditional\342\200\235 areas are way more potent. Still, my stuff will hold up just fine against Tir Tairngire assault, if that\342\200\231s what you\342\200\231re wondering."
+  text: "The best you\342\200\231ll find in town, that\342\200\231s for sure! I mean, I can\342\200\231t compete against the merchants in Pueblo or Tir. The materials in those \342\200\234traditional\342\200\235 areas are way more potent. \n\nStill, my stuff will hold up just fine against Tir Tairngire\'s assault, if that\342\200\231s what you\342\200\231re wondering."
   branches {
     responseText: ""
     nextNodeIndex: 1
@@ -559,7 +639,7 @@ nodes {
     id: "536c177e643431b502b6abed"
   }
   index: 18
-  text: ""
+  text: "Anything else?"
   branches {
     responseText: ""
     nextNodeIndex: 1

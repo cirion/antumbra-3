@@ -54,7 +54,7 @@ nodes {
               string_value: "bool"
             }
             args {
-              int_value: 1
+              int_value: 0
             }
           }
         }
@@ -273,6 +273,30 @@ nodes {
     nextNodeIndex: -1
   }
   nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "talkedToElorn"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
 }
 nodes {
   idRef {
@@ -505,7 +529,7 @@ nodes {
     id: "536cfd1a6434312f05639805"
   }
   index: 13
-  text: "That said, I don\342\200\231t really have much experience shooting actual, living people. At most I\342\200\231ll occasionally need to take down a hellhound or cockatrice. That fight was the biggest exposure to death I\342\200\231ve experienced. I don\342\200\231t think I\342\200\231m quite used to it yet\342\200\246 but I\342\200\231ll need to be if we\342\200\231re going to win against Tir."
+  text: "That said, I don\342\200\231t really have much experience shooting actual, living people. At most I\342\200\231ll occasionally need to take down a hellhound or cockatrice. \n\nThat fight at the dam was the closest exposure to death I\342\200\231ve experienced.  I don\342\200\231t think I\342\200\231m quite used to it yet\342\200\246 but I\342\200\231ll need to be if we\342\200\231re going to win against Tir."
   branches {
     responseText: ""
     nextNodeIndex: 1

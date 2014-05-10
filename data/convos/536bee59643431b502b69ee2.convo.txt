@@ -177,6 +177,197 @@ nodes {
     }
   }
   branches {
+    responseText: "Prepare a convoy to San Francisco."
+    conditions {
+      ops {
+        functionName: "Comparison (int)"
+        args {
+          call_value {
+            functionName: "Get Story Variable (int)"
+            args {
+              string_value: "531d26a736623648180018bf"
+            }
+            args {
+              string_value: "Global_MissionState_SF"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+        args {
+          int_value: 1
+        }
+      }
+    }
+    nextNodeIndex: 60
+    hideIfUnavailable: true
+  }
+  branches {
+    responseText: "Patrol Interstate 5."
+    conditions {
+      ops {
+        functionName: "Comparison (int)"
+        args {
+          call_value {
+            functionName: "Get Story Variable (int)"
+            args {
+              string_value: "531d26a736623648180018bf"
+            }
+            args {
+              string_value: "Global_MissionState_Five"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+        args {
+          int_value: 1
+        }
+      }
+    }
+    actions {
+      ops {
+        functionName: "Open Hiring Screen and Open Scene"
+        args {
+          call_value {
+            functionName: "Get Map Item (Scene)"
+            args {
+              string_value: "TheFive"
+            }
+          }
+        }
+        args {
+          string_value: "Are you ready to leave?"
+        }
+      }
+    }
+    nextNodeIndex: -1
+    hideIfUnavailable: true
+  }
+  branches {
+    responseText: "Lead a team to Shasta Dam."
+    conditions {
+      ops {
+        functionName: "Comparison (int)"
+        args {
+          call_value {
+            functionName: "Get Story Variable (int)"
+            args {
+              string_value: "531d26a736623648180018bf"
+            }
+            args {
+              string_value: "Global_MissionState_Dam"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+        args {
+          int_value: 1
+        }
+      }
+    }
+    nextNodeIndex: 61
+    hideIfUnavailable: true
+  }
+  branches {
+    responseText: "Travel to Colma."
+    conditions {
+      ops {
+        functionName: "Comparison (int)"
+        args {
+          call_value {
+            functionName: "Get Story Variable (int)"
+            args {
+              string_value: "531d26a736623648180018bf"
+            }
+            args {
+              string_value: "Global_MissionState_Colma"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+        args {
+          int_value: 1
+        }
+      }
+    }
+    nextNodeIndex: 62
+    hideIfUnavailable: true
+  }
+  branches {
+    responseText: "Conclude preparations for Tir Tairngire\'s attack."
+    conditions {
+      ops {
+        functionName: "Comparison (int)"
+        args {
+          call_value {
+            functionName: "Get Story Variable (int)"
+            args {
+              string_value: "531d26a736623648180018bf"
+            }
+            args {
+              string_value: "Global_numMissionsCompleted"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 2
+            }
+          }
+        }
+        args {
+          int_value: 2
+        }
+      }
+    }
+    nextNodeIndex: 63
+    hideIfUnavailable: true
+  }
+  branches {
     responseText: "Nothing."
     nextNodeIndex: -1
   }
@@ -2906,7 +3097,7 @@ nodes {
   index: 51
   text: "{{GM}}It\342\200\231s difficult to find any recent contact information. Much of their data has been censored from the Matrix, and the links you can find appear to be broken.{{/GM}}"
   branches {
-    responseText: "{{CC}}Decking: 5{{/CC}} {{GM}}Decrypt live communications related to the University.{{/GM}}\n"
+    responseText: "{{CC}}Decking: 5{{/CC}} {{GM}}Decrypt live communications related to the University.{{/GM}}"
     conditions {
       ops {
         functionName: "Compare Actor Skill"
@@ -3056,7 +3247,7 @@ nodes {
     nextNodeIndex: 57
   }
   branches {
-    responseText: "{{CC}}\302\245750{//CC}} {{GM}}Hire a decker to locate the University.{{/GM}}"
+    responseText: "{{CC}}\302\245750{/CC}} {{GM}}Hire a decker to locate the University.{{/GM}}"
     conditions {
       ops {
         functionName: "Evaluate Nuyen"
@@ -3122,7 +3313,7 @@ nodes {
     id: "536c0633643431b502b6a5f3"
   }
   index: 54
-  text: "1 0F N0RT0N\342\200\231$ @RMY F0UND A L1$T 0F S@IT0\342\200\231S SP13S. W3 L0$T C0NT@CT W1TH H1M IN COLMA. F1ND THE L1$T @ND R3TURN 1T T0 U$.\n\nTH3 N@T1V3 C@L1F0RN1@N$ PL@N T0 @TT@CK 0UR N3TW0RK. D3STR0Y TH31R $L3@Z3 PR0GR@M F1R$T."
+  text: "1 0F N0RT0N\342\200\231$ @RMY F0UND A L1$T 0F S@IT0\342\200\231S SP13S. W3 L0$T C0NT@CT W1TH H1M IN COLMA. F1ND THE L1$T @ND R3TURN 1T T0 U$.\n\n@L$0, TH3 N@T1V3 C@L1F0RN1@N$ PL@N T0 @TT@CK 0UR N3TW0RK. D3STR0Y TH31R $L3@Z3 PR0GR@M F1R$T."
   branches {
     responseText: ""
     nextNodeIndex: 55
@@ -3316,6 +3507,70 @@ nodes {
       }
     }
   }
+}
+nodes {
+  idRef {
+    id: "536d9c09366236081a002a0c"
+  }
+  index: 60
+  text: "Are you sure?"
+  branches {
+    responseText: "Yes, let\'s go!"
+    nextNodeIndex: -1
+  }
+  branches {
+    responseText: "Wait, I need to do something else first."
+    nextNodeIndex: -1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "536d9c68366236081a002a19"
+  }
+  index: 61
+  text: "Are you sure?"
+  branches {
+    responseText: "Yes, let\'s go!"
+    nextNodeIndex: -1
+  }
+  branches {
+    responseText: "Wait, I need to do something else first."
+    nextNodeIndex: -1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "536d9c6b366236081a002a1d"
+  }
+  index: 62
+  text: "Are you sure?"
+  branches {
+    responseText: "Yes, let\'s go!"
+    nextNodeIndex: -1
+  }
+  branches {
+    responseText: "Wait, I need to do something else first."
+    nextNodeIndex: -1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "536d9c6d366236081a002a21"
+  }
+  index: 63
+  text: "Are you sure? This is the point of no return. Please be sure all your affairs are in order."
+  branches {
+    responseText: "I am ready."
+    nextNodeIndex: -1
+  }
+  branches {
+    responseText: "Maybe I\'m not totally ready yet."
+    nextNodeIndex: -1
+  }
+  nodeType: ConversationNodeType_Simple
 }
 roots {
   nextNodeIndex: 0

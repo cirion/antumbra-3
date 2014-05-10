@@ -222,6 +222,30 @@ nodes {
     nextNodeIndex: 13
   }
   nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "talkedToDorbi"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
 }
 nodes {
   idRef {
@@ -418,7 +442,7 @@ nodes {
     id: "536cf8626434312f05639731"
   }
   index: 8
-  text: "Not well. I keep hoping that I can pull off one big score that will let me get them out of this drekky place and into some quiet, safe place where they can die in peace. Otherwise, it\342\200\231ll be a race between disease, hunger, and Tir to see what kills them first."
+  text: "Not well. I keep hoping that I can pull off one big score that will let me get them out of their drekky home and into some quiet, safe place where they can die in peace. \n\nOtherwise, it\342\200\231ll be a race between disease, hunger, and Tir to see what kills them first."
   branches {
     responseText: ""
     nextNodeIndex: 4
@@ -634,6 +658,49 @@ nodes {
         }
       }
     }
+    ops {
+      functionName: "Order Actor to Face Direction"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Actor)"
+              args {
+                string_value: "536b0cf7366236e0040077d2"
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "FacingDirection"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Send Event After Delay"
+      args {
+        call_value {
+          functionName: "Get Map Item (Event)"
+          args {
+            string_value: "Barrel Explode Loop"
+          }
+        }
+      }
+      args {
+        float_value: 5
+      }
+    }
   }
 }
 nodes {
@@ -643,13 +710,58 @@ nodes {
   index: 15
   text: "See ya!"
   nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Send Event After Delay"
+      args {
+        call_value {
+          functionName: "Get Map Item (Event)"
+          args {
+            string_value: "Barrel Explode Loop"
+          }
+        }
+      }
+      args {
+        float_value: 5
+      }
+    }
+    ops {
+      functionName: "Order Actor to Face Direction"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Actor)"
+              args {
+                string_value: "536b0cf7366236e0040077d2"
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "FacingDirection"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
 }
 nodes {
   idRef {
     id: "536cf4706434312f056396c6"
   }
   index: 16
-  text: "Fwoosh! Hahahaha!\n\nAh, $(l.name)! Pretty nice setup you have here. I must say, I approve of the target range you have here. It really helps me stay in shape."
+  text: "Fwoosh! Hahahaha!\n\nAh, $(l.name)! Pretty nice setup you have here. I must say, I approve of your target range. It really helps me stay in shape."
   branches {
     responseText: ""
     nextNodeIndex: 17
@@ -781,7 +893,7 @@ nodes {
     id: "536cf5b56434312f056396e1"
   }
   index: 20
-  text: "Oh, don\342\200\231t look so worried! I\342\200\231m very careful. In fact, regularly practicing flame magic is by far the safest thing someone can do. Just think about it: would you rather have a mage by your side who casts fireball twenty times a day, or one who casts it once a month? Practice makes perfect!"
+  text: "Oh, don\342\200\231t look so worried! I\342\200\231m very careful. In fact, regularly practicing flame magic is by far the safest thing someone can do. \n\nJust think about it: would you rather have a mage by your side who casts fireball twenty times a day, or one who casts it once a month? Practice makes perfect!"
   branches {
     responseText: ""
     nextNodeIndex: 17

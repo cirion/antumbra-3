@@ -360,6 +360,30 @@ nodes {
     nextNodeIndex: -1
   }
   nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "talkedToTomas"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
 }
 nodes {
   idRef {
@@ -986,7 +1010,7 @@ nodes {
     id: "536d07df6434312f05639941"
   }
   index: 18
-  text: "{{GM}}He notices your approach and lowers his voice.{{/GM}}\n\nThe boss is here. I\342\200\231ll call you later.\n"
+  text: "{{GM}}He notices your approach and lowers his voice.{{/GM}}\n\nThe boss is here. I\342\200\231ll call you later.\n\n{{GM}}Rolling his eyes, the troll closes the commlink.{{/GM}}"
   branches {
     responseText: ""
     nextNodeIndex: 1

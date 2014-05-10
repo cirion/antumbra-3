@@ -1,7 +1,7 @@
 idRef {
   id: "536ced526434312f0563962e"
 }
-ui_name: "a3-redding_Norton"
+ui_name: "a3-redding-Norton"
 nodes {
   idRef {
     id: "536ced5c6434312f05639634"
@@ -340,13 +340,37 @@ nodes {
     nextNodeIndex: -1
   }
   nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "talkedToNorton"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
 }
 nodes {
   idRef {
     id: "536cee6a6434312f05639648"
   }
   index: 2
-  text: "Indeed we do! You may recall that our imperial army-in-exile resides in the cemeteries of Colma. We had to leave them behind during the reconnaissance stage of our mission, but now that this new outpost is established, it would be wise to combine our forces together.\n\nWe suggest that you travel to the peninsula and meet with them. We shall contact the officers and instruct them to await your arrival."
+  text: "Indeed we do! You may recall that our imperial army-in-exile resides in the cemeteries of Colma. We had to leave them behind during the reconnaissance stage of our mission, but now that this new outpost is established, it would be wise to combine our forces.\n\nWe suggest that you travel to the peninsula and meet with them. We shall contact the officers and instruct them to await your arrival."
   branches {
     responseText: ""
     nextNodeIndex: 1
@@ -555,7 +579,7 @@ nodes {
     id: "536cf0896434312f05639691"
   }
   index: 8
-  text: "A fine start! Of course, it won\342\200\231t stand a ghost of a chance against an invading Tir army, but what you do have here is valuable: a seed, an egg, a core that has the potential to grow into something astonishing. For now, yes, it is just a camp or a base, but who knows? Perhaps this will grow into a thriving community before you know it!"
+  text: "A fine start! \n\nOf course, it won\342\200\231t stand a ghost of a chance against an invading Tir army, but what you do have here is valuable: a seed, an egg, a core that has the potential to grow into something astonishing. \n\nFor now, yes, it is just a camp or a base, but who knows? Perhaps this will grow into a thriving community before you know it!"
   branches {
     responseText: ""
     nextNodeIndex: 1
