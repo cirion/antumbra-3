@@ -3148,9 +3148,9 @@ characters {
 characters {
   name: "system_spawner_playerSpawner"
   gridPoint {
-    x: -6
+    x: -33
     y: 0
-    z: -13
+    z: -16
   }
   orientation: ORIENTATION_S
   idRef {
@@ -3237,106 +3237,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 16
+    x: -13
     y: 0
-    z: -42
-  }
-  orientation: ORIENTATION_S
-  GeneralTags: "isEmber"
-  GeneralTags: "isEmber"
-  displayName: "Ember 2"
-  idRef {
-    id: "53686fb7366236141f0041bc"
-  }
-  lod: 0
-  character_instance {
-    prefab_name: "Seattle:Spirit/SpiritFire"
-    character_sheet_id: "a3_badguy_ember_Lv1"
-    equipment_sheet_id: "a3_badguy_ember_Lv1"
-    character_mod {
-      stats {
-        body: 0
-        quickness: 0
-        strength: 0
-        charisma: 0
-        intelligence: 0
-        willpower: 0
-        essence: 0
-        magic: 0
-        hp: 0
-        ap: 0
-        armor: 0
-        force: 0
-        morale: 0
-        discipline: 0
-        awareness: 0
-        perception: 0
-        authority: 0
-        protect_tether_range: 0
-        move_speed: 0
-        is_fearless: 1
-      }
-      skills {
-        ranged_combat: 0
-        close_combat: 0
-        throwing_weapons: 0
-        spellcasting: 0
-        decking: 0
-        conjuring: 0
-        spirit_summoning: 0
-        drone_control: 0
-        biotech: 0
-        dodge: 0
-        etiquette_corporate: 0
-        etiquette_security: 0
-        etiquette_gang: 0
-        etiquette_socialite: 0
-        chi_casting: 0
-        etiquette_shadowrunner: 0
-        etiquette_street: 0
-        etiquette_academic: 0
-      }
-      specializations {
-        pistol: 0
-        rifle: 0
-        shotgun: 0
-        smg: 0
-        edged: 0
-        unarmed: 0
-        spirit_control: 0
-        esp_control: 0
-        drone_combat: 0
-      }
-      archetypeName: "Guard - Seek And Destroy"
-      attitude: AttitudeAggressive
-      vulnerabilities {
-        heal: VulnerabilityLevel_Immune
-        fire: VulnerabilityLevel_Immune
-      }
-    }
-    team_id: "Civilians"
-    char_name: "Fire Elemental"
-    GeneralTags: "isEmber"
-    GeneralTags: "isEmber"
-    enabled_at_start: true
-    pc_spawn_number: -1
-    hiring_type: HiringType_None
-    disable_pickups: false
-    portrait {
-      filename: ""
-    }
-    karma: 20
-    hiring_cost_override: 1000
-    scale_character_sheet: true
-    has_fist: false
-  }
-}
-characters {
-  name: "chars_icon_playerIcon"
-  gridPoint {
-    x: 16
-    y: 0
-    z: -39
+    z: -17
   }
   orientation: ORIENTATION_S
   GeneralTags: "isEmber"
@@ -3348,8 +3251,8 @@ characters {
   lod: 0
   character_instance {
     prefab_name: "Seattle:Spirit/SpiritFire"
-    character_sheet_id: "a3_badguy_ember_Lv1"
-    equipment_sheet_id: "a3_badguy_ember_Lv1"
+    character_sheet_id: "a3_badguy_Lv1_ember"
+    equipment_sheet_id: "a3_badguy_Lv1_ember"
     character_mod {
       stats {
         body: 0
@@ -3415,7 +3318,7 @@ characters {
     char_name: "Fire Elemental"
     GeneralTags: "isEmber"
     GeneralTags: "isEmber"
-    enabled_at_start: true
+    enabled_at_start: false
     pc_spawn_number: -1
     hiring_type: HiringType_None
     disable_pickups: false
@@ -3431,22 +3334,22 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 18
+    x: -13
     y: 0
-    z: -40
+    z: -15
   }
   orientation: ORIENTATION_S
   GeneralTags: "isEmber"
   GeneralTags: "isEmber"
-  displayName: "Ember 3"
+  displayName: "Ember 2"
   idRef {
-    id: "53699d51366236081d0076b0"
+    id: "536eb0c5366236ec19004db8"
   }
   lod: 0
   character_instance {
     prefab_name: "Seattle:Spirit/SpiritFire"
-    character_sheet_id: "a3_badguy_ember_Lv1"
-    equipment_sheet_id: "a3_badguy_ember_Lv1"
+    character_sheet_id: "a3_badguy_Lv1_ember"
+    equipment_sheet_id: "a3_badguy_Lv1_ember"
     character_mod {
       stats {
         body: 0
@@ -3512,7 +3415,104 @@ characters {
     char_name: "Fire Elemental"
     GeneralTags: "isEmber"
     GeneralTags: "isEmber"
-    enabled_at_start: true
+    enabled_at_start: false
+    pc_spawn_number: -1
+    hiring_type: HiringType_None
+    disable_pickups: false
+    portrait {
+      filename: ""
+    }
+    karma: 20
+    hiring_cost_override: 1000
+    scale_character_sheet: true
+    has_fist: false
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -12
+    y: 0
+    z: -16
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "isEmber"
+  GeneralTags: "isEmber"
+  displayName: "Ember 3"
+  idRef {
+    id: "536eb0c6366236ec19004db9"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Seattle:Spirit/SpiritFire"
+    character_sheet_id: "a3_badguy_Lv1_ember"
+    equipment_sheet_id: "a3_badguy_Lv1_ember"
+    character_mod {
+      stats {
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        magic: 0
+        hp: 0
+        ap: 0
+        armor: 0
+        force: 0
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+        is_fearless: 1
+      }
+      skills {
+        ranged_combat: 0
+        close_combat: 0
+        throwing_weapons: 0
+        spellcasting: 0
+        decking: 0
+        conjuring: 0
+        spirit_summoning: 0
+        drone_control: 0
+        biotech: 0
+        dodge: 0
+        etiquette_corporate: 0
+        etiquette_security: 0
+        etiquette_gang: 0
+        etiquette_socialite: 0
+        chi_casting: 0
+        etiquette_shadowrunner: 0
+        etiquette_street: 0
+        etiquette_academic: 0
+      }
+      specializations {
+        pistol: 0
+        rifle: 0
+        shotgun: 0
+        smg: 0
+        edged: 0
+        unarmed: 0
+        spirit_control: 0
+        esp_control: 0
+        drone_combat: 0
+      }
+      archetypeName: "Guard - Seek And Destroy"
+      attitude: AttitudeAggressive
+      vulnerabilities {
+        heal: VulnerabilityLevel_Immune
+        fire: VulnerabilityLevel_Immune
+      }
+    }
+    team_id: "Civilians"
+    char_name: "Fire Elemental"
+    GeneralTags: "isEmber"
+    GeneralTags: "isEmber"
+    enabled_at_start: false
     pc_spawn_number: -1
     hiring_type: HiringType_None
     disable_pickups: false
@@ -3646,6 +3646,8 @@ team_affiliations {
 }
 scene_dimensions {
   dimension_name: "Default"
+}
+character_roster {
 }
 show_hiring_screen_on_scene_load: false
 scene_hiring_prerequisites {

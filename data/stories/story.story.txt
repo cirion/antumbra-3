@@ -1,4 +1,4 @@
-id: "Lead CalFree\'s Defense Against Tir Tairngire"
+id: "Antumbra 3 - Darkness Falls"
 variables {
   name: "a1_beatGame"
   typeName: "bool"
@@ -1283,7 +1283,11 @@ variables {
     }
   }
 }
-startScene: "Scrachpad"
+startScene: "Intro"
+allowCharacterImport: true
+allowImportedEquipment: true
+allowCharacterGen: true
+storyKarmaLevel: 85
 resalePercent: 75
 upgradeToThreeApLevel: 117
 upgradeToFourApLevel: -1
@@ -2995,6 +2999,13 @@ character_roster {
     hiring_conditions {
     }
     hiring_cost: 1
+    content_pack_source: "531d26a736623648180018bf"
+  }
+  roster_entries {
+    reference_id: "a3_crew_lv3_norton"
+    hiring_conditions {
+    }
+    hiring_cost: 3
     content_pack_source: "531d26a736623648180018bf"
   }
 }
