@@ -641,12 +641,15 @@ triggers {
       functionName: "Set Actor In Passive Mode"
       args {
         call_value {
-          functionName: "All Actors With Tag"
+          functionName: "All Actors on Team"
           args {
             call_value {
-              functionName: "Get Map Item (SenseTagList)"
+              functionName: "Get Preset Value (string)"
               args {
-                string_value: "isWanderer"
+                string_value: "FactionList"
+              }
+              args {
+                int_value: 3
               }
             }
           }
@@ -658,6 +661,14 @@ triggers {
               }
               args {
                 int_value: 0
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Map Item (SceneDimension)"
+              args {
+                string_value: "Default"
               }
             }
           }
@@ -1787,7 +1798,7 @@ triggers {
   is_oneshot: true
 }
 triggers {
-  name: "NewTrigger"
+  name: "Stop Wandering When I\'m Talking To You"
   events {
     ops {
       functionName: "On Actor Clicked"
@@ -1828,6 +1839,156 @@ triggers {
     id: "536db00a366236081a003125"
   }
   elseActions {
+  }
+  is_oneshot: true
+}
+triggers {
+  name: "Init Merchants"
+  events {
+    ops {
+      functionName: "On Map Start"
+    }
+  }
+  conditions {
+    ops {
+      functionName: "Comparison (int)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (int)"
+          args {
+            string_value: "531d26a736623648180018bf"
+          }
+          args {
+            string_value: "Global_numMissionsCompleted"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "Comparison Ops"
+          }
+          args {
+            int_value: 2
+          }
+        }
+      }
+      args {
+        int_value: 1
+      }
+    }
+  }
+  actions {
+    ops {
+      functionName: "Activate Actor Spawner By Tag"
+      args {
+        call_value {
+          functionName: "Get Map Item (SenseTagList)"
+          args {
+            string_value: "isMerchantLevel1"
+          }
+        }
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "536e8c8336623684180063cd"
+  }
+  elseActions {
+    ops {
+      functionName: "Activate Actor Spawner By Tag"
+      args {
+        call_value {
+          functionName: "Get Map Item (SenseTagList)"
+          args {
+            string_value: "isMerchantLevel2"
+          }
+        }
+      }
+    }
+  }
+  is_oneshot: true
+}
+triggers {
+  name: "Set Difficulty"
+  events {
+    ops {
+      functionName: "On Map Start"
+    }
+  }
+  conditions {
+    ops {
+      functionName: "Comparison (int)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (int)"
+          args {
+            string_value: "531d26a736623648180018bf"
+          }
+          args {
+            string_value: "Global_numMissionsCompleted"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "Comparison Ops"
+          }
+          args {
+            int_value: 2
+          }
+        }
+      }
+      args {
+        int_value: 1
+      }
+    }
+  }
+  actions {
+    ops {
+      functionName: "Set Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (int)"
+          args {
+            string_value: "531d26a736623648180018bf"
+          }
+          args {
+            string_value: "CharacterScaleAmount"
+          }
+        }
+      }
+      args {
+        int_value: 2
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "536e93e736623684180063d0"
+  }
+  elseActions {
+    ops {
+      functionName: "Set Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (int)"
+          args {
+            string_value: "531d26a736623648180018bf"
+          }
+          args {
+            string_value: "CharacterScaleAmount"
+          }
+        }
+      }
+      args {
+        int_value: 1
+      }
+    }
   }
   is_oneshot: true
 }
@@ -1922,9 +2083,9 @@ regions {
 characters {
   name: "system_spawner_playerSpawner"
   gridPoint {
-    x: -26
+    x: -69
     y: 0
-    z: 6
+    z: 12
   }
   orientation: ORIENTATION_N
   idRef {
@@ -2855,7 +3016,8 @@ characters {
     z: -8
   }
   orientation: ORIENTATION_E
-  displayName: "Hrafna"
+  GeneralTags: "isMerchantLevel1"
+  displayName: "Hrafna Low"
   idRef {
     id: "536c4409366236d41e0026a8"
   }
@@ -2871,6 +3033,7 @@ characters {
   character_instance {
     prefab_name: "Seattle:Core/OrkFemale"
     character_sheet_id: "AGChemie_Cyberzombie_Lv1"
+    equipment_sheet_id: "Merchant_Magic_Mid"
     character_mod {
       stats {
         body: 0
@@ -2909,6 +3072,8 @@ characters {
     }
     team_id: "Civilians"
     char_name: "Hrafna"
+    GeneralTags: "isMerchantLevel1"
+    enabled_at_start: false
     pc_spawn_number: -1
     portrait {
       filename: "pc_orkfemale_06a"
@@ -2925,7 +3090,8 @@ characters {
     z: -4
   }
   orientation: ORIENTATION_S
-  displayName: "Amelia"
+  GeneralTags: "isMerchantLevel1"
+  displayName: "Amelia Low"
   idRef {
     id: "536c4ab7366236d41e0026ab"
   }
@@ -2972,6 +3138,8 @@ characters {
     }
     team_id: "Civilians"
     char_name: "Amelia"
+    GeneralTags: "isMerchantLevel1"
+    enabled_at_start: false
     pc_spawn_number: -1
     portrait {
       filename: "npc_humanfemale_weaponstechdealer"
@@ -3386,8 +3554,8 @@ characters {
     z: -3
   }
   orientation: ORIENTATION_S
-  GeneralTags: "bystander"
-  displayName: "Horatio"
+  GeneralTags: "isMerchantLevel1"
+  displayName: "Horatio Low"
   idRef {
     id: "536d8ed8366236081a0026aa"
   }
@@ -3403,9 +3571,8 @@ characters {
   character_instance {
     prefab_name: "Seattle:Homeless/DwarfMaleHomelessBeard"
     character_sheet_id: "BaseCivilian"
-    equipment_sheet_id: "Merchant_Weapons_Low"
-    equipment_sheet_id: "Merchant_Magic_Low"
-    equipment_sheet_id: "Merchant_Outfit_Low"
+    equipment_sheet_id: "Merchant_Doctor_Mid"
+    equipment_sheet_id: "Merchant_Tech_Mid"
     character_mod {
       stats {
         body: 0
@@ -3435,7 +3602,211 @@ characters {
     }
     team_id: "Civilians"
     char_name: "Horatio"
-    GeneralTags: "bystander"
+    GeneralTags: "isMerchantLevel1"
+    enabled_at_start: false
+    pc_spawn_number: -1
+    portrait {
+      filename: "pc_dwarfmale_02a_beardie"
+    }
+    karma: 6
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -56
+    y: 0
+    z: -6
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "isMerchantLevel2"
+  displayName: "Amelia High"
+  idRef {
+    id: "536e8bf336623684180063cc"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    conversationPoint {
+      conversationID: "536c08a3643431b502b6a8ed"
+      turnToFace: true
+    }
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Seattle:Story/WeaponsDealer"
+    character_sheet_id: "BaseCivilian"
+    equipment_sheet_id: "Merchant_Outfit_High"
+    equipment_sheet_id: "Merchant_Weapons_High"
+    character_mod {
+      stats {
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        hp: 0
+        ap: 0
+        morale: 24
+        discipline: 0
+        awareness: 24
+        perception: 0
+        authority: 0
+        protect_tether_range: 5
+        move_speed: 6
+      }
+      skills {
+      }
+      specializations {
+      }
+      archetypeName: "Non-Combatant"
+      vulnerabilities {
+      }
+    }
+    team_id: "Civilians"
+    char_name: "Amelia"
+    GeneralTags: "isMerchantLevel2"
+    enabled_at_start: false
+    pc_spawn_number: -1
+    portrait {
+      filename: "npc_humanfemale_weaponstechdealer"
+    }
+    karma: 6
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -74
+    y: 0
+    z: -8
+  }
+  orientation: ORIENTATION_E
+  GeneralTags: "isMerchantLevel2"
+  displayName: "Hrafna High"
+  idRef {
+    id: "536e8ce836623684180063ce"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    conversationPoint {
+      conversationID: "536c1411643431b502b6aad0"
+      turnToFace: true
+    }
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Seattle:Core/OrkFemale"
+    character_sheet_id: "AGChemie_Cyberzombie_Lv1"
+    character_mod {
+      stats {
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        hp: 0
+        ap: 0
+        armor: 0
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+        ranged_combat: 0
+        close_combat: 0
+        dodge: 0
+      }
+      specializations {
+        rifle: 0
+        edged: 0
+        unarmed: 0
+      }
+      vulnerabilities {
+      }
+    }
+    equipment {
+      prefab_name: "ShamanSkirted"
+    }
+    team_id: "Civilians"
+    char_name: "Hrafna"
+    GeneralTags: "isMerchantLevel2"
+    enabled_at_start: false
+    pc_spawn_number: -1
+    portrait {
+      filename: "pc_orkfemale_06a"
+    }
+    portrait_code_override: "s2h7c6b0t0"
+    karma: 177
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -83
+    y: 0
+    z: 4
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "isMerchantLevel2"
+  displayName: "Horatio High"
+  idRef {
+    id: "536e8d4036623684180063cf"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    conversationPoint {
+      conversationID: "536c0c69643431b502b6a9bb"
+      turnToFace: true
+    }
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Seattle:Homeless/DwarfMaleHomelessBeard"
+    character_sheet_id: "BaseCivilian"
+    equipment_sheet_id: "Merchant_Tech_High"
+    equipment_sheet_id: "Merchant_Doctor_High"
+    character_mod {
+      stats {
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        hp: 0
+        ap: 0
+        morale: 24
+        discipline: 0
+        awareness: 24
+        perception: 0
+        authority: 0
+        protect_tether_range: 5
+        move_speed: 6
+      }
+      skills {
+      }
+      specializations {
+      }
+      archetypeName: "Non-Combatant"
+      vulnerabilities {
+      }
+    }
+    team_id: "Civilians"
+    char_name: "Horatio"
+    GeneralTags: "isMerchantLevel2"
+    enabled_at_start: false
     pc_spawn_number: -1
     portrait {
       filename: "pc_dwarfmale_02a_beardie"

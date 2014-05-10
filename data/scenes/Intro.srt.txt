@@ -94,7 +94,7 @@ triggers {
       }
     }
   }
-  isActive: true
+  isActive: false
   idRef {
     id: "53670b7d36623624090084fc"
   }
@@ -2587,6 +2587,138 @@ triggers {
   }
   is_oneshot: true
 }
+triggers {
+  name: "My Turn"
+  events {
+    ops {
+      functionName: "On Actor Start Turn"
+    }
+  }
+  conditions {
+    ops {
+      functionName: "Comparison (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "startingFight"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+  actions {
+    ops {
+      functionName: "Enable/Disable Team\'s Turn"
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "EnableOrDisable"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SceneDimension)"
+          args {
+            string_value: "Default"
+          }
+        }
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "536ea79136623658030000cc"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
+triggers {
+  name: "Dummy Checks"
+  events {
+    ops {
+      functionName: "On Map Start"
+    }
+  }
+  conditions {
+    ops {
+      functionName: "Comparison (int)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (int)"
+          args {
+            string_value: "531d26a736623648180018bf"
+          }
+          args {
+            string_value: "CharacterScaleAmount"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "Comparison Ops"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        int_value: 0
+      }
+    }
+  }
+  actions {
+  }
+  isActive: true
+  idRef {
+    id: "536eaa3b36623658030000ff"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
 regions {
   name: "Camera"
   position {
@@ -2722,7 +2854,7 @@ regions {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 4
+    x: 5
     y: 0
     z: -19
   }
@@ -2839,14 +2971,15 @@ characters {
   lod: 0
   character_instance {
     prefab_name: "Seattle:Core/HumanMale"
-    character_sheet_id: "Lvl3_Dwarf_Shaman"
+    character_sheet_id: "a3_crew_norton_lv3"
+    equipment_sheet_id: "a3_crew_norton_lv3"
     character_mod {
       stats {
         body: 0
-        quickness: -1
-        strength: -2
+        quickness: 0
+        strength: 0
         charisma: 0
-        intelligence: -1
+        intelligence: 0
         willpower: 0
         essence: 0
         magic: 0
@@ -2863,10 +2996,10 @@ characters {
         move_speed: 0
       }
       skills {
-        ranged_combat: -2
+        ranged_combat: 0
         close_combat: 0
         throwing_weapons: 0
-        spellcasting: 4
+        spellcasting: 0
         decking: 0
         conjuring: 0
         spirit_summoning: 0
@@ -2883,7 +3016,7 @@ characters {
         etiquette_academic: 0
       }
       specializations {
-        pistol: -1
+        pistol: 0
         rifle: 0
         shotgun: 0
         smg: 0
@@ -2898,50 +3031,29 @@ characters {
       vulnerabilities {
       }
     }
-    equipment {
-      prefab_name: "Outfit_Cult Follower"
-    }
-    equipment {
-      prefab_name: "Spell Haste 2"
-    }
-    equipment {
-      prefab_name: "Spell Slow 2"
-    }
-    equipment {
-      prefab_name: "Spell Heal 1"
-    }
-    equipment {
-      prefab_name: "Spell Armor 1"
-    }
-    equipment {
-      prefab_name: "HealthPack_med"
-    }
-    equipment {
-      prefab_name: "Air Barrier 4"
-    }
-    equipment {
-      prefab_name: "Spell Aim 2"
-    }
     team_id: "Civilians"
     char_name: "Emperor Norton"
     GeneralTags: "norton"
     GeneralTags: "isNorton"
     pc_spawn_number: -1
     unkillable: true
+    hiring_type: HiringType_Hireable
     portrait {
       filename: "EmperorNorton"
     }
     description_bio: "Emperor of California and Protector of UCAS"
     portrait_code_override: "s5h5c6b1c6"
-    karma: 65
+    karma: 3
+    hiring_cost_override: 0
+    id: "a3_crew_lv3_norton"
   }
 }
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 4
+    x: 5
     y: 0
-    z: -13
+    z: -12
   }
   orientation: ORIENTATION_N
   GeneralTags: "norton"
@@ -3036,9 +3148,9 @@ characters {
 characters {
   name: "system_spawner_playerSpawner"
   gridPoint {
-    x: -32
+    x: -6
     y: 0
-    z: -17
+    z: -13
   }
   orientation: ORIENTATION_S
   idRef {
@@ -3125,11 +3237,13 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -12
+    x: 16
     y: 0
-    z: -17
+    z: -42
   }
   orientation: ORIENTATION_S
+  GeneralTags: "isEmber"
+  GeneralTags: "isEmber"
   displayName: "Ember 2"
   idRef {
     id: "53686fb7366236141f0041bc"
@@ -3200,10 +3314,11 @@ characters {
         fire: VulnerabilityLevel_Immune
       }
     }
-    team_id: "Gangers"
+    team_id: "Civilians"
     char_name: "Fire Elemental"
     GeneralTags: "isEmber"
-    enabled_at_start: false
+    GeneralTags: "isEmber"
+    enabled_at_start: true
     pc_spawn_number: -1
     hiring_type: HiringType_None
     disable_pickups: false
@@ -3219,11 +3334,13 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -12
+    x: 16
     y: 0
-    z: -14
+    z: -39
   }
   orientation: ORIENTATION_S
+  GeneralTags: "isEmber"
+  GeneralTags: "isEmber"
   displayName: "Ember 1"
   idRef {
     id: "53699d4d366236081d0076af"
@@ -3294,10 +3411,11 @@ characters {
         fire: VulnerabilityLevel_Immune
       }
     }
-    team_id: "Gangers"
+    team_id: "Civilians"
     char_name: "Fire Elemental"
     GeneralTags: "isEmber"
-    enabled_at_start: false
+    GeneralTags: "isEmber"
+    enabled_at_start: true
     pc_spawn_number: -1
     hiring_type: HiringType_None
     disable_pickups: false
@@ -3313,11 +3431,13 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -10
+    x: 18
     y: 0
-    z: -15
+    z: -40
   }
   orientation: ORIENTATION_S
+  GeneralTags: "isEmber"
+  GeneralTags: "isEmber"
   displayName: "Ember 3"
   idRef {
     id: "53699d51366236081d0076b0"
@@ -3388,10 +3508,11 @@ characters {
         fire: VulnerabilityLevel_Immune
       }
     }
-    team_id: "Gangers"
+    team_id: "Civilians"
     char_name: "Fire Elemental"
     GeneralTags: "isEmber"
-    enabled_at_start: false
+    GeneralTags: "isEmber"
+    enabled_at_start: true
     pc_spawn_number: -1
     hiring_type: HiringType_None
     disable_pickups: false
@@ -3433,6 +3554,14 @@ variables {
   variableref_value {
     scope: TsVariableScope_Scene
     name: "CanExitScene"
+    typeName: "bool"
+  }
+}
+variables {
+  bool_value: false
+  variableref_value {
+    scope: TsVariableScope_Scene
+    name: "startingFight"
     typeName: "bool"
   }
 }
@@ -3517,8 +3646,6 @@ team_affiliations {
 }
 scene_dimensions {
   dimension_name: "Default"
-}
-character_roster {
 }
 show_hiring_screen_on_scene_load: false
 scene_hiring_prerequisites {

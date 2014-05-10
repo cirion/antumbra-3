@@ -87,7 +87,7 @@ variables {
   name: "CharacterScaleAmount"
   typeName: "int"
   defaultValue {
-    int_value: 3
+    int_value: 2
     variableref_value {
       scope: TsVariableScope_Story
       name: "CharacterScaleAmount"
