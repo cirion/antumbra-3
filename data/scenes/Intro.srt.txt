@@ -2628,6 +2628,32 @@ triggers {
         }
       }
     }
+    ops {
+      functionName: "Actor is Player Controlled"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Triggering Actor"
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
   }
   actions {
     ops {
@@ -2971,8 +2997,8 @@ characters {
   lod: 0
   character_instance {
     prefab_name: "Seattle:Core/HumanMale"
-    character_sheet_id: "a3_crew_norton_lv3"
-    equipment_sheet_id: "a3_crew_norton_lv3"
+    character_sheet_id: "a3_crew_norton_lv4"
+    equipment_sheet_id: "a3_crew_norton_lv4"
     character_mod {
       stats {
         body: 0
@@ -3043,9 +3069,9 @@ characters {
     }
     description_bio: "Emperor of California and Protector of UCAS"
     portrait_code_override: "s5h5c6b1c6"
-    karma: 3
+    karma: 4
     hiring_cost_override: 0
-    id: "a3_crew_lv3_norton"
+    id: "a3_crew_lv4_norton"
   }
 }
 characters {

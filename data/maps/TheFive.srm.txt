@@ -1,6 +1,6 @@
 minX: -84
 minZ: -46
-numX: 234
+numX: 157
 numZ: 109
 props {
   name: "barrens_ground_twoLaneWhite01"
@@ -9995,19 +9995,6 @@ props {
   lod: 0
 }
 props {
-  name: "haven_vehicle_armoredVan01"
-  gridPoint {
-    x: 145
-    y: 0
-    z: -4
-  }
-  orientation: ORIENTATION_S
-  idRef {
-    id: "5365ba5c366236100f00715a"
-  }
-  lod: 0
-}
-props {
   name: "system_invisible_blockSight"
   gridPoint {
     x: 29
@@ -10199,19 +10186,6 @@ props {
   orientation: ORIENTATION_S
   idRef {
     id: "5365ba5c366236100f007169"
-  }
-  lod: 0
-}
-props {
-  name: "haven_vehicle_armoredVan01"
-  gridPoint {
-    x: 145
-    y: 0
-    z: 11
-  }
-  orientation: ORIENTATION_S
-  idRef {
-    id: "5365ba67366236100f00716a"
   }
   lod: 0
 }
@@ -10894,7 +10868,7 @@ props {
 props {
   name: "hive_ground_undergroundWallEdgeTop02"
   gridPoint {
-    x: 9
+    x: 1
     y: 0
     z: 3
   }
@@ -10912,32 +10886,9 @@ props {
   lod: 0
 }
 props {
-  name: "hive_ground_undergroundWallEdgeTop03"
-  gridPoint {
-    x: 3
-    y: 0
-    z: 3
-  }
-  orientation: ORIENTATION_W
-  lod: 0
-}
-props {
-  name: "hive_ground_undergroundWallEdgeTop03"
-  gridPoint {
-    x: -7
-    y: 0
-    z: 3
-  }
-  orientation: ORIENTATION_W
-  idRef {
-    id: "5365bf23366236100f0071a6"
-  }
-  lod: 0
-}
-props {
   name: "hive_ground_undergroundWallEdgeTop01"
   gridPoint {
-    x: -5
+    x: -3
     y: 0
     z: 3
   }
@@ -10950,7 +10901,7 @@ props {
 props {
   name: "hive_ground_undergroundWallEdgeTop02"
   gridPoint {
-    x: -1
+    x: -7
     y: 0
     z: 3
   }
@@ -10961,22 +10912,9 @@ props {
   lod: 0
 }
 props {
-  name: "hive_ground_undergroundWallEdgeTop03"
-  gridPoint {
-    x: -17
-    y: 0
-    z: 3
-  }
-  orientation: ORIENTATION_W
-  idRef {
-    id: "5365bf32366236100f0071a9"
-  }
-  lod: 0
-}
-props {
   name: "hive_ground_undergroundWallEdgeTop01"
   gridPoint {
-    x: -15
+    x: -11
     y: 0
     z: 3
   }
@@ -10989,7 +10927,7 @@ props {
 props {
   name: "hive_ground_undergroundWallEdgeTop02"
   gridPoint {
-    x: -11
+    x: -15
     y: 0
     z: 3
   }
@@ -11000,22 +10938,9 @@ props {
   lod: 0
 }
 props {
-  name: "hive_ground_undergroundWallEdgeTop03"
-  gridPoint {
-    x: 13
-    y: 0
-    z: 3
-  }
-  orientation: ORIENTATION_W
-  idRef {
-    id: "5365bf36366236100f0071ac"
-  }
-  lod: 0
-}
-props {
   name: "hive_ground_undergroundWallEdgeTop01"
   gridPoint {
-    x: 15
+    x: 13
     y: 0
     z: 3
   }
@@ -11028,7 +10953,7 @@ props {
 props {
   name: "hive_ground_undergroundWallEdgeTop02"
   gridPoint {
-    x: 19
+    x: 9
     y: 0
     z: 3
   }
@@ -12738,6 +12663,58 @@ props {
     isEnabled: true
     interactionRadius: 1
     interactionIcon: InteractionIcon_ItemPickup
+  }
+  lod: 0
+}
+props {
+  name: "hive_ground_undergroundWallEdgeTop01"
+  gridPoint {
+    x: -19
+    y: 0
+    z: 3
+  }
+  orientation: ORIENTATION_W
+  idRef {
+    id: "536ebbbe366236041f004db8"
+  }
+  lod: 0
+}
+props {
+  name: "hive_ground_undergroundWallEdge01"
+  gridPoint {
+    x: -19
+    y: 0
+    z: 4
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "536ebbbe366236041f004db9"
+  }
+  lod: 0
+}
+props {
+  name: "hive_ground_undergroundWallEdgeTop02"
+  gridPoint {
+    x: 17
+    y: 0
+    z: 3
+  }
+  orientation: ORIENTATION_W
+  idRef {
+    id: "536ebbc6366236041f004dba"
+  }
+  lod: 0
+}
+props {
+  name: "hive_ground_undergroundWallEdge02"
+  gridPoint {
+    x: 17
+    y: 0
+    z: 4
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "536ebbc6366236041f004dbb"
   }
   lod: 0
 }
