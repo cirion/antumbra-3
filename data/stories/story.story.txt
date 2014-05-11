@@ -2995,6 +2995,34 @@ character_roster {
     content_pack_source: "5205366a623331a806002d13"
   }
   roster_entries {
+    reference_id: "a3_crew_elorn_lv3"
+    hiring_conditions {
+    }
+    hiring_cost: 3
+    content_pack_source: "531d26a736623648180018bf"
+  }
+  roster_entries {
+    reference_id: "a3_crew_elorn_lv4"
+    hiring_conditions {
+    }
+    hiring_cost: 4
+    content_pack_source: "531d26a736623648180018bf"
+  }
+  roster_entries {
+    reference_id: "a3_crew_hailey_lv3"
+    hiring_conditions {
+    }
+    hiring_cost: 3
+    content_pack_source: "531d26a736623648180018bf"
+  }
+  roster_entries {
+    reference_id: "a3_crew_hailey_lv4"
+    hiring_conditions {
+    }
+    hiring_cost: 4
+    content_pack_source: "531d26a736623648180018bf"
+  }
+  roster_entries {
     reference_id: "a3_crew_lv1_norton"
     hiring_conditions {
     }
@@ -3002,10 +3030,24 @@ character_roster {
     content_pack_source: "531d26a736623648180018bf"
   }
   roster_entries {
-    reference_id: "a3_crew_lv3_norton"
+    reference_id: "a3_crew_lv3_dorbi"
     hiring_conditions {
     }
     hiring_cost: 3
+    content_pack_source: "531d26a736623648180018bf"
+  }
+  roster_entries {
+    reference_id: "a3_crew_lv3_norton"
+    hiring_conditions {
+    }
+    hiring_cost: 80
+    content_pack_source: "531d26a736623648180018bf"
+  }
+  roster_entries {
+    reference_id: "a3_crew_lv4_dorbi"
+    hiring_conditions {
+    }
+    hiring_cost: 4
     content_pack_source: "531d26a736623648180018bf"
   }
   roster_entries {

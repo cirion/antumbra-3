@@ -2083,9 +2083,9 @@ regions {
 characters {
   name: "system_spawner_playerSpawner"
   gridPoint {
-    x: -26
+    x: -70
     y: 0
-    z: 6
+    z: 11
   }
   orientation: ORIENTATION_N
   idRef {
@@ -2139,7 +2139,8 @@ characters {
   lod: 0
   character_instance {
     prefab_name: "Seattle:Core/DwarfFemale"
-    character_sheet_id: "AGChemie_Cyberzombie_Lv1"
+    character_sheet_id: "a3_crew_dorbi_lv4"
+    equipment_sheet_id: "a3_crew_dorbi_lv4"
     character_mod {
       stats {
         body: 0
@@ -2149,9 +2150,11 @@ characters {
         intelligence: 0
         willpower: 0
         essence: 0
+        magic: 0
         hp: 0
         ap: 0
         armor: 0
+        force: 0
         morale: 0
         discipline: 0
         awareness: 0
@@ -2163,29 +2166,53 @@ characters {
       skills {
         ranged_combat: 0
         close_combat: 0
+        throwing_weapons: 0
+        spellcasting: 0
+        decking: 0
+        conjuring: 0
+        spirit_summoning: 0
+        drone_control: 0
+        biotech: 0
         dodge: 0
+        etiquette_corporate: 0
+        etiquette_security: 0
+        etiquette_gang: 0
+        etiquette_socialite: 0
+        chi_casting: 0
+        etiquette_shadowrunner: 0
+        etiquette_street: 0
+        etiquette_academic: 0
       }
       specializations {
+        pistol: 0
         rifle: 0
+        shotgun: 0
+        smg: 0
         edged: 0
         unarmed: 0
+        spirit_control: 0
+        esp_control: 0
+        drone_combat: 0
       }
+      archetypeName: "Guard - Protect"
+      attitude: AttitudeAggressive
       vulnerabilities {
       }
-    }
-    equipment {
-      prefab_name: "RiggerTrenchcoat"
     }
     team_id: "Civilians"
     char_name: "Dorbi"
     GeneralTags: "isDorbi"
     enabled_at_start: true
     pc_spawn_number: -1
+    hiring_type: HiringType_Hireable
     portrait {
       filename: "pc_dwarffemale_06"
     }
+    description_bio: "A fiery young lady."
     portrait_code_override: "s4h4c11b0t0"
-    karma: 177
+    karma: 4
+    hiring_cost_override: 0
+    id: "a3_crew_lv4_dorbi"
   }
 }
 characters {
@@ -2666,98 +2693,6 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -56
-    y: 0
-    z: -23
-  }
-  orientation: ORIENTATION_W
-  displayName: "Orion"
-  idRef {
-    id: "536b159a366236e0040077de"
-  }
-  interactionRoot {
-    isEnabled: true
-    interactionRadius: 1
-    conversationPoint {
-      conversationID: "5227e222366236a018006791"
-      turnToFace: true
-    }
-  }
-  lod: 0
-  character_instance {
-    prefab_name: "Core/OrkMale"
-    character_sheet_id: "BaseCivilian"
-    character_mod {
-      stats {
-        body: 5
-        quickness: 4
-        strength: 1
-        charisma: 1
-        intelligence: 1
-        willpower: 1
-        essence: 0
-        hp: 8
-        ap: 0
-        armor: 5
-        morale: 24
-        discipline: 0
-        awareness: 24
-        perception: 0
-        authority: 0
-        protect_tether_range: 5
-        move_speed: 0
-      }
-      skills {
-        ranged_combat: 4
-        close_combat: 2
-        throwing_weapons: 2
-        dodge: 3
-        etiquette_gang: 0
-        etiquette_academic: 0
-      }
-      specializations {
-        rifle: 4
-      }
-    }
-    equipment {
-      prefab_name: "AdeptStreetMonk"
-    }
-    equipment {
-      prefab_name: "HealthPack_med"
-    }
-    equipment {
-      prefab_name: "HealthPack_med"
-    }
-    equipment {
-      prefab_name: "Grenade 2 (Frag)"
-    }
-    equipment {
-      prefab_name: "Grenade 2 (Frag)"
-    }
-    equipment {
-      prefab_name: "Grenade 2 (Flash)"
-    }
-    equipment {
-      prefab_name: "Sword 1 Machete"
-    }
-    equipment {
-      prefab_name: "AR 2 HK G12A3z (Smartlink)"
-    }
-    team_id: "Civilians"
-    char_name: "Orion"
-    pc_spawn_number: -1
-    cyberware_jack: "Datajack"
-    cyberware_right_leg: "Obvious Cyberleg"
-    portrait {
-      filename: "pc_orkmale_01c_soldier"
-    }
-    portrait_code_override: "s7h5c4b8"
-    karma: 80
-  }
-}
-characters {
-  name: "chars_icon_playerIcon"
-  gridPoint {
     x: -64
     y: 0
     z: 13
@@ -2791,21 +2726,21 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Core/HumanFemale"
-    character_sheet_id: "Lvl2_Human_Decker"
+    prefab_name: "Seattle:Core/HumanFemale"
+    character_sheet_id: "a3_crew_hailey_lv3"
     character_mod {
       stats {
         body: 0
-        quickness: -1
-        strength: -2
-        charisma: -1
+        quickness: 0
+        strength: 0
+        charisma: 0
         intelligence: 0
-        willpower: -1
-        essence: -3
-        magic: -3
-        hp: 6
+        willpower: 0
+        essence: 0
+        magic: 0
+        hp: 0
         ap: 0
-        armor: 2
+        armor: 0
         force: 0
         morale: 0
         discipline: 0
@@ -2816,16 +2751,16 @@ characters {
         move_speed: 0
       }
       skills {
-        ranged_combat: 1
+        ranged_combat: 0
         close_combat: 0
-        throwing_weapons: 1
+        throwing_weapons: 0
         spellcasting: 0
-        decking: 1
+        decking: 0
         conjuring: 0
         spirit_summoning: 0
-        drone_control: 4
-        biotech: 1
-        dodge: 2
+        drone_control: 0
+        biotech: 0
+        dodge: 0
         etiquette_corporate: 0
         etiquette_security: 0
         etiquette_gang: 0
@@ -2839,12 +2774,12 @@ characters {
         pistol: 0
         rifle: 0
         shotgun: 0
-        smg: -1
+        smg: 0
         edged: 0
         unarmed: 0
         spirit_control: 0
         esp_control: 0
-        drone_combat: 3
+        drone_combat: 0
       }
       archetypeName: "Non-Combatant"
       attitude: AttitudeAggressive
@@ -2854,54 +2789,21 @@ characters {
     equipment {
       prefab_name: "DeckerFab"
     }
-    equipment {
-      prefab_name: "DroneRepairKit_med"
-    }
-    equipment {
-      prefab_name: "DroneRepairKit_med"
-    }
-    equipment {
-      prefab_name: "HealthPack_med"
-    }
-    equipment {
-      prefab_name: "CyberdeckKraftwerk1"
-    }
-    equipment {
-      prefab_name: "ESP Assassin"
-    }
-    equipment {
-      prefab_name: "PR NPC Decker Medic 2"
-    }
-    equipment {
-      prefab_name: "PR NPC Decker Killer 2"
-    }
-    equipment {
-      prefab_name: "PR NPC Decker Blaster 2"
-    }
-    equipment {
-      prefab_name: "DroneAttackB_Strato9"
-    }
-    equipment {
-      prefab_name: "HealthPack_med"
-    }
-    equipment {
-      prefab_name: "Grenade (Smoke)"
-    }
-    equipment {
-      prefab_name: "DroneSupportB_RoboDoc"
-    }
     team_id: "Civilians"
     char_name: "Hailey"
     GeneralTags: "isHailey"
     pc_spawn_number: -1
-    cyberware_eyes: "Vision Magnification Eyes"
+    hiring_type: HiringType_Hireable
+    cyberware_eyes: "Berlin_Laser Designator"
     cyberware_jack: "Datajack"
     cyberware_left_arm: "Obvious Cyberarm"
     portrait {
       filename: "backer_humanfemale_grahamwilliams_tsilonsiereht"
     }
     portrait_code_override: "s6h1c11"
-    karma: 83
+    karma: 4
+    hiring_cost_override: 0
+    id: "a3_crew_hailey_lv4"
   }
 }
 characters {
@@ -2909,7 +2811,7 @@ characters {
   gridPoint {
     x: -81
     y: 0
-    z: 5
+    z: 6
   }
   orientation: ORIENTATION_S
   GeneralTags: "isElorn"
@@ -2942,7 +2844,8 @@ characters {
   lod: 0
   character_instance {
     prefab_name: "Seattle:Gangers/ElfMaleGangerDreads"
-    character_sheet_id: "AGChemie_Cyberzombie_Lv1"
+    character_sheet_id: "a3_crew_elorn_lv4"
+    equipment_sheet_id: "a3_crew_elorn_lv4"
     character_mod {
       stats {
         body: 0
@@ -2952,9 +2855,11 @@ characters {
         intelligence: 0
         willpower: 0
         essence: 0
+        magic: 0
         hp: 0
         ap: 0
         armor: 0
+        force: 0
         morale: 0
         discipline: 0
         awareness: 0
@@ -2966,13 +2871,36 @@ characters {
       skills {
         ranged_combat: 0
         close_combat: 0
+        throwing_weapons: 0
+        spellcasting: 0
+        decking: 0
+        conjuring: 0
+        spirit_summoning: 0
+        drone_control: 0
+        biotech: 0
         dodge: 0
+        etiquette_corporate: 0
+        etiquette_security: 0
+        etiquette_gang: 0
+        etiquette_socialite: 0
+        chi_casting: 0
+        etiquette_shadowrunner: 0
+        etiquette_street: 0
+        etiquette_academic: 0
       }
       specializations {
+        pistol: 0
         rifle: 0
+        shotgun: 0
+        smg: 0
         edged: 0
         unarmed: 0
+        spirit_control: 0
+        esp_control: 0
+        drone_combat: 0
       }
+      archetypeName: "Guard - Protect"
+      attitude: AttitudeAggressive
       vulnerabilities {
       }
     }
@@ -2981,11 +2909,15 @@ characters {
     GeneralTags: "isElorn"
     GeneralTags: "isWanderer"
     pc_spawn_number: -1
+    hiring_type: HiringType_Hireable
     portrait {
       filename: "pc_elfmale_06_dreads"
     }
+    description_bio: "Redding\'s own native son."
     portrait_code_override: "s1h1c4b0t0"
-    karma: 177
+    karma: 4
+    hiring_cost_override: 0
+    id: "a3_crew_elorn_lv4"
   }
 }
 characters {
@@ -3485,7 +3417,7 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Seattle:Core/TrollMale"
+    prefab_name: "Seattle:Objects/InvisibleActor"
     character_sheet_id: "AGChemie_Cyberzombie_Lv1"
     character_mod {
       stats {
