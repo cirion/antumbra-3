@@ -267,7 +267,7 @@ worldMapLocation {
 }
 mapName: "TheFive"
 parentStory: ""
-scene_title: "The Five"
+scene_title: "The 5"
 scene_subtitle: "Jacking the Waterjackers"
 scene_synopsis: "Selene introduces you to Rick, a California Ranger who patrols the old Interstate Five freeway south of Redding. He\342\200\231s been effective at intercepting individual waterjackers, but now has something more ambitious in mind: a trap that will capture the gang leaders."
 scene_image: ""
@@ -320,11 +320,6 @@ team_affiliations {
 scene_dimensions {
   dimension_name: "Default"
 }
-scene_dimensions {
-  dimension_name: "Matrix"
-  initial_alarm_state: 20
-  turns_per_round: 3
-}
 show_hiring_screen_on_scene_load: false
 scene_hiring_prerequisites {
   prereq_description: ""
@@ -335,6 +330,111 @@ hiring_slot_count: 2
 hiring_minimum_karma: 0
 hiring_maximum_karma: 0
 roster_overrides {
+  roster_entries {
+    reference_id: "lvl3_dwarf_adept"
+    hiring_conditions {
+    }
+    hiring_cost: -1
+    content_pack_source: "518d7672643431b03f0041aa"
+  }
+  roster_entries {
+    reference_id: "lvl3_dwarf_rigger"
+    hiring_conditions {
+    }
+    hiring_cost: -1
+    content_pack_source: "518d7672643431b03f0041aa"
+  }
+  roster_entries {
+    reference_id: "lvl3_dwarf_shaman"
+    hiring_conditions {
+    }
+    hiring_cost: -1
+    content_pack_source: "518d7672643431b03f0041aa"
+  }
+  roster_entries {
+    reference_id: "lvl3_elf_mage"
+    hiring_conditions {
+    }
+    hiring_cost: -1
+    content_pack_source: "518d7672643431b03f0041aa"
+  }
+  roster_entries {
+    reference_id: "lvl3_elf_samurai"
+    hiring_conditions {
+    }
+    hiring_cost: -1
+    content_pack_source: "518d7672643431b03f0041aa"
+  }
+  roster_entries {
+    reference_id: "lvl3_human_adept"
+    hiring_conditions {
+    }
+    hiring_cost: -1
+    content_pack_source: "518d7672643431b03f0041aa"
+  }
+  roster_entries {
+    reference_id: "lvl3_human_decker"
+    hiring_conditions {
+    }
+    hiring_cost: -1
+    content_pack_source: "518d7672643431b03f0041aa"
+  }
+  roster_entries {
+    reference_id: "lvl3_human_mage"
+    hiring_conditions {
+    }
+    hiring_cost: -1
+    content_pack_source: "518d7672643431b03f0041aa"
+  }
+  roster_entries {
+    reference_id: "lvl3_ork_adept"
+    hiring_conditions {
+    }
+    hiring_cost: -1
+    content_pack_source: "518d7672643431b03f0041aa"
+  }
+  roster_entries {
+    reference_id: "lvl3_ork_shaman"
+    hiring_conditions {
+    }
+    hiring_cost: -1
+    content_pack_source: "518d7672643431b03f0041aa"
+  }
+  roster_entries {
+    reference_id: "lvl3_troll_decker"
+    hiring_conditions {
+    }
+    hiring_cost: -1
+    content_pack_source: "518d7672643431b03f0041aa"
+  }
+  roster_entries {
+    reference_id: "lvl3_troll_rigger"
+    hiring_conditions {
+    }
+    hiring_cost: -1
+    content_pack_source: "518d7672643431b03f0041aa"
+  }
+  roster_entries {
+    reference_id: "lvl3_troll_samurai"
+    hiring_conditions {
+    }
+    hiring_cost: -1
+    content_pack_source: "518d7672643431b03f0041aa"
+  }
+  roster_entries {
+    reference_id: "lvl3_troll_shaman"
+    hiring_conditions {
+    }
+    hiring_cost: -1
+    content_pack_source: "518d7672643431b03f0041aa"
+  }
+  roster_entries {
+    reference_id: "a3_crew_lv3_norton"
+    hiring_conditions {
+    }
+    hiring_cost: -1
+    content_pack_source: "531d26a736623648180018bf"
+  }
 }
 use_hiring_cost_warning: false
 hiring_average_cost: 99999

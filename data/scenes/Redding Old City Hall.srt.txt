@@ -2083,9 +2083,9 @@ regions {
 characters {
   name: "system_spawner_playerSpawner"
   gridPoint {
-    x: -69
+    x: -26
     y: 0
-    z: 12
+    z: 6
   }
   orientation: ORIENTATION_N
   idRef {
@@ -2460,14 +2460,15 @@ characters {
   lod: 0
   character_instance {
     prefab_name: "Seattle:Core/HumanMale"
-    character_sheet_id: "Lvl3_Dwarf_Shaman"
+    character_sheet_id: "a3_crew_norton_lv3"
+    equipment_sheet_id: "a3_crew_norton_lv3"
     character_mod {
       stats {
         body: 0
-        quickness: -1
-        strength: -2
+        quickness: 0
+        strength: 0
         charisma: 0
-        intelligence: -1
+        intelligence: 0
         willpower: 0
         essence: 0
         magic: 0
@@ -2484,10 +2485,10 @@ characters {
         move_speed: 0
       }
       skills {
-        ranged_combat: -2
+        ranged_combat: 0
         close_combat: 0
         throwing_weapons: 0
-        spellcasting: 4
+        spellcasting: 0
         decking: 0
         conjuring: 0
         spirit_summoning: 0
@@ -2504,7 +2505,7 @@ characters {
         etiquette_academic: 0
       }
       specializations {
-        pistol: -1
+        pistol: 0
         rifle: 0
         shotgun: 0
         smg: 0
@@ -2519,41 +2520,20 @@ characters {
       vulnerabilities {
       }
     }
-    equipment {
-      prefab_name: "Outfit_Cult Follower"
-    }
-    equipment {
-      prefab_name: "Spell Haste 2"
-    }
-    equipment {
-      prefab_name: "Spell Slow 2"
-    }
-    equipment {
-      prefab_name: "Spell Heal 1"
-    }
-    equipment {
-      prefab_name: "Spell Armor 1"
-    }
-    equipment {
-      prefab_name: "HealthPack_med"
-    }
-    equipment {
-      prefab_name: "Air Barrier 4"
-    }
-    equipment {
-      prefab_name: "Spell Aim 2"
-    }
     team_id: "Civilians"
     char_name: "Emperor Norton"
     GeneralTags: "isNorton"
     pc_spawn_number: -1
     unkillable: true
+    hiring_type: HiringType_Hireable
     portrait {
       filename: "EmperorNorton"
     }
-    description_bio: "Emperor of California and Protector of UCAS"
+    description_bio: "Emperor of UCAS and Protector of Aztlan."
     portrait_code_override: "s5h5c6b1c6"
-    karma: 65
+    karma: 80
+    hiring_cost_override: 0
+    id: "a3_crew_lv3_norton"
   }
 }
 characters {
@@ -3419,6 +3399,9 @@ characters {
       }
       vulnerabilities {
       }
+    }
+    equipment {
+      prefab_name: "ShamanUrban"
     }
     team_id: "Civilians"
     char_name: "Selene"

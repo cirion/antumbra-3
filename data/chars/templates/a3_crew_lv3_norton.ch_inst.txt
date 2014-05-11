@@ -61,7 +61,6 @@ character_mod {
 }
 team_id: "Civilians"
 char_name: "Emperor Norton"
-GeneralTags: "norton"
 GeneralTags: "isNorton"
 pc_spawn_number: -1
 unkillable: true
@@ -69,8 +68,8 @@ hiring_type: HiringType_Hireable
 portrait {
   filename: "EmperorNorton"
 }
-description_bio: "Emperor of California and Protector of UCAS"
+description_bio: "Emperor of UCAS and Protector of Aztlan."
 portrait_code_override: "s5h5c6b1c6"
-karma: 3
+karma: 80
 hiring_cost_override: 0
 id: "a3_crew_lv3_norton"
