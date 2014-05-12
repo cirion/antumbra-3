@@ -29,7 +29,7 @@ nodes {
     nextNodeIndex: 3
   }
   branches {
-    responseText: "{{CC}}Academic{{/CC}} That looks like a Byzantine seal. Can you help me depress the opening?"
+    responseText: "{{CC}}Etiquette: Academic{{/CC}} That looks like a Byzantine seal. Can you help me depress the opening?"
     conditions {
       ops {
         functionName: "Compare Actor Skill"

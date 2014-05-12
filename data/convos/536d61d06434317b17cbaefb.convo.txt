@@ -9,7 +9,7 @@ nodes {
   index: 0
   text: "Well, well! Looks like it\342\200\231s my lucky day!\n\nA nice, cool, refreshing drink for me and my buddies. And, what\342\200\231s this? Some toys for us to play with?\n\nWhat are you doing out here, toys?"
   branches {
-    responseText: "{{CC}}Gang{{/CC}} The San Francisco tongs want to negotiate turf passage. "
+    responseText: "{{CC}}Etiquette: Gang{{/CC}} The San Francisco tongs want to negotiate turf passage. "
     conditions {
       ops {
         functionName: "Compare Actor Skill"
@@ -62,7 +62,7 @@ nodes {
     nextNodeIndex: 1
   }
   branches {
-    responseText: "{{CC}}Shadowrunner{{/CC}} We just finished a run for the agricorps and took payment in kind. I thought we might parlay this into a bigger score."
+    responseText: "{{CC}}Etiquette: Shadowrunner{{/CC}} We just finished a run for the agricorps and took payment in kind. I thought we might parlay this into a bigger score."
     conditions {
       ops {
         functionName: "Compare Actor Skill"

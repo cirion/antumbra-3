@@ -1,3 +1,19 @@
+triggers {
+  name: "Tabitha Restores Bridge"
+  events {
+  }
+  conditions {
+  }
+  actions {
+  }
+  isActive: true
+  idRef {
+    id: "53712a58643431882a039528"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
 regions {
   name: "Camera"
   position {
@@ -194,6 +210,14 @@ characters {
     karma: 177
   }
 }
+variables {
+  bool_value: false
+  variableref_value {
+    scope: TsVariableScope_Scene
+    name: "metTabitha"
+    typeName: "bool"
+  }
+}
 worldMapLocation {
   filename: ""
   location {
@@ -203,9 +227,9 @@ worldMapLocation {
 }
 mapName: "Shasta Dam"
 parentStory: ""
-scene_title: "New Scene"
+scene_title: "Shasta Dam"
 scene_subtitle: ""
-scene_synopsis: ""
+scene_synopsis: "Assembling a small team, you leave your compound and walk through the streets of Redding. Already you can see the signs of civil unrest: pro-Human graffiti, smoldering fires, distant gunshots. Following the commotion north, you pass through the outskirts of town and arrive at Shasta Dam. You see a group of belligerents huddled near the lake. The beauty of the natural surroundings seems to mock the ugliness of the scene in front of you."
 scene_image: ""
 scene_continue_button_skip: false
 scene_restore_runner_health: false
