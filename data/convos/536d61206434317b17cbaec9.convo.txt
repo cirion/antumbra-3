@@ -16,6 +16,36 @@ nodes {
   sourceInSceneRef {
     id: "536d61a36434317b17cbaee4"
   }
+  actions {
+    ops {
+      functionName: "Play Sound"
+      args {
+        call_value {
+          functionName: "Get Map Item (Sound)"
+          args {
+            string_value: "ambient_office"
+          }
+          args {
+            string_value: "Phone"
+          }
+        }
+      }
+      args {
+        float_value: 1
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+  }
 }
 nodes {
   idRef {
@@ -48,6 +78,22 @@ nodes {
   index: 3
   text: "We don\342\200\231t know what kind of tech they have, so maintain radio silence from now on. Rick out."
   nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Send Event After Delay"
+      args {
+        call_value {
+          functionName: "Get Map Item (Event)"
+          args {
+            string_value: "Dorbi Arrives"
+          }
+        }
+      }
+      args {
+        float_value: 1
+      }
+    }
+  }
 }
 roots {
   nextNodeIndex: 0

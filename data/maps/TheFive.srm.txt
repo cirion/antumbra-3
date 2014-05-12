@@ -1,7 +1,7 @@
 minX: -84
-minZ: -46
+minZ: -52
 numX: 157
-numZ: 109
+numZ: 115
 props {
   name: "barrens_ground_twoLaneWhite01"
   gridPoint {
@@ -9657,6 +9657,49 @@ props {
   idRef {
     id: "5365b7db366236100f007135"
   }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    prerequisites {
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Variable (bool)"
+            args {
+              string_value: "canReturnToRedding"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+      }
+    }
+    transitionPoint {
+      scene_name: "Redding Old City Hall"
+      confirmation_text: "Are you ready to return to Redding?"
+    }
+  }
   lod: 0
 }
 props {
@@ -12715,6 +12758,607 @@ props {
   orientation: ORIENTATION_E
   idRef {
     id: "536ebbc6366236041f004dbb"
+  }
+  lod: 0
+}
+props {
+  name: "barrens_ground_twoLaneWhite03"
+  gridPoint {
+    x: 2
+    y: 0
+    z: -43
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "536fa077366236941d00301d"
+  }
+  lod: 0
+}
+props {
+  name: "barrens_ground_twoLaneWhite03"
+  gridPoint {
+    x: -4
+    y: 0
+    z: -43
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "536fa68d366236941d00302b"
+  }
+  lod: 0
+}
+props {
+  name: "haven_vehicle_sleekStepVan01"
+  gridPoint {
+    x: 25
+    y: 0
+    z: -22
+  }
+  orientation: ORIENTATION_W
+  idRef {
+    id: "536fc6fe366236941d00316e"
+  }
+  lod: 0
+}
+props {
+  name: "barrens_ground_twoLaneWhite03"
+  gridPoint {
+    x: 7
+    y: 0
+    z: -52
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "536fc729366236941d00316f"
+  }
+  lod: 0
+}
+props {
+  name: "haven_vehicle_armoredVan02"
+  gridPoint {
+    x: -62
+    y: 0
+    z: 15
+  }
+  orientation: ORIENTATION_N
+  displayName: "Scrapyard Van"
+  idRef {
+    id: "536fdcba366236941d0032c1"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    prerequisites {
+      ops {
+        functionName: "Comparison (int)"
+        args {
+          call_value {
+            functionName: "Get Variable (int)"
+            args {
+              string_value: "missionMoveVanState"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+        args {
+          int_value: 1
+        }
+      }
+    }
+    interactionIcon: InteractionIcon_Generic
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_blockMove"
+  gridPoint {
+    x: -58
+    y: 0
+    z: 17
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "system_invisible_blockMove"
+  gridPoint {
+    x: -58
+    y: 0
+    z: 18
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "536fdcd9366236941d0032c2"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_blockMove"
+  gridPoint {
+    x: -62
+    y: 0
+    z: 18
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "536fdcdb366236941d0032c3"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_blockMove"
+  gridPoint {
+    x: -62
+    y: 0
+    z: 17
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "536fdcdd366236941d0032c4"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_nonsolidProp"
+  gridPoint {
+    x: -59
+    y: 0
+    z: 22
+  }
+  orientation: ORIENTATION_S
+  displayName: "Scrapyard Waypoint"
+  idRef {
+    id: "536fdd20366236941d0032c7"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    dummyInteraciton {
+    }
+  }
+  lod: 0
+}
+props {
+  name: "haven_street_sandbagBarrier01"
+  gridPoint {
+    x: -55
+    y: 0
+    z: -6
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "haven_street_trafficCone01"
+  gridPoint {
+    x: -55
+    y: 0
+    z: -9
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "haven_street_trafficCone01"
+  gridPoint {
+    x: -57
+    y: 0
+    z: -10
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "53700863366236740800771e"
+  }
+  lod: 0
+}
+props {
+  name: "haven_street_trafficCone01"
+  gridPoint {
+    x: -60
+    y: 0
+    z: -11
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "53700865366236740800771f"
+  }
+  lod: 0
+}
+props {
+  name: "haven_street_trafficCone01"
+  gridPoint {
+    x: -63
+    y: 0
+    z: -11
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "537008663662367408007720"
+  }
+  lod: 0
+}
+props {
+  name: "haven_street_trafficCone01"
+  gridPoint {
+    x: -65
+    y: 0
+    z: -11
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "5370086b3662367408007721"
+  }
+  lod: 0
+}
+props {
+  name: "mitte_street_cart01"
+  gridPoint {
+    x: -44
+    y: 0
+    z: -2
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "mitte_street_payPhone01"
+  gridPoint {
+    x: -37
+    y: 0
+    z: -7
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "mitte_street_payPhone01"
+  gridPoint {
+    x: -4
+    y: 0
+    z: -23
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "537008a23662367408007722"
+  }
+  lod: 0
+}
+props {
+  name: "mitte_street_trashcan01"
+  gridPoint {
+    x: -58
+    y: 0
+    z: -4
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "mitte_street_trashcan01"
+  gridPoint {
+    x: -65
+    y: 0
+    z: 7
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "537008c73662367408007723"
+  }
+  lod: 0
+}
+props {
+  name: "barrens_street_atm"
+  gridPoint {
+    x: -56
+    y: 0
+    z: 1
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "barrens_street_bench02"
+  gridPoint {
+    x: -66
+    y: 0
+    z: 5
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "barrens_street_dumpster02"
+  gridPoint {
+    x: -71
+    y: 0
+    z: 14
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "barrens_street_lightpole02"
+  gridPoint {
+    x: 11
+    y: 0
+    z: -22
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "barrens_street_lightpoleTop02"
+  gridPoint {
+    x: 11
+    y: 8
+    z: -22
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "barrens_street_lightpole01"
+  gridPoint {
+    x: -5
+    y: 0
+    z: -22
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "barrens_street_lightpole02"
+  gridPoint {
+    x: -17
+    y: 0
+    z: -22
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "5370094c3662367408007724"
+  }
+  lod: 0
+}
+props {
+  name: "barrens_street_lightpoleTop02"
+  gridPoint {
+    x: -17
+    y: 8
+    z: -22
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "5370094c3662367408007725"
+  }
+  lod: 0
+}
+props {
+  name: "barrens_street_lightpole02"
+  gridPoint {
+    x: -33
+    y: 0
+    z: -22
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "537009523662367408007726"
+  }
+  lod: 0
+}
+props {
+  name: "barrens_street_lightpoleTop01"
+  gridPoint {
+    x: -33
+    y: 8
+    z: -22
+  }
+  orientation: ORIENTATION_N
+  lod: 0
+}
+props {
+  name: "barrens_street_lightpoleTop01"
+  gridPoint {
+    x: -5
+    y: 6
+    z: -22
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "barrens_street_signDoNotEnter"
+  gridPoint {
+    x: -55
+    y: 0
+    z: 8
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "barrens_street_signDoNotEnter"
+  gridPoint {
+    x: -67
+    y: 0
+    z: -6
+  }
+  orientation: ORIENTATION_W
+  idRef {
+    id: "537009f53662367408007729"
+  }
+  lod: 0
+}
+props {
+  name: "barrens_street_signNoParking"
+  gridPoint {
+    x: -65
+    y: 0
+    z: 17
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "barrens_street_signOneWay"
+  gridPoint {
+    x: -55
+    y: 0
+    z: -8
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "pikePlace_street_temporaryPoliceRail"
+  gridPoint {
+    x: -29
+    y: 0
+    z: -12
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "docks_clutter_largeTrafficCone"
+  gridPoint {
+    x: -39
+    y: 0
+    z: -13
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "docks_clutter_largeTrafficCone"
+  gridPoint {
+    x: -42
+    y: 0
+    z: -16
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "53700a81366236740800772a"
+  }
+  lod: 0
+}
+props {
+  name: "barrens_street_lightpoleTop02"
+  gridPoint {
+    x: -55
+    y: 8
+    z: 16
+  }
+  orientation: ORIENTATION_W
+  idRef {
+    id: "53700a9d366236740800772b"
+  }
+  lod: 0
+}
+props {
+  name: "barrens_street_lightpole02"
+  gridPoint {
+    x: -55
+    y: 0
+    z: 18
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "53700a9d366236740800772c"
+  }
+  lod: 0
+}
+props {
+  name: "barrens_street_lightpole02"
+  gridPoint {
+    x: -63
+    y: 0
+    z: 18
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "53700ac2366236740800772d"
+  }
+  lod: 0
+}
+props {
+  name: "barrens_street_lightpoleTop02"
+  gridPoint {
+    x: -63
+    y: 8
+    z: 16
+  }
+  orientation: ORIENTATION_W
+  idRef {
+    id: "53700ac2366236740800772e"
+  }
+  lod: 0
+}
+props {
+  name: "barrens_street_dumpster01"
+  gridPoint {
+    x: -55
+    y: 0
+    z: 16
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "barrens_street_dumpster03"
+  gridPoint {
+    x: -53
+    y: 0
+    z: 16
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "docks_clutter_largeTrafficCone"
+  gridPoint {
+    x: -52
+    y: 0
+    z: 14
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "53700b22366236740800772f"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_blockMove"
+  gridPoint {
+    x: 8
+    y: 0
+    z: -14
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "5370146036623674080077bf"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_blockMove"
+  gridPoint {
+    x: 9
+    y: 0
+    z: -14
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "5370146136623674080077c0"
   }
   lod: 0
 }
