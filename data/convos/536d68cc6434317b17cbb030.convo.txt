@@ -52,7 +52,7 @@ nodes {
     id: "536d69076434317b17cbb03f"
   }
   index: 3
-  text: "So you sold out all your metahuman friends? After we saved your life countless times? You make me sick!\n\n{{GM}}Dorbi angrily spits at the feet of her former leader.{{/GM}}"
+  text: "So you sold out all your metahuman friends? After we saved your life countless times? You make me sick!\n\n{{GM}}Dorbi angrily spits at the ground.{{/GM}}"
   branches {
     responseText: ""
     nextNodeIndex: 4
@@ -118,6 +118,9 @@ nodes {
     nextNodeIndex: 6
   }
   nodeType: ConversationNodeType_Simple
+  sourceInSceneRef {
+    id: "536d60fe6434317b17cbaec8"
+  }
 }
 nodes {
   idRef {
@@ -127,6 +130,54 @@ nodes {
   text: ""
   branches {
     responseText: ""
+    conditions {
+      ops {
+        functionName: "Evaluate If Actor is Inside Region"
+        args {
+          call_value {
+            functionName: "All Actors With Tag"
+            args {
+              call_value {
+                functionName: "Tag From String"
+                args {
+                  string_value: "isNorton"
+                }
+              }
+            }
+            args {
+              call_value {
+                functionName: "Get Preset Value (int)"
+                args {
+                  string_value: "AllOrAny"
+                }
+                args {
+                  int_value: 1
+                }
+              }
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "AreOrAreNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Map Item (Region)"
+            args {
+              string_value: "536582ae3662368c1b004e92"
+            }
+          }
+        }
+      }
+    }
     nextNodeIndex: 7
     onlyOnce: true
     idRef {
@@ -135,6 +186,54 @@ nodes {
   }
   branches {
     responseText: ""
+    conditions {
+      ops {
+        functionName: "Evaluate If Actor is Inside Region"
+        args {
+          call_value {
+            functionName: "All Actors With Tag"
+            args {
+              call_value {
+                functionName: "Tag From String"
+                args {
+                  string_value: "isElorn"
+                }
+              }
+            }
+            args {
+              call_value {
+                functionName: "Get Preset Value (int)"
+                args {
+                  string_value: "AllOrAny"
+                }
+                args {
+                  int_value: 1
+                }
+              }
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "AreOrAreNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Map Item (Region)"
+            args {
+              string_value: "536582ae3662368c1b004e92"
+            }
+          }
+        }
+      }
+    }
     nextNodeIndex: 8
     onlyOnce: true
     idRef {
@@ -143,6 +242,54 @@ nodes {
   }
   branches {
     responseText: ""
+    conditions {
+      ops {
+        functionName: "Evaluate If Actor is Inside Region"
+        args {
+          call_value {
+            functionName: "All Actors With Tag"
+            args {
+              call_value {
+                functionName: "Tag From String"
+                args {
+                  string_value: "isHailey"
+                }
+              }
+            }
+            args {
+              call_value {
+                functionName: "Get Preset Value (int)"
+                args {
+                  string_value: "AllOrAny"
+                }
+                args {
+                  int_value: 1
+                }
+              }
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "AreOrAreNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Map Item (Region)"
+            args {
+              string_value: "536582ae3662368c1b004e92"
+            }
+          }
+        }
+      }
+    }
     nextNodeIndex: 9
     onlyOnce: true
     idRef {
@@ -234,6 +381,7 @@ nodes {
     auxiliaryLink: true
   }
   nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isNorton"
 }
 nodes {
   idRef {
@@ -247,6 +395,7 @@ nodes {
     auxiliaryLink: true
   }
   nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isElorn"
 }
 nodes {
   idRef {
@@ -260,6 +409,7 @@ nodes {
     auxiliaryLink: true
   }
   nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isHailey"
 }
 nodes {
   idRef {
