@@ -1068,7 +1068,7 @@ props {
   gridPoint {
     x: 6
     y: 0
-    z: -21
+    z: -22
   }
   orientation: ORIENTATION_W
   lod: 0
@@ -13360,5 +13360,15 @@ props {
   idRef {
     id: "5370146136623674080077c0"
   }
+  lod: 0
+}
+props {
+  name: "system_invisible_blockMove"
+  gridPoint {
+    x: 8
+    y: 0
+    z: -18
+  }
+  orientation: ORIENTATION_S
   lod: 0
 }
