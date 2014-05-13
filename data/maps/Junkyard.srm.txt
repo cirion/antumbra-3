@@ -10336,8 +10336,42 @@ props {
     z: 0
   }
   orientation: ORIENTATION_S
+  GeneralTags: "isSearchable"
+  displayName: "Bogus 1"
   idRef {
     id: "536664563662362409007f11"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    prerequisites {
+      ops {
+        functionName: "Comparison (int)"
+        args {
+          call_value {
+            functionName: "Get Variable (int)"
+            args {
+              string_value: "crateQuest"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+        args {
+          int_value: 1
+        }
+      }
+    }
+    interactionIcon: InteractionIcon_Inspect
   }
   lod: 0
 }
@@ -10437,8 +10471,41 @@ props {
     z: -1
   }
   orientation: ORIENTATION_S
+  displayName: "Fetus Crate"
   idRef {
     id: "536664cd3662362409007f19"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    prerequisites {
+      ops {
+        functionName: "Comparison (int)"
+        args {
+          call_value {
+            functionName: "Get Variable (int)"
+            args {
+              string_value: "crateQuest"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+        args {
+          int_value: 1
+        }
+      }
+    }
+    interactionIcon: InteractionIcon_Generic
   }
   lod: 0
 }
@@ -10632,8 +10699,41 @@ props {
     z: 18
   }
   orientation: ORIENTATION_S
+  displayName: "Control Board Container"
   idRef {
     id: "536665a03662362409007f28"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    prerequisites {
+      ops {
+        functionName: "Comparison (int)"
+        args {
+          call_value {
+            functionName: "Get Variable (int)"
+            args {
+              string_value: "crateQuest"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+        args {
+          int_value: 1
+        }
+      }
+    }
+    interactionIcon: InteractionIcon_Inspect
   }
   lod: 0
 }
@@ -10738,19 +10838,6 @@ props {
   orientation: ORIENTATION_S
   idRef {
     id: "5366665f3662362409007f30"
-  }
-  lod: 0
-}
-props {
-  name: "backer_vehicle_FindleysPestControl"
-  gridPoint {
-    x: -47
-    y: 0
-    z: 37
-  }
-  orientation: ORIENTATION_E
-  idRef {
-    id: "5366666f3662362409007f31"
   }
   lod: 0
 }
@@ -10957,8 +11044,41 @@ props {
     z: 33
   }
   orientation: ORIENTATION_S
+  displayName: "Tissue Suitcase Container"
   idRef {
     id: "536667483662362409007f41"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    prerequisites {
+      ops {
+        functionName: "Comparison (int)"
+        args {
+          call_value {
+            functionName: "Get Variable (int)"
+            args {
+              string_value: "crateQuest"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+        args {
+          int_value: 1
+        }
+      }
+    }
+    interactionIcon: InteractionIcon_Inspect
   }
   lod: 0
 }
@@ -11266,8 +11386,41 @@ props {
     z: 51
   }
   orientation: ORIENTATION_S
+  displayName: "Movable Crate"
   idRef {
     id: "536668623662362409007f59"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    prerequisites {
+      ops {
+        functionName: "Comparison (int)"
+        args {
+          call_value {
+            functionName: "Get Variable (int)"
+            args {
+              string_value: "crateQuest"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 4
+            }
+          }
+        }
+        args {
+          int_value: 2
+        }
+      }
+    }
+    interactionIcon: InteractionIcon_Generic
   }
   lod: 0
 }
@@ -12672,6 +12825,104 @@ props {
   orientation: ORIENTATION_S
   idRef {
     id: "536670df3662362409007fe3"
+  }
+  lod: 0
+}
+props {
+  name: "cemetery_ground_dirt03"
+  gridPoint {
+    x: -86
+    y: 0
+    z: 24
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "5372601e6434311639fc66fc"
+  }
+  lod: 0
+}
+props {
+  name: "cemetery_ground_dirt03"
+  gridPoint {
+    x: -86
+    y: 0
+    z: 21
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "537260236434311639fc66fd"
+  }
+  lod: 0
+}
+props {
+  name: "cemetery_ground_dirt03"
+  gridPoint {
+    x: -89
+    y: 0
+    z: 21
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "537260256434311639fc66fe"
+  }
+  lod: 0
+}
+props {
+  name: "cemetery_ground_dirt03"
+  gridPoint {
+    x: -89
+    y: 0
+    z: 24
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "537260266434311639fc66ff"
+  }
+  lod: 0
+}
+props {
+  name: "docks_clutter_industrialDumpster"
+  gridPoint {
+    x: -47
+    y: 0
+    z: 36
+  }
+  orientation: ORIENTATION_E
+  displayName: "Parfait Container"
+  idRef {
+    id: "53728c1f64343195016cdce5"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    prerequisites {
+      ops {
+        functionName: "Comparison (int)"
+        args {
+          call_value {
+            functionName: "Get Variable (int)"
+            args {
+              string_value: "crateQuest"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+        args {
+          int_value: 1
+        }
+      }
+    }
+    interactionIcon: InteractionIcon_Inspect
   }
   lod: 0
 }
