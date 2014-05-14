@@ -20317,8 +20317,52 @@ props {
     z: -181
   }
   orientation: ORIENTATION_S
+  displayName: "Catacomb Entrance"
   idRef {
     id: "5224a6da366236a409007eb3"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    prerequisites {
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Variable (bool)"
+            args {
+              string_value: "CatacombOpen"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+      }
+    }
+    transitionPoint {
+      scene_name: "Crypt"
+      confirmation_text: "The chilly silence of the grave awaits. Are you ready to descend?"
+    }
   }
   lod: 0
 }

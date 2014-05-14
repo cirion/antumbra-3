@@ -4,29 +4,108 @@ idRef {
 ui_name: "a3-colma-Tabitha"
 nodes {
   idRef {
-    id: "536d4ac9643431740d169e45"
+    id: "537296fa64343195016cddac"
   }
   index: 0
-  text: "Oh, no\342\200\246 I fear the evil has chased their children into this mausoleum.\n\nWill you save them?"
+  text: ""
   branches {
     responseText: ""
+    conditions {
+      ops {
+        functionName: "Comparison (int)"
+        args {
+          call_value {
+            functionName: "Get Variable (int)"
+            args {
+              string_value: "DeadVictims"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 2
+            }
+          }
+        }
+        args {
+          int_value: 1
+        }
+      }
+    }
     nextNodeIndex: 1
+  }
+  branches {
+    responseText: ""
+    nextNodeIndex: 9
   }
   nodeType: ConversationNodeType_Simple
 }
 nodes {
   idRef {
-    id: "536d4adf643431740d169e48"
+    id: "537298de64343195016cdde0"
   }
   index: 1
+  text: "Alas! I am certain that you did what you could, but many of Norton\'s loyal soldiers have perished while defending the graveyard. Few will remain to aid your cause."
+  branches {
+    responseText: ""
+    nextNodeIndex: 2
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "5372992d64343195016cde03"
+  }
+  index: 2
+  text: "However, the evil has chased their children into this mausoleum.\n\nWill you save them?"
+  branches {
+    responseText: ""
+    nextNodeIndex: 3
+  }
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "TabithaLeaving"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "5372992d64343195016cde06"
+  }
+  index: 3
   text: ""
   branches {
     responseText: "Can you open the door?"
-    nextNodeIndex: 2
+    nextNodeIndex: 4
   }
   branches {
     responseText: "Who is \342\200\234the evil\342\200\235?"
-    nextNodeIndex: 3
+    nextNodeIndex: 5
   }
   branches {
     responseText: "{{CC}}Etiquette: Academic{{/CC}} That looks like a Byzantine seal. Can you help me depress the opening?"
@@ -76,10 +155,10 @@ nodes {
         }
       }
     }
-    nextNodeIndex: 4
+    nextNodeIndex: 6
   }
   branches {
-    responseText: "{{Spellcasting: 5{{/CC}} We should be able to open this if we both channel through the seal."
+    responseText: "{{CC}}Spellcasting: 6{{/CC}} We should be able to open this if we both channel through the seal."
     conditions {
       ops {
         functionName: "Compare Actor Skill"
@@ -126,7 +205,7 @@ nodes {
         }
       }
     }
-    nextNodeIndex: 6
+    nextNodeIndex: 8
   }
   branches {
     responseText: "I\342\200\231ll try and find a way to open that door."
@@ -136,47 +215,47 @@ nodes {
 }
 nodes {
   idRef {
-    id: "536d4af0643431740d169e51"
+    id: "5372992d64343195016cde09"
   }
-  index: 2
-  text: "{{CC}}Tabitha stares at you with unblinking eyes.{{/CC}}\n\nThis is a test of your abilities, $(l.name). Will you prove yourself capable?"
+  index: 4
+  text: "{{GM}}She stares at you with unblinking eyes.{{/GM}}\n\nThis is a test of your abilities, $(l.name). Will you prove yourself capable?"
   branches {
     responseText: ""
-    nextNodeIndex: 1
+    nextNodeIndex: 3
     auxiliaryLink: true
   }
   nodeType: ConversationNodeType_Simple
 }
 nodes {
   idRef {
-    id: "536d4b06643431740d169e56"
+    id: "5372992d64343195016cde0f"
   }
-  index: 3
+  index: 5
   text: "A great and powerful being of pure flame. It calls itself Tophet. All freed spirits are wild, but this one has bound itself to a greater being in exchange for even more power.\n\nSuch a bargain is despicable, and will result in great suffering."
   branches {
     responseText: ""
-    nextNodeIndex: 1
+    nextNodeIndex: 3
     auxiliaryLink: true
   }
   nodeType: ConversationNodeType_Simple
 }
 nodes {
   idRef {
-    id: "536d4b5b643431740d169e5d"
+    id: "5372992d64343195016cde15"
   }
-  index: 4
+  index: 6
   text: "{{GM}}Tabitha nods silently, then leans toward the door. Working in unison, you both press hidden latches beneath the stone, and it smoothly slides aside.{{/CC}}"
   branches {
     responseText: ""
-    nextNodeIndex: 5
+    nextNodeIndex: 7
   }
   nodeType: ConversationNodeType_Simple
 }
 nodes {
   idRef {
-    id: "536d4b79643431740d169e60"
+    id: "5372992d64343195016cde18"
   }
-  index: 5
+  index: 7
   text: "Our paths must separate for now. I believe we will meet again in the future. My best wishes go with you."
   nodeType: ConversationNodeType_Simple
   actions {
@@ -191,30 +270,84 @@ nodes {
         }
       }
     }
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "CatacombOpen"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
   }
 }
 nodes {
   idRef {
-    id: "536d4bed643431740d169e62"
+    id: "5372992d64343195016cde1b"
   }
-  index: 6
+  index: 8
   text: "{{GM}}Tabitha nods silently, then closes her eyes as she begins casting. You add your energy to the door from the other side, and after a moment it slides open.{{/CC}}"
   branches {
     responseText: ""
-    nextNodeIndex: 5
+    nextNodeIndex: 7
     auxiliaryLink: true
   }
   nodeType: ConversationNodeType_Simple
 }
 nodes {
   idRef {
+    id: "5372993864343195016cde21"
+  }
+  index: 9
+  text: "Well done. Most of Norton\'s soldiers have survived this fight, and will live on to support you."
+  branches {
+    responseText: ""
+    nextNodeIndex: 2
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Add To Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (int)"
+          args {
+            string_value: "531d26a736623648180018bf"
+          }
+          args {
+            string_value: "Global_Manpower"
+          }
+        }
+      }
+      args {
+        int_value: 1
+      }
+    }
+  }
+}
+nodes {
+  idRef {
     id: "536d49ac643431740d169df6"
   }
-  index: 7
+  index: 10
   text: "Beware! Great evil lurks within."
   branches {
     responseText: ""
-    nextNodeIndex: 8
+    nextNodeIndex: 11
   }
   nodeType: ConversationNodeType_Simple
 }
@@ -222,11 +355,11 @@ nodes {
   idRef {
     id: "536d49dc643431740d169e00"
   }
-  index: 8
+  index: 11
   text: ""
   branches {
     responseText: "What kind of evil?"
-    nextNodeIndex: 9
+    nextNodeIndex: 12
     onlyOnce: true
     idRef {
       id: "536d49c6643431740d169dfc"
@@ -272,7 +405,7 @@ nodes {
         }
       }
     }
-    nextNodeIndex: 10
+    nextNodeIndex: 13
     hideIfUnavailable: true
     onlyOnce: true
     idRef {
@@ -319,16 +452,16 @@ nodes {
         }
       }
     }
-    nextNodeIndex: 11
+    nextNodeIndex: 14
   }
   branches {
     responseText: "Thanks for the warning."
-    nextNodeIndex: 12
+    nextNodeIndex: 15
     auxiliaryLink: true
   }
   branches {
     responseText: "Get lost!"
-    nextNodeIndex: 12
+    nextNodeIndex: 15
   }
   nodeType: ConversationNodeType_Simple
 }
@@ -336,11 +469,11 @@ nodes {
   idRef {
     id: "536d49e2643431740d169e06"
   }
-  index: 9
+  index: 12
   text: "The air here is\342\200\246 thin. It\342\200\231s very easy for creatures to cross over from the other side.\n\nThe dead have lain at rest for many years, but some being has arrived to whip them into a frenzy. You must tread carefully."
   branches {
     responseText: ""
-    nextNodeIndex: 8
+    nextNodeIndex: 11
     auxiliaryLink: true
   }
   nodeType: ConversationNodeType_Simple
@@ -349,11 +482,11 @@ nodes {
   idRef {
     id: "536d4a1e643431740d169e15"
   }
-  index: 10
+  index: 13
   text: "Oh, it is a short flight. It takes you much longer since you need to travel on the roads and cross so many checkpoints."
   branches {
     responseText: ""
-    nextNodeIndex: 8
+    nextNodeIndex: 11
     auxiliaryLink: true
   }
   nodeType: ConversationNodeType_Simple
@@ -362,11 +495,11 @@ nodes {
   idRef {
     id: "536d4a4d643431740d169e28"
   }
-  index: 11
+  index: 14
   text: "I have been searching for my sister. She disappeared in Germany many years ago. I haven\342\200\231t been able to find her after many years of searching there, and so I have traveled abroad in hopes of locating her."
   branches {
     responseText: ""
-    nextNodeIndex: 8
+    nextNodeIndex: 11
     auxiliaryLink: true
   }
   nodeType: ConversationNodeType_Simple
@@ -375,7 +508,7 @@ nodes {
   idRef {
     id: "536d4a68643431740d169e40"
   }
-  index: 12
+  index: 15
   text: "Some of the poor creatures who lived here before survive still. I hope that you can rescue them before it is too late."
   nodeType: ConversationNodeType_Simple
   actions {
@@ -462,6 +595,7 @@ nodes {
   }
 }
 roots {
+  responseText: ""
   conditions {
     ops {
       functionName: "Comparison (bool)"
@@ -469,7 +603,7 @@ roots {
         call_value {
           functionName: "Get Variable (bool)"
           args {
-            string_value: "RescuedVictims"
+            string_value: "TalkedToTabitha"
           }
         }
       }
@@ -501,5 +635,5 @@ roots {
 }
 roots {
   responseText: ""
-  nextNodeIndex: 7
+  nextNodeIndex: 10
 }
