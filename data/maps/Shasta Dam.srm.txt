@@ -3066,19 +3066,6 @@ props {
   lod: 0
 }
 props {
-  name: "barrens_decor_concreteRailEdge01"
-  gridPoint {
-    x: 2
-    y: 0
-    z: -24
-  }
-  orientation: ORIENTATION_S
-  idRef {
-    id: "53667bd936623624090080c4"
-  }
-  lod: 0
-}
-props {
   name: "barrens_decor_concreteRailEnd02"
   gridPoint {
     x: -3
@@ -3086,19 +3073,6 @@ props {
     z: -24
   }
   orientation: ORIENTATION_E
-  lod: 0
-}
-props {
-  name: "barrens_decor_concreteRailEnd02"
-  gridPoint {
-    x: 2
-    y: 0
-    z: -28
-  }
-  orientation: ORIENTATION_E
-  idRef {
-    id: "53667bef36623624090080c5"
-  }
   lod: 0
 }
 props {
@@ -9509,6 +9483,53 @@ props {
   orientation: ORIENTATION_S
   idRef {
     id: "536c5951366236d41e0027a8"
+  }
+  lod: 0
+}
+props {
+  name: "haven_groundDecoration_damagedGround01"
+  gridPoint {
+    x: -1
+    y: 0
+    z: 4
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "haven_groundDecoration_damagedGround01"
+  gridPoint {
+    x: -2
+    y: 0
+    z: 4
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "vfx_fx_smokeyFire"
+  gridPoint {
+    x: 0
+    y: 0
+    z: 5
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "Berlin:EnvironmentSmokeyFire"
+  }
+  lod: 0
+}
+props {
+  name: "barrens_decor_concreteRailEnd02"
+  gridPoint {
+    x: 2
+    y: 0
+    z: -24
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "5373e8eb643431b8017c3d57"
   }
   lod: 0
 }

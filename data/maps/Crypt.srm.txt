@@ -1,6 +1,6 @@
 minX: -53
 minZ: -101
-numX: 86
+numX: 97
 numZ: 128
 props {
   name: "cemetery_wall_connector01"
@@ -3798,6 +3798,53 @@ props {
     z: -10
   }
   orientation: ORIENTATION_E
+  displayName: "Exit Stairs"
+  idRef {
+    id: "5373e76b643431b8017c3d53"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    prerequisites {
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Variable (bool)"
+            args {
+              string_value: "canExitStage"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+      }
+    }
+    transitionPoint {
+      scene_name: "Redding Old City Hall"
+      confirmation_text: "Are you ready to make the trip back to Redding?"
+    }
+  }
   lod: 0
 }
 props {
@@ -6048,19 +6095,6 @@ props {
   orientation: ORIENTATION_E
   idRef {
     id: "53665b953662362409007b48"
-  }
-  lod: 0
-}
-props {
-  name: "museum_wall_edge01"
-  gridPoint {
-    x: -34
-    y: 0
-    z: -72
-  }
-  orientation: ORIENTATION_E
-  idRef {
-    id: "53665b983662362409007b49"
   }
   lod: 0
 }
@@ -8568,6 +8602,107 @@ props {
   interactionRoot {
     isEnabled: true
     interactionRadius: 1
+    prerequisites {
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Variable (bool)"
+            args {
+              string_value: "isUnlockedRed"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+      }
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Variable (bool)"
+            args {
+              string_value: "isUnlockedGreen"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+      }
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Variable (bool)"
+            args {
+              string_value: "isUnlockedPurple"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+      }
+    }
     doorPoint {
       doorState: false
       aiOnlyDoor: false
@@ -8640,6 +8775,879 @@ props {
     doorPoint {
       doorState: false
       aiOnlyDoor: false
+      doorSound: "DoorStone"
+      doorSoundBundle: "props"
+    }
+  }
+  lod: 0
+}
+props {
+  name: "system_gizmo_lightbulb"
+  gridPoint {
+    x: 8
+    y: 0
+    z: -33
+  }
+  orientation: ORIENTATION_S
+  displayName: "Blue Light Indicator"
+  idRef {
+    id: "5373937f64343183137c3c57"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    dummyInteraciton {
+    }
+  }
+  lod: 0
+  light {
+    range: 3
+    color {
+      r: 1
+      g: 1
+      b: 1
+    }
+    intensity: 8
+  }
+}
+props {
+  name: "system_gizmo_lightbulb"
+  gridPoint {
+    x: 26
+    y: 0
+    z: -29
+  }
+  orientation: ORIENTATION_S
+  displayName: "Yellow Light Indicator"
+  idRef {
+    id: "53739ce7643431b8017c3c56"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    dummyInteraciton {
+    }
+  }
+  lod: 0
+  light {
+    range: 3
+    color {
+      r: 1
+      g: 1
+      b: 1
+    }
+    intensity: 8
+  }
+}
+props {
+  name: "system_gizmo_lightbulb"
+  gridPoint {
+    x: 30
+    y: 0
+    z: -35
+  }
+  orientation: ORIENTATION_S
+  displayName: "Red Light Indicator"
+  idRef {
+    id: "53739cef643431b8017c3c57"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    dummyInteraciton {
+    }
+  }
+  lod: 0
+  light {
+    range: 3
+    color {
+      r: 1
+      g: 1
+      b: 1
+    }
+    intensity: 8
+  }
+}
+props {
+  name: "museum_decor_statue04"
+  gridPoint {
+    x: 5
+    y: 0
+    z: -36
+  }
+  orientation: ORIENTATION_N
+  displayName: "Blue Light Switch"
+  idRef {
+    id: "53739ec5643431b8017c3c5a"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    interactionIcon: InteractionIcon_Generic
+  }
+  lod: 0
+}
+props {
+  name: "museum_decor_statue01"
+  gridPoint {
+    x: 26
+    y: 0
+    z: -40
+  }
+  orientation: ORIENTATION_S
+  displayName: "Red Light Switch"
+  idRef {
+    id: "53739f9a643431b8017c3c60"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    interactionIcon: InteractionIcon_Generic
+  }
+  lod: 0
+}
+props {
+  name: "museum_decor_statue02"
+  gridPoint {
+    x: 22
+    y: 0
+    z: -33
+  }
+  orientation: ORIENTATION_S
+  displayName: "Yellow Light Switch"
+  idRef {
+    id: "53739fd1643431b8017c3c62"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    interactionIcon: InteractionIcon_Generic
+  }
+  lod: 0
+}
+props {
+  name: "system_gizmo_lightbulb"
+  gridPoint {
+    x: 36
+    y: 0
+    z: -41
+  }
+  orientation: ORIENTATION_S
+  displayName: "Puzzle Light Indicator"
+  idRef {
+    id: "5373a07b643431b8017c3c64"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    dummyInteraciton {
+    }
+  }
+  lod: 0
+  light {
+    range: 3
+    color {
+      r: 1
+      g: 1
+      b: 1
+    }
+    intensity: 8
+  }
+}
+props {
+  name: "system_gizmo_lightbulb"
+  gridPoint {
+    x: 42
+    y: 0
+    z: -47
+  }
+  orientation: ORIENTATION_S
+  displayName: "Lock Light Red"
+  idRef {
+    id: "5373a08e643431b8017c3c65"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    dummyInteraciton {
+    }
+  }
+  lod: 0
+  light {
+    range: 1
+    color {
+      r: 1
+      g: 1
+      b: 1
+    }
+    intensity: 3
+  }
+}
+props {
+  name: "system_gizmo_lightbulb"
+  gridPoint {
+    x: 39
+    y: 0
+    z: -50
+  }
+  orientation: ORIENTATION_S
+  displayName: "Lock Light Green"
+  idRef {
+    id: "5373a138643431b8017c3c67"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    dummyInteraciton {
+    }
+  }
+  lod: 0
+  light {
+    range: 1
+    color {
+      r: 1
+      g: 1
+      b: 1
+    }
+    intensity: 3
+  }
+}
+props {
+  name: "system_gizmo_lightbulb"
+  gridPoint {
+    x: 36
+    y: 0
+    z: -53
+  }
+  orientation: ORIENTATION_S
+  displayName: "Lock Light Purple"
+  idRef {
+    id: "5373a145643431b8017c3c68"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    dummyInteraciton {
+    }
+  }
+  lod: 0
+  light {
+    range: 1
+    color {
+      r: 1
+      g: 1
+      b: 1
+    }
+    intensity: 3
+  }
+}
+props {
+  name: "museum_furniture_table01"
+  gridPoint {
+    x: 24
+    y: 0
+    z: -70
+  }
+  orientation: ORIENTATION_S
+  displayName: "Table Red Lock"
+  idRef {
+    id: "5373a6f3643431b8017c3c78"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    prerequisites {
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Variable (bool)"
+            args {
+              string_value: "isRedLightOn"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+      }
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Variable (bool)"
+            args {
+              string_value: "isBlueLightOn"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+      }
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Variable (bool)"
+            args {
+              string_value: "isYellowLightOn"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+      }
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Variable (bool)"
+            args {
+              string_value: "isUnlockedRed"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+      }
+    }
+    interactionIcon: InteractionIcon_Generic
+  }
+  lod: 0
+}
+props {
+  name: "telestrianEstate_decor_candleStick02"
+  gridPoint {
+    x: 24
+    y: 1
+    z: -69.5
+  }
+  orientation: ORIENTATION_S
+  displayName: "Candles Red"
+  idRef {
+    id: "5373bafc643431b8017c3c7b"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    dummyInteraciton {
+    }
+  }
+  lod: 0
+}
+props {
+  name: "museum_furniture_table01"
+  gridPoint {
+    x: 28
+    y: 0
+    z: -69
+  }
+  orientation: ORIENTATION_S
+  displayName: "Table Green Lock"
+  idRef {
+    id: "5373bb05643431b8017c3c7c"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    prerequisites {
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Variable (bool)"
+            args {
+              string_value: "isRedLightOn"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+      }
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Variable (bool)"
+            args {
+              string_value: "isBlueLightOn"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+      }
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Variable (bool)"
+            args {
+              string_value: "isYellowLightOn"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+      }
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Variable (bool)"
+            args {
+              string_value: "isUnlockedGreen"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+      }
+    }
+    interactionIcon: InteractionIcon_Generic
+  }
+  lod: 0
+}
+props {
+  name: "museum_furniture_table01"
+  gridPoint {
+    x: 26
+    y: 0
+    z: -66
+  }
+  orientation: ORIENTATION_S
+  displayName: "Table Purple Lock"
+  idRef {
+    id: "5373bb09643431b8017c3c7d"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    prerequisites {
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Variable (bool)"
+            args {
+              string_value: "isRedLightOn"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+      }
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Variable (bool)"
+            args {
+              string_value: "isBlueLightOn"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+      }
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Variable (bool)"
+            args {
+              string_value: "isYellowLightOn"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+      }
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Variable (bool)"
+            args {
+              string_value: "isUnlockedPurple"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+      }
+    }
+    interactionIcon: InteractionIcon_Generic
+  }
+  lod: 0
+}
+props {
+  name: "telestrianEstate_decor_candleStick02"
+  gridPoint {
+    x: 26
+    y: 1
+    z: -65.5
+  }
+  orientation: ORIENTATION_S
+  displayName: "Candles Purple"
+  idRef {
+    id: "5373bb0c643431b8017c3c7e"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    dummyInteraciton {
+    }
+  }
+  lod: 0
+}
+props {
+  name: "telestrianEstate_decor_candleStick02"
+  gridPoint {
+    x: 28
+    y: 1
+    z: -68.5
+  }
+  orientation: ORIENTATION_S
+  displayName: "Candles Green"
+  idRef {
+    id: "5373bb0f643431b8017c3c7f"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    dummyInteraciton {
+    }
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_candleStand"
+  gridPoint {
+    x: 29
+    y: 0
+    z: -69
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "CandelabraLightEnvironment"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_candleflicker"
+  gridPoint {
+    x: 29
+    y: 0
+    z: -68
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "CandleLightEnvironment"
+  }
+  lod: 0
+}
+props {
+  name: "mitte_decor_gargoyle01"
+  gridPoint {
+    x: -16
+    y: 0
+    z: -38
+  }
+  orientation: ORIENTATION_E
+  GeneralTags: "isPropRoom1"
+  idRef {
+    id: "5373d0e1643431b8017c3c91"
+  }
+  lod: 0
+}
+props {
+  name: "mitte_decor_gargoyle03"
+  gridPoint {
+    x: 0
+    y: 0
+    z: -36
+  }
+  orientation: ORIENTATION_E
+  GeneralTags: "isPropRoom2"
+  idRef {
+    id: "5373d191643431b8017c3c95"
+  }
+  lod: 0
+}
+props {
+  name: "mitte_decor_gargoyle01"
+  gridPoint {
+    x: -37
+    y: 0
+    z: -40
+  }
+  orientation: ORIENTATION_E
+  GeneralTags: "isPropRoom3"
+  idRef {
+    id: "5373d1ee643431b8017c3c96"
+  }
+  lod: 0
+}
+props {
+  name: "cemetery_wall_stoneDoor01"
+  gridPoint {
+    x: -34
+    y: 0
+    z: -72
+  }
+  orientation: ORIENTATION_S
+  displayName: "Children Door"
+  idRef {
+    id: "5373de4c643431b8017c3c9d"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    doorPoint {
+      doorState: false
+      aiOnlyDoor: true
       doorSound: "DoorStone"
       doorSoundBundle: "props"
     }
