@@ -2755,6 +2755,7 @@ characters {
       filename: ""
     }
     karma: 44
+    scale_character_sheet: true
   }
 }
 characters {
@@ -2843,6 +2844,7 @@ characters {
       filename: ""
     }
     karma: 30
+    scale_character_sheet: true
   }
 }
 characters {
@@ -2890,6 +2892,7 @@ characters {
       filename: ""
     }
     karma: 40
+    scale_character_sheet: true
   }
 }
 characters {
@@ -2937,6 +2940,7 @@ characters {
       filename: ""
     }
     karma: 39
+    scale_character_sheet: true
   }
 }
 characters {
@@ -2984,6 +2988,7 @@ characters {
       filename: ""
     }
     karma: 33
+    scale_character_sheet: true
   }
 }
 characters {
@@ -3031,6 +3036,7 @@ characters {
       filename: ""
     }
     karma: 40
+    scale_character_sheet: true
   }
 }
 characters {
@@ -3076,6 +3082,7 @@ characters {
       filename: ""
     }
     karma: 28
+    scale_character_sheet: true
   }
 }
 characters {
@@ -3121,6 +3128,7 @@ characters {
       filename: ""
     }
     karma: 28
+    scale_character_sheet: true
   }
 }
 characters {
@@ -3166,6 +3174,7 @@ characters {
       filename: ""
     }
     karma: 40
+    scale_character_sheet: true
   }
 }
 characters {
@@ -3211,6 +3220,7 @@ characters {
       filename: ""
     }
     karma: 30
+    scale_character_sheet: true
   }
 }
 characters {
@@ -3256,6 +3266,7 @@ characters {
       filename: ""
     }
     karma: 39
+    scale_character_sheet: true
   }
 }
 characters {
@@ -3301,6 +3312,7 @@ characters {
       filename: ""
     }
     karma: 44
+    scale_character_sheet: true
   }
 }
 variables {
@@ -3420,6 +3432,8 @@ team_affiliations {
 }
 scene_dimensions {
   dimension_name: "Default"
+}
+character_roster {
 }
 show_hiring_screen_on_scene_load: false
 scene_hiring_prerequisites {
