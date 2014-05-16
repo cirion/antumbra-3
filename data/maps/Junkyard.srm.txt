@@ -1,6 +1,6 @@
 minX: -96
 minZ: -49
-numX: 107
+numX: 142
 numZ: 135
 props {
   name: "cemetery_ground_dirt01"
@@ -11373,8 +11373,15 @@ props {
     z: 52
   }
   orientation: ORIENTATION_S
+  displayName: "Top Lifter"
   idRef {
     id: "5366684a3662362409007f58"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    dummyInteraciton {
+    }
   }
   lod: 0
 }
@@ -12924,5 +12931,244 @@ props {
     }
     interactionIcon: InteractionIcon_Inspect
   }
+  lod: 0
+}
+props {
+  name: "matrix_floor_datacontrol"
+  gridPoint {
+    x: 33
+    y: 0
+    z: 39
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "matrix_floor_switchcontrol"
+  gridPoint {
+    x: 30
+    y: 0
+    z: 44
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "matrix_tech_datacontrol"
+  gridPoint {
+    x: 34
+    y: 0
+    z: 40
+  }
+  orientation: ORIENTATION_S
+  displayName: "Matrix Paydata"
+  idRef {
+    id: "53769c35643431623bd669dd"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    prerequisites {
+      ops {
+        functionName: "Comparison (int)"
+        args {
+          call_value {
+            functionName: "Get Variable (int)"
+            args {
+              string_value: "numICPaydata"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 5
+            }
+          }
+        }
+        args {
+          int_value: 0
+        }
+      }
+    }
+    matrixNode {
+      hacking_objects: "53769ce8643431623bd669e0"
+      prerequisites_control_state: true
+      constant_matrix_fx: "matrixcontrolnode"
+      state_change_offline_fx: ""
+      state_change_offline_sound: ""
+      state_change_offline_sound_volume: 1
+      state_change_hackable_fx: "MatrixControlNodeHacked"
+      state_change_hackable_sound: "MatrixNodeHackReady"
+      state_change_hackable_sound_volume: 1
+      state_change_locked_fx: ""
+      state_change_locked_sound: ""
+      state_change_locked_sound_volume: 1
+      state_change_hacked_fx: ""
+      state_change_hacked_sound: ""
+      state_change_hacked_sound_volume: 1
+    }
+  }
+  lod: 0
+}
+props {
+  name: "matrix_tech_switchcontrol"
+  gridPoint {
+    x: 31
+    y: 0
+    z: 45
+  }
+  orientation: ORIENTATION_S
+  displayName: "Matrix Lifter Control"
+  idRef {
+    id: "53769d13643431623bd669e3"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    prerequisites {
+      ops {
+        functionName: "Comparison (int)"
+        args {
+          call_value {
+            functionName: "Get Variable (int)"
+            args {
+              string_value: "numICLifter"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+        args {
+          int_value: 0
+        }
+      }
+    }
+    matrixNode {
+      hacking_objects: "5366684a3662362409007f58"
+      prerequisites_control_state: true
+      constant_matrix_fx: "matrixcontrolnode"
+      state_change_offline_fx: ""
+      state_change_offline_sound: ""
+      state_change_offline_sound_volume: 1
+      state_change_hackable_fx: "MatrixControlNodeHacked"
+      state_change_hackable_sound: "MatrixNodeHackReady"
+      state_change_hackable_sound_volume: 1
+      state_change_locked_fx: ""
+      state_change_locked_sound: ""
+      state_change_locked_sound_volume: 1
+      state_change_hacked_fx: ""
+      state_change_hacked_sound: ""
+      state_change_hacked_sound_volume: 1
+    }
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_nonsolidProp"
+  gridPoint {
+    x: 34
+    y: 0
+    z: 32
+  }
+  orientation: ORIENTATION_S
+  displayName: "Paydata"
+  idRef {
+    id: "53769ce8643431623bd669e0"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    dummyInteraciton {
+    }
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_entranceexit"
+  gridPoint {
+    x: 41
+    y: 0
+    z: 40
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "vfx_fx_matrixentranceexit"
+  gridPoint {
+    x: 42
+    y: 0
+    z: 41
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "MatrixPortalEnvironment"
+  }
+  idRef {
+    id: "53769dcb643431623bd669e9"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    matrixSpawnPoint {
+      dimension: "Matrix"
+    }
+  }
+  lod: 0
+}
+props {
+  name: "tenements_clutter_pileOfJunk01"
+  gridPoint {
+    x: -47
+    y: 0
+    z: 3
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "office_clutter_destroyedMainframe01"
+  gridPoint {
+    x: -46
+    y: 0
+    z: 2
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "53769e63643431623bd669eb"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    jackPoint {
+      LANIdentifier: "53769dcb643431623bd669e9"
+      LANEquipment: ""
+    }
+  }
+  lod: 0
+}
+props {
+  name: "office_clutter_destroyedMainframe02"
+  gridPoint {
+    x: -48
+    y: 0
+    z: 2
+  }
+  orientation: ORIENTATION_S
   lod: 0
 }
