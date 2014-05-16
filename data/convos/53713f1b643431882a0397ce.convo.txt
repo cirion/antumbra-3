@@ -25,6 +25,9 @@ nodes {
     nextNodeIndex: 2
   }
   nodeType: ConversationNodeType_Simple
+  sourceInSceneRef {
+    id: "537684326434316a34fc4631"
+  }
 }
 nodes {
   idRef {
@@ -37,6 +40,9 @@ nodes {
     nextNodeIndex: 3
   }
   nodeType: ConversationNodeType_Simple
+  sourceInSceneRef {
+    id: "537684326434316a34fc4631"
+  }
 }
 nodes {
   idRef {
@@ -45,6 +51,9 @@ nodes {
   index: 3
   text: "THERE SHALL BE NO MORE DEATH TODAY!"
   nodeType: ConversationNodeType_Simple
+  sourceInSceneRef {
+    id: "537684326434316a34fc4631"
+  }
 }
 roots {
   nextNodeIndex: 0
