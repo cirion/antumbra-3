@@ -1238,16 +1238,51 @@ props {
     z: 1
   }
   orientation: ORIENTATION_S
-  displayName: "Door Exit to Mission"
+  displayName: "Main Door Exit"
   idRef {
     id: "52239fd9366236680e0039b8"
   }
   interactionRoot {
     isEnabled: false
     interactionRadius: 1
+    prerequisites {
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Variable (bool)"
+            args {
+              string_value: "canExitBuilding"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+      }
+    }
     transitionPoint {
-      scene_name: "The Mission 1"
-      confirmation_text: "Are you ready to travel to The Mission?"
+      scene_name: "Redding Old City Hall"
+      confirmation_text: "Are you ready to return to Redding?"
     }
   }
   lod: 0
@@ -16168,6 +16203,41 @@ props {
   interactionRoot {
     isEnabled: true
     interactionRadius: 1
+    prerequisites {
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Variable (bool)"
+            args {
+              string_value: "isAllBadguysKilled"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+      }
+    }
     doorPoint {
       doorState: false
       aiOnlyDoor: false
@@ -45742,29 +45812,6 @@ props {
   lod: 0
 }
 props {
-  name: "barrens_wallDecoration_aztech"
-  gridPoint {
-    x: -58.4
-    y: 0.8
-    z: 26.3
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "barrens_wallDecoration_aztech"
-  gridPoint {
-    x: -58.4
-    y: 0.8
-    z: 38.3
-  }
-  orientation: ORIENTATION_S
-  idRef {
-    id: "522fc95c366236cc18007a81"
-  }
-  lod: 0
-}
-props {
   name: "office_clutter_bookStacks02"
   gridPoint {
     x: -54.1
@@ -48293,6 +48340,19 @@ props {
   orientation: ORIENTATION_E
   idRef {
     id: "52432a4d643431e80cb50cb6"
+  }
+  lod: 0
+}
+props {
+  name: "telestrianEstate_floor_tile01"
+  gridPoint {
+    x: -20
+    y: 0
+    z: 93
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "5375552c6434316b133336b4"
   }
   lod: 0
 }

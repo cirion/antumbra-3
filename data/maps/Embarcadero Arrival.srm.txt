@@ -76943,28 +76943,6 @@ props {
   lod: 0
 }
 props {
-  name: "custom_vehicles_taxi"
-  gridPoint {
-    x: -26
-    y: 0
-    z: -27
-  }
-  orientation: ORIENTATION_W
-  displayName: "Taxi"
-  idRef {
-    id: "521c03733662360c11001ad9"
-  }
-  interactionRoot {
-    isEnabled: false
-    interactionRadius: 1
-    transitionPoint {
-      scene_name: "Eclipse 1"
-      confirmation_text: "Are you ready to travel to Eclipse?"
-    }
-  }
-  lod: 0
-}
-props {
   name: "barrens_street_taxiKiosk"
   gridPoint {
     x: -29
@@ -111175,4 +111153,114 @@ props {
     }
     intensity: 2
   }
+}
+props {
+  name: "custom_vehicles_taxi"
+  gridPoint {
+    x: 2
+    y: 0
+    z: -7
+  }
+  orientation: ORIENTATION_N
+  displayName: "Taxi"
+  idRef {
+    id: "5374f63e6434316b133335f7"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    dummyInteraciton {
+    }
+  }
+  lod: 0
+}
+props {
+  name: "haven_vehicle_sleekStepVan01"
+  gridPoint {
+    x: -30
+    y: 0
+    z: 59
+  }
+  orientation: ORIENTATION_E
+  displayName: "Escape Van"
+  idRef {
+    id: "5374fdf66434316b1333361c"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    prerequisites {
+      ops {
+        functionName: "Comparison (int)"
+        args {
+          call_value {
+            functionName: "Get Variable (int)"
+            args {
+              string_value: "johnsonState"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+        args {
+          int_value: 2
+        }
+      }
+      ops {
+        functionName: "Compare Actor Team"
+        args {
+          call_value {
+            functionName: "Get Map Item (Actor)"
+            args {
+              string_value: "5374f4e86434316b133335ec"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (string)"
+            args {
+              string_value: "FactionList"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Map Item (SceneDimension)"
+            args {
+              string_value: "Default"
+            }
+          }
+        }
+      }
+    }
+    transitionPoint {
+      scene_name: "Eclipse"
+      confirmation_text: "This armored van looks like it could survive the marines\' attack. Do you want to continue to Eclipse?"
+    }
+  }
+  lod: 0
 }

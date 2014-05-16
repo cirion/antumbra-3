@@ -1,6 +1,6 @@
-minX: -61
+minX: -64
 minZ: -86
-numX: 112
+numX: 115
 numZ: 147
 props {
   name: "barrens_ground_twoLaneSingle01"
@@ -9494,6 +9494,20 @@ props {
     z: 4
   }
   orientation: ORIENTATION_S
+  GeneralTags: "isBridgeDestructionProp"
+  idRef {
+    id: "5374defb643431d710c329f7"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    inspectInteraction {
+      dispalyTime: 0
+      fadeTime: 0
+      inspectText: "The explosions have almost completely destroyed the dam\'s integrity. Stepping any closer would likely cause it to crack beneath you."
+      disableAfterInteracting: false
+    }
+  }
   lod: 0
 }
 props {
@@ -9530,6 +9544,115 @@ props {
   orientation: ORIENTATION_E
   idRef {
     id: "5373e8eb643431b8017c3d57"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_dustDevil"
+  gridPoint {
+    x: -60
+    y: 0
+    z: -77
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "EnvironmentLoopDustDevil"
+  }
+  GeneralTags: "isBridgeDestructionProp"
+  displayName: "Dust Devil"
+  idRef {
+    id: "5374e9476434316b133335de"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    dummyInteraciton {
+    }
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_blockMove"
+  gridPoint {
+    x: -64
+    y: 0
+    z: -3
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "isBridgeDestructionProp"
+  displayName: "Block Movement 1"
+  idRef {
+    id: "5374ec026434316b133335e5"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    dummyInteraciton {
+    }
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_blockMove"
+  gridPoint {
+    x: -62
+    y: 0
+    z: -2
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "isBridgeDestructionProp"
+  displayName: "Block Movement 2"
+  idRef {
+    id: "5374ec116434316b133335e6"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    dummyInteraciton {
+    }
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_blockMove"
+  gridPoint {
+    x: -59
+    y: 0
+    z: -1
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "isBridgeDestructionProp"
+  displayName: "Block Movement 3"
+  idRef {
+    id: "5374ec126434316b133335e7"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    dummyInteraciton {
+    }
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_blockMove"
+  gridPoint {
+    x: -57
+    y: 0
+    z: 1
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "isBridgeDestructionProp"
+  displayName: "Block Movement 4"
+  idRef {
+    id: "5374ec136434316b133335e8"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    dummyInteraciton {
+    }
   }
   lod: 0
 }

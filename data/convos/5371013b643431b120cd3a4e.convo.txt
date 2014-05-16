@@ -33,6 +33,52 @@ nodes {
   index: 2
   text: "DREK! They\342\200\231re still in the system! \n\nThey know that the charade is over, and are going to launch an attack on the megacorps. \n\nYou\342\200\231ve got to get moving now! They\342\200\231re meeting in the conference suite of the old Aztechnology Pyramid. I\342\200\231ll try and contain the Tir agents inside the building."
   nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Trigger: Run Alternate Trigger"
+      args {
+        call_value {
+          functionName: "Get Map Item (Trigger)"
+          args {
+            string_value: "53751f896434316b1333363f"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WaitOrNot"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+  }
 }
 roots {
   nextNodeIndex: 0

@@ -7,12 +7,28 @@ nodes {
     id: "5370fb11643431b120cd390b"
   }
   index: 0
-  text: "$(l.name)! I\342\200\231m glad to see you made it!\n"
+  text: "$(l.name)! I\342\200\231m glad to see you made it!"
   branches {
     responseText: ""
     nextNodeIndex: 1
   }
   nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Set Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Variable (int)"
+          args {
+            string_value: "johnsonState"
+          }
+        }
+      }
+      args {
+        int_value: 1
+      }
+    }
+  }
 }
 nodes {
   idRef {
