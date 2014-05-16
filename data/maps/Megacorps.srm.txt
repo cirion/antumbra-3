@@ -3332,9 +3332,9 @@ props {
 props {
   name: "secretLab_furniture_officeChair"
   gridPoint {
-    x: -46
+    x: -51
     y: 0
-    z: 5
+    z: -2
   }
   orientation: ORIENTATION_W
   idRef {
@@ -19129,16 +19129,6 @@ props {
   lod: 0
 }
 props {
-  name: "office_misc_wallSafe"
-  gridPoint {
-    x: -58.399994
-    y: 0.6
-    z: 41.300003
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
   name: "office_tech_brokenMainframe"
   gridPoint {
     x: -27
@@ -19176,27 +19166,6 @@ props {
     z: 48
   }
   orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "office_tech_matrixJunction"
-  gridPoint {
-    x: -68
-    y: 0
-    z: -3
-  }
-  orientation: ORIENTATION_S
-  idRef {
-    id: "522953d6366236f01900124d"
-  }
-  interactionRoot {
-    isEnabled: true
-    interactionRadius: 1
-    jackPoint {
-      LANIdentifier: "522953c3366236f01900124b"
-      LANEquipment: ""
-    }
-  }
   lod: 0
 }
 props {
@@ -35341,16 +35310,6 @@ props {
   lod: 0
 }
 props {
-  name: "matrix_floor_datacontrol"
-  gridPoint {
-    x: 28
-    y: 0
-    z: -14
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
   name: "matrix_tech_1x1cover"
   gridPoint {
     x: 80
@@ -35465,7 +35424,7 @@ props {
           call_value {
             functionName: "Get Variable (int)"
             args {
-              string_value: "MatrixPaydataICKilled"
+              string_value: "numICPaydataKilled"
             }
           }
         }
@@ -35476,65 +35435,36 @@ props {
               string_value: "Comparison Ops"
             }
             args {
-              int_value: 0
+              int_value: 3
             }
           }
         }
-        args {
-          int_value: 3
-        }
-      }
-    }
-    matrixNode {
-      hackingObjectID: "522943ce366236f01900121a"
-    }
-  }
-  lod: 0
-}
-props {
-  name: "matrix_tech_datacontrol"
-  gridPoint {
-    x: 29
-    y: 0
-    z: -13
-  }
-  orientation: ORIENTATION_S
-  displayName: "SIN Upload"
-  idRef {
-    id: "522933cb366236f0190011c8"
-  }
-  interactionRoot {
-    isEnabled: true
-    interactionRadius: 1
-    prerequisites {
-      ops {
-        functionName: "Comparison (int)"
         args {
           call_value {
             functionName: "Get Variable (int)"
             args {
-              string_value: "MatrixUploadICKilled"
+              string_value: "numICPaydataTotal"
             }
           }
-        }
-        args {
-          call_value {
-            functionName: "Get Preset Value (int)"
-            args {
-              string_value: "Comparison Ops"
-            }
-            args {
-              int_value: 0
-            }
-          }
-        }
-        args {
-          int_value: 3
         }
       }
     }
     matrixNode {
-      hackingObjectID: "522932d4366236f019000ff3"
+      hacking_objects: "522943ce366236f01900121a"
+      prerequisites_control_state: true
+      constant_matrix_fx: "matrixcontrolnode"
+      state_change_offline_fx: ""
+      state_change_offline_sound: ""
+      state_change_offline_sound_volume: 1
+      state_change_hackable_fx: "MatrixControlNodeHacked"
+      state_change_hackable_sound: "MatrixNodeHackReady"
+      state_change_hackable_sound_volume: 1
+      state_change_locked_fx: ""
+      state_change_locked_sound: ""
+      state_change_locked_sound_volume: 1
+      state_change_hacked_fx: ""
+      state_change_hacked_sound: ""
+      state_change_hacked_sound_volume: 1
     }
   }
   lod: 0
@@ -38124,7 +38054,7 @@ props {
     z: 140
   }
   orientation: ORIENTATION_S
-  displayName: "Turret Control Alpha"
+  displayName: "Turret Control"
   idRef {
     id: "5229e158366236fc09008042"
   }
@@ -38138,7 +38068,7 @@ props {
           call_value {
             functionName: "Get Variable (int)"
             args {
-              string_value: "MatrixMagicTurretICKilled"
+              string_value: "numICTurretsKilled"
             }
           }
         }
@@ -38149,17 +38079,35 @@ props {
               string_value: "Comparison Ops"
             }
             args {
-              int_value: 0
+              int_value: 3
             }
           }
         }
         args {
-          int_value: 3
+          call_value {
+            functionName: "Get Variable (int)"
+            args {
+              string_value: "numICTurretTotal"
+            }
+          }
         }
       }
     }
     matrixNode {
-      hackingObjectID: "522b92f5366236ec1f002c5f"
+      prerequisites_control_state: true
+      constant_matrix_fx: "matrixcontrolnode"
+      state_change_offline_fx: ""
+      state_change_offline_sound: ""
+      state_change_offline_sound_volume: 1
+      state_change_hackable_fx: "MatrixControlNodeHacked"
+      state_change_hackable_sound: "MatrixNodeHackReady"
+      state_change_hackable_sound_volume: 1
+      state_change_locked_fx: ""
+      state_change_locked_sound: ""
+      state_change_locked_sound_volume: 1
+      state_change_hacked_fx: ""
+      state_change_hacked_sound: ""
+      state_change_hacked_sound_volume: 1
     }
   }
   lod: 0
@@ -38172,67 +38120,6 @@ props {
     z: 139
   }
   orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "matrix_floor_turretcontrol"
-  gridPoint {
-    x: -35
-    y: 0
-    z: 146
-  }
-  orientation: ORIENTATION_S
-  idRef {
-    id: "5229e17b366236fc09008043"
-  }
-  lod: 0
-}
-props {
-  name: "matrix_tech_turretcontrol"
-  gridPoint {
-    x: -34
-    y: 0
-    z: 147
-  }
-  orientation: ORIENTATION_S
-  displayName: "Turret Control Bravo"
-  idRef {
-    id: "5229e17f366236fc09008044"
-  }
-  interactionRoot {
-    isEnabled: true
-    interactionRadius: 1
-    prerequisites {
-      ops {
-        functionName: "Comparison (int)"
-        args {
-          call_value {
-            functionName: "Get Variable (int)"
-            args {
-              string_value: "MatrixTechTurretICKilled"
-            }
-          }
-        }
-        args {
-          call_value {
-            functionName: "Get Preset Value (int)"
-            args {
-              string_value: "Comparison Ops"
-            }
-            args {
-              int_value: 0
-            }
-          }
-        }
-        args {
-          int_value: 3
-        }
-      }
-    }
-    matrixNode {
-      hackingObjectID: "522b92f5366236ec1f002c5b"
-    }
-  }
   lod: 0
 }
 props {
@@ -44501,9 +44388,9 @@ props {
 props {
   name: "office_storage_safeOpened01"
   gridPoint {
-    x: -57
+    x: -65
     y: 0
-    z: 41
+    z: 40
   }
   orientation: ORIENTATION_S
   idRef {
@@ -44626,6 +44513,17 @@ props {
     z: 4.2
   }
   orientation: ORIENTATION_E
+  idRef {
+    id: "53765c6c6434316b1333375a"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    jackPoint {
+      LANIdentifier: "522953c3366236f01900124b"
+      LANEquipment: ""
+    }
+  }
   lod: 0
 }
 props {
@@ -45128,6 +45026,17 @@ props {
     z: 48
   }
   orientation: ORIENTATION_E
+  idRef {
+    id: "53765cb16434316b1333375c"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    jackPoint {
+      LANIdentifier: "522a7b183662366812003240"
+      LANEquipment: ""
+    }
+  }
   lod: 0
 }
 props {
@@ -45526,16 +45435,6 @@ props {
   lod: 0
 }
 props {
-  name: "barrens_wallDecoration_aztech"
-  gridPoint {
-    x: -68.7
-    y: 0.9
-    z: -2.9
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
   name: "office_wall_greyEdge01"
   gridPoint {
     x: -55
@@ -45582,16 +45481,6 @@ props {
   idRef {
     id: "522fc75b366236cc18007a76"
   }
-  lod: 0
-}
-props {
-  name: "barrens_wallDecoration_aztech"
-  gridPoint {
-    x: -26.8
-    y: 0.5
-    z: 74
-  }
-  orientation: ORIENTATION_E
   lod: 0
 }
 props {
@@ -47320,28 +47209,6 @@ props {
 props {
   name: "system_gizmo_lightbulb"
   gridPoint {
-    x: -67
-    y: -1
-    z: -3
-  }
-  orientation: ORIENTATION_S
-  idRef {
-    id: "5235f48d366236881d001248"
-  }
-  lod: 0
-  light {
-    range: 3
-    color {
-      r: 0.81568629
-      g: 0.99215686
-      b: 1
-    }
-    intensity: 3
-  }
-}
-props {
-  name: "system_gizmo_lightbulb"
-  gridPoint {
     x: -78
     y: -1.5
     z: -15
@@ -48353,6 +48220,228 @@ props {
   orientation: ORIENTATION_S
   idRef {
     id: "5375552c6434316b133336b4"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_tech_cameracontrol"
+  gridPoint {
+    x: 29
+    y: 0
+    z: -13
+  }
+  orientation: ORIENTATION_S
+  displayName: "Camera Control"
+  idRef {
+    id: "537657ec6434316b13333749"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    prerequisites {
+      ops {
+        functionName: "Comparison (int)"
+        args {
+          call_value {
+            functionName: "Get Variable (int)"
+            args {
+              string_value: "numICCamerasKilled"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 3
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Variable (int)"
+            args {
+              string_value: "numICCameraTotal"
+            }
+          }
+        }
+      }
+    }
+    matrixNode {
+      prerequisites_control_state: true
+      constant_matrix_fx: "matrixcontrolnode"
+      state_change_offline_fx: ""
+      state_change_offline_sound: ""
+      state_change_offline_sound_volume: 1
+      state_change_hackable_fx: "MatrixControlNodeHacked"
+      state_change_hackable_sound: "MatrixNodeHackReady"
+      state_change_hackable_sound_volume: 1
+      state_change_locked_fx: ""
+      state_change_locked_sound: ""
+      state_change_locked_sound_volume: 1
+      state_change_hacked_fx: ""
+      state_change_hacked_sound: ""
+      state_change_hacked_sound_volume: 1
+    }
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_cameracontrol"
+  gridPoint {
+    x: 28
+    y: 0
+    z: -14
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "matrix_floor_switchcontrol"
+  gridPoint {
+    x: -35
+    y: 0
+    z: 146
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "matrix_tech_switchcontrol"
+  gridPoint {
+    x: -34
+    y: 0
+    z: 147
+  }
+  orientation: ORIENTATION_S
+  displayName: "Security Safe Lock Override"
+  idRef {
+    id: "537658536434316b1333374b"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    prerequisites {
+      ops {
+        functionName: "Comparison (int)"
+        args {
+          call_value {
+            functionName: "Get Variable (int)"
+            args {
+              string_value: "numICSafeKilled"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 3
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Variable (int)"
+            args {
+              string_value: "numICSafeTotal"
+            }
+          }
+        }
+      }
+    }
+    matrixNode {
+      prerequisites_control_state: true
+      constant_matrix_fx: "matrixcontrolnode"
+      state_change_offline_fx: ""
+      state_change_offline_sound: ""
+      state_change_offline_sound_volume: 1
+      state_change_hackable_fx: "MatrixControlNodeHacked"
+      state_change_hackable_sound: "MatrixNodeHackReady"
+      state_change_hackable_sound_volume: 1
+      state_change_locked_fx: ""
+      state_change_locked_sound: ""
+      state_change_locked_sound_volume: 1
+      state_change_hacked_fx: ""
+      state_change_hacked_sound: ""
+      state_change_hacked_sound_volume: 1
+    }
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_blockMove"
+  gridPoint {
+    x: -45
+    y: 0
+    z: 3
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "sleekOffice_furniture_overturnedTable02"
+  gridPoint {
+    x: -47
+    y: 0
+    z: 3
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "office_clutter_destroyedMainframe02"
+  gridPoint {
+    x: -68
+    y: 0
+    z: -3
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "barrens_wallDecoration_shiawase"
+  gridPoint {
+    x: -69
+    y: 0.1
+    z: -4.5
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "barrens_wallDecoration_shiawase"
+  gridPoint {
+    x: -26.6
+    y: 0.2
+    z: 74
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "office_storage_safeClosed01"
+  gridPoint {
+    x: -57
+    y: 0
+    z: 41
+  }
+  orientation: ORIENTATION_S
+  displayName: "Locked Safe"
+  idRef {
+    id: "53765d836434316b1333375f"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    dummyInteraciton {
+    }
   }
   lod: 0
 }

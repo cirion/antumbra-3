@@ -3009,6 +3009,20 @@ character_roster {
     content_pack_source: "531d26a736623648180018bf"
   }
   roster_entries {
+    reference_id: "a3_crew_hailey_lv1"
+    hiring_conditions {
+    }
+    hiring_cost: 1
+    content_pack_source: "531d26a736623648180018bf"
+  }
+  roster_entries {
+    reference_id: "a3_crew_hailey_lv2"
+    hiring_conditions {
+    }
+    hiring_cost: 2
+    content_pack_source: "531d26a736623648180018bf"
+  }
+  roster_entries {
     reference_id: "a3_crew_hailey_lv3"
     hiring_conditions {
     }
