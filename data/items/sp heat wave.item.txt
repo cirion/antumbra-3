@@ -57,7 +57,7 @@ decking_hardening: 0
 decking_max_ap: 0
 decking_max_ip: 0
 decking_program_limit: 0
-effectDuration: 2
+effectDuration: 3
 effectModTable: 1
 effectModTable: 1
 effectModTable: 1
@@ -79,7 +79,7 @@ gear_covers_arms: false
 gear_covers_face: false
 gear_covers_hair: false
 gear_prefab: ""
-id: "Heat Wave"
+id: "SP Heat Wave"
 instantAction: false
 intended_user: IntendedUser_Player
 is_consumable: false
@@ -88,7 +88,7 @@ isDebuff: true
 isMagic: true
 locationMissSkew: false
 maxAmmo: 0
-modelessAbilities: "Dorbi Heat Wave"
+modelessAbilities: "Spirit Heat Wave"
 noiseLevel: 0
 noiseRounds: 0
 outfit_texture: ""
@@ -114,13 +114,13 @@ rangeModTable: -7
 rangeModTable: -8
 reactions_per_use: 0
 reloadInteraction: ""
-sorting_group: "Barriers"
+sorting_group: "Spirit Powers"
 spreadAngle: 0
 store_cost: -1
 team_as_melee: false
 type: ItemType_Spell
 uirep: {
-  description: "Enemies within a range of 5 squares have a -10% to hit. Lasts 2 RNDS."
+  description: "Enemies within a range of 5 squares have a -10% to hit. Lasts 3 RNDS."
   icon: "icon_heatwave"
   name: "Heat Wave"
   thumbnail: ""

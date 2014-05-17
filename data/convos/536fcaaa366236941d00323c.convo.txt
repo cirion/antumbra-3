@@ -49,6 +49,10 @@ nodes {
   branches {
     responseText: "What can you tell me about the Native Californians?"
     nextNodeIndex: 5
+    onlyOnce: true
+    idRef {
+      id: "5377de89366236840d001cdc"
+    }
   }
   branches {
     responseText: "Got any suggestions for what to do next?"
@@ -153,7 +157,7 @@ nodes {
     id: "536fde61366236941d0032e8"
   }
   index: 9
-  text: "Oh, before I forget: here, take this. This is half the nuyen I\'ve collected on tolls in this stretch of the 5 over the past month. You\'ve done the work to keep it safe, and are entitled to your share."
+  text: "Oh, before I forget: here, take this. This is half the nuyen I\'ve collected on tolls in this stretch of The 5 over the past month. You\'ve done the work to keep it safe, and are entitled to your share."
   branches {
     responseText: ""
     nextNodeIndex: 10
