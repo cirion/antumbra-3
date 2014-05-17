@@ -119,7 +119,6 @@ nodes {
       }
     }
     nextNodeIndex: 3
-    hideIfUnavailable: true
   }
   branches {
     responseText: "{{GM}}Try to put the van into neutral.{{/GM}}"
@@ -143,50 +142,6 @@ nodes {
   text: "{{GM}}Dorbi looks on in disbelief as you grunt, heave, and finally shove the enormous bulk of metal out of the way.{{/GM}}"
   nodeType: ConversationNodeType_Simple
   actions {
-    ops {
-      functionName: "Trigger: Run Alternate Trigger"
-      args {
-        call_value {
-          functionName: "Get Map Item (Trigger)"
-          args {
-            string_value: "536ffbab366236941d003353"
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "WithOrWithout"
-          }
-          args {
-            int_value: 1
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "WaitOrNot"
-          }
-          args {
-            int_value: 0
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "WithOrWithout"
-          }
-          args {
-            int_value: 0
-          }
-        }
-      }
-    }
     ops {
       functionName: "Play Sound"
       args {
@@ -215,6 +170,20 @@ nodes {
         }
       }
     }
+    ops {
+      functionName: "Set Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Variable (int)"
+          args {
+            string_value: "moveVanPendingState"
+          }
+        }
+      }
+      args {
+        int_value: 1
+      }
+    }
   }
 }
 nodes {
@@ -225,50 +194,6 @@ nodes {
   text: "{{GM}}Fortunately, you recognize this model of security system, which foolishly allows access to the onboard computer from a diagnosis port in the fuel cap. It takes only a few minutes to activate limp mode and slide the van on its way.{{/GM}}"
   nodeType: ConversationNodeType_Simple
   actions {
-    ops {
-      functionName: "Trigger: Run Alternate Trigger"
-      args {
-        call_value {
-          functionName: "Get Map Item (Trigger)"
-          args {
-            string_value: "536ffbab366236941d003353"
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "WithOrWithout"
-          }
-          args {
-            int_value: 1
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "WaitOrNot"
-          }
-          args {
-            int_value: 0
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "WithOrWithout"
-          }
-          args {
-            int_value: 0
-          }
-        }
-      }
-    }
     ops {
       functionName: "Play Sound"
       args {
@@ -297,6 +222,20 @@ nodes {
         }
       }
     }
+    ops {
+      functionName: "Set Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Variable (int)"
+          args {
+            string_value: "moveVanPendingState"
+          }
+        }
+      }
+      args {
+        int_value: 1
+      }
+    }
   }
 }
 nodes {
@@ -311,6 +250,22 @@ nodes {
     auxiliaryLink: true
   }
   nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Set Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Variable (int)"
+          args {
+            string_value: "missionMoveVanState"
+          }
+        }
+      }
+      args {
+        int_value: 2
+      }
+    }
+  }
 }
 roots {
   nextNodeIndex: 0
