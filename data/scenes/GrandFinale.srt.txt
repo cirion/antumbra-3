@@ -922,9 +922,9 @@ regions {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 3
+    x: -33
     y: 0
-    z: -1
+    z: -33
   }
   orientation: ORIENTATION_S
   displayName: "Hestaby"
@@ -1020,9 +1020,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 14
+    x: -32
     y: 0
-    z: 12
+    z: 6
   }
   orientation: ORIENTATION_S
   GeneralTags: "isWanderer"
@@ -1105,9 +1105,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -1
+    x: -32
     y: 0
-    z: 8
+    z: 7
   }
   orientation: ORIENTATION_S
   GeneralTags: "isMerchantLevel2"
@@ -1183,9 +1183,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -5
+    x: -31
     y: 0
-    z: 12
+    z: 7
   }
   orientation: ORIENTATION_S
   displayName: "Selene"
@@ -1266,9 +1266,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 0
+    x: -32
     y: 0
-    z: 21
+    z: 8
   }
   orientation: ORIENTATION_E
   GeneralTags: "isNorton"
@@ -1379,9 +1379,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -9
+    x: -34
     y: 0
-    z: 27
+    z: 8
   }
   orientation: ORIENTATION_N
   GeneralTags: "isHailey"
@@ -1495,9 +1495,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -13
+    x: -34
     y: 0
-    z: 15
+    z: 7
   }
   orientation: ORIENTATION_S
   GeneralTags: "isLazarus"
@@ -1594,7 +1594,7 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -19
+    x: -34
     y: 0
     z: 6
   }
@@ -1680,9 +1680,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -24
+    x: -34
     y: 0
-    z: 8
+    z: 4
   }
   orientation: ORIENTATION_N
   GeneralTags: "isDorbi"
@@ -1793,9 +1793,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -28
+    x: -34
     y: 0
-    z: 18
+    z: 5
   }
   orientation: ORIENTATION_S
   GeneralTags: "isMerchantLevel2"
@@ -1871,9 +1871,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -1
+    x: -32
     y: 0
-    z: -11
+    z: 4
   }
   orientation: ORIENTATION_E
   displayName: "Kali"
@@ -1965,9 +1965,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 0
+    x: -32
     y: 0
-    z: 0
+    z: 5
   }
   orientation: ORIENTATION_S
   GeneralTags: "isElorn"
@@ -2074,6 +2074,91 @@ characters {
     karma: 4
     hiring_cost_override: 0
     id: "a3_crew_elorn_lv4"
+  }
+}
+characters {
+  name: "system_spawner_playerSpawner"
+  gridPoint {
+    x: -29
+    y: 0
+    z: -32
+  }
+  orientation: ORIENTATION_N
+  idRef {
+    id: "53777b993662364c1b004dfe"
+  }
+  lod: 0
+  character_instance {
+    character_mod {
+      archetypeName: "Player"
+    }
+    team_id: "Shadowrunners"
+    char_name: "New Actor"
+    enabled_at_start: true
+    pc_spawn_number: 0
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -38
+    y: 0
+    z: -33
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "537785373662364c1b004e35"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Seattle:Core/TrollMale"
+    character_sheet_id: "AGChemie_Cyberzombie_Lv1"
+    character_mod {
+      stats {
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        hp: 0
+        ap: 0
+        armor: 0
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: -6
+      }
+      skills {
+        ranged_combat: 0
+        close_combat: 0
+        dodge: 0
+      }
+      specializations {
+        rifle: 0
+        edged: 0
+        unarmed: 0
+      }
+      archetypeName: "Non-Combatant"
+      vulnerabilities {
+      }
+    }
+    team_id: "Shadowrunners"
+    char_name: ""
+    pc_spawn_number: -1
+    ai_ignores: true
+    uninjurable: true
+    unkillable: true
+    portrait {
+      filename: "NPC_TrollMale_CyberZombie"
+    }
+    karma: 177
+    is_prop_character: true
+    hide_floaties: true
   }
 }
 variables {
