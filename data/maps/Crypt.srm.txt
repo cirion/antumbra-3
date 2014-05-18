@@ -1,6 +1,6 @@
 minX: -53
 minZ: -101
-numX: 97
+numX: 86
 numZ: 128
 props {
   name: "cemetery_wall_connector01"
@@ -400,7 +400,7 @@ props {
 props {
   name: "telestrianEstate_floor_marbleTile02"
   gridPoint {
-    x: 21
+    x: 22
     y: 0
     z: -13
   }
@@ -410,7 +410,7 @@ props {
 props {
   name: "telestrianEstate_floor_marbleTile03"
   gridPoint {
-    x: 24
+    x: 25
     y: 0
     z: -10
   }
@@ -430,7 +430,7 @@ props {
 props {
   name: "telestrianEstate_floor_marbleTile01"
   gridPoint {
-    x: 18
+    x: 19
     y: 0
     z: -15
   }
@@ -1337,7 +1337,7 @@ props {
 props {
   name: "undergroundBase_floor_dirt02"
   gridPoint {
-    x: 18
+    x: 19
     y: 0
     z: -22
   }
@@ -1357,7 +1357,7 @@ props {
 props {
   name: "undergroundBase_floor_dirt04"
   gridPoint {
-    x: 18
+    x: 19
     y: 0
     z: -25
   }
@@ -1367,7 +1367,7 @@ props {
 props {
   name: "undergroundBase_floor_dragonChamber06"
   gridPoint {
-    x: 21
+    x: 22
     y: 0
     z: -27
   }
@@ -1377,7 +1377,7 @@ props {
 props {
   name: "undergroundBase_floor_dragonChamber12"
   gridPoint {
-    x: 23
+    x: 24
     y: 0
     z: -23
   }
@@ -2476,7 +2476,7 @@ props {
 props {
   name: "cemetery_wall_gateDoor01"
   gridPoint {
-    x: 18
+    x: 19
     y: 0
     z: -10
   }
@@ -8784,9 +8784,9 @@ props {
 props {
   name: "system_gizmo_lightbulb"
   gridPoint {
-    x: 8
-    y: 0
-    z: -33
+    x: 5
+    y: -1
+    z: -36
   }
   orientation: ORIENTATION_S
   displayName: "Blue Light Indicator"
@@ -8813,9 +8813,9 @@ props {
 props {
   name: "system_gizmo_lightbulb"
   gridPoint {
-    x: 26
-    y: 0
-    z: -29
+    x: -45
+    y: -1
+    z: -37
   }
   orientation: ORIENTATION_S
   displayName: "Yellow Light Indicator"
@@ -8842,9 +8842,9 @@ props {
 props {
   name: "system_gizmo_lightbulb"
   gridPoint {
-    x: 30
-    y: 0
-    z: -35
+    x: -51
+    y: -1
+    z: -53
   }
   orientation: ORIENTATION_S
   displayName: "Red Light Indicator"
@@ -8890,9 +8890,9 @@ props {
 props {
   name: "museum_decor_statue01"
   gridPoint {
-    x: 26
+    x: -51
     y: 0
-    z: -40
+    z: -53
   }
   orientation: ORIENTATION_S
   displayName: "Red Light Switch"
@@ -8909,9 +8909,9 @@ props {
 props {
   name: "museum_decor_statue02"
   gridPoint {
-    x: 22
+    x: -46
     y: 0
-    z: -33
+    z: -37
   }
   orientation: ORIENTATION_S
   displayName: "Yellow Light Switch"
@@ -8928,9 +8928,9 @@ props {
 props {
   name: "system_gizmo_lightbulb"
   gridPoint {
-    x: 36
-    y: 0
-    z: -41
+    x: -14
+    y: -1
+    z: -47
   }
   orientation: ORIENTATION_S
   displayName: "Puzzle Light Indicator"
@@ -8945,7 +8945,7 @@ props {
   }
   lod: 0
   light {
-    range: 3
+    range: 5
     color {
       r: 1
       g: 1
@@ -8957,9 +8957,9 @@ props {
 props {
   name: "system_gizmo_lightbulb"
   gridPoint {
-    x: 42
+    x: -22
     y: 0
-    z: -47
+    z: -60
   }
   orientation: ORIENTATION_S
   displayName: "Lock Light Red"
@@ -8974,7 +8974,7 @@ props {
   }
   lod: 0
   light {
-    range: 1
+    range: 2
     color {
       r: 1
       g: 1
@@ -8986,9 +8986,9 @@ props {
 props {
   name: "system_gizmo_lightbulb"
   gridPoint {
-    x: 39
+    x: -18
     y: 0
-    z: -50
+    z: -60
   }
   orientation: ORIENTATION_S
   displayName: "Lock Light Green"
@@ -9003,7 +9003,7 @@ props {
   }
   lod: 0
   light {
-    range: 1
+    range: 2
     color {
       r: 1
       g: 1
@@ -9015,9 +9015,9 @@ props {
 props {
   name: "system_gizmo_lightbulb"
   gridPoint {
-    x: 36
+    x: -22
     y: 0
-    z: -53
+    z: -55
   }
   orientation: ORIENTATION_S
   displayName: "Lock Light Purple"
@@ -9032,7 +9032,7 @@ props {
   }
   lod: 0
   light {
-    range: 1
+    range: 2
     color {
       r: 1
       g: 1
@@ -9044,11 +9044,11 @@ props {
 props {
   name: "museum_furniture_table01"
   gridPoint {
-    x: 24
+    x: -22
     y: 0
-    z: -70
+    z: -61
   }
-  orientation: ORIENTATION_S
+  orientation: ORIENTATION_E
   displayName: "Table Red Lock"
   idRef {
     id: "5373a6f3643431b8017c3c78"
@@ -9197,9 +9197,9 @@ props {
 props {
   name: "telestrianEstate_decor_candleStick02"
   gridPoint {
-    x: 24
+    x: -21.6
     y: 1
-    z: -69.5
+    z: -61
   }
   orientation: ORIENTATION_S
   displayName: "Candles Red"
@@ -9217,11 +9217,11 @@ props {
 props {
   name: "museum_furniture_table01"
   gridPoint {
-    x: 28
+    x: -18
     y: 0
-    z: -69
+    z: -61
   }
-  orientation: ORIENTATION_S
+  orientation: ORIENTATION_E
   displayName: "Table Green Lock"
   idRef {
     id: "5373bb05643431b8017c3c7c"
@@ -9370,9 +9370,9 @@ props {
 props {
   name: "museum_furniture_table01"
   gridPoint {
-    x: 26
+    x: -23
     y: 0
-    z: -66
+    z: -55
   }
   orientation: ORIENTATION_S
   displayName: "Table Purple Lock"
@@ -9523,9 +9523,9 @@ props {
 props {
   name: "telestrianEstate_decor_candleStick02"
   gridPoint {
-    x: 26
+    x: -23
     y: 1
-    z: -65.5
+    z: -54.5
   }
   orientation: ORIENTATION_S
   displayName: "Candles Purple"
@@ -9543,9 +9543,9 @@ props {
 props {
   name: "telestrianEstate_decor_candleStick02"
   gridPoint {
-    x: 28
+    x: -17.5
     y: 1
-    z: -68.5
+    z: -61
   }
   orientation: ORIENTATION_S
   displayName: "Candles Green"
@@ -9563,9 +9563,9 @@ props {
 props {
   name: "vfx_fx_candleStand"
   gridPoint {
-    x: 29
+    x: -18
     y: 0
-    z: -69
+    z: -58
   }
   orientation: ORIENTATION_S
   properties {
@@ -9577,9 +9577,9 @@ props {
 props {
   name: "vfx_fx_candleflicker"
   gridPoint {
-    x: 29
+    x: -20
     y: 0
-    z: -68
+    z: -55
   }
   orientation: ORIENTATION_S
   properties {
@@ -9605,9 +9605,9 @@ props {
 props {
   name: "mitte_decor_gargoyle03"
   gridPoint {
-    x: 0
+    x: -2
     y: 0
-    z: -36
+    z: -37
   }
   orientation: ORIENTATION_E
   GeneralTags: "isPropRoom2"

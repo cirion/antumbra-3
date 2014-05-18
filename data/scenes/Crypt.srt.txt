@@ -50,6 +50,9 @@ triggers {
   }
   actions {
     ops {
+      functionName: "Trigger: Wait for Triggers"
+    }
+    ops {
       functionName: "Light Transition"
       args {
         call_value {
@@ -107,10 +110,10 @@ triggers {
         call_value {
           functionName: "Get Map Item (Sound)"
           args {
-            string_value: "Berlin:spellcasting"
+            string_value: "summoning"
           }
           args {
-            string_value: "BloodBoltCast"
+            string_value: "Totem_Bear"
           }
         }
       }
@@ -189,6 +192,9 @@ triggers {
     }
   }
   actions {
+    ops {
+      functionName: "Trigger: Wait for Triggers"
+    }
     ops {
       functionName: "Light Transition"
       args {
@@ -330,6 +336,9 @@ triggers {
   }
   actions {
     ops {
+      functionName: "Trigger: Wait for Triggers"
+    }
+    ops {
       functionName: "Light Transition"
       args {
         call_value {
@@ -387,10 +396,10 @@ triggers {
         call_value {
           functionName: "Get Map Item (Sound)"
           args {
-            string_value: "Berlin:spellcasting"
+            string_value: "summoning"
           }
           args {
-            string_value: "BloodBoltCast"
+            string_value: "Totem_Cat"
           }
         }
       }
@@ -469,6 +478,9 @@ triggers {
     }
   }
   actions {
+    ops {
+      functionName: "Trigger: Wait for Triggers"
+    }
     ops {
       functionName: "Light Transition"
       args {
@@ -610,6 +622,9 @@ triggers {
   }
   actions {
     ops {
+      functionName: "Trigger: Wait for Triggers"
+    }
+    ops {
       functionName: "Light Transition"
       args {
         call_value {
@@ -667,10 +682,10 @@ triggers {
         call_value {
           functionName: "Get Map Item (Sound)"
           args {
-            string_value: "Berlin:spellcasting"
+            string_value: "summoning"
           }
           args {
-            string_value: "BloodBoltCast"
+            string_value: "Totem_Bear"
           }
         }
       }
@@ -749,6 +764,9 @@ triggers {
     }
   }
   actions {
+    ops {
+      functionName: "Trigger: Wait for Triggers"
+    }
     ops {
       functionName: "Light Transition"
       args {
@@ -3529,6 +3547,17 @@ triggers {
     }
   }
   conditions {
+    ops {
+      functionName: "Invert Bool"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "debugging"
+          }
+        }
+      }
+    }
   }
   actions {
     ops {
@@ -3668,6 +3697,17 @@ triggers {
     }
   }
   conditions {
+    ops {
+      functionName: "Invert Bool"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "debugging"
+          }
+        }
+      }
+    }
   }
   actions {
     ops {
@@ -3761,6 +3801,17 @@ triggers {
     }
   }
   conditions {
+    ops {
+      functionName: "Invert Bool"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "debugging"
+          }
+        }
+      }
+    }
   }
   actions {
     ops {
@@ -4073,6 +4124,17 @@ triggers {
           functionName: "Get Map Item (Player)"
           args {
             int_value: 0
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Invert Bool"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "debugging"
           }
         }
       }
@@ -5429,6 +5491,110 @@ triggers {
   }
   is_oneshot: true
 }
+triggers {
+  name: "Map Started"
+  events {
+    ops {
+      functionName: "On Map Start"
+    }
+  }
+  conditions {
+  }
+  actions {
+  }
+  isActive: true
+  idRef {
+    id: "53783bf7366236101d004d4a"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
+triggers {
+  name: "Debug Enabled"
+  events {
+    ops {
+      functionName: "On Map Start"
+    }
+  }
+  conditions {
+  }
+  actions {
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "debugging"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Detach Region"
+      args {
+        call_value {
+          functionName: "Get Map Item (Region)"
+          args {
+            string_value: "5373c660643431b8017c3c8c"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Detach Region"
+      args {
+        call_value {
+          functionName: "Get Map Item (Region)"
+          args {
+            string_value: "5373d228643431b8017c3c99"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Detach Region"
+      args {
+        call_value {
+          functionName: "Get Map Item (Region)"
+          args {
+            string_value: "5373c670643431b8017c3c8d"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Detach Region"
+      args {
+        call_value {
+          functionName: "Get Map Item (Region)"
+          args {
+            string_value: "5373d10f643431b8017c3c92"
+          }
+        }
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "53783bf9366236101d004d4b"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
 regions {
   name: "Camera"
   position {
@@ -5866,6 +6032,7 @@ characters {
     }
     team_id: "LoneStar"
     char_name: "Street Thug"
+    enabled_at_start: false
     pc_spawn_number: -1
     portrait {
       filename: ""
@@ -5910,6 +6077,7 @@ characters {
     team_id: "LoneStar"
     char_name: "Feral Ghoul"
     GeneralTags: "isGhoulRoom2"
+    enabled_at_start: false
     pc_spawn_number: -1
     portrait {
       filename: ""
@@ -5997,6 +6165,7 @@ characters {
     team_id: "LoneStar"
     char_name: "Gargoyle"
     GeneralTags: "isGargoyleRoom1"
+    enabled_at_start: false
     pc_spawn_number: -1
     hiring_type: HiringType_None
     portrait {
@@ -6022,7 +6191,7 @@ characters {
   lod: 0
   character_instance {
     prefab_name: "Berlin:Creatures/CreatureGargoyleBat"
-    character_sheet_id: "Creature_Lv6_Gargoyle"
+    character_sheet_id: "Creature_Lv1_Gargoyle"
     equipment_sheet_id: "Gargoyle_Lv6_Powers"
     character_mod {
       stats {
@@ -6086,6 +6255,7 @@ characters {
     team_id: "LoneStar"
     char_name: "Gargoyle"
     GeneralTags: "isGargoyleRoom2"
+    enabled_at_start: false
     pc_spawn_number: -1
     hiring_type: HiringType_None
     portrait {
@@ -6175,6 +6345,7 @@ characters {
     team_id: "LoneStar"
     char_name: "Gargoyle"
     GeneralTags: "isGargoyleRoom3"
+    enabled_at_start: false
     pc_spawn_number: -1
     hiring_type: HiringType_None
     portrait {
@@ -6223,6 +6394,7 @@ characters {
     team_id: "LoneStar"
     char_name: "Feral Ghoul"
     GeneralTags: "isGhoulRoom3"
+    enabled_at_start: false
     pc_spawn_number: -1
     portrait {
       filename: ""
@@ -6341,7 +6513,7 @@ variables {
   }
 }
 variables {
-  string_value: ""
+  string_value: "3:ff0000"
   variableref_value {
     scope: TsVariableScope_Scene
     name: "colorTransitionRed"
@@ -6349,7 +6521,7 @@ variables {
   }
 }
 variables {
-  string_value: ""
+  string_value: "3:ffff00"
   variableref_value {
     scope: TsVariableScope_Scene
     name: "colorTransitionYellow"
@@ -6357,7 +6529,7 @@ variables {
   }
 }
 variables {
-  string_value: ""
+  string_value: "3:00ff00"
   variableref_value {
     scope: TsVariableScope_Scene
     name: "colorTransitionGreen"
@@ -6365,7 +6537,7 @@ variables {
   }
 }
 variables {
-  string_value: ""
+  string_value: "3:663399"
   variableref_value {
     scope: TsVariableScope_Scene
     name: "colorTransitionPurple"
@@ -6373,7 +6545,7 @@ variables {
   }
 }
 variables {
-  string_value: ""
+  string_value: "3:ff6600"
   variableref_value {
     scope: TsVariableScope_Scene
     name: "colorTransitionOrange"
@@ -6381,7 +6553,7 @@ variables {
   }
 }
 variables {
-  string_value: ""
+  string_value: "3:663300"
   variableref_value {
     scope: TsVariableScope_Scene
     name: "colorTransitionBrown"
@@ -6389,7 +6561,7 @@ variables {
   }
 }
 variables {
-  string_value: ""
+  string_value: "3:ffffff"
   variableref_value {
     scope: TsVariableScope_Scene
     name: "colorTransitionWhite"
@@ -6457,6 +6629,14 @@ variables {
   variableref_value {
     scope: TsVariableScope_Scene
     name: "canExitStage"
+    typeName: "bool"
+  }
+}
+variables {
+  bool_value: false
+  variableref_value {
+    scope: TsVariableScope_Scene
+    name: "debugging"
     typeName: "bool"
   }
 }
