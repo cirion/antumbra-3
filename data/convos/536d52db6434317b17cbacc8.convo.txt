@@ -102,6 +102,54 @@ nodes {
   }
   branches {
     responseText: ""
+    conditions {
+      ops {
+        functionName: "Evaluate If Actor is Inside Region"
+        args {
+          call_value {
+            functionName: "All Actors With Tag"
+            args {
+              call_value {
+                functionName: "Get Map Item (SenseTagList)"
+                args {
+                  string_value: "isNorton"
+                }
+              }
+            }
+            args {
+              call_value {
+                functionName: "Get Preset Value (int)"
+                args {
+                  string_value: "AllOrAny"
+                }
+                args {
+                  int_value: 1
+                }
+              }
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "AreOrAreNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Map Item (Region)"
+            args {
+              string_value: "53665e9a3662362409007c0d"
+            }
+          }
+        }
+      }
+    }
     nextNodeIndex: 3
     onlyOnce: true
     idRef {
@@ -110,7 +158,59 @@ nodes {
   }
   branches {
     responseText: ""
+    conditions {
+      ops {
+        functionName: "Evaluate If Actor is Inside Region"
+        args {
+          call_value {
+            functionName: "All Actors With Tag"
+            args {
+              call_value {
+                functionName: "Get Map Item (SenseTagList)"
+                args {
+                  string_value: "isHailey"
+                }
+              }
+            }
+            args {
+              call_value {
+                functionName: "Get Preset Value (int)"
+                args {
+                  string_value: "AllOrAny"
+                }
+                args {
+                  int_value: 1
+                }
+              }
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "AreOrAreNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Map Item (Region)"
+            args {
+              string_value: "53665e9a3662362409007c0d"
+            }
+          }
+        }
+      }
+    }
     nextNodeIndex: 5
+    onlyOnce: true
+    idRef {
+      id: "537903fa3662369815005f08"
+    }
   }
   branches {
     responseText: "Orion! I thought you were dead!"
@@ -165,11 +265,11 @@ nodes {
     }
   }
   branches {
-    responseText: "I hope I can count on your support in the battle ahead."
+    responseText: "I need the remnants of Norton\'s Army to join me for the battle in Redding."
     nextNodeIndex: 16
   }
   branches {
-    responseText: "You\342\200\231d better rally under my banner if you want to live."
+    responseText: "Can Norton\'s Army help secure our supply lines between the coast and the Central Valley?"
     nextNodeIndex: 17
   }
   nodeType: ConversationNodeType_Simple
@@ -216,6 +316,7 @@ nodes {
     nextNodeIndex: 4
   }
   nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isNorton"
 }
 nodes {
   idRef {
@@ -253,6 +354,7 @@ nodes {
     nextNodeIndex: 7
   }
   nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isHailey"
 }
 nodes {
   idRef {
@@ -504,18 +606,56 @@ nodes {
     auxiliaryLink: true
   }
   nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Add To Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (int)"
+          args {
+            string_value: "531d26a736623648180018bf"
+          }
+          args {
+            string_value: "Global_Manpower"
+          }
+        }
+      }
+      args {
+        int_value: 1
+      }
+    }
+  }
 }
 nodes {
   idRef {
     id: "536d5c3d6434317b17cbadad"
   }
   index: 17
-  text: "Harsh words, but true. I know as well as any the threat we face."
+  text: "Certainly. I\'ll send a small force to observe the events in Redding, and keep the bulk of our forces here to mitigate interference from Saito or any other adversaries."
   branches {
     responseText: ""
     nextNodeIndex: 18
   }
   nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Add To Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (int)"
+          args {
+            string_value: "531d26a736623648180018bf"
+          }
+          args {
+            string_value: "Global_Supplies"
+          }
+        }
+      }
+      args {
+        int_value: 1
+      }
+    }
+  }
 }
 nodes {
   idRef {
@@ -550,41 +690,48 @@ nodes {
   nodeType: ConversationNodeType_Simple
   actions {
     ops {
-      functionName: "Set Variable (int)"
+      functionName: "Trigger: Run Alternate Trigger"
       args {
         call_value {
-          functionName: "Get Story Variable (int)"
+          functionName: "Get Map Item (Trigger)"
           args {
-            string_value: "531d26a736623648180018bf"
-          }
-          args {
-            string_value: "Global_MissionState_Colma"
+            string_value: "537910ff3662369815005fa9"
           }
         }
       }
       args {
-        int_value: 2
-      }
-    }
-    ops {
-      functionName: "Set Variable (string)"
-      args {
         call_value {
-          functionName: "Get Story Variable (string)"
+          functionName: "Get Preset Value (int)"
           args {
-            string_value: "531d26a736623648180018bf"
+            string_value: "WithOrWithout"
           }
           args {
-            string_value: "Redding_Synopsis"
+            int_value: 1
           }
         }
       }
       args {
-        string_value: "Your trip back to Redding goes more quickly, thanks to the advance scouts that Orion provided as a vanguard. He promises that the rest of Norton\342\200\231s Army will soon mobilize in your support. Back in camp, you are encouraged to see new soldiers arriving. Your force continues to grow larger and stronger to face the threat ahead."
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WaitOrNot"
+          }
+          args {
+            int_value: 0
+          }
+        }
       }
-    }
-    ops {
-      functionName: "No Effect"
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
     }
   }
 }

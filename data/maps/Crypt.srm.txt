@@ -1,7 +1,7 @@
 minX: -53
-minZ: -101
+minZ: -76
 numX: 86
-numZ: 128
+numZ: 103
 props {
   name: "cemetery_wall_connector01"
   gridPoint {
@@ -28,16 +28,6 @@ props {
     x: 13
     y: 0
     z: -6
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "cemetery_wall_doorFront01"
-  gridPoint {
-    x: 17
-    y: 0
-    z: -2
   }
   orientation: ORIENTATION_S
   lod: 0
@@ -73,71 +63,11 @@ props {
   lod: 0
 }
 props {
-  name: "cemetery_wall_edge06"
-  gridPoint {
-    x: 21
-    y: 0
-    z: 2
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "cemetery_wall_end01"
-  gridPoint {
-    x: 14
-    y: 0
-    z: -1
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "cemetery_wall_end03"
-  gridPoint {
-    x: 15
-    y: 0
-    z: -7
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "cemetery_wall_pillar01"
-  gridPoint {
-    x: 11
-    y: 0
-    z: -1
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
   name: "cemetery_wall_slabEnd01"
   gridPoint {
     x: 3
     y: 0
     z: -6
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "cemetery_wall_slab01"
-  gridPoint {
-    x: 7
-    y: 0
-    z: -3
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "cemetery_wall_slab02"
-  gridPoint {
-    x: 9
-    y: 0
-    z: 0
   }
   orientation: ORIENTATION_S
   lod: 0
@@ -163,116 +93,6 @@ props {
       doorSoundBundle: "props"
     }
   }
-  lod: 0
-}
-props {
-  name: "telestrianEstate_wall_connector01"
-  gridPoint {
-    x: 3
-    y: 0
-    z: -1
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "telestrianEstate_wall_end01"
-  gridPoint {
-    x: 7
-    y: 0
-    z: 3
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "telestrianEstate_wall_stone01"
-  gridPoint {
-    x: 0
-    y: 0
-    z: 0
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "telestrianEstate_wall_stone02"
-  gridPoint {
-    x: 4
-    y: 0
-    z: 4
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "telestrianEstate_wall_stone03"
-  gridPoint {
-    x: 9
-    y: 0
-    z: 9
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "telestrianEstate_wall_stoneConnector01"
-  gridPoint {
-    x: 11
-    y: 0
-    z: 7
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "telestrianEstate_wall_stoneEnd01"
-  gridPoint {
-    x: 16
-    y: 0
-    z: 11
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "telestrianEstate_wall_stoneOrnate01"
-  gridPoint {
-    x: 14
-    y: 0
-    z: 14
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "telestrianEstate_wall_stonePlain01"
-  gridPoint {
-    x: 18
-    y: 0
-    z: 18
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "telestrianEstate_wall_stoneWide01"
-  gridPoint {
-    x: 23
-    y: 0
-    z: 22
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "secretLab_wall_fill"
-  gridPoint {
-    x: 30
-    y: 0
-    z: 3
-  }
-  orientation: ORIENTATION_S
   lod: 0
 }
 props {
@@ -328,66 +148,6 @@ props {
   lod: 0
 }
 props {
-  name: "telestrianEstate_decor_wallTiles01Edge"
-  gridPoint {
-    x: -4
-    y: 0
-    z: 3
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "telestrianEstate_decor_wallTiles01End01"
-  gridPoint {
-    x: -1
-    y: 0
-    z: 6
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "telestrianEstate_decor_wallTiles01End02"
-  gridPoint {
-    x: 3
-    y: 0
-    z: 10
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "telestrianEstate_decor_wallTiles02Edge"
-  gridPoint {
-    x: 7
-    y: 0
-    z: 14
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "telestrianEstate_decor_wallTiles02End01"
-  gridPoint {
-    x: 10
-    y: 0
-    z: 17
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "telestrianEstate_decor_wallTiles02End02"
-  gridPoint {
-    x: 13
-    y: 0
-    z: 20
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
   name: "telestrianEstate_floor_marbleTile01"
   gridPoint {
     x: 0
@@ -395,49 +155,6 @@ props {
     z: -18
   }
   orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "telestrianEstate_floor_marbleTile02"
-  gridPoint {
-    x: 22
-    y: 0
-    z: -13
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "telestrianEstate_floor_marbleTile03"
-  gridPoint {
-    x: 25
-    y: 0
-    z: -10
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "telestrianEstate_floor_tile02"
-  gridPoint {
-    x: 27
-    y: 0
-    z: -7
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "telestrianEstate_floor_marbleTile01"
-  gridPoint {
-    x: 19
-    y: 0
-    z: -15
-  }
-  orientation: ORIENTATION_S
-  idRef {
-    id: "536650483662362409007983"
-  }
   lod: 0
 }
 props {
@@ -736,19 +453,6 @@ props {
   orientation: ORIENTATION_S
   idRef {
     id: "53665193366236240900799d"
-  }
-  lod: 0
-}
-props {
-  name: "telestrianEstate_wall_stoneEnd01"
-  gridPoint {
-    x: -10
-    y: 0
-    z: 2
-  }
-  orientation: ORIENTATION_W
-  idRef {
-    id: "536651b7366236240900799e"
   }
   lod: 0
 }
@@ -1322,66 +1026,6 @@ props {
   idRef {
     id: "536652a336623624090079d2"
   }
-  lod: 0
-}
-props {
-  name: "undergroundBase_floor_dirt01"
-  gridPoint {
-    x: 15
-    y: 0
-    z: -26
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "undergroundBase_floor_dirt02"
-  gridPoint {
-    x: 19
-    y: 0
-    z: -22
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "undergroundBase_floor_dirt03"
-  gridPoint {
-    x: 15
-    y: 0
-    z: -23
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "undergroundBase_floor_dirt04"
-  gridPoint {
-    x: 19
-    y: 0
-    z: -25
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "undergroundBase_floor_dragonChamber06"
-  gridPoint {
-    x: 22
-    y: 0
-    z: -27
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "undergroundBase_floor_dragonChamber12"
-  gridPoint {
-    x: 24
-    y: 0
-    z: -23
-  }
-  orientation: ORIENTATION_S
   lod: 0
 }
 props {
@@ -2294,7 +1938,7 @@ props {
 props {
   name: "telestrianEstate_floor_marbleTile03"
   gridPoint {
-    x: -6
+    x: -7
     y: 0
     z: -40
   }
@@ -2474,16 +2118,6 @@ props {
   lod: 0
 }
 props {
-  name: "cemetery_wall_gateDoor01"
-  gridPoint {
-    x: 19
-    y: 0
-    z: -10
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
   name: "cemetery_wall_connector03"
   gridPoint {
     x: -21
@@ -2558,32 +2192,6 @@ props {
 props {
   name: "cemetery_wall_doorFront01"
   gridPoint {
-    x: -22
-    y: 0
-    z: 2
-  }
-  orientation: ORIENTATION_S
-  idRef {
-    id: "536655443662362409007a30"
-  }
-  lod: 0
-}
-props {
-  name: "cemetery_wall_edge06"
-  gridPoint {
-    x: -22
-    y: 0
-    z: 6
-  }
-  orientation: ORIENTATION_S
-  idRef {
-    id: "536655463662362409007a31"
-  }
-  lod: 0
-}
-props {
-  name: "cemetery_wall_doorFront01"
-  gridPoint {
     x: -21
     y: 0
     z: -37
@@ -2591,32 +2199,6 @@ props {
   orientation: ORIENTATION_E
   idRef {
     id: "5366554f3662362409007a32"
-  }
-  lod: 0
-}
-props {
-  name: "cemetery_wall_doorBack"
-  gridPoint {
-    x: -22
-    y: 0
-    z: -2
-  }
-  orientation: ORIENTATION_E
-  idRef {
-    id: "536655523662362409007a33"
-  }
-  lod: 0
-}
-props {
-  name: "cemetery_wall_edge06"
-  gridPoint {
-    x: -27
-    y: 0
-    z: -6
-  }
-  orientation: ORIENTATION_E
-  idRef {
-    id: "536655543662362409007a34"
   }
   lod: 0
 }
@@ -2747,19 +2329,6 @@ props {
   orientation: ORIENTATION_S
   idRef {
     id: "536655ba3662362409007a42"
-  }
-  lod: 0
-}
-props {
-  name: "secretLab_wall_fill"
-  gridPoint {
-    x: -1
-    y: 0
-    z: -43
-  }
-  orientation: ORIENTATION_S
-  idRef {
-    id: "536655bb3662362409007a43"
   }
   lod: 0
 }
@@ -5028,121 +4597,11 @@ props {
   lod: 0
 }
 props {
-  name: "museum_ground_marble01"
-  gridPoint {
-    x: -33
-    y: 0
-    z: -93
-  }
-  orientation: ORIENTATION_N
-  lod: 0
-}
-props {
-  name: "museum_ground_marble02"
-  gridPoint {
-    x: -27
-    y: 0
-    z: -94
-  }
-  orientation: ORIENTATION_N
-  lod: 0
-}
-props {
-  name: "museum_ground_marble03"
-  gridPoint {
-    x: -26
-    y: 0
-    z: -90
-  }
-  orientation: ORIENTATION_N
-  lod: 0
-}
-props {
-  name: "museum_ground_marble04"
-  gridPoint {
-    x: -26
-    y: 0
-    z: -86
-  }
-  orientation: ORIENTATION_N
-  lod: 0
-}
-props {
-  name: "museum_ground_marble05"
-  gridPoint {
-    x: -20
-    y: 0
-    z: -88
-  }
-  orientation: ORIENTATION_N
-  lod: 0
-}
-props {
-  name: "museum_ground_marble06"
-  gridPoint {
-    x: -20
-    y: 0
-    z: -85
-  }
-  orientation: ORIENTATION_N
-  lod: 0
-}
-props {
-  name: "museum_ground_marble07"
-  gridPoint {
-    x: -15
-    y: 0
-    z: -90
-  }
-  orientation: ORIENTATION_N
-  lod: 0
-}
-props {
-  name: "museum_ground_triangle"
-  gridPoint {
-    x: -11
-    y: 0
-    z: -76
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "museum_ground_circle"
-  gridPoint {
-    x: -12
-    y: 0
-    z: -79
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
   name: "museum_ground_edgeCornerGutter"
   gridPoint {
     x: -40
     y: 0
     z: -72
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "museum_ground_edgeGutter"
-  gridPoint {
-    x: -31
-    y: 0
-    z: -101
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "museum_ground_gutter"
-  gridPoint {
-    x: -30
-    y: 0
-    z: -98
   }
   orientation: ORIENTATION_S
   lod: 0
@@ -5915,26 +5374,6 @@ props {
   lod: 0
 }
 props {
-  name: "museum_wall_connector01"
-  gridPoint {
-    x: -41
-    y: 0
-    z: -85
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "museum_wall_end01"
-  gridPoint {
-    x: -42
-    y: 0
-    z: -85
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
   name: "museum_wall_end01"
   gridPoint {
     x: -40
@@ -6012,11 +5451,11 @@ props {
 props {
   name: "museum_wall_edge02"
   gridPoint {
-    x: -48
+    x: -41
     y: 0
-    z: -73
+    z: -76
   }
-  orientation: ORIENTATION_S
+  orientation: ORIENTATION_E
   lod: 0
 }
 props {
@@ -6090,7 +5529,7 @@ props {
   gridPoint {
     x: -35
     y: 0
-    z: -77
+    z: -76
   }
   orientation: ORIENTATION_E
   idRef {
@@ -6584,9 +6023,9 @@ props {
   gridPoint {
     x: -5
     y: 0
-    z: -38
+    z: -47
   }
-  orientation: ORIENTATION_E
+  orientation: ORIENTATION_N
   idRef {
     id: "53665cc73662362409007b71"
   }
@@ -8591,130 +8030,6 @@ props {
 props {
   name: "cemetery_wall_stoneDoor01"
   gridPoint {
-    x: -25
-    y: 0
-    z: -59
-  }
-  orientation: ORIENTATION_E
-  idRef {
-    id: "5366606a3662362409007c13"
-  }
-  interactionRoot {
-    isEnabled: true
-    interactionRadius: 1
-    prerequisites {
-      ops {
-        functionName: "Comparison (bool)"
-        args {
-          call_value {
-            functionName: "Get Variable (bool)"
-            args {
-              string_value: "isUnlockedRed"
-            }
-          }
-        }
-        args {
-          call_value {
-            functionName: "Get Preset Value (int)"
-            args {
-              string_value: "IsOrIsNot"
-            }
-            args {
-              int_value: 1
-            }
-          }
-        }
-        args {
-          call_value {
-            functionName: "Get Preset Value (int)"
-            args {
-              string_value: "bool"
-            }
-            args {
-              int_value: 1
-            }
-          }
-        }
-      }
-      ops {
-        functionName: "Comparison (bool)"
-        args {
-          call_value {
-            functionName: "Get Variable (bool)"
-            args {
-              string_value: "isUnlockedGreen"
-            }
-          }
-        }
-        args {
-          call_value {
-            functionName: "Get Preset Value (int)"
-            args {
-              string_value: "IsOrIsNot"
-            }
-            args {
-              int_value: 1
-            }
-          }
-        }
-        args {
-          call_value {
-            functionName: "Get Preset Value (int)"
-            args {
-              string_value: "bool"
-            }
-            args {
-              int_value: 1
-            }
-          }
-        }
-      }
-      ops {
-        functionName: "Comparison (bool)"
-        args {
-          call_value {
-            functionName: "Get Variable (bool)"
-            args {
-              string_value: "isUnlockedPurple"
-            }
-          }
-        }
-        args {
-          call_value {
-            functionName: "Get Preset Value (int)"
-            args {
-              string_value: "IsOrIsNot"
-            }
-            args {
-              int_value: 1
-            }
-          }
-        }
-        args {
-          call_value {
-            functionName: "Get Preset Value (int)"
-            args {
-              string_value: "bool"
-            }
-            args {
-              int_value: 1
-            }
-          }
-        }
-      }
-    }
-    doorPoint {
-      doorState: false
-      aiOnlyDoor: false
-      doorSound: "DoorStone"
-      doorSoundBundle: "props"
-    }
-  }
-  lod: 0
-}
-props {
-  name: "cemetery_wall_stoneDoor01"
-  gridPoint {
     x: 3
     y: 0
     z: -35
@@ -8958,8 +8273,8 @@ props {
   name: "system_gizmo_lightbulb"
   gridPoint {
     x: -22
-    y: 0
-    z: -60
+    y: -2
+    z: -61
   }
   orientation: ORIENTATION_S
   displayName: "Lock Light Red"
@@ -8980,15 +8295,15 @@ props {
       g: 1
       b: 1
     }
-    intensity: 3
+    intensity: 8
   }
 }
 props {
   name: "system_gizmo_lightbulb"
   gridPoint {
     x: -18
-    y: 0
-    z: -60
+    y: -2
+    z: -61
   }
   orientation: ORIENTATION_S
   displayName: "Lock Light Green"
@@ -9009,14 +8324,14 @@ props {
       g: 1
       b: 1
     }
-    intensity: 3
+    intensity: 8
   }
 }
 props {
   name: "system_gizmo_lightbulb"
   gridPoint {
-    x: -22
-    y: 0
+    x: -23
+    y: -2
     z: -55
   }
   orientation: ORIENTATION_S
@@ -9038,7 +8353,7 @@ props {
       g: 1
       b: 1
     }
-    intensity: 3
+    intensity: 8
   }
 }
 props {
@@ -9561,30 +8876,26 @@ props {
   lod: 0
 }
 props {
-  name: "vfx_fx_candleStand"
-  gridPoint {
-    x: -18
-    y: 0
-    z: -58
-  }
-  orientation: ORIENTATION_S
-  properties {
-    property_id: "fxScript"
-    string_value: "CandelabraLightEnvironment"
-  }
-  lod: 0
-}
-props {
   name: "vfx_fx_candleflicker"
   gridPoint {
-    x: -20
-    y: 0
-    z: -55
+    x: -23
+    y: 1.8
+    z: -54.5
   }
   orientation: ORIENTATION_S
   properties {
     property_id: "fxScript"
     string_value: "CandleLightEnvironment"
+  }
+  displayName: "Purple Flame"
+  idRef {
+    id: "537902613662369815005ded"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    dummyInteraciton {
+    }
   }
   lod: 0
 }
@@ -9592,41 +8903,13 @@ props {
   name: "mitte_decor_gargoyle01"
   gridPoint {
     x: -16
-    y: 0
+    y: 1
     z: -38
   }
   orientation: ORIENTATION_E
   GeneralTags: "isPropRoom1"
   idRef {
     id: "5373d0e1643431b8017c3c91"
-  }
-  lod: 0
-}
-props {
-  name: "mitte_decor_gargoyle03"
-  gridPoint {
-    x: -2
-    y: 0
-    z: -37
-  }
-  orientation: ORIENTATION_E
-  GeneralTags: "isPropRoom2"
-  idRef {
-    id: "5373d191643431b8017c3c95"
-  }
-  lod: 0
-}
-props {
-  name: "mitte_decor_gargoyle01"
-  gridPoint {
-    x: -37
-    y: 0
-    z: -40
-  }
-  orientation: ORIENTATION_E
-  GeneralTags: "isPropRoom3"
-  idRef {
-    id: "5373d1ee643431b8017c3c96"
   }
   lod: 0
 }
@@ -9648,6 +8931,1274 @@ props {
     doorPoint {
       doorState: false
       aiOnlyDoor: true
+      doorSound: "DoorStone"
+      doorSoundBundle: "props"
+    }
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_candleflicker"
+  gridPoint {
+    x: -21.1
+    y: 2.3
+    z: -60.5
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "CandleLightEnvironment"
+  }
+  displayName: "Red Flame"
+  idRef {
+    id: "537901de3662369815005de9"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    dummyInteraciton {
+    }
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_candleflicker"
+  gridPoint {
+    x: -17
+    y: 2.3
+    z: -60.5
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "CandleLightEnvironment"
+  }
+  displayName: "Green Flame"
+  idRef {
+    id: "537901e03662369815005dea"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    dummyInteraciton {
+    }
+  }
+  lod: 0
+}
+props {
+  name: "museum_ground_marble04"
+  gridPoint {
+    x: -34
+    y: 0
+    z: -74
+  }
+  orientation: ORIENTATION_N
+  idRef {
+    id: "537903603662369815005eba"
+  }
+  lod: 0
+}
+props {
+  name: "museum_ground_circle"
+  gridPoint {
+    x: -34
+    y: 0
+    z: -76
+  }
+  orientation: ORIENTATION_W
+  idRef {
+    id: "537903653662369815005ebb"
+  }
+  lod: 0
+}
+props {
+  name: "museum_ground_marble04"
+  gridPoint {
+    x: -36
+    y: 0
+    z: -76
+  }
+  orientation: ORIENTATION_N
+  idRef {
+    id: "5379036a3662369815005ebc"
+  }
+  lod: 0
+}
+props {
+  name: "museum_ground_marble04"
+  gridPoint {
+    x: -38
+    y: 0
+    z: -76
+  }
+  orientation: ORIENTATION_N
+  idRef {
+    id: "5379036c3662369815005ebd"
+  }
+  lod: 0
+}
+props {
+  name: "secretLab_wall_fill"
+  gridPoint {
+    x: -33
+    y: 0
+    z: -75
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "537903833662369815005ebe"
+  }
+  lod: 0
+}
+props {
+  name: "museum_wall_end01"
+  gridPoint {
+    x: -33
+    y: 0
+    z: -76
+  }
+  orientation: ORIENTATION_W
+  idRef {
+    id: "537903833662369815005ebf"
+  }
+  lod: 0
+}
+props {
+  name: "secretLab_wall_fill"
+  gridPoint {
+    x: -33
+    y: 0
+    z: -73
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "537903863662369815005ec0"
+  }
+  lod: 0
+}
+props {
+  name: "museum_wall_edge02"
+  gridPoint {
+    x: -37
+    y: 0
+    z: -76
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "537903953662369815005ec1"
+  }
+  lod: 0
+}
+props {
+  name: "museum_ground_marble04"
+  gridPoint {
+    x: -40
+    y: 0
+    z: -76
+  }
+  orientation: ORIENTATION_N
+  idRef {
+    id: "537903993662369815005ec2"
+  }
+  lod: 0
+}
+props {
+  name: "museum_ground_marble04"
+  gridPoint {
+    x: -40
+    y: 0
+    z: -74
+  }
+  orientation: ORIENTATION_N
+  idRef {
+    id: "537903ab3662369815005ec3"
+  }
+  lod: 0
+}
+props {
+  name: "museum_wall_edge04"
+  gridPoint {
+    x: -39
+    y: 0
+    z: -76
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "537903b33662369815005ec4"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_nonsolidProp"
+  gridPoint {
+    x: -33
+    y: 0
+    z: -70
+  }
+  orientation: ORIENTATION_S
+  displayName: "Dummy Door"
+  idRef {
+    id: "5379098e3662369815005f64"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    dummyInteraciton {
+    }
+  }
+  lod: 0
+}
+props {
+  name: "museum_ground_marble04"
+  gridPoint {
+    x: -38
+    y: 0
+    z: -74
+  }
+  orientation: ORIENTATION_N
+  idRef {
+    id: "537915d3366236981500604d"
+  }
+  lod: 0
+}
+props {
+  name: "museum_ground_marble04"
+  gridPoint {
+    x: -36
+    y: 0
+    z: -74
+  }
+  orientation: ORIENTATION_N
+  idRef {
+    id: "537915d4366236981500604e"
+  }
+  lod: 0
+}
+props {
+  name: "mitte_decor_gargoylePillar01"
+  gridPoint {
+    x: -16
+    y: 0
+    z: -38
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "isPropRoom1"
+  idRef {
+    id: "53791efe36623698150060de"
+  }
+  lod: 0
+}
+props {
+  name: "mitte_decor_gargoylePillar02"
+  gridPoint {
+    x: -28
+    y: 0
+    z: -23
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "isRubble"
+  GeneralTags: "isRubbleRoom1"
+  displayName: "Gargoyle Pillar Rubble"
+  idRef {
+    id: "53791f6836623698150060e0"
+  }
+  lod: 0
+}
+props {
+  name: "mitte_decor_gargoylePillar02"
+  gridPoint {
+    x: -16
+    y: 0
+    z: -38
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "isRubble"
+  GeneralTags: "isRubbleRoom1"
+  displayName: "Gargoyle Pillar Rubble"
+  idRef {
+    id: "53791ff436623698150060e3"
+  }
+  lod: 0
+}
+props {
+  name: "mitte_decor_gargoylePillar01"
+  gridPoint {
+    x: -8
+    y: 0
+    z: -38
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "isPropRoom1"
+  idRef {
+    id: "53791ffd36623698150060e4"
+  }
+  lod: 0
+}
+props {
+  name: "mitte_decor_gargoyle01"
+  gridPoint {
+    x: -8
+    y: 1
+    z: -38
+  }
+  orientation: ORIENTATION_E
+  GeneralTags: "isPropRoom1"
+  idRef {
+    id: "53791ffd36623698150060e5"
+  }
+  lod: 0
+}
+props {
+  name: "mitte_decor_gargoylePillar02"
+  gridPoint {
+    x: -8
+    y: 0
+    z: -38
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "isRubble"
+  GeneralTags: "isRubbleRoom1"
+  displayName: "Gargoyle Pillar Rubble"
+  idRef {
+    id: "5379200236623698150060e6"
+  }
+  lod: 0
+}
+props {
+  name: "cemetery_wall_edge06"
+  gridPoint {
+    x: -27
+    y: 0
+    z: -6
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "5379203536623698150060e8"
+  }
+  lod: 0
+}
+props {
+  name: "telestrianEstate_wall_stoneWide01"
+  gridPoint {
+    x: 23
+    y: 0
+    z: 22
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "5379203636623698150060e9"
+  }
+  lod: 0
+}
+props {
+  name: "telestrianEstate_wall_stonePlain01"
+  gridPoint {
+    x: 18
+    y: 0
+    z: 18
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "5379203636623698150060ea"
+  }
+  lod: 0
+}
+props {
+  name: "telestrianEstate_decor_wallTiles02End02"
+  gridPoint {
+    x: 13
+    y: 0
+    z: 20
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "5379203636623698150060eb"
+  }
+  lod: 0
+}
+props {
+  name: "telestrianEstate_wall_stoneOrnate01"
+  gridPoint {
+    x: 14
+    y: 0
+    z: 14
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "5379203636623698150060ec"
+  }
+  lod: 0
+}
+props {
+  name: "telestrianEstate_decor_wallTiles02End01"
+  gridPoint {
+    x: 10
+    y: 0
+    z: 17
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "5379203636623698150060ed"
+  }
+  lod: 0
+}
+props {
+  name: "telestrianEstate_decor_wallTiles02Edge"
+  gridPoint {
+    x: 7
+    y: 0
+    z: 14
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "5379203636623698150060ee"
+  }
+  lod: 0
+}
+props {
+  name: "telestrianEstate_wall_stoneConnector01"
+  gridPoint {
+    x: 11
+    y: 0
+    z: 7
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "5379203636623698150060ef"
+  }
+  lod: 0
+}
+props {
+  name: "telestrianEstate_wall_stone03"
+  gridPoint {
+    x: 9
+    y: 0
+    z: 9
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "5379203636623698150060f0"
+  }
+  lod: 0
+}
+props {
+  name: "telestrianEstate_decor_wallTiles01End02"
+  gridPoint {
+    x: 3
+    y: 0
+    z: 10
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "5379203636623698150060f1"
+  }
+  lod: 0
+}
+props {
+  name: "cemetery_wall_end01"
+  gridPoint {
+    x: 14
+    y: 0
+    z: -1
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "5379203636623698150060f2"
+  }
+  lod: 0
+}
+props {
+  name: "cemetery_wall_pillar01"
+  gridPoint {
+    x: 11
+    y: 0
+    z: -1
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "5379203636623698150060f3"
+  }
+  lod: 0
+}
+props {
+  name: "telestrianEstate_wall_end01"
+  gridPoint {
+    x: 7
+    y: 0
+    z: 3
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "5379203636623698150060f4"
+  }
+  lod: 0
+}
+props {
+  name: "cemetery_wall_slab02"
+  gridPoint {
+    x: 9
+    y: 0
+    z: 0
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "5379203636623698150060f5"
+  }
+  lod: 0
+}
+props {
+  name: "telestrianEstate_wall_stone02"
+  gridPoint {
+    x: 4
+    y: 0
+    z: 4
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "5379203636623698150060f6"
+  }
+  lod: 0
+}
+props {
+  name: "telestrianEstate_decor_wallTiles01End01"
+  gridPoint {
+    x: -1
+    y: 0
+    z: 6
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "5379203636623698150060f7"
+  }
+  lod: 0
+}
+props {
+  name: "cemetery_wall_slab01"
+  gridPoint {
+    x: 7
+    y: 0
+    z: -3
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "5379203636623698150060f8"
+  }
+  lod: 0
+}
+props {
+  name: "telestrianEstate_wall_connector01"
+  gridPoint {
+    x: 3
+    y: 0
+    z: -1
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "5379203636623698150060f9"
+  }
+  lod: 0
+}
+props {
+  name: "telestrianEstate_wall_stone01"
+  gridPoint {
+    x: 0
+    y: 0
+    z: 0
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "5379203636623698150060fa"
+  }
+  lod: 0
+}
+props {
+  name: "telestrianEstate_decor_wallTiles01Edge"
+  gridPoint {
+    x: -4
+    y: 0
+    z: 3
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "5379203636623698150060fb"
+  }
+  lod: 0
+}
+props {
+  name: "telestrianEstate_wall_stoneEnd01"
+  gridPoint {
+    x: -10
+    y: 0
+    z: 2
+  }
+  orientation: ORIENTATION_W
+  idRef {
+    id: "5379203636623698150060fc"
+  }
+  lod: 0
+}
+props {
+  name: "cemetery_wall_edge06"
+  gridPoint {
+    x: -22
+    y: 0
+    z: 6
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "5379203636623698150060fd"
+  }
+  lod: 0
+}
+props {
+  name: "cemetery_wall_doorFront01"
+  gridPoint {
+    x: -22
+    y: 0
+    z: 2
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "5379203636623698150060fe"
+  }
+  lod: 0
+}
+props {
+  name: "cemetery_wall_doorBack"
+  gridPoint {
+    x: -22
+    y: 0
+    z: -2
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "5379203636623698150060ff"
+  }
+  lod: 0
+}
+props {
+  name: "secretLab_wall_fill"
+  gridPoint {
+    x: 30
+    y: 0
+    z: 3
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "537920373662369815006100"
+  }
+  lod: 0
+}
+props {
+  name: "telestrianEstate_wall_stoneEnd01"
+  gridPoint {
+    x: 16
+    y: 0
+    z: 11
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "537920373662369815006101"
+  }
+  lod: 0
+}
+props {
+  name: "cemetery_wall_edge06"
+  gridPoint {
+    x: 21
+    y: 0
+    z: 2
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "537920373662369815006102"
+  }
+  lod: 0
+}
+props {
+  name: "cemetery_wall_doorFront01"
+  gridPoint {
+    x: 17
+    y: 0
+    z: -2
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "537920373662369815006103"
+  }
+  lod: 0
+}
+props {
+  name: "cemetery_wall_gateDoor01"
+  gridPoint {
+    x: 19
+    y: 0
+    z: -10
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "537920373662369815006104"
+  }
+  lod: 0
+}
+props {
+  name: "cemetery_wall_end03"
+  gridPoint {
+    x: 15
+    y: 0
+    z: -7
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "537920373662369815006105"
+  }
+  lod: 0
+}
+props {
+  name: "telestrianEstate_floor_tile02"
+  gridPoint {
+    x: 27
+    y: 0
+    z: -7
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "537920373662369815006106"
+  }
+  lod: 0
+}
+props {
+  name: "telestrianEstate_floor_marbleTile03"
+  gridPoint {
+    x: 25
+    y: 0
+    z: -10
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "537920373662369815006107"
+  }
+  lod: 0
+}
+props {
+  name: "telestrianEstate_floor_marbleTile02"
+  gridPoint {
+    x: 22
+    y: 0
+    z: -13
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "537920373662369815006108"
+  }
+  lod: 0
+}
+props {
+  name: "telestrianEstate_floor_marbleTile01"
+  gridPoint {
+    x: 19
+    y: 0
+    z: -15
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "537920373662369815006109"
+  }
+  lod: 0
+}
+props {
+  name: "undergroundBase_floor_dragonChamber12"
+  gridPoint {
+    x: 24
+    y: 0
+    z: -23
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "53792037366236981500610a"
+  }
+  lod: 0
+}
+props {
+  name: "undergroundBase_floor_dirt02"
+  gridPoint {
+    x: 19
+    y: 0
+    z: -22
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "53792037366236981500610b"
+  }
+  lod: 0
+}
+props {
+  name: "undergroundBase_floor_dragonChamber06"
+  gridPoint {
+    x: 22
+    y: 0
+    z: -27
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "53792037366236981500610c"
+  }
+  lod: 0
+}
+props {
+  name: "undergroundBase_floor_dirt04"
+  gridPoint {
+    x: 19
+    y: 0
+    z: -25
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "53792037366236981500610d"
+  }
+  lod: 0
+}
+props {
+  name: "undergroundBase_floor_dirt03"
+  gridPoint {
+    x: 15
+    y: 0
+    z: -23
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "53792037366236981500610e"
+  }
+  lod: 0
+}
+props {
+  name: "undergroundBase_floor_dirt01"
+  gridPoint {
+    x: 15
+    y: 0
+    z: -26
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "53792037366236981500610f"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_blockMove"
+  gridPoint {
+    x: 2
+    y: 0
+    z: -55
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "537920453662369815006110"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_blockMove"
+  gridPoint {
+    x: -16
+    y: 0
+    z: -38
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "isBlockRoom1"
+  idRef {
+    id: "537920513662369815006112"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_blockMove"
+  gridPoint {
+    x: -8
+    y: 0
+    z: -38
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "isBlockRoom1"
+  idRef {
+    id: "537920523662369815006113"
+  }
+  lod: 0
+}
+props {
+  name: "telestrianEstate_wall_stoneEnd01"
+  gridPoint {
+    x: -6
+    y: 0
+    z: -45
+  }
+  orientation: ORIENTATION_W
+  idRef {
+    id: "537921cd3662369815006114"
+  }
+  lod: 0
+}
+props {
+  name: "telestrianEstate_wall_connector01"
+  gridPoint {
+    x: -5
+    y: 0
+    z: -51
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "telestrianEstate_wall_stoneConnector01"
+  gridPoint {
+    x: -5
+    y: 0
+    z: -49
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "telestrianEstate_wall_stoneEnd01"
+  gridPoint {
+    x: 0
+    y: 0
+    z: -43
+  }
+  orientation: ORIENTATION_W
+  lod: 0
+}
+props {
+  name: "telestrianEstate_wall_stoneEnd01"
+  gridPoint {
+    x: 0
+    y: 0
+    z: -43
+  }
+  orientation: ORIENTATION_N
+  idRef {
+    id: "537922083662369815006115"
+  }
+  lod: 0
+}
+props {
+  name: "mitte_decor_gargoyle01"
+  gridPoint {
+    x: -33
+    y: 1
+    z: -41
+  }
+  orientation: ORIENTATION_E
+  GeneralTags: "isPropRoom3"
+  idRef {
+    id: "53792285366236981500611b"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_blockMove"
+  gridPoint {
+    x: -33
+    y: 0
+    z: -41
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "isBlockRoom3"
+  idRef {
+    id: "53792285366236981500611c"
+  }
+  lod: 0
+}
+props {
+  name: "mitte_decor_gargoylePillar01"
+  gridPoint {
+    x: -33
+    y: 0
+    z: -41
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "isPropRoom3"
+  idRef {
+    id: "53792285366236981500611e"
+  }
+  lod: 0
+}
+props {
+  name: "mitte_decor_gargoyle01"
+  gridPoint {
+    x: 0
+    y: 1
+    z: -37
+  }
+  orientation: ORIENTATION_E
+  GeneralTags: "isPropRoom2"
+  idRef {
+    id: "537922fa3662369815006125"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_blockMove"
+  gridPoint {
+    x: 0
+    y: 0
+    z: -37
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "isBlockRoom2"
+  idRef {
+    id: "537922fa3662369815006126"
+  }
+  lod: 0
+}
+props {
+  name: "mitte_decor_gargoylePillar01"
+  gridPoint {
+    x: 0
+    y: 0
+    z: -37
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "isPropRoom2"
+  idRef {
+    id: "537922fa3662369815006128"
+  }
+  lod: 0
+}
+props {
+  name: "mitte_decor_gargoylePillar02"
+  gridPoint {
+    x: 0
+    y: 0
+    z: -37
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "isRubble"
+  GeneralTags: "isRubbleRoom2"
+  displayName: "Gargoyle Pillar Rubble"
+  idRef {
+    id: "537922fa3662369815006129"
+  }
+  lod: 0
+}
+props {
+  name: "mitte_decor_gargoyle01"
+  gridPoint {
+    x: -2
+    y: 1
+    z: -37
+  }
+  orientation: ORIENTATION_E
+  GeneralTags: "isPropRoom2"
+  idRef {
+    id: "53792318366236981500612f"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_blockMove"
+  gridPoint {
+    x: -2
+    y: 0
+    z: -37
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "isBlockRoom2"
+  idRef {
+    id: "537923183662369815006130"
+  }
+  lod: 0
+}
+props {
+  name: "mitte_decor_gargoylePillar01"
+  gridPoint {
+    x: -2
+    y: 0
+    z: -37
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "isPropRoom2"
+  idRef {
+    id: "537923183662369815006132"
+  }
+  lod: 0
+}
+props {
+  name: "mitte_decor_gargoylePillar02"
+  gridPoint {
+    x: -2
+    y: 0
+    z: -37
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "isRubble"
+  GeneralTags: "isRubbleRoom2"
+  displayName: "Gargoyle Pillar Rubble"
+  idRef {
+    id: "537923183662369815006133"
+  }
+  lod: 0
+}
+props {
+  name: "mitte_decor_gargoyle01"
+  gridPoint {
+    x: -40
+    y: 1
+    z: -41
+  }
+  orientation: ORIENTATION_E
+  GeneralTags: "isPropRoom3"
+  idRef {
+    id: "537923773662369815006134"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_blockMove"
+  gridPoint {
+    x: -40
+    y: 0
+    z: -41
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "isBlockRoom3"
+  idRef {
+    id: "537923773662369815006135"
+  }
+  lod: 0
+}
+props {
+  name: "mitte_decor_gargoylePillar01"
+  gridPoint {
+    x: -40
+    y: 0
+    z: -41
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "isPropRoom3"
+  idRef {
+    id: "537923773662369815006137"
+  }
+  lod: 0
+}
+props {
+  name: "cemetery_wall_stoneDoor01"
+  gridPoint {
+    x: -25
+    y: 0
+    z: -59
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "537928ff366236981500613b"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    prerequisites {
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Variable (bool)"
+            args {
+              string_value: "isUnlockedRed"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+      }
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Variable (bool)"
+            args {
+              string_value: "isUnlockedGreen"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+      }
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Variable (bool)"
+            args {
+              string_value: "isUnlockedPurple"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+      }
+    }
+    doorPoint {
+      doorState: false
+      aiOnlyDoor: false
       doorSound: "DoorStone"
       doorSoundBundle: "props"
     }
