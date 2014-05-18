@@ -37,6 +37,52 @@ triggers {
         }
       }
     }
+    ops {
+      functionName: "Add To Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (int)"
+          args {
+            string_value: "531d26a736623648180018bf"
+          }
+          args {
+            string_value: "Global_Manpower"
+          }
+        }
+      }
+      args {
+        int_value: 1
+      }
+    }
+    ops {
+      functionName: "Set Actor In Passive Mode"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Actor)"
+              args {
+                string_value: "536d481e643431740d169ded"
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
   }
   isActive: true
   idRef {
@@ -47,12 +93,161 @@ triggers {
   is_oneshot: true
 }
 triggers {
-  name: "Open Catacomb"
+  name: "Debug Mode"
   events {
+    ops {
+      functionName: "On Map Start"
+    }
   }
   conditions {
   }
   actions {
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "debugMode"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "537941ed366236981500642c"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
+triggers {
+  name: "Open Catacomb"
+  events {
+    ops {
+      functionName: "On Conversation Complete"
+    }
+  }
+  conditions {
+    ops {
+      functionName: "Comparison (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "CatacombOpen"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+  actions {
+    ops {
+      functionName: "Trigger: Run Alternate Trigger"
+      args {
+        call_value {
+          functionName: "Get Map Item (Trigger)"
+          args {
+            string_value: "5372903c64343195016cdd77"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WaitOrNot"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Play Sound"
+      args {
+        call_value {
+          functionName: "Get Map Item (Sound)"
+          args {
+            string_value: "props"
+          }
+          args {
+            string_value: "DoorStone"
+          }
+        }
+      }
+      args {
+        float_value: 0.25
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
   }
   isActive: true
   idRef {
@@ -192,6 +387,35 @@ triggers {
     }
   }
   actions {
+    ops {
+      functionName: "Set Actor In Passive Mode"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Actor)"
+              args {
+                string_value: "536d481e643431740d169ded"
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
     ops {
       functionName: "Order Actor to Move To (Region)"
       args {
@@ -349,7 +573,13 @@ triggers {
           }
           args {
             call_value {
-              functionName: "Nothing Selected"
+              functionName: "Get Preset Value (int)"
+              args {
+                string_value: "AllOrAny"
+              }
+              args {
+                int_value: 0
+              }
             }
           }
         }
@@ -359,6 +589,73 @@ triggers {
   isActive: true
   idRef {
     id: "537290ac64343195016cdd78"
+  }
+  elseActions {
+  }
+  is_oneshot: false
+}
+triggers {
+  name: "Killed an Enemy"
+  events {
+    ops {
+      functionName: "On Actor Death"
+    }
+  }
+  conditions {
+    ops {
+      functionName: "Evaluate Tag for Actor"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Triggering Target Actor"
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "HasOrHasNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SenseTagList)"
+          args {
+            string_value: "isEnemy"
+          }
+        }
+      }
+    }
+  }
+  actions {
+    ops {
+      functionName: "Add To Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Variable (int)"
+          args {
+            string_value: "EnemiesKilled"
+          }
+        }
+      }
+      args {
+        int_value: 1
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "53793a103662369815006426"
   }
   elseActions {
   }
@@ -401,6 +698,36 @@ triggers {
           }
           args {
             int_value: 1
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Comparison (int)"
+      args {
+        call_value {
+          functionName: "Get Variable (int)"
+          args {
+            string_value: "EnemiesKilled"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "Comparison Ops"
+          }
+          args {
+            int_value: 3
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Variable (int)"
+          args {
+            string_value: "TotalEnemyCount"
           }
         }
       }
@@ -515,6 +842,20 @@ triggers {
         }
       }
     }
+    ops {
+      functionName: "Set Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Variable (int)"
+          args {
+            string_value: "talkTabithaState"
+          }
+        }
+      }
+      args {
+        int_value: 2
+      }
+    }
   }
   isActive: true
   idRef {
@@ -591,13 +932,1387 @@ triggers {
   }
   is_oneshot: false
 }
+triggers {
+  name: "Tabitha Walks to Gate"
+  events {
+    ops {
+      functionName: "On Conversation Complete"
+    }
+  }
+  conditions {
+    ops {
+      functionName: "Comparison (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "TalkedToTabitha"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+  actions {
+    ops {
+      functionName: "Order Actor to Move To (Region)"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Actor)"
+              args {
+                string_value: "536d481e643431740d169ded"
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (Region)"
+          args {
+            string_value: "53793dd03662369815006429"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "FacingDirection"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Variable (int)"
+          args {
+            string_value: "talkTabithaState"
+          }
+        }
+      }
+      args {
+        int_value: 1
+      }
+    }
+    ops {
+      functionName: "Send Event After Delay"
+      args {
+        call_value {
+          functionName: "Get Map Item (Event)"
+          args {
+            string_value: "Tabitha Starts Casting"
+          }
+        }
+      }
+      args {
+        float_value: 1
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "53793c013662369815006427"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
+triggers {
+  name: "Tabitha Starts Opening Gate"
+  events {
+    ops {
+      functionName: "Get Map Item (Event)"
+      args {
+        string_value: "Tabitha Starts Casting"
+      }
+    }
+  }
+  conditions {
+  }
+  actions {
+    ops {
+      functionName: "Play Animation From Manifest"
+      args {
+        call_value {
+          functionName: "Get Map Item (Actor)"
+          args {
+            string_value: "536d481e643431740d169ded"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (Animation)"
+          args {
+            string_value: "Seattle:General/standing_cast"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Play Sound"
+      args {
+        call_value {
+          functionName: "Get Map Item (Sound)"
+          args {
+            string_value: "spellcasting"
+          }
+          args {
+            string_value: "SpellcastingStart"
+          }
+        }
+      }
+      args {
+        float_value: 1
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Send Event After Delay"
+      args {
+        call_value {
+          functionName: "Get Map Item (Event)"
+          args {
+            string_value: "Tabitha Casts"
+          }
+        }
+      }
+      args {
+        float_value: 1.5
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "53792bcc366236981500617a"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
+triggers {
+  name: "Tabitha Finishes Opening Gate"
+  events {
+    ops {
+      functionName: "Get Map Item (Event)"
+      args {
+        string_value: "Tabitha Casts"
+      }
+    }
+  }
+  conditions {
+  }
+  actions {
+    ops {
+      functionName: "Play Sound"
+      args {
+        call_value {
+          functionName: "Get Map Item (Sound)"
+          args {
+            string_value: "props"
+          }
+          args {
+            string_value: "MetalScrape1"
+          }
+        }
+      }
+      args {
+        float_value: 0.75
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Play FX at Point"
+      args {
+        string_value: "SquibSpirits"
+      }
+      args {
+        call_value {
+          functionName: "Current Location of Prop"
+          args {
+            call_value {
+              functionName: "Get Map Item (Prop)"
+              args {
+                string_value: "521a82b43662367c1d007347"
+              }
+            }
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Delete Prop"
+      args {
+        call_value {
+          functionName: "Get Map Item (Prop)"
+          args {
+            string_value: "521a82b43662367c1d007347"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Order Actor to Move To (Region)"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Actor)"
+              args {
+                string_value: "536d481e643431740d169ded"
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (Region)"
+          args {
+            string_value: "53793c453662369815006428"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "FacingDirection"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Enforce Actor Current Orders"
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "EnableOrDisable"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Actor)"
+              args {
+                string_value: "536d481e643431740d169ded"
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "End Current Team Round"
+    }
+    ops {
+      functionName: "End Current Team Round"
+    }
+  }
+  isActive: true
+  idRef {
+    id: "53792c84366236981500617b"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
+triggers {
+  name: "Seed Random"
+  events {
+    ops {
+      functionName: "On New Round"
+      args {
+        call_value {
+          functionName: "Get Map Item (SceneDimension)"
+          args {
+            string_value: "Default"
+          }
+        }
+      }
+    }
+  }
+  conditions {
+  }
+  actions {
+    ops {
+      functionName: "Set Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Variable (int)"
+          args {
+            string_value: "RandomNumber"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Random (int)"
+          args {
+            int_value: 0
+          }
+          args {
+            int_value: 9
+          }
+        }
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "537932b136623698150062aa"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
+triggers {
+  name: "Call for Help"
+  events {
+    ops {
+      functionName: "On New Round"
+      args {
+        call_value {
+          functionName: "Get Map Item (SceneDimension)"
+          args {
+            string_value: "Default"
+          }
+        }
+      }
+    }
+  }
+  conditions {
+    ops {
+      functionName: "Comparison (int)"
+      args {
+        call_value {
+          functionName: "Get Variable (int)"
+          args {
+            string_value: "RandomNumber"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "Comparison Ops"
+          }
+          args {
+            int_value: 4
+          }
+        }
+      }
+      args {
+        int_value: 3
+      }
+    }
+    ops {
+      functionName: "Comparison (int)"
+      args {
+        call_value {
+          functionName: "Get Count of Alive Actors"
+          args {
+            call_value {
+              functionName: "All Actors on Team"
+              args {
+                call_value {
+                  functionName: "Get Preset Value (string)"
+                  args {
+                    string_value: "FactionList"
+                  }
+                  args {
+                    int_value: 1
+                  }
+                }
+              }
+              args {
+                call_value {
+                  functionName: "Get Preset Value (int)"
+                  args {
+                    string_value: "AllOrAny"
+                  }
+                  args {
+                    int_value: 0
+                  }
+                }
+              }
+              args {
+                call_value {
+                  functionName: "Get Map Item (SceneDimension)"
+                  args {
+                    string_value: "Default"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "Comparison Ops"
+          }
+          args {
+            int_value: 2
+          }
+        }
+      }
+      args {
+        int_value: 0
+      }
+    }
+  }
+  actions {
+    ops {
+      functionName: "Display Text over Actor"
+      args {
+        call_value {
+          functionName: "Nearest Tagged Actor to Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (SenseTagList)"
+              args {
+                string_value: "isVictim"
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Map Item (Player)"
+              args {
+                int_value: 0
+              }
+            }
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "TextPopupStyle"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        string_value: "Help me!"
+      }
+      args {
+        float_value: 0
+      }
+      args {
+        float_value: 0
+      }
+      args {
+        float_value: 0
+      }
+      args {
+        float_value: 0
+      }
+      args {
+        float_value: 3
+      }
+      args {
+        float_value: 3
+      }
+      args {
+        float_value: 0
+      }
+    }
+    ops {
+      functionName: "Trigger: Wait Until Triggered Again"
+    }
+    ops {
+      functionName: "Display Text over Actor"
+      args {
+        call_value {
+          functionName: "Nearest Tagged Actor to Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (SenseTagList)"
+              args {
+                string_value: "isVictim"
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Map Item (Player)"
+              args {
+                int_value: 0
+              }
+            }
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "TextPopupStyle"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        string_value: "Aaaaaa, get rid of them!"
+      }
+      args {
+        float_value: 0
+      }
+      args {
+        float_value: 0
+      }
+      args {
+        float_value: 0
+      }
+      args {
+        float_value: 0
+      }
+      args {
+        float_value: 3
+      }
+      args {
+        float_value: 3
+      }
+      args {
+        float_value: 0
+      }
+    }
+    ops {
+      functionName: "Trigger: Wait Until Triggered Again"
+    }
+    ops {
+      functionName: "Display Text over Actor"
+      args {
+        call_value {
+          functionName: "Nearest Tagged Actor to Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (SenseTagList)"
+              args {
+                string_value: "isVictim"
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Map Item (Player)"
+              args {
+                int_value: 0
+              }
+            }
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "TextPopupStyle"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        string_value: "Untie me when once it\'s safe!"
+      }
+      args {
+        float_value: 0
+      }
+      args {
+        float_value: 0
+      }
+      args {
+        float_value: 0
+      }
+      args {
+        float_value: 0
+      }
+      args {
+        float_value: 3
+      }
+      args {
+        float_value: 3
+      }
+      args {
+        float_value: 0
+      }
+    }
+    ops {
+      functionName: "Trigger: Wait Until Triggered Again"
+    }
+    ops {
+      functionName: "Display Text over Actor"
+      args {
+        call_value {
+          functionName: "Nearest Tagged Actor to Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (SenseTagList)"
+              args {
+                string_value: "isVictim"
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Map Item (Player)"
+              args {
+                int_value: 0
+              }
+            }
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "TextPopupStyle"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        string_value: "They came up from the ground! What\'s happening down there?"
+      }
+      args {
+        float_value: 0
+      }
+      args {
+        float_value: 0
+      }
+      args {
+        float_value: 0
+      }
+      args {
+        float_value: 0
+      }
+      args {
+        float_value: 3
+      }
+      args {
+        float_value: 3
+      }
+      args {
+        float_value: 0
+      }
+    }
+    ops {
+      functionName: "Trigger: Wait Until Triggered Again"
+    }
+    ops {
+      functionName: "Display Text over Actor"
+      args {
+        call_value {
+          functionName: "Nearest Tagged Actor to Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (SenseTagList)"
+              args {
+                string_value: "isVictim"
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Map Item (Player)"
+              args {
+                int_value: 0
+              }
+            }
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "TextPopupStyle"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        string_value: "Save me!"
+      }
+      args {
+        float_value: 0
+      }
+      args {
+        float_value: 0
+      }
+      args {
+        float_value: 0
+      }
+      args {
+        float_value: 0
+      }
+      args {
+        float_value: 3
+      }
+      args {
+        float_value: 3
+      }
+      args {
+        float_value: 0
+      }
+    }
+    ops {
+      functionName: "Trigger: Wait Until Triggered Again"
+    }
+    ops {
+      functionName: "Display Text over Actor"
+      args {
+        call_value {
+          functionName: "Nearest Tagged Actor to Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (SenseTagList)"
+              args {
+                string_value: "isVictim"
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Map Item (Player)"
+              args {
+                int_value: 0
+              }
+            }
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "TextPopupStyle"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        string_value: "Please rescue our children!"
+      }
+      args {
+        float_value: 0
+      }
+      args {
+        float_value: 0
+      }
+      args {
+        float_value: 0
+      }
+      args {
+        float_value: 0
+      }
+      args {
+        float_value: 3
+      }
+      args {
+        float_value: 3
+      }
+      args {
+        float_value: 0
+      }
+    }
+    ops {
+      functionName: "Trigger: Wait Until Triggered Again"
+    }
+    ops {
+      functionName: "Display Text over Actor"
+      args {
+        call_value {
+          functionName: "Nearest Tagged Actor to Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (SenseTagList)"
+              args {
+                string_value: "isVictim"
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Map Item (Player)"
+              args {
+                int_value: 0
+              }
+            }
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "TextPopupStyle"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        string_value: "Why is this happening?"
+      }
+      args {
+        float_value: 0
+      }
+      args {
+        float_value: 0
+      }
+      args {
+        float_value: 0
+      }
+      args {
+        float_value: 0
+      }
+      args {
+        float_value: 3
+      }
+      args {
+        float_value: 3
+      }
+      args {
+        float_value: 0
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "5379335d36623698150062ab"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
+triggers {
+  name: "Rescue Victim"
+  events {
+    ops {
+      functionName: "On Item Interaction"
+      args {
+        call_value {
+          functionName: "Get Map Item (InteractableObject)"
+          args {
+            string_value: "537931b836623698150062a6"
+          }
+        }
+      }
+    }
+  }
+  conditions {
+  }
+  actions {
+    ops {
+      functionName: "Display Text over Point"
+      args {
+        call_value {
+          functionName: "Specified Point (2D)"
+          args {
+            float_value: 0
+          }
+          args {
+            float_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "TextPopupStyle"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        string_value: "You untie the hostage from his crude bonds."
+      }
+      args {
+        float_value: 0
+      }
+      args {
+        float_value: 0
+      }
+      args {
+        float_value: 0
+      }
+      args {
+        float_value: 0
+      }
+      args {
+        float_value: 3
+      }
+      args {
+        float_value: 3
+      }
+      args {
+        float_value: 0
+      }
+    }
+    ops {
+      functionName: "Display Text over Actor"
+      args {
+        call_value {
+          functionName: "Get Map Item (Actor)"
+          args {
+            string_value: "537931b836623698150062a6"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "TextPopupStyle"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        string_value: "Thank you! Please, rescue the other soldiers they captured."
+      }
+      args {
+        float_value: 0
+      }
+      args {
+        float_value: 0
+      }
+      args {
+        float_value: 0
+      }
+      args {
+        float_value: 0
+      }
+      args {
+        float_value: 3
+      }
+      args {
+        float_value: 3
+      }
+      args {
+        float_value: 0
+      }
+    }
+    ops {
+      functionName: "Set Actor In Passive Mode"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Actor)"
+              args {
+                string_value: "537931b836623698150062a6"
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Order Actor to Move To (Region)"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Actor)"
+              args {
+                string_value: "537931b836623698150062a6"
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (Region)"
+          args {
+            string_value: "53728fd564343195016cdd75"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "FacingDirection"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Enforce Actor Current Orders"
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "EnableOrDisable"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Actor)"
+              args {
+                string_value: "537931b836623698150062a6"
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Enable/Disable Interactable Object"
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "EnableOrDisable"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (InteractableObject)"
+          args {
+            string_value: "537931b836623698150062a6"
+          }
+        }
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "5379351e36623698150062ac"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
+triggers {
+  name: "Aggro Squad 1"
+  events {
+    ops {
+      functionName: "On Actor Awareness of Another Actor"
+    }
+  }
+  conditions {
+    ops {
+      functionName: "Evaluate Tag for Actor"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Triggering Actor"
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "HasOrHasNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SenseTagList)"
+          args {
+            string_value: "squad1"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Compare Actor Team"
+      args {
+        call_value {
+          functionName: "Triggering Target Actor"
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SceneDimension)"
+          args {
+            string_value: "Default"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Invert Bool"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "debugMode"
+          }
+        }
+      }
+    }
+  }
+  actions {
+    ops {
+      functionName: "Change Actor Team"
+      args {
+        call_value {
+          functionName: "All Actors With Tag"
+          args {
+            call_value {
+              functionName: "Get Map Item (SenseTagList)"
+              args {
+                string_value: "squad1"
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Preset Value (int)"
+              args {
+                string_value: "AllOrAny"
+              }
+              args {
+                int_value: 0
+              }
+            }
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SceneDimension)"
+          args {
+            string_value: "Default"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Order Actor to Seek And Destroy (Team)"
+      args {
+        call_value {
+          functionName: "All Actors With Tag"
+          args {
+            call_value {
+              functionName: "Get Map Item (SenseTagList)"
+              args {
+                string_value: "squad1"
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Preset Value (int)"
+              args {
+                string_value: "AllOrAny"
+              }
+              args {
+                int_value: 0
+              }
+            }
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SceneDimension)"
+          args {
+            string_value: "Default"
+          }
+        }
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "537936bb36623698150062b3"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
 regions {
   name: "Exit"
   position {
-    x: -34
-    y: -26
-    width: 4
-    height: 4
+    x: -36
+    y: -33
+    width: 1
+    height: 3
   }
   enabledAtStart: true
   is_camera_region: false
@@ -635,12 +2350,144 @@ regions {
   loop_combat_music: true
   loop_default_music: false
 }
+regions {
+  name: "Camera"
+  position {
+    x: -59
+    y: -185
+    width: 51
+    height: 166
+  }
+  enabledAtStart: true
+  is_camera_region: true
+  idRef {
+    id: "53792ac93662369815006176"
+  }
+  highlight_color {
+    r: 0
+    g: 0
+    b: 0
+    a: 1
+  }
+  visible_at_start: false
+  is_teleporter_region: false
+  directional_light_dir {
+    x: -0.5
+    y: -1
+    z: -0.75
+  }
+  directional_light_color {
+    r: 0.50196081
+    g: 0.50196081
+    b: 0.50196081
+    a: 1
+  }
+  ambient_light_color {
+    r: 0.50196081
+    g: 0.50196081
+    b: 0.50196081
+    a: 1
+  }
+  ambience_template: ""
+  combat_music: ""
+  default_music: ""
+  loop_combat_music: true
+  loop_default_music: false
+}
+regions {
+  name: "Tabitha Chills Out Here"
+  position {
+    x: -31
+    y: -81
+    width: 1
+    height: 1
+  }
+  enabledAtStart: true
+  is_camera_region: false
+  idRef {
+    id: "53793c453662369815006428"
+  }
+  highlight_color {
+    r: 0
+    g: 0
+    b: 0
+    a: 1
+  }
+  visible_at_start: false
+  is_teleporter_region: false
+  directional_light_dir {
+    x: -0.5
+    y: -1
+    z: -0.75
+  }
+  directional_light_color {
+    r: 0.50196081
+    g: 0.50196081
+    b: 0.50196081
+    a: 1
+  }
+  ambient_light_color {
+    r: 0.50196081
+    g: 0.50196081
+    b: 0.50196081
+    a: 1
+  }
+  ambience_template: ""
+  combat_music: ""
+  default_music: ""
+  loop_combat_music: true
+  loop_default_music: false
+}
+regions {
+  name: "Tabitha Mark"
+  position {
+    x: -36
+    y: -81
+    width: 1
+    height: 1
+  }
+  enabledAtStart: true
+  is_camera_region: false
+  idRef {
+    id: "53793dd03662369815006429"
+  }
+  highlight_color {
+    r: 0
+    g: 0
+    b: 0
+    a: 1
+  }
+  visible_at_start: false
+  is_teleporter_region: false
+  directional_light_dir {
+    x: -0.5
+    y: -1
+    z: -0.75
+  }
+  directional_light_color {
+    r: 0.50196081
+    g: 0.50196081
+    b: 0.50196081
+    a: 1
+  }
+  ambient_light_color {
+    r: 0.50196081
+    g: 0.50196081
+    b: 0.50196081
+    a: 1
+  }
+  ambience_template: ""
+  combat_music: ""
+  default_music: ""
+  loop_combat_music: true
+  loop_default_music: false
+}
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -37
+    x: -36
     y: 0
-    z: -81
+    z: -80
   }
   orientation: ORIENTATION_E
   GeneralTags: "isExiter"
@@ -651,14 +2498,169 @@ characters {
   interactionRoot {
     isEnabled: true
     interactionRadius: 1
+    prerequisites {
+      ops {
+        functionName: "OR"
+        args {
+          call_value {
+            functionName: "Comparison (int)"
+            args {
+              call_value {
+                functionName: "Get Variable (int)"
+                args {
+                  string_value: "talkTabithaState"
+                }
+              }
+            }
+            args {
+              call_value {
+                functionName: "Get Preset Value (int)"
+                args {
+                  string_value: "Comparison Ops"
+                }
+                args {
+                  int_value: 0
+                }
+              }
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Comparison (int)"
+            args {
+              call_value {
+                functionName: "Get Variable (int)"
+                args {
+                  string_value: "talkTabithaState"
+                }
+              }
+            }
+            args {
+              call_value {
+                functionName: "Get Preset Value (int)"
+                args {
+                  string_value: "Comparison Ops"
+                }
+                args {
+                  int_value: 0
+                }
+              }
+            }
+            args {
+              int_value: 2
+            }
+          }
+        }
+      }
+    }
     conversationPoint {
-      conversationID: "532f0ce0366236840d003d6f"
-      turnToFace: false
+      conversationID: "536d4962643431740d169def"
+      turnToFace: true
     }
   }
   lod: 0
   character_instance {
     prefab_name: "Berlin:Story/HumanFemaleFeuerSchwinge"
+    character_sheet_id: "AGChemie_Cyberzombie_Lv1"
+    character_mod {
+      stats {
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        hp: 0
+        ap: 0
+        armor: 0
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+        is_fearless: 1
+      }
+      skills {
+        ranged_combat: 0
+        close_combat: 0
+        dodge: 0
+      }
+      specializations {
+        rifle: 0
+        edged: 0
+        unarmed: 0
+      }
+      archetypeName: "Non-Combatant"
+      vulnerabilities {
+      }
+    }
+    team_id: "Civilians"
+    char_name: "Tabitha"
+    GeneralTags: "isExiter"
+    pc_spawn_number: -1
+    portrait {
+      filename: "backer_humanfemale_wren"
+    }
+    karma: 177
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -34
+    y: 0
+    z: -64
+  }
+  orientation: ORIENTATION_E
+  displayName: "Graveyard Spirit"
+  idRef {
+    id: "536d4829643431740d169dee"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    prerequisites {
+      ops {
+        functionName: "Comparison (int)"
+        args {
+          call_value {
+            functionName: "Get Variable (int)"
+            args {
+              string_value: "CleanseGraveyard"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 4
+            }
+          }
+        }
+        args {
+          int_value: 3
+        }
+      }
+    }
+    conversationPoint {
+      conversationID: "536d4d206434317b17cbac2b"
+      turnToFace: true
+    }
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Seattle:Spirit/SpiritForgottenSouls"
     character_sheet_id: "AGChemie_Cyberzombie_Lv1"
     character_mod {
       stats {
@@ -694,13 +2696,79 @@ characters {
       }
     }
     team_id: "Civilians"
-    char_name: "Tabitha"
-    GeneralTags: "isExiter"
+    char_name: "Graveyard Spirit"
     pc_spawn_number: -1
+    uninjurable: true
     portrait {
-      filename: "backer_humanfemale_wren"
+      filename: "generic_spirit_forgottensoul"
     }
     karma: 177
+  }
+}
+characters {
+  name: "system_spawner_playerSpawner"
+  gridPoint {
+    x: -32
+    y: 0
+    z: -36
+  }
+  orientation: ORIENTATION_W
+  idRef {
+    id: "53792b393662369815006177"
+  }
+  lod: 0
+  character_instance {
+    character_mod {
+      archetypeName: "Player"
+    }
+    team_id: "Shadowrunners"
+    char_name: "New Actor"
+    enabled_at_start: true
+    pc_spawn_number: 0
+  }
+}
+characters {
+  name: "system_spawner_playerSpawner"
+  gridPoint {
+    x: -31
+    y: 0
+    z: -34
+  }
+  orientation: ORIENTATION_W
+  idRef {
+    id: "53792b413662369815006178"
+  }
+  lod: 0
+  character_instance {
+    character_mod {
+      archetypeName: "Player"
+    }
+    team_id: "Shadowrunners"
+    char_name: "New Actor"
+    enabled_at_start: true
+    pc_spawn_number: 1
+  }
+}
+characters {
+  name: "system_spawner_playerSpawner"
+  gridPoint {
+    x: -33
+    y: 0
+    z: -34
+  }
+  orientation: ORIENTATION_W
+  idRef {
+    id: "53792b433662369815006179"
+  }
+  lod: 0
+  character_instance {
+    character_mod {
+      archetypeName: "Player"
+    }
+    team_id: "Shadowrunners"
+    char_name: "New Actor"
+    enabled_at_start: true
+    pc_spawn_number: 2
   }
 }
 characters {
@@ -708,39 +2776,22 @@ characters {
   gridPoint {
     x: -34
     y: 0
-    z: -64
-  }
-  orientation: ORIENTATION_E
-  displayName: "Graveyard Spirit"
-  idRef {
-    id: "536d4829643431740d169dee"
-  }
-  lod: 0
-  character_instance {
-    team_id: "Civilians"
-    char_name: "Graveyard Spirit"
-    pc_spawn_number: -1
-    uninjurable: true
-  }
-}
-characters {
-  name: "chars_icon_playerIcon"
-  gridPoint {
-    x: 48
-    y: 0
-    z: -85
+    z: -106
   }
   orientation: ORIENTATION_S
+  GeneralTags: "isEnemy"
+  GeneralTags: "squad1"
+  GeneralTags: ""
   idRef {
-    id: "537292e764343195016cdd7c"
+    id: "537930023662369815006294"
   }
   lod: 0
   character_instance {
-    prefab_name: "Seattle:Gangers/DwarfMaleGangerMohawk"
-    character_sheet_id: "Generic_Lv1_Human_Melee"
+    character_sheet_id: "Ghoul_Lv1"
+    equipment_sheet_id: "Ghoul_Lv1_Gear"
     character_mod {
       stats {
-        morale: -75
+        morale: 0
         discipline: 0
         awareness: 0
         perception: 0
@@ -752,18 +2803,1269 @@ characters {
       }
       specializations {
       }
-      archetypeName: "Non-Combatant"
       attitude: AttitudeCautious
+      attackRandom: AttackStyle_CycleAll
       vulnerabilities {
       }
     }
-    team_id: "LoneStar"
-    char_name: "Hostage"
+    team_id: "Civilians"
+    char_name: "Feral Ghoul"
+    GeneralTags: "isEnemy"
+    GeneralTags: "squad1"
+    GeneralTags: ""
     pc_spawn_number: -1
     portrait {
       filename: ""
     }
-    karma: 28
+    hiring_set_randomizer: "ghoul"
+    scale_character_sheet: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -33
+    y: 0
+    z: -107
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "isEnemy"
+  GeneralTags: "squad1"
+  GeneralTags: ""
+  idRef {
+    id: "537930043662369815006295"
+  }
+  lod: 0
+  character_instance {
+    character_sheet_id: "Ghoul_Lv1"
+    equipment_sheet_id: "Ghoul_Lv1_Gear"
+    character_mod {
+      stats {
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+      }
+      specializations {
+      }
+      attitude: AttitudeCautious
+      attackRandom: AttackStyle_CycleAll
+      vulnerabilities {
+      }
+    }
+    team_id: "Civilians"
+    char_name: "Feral Ghoul"
+    GeneralTags: "isEnemy"
+    GeneralTags: "squad1"
+    GeneralTags: ""
+    pc_spawn_number: -1
+    portrait {
+      filename: ""
+    }
+    hiring_set_randomizer: "ghoul"
+    scale_character_sheet: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -32
+    y: 0
+    z: -111
+  }
+  orientation: ORIENTATION_E
+  GeneralTags: "isEnemy"
+  GeneralTags: "squad1"
+  GeneralTags: ""
+  idRef {
+    id: "537930123662369815006296"
+  }
+  lod: 0
+  character_instance {
+    character_sheet_id: "Ghoul_Lv1"
+    equipment_sheet_id: "Ghoul_Lv1_Gear"
+    character_mod {
+      stats {
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+      }
+      specializations {
+      }
+      attitude: AttitudeCautious
+      attackRandom: AttackStyle_CycleAll
+      vulnerabilities {
+      }
+    }
+    team_id: "Civilians"
+    char_name: "Feral Ghoul"
+    GeneralTags: "isEnemy"
+    GeneralTags: "squad1"
+    GeneralTags: ""
+    pc_spawn_number: -1
+    portrait {
+      filename: ""
+    }
+    hiring_set_randomizer: "ghoul"
+    scale_character_sheet: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -26
+    y: 0
+    z: -105
+  }
+  orientation: ORIENTATION_N
+  GeneralTags: "isEnemy"
+  GeneralTags: "squad1"
+  GeneralTags: ""
+  idRef {
+    id: "537930203662369815006298"
+  }
+  lod: 0
+  character_instance {
+    character_sheet_id: "Ghoul_Lv1"
+    equipment_sheet_id: "Ghoul_Lv1_Gear"
+    character_mod {
+      stats {
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+      }
+      specializations {
+      }
+      attitude: AttitudeCautious
+      attackRandom: AttackStyle_CycleAll
+      vulnerabilities {
+      }
+    }
+    team_id: "Civilians"
+    char_name: "Feral Ghoul"
+    GeneralTags: "isEnemy"
+    GeneralTags: "squad1"
+    GeneralTags: ""
+    pc_spawn_number: -1
+    portrait {
+      filename: ""
+    }
+    hiring_set_randomizer: "ghoul"
+    scale_character_sheet: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -28
+    y: 0
+    z: -110
+  }
+  orientation: ORIENTATION_E
+  GeneralTags: "isEnemy"
+  GeneralTags: "squad1"
+  GeneralTags: ""
+  idRef {
+    id: "537930223662369815006299"
+  }
+  lod: 0
+  character_instance {
+    character_sheet_id: "Ghoul_Lv1"
+    equipment_sheet_id: "Ghoul_Lv1_Gear"
+    character_mod {
+      stats {
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+      }
+      specializations {
+      }
+      attitude: AttitudeCautious
+      attackRandom: AttackStyle_CycleAll
+      vulnerabilities {
+      }
+    }
+    team_id: "Civilians"
+    char_name: "Feral Ghoul"
+    GeneralTags: "isEnemy"
+    GeneralTags: "squad1"
+    GeneralTags: ""
+    pc_spawn_number: -1
+    portrait {
+      filename: ""
+    }
+    hiring_set_randomizer: "ghoul"
+    scale_character_sheet: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -46
+    y: 0
+    z: -139
+  }
+  orientation: ORIENTATION_E
+  GeneralTags: "isEnemy"
+  GeneralTags: "squad2"
+  GeneralTags: ""
+  idRef {
+    id: "53793026366236981500629a"
+  }
+  lod: 0
+  character_instance {
+    character_sheet_id: "Ghoul_Lv1"
+    equipment_sheet_id: "Ghoul_Lv1_Gear"
+    character_mod {
+      stats {
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+      }
+      specializations {
+      }
+      attitude: AttitudeCautious
+      attackRandom: AttackStyle_CycleAll
+      vulnerabilities {
+      }
+    }
+    team_id: "Civilians"
+    char_name: "Feral Ghoul"
+    GeneralTags: "isEnemy"
+    GeneralTags: "squad2"
+    GeneralTags: ""
+    pc_spawn_number: -1
+    portrait {
+      filename: ""
+    }
+    hiring_set_randomizer: "ghoul"
+    scale_character_sheet: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -46
+    y: 0
+    z: -140
+  }
+  orientation: ORIENTATION_E
+  GeneralTags: "isEnemy"
+  GeneralTags: "squad2"
+  GeneralTags: ""
+  idRef {
+    id: "53793028366236981500629b"
+  }
+  lod: 0
+  character_instance {
+    character_sheet_id: "Ghoul_Lv1"
+    equipment_sheet_id: "Ghoul_Lv1_Gear"
+    character_mod {
+      stats {
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+      }
+      specializations {
+      }
+      attitude: AttitudeCautious
+      attackRandom: AttackStyle_CycleAll
+      vulnerabilities {
+      }
+    }
+    team_id: "Civilians"
+    char_name: "Feral Ghoul"
+    GeneralTags: "isEnemy"
+    GeneralTags: "squad2"
+    GeneralTags: ""
+    pc_spawn_number: -1
+    portrait {
+      filename: ""
+    }
+    hiring_set_randomizer: "ghoul"
+    scale_character_sheet: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -47
+    y: 0
+    z: -141
+  }
+  orientation: ORIENTATION_E
+  GeneralTags: "isEnemy"
+  GeneralTags: "squad2"
+  GeneralTags: ""
+  idRef {
+    id: "5379302a366236981500629c"
+  }
+  lod: 0
+  character_instance {
+    character_sheet_id: "Ghoul_Lv1"
+    equipment_sheet_id: "Ghoul_Lv1_Gear"
+    character_mod {
+      stats {
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+      }
+      specializations {
+      }
+      attitude: AttitudeCautious
+      attackRandom: AttackStyle_CycleAll
+      vulnerabilities {
+      }
+    }
+    team_id: "Civilians"
+    char_name: "Feral Ghoul"
+    GeneralTags: "isEnemy"
+    GeneralTags: "squad2"
+    GeneralTags: ""
+    pc_spawn_number: -1
+    portrait {
+      filename: ""
+    }
+    hiring_set_randomizer: "ghoul"
+    scale_character_sheet: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -47
+    y: 0
+    z: -139
+  }
+  orientation: ORIENTATION_E
+  GeneralTags: "isEnemy"
+  GeneralTags: "isEmber"
+  GeneralTags: "squad2"
+  GeneralTags: ""
+  idRef {
+    id: "5379302c366236981500629d"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Seattle:Spirit/SpiritFire"
+    character_sheet_id: "a3_badguy_ember_Lv1"
+    equipment_sheet_id: "Spirit Fire F1 Gear"
+    character_mod {
+      stats {
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        hp: 0
+        ap: 0
+        armor: 0
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+        is_fearless: 1
+      }
+      skills {
+        ranged_combat: 0
+        close_combat: 0
+        dodge: 0
+      }
+      specializations {
+        rifle: 0
+        edged: 0
+        unarmed: 0
+      }
+      archetypeName: "Guard - Seek And Destroy"
+      vulnerabilities {
+        heal: VulnerabilityLevel_Immune
+        fire: VulnerabilityLevel_Immune
+      }
+    }
+    team_id: "Civilians"
+    char_name: "Freed Fire Elemental"
+    GeneralTags: "isEnemy"
+    GeneralTags: "isEmber"
+    GeneralTags: "squad2"
+    GeneralTags: ""
+    pc_spawn_number: -1
+    hiring_type: HiringType_None
+    disable_pickups: false
+    portrait {
+      filename: ""
+    }
+    karma: 20
+    hiring_cost_override: 1000
+    scale_character_sheet: true
+    has_fist: false
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -31
+    y: 0
+    z: -170
+  }
+  orientation: ORIENTATION_E
+  GeneralTags: "isEnemy"
+  GeneralTags: "squad3"
+  GeneralTags: ""
+  idRef {
+    id: "53793033366236981500629e"
+  }
+  lod: 0
+  character_instance {
+    character_sheet_id: "Ghoul_Lv1"
+    equipment_sheet_id: "Ghoul_Lv1_Gear"
+    character_mod {
+      stats {
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+      }
+      specializations {
+      }
+      attitude: AttitudeCautious
+      attackRandom: AttackStyle_CycleAll
+      vulnerabilities {
+      }
+    }
+    team_id: "Civilians"
+    char_name: "Feral Ghoul"
+    GeneralTags: "isEnemy"
+    GeneralTags: "squad3"
+    GeneralTags: ""
+    pc_spawn_number: -1
+    portrait {
+      filename: ""
+    }
+    hiring_set_randomizer: "ghoul"
+    scale_character_sheet: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -32
+    y: 0
+    z: -169
+  }
+  orientation: ORIENTATION_E
+  GeneralTags: "isEnemy"
+  GeneralTags: "squad3"
+  GeneralTags: ""
+  idRef {
+    id: "53793035366236981500629f"
+  }
+  lod: 0
+  character_instance {
+    character_sheet_id: "Ghoul_Lv1"
+    equipment_sheet_id: "Ghoul_Lv1_Gear"
+    character_mod {
+      stats {
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+      }
+      specializations {
+      }
+      attitude: AttitudeCautious
+      attackRandom: AttackStyle_CycleAll
+      vulnerabilities {
+      }
+    }
+    team_id: "Civilians"
+    char_name: "Feral Ghoul"
+    GeneralTags: "isEnemy"
+    GeneralTags: "squad3"
+    GeneralTags: ""
+    pc_spawn_number: -1
+    portrait {
+      filename: ""
+    }
+    hiring_set_randomizer: "ghoul"
+    scale_character_sheet: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -33
+    y: 0
+    z: -171
+  }
+  orientation: ORIENTATION_E
+  GeneralTags: "isEnemy"
+  GeneralTags: "isEmber"
+  GeneralTags: "squad3"
+  GeneralTags: ""
+  idRef {
+    id: "5379303636623698150062a0"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Seattle:Spirit/SpiritFire"
+    character_sheet_id: "a3_badguy_ember_Lv1"
+    equipment_sheet_id: "Spirit Fire F1 Gear"
+    character_mod {
+      stats {
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        hp: 0
+        ap: 0
+        armor: 0
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+        is_fearless: 1
+      }
+      skills {
+        ranged_combat: 0
+        close_combat: 0
+        dodge: 0
+      }
+      specializations {
+        rifle: 0
+        edged: 0
+        unarmed: 0
+      }
+      archetypeName: "Guard - Seek And Destroy"
+      vulnerabilities {
+        heal: VulnerabilityLevel_Immune
+        fire: VulnerabilityLevel_Immune
+      }
+    }
+    team_id: "Civilians"
+    char_name: "Freed Fire Elemental"
+    GeneralTags: "isEnemy"
+    GeneralTags: "isEmber"
+    GeneralTags: "squad3"
+    GeneralTags: ""
+    pc_spawn_number: -1
+    hiring_type: HiringType_None
+    disable_pickups: false
+    portrait {
+      filename: ""
+    }
+    karma: 20
+    hiring_cost_override: 1000
+    scale_character_sheet: true
+    has_fist: false
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -31
+    y: 0
+    z: -169
+  }
+  orientation: ORIENTATION_E
+  GeneralTags: "isEnemy"
+  GeneralTags: "squad3"
+  GeneralTags: ""
+  idRef {
+    id: "5379303d36623698150062a1"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Seattle:Story/TirTairngireGuard"
+    character_sheet_id: "Lonestar_Lv1_Captain"
+    equipment_sheet_id: "Lonestar_Lv1_Captain_Gear"
+    character_mod {
+      stats {
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+      }
+      specializations {
+      }
+      vulnerabilities {
+      }
+    }
+    team_id: "Civilians"
+    char_name: "Tir Tairngire Commando"
+    GeneralTags: "isEnemy"
+    GeneralTags: "squad3"
+    GeneralTags: ""
+    pc_spawn_number: -1
+    portrait {
+      filename: ""
+    }
+    karma: 44
+    scale_character_sheet: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -50
+    y: 0
+    z: -182
+  }
+  orientation: ORIENTATION_E
+  GeneralTags: "isEnemy"
+  GeneralTags: "squad4"
+  GeneralTags: ""
+  idRef {
+    id: "5379304336623698150062a2"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Seattle:Story/TirTairngireGuard"
+    character_sheet_id: "Lonestar_Lv1_Captain"
+    equipment_sheet_id: "Lonestar_Lv1_Captain_Gear"
+    character_mod {
+      stats {
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+      }
+      specializations {
+      }
+      vulnerabilities {
+      }
+    }
+    team_id: "Civilians"
+    char_name: "Tir Tairngire Commando"
+    GeneralTags: "isEnemy"
+    GeneralTags: "squad4"
+    GeneralTags: ""
+    pc_spawn_number: -1
+    portrait {
+      filename: ""
+    }
+    karma: 44
+    scale_character_sheet: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -48
+    y: 0
+    z: -182
+  }
+  orientation: ORIENTATION_E
+  GeneralTags: "isEnemy"
+  GeneralTags: "squad4"
+  GeneralTags: ""
+  idRef {
+    id: "5379304436623698150062a3"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Seattle:Story/TirTairngireGuard"
+    character_sheet_id: "Lonestar_Lv1_Captain"
+    equipment_sheet_id: "Lonestar_Lv1_Captain_Gear"
+    character_mod {
+      stats {
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+      }
+      specializations {
+      }
+      vulnerabilities {
+      }
+    }
+    team_id: "Civilians"
+    char_name: "Tir Tairngire Commando"
+    GeneralTags: "isEnemy"
+    GeneralTags: "squad4"
+    GeneralTags: ""
+    pc_spawn_number: -1
+    portrait {
+      filename: ""
+    }
+    karma: 44
+    scale_character_sheet: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -48
+    y: 0
+    z: -181
+  }
+  orientation: ORIENTATION_E
+  GeneralTags: "isEnemy"
+  GeneralTags: "squad4"
+  GeneralTags: ""
+  idRef {
+    id: "5379304636623698150062a4"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Berlin:HavenCivilians/ElfFemaleHavenHooded_1"
+    character_sheet_id: "Lonestar_Lv1_Human_Mage"
+    equipment_sheet_id: "Lonestar_Lv1_Mage_Gear"
+    character_mod {
+      stats {
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+      }
+      specializations {
+      }
+      vulnerabilities {
+      }
+    }
+    team_id: "Civilians"
+    char_name: "Tir Tairngire Mage"
+    GeneralTags: "isEnemy"
+    GeneralTags: "squad4"
+    GeneralTags: ""
+    pc_spawn_number: -1
+    portrait {
+      filename: ""
+    }
+    karma: 40
+    scale_character_sheet: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -49
+    y: 0
+    z: -180
+  }
+  orientation: ORIENTATION_E
+  GeneralTags: "isEnemy"
+  GeneralTags: "isEmber"
+  GeneralTags: "squad4"
+  GeneralTags: ""
+  idRef {
+    id: "5379304836623698150062a5"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Seattle:Spirit/SpiritFire"
+    character_sheet_id: "a3_badguy_ember_Lv1"
+    equipment_sheet_id: "Spirit Fire F1 Gear"
+    character_mod {
+      stats {
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        hp: 0
+        ap: 0
+        armor: 0
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+        is_fearless: 1
+      }
+      skills {
+        ranged_combat: 0
+        close_combat: 0
+        dodge: 0
+      }
+      specializations {
+        rifle: 0
+        edged: 0
+        unarmed: 0
+      }
+      archetypeName: "Guard - Seek And Destroy"
+      vulnerabilities {
+        heal: VulnerabilityLevel_Immune
+        fire: VulnerabilityLevel_Immune
+      }
+    }
+    team_id: "Civilians"
+    char_name: "Freed Fire Elemental"
+    GeneralTags: "isEnemy"
+    GeneralTags: "isEmber"
+    GeneralTags: "squad4"
+    GeneralTags: ""
+    pc_spawn_number: -1
+    hiring_type: HiringType_None
+    disable_pickups: false
+    portrait {
+      filename: ""
+    }
+    karma: 20
+    hiring_cost_override: 1000
+    scale_character_sheet: true
+    has_fist: false
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -33
+    y: 0
+    z: -106
+  }
+  orientation: ORIENTATION_E
+  GeneralTags: "isVictim"
+  GeneralTags: "isExiter"
+  GeneralTags: ""
+  displayName: "Hostage 1"
+  idRef {
+    id: "537931b836623698150062a6"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    interactionIcon: InteractionIcon_Generic
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Berlin:Gangers/DwarfMaleBerlinGanger_Magnifiker"
+    character_sheet_id: "BaseCivilian"
+    character_mod {
+      stats {
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        magic: 0
+        hp: 10
+        ap: 0
+        armor: 0
+        force: 0
+        morale: -50
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+        ranged_combat: 0
+        close_combat: 0
+        throwing_weapons: 0
+        spellcasting: 0
+        decking: 0
+        conjuring: 0
+        spirit_summoning: 0
+        drone_control: 0
+        biotech: 0
+        dodge: 0
+        etiquette_corporate: 0
+        etiquette_security: 0
+        etiquette_gang: 0
+        etiquette_socialite: 0
+        chi_casting: 0
+        etiquette_shadowrunner: 0
+        etiquette_street: 0
+        etiquette_academic: 0
+      }
+      specializations {
+        pistol: 0
+        rifle: 0
+        shotgun: 0
+        smg: 0
+        edged: 0
+        unarmed: 0
+        spirit_control: 0
+        esp_control: 0
+        drone_combat: 0
+      }
+      archetypeName: "Non-Combatant"
+      attitude: AttitudeAggressive
+      vulnerabilities {
+      }
+    }
+    team_id: "Civilians"
+    char_name: "Dwarf Hostage"
+    GeneralTags: "isVictim"
+    GeneralTags: "isExiter"
+    GeneralTags: ""
+    pc_spawn_number: -1
+    portrait {
+      filename: ""
+    }
+    karma: 6
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -49
+    y: 0
+    z: -141
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "isVictim"
+  GeneralTags: "isExiter"
+  GeneralTags: ""
+  displayName: "Hostage 2"
+  idRef {
+    id: "5379321136623698150062a7"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    interactionIcon: InteractionIcon_Generic
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Seattle:Gangers/OrkMaleGanger_Cutter"
+    character_sheet_id: "BaseCivilian"
+    character_mod {
+      stats {
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        magic: 0
+        hp: 10
+        ap: 0
+        armor: 0
+        force: 0
+        morale: -50
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+        ranged_combat: 0
+        close_combat: 0
+        throwing_weapons: 0
+        spellcasting: 0
+        decking: 0
+        conjuring: 0
+        spirit_summoning: 0
+        drone_control: 0
+        biotech: 0
+        dodge: 0
+        etiquette_corporate: 0
+        etiquette_security: 0
+        etiquette_gang: 0
+        etiquette_socialite: 0
+        chi_casting: 0
+        etiquette_shadowrunner: 0
+        etiquette_street: 0
+        etiquette_academic: 0
+      }
+      specializations {
+        pistol: 0
+        rifle: 0
+        shotgun: 0
+        smg: 0
+        edged: 0
+        unarmed: 0
+        spirit_control: 0
+        esp_control: 0
+        drone_combat: 0
+      }
+      archetypeName: "Non-Combatant"
+      attitude: AttitudeAggressive
+      vulnerabilities {
+      }
+    }
+    team_id: "Civilians"
+    char_name: "Ork Hostage"
+    GeneralTags: "isVictim"
+    GeneralTags: "isExiter"
+    GeneralTags: ""
+    pc_spawn_number: -1
+    portrait {
+      filename: ""
+    }
+    karma: 6
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -34
+    y: 0
+    z: -171
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "isVictim"
+  GeneralTags: "isExiter"
+  GeneralTags: ""
+  displayName: "Hostage 3"
+  idRef {
+    id: "5379321336623698150062a8"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    interactionIcon: InteractionIcon_Generic
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Seattle:Gangers/TrollMaleGanger_Halloweener"
+    character_sheet_id: "BaseCivilian"
+    character_mod {
+      stats {
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        magic: 0
+        hp: 10
+        ap: 0
+        armor: 0
+        force: 0
+        morale: -50
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+        ranged_combat: 0
+        close_combat: 0
+        throwing_weapons: 0
+        spellcasting: 0
+        decking: 0
+        conjuring: 0
+        spirit_summoning: 0
+        drone_control: 0
+        biotech: 0
+        dodge: 0
+        etiquette_corporate: 0
+        etiquette_security: 0
+        etiquette_gang: 0
+        etiquette_socialite: 0
+        chi_casting: 0
+        etiquette_shadowrunner: 0
+        etiquette_street: 0
+        etiquette_academic: 0
+      }
+      specializations {
+        pistol: 0
+        rifle: 0
+        shotgun: 0
+        smg: 0
+        edged: 0
+        unarmed: 0
+        spirit_control: 0
+        esp_control: 0
+        drone_combat: 0
+      }
+      archetypeName: "Non-Combatant"
+      attitude: AttitudeAggressive
+      vulnerabilities {
+      }
+    }
+    team_id: "Civilians"
+    char_name: "Troll Hostage"
+    GeneralTags: "isVictim"
+    GeneralTags: "isExiter"
+    GeneralTags: ""
+    pc_spawn_number: -1
+    portrait {
+      filename: ""
+    }
+    karma: 6
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -50
+    y: 0
+    z: -183
+  }
+  orientation: ORIENTATION_E
+  GeneralTags: "isVictim"
+  GeneralTags: "isExiter"
+  GeneralTags: ""
+  displayName: "Hostage 4"
+  idRef {
+    id: "5379321436623698150062a9"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    interactionIcon: InteractionIcon_Generic
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Seattle:Gangers/DwarfMaleGangerMohawk"
+    character_sheet_id: "BaseCivilian"
+    character_mod {
+      stats {
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        magic: 0
+        hp: 10
+        ap: 0
+        armor: 0
+        force: 0
+        morale: -50
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+        ranged_combat: 0
+        close_combat: 0
+        throwing_weapons: 0
+        spellcasting: 0
+        decking: 0
+        conjuring: 0
+        spirit_summoning: 0
+        drone_control: 0
+        biotech: 0
+        dodge: 0
+        etiquette_corporate: 0
+        etiquette_security: 0
+        etiquette_gang: 0
+        etiquette_socialite: 0
+        chi_casting: 0
+        etiquette_shadowrunner: 0
+        etiquette_street: 0
+        etiquette_academic: 0
+      }
+      specializations {
+        pistol: 0
+        rifle: 0
+        shotgun: 0
+        smg: 0
+        edged: 0
+        unarmed: 0
+        spirit_control: 0
+        esp_control: 0
+        drone_combat: 0
+      }
+      archetypeName: "Non-Combatant"
+      attitude: AttitudeAggressive
+      vulnerabilities {
+      }
+    }
+    team_id: "Civilians"
+    char_name: "Senior Hostage"
+    GeneralTags: "isVictim"
+    GeneralTags: "isExiter"
+    GeneralTags: ""
+    pc_spawn_number: -1
+    portrait {
+      filename: ""
+    }
+    karma: 6
   }
 }
 variables {
@@ -814,6 +4116,48 @@ variables {
     typeName: "int"
   }
 }
+variables {
+  int_value: 0
+  variableref_value {
+    scope: TsVariableScope_Scene
+    name: "RandomNumber"
+    typeName: "int"
+  }
+}
+variables {
+  int_value: 0
+  variableref_value {
+    scope: TsVariableScope_Scene
+    name: "talkTabithaState"
+    typeName: "int"
+  }
+}
+variables {
+  int_value: 0
+  variableref_value {
+    scope: TsVariableScope_Scene
+    name: "EnemiesKilled"
+    typeName: "int"
+  }
+}
+variables {
+  int_value: 17
+  variableref_value {
+    scope: TsVariableScope_Scene
+    name: "TotalEnemyCount"
+    typeName: "int"
+  }
+}
+variables {
+  bool_value: false
+  variableref_value {
+    scope: TsVariableScope_Scene
+    name: "debugMode"
+    typeName: "bool"
+  }
+}
+mapEvents: "Tabitha Casts"
+mapEvents: "Tabitha Starts Casting"
 senseTags: "exitNow"
 senseTags: "isVictim"
 goals {

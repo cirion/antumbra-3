@@ -44,6 +44,22 @@ nodes {
     nextNodeIndex: 9
   }
   nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Set Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Variable (int)"
+          args {
+            string_value: "talkTabithaState"
+          }
+        }
+      }
+      args {
+        int_value: 3
+      }
+    }
+  }
 }
 nodes {
   idRef {
@@ -102,10 +118,18 @@ nodes {
   branches {
     responseText: "Can you open the door?"
     nextNodeIndex: 4
+    onlyOnce: true
+    idRef {
+      id: "5379392836623698150063bc"
+    }
   }
   branches {
     responseText: "Who is \342\200\234the evil\342\200\235?"
     nextNodeIndex: 5
+    onlyOnce: true
+    idRef {
+      id: "5379392d36623698150063bd"
+    }
   }
   branches {
     responseText: "{{CC}}Etiquette: Academic{{/CC}} That looks like a Byzantine seal. Can you help me depress the opening?"
@@ -453,6 +477,11 @@ nodes {
       }
     }
     nextNodeIndex: 14
+    hideIfUnavailable: true
+    onlyOnce: true
+    idRef {
+      id: "537937ee36623698150062e9"
+    }
   }
   branches {
     responseText: "Thanks for the warning."

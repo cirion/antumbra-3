@@ -38,6 +38,10 @@ nodes {
       }
     }
     nextNodeIndex: 1
+    onlyOnce: true
+    idRef {
+      id: "53792dbc36623698150061a6"
+    }
   }
   branches {
     responseText: "I have cleansed the graveyard. "
@@ -69,6 +73,7 @@ nodes {
       }
     }
     nextNodeIndex: 2
+    hideIfUnavailable: true
   }
   branches {
     responseText: "Uh\342\200\246 no, I was just leaving."

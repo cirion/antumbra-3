@@ -5266,7 +5266,7 @@ props {
     id: "521a812f3662367c1d0072c5"
   }
   interactionRoot {
-    isEnabled: true
+    isEnabled: false
     interactionRadius: 1
     inspectInteraction {
       dispalyTime: 0
@@ -5653,7 +5653,7 @@ props {
     id: "521a81ad3662367c1d0072e5"
   }
   interactionRoot {
-    isEnabled: true
+    isEnabled: false
     interactionRadius: 1
     inspectInteraction {
       dispalyTime: 0
@@ -6222,7 +6222,7 @@ props {
     id: "521a81c93662367c1d007310"
   }
   interactionRoot {
-    isEnabled: true
+    isEnabled: false
     interactionRadius: 1
     inspectInteraction {
       dispalyTime: 0
@@ -6518,7 +6518,7 @@ props {
     id: "521a81c93662367c1d007326"
   }
   interactionRoot {
-    isEnabled: true
+    isEnabled: false
     interactionRadius: 1
     inspectInteraction {
       dispalyTime: 0
@@ -6934,19 +6934,6 @@ props {
     z: -84
   }
   orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "cemetery_ground_grave02"
-  gridPoint {
-    x: -42
-    y: 0
-    z: -75
-  }
-  orientation: ORIENTATION_S
-  idRef {
-    id: "521a828f3662367c1d007346"
-  }
   lod: 0
 }
 props {
@@ -8908,9 +8895,9 @@ props {
 props {
   name: "cemetery_decor_headstone06"
   gridPoint {
-    x: -37
+    x: -43
     y: 0
-    z: -102
+    z: -99
   }
   orientation: ORIENTATION_S
   idRef {
@@ -9025,9 +9012,9 @@ props {
 props {
   name: "cemetery_decor_headstone06"
   gridPoint {
-    x: -39
+    x: -40
     y: 0
-    z: -102
+    z: -104
   }
   orientation: ORIENTATION_S
   idRef {
@@ -20275,24 +20262,6 @@ props {
   orientation: ORIENTATION_S
   idRef {
     id: "521a8f733662367c1d007965"
-  }
-  lod: 0
-}
-props {
-  name: "cemetery_decor_mummy01"
-  gridPoint {
-    x: -34
-    y: 0
-    z: -82
-  }
-  orientation: ORIENTATION_E
-  idRef {
-    id: "5223f7303662366c10007e8a"
-  }
-  interactionRoot {
-    isEnabled: true
-    interactionRadius: 1
-    interactionIcon: InteractionIcon_Inspect
   }
   lod: 0
 }
@@ -70053,20 +70022,6 @@ props {
   lod: 0
 }
 props {
-  name: "vfx_fx_candleflicker"
-  gridPoint {
-    x: -36
-    y: 2
-    z: -169
-  }
-  orientation: ORIENTATION_S
-  properties {
-    property_id: "fxScript"
-    string_value: "CandleLightEnvironment"
-  }
-  lod: 0
-}
-props {
   name: "vfx_fx_flicker"
   gridPoint {
     x: -55
@@ -70917,30 +70872,6 @@ props {
   lod: 0
 }
 props {
-  name: "vfx_fx_smallfire"
-  gridPoint {
-    x: -36
-    y: 0
-    z: -174
-  }
-  orientation: ORIENTATION_S
-  properties {
-    property_id: "fxScript"
-    string_value: "CampfireEnvironment"
-  }
-  lod: 0
-}
-props {
-  name: "system_invisible_blockMove"
-  gridPoint {
-    x: -36
-    y: 0
-    z: -174
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
   name: "vfx_fx_steam"
   gridPoint {
     x: -34
@@ -71042,26 +70973,7 @@ props {
 props {
   name: "system_gizmo_lightbulb"
   gridPoint {
-    x: -41
-    y: 0
-    z: -74
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-  light {
-    range: 4
-    color {
-      r: 1
-      g: 0.33333334
-      b: 0
-    }
-    intensity: 3
-  }
-}
-props {
-  name: "system_gizmo_lightbulb"
-  gridPoint {
-    x: -34
+    x: -36
     y: 0
     z: -80
   }
@@ -71248,76 +71160,6 @@ props {
   orientation: ORIENTATION_E
   idRef {
     id: "52364d4c366236e411002c3e"
-  }
-  lod: 0
-}
-props {
-  name: "cemetery_decor_candle01"
-  gridPoint {
-    x: -36
-    y: 2
-    z: -169
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "vfx_fx_candleflicker"
-  gridPoint {
-    x: -35
-    y: 2
-    z: -169
-  }
-  orientation: ORIENTATION_S
-  properties {
-    property_id: "fxScript"
-    string_value: "CandleLightEnvironment"
-  }
-  idRef {
-    id: "52364e00366236e411002c3f"
-  }
-  lod: 0
-}
-props {
-  name: "cemetery_decor_candle01"
-  gridPoint {
-    x: -35
-    y: 2
-    z: -169
-  }
-  orientation: ORIENTATION_S
-  idRef {
-    id: "52364e00366236e411002c40"
-  }
-  lod: 0
-}
-props {
-  name: "system_invisible_blockMove"
-  gridPoint {
-    x: -37
-    y: 0
-    z: -174
-  }
-  orientation: ORIENTATION_S
-  idRef {
-    id: "52364e04366236e411002c41"
-  }
-  lod: 0
-}
-props {
-  name: "vfx_fx_smallfire"
-  gridPoint {
-    x: -37
-    y: 0
-    z: -174
-  }
-  orientation: ORIENTATION_S
-  properties {
-    property_id: "fxScript"
-    string_value: "CampfireEnvironment"
-  }
-  idRef {
-    id: "52364e07366236e411002c42"
   }
   lod: 0
 }
@@ -71547,6 +71389,36 @@ props {
   properties {
     property_id: "leyline_fx_on_visible"
     string_value: "LeyLineTileLow"
+  }
+  lod: 0
+}
+props {
+  name: "haven_vehicle_runnerVan01"
+  gridPoint {
+    x: -35
+    y: 0
+    z: -32
+  }
+  orientation: ORIENTATION_W
+  lod: 0
+}
+props {
+  name: "system_invisible_nonsolidProp"
+  gridPoint {
+    x: -36
+    y: 0
+    z: -82
+  }
+  orientation: ORIENTATION_S
+  displayName: "Gate Spell Destination"
+  idRef {
+    id: "53793e1a366236981500642b"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    dummyInteraciton {
+    }
   }
   lod: 0
 }
