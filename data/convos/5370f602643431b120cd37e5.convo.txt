@@ -21,7 +21,7 @@ nodes {
   index: 1
   text: "What\342\200\231s the situation here?"
   branches {
-    responseText: "We wiped them all out, except for Ted."
+    responseText: "We wiped them all out, except for Claude."
     nextNodeIndex: 2
   }
   nodeType: ConversationNodeType_Simple
@@ -43,7 +43,7 @@ nodes {
     id: "5370f647643431b120cd37f4"
   }
   index: 3
-  text: "Still, you done good. Best as I could have hoped for, really. \n\nWe didn\342\200\231t only clear out the water gangs in the area, but we also dealt a blow to the NC. \n\nWho knows what they were plotting, but hopefully now we\342\200\231ll never have to find out."
+  text: "Still, you done good. Best as I could have hoped for, really. \n\nWe didn\342\200\231t just clear out the water gangs in the area, but we also dealt a blow to the NC. \n\nWho knows what they were plotting, but hopefully now we\342\200\231ll never have to find out."
   branches {
     responseText: ""
     conditions {

@@ -85,6 +85,23 @@ triggers {
         }
       }
     }
+    ops {
+      functionName: "Add To Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (int)"
+          args {
+            string_value: "531d26a736623648180018bf"
+          }
+          args {
+            string_value: "Global_Supplies"
+          }
+        }
+      }
+      args {
+        int_value: 1
+      }
+    }
   }
   isActive: true
   idRef {

@@ -13,6 +13,29 @@ nodes {
     nextNodeIndex: 1
   }
   nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Add Camera Point of Interest (Actors)"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Actor)"
+              args {
+                string_value: "5370f49e643431b120cd377f"
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        float_value: 0
+      }
+    }
+  }
 }
 nodes {
   idRef {
@@ -91,6 +114,37 @@ nodes {
     nextNodeIndex: 7
   }
   nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Order Actor to Face Direction"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Actor)"
+              args {
+                string_value: "5370f49e643431b120cd377f"
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "FacingDirection"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
 }
 nodes {
   idRef {
@@ -152,7 +206,7 @@ nodes {
   }
   branches {
     responseText: ""
-    nextNodeIndex: -1
+    nextNodeIndex: 10
   }
   nodeType: ConversationNodeType_Simple
   sourceInSceneRef {
@@ -178,7 +232,66 @@ nodes {
   }
   index: 9
   text: "I should have just shot you when I had the chance, instead of waiting to put on a show. I\342\200\231ll never make that mistake again."
+  branches {
+    responseText: ""
+    nextNodeIndex: 10
+    auxiliaryLink: true
+  }
   nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53782fd8366236101d004ace"
+  }
+  index: 10
+  text: ""
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Trigger: Run Alternate Trigger"
+      args {
+        call_value {
+          functionName: "Get Map Item (Trigger)"
+          args {
+            string_value: "53782ee8366236101d004a99"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WaitOrNot"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+  }
 }
 roots {
   nextNodeIndex: 0
