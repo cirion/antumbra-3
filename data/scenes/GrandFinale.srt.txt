@@ -834,8 +834,8 @@ triggers {
 regions {
   name: "Kali Arrival"
   position {
-    x: 0
-    y: -9
+    x: -46
+    y: -25
     width: 1
     height: 1
   }
@@ -878,8 +878,8 @@ regions {
 regions {
   name: "Kali Destination"
   position {
-    x: -1
-    y: -7
+    x: -31
+    y: -33
     width: 1
     height: 1
   }
@@ -1020,9 +1020,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -32
+    x: -69
     y: 0
-    z: 6
+    z: -37
   }
   orientation: ORIENTATION_S
   GeneralTags: "isWanderer"
@@ -1105,9 +1105,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -32
+    x: -69
     y: 0
-    z: 7
+    z: -36
   }
   orientation: ORIENTATION_S
   GeneralTags: "isMerchantLevel2"
@@ -1183,9 +1183,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -31
+    x: -68
     y: 0
-    z: 7
+    z: -36
   }
   orientation: ORIENTATION_S
   displayName: "Selene"
@@ -1266,9 +1266,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -32
+    x: -69
     y: 0
-    z: 8
+    z: -35
   }
   orientation: ORIENTATION_E
   GeneralTags: "isNorton"
@@ -1379,9 +1379,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -34
+    x: -71
     y: 0
-    z: 8
+    z: -35
   }
   orientation: ORIENTATION_N
   GeneralTags: "isHailey"
@@ -1495,9 +1495,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -34
+    x: -71
     y: 0
-    z: 7
+    z: -36
   }
   orientation: ORIENTATION_S
   GeneralTags: "isLazarus"
@@ -1594,9 +1594,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -34
+    x: -71
     y: 0
-    z: 6
+    z: -37
   }
   orientation: ORIENTATION_E
   GeneralTags: "isMerchantLevel2"
@@ -1680,9 +1680,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -34
+    x: -71
     y: 0
-    z: 4
+    z: -39
   }
   orientation: ORIENTATION_N
   GeneralTags: "isDorbi"
@@ -1793,9 +1793,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -34
+    x: -71
     y: 0
-    z: 5
+    z: -38
   }
   orientation: ORIENTATION_S
   GeneralTags: "isMerchantLevel2"
@@ -1871,9 +1871,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -32
+    x: -69
     y: 0
-    z: 4
+    z: -39
   }
   orientation: ORIENTATION_E
   displayName: "Kali"
@@ -1965,9 +1965,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -32
+    x: -69
     y: 0
-    z: 5
+    z: -38
   }
   orientation: ORIENTATION_S
   GeneralTags: "isElorn"
@@ -2079,9 +2079,9 @@ characters {
 characters {
   name: "system_spawner_playerSpawner"
   gridPoint {
-    x: -29
+    x: 16
     y: 0
-    z: -32
+    z: 20
   }
   orientation: ORIENTATION_N
   idRef {
@@ -2148,7 +2148,7 @@ characters {
       }
     }
     team_id: "Shadowrunners"
-    char_name: ""
+    char_name: "New Actor"
     pc_spawn_number: -1
     ai_ignores: true
     uninjurable: true
