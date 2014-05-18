@@ -20026,3 +20026,32 @@ props {
   }
   lod: 0
 }
+props {
+  name: "office_clutter_destroyedMainframe02"
+  gridPoint {
+    x: -29
+    y: 0
+    z: 63
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "tenements_clutter_pileOfJunk01"
+  gridPoint {
+    x: -25
+    y: 0
+    z: 63
+  }
+  orientation: ORIENTATION_S
+  displayName: "Trivid Recorder"
+  idRef {
+    id: "53783aca366236101d004d47"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    interactionIcon: InteractionIcon_ItemPickup
+  }
+  lod: 0
+}
