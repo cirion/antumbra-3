@@ -910,8 +910,8 @@ triggers {
 regions {
   name: "Matrix Entrance to Hub"
   position {
-    x: 52
-    y: -15
+    x: -10
+    y: -115
     width: 1
     height: 2
   }
@@ -954,8 +954,8 @@ regions {
 regions {
   name: "Matrix Hub to Entrance"
   position {
-    x: 54
-    y: -15
+    x: -19
+    y: -115
     width: 1
     height: 2
   }
@@ -996,12 +996,12 @@ regions {
   loop_default_music: false
 }
 regions {
-  name: "Matrix Hub to Heli"
+  name: "Matrix Entrance to Heli"
   position {
-    x: 54
-    y: -11
-    width: 1
-    height: 2
+    x: 3
+    y: -128
+    width: 2
+    height: 1
   }
   enabledAtStart: true
   is_camera_region: false
@@ -1040,12 +1040,12 @@ regions {
   loop_default_music: false
 }
 regions {
-  name: "Matrix Heli to Hub"
+  name: "Matrix Heli to Entrance"
   position {
-    x: 52
-    y: -11
-    width: 1
-    height: 2
+    x: 3
+    y: -138
+    width: 2
+    height: 1
   }
   enabledAtStart: true
   is_camera_region: false
@@ -1086,8 +1086,8 @@ regions {
 regions {
   name: "Matrix Hub to Decker"
   position {
-    x: 54
-    y: -7
+    x: -38
+    y: -115
     width: 1
     height: 2
   }
@@ -1130,8 +1130,8 @@ regions {
 regions {
   name: "Matrix Decker to Hub"
   position {
-    x: 52
-    y: -7
+    x: -46
+    y: -116
     width: 1
     height: 2
   }
@@ -1174,10 +1174,10 @@ regions {
 regions {
   name: "Matrix Decker to Lock"
   position {
-    x: 54
-    y: -3
-    width: 1
-    height: 2
+    x: -60
+    y: -102
+    width: 2
+    height: 1
   }
   enabledAtStart: true
   is_camera_region: false
@@ -1218,10 +1218,10 @@ regions {
 regions {
   name: "Matrix Lock to Decker"
   position {
-    x: 52
-    y: -3
-    width: 1
-    height: 2
+    x: -60
+    y: -93
+    width: 2
+    height: 1
   }
   enabledAtStart: true
   is_camera_region: false

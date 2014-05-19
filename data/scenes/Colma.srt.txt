@@ -119,13 +119,41 @@ triggers {
             string_value: "bool"
           }
           args {
-            int_value: 1
+            int_value: 0
           }
         }
       }
     }
+    ops {
+      functionName: "Set Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Variable (int)"
+          args {
+            string_value: "TotalSpiritsCount"
+          }
+        }
+      }
+      args {
+        int_value: 1
+      }
+    }
+    ops {
+      functionName: "Set Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Variable (int)"
+          args {
+            string_value: "TotalEnemyCount"
+          }
+        }
+      }
+      args {
+        int_value: 5
+      }
+    }
   }
-  isActive: true
+  isActive: false
   idRef {
     id: "537941ed366236981500642c"
   }
@@ -244,6 +272,28 @@ triggers {
           }
           args {
             int_value: 0
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Waypoint on Prop"
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "PrimaryOrSecondary"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (Prop)"
+          args {
+            string_value: "5224a6da366236a409007eb3"
           }
         }
       }
@@ -478,6 +528,50 @@ triggers {
             }
           }
           args {
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Clear Waypoint from Actor"
+      args {
+        call_value {
+          functionName: "Get Map Item (Actor)"
+          args {
+            string_value: "536d481e643431740d169ded"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Goal Status"
+      args {
+        call_value {
+          functionName: "Get Map Item (Goal)"
+          args {
+            string_value: "Speak with Tabitha"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "GoalStatus"
+          }
+          args {
+            int_value: 2
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
           }
         }
       }
@@ -753,12 +847,12 @@ triggers {
       }
       args {
         call_value {
-          functionName: "Current Location of Prop"
+          functionName: "Center of Region"
           args {
             call_value {
-              functionName: "Get Map Item (Prop)"
+              functionName: "Get Map Item (Region)"
               args {
-                string_value: "5224a6da366236a409007eb3"
+                string_value: "53796e60366236981500663b"
               }
             }
           }
@@ -2306,6 +2400,385 @@ triggers {
   }
   is_oneshot: true
 }
+triggers {
+  name: "Killed Spirit"
+  events {
+    ops {
+      functionName: "On Actor Death"
+    }
+  }
+  conditions {
+    ops {
+      functionName: "Evaluate Tag for Actor"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Triggering Target Actor"
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "HasOrHasNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SenseTagList)"
+          args {
+            string_value: "isSpirit"
+          }
+        }
+      }
+    }
+  }
+  actions {
+    ops {
+      functionName: "Add To Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Variable (int)"
+          args {
+            string_value: "SpiritsKilled"
+          }
+        }
+      }
+      args {
+        int_value: 1
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "53796b6636623698150065fe"
+  }
+  elseActions {
+  }
+  is_oneshot: false
+}
+triggers {
+  name: "Killed All Spirits"
+  events {
+    ops {
+      functionName: "On Actor Death"
+    }
+  }
+  conditions {
+    ops {
+      functionName: "Comparison (int)"
+      args {
+        call_value {
+          functionName: "Get Variable (int)"
+          args {
+            string_value: "SpiritsKilled"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "Comparison Ops"
+          }
+          args {
+            int_value: 3
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Variable (int)"
+          args {
+            string_value: "TotalSpiritsCount"
+          }
+        }
+      }
+    }
+  }
+  actions {
+    ops {
+      functionName: "Set Waypoint on Actor"
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "PrimaryOrSecondary"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (Actor)"
+          args {
+            string_value: "536d4829643431740d169dee"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Goal Status"
+      args {
+        call_value {
+          functionName: "Get Map Item (Goal)"
+          args {
+            string_value: "Cleanse the Graveyard"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "GoalStatus"
+          }
+          args {
+            int_value: 2
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Variable (int)"
+          args {
+            string_value: "CleanseGraveyard"
+          }
+        }
+      }
+      args {
+        int_value: 2
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "53796c263662369815006601"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
+triggers {
+  name: "Spawn Spirit 1"
+  events {
+    ops {
+      functionName: "On Item Interaction"
+      args {
+        call_value {
+          functionName: "Get Map Item (InteractableObject)"
+          args {
+            string_value: "521a85833662367c1d007460"
+          }
+        }
+      }
+    }
+  }
+  conditions {
+  }
+  actions {
+    ops {
+      functionName: "Enable/Disable Interactable Object"
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "EnableOrDisable"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (InteractableObject)"
+          args {
+            string_value: "521a85833662367c1d007460"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Activate Actor Spawner"
+      args {
+        call_value {
+          functionName: "Get Map Item (Actor Reference)"
+          args {
+            string_value: "53796b8536623698150065ff"
+          }
+        }
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "53796c7f3662369815006602"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
+triggers {
+  name: "Spawn Graveyard Spirit"
+  events {
+    ops {
+      functionName: "On Item Interaction"
+      args {
+        call_value {
+          functionName: "Get Map Item (InteractableObject)"
+          args {
+            string_value: "521a8e8b3662367c1d00793b"
+          }
+        }
+      }
+    }
+  }
+  conditions {
+  }
+  actions {
+    ops {
+      functionName: "Activate Actor Spawner"
+      args {
+        call_value {
+          functionName: "Get Map Item (Actor Reference)"
+          args {
+            string_value: "536d4829643431740d169dee"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Enable/Disable Interactable Object"
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "EnableOrDisable"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (InteractableObject)"
+          args {
+            string_value: "521a8e8b3662367c1d00793b"
+          }
+        }
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "53796d513662369815006639"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
+triggers {
+  name: "Rescued All Metahumans"
+  events {
+  }
+  conditions {
+    ops {
+      functionName: "Comparison (int)"
+      args {
+        call_value {
+          functionName: "Get Variable (int)"
+          args {
+            string_value: "SavedVictims"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "Comparison Ops"
+          }
+          args {
+            int_value: 3
+          }
+        }
+      }
+      args {
+        int_value: 4
+      }
+    }
+  }
+  actions {
+    ops {
+      functionName: "Set Goal Status"
+      args {
+        call_value {
+          functionName: "Get Map Item (Goal)"
+          args {
+            string_value: "Rescue the Metahumans"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "GoalStatus"
+          }
+          args {
+            int_value: 2
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "537971033662369815006670"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
 regions {
   name: "Exit"
   position {
@@ -2482,6 +2955,50 @@ regions {
   loop_combat_music: true
   loop_default_music: false
 }
+regions {
+  name: "Tabitha Graveyard Mark"
+  position {
+    x: -23
+    y: -177
+    width: 1
+    height: 1
+  }
+  enabledAtStart: true
+  is_camera_region: false
+  idRef {
+    id: "53796e60366236981500663b"
+  }
+  highlight_color {
+    r: 0
+    g: 0
+    b: 0
+    a: 1
+  }
+  visible_at_start: false
+  is_teleporter_region: false
+  directional_light_dir {
+    x: -0.5
+    y: -1
+    z: -0.75
+  }
+  directional_light_color {
+    r: 0.50196081
+    g: 0.50196081
+    b: 0.50196081
+    a: 1
+  }
+  ambient_light_color {
+    r: 0.50196081
+    g: 0.50196081
+    b: 0.50196081
+    a: 1
+  }
+  ambience_template: ""
+  combat_music: ""
+  default_music: ""
+  loop_combat_music: true
+  loop_default_music: false
+}
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
@@ -2614,11 +3131,11 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -34
+    x: -22
     y: 0
-    z: -64
+    z: -146
   }
-  orientation: ORIENTATION_E
+  orientation: ORIENTATION_W
   displayName: "Graveyard Spirit"
   idRef {
     id: "536d4829643431740d169dee"
@@ -2697,6 +3214,7 @@ characters {
     }
     team_id: "Civilians"
     char_name: "Graveyard Spirit"
+    enabled_at_start: false
     pc_spawn_number: -1
     uninjurable: true
     portrait {
@@ -4068,6 +4586,81 @@ characters {
     karma: 6
   }
 }
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -28
+    y: 0
+    z: -116
+  }
+  orientation: ORIENTATION_W
+  GeneralTags: "isEmber"
+  GeneralTags: "isSpirit"
+  GeneralTags: ""
+  displayName: "Spirit 1"
+  idRef {
+    id: "53796b8536623698150065ff"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Seattle:Spirit/SpiritFire"
+    character_sheet_id: "a3_badguy_ember_Lv2"
+    equipment_sheet_id: "Spirit Fire F1 Gear"
+    character_mod {
+      stats {
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        hp: 0
+        ap: 0
+        armor: 0
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+        is_fearless: 1
+      }
+      skills {
+        ranged_combat: 0
+        close_combat: 0
+        dodge: 0
+      }
+      specializations {
+        rifle: 0
+        edged: 0
+        unarmed: 0
+      }
+      archetypeName: "Guard - Seek And Destroy"
+      vulnerabilities {
+        heal: VulnerabilityLevel_Immune
+        fire: VulnerabilityLevel_Immune
+      }
+    }
+    team_id: "Gangers"
+    char_name: "Freed Fire Elemental"
+    GeneralTags: "isEmber"
+    GeneralTags: "isSpirit"
+    GeneralTags: ""
+    enabled_at_start: false
+    pc_spawn_number: -1
+    hiring_type: HiringType_None
+    disable_pickups: false
+    portrait {
+      filename: ""
+    }
+    karma: 20
+    hiring_cost_override: 1000
+    scale_character_sheet: true
+    has_fist: false
+  }
+}
 variables {
   bool_value: false
   variableref_value {
@@ -4156,6 +4749,22 @@ variables {
     typeName: "bool"
   }
 }
+variables {
+  int_value: 3
+  variableref_value {
+    scope: TsVariableScope_Scene
+    name: "TotalSpiritsCount"
+    typeName: "int"
+  }
+}
+variables {
+  int_value: 0
+  variableref_value {
+    scope: TsVariableScope_Scene
+    name: "SpiritsKilled"
+    typeName: "int"
+  }
+}
 mapEvents: "Tabitha Casts"
 mapEvents: "Tabitha Starts Casting"
 senseTags: "exitNow"
@@ -4167,7 +4776,7 @@ goals {
 }
 goals {
   name: "Rescue the Metahumans"
-  type: GoalType_Primary
+  type: GoalType_Secondary
   status: GoalStatus_Hidden
 }
 goals {

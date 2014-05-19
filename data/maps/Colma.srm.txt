@@ -10096,8 +10096,41 @@ props {
     z: -115
   }
   orientation: ORIENTATION_E
+  displayName: "Spirit Grave 1"
   idRef {
     id: "521a85833662367c1d007460"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    prerequisites {
+      ops {
+        functionName: "Comparison (int)"
+        args {
+          call_value {
+            functionName: "Get Variable (int)"
+            args {
+              string_value: "CleanseGraveyard"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+        args {
+          int_value: 1
+        }
+      }
+    }
+    interactionIcon: InteractionIcon_Generic
   }
   lod: 0
 }
@@ -19609,8 +19642,41 @@ props {
     z: -146
   }
   orientation: ORIENTATION_E
+  displayName: "Grave Spirit Home"
   idRef {
     id: "521a8e8b3662367c1d00793b"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    prerequisites {
+      ops {
+        functionName: "Comparison (int)"
+        args {
+          call_value {
+            functionName: "Get Variable (int)"
+            args {
+              string_value: "talkTabithaState"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+        args {
+          int_value: 3
+        }
+      }
+    }
+    interactionIcon: InteractionIcon_Generic
   }
   lod: 0
 }
