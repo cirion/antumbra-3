@@ -2207,6 +2207,325 @@ triggers {
   is_oneshot: true
 }
 triggers {
+  name: "Killed Spirit"
+  events {
+    ops {
+      functionName: "On Actor Death"
+    }
+  }
+  conditions {
+    ops {
+      functionName: "Evaluate Tag for Actor"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Triggering Target Actor"
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "HasOrHasNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SenseTagList)"
+          args {
+            string_value: "isSpirit"
+          }
+        }
+      }
+    }
+  }
+  actions {
+    ops {
+      functionName: "Add To Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Variable (int)"
+          args {
+            string_value: "SpiritsKilled"
+          }
+        }
+      }
+      args {
+        int_value: 1
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "53796b6636623698150065fe"
+  }
+  elseActions {
+  }
+  is_oneshot: false
+}
+triggers {
+  name: "Killed All Spirits"
+  events {
+    ops {
+      functionName: "On Actor Death"
+    }
+  }
+  conditions {
+    ops {
+      functionName: "Comparison (int)"
+      args {
+        call_value {
+          functionName: "Get Variable (int)"
+          args {
+            string_value: "SpiritsKilled"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "Comparison Ops"
+          }
+          args {
+            int_value: 3
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Variable (int)"
+          args {
+            string_value: "TotalSpiritsCount"
+          }
+        }
+      }
+    }
+  }
+  actions {
+    ops {
+      functionName: "Set Waypoint on Actor"
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "PrimaryOrSecondary"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (Actor)"
+          args {
+            string_value: "536d4829643431740d169dee"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Goal Status"
+      args {
+        call_value {
+          functionName: "Get Map Item (Goal)"
+          args {
+            string_value: "Cleanse the Graveyard"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "GoalStatus"
+          }
+          args {
+            int_value: 2
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Variable (int)"
+          args {
+            string_value: "CleanseGraveyard"
+          }
+        }
+      }
+      args {
+        int_value: 2
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "53796c263662369815006601"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
+triggers {
+  name: "Spawn Graveyard Spirit"
+  events {
+    ops {
+      functionName: "On Item Interaction"
+      args {
+        call_value {
+          functionName: "Get Map Item (InteractableObject)"
+          args {
+            string_value: "521a8e8b3662367c1d00793b"
+          }
+        }
+      }
+    }
+  }
+  conditions {
+  }
+  actions {
+    ops {
+      functionName: "Activate Actor Spawner"
+      args {
+        call_value {
+          functionName: "Get Map Item (Actor Reference)"
+          args {
+            string_value: "536d4829643431740d169dee"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Enable/Disable Interactable Object"
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "EnableOrDisable"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (InteractableObject)"
+          args {
+            string_value: "521a8e8b3662367c1d00793b"
+          }
+        }
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "53796d513662369815006639"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
+triggers {
+  name: "Rescued All Metahumans"
+  events {
+  }
+  conditions {
+    ops {
+      functionName: "Comparison (int)"
+      args {
+        call_value {
+          functionName: "Get Variable (int)"
+          args {
+            string_value: "SavedVictims"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "Comparison Ops"
+          }
+          args {
+            int_value: 3
+          }
+        }
+      }
+      args {
+        int_value: 4
+      }
+    }
+  }
+  actions {
+    ops {
+      functionName: "Set Goal Status"
+      args {
+        call_value {
+          functionName: "Get Map Item (Goal)"
+          args {
+            string_value: "Rescue the Metahumans"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "GoalStatus"
+          }
+          args {
+            int_value: 2
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "537971033662369815006670"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
+triggers {
   name: "Aggro Squad 1"
   events {
     ops {
@@ -2401,10 +2720,10 @@ triggers {
   is_oneshot: true
 }
 triggers {
-  name: "Killed Spirit"
+  name: "Aggro Squad 2"
   events {
     ops {
-      functionName: "On Actor Death"
+      functionName: "On Actor Awareness of Another Actor"
     }
   }
   conditions {
@@ -2415,7 +2734,7 @@ triggers {
           functionName: "Specific Actor"
           args {
             call_value {
-              functionName: "Triggering Target Actor"
+              functionName: "Triggering Actor"
             }
           }
           args {
@@ -2437,83 +2756,34 @@ triggers {
         call_value {
           functionName: "Get Map Item (SenseTagList)"
           args {
-            string_value: "isSpirit"
+            string_value: "squad2"
           }
         }
       }
     }
-  }
-  actions {
     ops {
-      functionName: "Add To Variable (int)"
+      functionName: "Compare Actor Team"
       args {
         call_value {
-          functionName: "Get Variable (int)"
-          args {
-            string_value: "SpiritsKilled"
-          }
-        }
-      }
-      args {
-        int_value: 1
-      }
-    }
-  }
-  isActive: true
-  idRef {
-    id: "53796b6636623698150065fe"
-  }
-  elseActions {
-  }
-  is_oneshot: false
-}
-triggers {
-  name: "Killed All Spirits"
-  events {
-    ops {
-      functionName: "On Actor Death"
-    }
-  }
-  conditions {
-    ops {
-      functionName: "Comparison (int)"
-      args {
-        call_value {
-          functionName: "Get Variable (int)"
-          args {
-            string_value: "SpiritsKilled"
-          }
+          functionName: "Triggering Target Actor"
         }
       }
       args {
         call_value {
           functionName: "Get Preset Value (int)"
           args {
-            string_value: "Comparison Ops"
+            string_value: "IsOrIsNot"
           }
           args {
-            int_value: 3
+            int_value: 1
           }
         }
       }
       args {
         call_value {
-          functionName: "Get Variable (int)"
+          functionName: "Get Preset Value (string)"
           args {
-            string_value: "TotalSpiritsCount"
-          }
-        }
-      }
-    }
-  }
-  actions {
-    ops {
-      functionName: "Set Waypoint on Actor"
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "PrimaryOrSecondary"
+            string_value: "FactionList"
           }
           args {
             int_value: 0
@@ -2522,64 +2792,510 @@ triggers {
       }
       args {
         call_value {
-          functionName: "Get Map Item (Actor)"
+          functionName: "Get Map Item (SceneDimension)"
           args {
-            string_value: "536d4829643431740d169dee"
+            string_value: "Default"
           }
         }
       }
     }
     ops {
-      functionName: "Set Goal Status"
+      functionName: "Invert Bool"
       args {
         call_value {
-          functionName: "Get Map Item (Goal)"
+          functionName: "Get Variable (bool)"
           args {
-            string_value: "Cleanse the Graveyard"
+            string_value: "debugMode"
+          }
+        }
+      }
+    }
+  }
+  actions {
+    ops {
+      functionName: "Change Actor Team"
+      args {
+        call_value {
+          functionName: "All Actors With Tag"
+          args {
+            call_value {
+              functionName: "Get Map Item (SenseTagList)"
+              args {
+                string_value: "squad2"
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Preset Value (int)"
+              args {
+                string_value: "AllOrAny"
+              }
+              args {
+                int_value: 0
+              }
+            }
           }
         }
       }
       args {
         call_value {
-          functionName: "Get Preset Value (int)"
+          functionName: "Get Preset Value (string)"
           args {
-            string_value: "GoalStatus"
-          }
-          args {
-            int_value: 2
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "WithOrWithout"
+            string_value: "FactionList"
           }
           args {
             int_value: 1
           }
         }
       }
-    }
-    ops {
-      functionName: "Set Variable (int)"
       args {
         call_value {
-          functionName: "Get Variable (int)"
+          functionName: "Get Map Item (SceneDimension)"
           args {
-            string_value: "CleanseGraveyard"
+            string_value: "Default"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Order Actor to Seek And Destroy (Team)"
+      args {
+        call_value {
+          functionName: "All Actors With Tag"
+          args {
+            call_value {
+              functionName: "Get Map Item (SenseTagList)"
+              args {
+                string_value: "squad2"
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Preset Value (int)"
+              args {
+                string_value: "AllOrAny"
+              }
+              args {
+                int_value: 0
+              }
+            }
           }
         }
       }
       args {
-        int_value: 2
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SceneDimension)"
+          args {
+            string_value: "Default"
+          }
+        }
       }
     }
   }
   isActive: true
   idRef {
-    id: "53796c263662369815006601"
+    id: "537a67836434313b4381eb36"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
+triggers {
+  name: "Aggro Squad 3"
+  events {
+    ops {
+      functionName: "On Actor Awareness of Another Actor"
+    }
+  }
+  conditions {
+    ops {
+      functionName: "Evaluate Tag for Actor"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Triggering Actor"
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "HasOrHasNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SenseTagList)"
+          args {
+            string_value: "squad3"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Compare Actor Team"
+      args {
+        call_value {
+          functionName: "Triggering Target Actor"
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SceneDimension)"
+          args {
+            string_value: "Default"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Invert Bool"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "debugMode"
+          }
+        }
+      }
+    }
+  }
+  actions {
+    ops {
+      functionName: "Change Actor Team"
+      args {
+        call_value {
+          functionName: "All Actors With Tag"
+          args {
+            call_value {
+              functionName: "Get Map Item (SenseTagList)"
+              args {
+                string_value: "squad3"
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Preset Value (int)"
+              args {
+                string_value: "AllOrAny"
+              }
+              args {
+                int_value: 0
+              }
+            }
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SceneDimension)"
+          args {
+            string_value: "Default"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Order Actor to Seek And Destroy (Team)"
+      args {
+        call_value {
+          functionName: "All Actors With Tag"
+          args {
+            call_value {
+              functionName: "Get Map Item (SenseTagList)"
+              args {
+                string_value: "squad3"
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Preset Value (int)"
+              args {
+                string_value: "AllOrAny"
+              }
+              args {
+                int_value: 0
+              }
+            }
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SceneDimension)"
+          args {
+            string_value: "Default"
+          }
+        }
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "537a678c6434313b4381eb37"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
+triggers {
+  name: "Aggro Squad 4"
+  events {
+    ops {
+      functionName: "On Actor Awareness of Another Actor"
+    }
+  }
+  conditions {
+    ops {
+      functionName: "Evaluate Tag for Actor"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Triggering Actor"
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "HasOrHasNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SenseTagList)"
+          args {
+            string_value: "squad4"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Compare Actor Team"
+      args {
+        call_value {
+          functionName: "Triggering Target Actor"
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SceneDimension)"
+          args {
+            string_value: "Default"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Invert Bool"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "debugMode"
+          }
+        }
+      }
+    }
+  }
+  actions {
+    ops {
+      functionName: "Change Actor Team"
+      args {
+        call_value {
+          functionName: "All Actors With Tag"
+          args {
+            call_value {
+              functionName: "Get Map Item (SenseTagList)"
+              args {
+                string_value: "squad4"
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Preset Value (int)"
+              args {
+                string_value: "AllOrAny"
+              }
+              args {
+                int_value: 0
+              }
+            }
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SceneDimension)"
+          args {
+            string_value: "Default"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Order Actor to Seek And Destroy (Team)"
+      args {
+        call_value {
+          functionName: "All Actors With Tag"
+          args {
+            call_value {
+              functionName: "Get Map Item (SenseTagList)"
+              args {
+                string_value: "squad4"
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Preset Value (int)"
+              args {
+                string_value: "AllOrAny"
+              }
+              args {
+                int_value: 0
+              }
+            }
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SceneDimension)"
+          args {
+            string_value: "Default"
+          }
+        }
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "537a678f6434313b4381eb38"
   }
   elseActions {
   }
@@ -2646,7 +3362,7 @@ triggers {
   is_oneshot: true
 }
 triggers {
-  name: "Spawn Graveyard Spirit"
+  name: "Spawn Spirit 2"
   events {
     ops {
       functionName: "On Item Interaction"
@@ -2654,7 +3370,7 @@ triggers {
         call_value {
           functionName: "Get Map Item (InteractableObject)"
           args {
-            string_value: "521a8e8b3662367c1d00793b"
+            string_value: "521a859d3662367c1d00746a"
           }
         }
       }
@@ -2663,17 +3379,6 @@ triggers {
   conditions {
   }
   actions {
-    ops {
-      functionName: "Activate Actor Spawner"
-      args {
-        call_value {
-          functionName: "Get Map Item (Actor Reference)"
-          args {
-            string_value: "536d4829643431740d169dee"
-          }
-        }
-      }
-    }
     ops {
       functionName: "Enable/Disable Interactable Object"
       args {
@@ -2691,7 +3396,18 @@ triggers {
         call_value {
           functionName: "Get Map Item (InteractableObject)"
           args {
-            string_value: "521a8e8b3662367c1d00793b"
+            string_value: "521a859d3662367c1d00746a"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Activate Actor Spawner"
+      args {
+        call_value {
+          functionName: "Get Map Item (Actor Reference)"
+          args {
+            string_value: "537a685d6434313b4381eb3e"
           }
         }
       }
@@ -2699,73 +3415,59 @@ triggers {
   }
   isActive: true
   idRef {
-    id: "53796d513662369815006639"
+    id: "537a67ed6434313b4381eb39"
   }
   elseActions {
   }
   is_oneshot: true
 }
 triggers {
-  name: "Rescued All Metahumans"
+  name: "Spawn Spirit 3"
   events {
-  }
-  conditions {
     ops {
-      functionName: "Comparison (int)"
+      functionName: "On Item Interaction"
       args {
         call_value {
-          functionName: "Get Variable (int)"
+          functionName: "Get Map Item (InteractableObject)"
           args {
-            string_value: "SavedVictims"
+            string_value: "521a83e03662367c1d007395"
           }
         }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "Comparison Ops"
-          }
-          args {
-            int_value: 3
-          }
-        }
-      }
-      args {
-        int_value: 4
       }
     }
   }
+  conditions {
+  }
   actions {
     ops {
-      functionName: "Set Goal Status"
-      args {
-        call_value {
-          functionName: "Get Map Item (Goal)"
-          args {
-            string_value: "Rescue the Metahumans"
-          }
-        }
-      }
+      functionName: "Enable/Disable Interactable Object"
       args {
         call_value {
           functionName: "Get Preset Value (int)"
           args {
-            string_value: "GoalStatus"
-          }
-          args {
-            int_value: 2
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "WithOrWithout"
+            string_value: "EnableOrDisable"
           }
           args {
             int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (InteractableObject)"
+          args {
+            string_value: "521a83e03662367c1d007395"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Activate Actor Spawner"
+      args {
+        call_value {
+          functionName: "Get Map Item (Actor Reference)"
+          args {
+            string_value: "537a68ab6434313b4381eb40"
           }
         }
       }
@@ -2773,7 +3475,7 @@ triggers {
   }
   isActive: true
   idRef {
-    id: "537971033662369815006670"
+    id: "537a67f06434313b4381eb3a"
   }
   elseActions {
   }
@@ -3546,7 +4248,7 @@ characters {
     y: 0
     z: -139
   }
-  orientation: ORIENTATION_E
+  orientation: ORIENTATION_W
   GeneralTags: "isEnemy"
   GeneralTags: "squad2"
   GeneralTags: ""
@@ -3592,11 +4294,11 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -46
+    x: -45
     y: 0
-    z: -140
+    z: -141
   }
-  orientation: ORIENTATION_E
+  orientation: ORIENTATION_N
   GeneralTags: "isEnemy"
   GeneralTags: "squad2"
   GeneralTags: ""
@@ -3642,9 +4344,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -47
+    x: -45
     y: 0
-    z: -141
+    z: -145
   }
   orientation: ORIENTATION_E
   GeneralTags: "isEnemy"
@@ -3692,11 +4394,11 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -47
+    x: -50
     y: 0
-    z: -139
+    z: -140
   }
-  orientation: ORIENTATION_E
+  orientation: ORIENTATION_S
   GeneralTags: "isEnemy"
   GeneralTags: "isEmber"
   GeneralTags: "squad2"
@@ -3767,11 +4469,11 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -31
+    x: -39
     y: 0
-    z: -170
+    z: -172
   }
-  orientation: ORIENTATION_E
+  orientation: ORIENTATION_S
   GeneralTags: "isEnemy"
   GeneralTags: "squad3"
   GeneralTags: ""
@@ -3817,11 +4519,11 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -32
+    x: -34
     y: 0
-    z: -169
+    z: -172
   }
-  orientation: ORIENTATION_E
+  orientation: ORIENTATION_N
   GeneralTags: "isEnemy"
   GeneralTags: "squad3"
   GeneralTags: ""
@@ -3867,9 +4569,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -33
+    x: -37
     y: 0
-    z: -171
+    z: -174
   }
   orientation: ORIENTATION_E
   GeneralTags: "isEnemy"
@@ -3942,11 +4644,11 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -31
+    x: -36
     y: 0
-    z: -169
+    z: -171
   }
-  orientation: ORIENTATION_E
+  orientation: ORIENTATION_W
   GeneralTags: "isEnemy"
   GeneralTags: "squad3"
   GeneralTags: ""
@@ -3993,7 +4695,7 @@ characters {
   gridPoint {
     x: -50
     y: 0
-    z: -182
+    z: -181
   }
   orientation: ORIENTATION_E
   GeneralTags: "isEnemy"
@@ -4040,11 +4742,11 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -48
+    x: -50
     y: 0
-    z: -182
+    z: -177
   }
-  orientation: ORIENTATION_E
+  orientation: ORIENTATION_W
   GeneralTags: "isEnemy"
   GeneralTags: "squad4"
   GeneralTags: ""
@@ -4089,11 +4791,11 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -48
+    x: -49
     y: 0
-    z: -181
+    z: -178
   }
-  orientation: ORIENTATION_E
+  orientation: ORIENTATION_N
   GeneralTags: "isEnemy"
   GeneralTags: "squad4"
   GeneralTags: ""
@@ -4138,11 +4840,11 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -49
+    x: -53
     y: 0
-    z: -180
+    z: -178
   }
-  orientation: ORIENTATION_E
+  orientation: ORIENTATION_S
   GeneralTags: "isEnemy"
   GeneralTags: "isEmber"
   GeneralTags: "squad4"
@@ -4307,9 +5009,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -49
+    x: -46
     y: 0
-    z: -141
+    z: -140
   }
   orientation: ORIENTATION_S
   GeneralTags: "isVictim"
@@ -4401,9 +5103,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -34
+    x: -36
     y: 0
-    z: -171
+    z: -172
   }
   orientation: ORIENTATION_S
   GeneralTags: "isVictim"
@@ -4497,7 +5199,7 @@ characters {
   gridPoint {
     x: -50
     y: 0
-    z: -183
+    z: -178
   }
   orientation: ORIENTATION_E
   GeneralTags: "isVictim"
@@ -4600,6 +5302,156 @@ characters {
   displayName: "Spirit 1"
   idRef {
     id: "53796b8536623698150065ff"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Seattle:Spirit/SpiritFire"
+    character_sheet_id: "a3_badguy_ember_Lv2"
+    equipment_sheet_id: "Spirit Fire F1 Gear"
+    character_mod {
+      stats {
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        hp: 0
+        ap: 0
+        armor: 0
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+        is_fearless: 1
+      }
+      skills {
+        ranged_combat: 0
+        close_combat: 0
+        dodge: 0
+      }
+      specializations {
+        rifle: 0
+        edged: 0
+        unarmed: 0
+      }
+      archetypeName: "Guard - Seek And Destroy"
+      vulnerabilities {
+        heal: VulnerabilityLevel_Immune
+        fire: VulnerabilityLevel_Immune
+      }
+    }
+    team_id: "Gangers"
+    char_name: "Freed Fire Elemental"
+    GeneralTags: "isEmber"
+    GeneralTags: "isSpirit"
+    GeneralTags: ""
+    enabled_at_start: false
+    pc_spawn_number: -1
+    hiring_type: HiringType_None
+    disable_pickups: false
+    portrait {
+      filename: ""
+    }
+    karma: 20
+    hiring_cost_override: 1000
+    scale_character_sheet: true
+    has_fist: false
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -47
+    y: 0
+    z: -114
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "isEmber"
+  GeneralTags: "isSpirit"
+  GeneralTags: ""
+  displayName: "Spirit 2"
+  idRef {
+    id: "537a685d6434313b4381eb3e"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Seattle:Spirit/SpiritFire"
+    character_sheet_id: "a3_badguy_ember_Lv2"
+    equipment_sheet_id: "Spirit Fire F1 Gear"
+    character_mod {
+      stats {
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        hp: 0
+        ap: 0
+        armor: 0
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+        is_fearless: 1
+      }
+      skills {
+        ranged_combat: 0
+        close_combat: 0
+        dodge: 0
+      }
+      specializations {
+        rifle: 0
+        edged: 0
+        unarmed: 0
+      }
+      archetypeName: "Guard - Seek And Destroy"
+      vulnerabilities {
+        heal: VulnerabilityLevel_Immune
+        fire: VulnerabilityLevel_Immune
+      }
+    }
+    team_id: "Gangers"
+    char_name: "Freed Fire Elemental"
+    GeneralTags: "isEmber"
+    GeneralTags: "isSpirit"
+    GeneralTags: ""
+    enabled_at_start: false
+    pc_spawn_number: -1
+    hiring_type: HiringType_None
+    disable_pickups: false
+    portrait {
+      filename: ""
+    }
+    karma: 20
+    hiring_cost_override: 1000
+    scale_character_sheet: true
+    has_fist: false
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -24
+    y: 0
+    z: -98
+  }
+  orientation: ORIENTATION_W
+  GeneralTags: "isEmber"
+  GeneralTags: "isSpirit"
+  GeneralTags: ""
+  displayName: "Spirit 3"
+  idRef {
+    id: "537a68ab6434313b4381eb40"
   }
   lod: 0
   character_instance {

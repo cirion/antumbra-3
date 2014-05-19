@@ -32,7 +32,7 @@ anim_group_override: ItemType_None
 anim_type: AnimType_Spell
 apCost: 1
 baseAPDamage: 1
-baseHPDamage: 14
+baseHPDamage: 10
 canTargetActor: true
 canTargetOccupiedGridPoint: false
 canTargetSelf: false
@@ -76,7 +76,7 @@ gear_covers_arms: false
 gear_covers_face: false
 gear_covers_hair: false
 gear_prefab: ""
-id: "Berlin_Gargoyle High Noxious Breath"
+id: "Berlin_Gargoyle Mid Noxious Breath"
 instantAction: false
 intended_user: IntendedUser_Player
 is_consumable: false
@@ -104,7 +104,7 @@ store_cost: -1
 team_as_melee: false
 type: ItemType_Spell
 uirep: {
-  description: "A venom spray that does -14 HP DMG and does ongoing -1 AP DMG that lasts for 2 RNDS."
+  description: "A venom spray that does -10 HP DMG and does ongoing -1 AP DMG that lasts for 2 RNDS."
   icon: "icon_fireball"
   name: "Noxious Breath"
   thumbnail: ""

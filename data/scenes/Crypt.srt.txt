@@ -7233,7 +7233,7 @@ characters {
   character_instance {
     prefab_name: "Berlin:Creatures/CreatureGargoyleBat"
     character_sheet_id: "Creature_Lv1_Gargoyle"
-    equipment_sheet_id: "Gargoyle_Lv6_Powers"
+    equipment_sheet_id: "Gargoyle_Lv1_Powers"
     character_mod {
       stats {
         body: 0
@@ -7255,6 +7255,7 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        is_fearless: 0
       }
       skills {
         ranged_combat: 0
@@ -7300,7 +7301,7 @@ characters {
     pc_spawn_number: -1
     hiring_type: HiringType_None
     portrait {
-      filename: "NPC_TrollMale_CyberZombie"
+      filename: ""
     }
     karma: 24
     hiring_cost_override: 1000
@@ -7760,7 +7761,7 @@ characters {
   character_instance {
     prefab_name: "Berlin:Creatures/CreatureGargoyleBat"
     character_sheet_id: "Creature_Lv1_Gargoyle"
-    equipment_sheet_id: "Gargoyle_Lv6_Powers"
+    equipment_sheet_id: "Gargoyle_Lv1_Powers"
     character_mod {
       stats {
         body: 0
@@ -7850,7 +7851,7 @@ characters {
   character_instance {
     prefab_name: "Berlin:Creatures/CreatureGargoyleBat"
     character_sheet_id: "Creature_Lv1_Gargoyle"
-    equipment_sheet_id: "Gargoyle_Lv6_Powers"
+    equipment_sheet_id: "Gargoyle_Lv1_Powers"
     character_mod {
       stats {
         body: 0
@@ -7940,7 +7941,7 @@ characters {
   character_instance {
     prefab_name: "Berlin:Creatures/CreatureGargoyleBat"
     character_sheet_id: "Creature_Lv1_Gargoyle"
-    equipment_sheet_id: "Gargoyle_Lv6_Powers"
+    equipment_sheet_id: "Gargoyle_Lv1_Powers"
     character_mod {
       stats {
         body: 0
@@ -8030,7 +8031,7 @@ characters {
   character_instance {
     prefab_name: "Berlin:Creatures/CreatureGargoyleBat"
     character_sheet_id: "Creature_Lv1_Gargoyle"
-    equipment_sheet_id: "Gargoyle_Lv6_Powers"
+    equipment_sheet_id: "Gargoyle_Lv1_Powers"
     character_mod {
       stats {
         body: 0
@@ -8120,7 +8121,7 @@ characters {
   character_instance {
     prefab_name: "Berlin:Creatures/CreatureGargoyleBat"
     character_sheet_id: "Creature_Lv1_Gargoyle"
-    equipment_sheet_id: "Gargoyle_Lv6_Powers"
+    equipment_sheet_id: "Gargoyle_Lv1_Powers"
     character_mod {
       stats {
         body: 0

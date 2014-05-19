@@ -1,4 +1,201 @@
 triggers {
+  name: "Load Map"
+  events {
+    ops {
+      functionName: "On Map Start"
+    }
+  }
+  conditions {
+  }
+  actions {
+    ops {
+      functionName: "Set Animation State Of Actor To Animation Modifier"
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "AnimationState"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (Actor)"
+          args {
+            string_value: "5373e940643431b8017c3d58"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (AnimationModifiers)"
+          args {
+            string_value: "cower"
+          }
+          args {
+            string_value: "cower"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Actor In Passive Mode"
+      args {
+        call_value {
+          functionName: "All Actors on Team"
+          args {
+            call_value {
+              functionName: "Get Preset Value (string)"
+              args {
+                string_value: "FactionList"
+              }
+              args {
+                int_value: 3
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Preset Value (int)"
+              args {
+                string_value: "AllOrAny"
+              }
+              args {
+                int_value: 0
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Map Item (SceneDimension)"
+              args {
+                string_value: "Default"
+              }
+            }
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Waypoint on Actor"
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "PrimaryOrSecondary"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (Actor)"
+          args {
+            string_value: "536c5969366236d41e0027a9"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Goal Status"
+      args {
+        call_value {
+          functionName: "Get Map Item (Goal)"
+          args {
+            string_value: "Confront the Native Californians"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "GoalStatus"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "5373ea46643431b8017c3d59"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
+triggers {
+  name: "Debug Mode"
+  events {
+    ops {
+      functionName: "On Map Start"
+    }
+  }
+  conditions {
+  }
+  actions {
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "debugMode"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+  isActive: false
+  idRef {
+    id: "537a76d46434313b4381eb41"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
+triggers {
   name: "Tabitha Restores Bridge"
   events {
   }
@@ -125,129 +322,6 @@ triggers {
   isActive: true
   idRef {
     id: "53712a58643431882a039528"
-  }
-  elseActions {
-  }
-  is_oneshot: true
-}
-triggers {
-  name: "Load Map"
-  events {
-    ops {
-      functionName: "On Map Start"
-    }
-  }
-  conditions {
-  }
-  actions {
-    ops {
-      functionName: "Set Animation State Of Actor To Animation Modifier"
-      args {
-        call_value {
-          functionName: "Get Preset Value (string)"
-          args {
-            string_value: "AnimationState"
-          }
-          args {
-            int_value: 1
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Map Item (Actor)"
-          args {
-            string_value: "5373e940643431b8017c3d58"
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Map Item (AnimationModifiers)"
-          args {
-            string_value: "cower"
-          }
-          args {
-            string_value: "cower"
-          }
-        }
-      }
-    }
-    ops {
-      functionName: "Set Actor In Passive Mode"
-      args {
-        call_value {
-          functionName: "All Actors on Team"
-          args {
-            call_value {
-              functionName: "Get Preset Value (string)"
-              args {
-                string_value: "FactionList"
-              }
-              args {
-                int_value: 3
-              }
-            }
-          }
-          args {
-            call_value {
-              functionName: "Get Preset Value (int)"
-              args {
-                string_value: "AllOrAny"
-              }
-              args {
-                int_value: 0
-              }
-            }
-          }
-          args {
-            call_value {
-              functionName: "Get Map Item (SceneDimension)"
-              args {
-                string_value: "Default"
-              }
-            }
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "IsOrIsNot"
-          }
-          args {
-            int_value: 1
-          }
-        }
-      }
-    }
-    ops {
-      functionName: "Set Waypoint on Actor"
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "PrimaryOrSecondary"
-          }
-          args {
-            int_value: 0
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Map Item (Actor)"
-          args {
-            string_value: "536c5969366236d41e0027a9"
-          }
-        }
-      }
-    }
-  }
-  isActive: true
-  idRef {
-    id: "5373ea46643431b8017c3d59"
   }
   elseActions {
   }
@@ -4124,6 +4198,14 @@ variables {
     scope: TsVariableScope_Scene
     name: "bombDefuseState"
     typeName: "int"
+  }
+}
+variables {
+  bool_value: false
+  variableref_value {
+    scope: TsVariableScope_Scene
+    name: "debugMode"
+    typeName: "bool"
   }
 }
 mapEvents: "Finishes Restoring Dam"

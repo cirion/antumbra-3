@@ -9,7 +9,7 @@ activationStatusEffects: {
     attribute: Attribute_HP
     damageType: VulnerabilityType_Poison
     floatModValue: 0
-    intModValue: -10
+    intModValue: -6
     skill: Skill_None
     specialization: Specialization_None
   }
@@ -27,7 +27,7 @@ anim_group_override: ItemType_None
 anim_type: AnimType_Null
 apCost: 2
 baseAPDamage: 0
-baseHPDamage: 8
+baseHPDamage: 6
 canTargetActor: false
 canTargetOccupiedGridPoint: true
 canTargetSelf: true
@@ -63,7 +63,7 @@ gear_covers_arms: false
 gear_covers_face: false
 gear_covers_hair: false
 gear_prefab: ""
-id: "Berlin_Gargoyle Death Cloud"
+id: "Berlin_Gargoyle Death Cloud Medium"
 instantAction: false
 intended_user: IntendedUser_Player
 is_consumable: false

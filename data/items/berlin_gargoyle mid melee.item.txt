@@ -10,7 +10,7 @@ anim_group_override: ItemType_None
 anim_type: AnimType_Null
 apCost: 1
 baseAPDamage: 0
-baseHPDamage: 15
+baseHPDamage: 10
 canTargetActor: true
 canTargetOccupiedGridPoint: false
 canTargetSelf: false
@@ -55,7 +55,7 @@ gear_covers_arms: false
 gear_covers_face: false
 gear_covers_hair: false
 gear_prefab: ""
-id: "Berlin_Gargoyle High Melee"
+id: "Berlin_Gargoyle Mid Melee"
 instantAction: false
 intended_user: IntendedUser_Player
 is_consumable: false
@@ -78,7 +78,7 @@ store_cost: -1
 team_as_melee: false
 type: ItemType_Unarmed
 uirep: {
-  description: "A crushing claw attack that does -15 HP DMG."
+  description: "A crushing claw attack that does -10 HP DMG."
   icon: "icon_melee"
   name: "Claw Swipe"
   thumbnail: ""
