@@ -1,7 +1,7 @@
-minX: -116
+minX: -120
 minZ: -62
-numX: 138
-numZ: 176
+numX: 142
+numZ: 180
 props {
   name: "museum_ground_circle"
   gridPoint {
@@ -7492,19 +7492,19 @@ props {
 props {
   name: "matrix_floor_4x4bluenotch"
   gridPoint {
-    x: -31
+    x: -56
     y: 0
-    z: 45
+    z: 101
   }
-  orientation: ORIENTATION_S
+  orientation: ORIENTATION_N
   lod: 0
 }
 props {
   name: "matrix_floor_4x4opengrid"
   gridPoint {
-    x: -33
+    x: -59
     y: 0
-    z: 36
+    z: 48
   }
   orientation: ORIENTATION_S
   lod: 0
@@ -8782,6 +8782,1290 @@ props {
   GeneralTags: "matrixDoorLockedSwitchToDoor"
   idRef {
     id: "537ae2a7366236b005001cb8"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4blueelbow"
+  gridPoint {
+    x: -104
+    y: 0
+    z: 45
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "537b6dcd366236901f003619"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4blueelbow"
+  gridPoint {
+    x: -104
+    y: 0
+    z: 81
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "537b6dd0366236901f00361a"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4blueelbow"
+  gridPoint {
+    x: -68
+    y: 0
+    z: 77
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "537b6dd2366236901f00361b"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4blueelbow"
+  gridPoint {
+    x: -72
+    y: 0
+    z: 73
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "537b6dd6366236901f00361c"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4blueelbow"
+  gridPoint {
+    x: -116
+    y: 0
+    z: 105
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "537b6dd9366236901f00361d"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4blueelbow"
+  gridPoint {
+    x: -112
+    y: 0
+    z: 93
+  }
+  orientation: ORIENTATION_W
+  idRef {
+    id: "537b6ddb366236901f00361e"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4blueelbow"
+  gridPoint {
+    x: -116
+    y: 0
+    z: 97
+  }
+  orientation: ORIENTATION_W
+  idRef {
+    id: "537b6de0366236901f00361f"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4blueelbow"
+  gridPoint {
+    x: -72
+    y: 0
+    z: 65
+  }
+  orientation: ORIENTATION_W
+  idRef {
+    id: "537b6de1366236901f003620"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4blueelbow"
+  gridPoint {
+    x: -104
+    y: 0
+    z: 25
+  }
+  orientation: ORIENTATION_W
+  idRef {
+    id: "537b6de5366236901f003621"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4blueelbow"
+  gridPoint {
+    x: -96
+    y: 0
+    z: 25
+  }
+  orientation: ORIENTATION_N
+  idRef {
+    id: "537b6de8366236901f003622"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4blueelbow"
+  gridPoint {
+    x: -96
+    y: 0
+    z: 57
+  }
+  orientation: ORIENTATION_N
+  idRef {
+    id: "537b6deb366236901f003623"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4blueelbow"
+  gridPoint {
+    x: -88
+    y: 0
+    z: 65
+  }
+  orientation: ORIENTATION_N
+  idRef {
+    id: "537b6dee366236901f003624"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4blueelbow"
+  gridPoint {
+    x: -56
+    y: 0
+    z: 65
+  }
+  orientation: ORIENTATION_N
+  idRef {
+    id: "537b6def366236901f003625"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4blueelbow"
+  gridPoint {
+    x: -88
+    y: 0
+    z: 73
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "537b6df2366236901f003626"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4blueelbow"
+  gridPoint {
+    x: -100
+    y: 0
+    z: 97
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "537b6df9366236901f003627"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4blueelbow"
+  gridPoint {
+    x: -104
+    y: 0
+    z: 101
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "537b6dfc366236901f003628"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4blueelbow"
+  gridPoint {
+    x: -108
+    y: 0
+    z: 105
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "537b6dfe366236901f003629"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4blueelbow"
+  gridPoint {
+    x: -52
+    y: 0
+    z: 109
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "537b6dff366236901f00362a"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4blueelbow"
+  gridPoint {
+    x: -60
+    y: 0
+    z: 77
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "537b6e01366236901f00362b"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4blueelbow"
+  gridPoint {
+    x: -56
+    y: 0
+    z: 73
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "537b6e02366236901f00362c"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4blueelbow"
+  gridPoint {
+    x: -96
+    y: 0
+    z: 45
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "537b6e04366236901f00362d"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4blueelbow"
+  gridPoint {
+    x: -104
+    y: 0
+    z: 57
+  }
+  orientation: ORIENTATION_W
+  idRef {
+    id: "537b6e10366236901f00362f"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4blueedge"
+  gridPoint {
+    x: -92
+    y: 0
+    z: 29
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "537b6e32366236901f003630"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4blueedge"
+  gridPoint {
+    x: -92
+    y: 0
+    z: 33
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "537b6e33366236901f003631"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4blueedge"
+  gridPoint {
+    x: -92
+    y: 0
+    z: 37
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "537b6e35366236901f003632"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4blueedge"
+  gridPoint {
+    x: -92
+    y: 0
+    z: 41
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "537b6e36366236901f003633"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4blueedge"
+  gridPoint {
+    x: -52
+    y: 0
+    z: 69
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "537b6e37366236901f003634"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4blueedge"
+  gridPoint {
+    x: -48
+    y: 0
+    z: 97
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "537b6e3a366236901f003635"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4blueedge"
+  gridPoint {
+    x: -48
+    y: 0
+    z: 101
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "537b6e3c366236901f003636"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4blueedge"
+  gridPoint {
+    x: -48
+    y: 0
+    z: 105
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "537b6e3d366236901f003637"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4blueedge"
+  gridPoint {
+    x: -84
+    y: 0
+    z: 69
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "537b6e3f366236901f003638"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4blueedge"
+  gridPoint {
+    x: -96
+    y: 0
+    z: 93
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "537b6e43366236901f003639"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4blueedge"
+  gridPoint {
+    x: -68
+    y: 0
+    z: 97
+  }
+  orientation: ORIENTATION_N
+  idRef {
+    id: "537b6e48366236901f00363a"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4blueedge"
+  gridPoint {
+    x: -60
+    y: 0
+    z: 105
+  }
+  orientation: ORIENTATION_N
+  idRef {
+    id: "537b6e4c366236901f00363b"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4blueedge"
+  gridPoint {
+    x: -60
+    y: 0
+    z: 109
+  }
+  orientation: ORIENTATION_N
+  idRef {
+    id: "537b6e4d366236901f00363c"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4blueedge"
+  gridPoint {
+    x: -80
+    y: 0
+    z: 69
+  }
+  orientation: ORIENTATION_N
+  idRef {
+    id: "537b6e4e366236901f00363d"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4blueedge"
+  gridPoint {
+    x: -108
+    y: 0
+    z: 29
+  }
+  orientation: ORIENTATION_N
+  idRef {
+    id: "537b6e51366236901f00363e"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4blueedge"
+  gridPoint {
+    x: -108
+    y: 0
+    z: 33
+  }
+  orientation: ORIENTATION_N
+  idRef {
+    id: "537b6e52366236901f00363f"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4blueedge"
+  gridPoint {
+    x: -108
+    y: 0
+    z: 37
+  }
+  orientation: ORIENTATION_N
+  idRef {
+    id: "537b6e54366236901f003640"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4blueedge"
+  gridPoint {
+    x: -108
+    y: 0
+    z: 41
+  }
+  orientation: ORIENTATION_N
+  idRef {
+    id: "537b6e55366236901f003641"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4blueedge"
+  gridPoint {
+    x: -112
+    y: 0
+    z: 61
+  }
+  orientation: ORIENTATION_N
+  idRef {
+    id: "537b6e56366236901f003642"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4blueedge"
+  gridPoint {
+    x: -112
+    y: 0
+    z: 65
+  }
+  orientation: ORIENTATION_N
+  idRef {
+    id: "537b6e5a366236901f003643"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4blueedge"
+  gridPoint {
+    x: -112
+    y: 0
+    z: 69
+  }
+  orientation: ORIENTATION_N
+  idRef {
+    id: "537b6e5b366236901f003644"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4blueedge"
+  gridPoint {
+    x: -112
+    y: 0
+    z: 73
+  }
+  orientation: ORIENTATION_N
+  idRef {
+    id: "537b6e5c366236901f003645"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4blueedge"
+  gridPoint {
+    x: -112
+    y: 0
+    z: 77
+  }
+  orientation: ORIENTATION_N
+  idRef {
+    id: "537b6e5f366236901f003646"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4blueedge"
+  gridPoint {
+    x: -100
+    y: 0
+    z: 85
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "537b6e61366236901f003647"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4blueedge"
+  gridPoint {
+    x: -100
+    y: 0
+    z: 49
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "537b6e66366236901f003648"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4blueedge"
+  gridPoint {
+    x: -64
+    y: 0
+    z: 85
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "537b6e67366236901f003649"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4blueedge"
+  gridPoint {
+    x: -64
+    y: 0
+    z: 101
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "537b6e6a366236901f00364a"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4blueedge"
+  gridPoint {
+    x: -56
+    y: 0
+    z: 113
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "537b6e6e366236901f00364b"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4blueedge"
+  gridPoint {
+    x: -112
+    y: 0
+    z: 109
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "537b6e73366236901f00364c"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4blueedge"
+  gridPoint {
+    x: -92
+    y: 0
+    z: 81
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "537b6e75366236901f00364d"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4blueedge"
+  gridPoint {
+    x: -100
+    y: 0
+    z: 21
+  }
+  orientation: ORIENTATION_W
+  idRef {
+    id: "537b6e7d366236901f00364f"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4blueedge"
+  gridPoint {
+    x: -108
+    y: 0
+    z: 57
+  }
+  orientation: ORIENTATION_W
+  idRef {
+    id: "537b6e7f366236901f003650"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4blueedge"
+  gridPoint {
+    x: -100
+    y: 0
+    z: 89
+  }
+  orientation: ORIENTATION_W
+  idRef {
+    id: "537b6e82366236901f003651"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4blueedge"
+  gridPoint {
+    x: -104
+    y: 0
+    z: 89
+  }
+  orientation: ORIENTATION_W
+  idRef {
+    id: "537b6e83366236901f003652"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4blueedge"
+  gridPoint {
+    x: -108
+    y: 0
+    z: 89
+  }
+  orientation: ORIENTATION_W
+  idRef {
+    id: "537b6e85366236901f003653"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4blueedge"
+  gridPoint {
+    x: -68
+    y: 0
+    z: 61
+  }
+  orientation: ORIENTATION_W
+  idRef {
+    id: "537b6e88366236901f003654"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4blueedge"
+  gridPoint {
+    x: -64
+    y: 0
+    z: 61
+  }
+  orientation: ORIENTATION_W
+  idRef {
+    id: "537b6e89366236901f003655"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4blueedge"
+  gridPoint {
+    x: -60
+    y: 0
+    z: 61
+  }
+  orientation: ORIENTATION_W
+  idRef {
+    id: "537b6e8b366236901f003656"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4blueedge"
+  gridPoint {
+    x: -100
+    y: 0
+    z: 53
+  }
+  orientation: ORIENTATION_W
+  idRef {
+    id: "537b6e8e366236901f003657"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4blueedge"
+  gridPoint {
+    x: -64
+    y: 0
+    z: 93
+  }
+  orientation: ORIENTATION_W
+  idRef {
+    id: "537b6e91366236901f003658"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4blueedge"
+  gridPoint {
+    x: -60
+    y: 0
+    z: 93
+  }
+  orientation: ORIENTATION_W
+  idRef {
+    id: "537b6e93366236901f003659"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4blueedge"
+  gridPoint {
+    x: -56
+    y: 0
+    z: 93
+  }
+  orientation: ORIENTATION_W
+  idRef {
+    id: "537b6e96366236901f00365a"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4blueedge"
+  gridPoint {
+    x: -52
+    y: 0
+    z: 93
+  }
+  orientation: ORIENTATION_W
+  idRef {
+    id: "537b6e97366236901f00365b"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4blueedge"
+  gridPoint {
+    x: -60
+    y: 0
+    z: 101
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "537b6e9c366236901f00365c"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4blueedge"
+  gridPoint {
+    x: -108
+    y: 0
+    z: 81
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "537b6ea5366236901f00365d"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4bluecorner"
+  gridPoint {
+    x: -66
+    y: 0
+    z: 40
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4bluecorner"
+  gridPoint {
+    x: -92
+    y: 0
+    z: 45
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "537b6eb8366236901f00365e"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4bluecorner"
+  gridPoint {
+    x: -88
+    y: 0
+    z: 81
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "537b6ebb366236901f00365f"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4blueedge"
+  gridPoint {
+    x: -88
+    y: 0
+    z: 77
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "537b6ec0366236901f003660"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4bluecorner"
+  gridPoint {
+    x: -100
+    y: 0
+    z: 101
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "537b6ec3366236901f003661"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4bluecorner"
+  gridPoint {
+    x: -96
+    y: 0
+    z: 97
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "537b6ec5366236901f003662"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4bluecorner"
+  gridPoint {
+    x: -104
+    y: 0
+    z: 105
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "537b6ec6366236901f003663"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4bluecorner"
+  gridPoint {
+    x: -108
+    y: 0
+    z: 109
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "537b6ec8366236901f003664"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4bluecorner"
+  gridPoint {
+    x: -52
+    y: 0
+    z: 113
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "537b6ec9366236901f003665"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4bluecorner"
+  gridPoint {
+    x: -48
+    y: 0
+    z: 109
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "537b6ecb366236901f003666"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4bluecorner"
+  gridPoint {
+    x: -60
+    y: 0
+    z: 85
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "537b6ecd366236901f003667"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4blueedge"
+  gridPoint {
+    x: -60
+    y: 0
+    z: 81
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "537b6ed1366236901f003668"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4bluecorner"
+  gridPoint {
+    x: -56
+    y: 0
+    z: 77
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "537b6ed5366236901f003669"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4bluecorner"
+  gridPoint {
+    x: -52
+    y: 0
+    z: 73
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "537b6ed7366236901f00366a"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4bluecorner"
+  gridPoint {
+    x: -88
+    y: 0
+    z: 57
+  }
+  orientation: ORIENTATION_N
+  idRef {
+    id: "537b6ed8366236901f00366b"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4blueedge"
+  gridPoint {
+    x: -92
+    y: 0
+    z: 57
+  }
+  orientation: ORIENTATION_W
+  idRef {
+    id: "537b6ee0366236901f00366c"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4blueedge"
+  gridPoint {
+    x: -88
+    y: 0
+    z: 61
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "537b6ee2366236901f00366d"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4bluecorner"
+  gridPoint {
+    x: -92
+    y: 0
+    z: 25
+  }
+  orientation: ORIENTATION_N
+  idRef {
+    id: "537b6ee4366236901f00366e"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4bluecorner"
+  gridPoint {
+    x: -96
+    y: 0
+    z: 21
+  }
+  orientation: ORIENTATION_N
+  idRef {
+    id: "537b6ee6366236901f00366f"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4bluecorner"
+  gridPoint {
+    x: -96
+    y: 0
+    z: 89
+  }
+  orientation: ORIENTATION_N
+  idRef {
+    id: "537b6ee8366236901f003670"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4bluecorner"
+  gridPoint {
+    x: -48
+    y: 0
+    z: 93
+  }
+  orientation: ORIENTATION_N
+  idRef {
+    id: "537b6eeb366236901f003671"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4bluecorner"
+  gridPoint {
+    x: -52
+    y: 0
+    z: 65
+  }
+  orientation: ORIENTATION_N
+  idRef {
+    id: "537b6eed366236901f003672"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4bluecorner"
+  gridPoint {
+    x: -56
+    y: 0
+    z: 61
+  }
+  orientation: ORIENTATION_N
+  idRef {
+    id: "537b6eef366236901f003673"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4blueelbow"
+  gridPoint {
+    x: -96
+    y: 0
+    z: 81
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "537b6ef5366236901f003674"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4bluecorner"
+  gridPoint {
+    x: -104
+    y: 0
+    z: 85
+  }
+  orientation: ORIENTATION_W
+  idRef {
+    id: "537b6efe366236901f003676"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4bluecorner"
+  gridPoint {
+    x: -108
+    y: 0
+    z: 45
+  }
+  orientation: ORIENTATION_W
+  idRef {
+    id: "537b6f01366236901f003677"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4bluecorner"
+  gridPoint {
+    x: -60
+    y: 0
+    z: 113
+  }
+  orientation: ORIENTATION_W
+  idRef {
+    id: "537b6f04366236901f003678"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4bluecorner"
+  gridPoint {
+    x: -68
+    y: 0
+    z: 81
+  }
+  orientation: ORIENTATION_W
+  idRef {
+    id: "537b6f08366236901f003679"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4bluecorner"
+  gridPoint {
+    x: -72
+    y: 0
+    z: 77
+  }
+  orientation: ORIENTATION_W
+  idRef {
+    id: "537b6f0a366236901f00367a"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4bluecorner"
+  gridPoint {
+    x: -116
+    y: 0
+    z: 109
+  }
+  orientation: ORIENTATION_W
+  idRef {
+    id: "537b6f0d366236901f00367b"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4blueedge"
+  gridPoint {
+    x: -120
+    y: 0
+    z: 101
+  }
+  orientation: ORIENTATION_N
+  idRef {
+    id: "537b6f12366236901f00367c"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4bluecorner"
+  gridPoint {
+    x: -120
+    y: 0
+    z: 105
+  }
+  orientation: ORIENTATION_W
+  idRef {
+    id: "537b6f14366236901f00367d"
   }
   lod: 0
 }

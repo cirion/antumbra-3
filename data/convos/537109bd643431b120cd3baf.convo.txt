@@ -430,6 +430,38 @@ nodes {
     nextNodeIndex: 13
   }
   nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isElorn"
+  actions {
+    ops {
+      functionName: "Kill Actor"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Actor)"
+              args {
+                string_value: "5373e940643431b8017c3d58"
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "DeathMethod"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+  }
 }
 nodes {
   idRef {
@@ -464,10 +496,10 @@ nodes {
   text: "Argh!"
   branches {
     responseText: ""
-    nextNodeIndex: -1
+    nextNodeIndex: 17
+    auxiliaryLink: true
   }
   nodeType: ConversationNodeType_Simple
-  sourceWithTagInScene: "isElorn"
 }
 nodes {
   idRef {
