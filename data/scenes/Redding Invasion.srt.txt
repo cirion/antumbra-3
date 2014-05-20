@@ -9,35 +9,6 @@ triggers {
   }
   actions {
     ops {
-      functionName: "Set Actor In Passive Mode"
-      args {
-        call_value {
-          functionName: "Specific Actor"
-          args {
-            call_value {
-              functionName: "Get Map Item (Actor)"
-              args {
-                string_value: "537a93f4643431b04e37ee9a"
-              }
-            }
-          }
-          args {
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "IsOrIsNot"
-          }
-          args {
-            int_value: 1
-          }
-        }
-      }
-    }
-    ops {
       functionName: "Set Variable (string)"
       args {
         call_value {
@@ -71,6 +42,88 @@ triggers {
         int_value: 1
       }
     }
+    ops {
+      functionName: "Set Actor In Passive Mode"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Actor)"
+              args {
+                string_value: "537a93f4643431b04e37ee9a"
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Variable (string)"
+      args {
+        call_value {
+          functionName: "Get Variable (string)"
+          args {
+            string_value: "CHARNAME"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Actor Name"
+          args {
+            call_value {
+              functionName: "Get Map Item (Player)"
+              args {
+                int_value: 0
+              }
+            }
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Actor Run Speed"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Actor)"
+              args {
+                string_value: "537a93f4643431b04e37ee9a"
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "RunSpeedMethod"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
   }
   isActive: true
   idRef {
@@ -83,10 +136,65 @@ triggers {
 triggers {
   name: "Debug"
   events {
+    ops {
+      functionName: "On Map Start"
+    }
   }
   conditions {
   }
   actions {
+    ops {
+      functionName: "Set Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Variable (int)"
+          args {
+            string_value: "MaxThugsForCard"
+          }
+        }
+      }
+      args {
+        int_value: 0
+      }
+    }
+    ops {
+      functionName: "Kill Actor"
+      args {
+        call_value {
+          functionName: "All Actors With Tag"
+          args {
+            call_value {
+              functionName: "Get Map Item (SenseTagList)"
+              args {
+                string_value: "squadFinal"
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Preset Value (int)"
+              args {
+                string_value: "AllOrAny"
+              }
+              args {
+                int_value: 0
+              }
+            }
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "DeathMethod"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
   }
   isActive: true
   idRef {
@@ -164,6 +272,93 @@ triggers {
       }
       args {
         int_value: 1
+      }
+    }
+    ops {
+      functionName: "Evaluate If Actor Has Item"
+      args {
+        call_value {
+          functionName: "All Actors on Team"
+          args {
+            call_value {
+              functionName: "Get Preset Value (string)"
+              args {
+                string_value: "FactionList"
+              }
+              args {
+                int_value: 0
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Preset Value (int)"
+              args {
+                string_value: "AllOrAny"
+              }
+              args {
+                int_value: 0
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Map Item (SceneDimension)"
+              args {
+                string_value: "Default"
+              }
+            }
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "HasOrHasNot"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (Item)"
+          args {
+            string_value: "a3-native_californian_key"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Comparison (int)"
+      args {
+        call_value {
+          functionName: "Get Variable (int)"
+          args {
+            string_value: "DeadThugs"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "Comparison Ops"
+          }
+          args {
+            int_value: 3
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Variable (int)"
+          args {
+            string_value: "MinThugsForCard"
+          }
+        }
       }
     }
   }
@@ -411,6 +606,39 @@ triggers {
         }
       }
     }
+    ops {
+      functionName: "Comparison (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "NCCanReinforce"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
   }
   actions {
     ops {
@@ -536,6 +764,39 @@ triggers {
         }
       }
     }
+    ops {
+      functionName: "Comparison (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "NCCanReinforce"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
   }
   actions {
     ops {
@@ -657,6 +918,39 @@ triggers {
           functionName: "Get Variable (int)"
           args {
             string_value: "TargetNCCount"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Comparison (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "NCCanReinforce"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
           }
         }
       }
@@ -829,6 +1123,33 @@ triggers {
     }
   }
   conditions {
+    ops {
+      functionName: "Comparison (Actor)"
+      args {
+        call_value {
+          functionName: "Triggering Actor"
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (Player)"
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
   }
   actions {
     ops {
@@ -1045,6 +1366,28 @@ triggers {
         }
       }
     }
+    ops {
+      functionName: "Enable/Disable Interactable Object"
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "EnableOrDisable"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (InteractableObject)"
+          args {
+            string_value: "537a92c6643431b04e37ee97"
+          }
+        }
+      }
+    }
   }
   isActive: true
   idRef {
@@ -1163,7 +1506,10 @@ triggers {
           functionName: "Specific Actor"
           args {
             call_value {
-              functionName: "Triggering Actor"
+              functionName: "Get Map Item (Actor)"
+              args {
+                string_value: "537a93f4643431b04e37ee9a"
+              }
             }
           }
           args {
@@ -1332,7 +1678,7 @@ triggers {
         }
       }
       args {
-        int_value: 2
+        int_value: 3
       }
     }
   }
@@ -1374,7 +1720,7 @@ triggers {
         }
       }
       args {
-        int_value: 2
+        int_value: 3
       }
     }
   }
@@ -1727,6 +2073,334 @@ triggers {
   }
   is_oneshot: true
 }
+triggers {
+  name: "Killed a Thug"
+  events {
+    ops {
+      functionName: "On Actor Death"
+    }
+  }
+  conditions {
+    ops {
+      functionName: "Evaluate Tag for Actor"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Triggering Target Actor"
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "HasOrHasNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SenseTagList)"
+          args {
+            string_value: "isNCThug"
+          }
+        }
+      }
+    }
+  }
+  actions {
+    ops {
+      functionName: "Add To Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Variable (int)"
+          args {
+            string_value: "DeadThugs"
+          }
+        }
+      }
+      args {
+        int_value: 1
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "537ad4f3366236b005001b7d"
+  }
+  elseActions {
+  }
+  is_oneshot: false
+}
+triggers {
+  name: "Force Drop Key"
+  events {
+    ops {
+      functionName: "On Actor Death"
+    }
+  }
+  conditions {
+    ops {
+      functionName: "Evaluate Tag for Actor"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Triggering Target Actor"
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "HasOrHasNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SenseTagList)"
+          args {
+            string_value: "isNCThug"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Evaluate If Actor Has Item"
+      args {
+        call_value {
+          functionName: "All Actors on Team"
+          args {
+            call_value {
+              functionName: "Get Preset Value (string)"
+              args {
+                string_value: "FactionList"
+              }
+              args {
+                int_value: 0
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Preset Value (int)"
+              args {
+                string_value: "AllOrAny"
+              }
+              args {
+                int_value: 0
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Map Item (SceneDimension)"
+              args {
+                string_value: "Default"
+              }
+            }
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "HasOrHasNot"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (Item)"
+          args {
+            string_value: "a3-native_californian_key"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Comparison (int)"
+      args {
+        call_value {
+          functionName: "Get Variable (int)"
+          args {
+            string_value: "DeadThugs"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "Comparison Ops"
+          }
+          args {
+            int_value: 3
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Variable (int)"
+          args {
+            string_value: "MaxThugsForCard"
+          }
+        }
+      }
+    }
+  }
+  actions {
+    ops {
+      functionName: "Move Prop"
+      args {
+        call_value {
+          functionName: "Get Map Item (Prop)"
+          args {
+            string_value: "537a899f643431b04e37ee6d"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Current Location of Actor"
+          args {
+            call_value {
+              functionName: "Triggering Target Actor"
+            }
+          }
+        }
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "537ad584366236b005001b80"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
+triggers {
+  name: "Non-PC0 tries to use terminal"
+  events {
+    ops {
+      functionName: "On Item Interaction"
+      args {
+        call_value {
+          functionName: "Get Map Item (InteractableObject)"
+          args {
+            string_value: "537a92c6643431b04e37ee97"
+          }
+        }
+      }
+    }
+  }
+  conditions {
+    ops {
+      functionName: "Comparison (Actor)"
+      args {
+        call_value {
+          functionName: "Triggering Actor"
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (Player)"
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+  }
+  actions {
+    ops {
+      functionName: "Display Text over Prop"
+      args {
+        call_value {
+          functionName: "Get Map Item (Prop)"
+          args {
+            string_value: "537a92c6643431b04e37ee97"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "TextPopupStyle"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        string_value: "Only $(scene.CHARNAME) is authorized to use the broadcast terminal."
+      }
+      args {
+        float_value: 0
+      }
+      args {
+        float_value: 0
+      }
+      args {
+        float_value: 0
+      }
+      args {
+        float_value: 0
+      }
+      args {
+        float_value: 3
+      }
+      args {
+        float_value: 3
+      }
+      args {
+        float_value: 0
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "537adb02366236b005001b86"
+  }
+  elseActions {
+  }
+  is_oneshot: false
+}
 regions {
   name: "Selene Arrival"
   position {
@@ -1774,10 +2448,10 @@ regions {
 regions {
   name: "Selene Destination"
   position {
-    x: -66
-    y: 10
-    width: -1
-    height: -1
+    x: -65
+    y: 11
+    width: -2
+    height: -2
   }
   enabledAtStart: true
   is_camera_region: false
@@ -2150,294 +2824,6 @@ characters {
       filename: ""
     }
     karma: 40
-    scale_character_sheet: true
-  }
-}
-characters {
-  name: "chars_icon_playerIcon"
-  gridPoint {
-    x: -50
-    y: 0
-    z: -22
-  }
-  orientation: ORIENTATION_S
-  GeneralTags: "isNCThug"
-  GeneralTags: ""
-  displayName: "NC Mage"
-  idRef {
-    id: "537a8a8e643431b04e37ee74"
-  }
-  lod: 0
-  character_instance {
-    prefab_name: "Berlin:Humanis/HumanFemaleHumanisMohawkPink"
-    character_sheet_id: "Lonestar_Lv1_Human_Mage"
-    equipment_sheet_id: "Lonestar_Lv1_Mage_Gear"
-    character_mod {
-      stats {
-        morale: 0
-        discipline: 0
-        awareness: 0
-        perception: 0
-        authority: 0
-        protect_tether_range: 0
-        move_speed: 0
-      }
-      skills {
-      }
-      specializations {
-      }
-      vulnerabilities {
-      }
-    }
-    team_id: "Native Californians"
-    char_name: "NC Mage"
-    GeneralTags: "isNCThug"
-    GeneralTags: ""
-    pc_spawn_number: -1
-    portrait {
-      filename: ""
-    }
-    karma: 40
-    scale_character_sheet: true
-  }
-}
-characters {
-  name: "chars_icon_playerIcon"
-  gridPoint {
-    x: -50
-    y: 0
-    z: -23
-  }
-  orientation: ORIENTATION_S
-  GeneralTags: "isNCThug"
-  GeneralTags: ""
-  displayName: "NC Captain"
-  idRef {
-    id: "537a8a8e643431b04e37ee75"
-  }
-  lod: 0
-  character_instance {
-    prefab_name: "Berlin:Humanis/HumanFemaleHumaniShortSleeve_1"
-    character_sheet_id: "Lonestar_Lv1_Captain"
-    equipment_sheet_id: "Lonestar_Lv1_Captain_Gear"
-    character_mod {
-      stats {
-        morale: 0
-        discipline: 0
-        awareness: 0
-        perception: 0
-        authority: 0
-        protect_tether_range: 0
-        move_speed: 0
-      }
-      skills {
-      }
-      specializations {
-      }
-      vulnerabilities {
-      }
-    }
-    team_id: "Native Californians"
-    char_name: "NC Cell Leader"
-    GeneralTags: "isNCThug"
-    GeneralTags: ""
-    pc_spawn_number: -1
-    portrait {
-      filename: ""
-    }
-    karma: 44
-    scale_character_sheet: true
-  }
-}
-characters {
-  name: "chars_icon_playerIcon"
-  gridPoint {
-    x: -50
-    y: 0
-    z: -24
-  }
-  orientation: ORIENTATION_S
-  GeneralTags: "isNCThug"
-  GeneralTags: ""
-  displayName: "NC SMG"
-  idRef {
-    id: "537a8a8e643431b04e37ee76"
-  }
-  lod: 0
-  character_instance {
-    prefab_name: "Berlin:Humanis/HumanMaleHumanisShortSleeve_1"
-    character_sheet_id: "Lonestar_Lv1_Heavy_SMG"
-    equipment_sheet_id: "Lonestar_Lv1_SMG_Gear"
-    character_mod {
-      stats {
-        morale: 0
-        discipline: 0
-        awareness: 0
-        perception: 0
-        authority: 0
-        protect_tether_range: 0
-        move_speed: 0
-      }
-      skills {
-      }
-      specializations {
-      }
-      vulnerabilities {
-      }
-    }
-    team_id: "Native Californians"
-    char_name: "NC Heavy Thug"
-    GeneralTags: "isNCThug"
-    GeneralTags: ""
-    pc_spawn_number: -1
-    portrait {
-      filename: ""
-    }
-    karma: 39
-    scale_character_sheet: true
-  }
-}
-characters {
-  name: "chars_icon_playerIcon"
-  gridPoint {
-    x: -50
-    y: 0
-    z: -25
-  }
-  orientation: ORIENTATION_S
-  GeneralTags: "isNCThug"
-  GeneralTags: ""
-  displayName: "NC Shotgun"
-  idRef {
-    id: "537a8a8e643431b04e37ee77"
-  }
-  lod: 0
-  character_instance {
-    prefab_name: "Berlin:Humanis/HumanMaleHumanisPonytail"
-    character_sheet_id: "Lonestar_Lv1_Ork_Shotgun"
-    equipment_sheet_id: "Lonestar_Lv1_Shotgun_Gear"
-    character_mod {
-      stats {
-        morale: 0
-        discipline: 0
-        awareness: 0
-        perception: 0
-        authority: 0
-        protect_tether_range: 0
-        move_speed: 0
-      }
-      skills {
-      }
-      specializations {
-      }
-      vulnerabilities {
-      }
-    }
-    team_id: "Native Californians"
-    char_name: "NC Thug"
-    GeneralTags: "isNCThug"
-    GeneralTags: ""
-    pc_spawn_number: -1
-    portrait {
-      filename: ""
-    }
-    karma: 33
-    scale_character_sheet: true
-  }
-}
-characters {
-  name: "chars_icon_playerIcon"
-  gridPoint {
-    x: -50
-    y: 0
-    z: -26
-  }
-  orientation: ORIENTATION_S
-  GeneralTags: "isNCThug"
-  GeneralTags: ""
-  displayName: "NC Pistol"
-  idRef {
-    id: "537a8a8e643431b04e37ee78"
-  }
-  lod: 0
-  character_instance {
-    prefab_name: "Berlin:Humanis/HumanMaleHumanisLongSleeve_1"
-    character_sheet_id: "Lonestar_Lv1_Human_Pistol"
-    equipment_sheet_id: "Lonestar_Lv1_Pistol_Gear"
-    character_mod {
-      stats {
-        morale: 0
-        discipline: 0
-        awareness: 0
-        perception: 0
-        authority: 0
-        protect_tether_range: 0
-        move_speed: 0
-      }
-      skills {
-      }
-      specializations {
-      }
-      vulnerabilities {
-      }
-    }
-    team_id: "Native Californians"
-    char_name: "NC Thug"
-    GeneralTags: "isNCThug"
-    GeneralTags: ""
-    pc_spawn_number: -1
-    portrait {
-      filename: ""
-    }
-    karma: 30
-    scale_character_sheet: true
-  }
-}
-characters {
-  name: "chars_icon_playerIcon"
-  gridPoint {
-    x: -50
-    y: 0
-    z: -27
-  }
-  orientation: ORIENTATION_S
-  GeneralTags: "isNCThug"
-  GeneralTags: ""
-  displayName: "NC Melee"
-  idRef {
-    id: "537a8a8e643431b04e37ee79"
-  }
-  lod: 0
-  character_instance {
-    prefab_name: "Berlin:Humanis/HumanMaleHumanisFlattop"
-    character_sheet_id: "Generic_Lv1_Human_Melee"
-    equipment_sheet_id: "Generic_Lv1_Melee_Gear"
-    character_mod {
-      stats {
-        morale: 0
-        discipline: 0
-        awareness: 0
-        perception: 0
-        authority: 0
-        protect_tether_range: 0
-        move_speed: 0
-      }
-      skills {
-      }
-      specializations {
-      }
-      vulnerabilities {
-      }
-    }
-    team_id: "Native Californians"
-    char_name: "NC Thug"
-    GeneralTags: "isNCThug"
-    GeneralTags: ""
-    pc_spawn_number: -1
-    portrait {
-      filename: ""
-    }
-    karma: 28
     scale_character_sheet: true
   }
 }
@@ -3221,62 +3607,6 @@ characters {
   idRef {
     id: "537a93f4643431b04e37ee9a"
   }
-  interactionRoot {
-    isEnabled: true
-    interactionRadius: 1
-    prerequisites {
-      ops {
-        functionName: "OR"
-        args {
-          call_value {
-            functionName: "Invert Bool"
-            args {
-              call_value {
-                functionName: "Get Variable (bool)"
-                args {
-                  string_value: "talkedToSelene"
-                }
-              }
-            }
-          }
-        }
-        args {
-          call_value {
-            functionName: "Comparison (int)"
-            args {
-              call_value {
-                functionName: "Get Story Variable (int)"
-                args {
-                  string_value: "531d26a736623648180018bf"
-                }
-                args {
-                  string_value: "Global_MissionState_Five"
-                }
-              }
-            }
-            args {
-              call_value {
-                functionName: "Get Preset Value (int)"
-                args {
-                  string_value: "Comparison Ops"
-                }
-                args {
-                  int_value: 0
-                }
-              }
-            }
-            args {
-              int_value: 0
-            }
-          }
-        }
-      }
-    }
-    conversationPoint {
-      conversationID: "536cfd8a6434312f05639838"
-      turnToFace: true
-    }
-  }
   lod: 0
   character_instance {
     prefab_name: "Seattle:Core/ElfFemale"
@@ -3325,6 +3655,94 @@ characters {
     }
     portrait_code_override: "s4h2c3"
     karma: 177
+  }
+}
+characters {
+  name: "system_spawner_playerSpawner"
+  gridPoint {
+    x: -28
+    y: 0
+    z: 5
+  }
+  orientation: ORIENTATION_N
+  idRef {
+    id: "537ad25f366236b005001b78"
+  }
+  lod: 0
+  character_instance {
+    character_mod {
+      archetypeName: "Player"
+    }
+    team_id: "Shadowrunners"
+    char_name: "New Actor"
+    enabled_at_start: true
+    pc_spawn_number: 0
+  }
+}
+characters {
+  name: "system_spawner_playerSpawner"
+  gridPoint {
+    x: -26
+    y: 0
+    z: 5
+  }
+  orientation: ORIENTATION_N
+  idRef {
+    id: "537ad266366236b005001b79"
+  }
+  lod: 0
+  character_instance {
+    character_mod {
+      archetypeName: "Player"
+    }
+    team_id: "Shadowrunners"
+    char_name: "New Actor"
+    enabled_at_start: true
+    pc_spawn_number: 1
+  }
+}
+characters {
+  name: "system_spawner_playerSpawner"
+  gridPoint {
+    x: -26
+    y: 0
+    z: 3
+  }
+  orientation: ORIENTATION_N
+  idRef {
+    id: "537ad26a366236b005001b7a"
+  }
+  lod: 0
+  character_instance {
+    character_mod {
+      archetypeName: "Player"
+    }
+    team_id: "Shadowrunners"
+    char_name: "New Actor"
+    enabled_at_start: true
+    pc_spawn_number: 2
+  }
+}
+characters {
+  name: "system_spawner_playerSpawner"
+  gridPoint {
+    x: -26
+    y: 0
+    z: 7
+  }
+  orientation: ORIENTATION_N
+  idRef {
+    id: "537ad26c366236b005001b7b"
+  }
+  lod: 0
+  character_instance {
+    character_mod {
+      archetypeName: "Player"
+    }
+    team_id: "Shadowrunners"
+    char_name: "New Actor"
+    enabled_at_start: true
+    pc_spawn_number: 3
   }
 }
 variables {
@@ -3381,6 +3799,38 @@ variables {
     scope: TsVariableScope_Scene
     name: "CanExitScene"
     typeName: "bool"
+  }
+}
+variables {
+  int_value: 0
+  variableref_value {
+    scope: TsVariableScope_Scene
+    name: "DeadThugs"
+    typeName: "int"
+  }
+}
+variables {
+  int_value: 10
+  variableref_value {
+    scope: TsVariableScope_Scene
+    name: "MinThugsForCard"
+    typeName: "int"
+  }
+}
+variables {
+  int_value: 50
+  variableref_value {
+    scope: TsVariableScope_Scene
+    name: "MaxThugsForCard"
+    typeName: "int"
+  }
+}
+variables {
+  string_value: ""
+  variableref_value {
+    scope: TsVariableScope_Scene
+    name: "CHARNAME"
+    typeName: "string"
   }
 }
 senseTags: "isElorn"
@@ -3450,6 +3900,8 @@ scene_dimensions {
   dimension_name: "Matrix"
   initial_alarm_state: 10
   turns_per_round: 3
+}
+character_roster {
 }
 show_hiring_screen_on_scene_load: false
 scene_hiring_prerequisites {

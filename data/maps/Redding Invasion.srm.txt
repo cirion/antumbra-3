@@ -7375,3 +7375,100 @@ props {
   }
   lod: 0
 }
+props {
+  name: "system_invisible_nonsolidProp"
+  gridPoint {
+    x: -60
+    y: 0
+    z: 12
+  }
+  orientation: ORIENTATION_S
+  displayName: "Investigate Door"
+  idRef {
+    id: "537ad667366236b005001b83"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    prerequisites {
+      ops {
+        functionName: "Actor is Player Controlled"
+        args {
+          call_value {
+            functionName: "Specific Actor"
+            args {
+              call_value {
+                functionName: "Triggering Actor"
+              }
+            }
+            args {
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+      }
+      ops {
+        functionName: "Invert Bool"
+        args {
+          call_value {
+            functionName: "Get Variable (bool)"
+            args {
+              string_value: "OverrodeDoorLock"
+            }
+          }
+        }
+      }
+      ops {
+        functionName: "Evaluate If Actor Has Item"
+        args {
+          call_value {
+            functionName: "Specific Actor"
+            args {
+              call_value {
+                functionName: "Triggering Actor"
+              }
+            }
+            args {
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "HasOrHasNot"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Map Item (Item)"
+            args {
+              string_value: "a3-native_californian_key"
+            }
+          }
+        }
+      }
+    }
+    inspectInteraction {
+      dispalyTime: 10
+      fadeTime: 0
+      inspectText: "The Native Californian leaders entered your communications room, adding a lock of their own to the door. You\'ll need to find the key or somehow override the door\'s electronic security."
+      disableAfterInteracting: false
+    }
+  }
+  lod: 0
+}
