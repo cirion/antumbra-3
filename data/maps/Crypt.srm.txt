@@ -10205,3 +10205,52 @@ props {
   }
   lod: 0
 }
+props {
+  name: "system_invisible_blockSight"
+  gridPoint {
+    x: -39
+    y: 0
+    z: -75
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "system_invisible_blockSight"
+  gridPoint {
+    x: -39
+    y: 0
+    z: -74
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "537abe2b366236b005001367"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_blockSight"
+  gridPoint {
+    x: -39
+    y: 0
+    z: -73
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "537abe2d366236b005001368"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_blockSight"
+  gridPoint {
+    x: -39
+    y: 0
+    z: -76
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "537abe2e366236b005001369"
+  }
+  lod: 0
+}

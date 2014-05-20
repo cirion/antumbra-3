@@ -7,7 +7,7 @@ nodes {
     id: "537123eb643431b120cd3d34"
   }
   index: 0
-  text: "It\342\200\231s so beautiful.\n\n{{GM}}This handsome woman is staring impassively at the lake.{{/GM}}\n\nHow can there be such peacefulness, so close to such sorrow?"
+  text: "It\342\200\231s so beautiful.\n\n{{GM}}This handsome woman has been staring impassively at the lake.{{/GM}}\n\nHow can there be such peacefulness, so close to such sorrow?"
   branches {
     responseText: ""
     nextNodeIndex: 1
@@ -173,7 +173,7 @@ nodes {
   index: 10
   text: ""
   branches {
-    responseText: ""
+    responseText: "Elorn, do you want to handle this?"
     conditions {
       ops {
         functionName: "Evaluate If Actor is Inside Region"
@@ -221,15 +221,57 @@ nodes {
           }
         }
       }
+      ops {
+        functionName: "Compare Actor Team"
+        args {
+          call_value {
+            functionName: "Get Map Item (Actor)"
+            args {
+              string_value: "5373e940643431b8017c3d58"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (string)"
+            args {
+              string_value: "FactionList"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Map Item (SceneDimension)"
+            args {
+              string_value: "Default"
+            }
+          }
+        }
+      }
     }
     nextNodeIndex: 11
+    hideIfUnavailable: true
     onlyOnce: true
     idRef {
       id: "5371285d643431882a039492"
     }
   }
   branches {
-    responseText: ""
+    responseText: "What do you think, Dorbi?"
     conditions {
       ops {
         functionName: "Evaluate If Actor is Inside Region"
@@ -279,6 +321,7 @@ nodes {
       }
     }
     nextNodeIndex: 12
+    hideIfUnavailable: true
     onlyOnce: true
     idRef {
       id: "53712860643431882a039493"
@@ -286,11 +329,13 @@ nodes {
   }
   branches {
     responseText: "Metahumans face a lot of discrimination."
-    nextNodeIndex: -1
+    nextNodeIndex: 13
+    auxiliaryLink: true
   }
   branches {
     responseText: "They need to learn to give as good as they get."
-    nextNodeIndex: -1
+    nextNodeIndex: 13
+    auxiliaryLink: true
   }
   branches {
     responseText: "They have it as bad as everyone else."
@@ -310,6 +355,7 @@ nodes {
     auxiliaryLink: true
   }
   nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isElorn"
 }
 nodes {
   idRef {
@@ -323,6 +369,7 @@ nodes {
     auxiliaryLink: true
   }
   nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isDorbi"
 }
 nodes {
   idRef {
@@ -330,6 +377,11 @@ nodes {
   }
   index: 13
   text: "That\342\200\231s very unfortunate. How sad. I wish I could help them.\n\nThank you for answering my questions."
+  branches {
+    responseText: ""
+    nextNodeIndex: 15
+    auxiliaryLink: true
+  }
   nodeType: ConversationNodeType_Simple
 }
 nodes {
@@ -461,7 +513,7 @@ nodes {
     nextNodeIndex: 20
   }
   branches {
-    responseText: "don\342\200\231t need anything right now."
+    responseText: "I don\342\200\231t need anything right now."
     nextNodeIndex: -1
   }
   nodeType: ConversationNodeType_Simple
@@ -541,47 +593,17 @@ nodes {
   nodeType: ConversationNodeType_Simple
   actions {
     ops {
-      functionName: "Trigger: Run Alternate Trigger"
+      functionName: "Set Variable (int)"
       args {
         call_value {
-          functionName: "Get Map Item (Trigger)"
+          functionName: "Get Variable (int)"
           args {
-            string_value: "53712a58643431882a039528"
+            string_value: "tabithaCastingState"
           }
         }
       }
       args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "WithOrWithout"
-          }
-          args {
-            int_value: 1
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "WaitOrNot"
-          }
-          args {
-            int_value: 0
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "WithOrWithout"
-          }
-          args {
-            int_value: 0
-          }
-        }
+        int_value: 1
       }
     }
   }

@@ -169,6 +169,7 @@ nodes {
     nextNodeIndex: 6
   }
   nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isElorn"
 }
 nodes {
   idRef {
@@ -198,7 +199,44 @@ nodes {
   }
   branches {
     responseText: "I suppose you want to \342\200\234take care\342\200\235 of elves like me, too?"
+    conditions {
+      ops {
+        functionName: "Compare Actor Race"
+        args {
+          call_value {
+            functionName: "Triggering Actor"
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Race"
+            }
+            args {
+              int_value: 2
+            }
+          }
+        }
+      }
+    }
     nextNodeIndex: 9
+    hideIfUnavailable: true
+    onlyOnce: true
+    idRef {
+      id: "537ac31f366236b005001629"
+    }
   }
   branches {
     responseText: "Are you also opposed to $(s.race_plural) like me, too?"
@@ -265,10 +303,52 @@ nodes {
       }
     }
     nextNodeIndex: 10
+    hideIfUnavailable: true
+    onlyOnce: true
+    idRef {
+      id: "537ac323366236b00500162a"
+    }
   }
   branches {
     responseText: "Good point. We humans need to stick together."
+    conditions {
+      ops {
+        functionName: "Compare Actor Race"
+        args {
+          call_value {
+            functionName: "Triggering Actor"
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Race"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+      }
+    }
     nextNodeIndex: 11
+    hideIfUnavailable: true
+    onlyOnce: true
+    idRef {
+      id: "537ac328366236b00500162b"
+    }
   }
   branches {
     responseText: "Let him go immediately!"
@@ -387,6 +467,7 @@ nodes {
     nextNodeIndex: -1
   }
   nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isElorn"
 }
 nodes {
   idRef {

@@ -145,6 +145,137 @@ triggers {
         }
       }
     }
+    ops {
+      functionName: "Set Prop Visible by Tag"
+      args {
+        call_value {
+          functionName: "Get Map Item (SenseTagList)"
+          args {
+            string_value: "isBridgeDestructionProp"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        float_value: -1
+      }
+      args {
+        call_value {
+          functionName: "Everywhere"
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "DoesOrDoesNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Play Animation From Manifest"
+      args {
+        call_value {
+          functionName: "Get Map Item (Actor)"
+          args {
+            string_value: "5373e940643431b8017c3d58"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (Animation)"
+          args {
+            string_value: "Seattle:General/crouch_idle"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Enable/Disable Interactable Object"
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "EnableOrDisable"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (InteractableObject)"
+          args {
+            string_value: "537a3d7c6434313b4381eb0a"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Delete Prop"
+      args {
+        call_value {
+          functionName: "Get Map Item (Prop)"
+          args {
+            string_value: "537a2b736434318b3f5d1356"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Actor Run Speed"
+      args {
+        call_value {
+          functionName: "All Actors With Tag"
+          args {
+            call_value {
+              functionName: "Get Map Item (SenseTagList)"
+              args {
+                string_value: "isExiter"
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Preset Value (int)"
+              args {
+                string_value: "AllOrAny"
+              }
+              args {
+                int_value: 0
+              }
+            }
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "RunSpeedMethod"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
   }
   isActive: true
   idRef {
@@ -198,8 +329,36 @@ triggers {
 triggers {
   name: "Tabitha Restores Bridge"
   events {
+    ops {
+      functionName: "On Conversation Complete"
+    }
   }
   conditions {
+    ops {
+      functionName: "Comparison (int)"
+      args {
+        call_value {
+          functionName: "Get Variable (int)"
+          args {
+            string_value: "tabithaCastingState"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "Comparison Ops"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        int_value: 1
+      }
+    }
   }
   actions {
     ops {
@@ -315,7 +474,21 @@ triggers {
         }
       }
       args {
-        float_value: 2.5
+        float_value: 2
+      }
+    }
+    ops {
+      functionName: "Set Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Variable (int)"
+          args {
+            string_value: "tabithaCastingState"
+          }
+        }
+      }
+      args {
+        int_value: 2
       }
     }
   }
@@ -435,7 +608,51 @@ triggers {
       functionName: "Clear All Waypoints"
     }
     ops {
-      functionName: "No Effect"
+      functionName: "Enable/Disable Team\'s Turn"
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "EnableOrDisable"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SceneDimension)"
+          args {
+            string_value: "Default"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Variable (int)"
+          args {
+            string_value: "bullionTalkState"
+          }
+        }
+      }
+      args {
+        int_value: 1
+      }
     }
   }
   isActive: true
@@ -634,6 +851,61 @@ triggers {
       }
       args {
         int_value: 2
+      }
+    }
+    ops {
+      functionName: "Set Animation State Of Actor To Animation Modifier"
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "AnimationState"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (Actor)"
+          args {
+            string_value: "5373e940643431b8017c3d58"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (AnimationModifiers)"
+          args {
+            string_value: "relaxed"
+          }
+          args {
+            string_value: "calm"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Enable/Disable Interactable Object"
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "EnableOrDisable"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (InteractableObject)"
+          args {
+            string_value: "5373e940643431b8017c3d58"
+          }
+        }
       }
     }
   }
@@ -1107,6 +1379,20 @@ triggers {
             int_value: 0
           }
         }
+      }
+    }
+    ops {
+      functionName: "Set Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Variable (int)"
+          args {
+            string_value: "bombDefuseState"
+          }
+        }
+      }
+      args {
+        int_value: 2
       }
     }
   }
@@ -2139,30 +2425,6 @@ triggers {
         call_value {
           functionName: "Get Map Item (Prop)"
           args {
-            string_value: "5374defb643431d710c329f7"
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Center of Region"
-          args {
-            call_value {
-              functionName: "Get Map Item (Region)"
-              args {
-                string_value: "5374e3b3643431d710c329fd"
-              }
-            }
-          }
-        }
-      }
-    }
-    ops {
-      functionName: "Move Prop"
-      args {
-        call_value {
-          functionName: "Get Map Item (Prop)"
-          args {
             string_value: "5374ec026434316b133335e5"
           }
         }
@@ -2249,6 +2511,98 @@ triggers {
                 string_value: "5374ebec6434316b133335e3"
               }
             }
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Prop Visible by Tag"
+      args {
+        call_value {
+          functionName: "Get Map Item (SenseTagList)"
+          args {
+            string_value: "isBridgeDestructionProp"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        float_value: -1
+      }
+      args {
+        call_value {
+          functionName: "Everywhere"
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "DoesOrDoesNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Kill Actor"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Actor)"
+              args {
+                string_value: "5373f0b4643431b8017c3da4"
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "DeathMethod"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Enable/Disable Interactable Object"
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "EnableOrDisable"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (InteractableObject)"
+          args {
+            string_value: "5373f0b4643431b8017c3da4"
           }
         }
       }
@@ -2723,12 +3077,12 @@ triggers {
             string_value: "weapons"
           }
           args {
-            string_value: "SMG"
+            string_value: "GrenadeFrag"
           }
         }
       }
       args {
-        float_value: 1
+        float_value: 0.5
       }
       args {
         call_value {
@@ -2737,7 +3091,7 @@ triggers {
             string_value: "bool"
           }
           args {
-            int_value: 0
+            int_value: 1
           }
         }
       }
@@ -2756,7 +3110,7 @@ triggers {
         }
       }
       args {
-        string_value: "You hear the sound of gunfire to the east. Claude\'s assault on your base has begun."
+        string_value: "You hear the sound of explosions to the east. Claude\'s assault on your base has begun."
       }
       args {
         float_value: 0
@@ -2784,6 +3138,20 @@ triggers {
       }
       args {
         float_value: 0
+      }
+    }
+    ops {
+      functionName: "Send Event After Delay"
+      args {
+        call_value {
+          functionName: "Get Map Item (Event)"
+          args {
+            string_value: "Stop Explosions"
+          }
+        }
+      }
+      args {
+        float_value: 4
       }
     }
   }
@@ -2851,17 +3219,45 @@ triggers {
   }
   actions {
     ops {
-      functionName: "Display Text over Point"
+      functionName: "Open Scene"
       args {
         call_value {
-          functionName: "Triggering Target Point"
+          functionName: "Get Map Item (Scene)"
+          args {
+            string_value: "Redding Invasion"
+          }
+        }
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "5374ee526434316b133335eb"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
+triggers {
+  name: "Guard Hails You"
+  events {
+    ops {
+      functionName: "On Actor Awareness of Another Actor"
+    }
+  }
+  conditions {
+    ops {
+      functionName: "Comparison (Actor)"
+      args {
+        call_value {
+          functionName: "Triggering Actor"
         }
       }
       args {
         call_value {
           functionName: "Get Preset Value (int)"
           args {
-            string_value: "TextPopupStyle"
+            string_value: "IsOrIsNot"
           }
           args {
             int_value: 1
@@ -2869,34 +3265,409 @@ triggers {
         }
       }
       args {
-        string_value: "TODO: Open Redding defense scene."
+        call_value {
+          functionName: "Get Map Item (Actor)"
+          args {
+            string_value: "5373f0b4643431b8017c3da4"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Comparison (Actor)"
+      args {
+        call_value {
+          functionName: "Triggering Target Actor"
+        }
       }
       args {
-        float_value: 0
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
       }
       args {
-        float_value: 0
+        call_value {
+          functionName: "Get Map Item (Player)"
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+  }
+  actions {
+    ops {
+      functionName: "Start Conversation"
+      args {
+        call_value {
+          functionName: "Get Map Item (Conversation)"
+          args {
+            string_value: "5373f0d2643431b8017c3da5"
+          }
+        }
       }
       args {
-        float_value: 0
+        call_value {
+          functionName: "Get Map Item (Actor)"
+          args {
+            string_value: "5373f0b4643431b8017c3da4"
+          }
+        }
       }
       args {
-        float_value: 0
-      }
-      args {
-        float_value: 3
-      }
-      args {
-        float_value: 3
-      }
-      args {
-        float_value: 0
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
+          }
+        }
       }
     }
   }
   isActive: true
   idRef {
-    id: "5374ee526434316b133335eb"
+    id: "537ac004366236b00500152f"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
+triggers {
+  name: "Done Talking to Bullion"
+  events {
+    ops {
+      functionName: "On Conversation Complete"
+    }
+  }
+  conditions {
+    ops {
+      functionName: "Comparison (int)"
+      args {
+        call_value {
+          functionName: "Get Variable (int)"
+          args {
+            string_value: "bullionTalkState"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "Comparison Ops"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        int_value: 1
+      }
+    }
+  }
+  actions {
+    ops {
+      functionName: "Order Actor to Move To (Region)"
+      args {
+        call_value {
+          functionName: "All Actors With Tag"
+          args {
+            call_value {
+              functionName: "Get Map Item (SenseTagList)"
+              args {
+                string_value: "isExiter"
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Preset Value (int)"
+              args {
+                string_value: "AllOrAny"
+              }
+              args {
+                int_value: 0
+              }
+            }
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (Region)"
+          args {
+            string_value: "5373ec53643431b8017c3da1"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "FacingDirection"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Variable (int)"
+          args {
+            string_value: "bullionTalkState"
+          }
+        }
+      }
+      args {
+        int_value: 2
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "537ac3c1366236b0050016a5"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
+triggers {
+  name: "Dead Men Tell No Tales"
+  events {
+    ops {
+      functionName: "On Actor Death"
+    }
+  }
+  conditions {
+    ops {
+      functionName: "Comparison (Actor)"
+      args {
+        call_value {
+          functionName: "Triggering Target Actor"
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (Actor)"
+          args {
+            string_value: "5373f0b4643431b8017c3da4"
+          }
+        }
+      }
+    }
+  }
+  actions {
+    ops {
+      functionName: "Enable/Disable Interactable Object"
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "EnableOrDisable"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (InteractableObject)"
+          args {
+            string_value: "5373f0b4643431b8017c3da4"
+          }
+        }
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "537ac833366236b0050018e5"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
+triggers {
+  name: "Post Wave 2 Chat with Elorn"
+  events {
+  }
+  conditions {
+    ops {
+      functionName: "Evaluate If Actor is Inside Region"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Actor)"
+              args {
+                string_value: "5373e940643431b8017c3d58"
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "AreOrAreNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (Region)"
+          args {
+            string_value: "5366874d3662362409008236"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Compare Actor Team"
+      args {
+        call_value {
+          functionName: "Get Map Item (Actor)"
+          args {
+            string_value: "5373e940643431b8017c3d58"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SceneDimension)"
+          args {
+            string_value: "Default"
+          }
+        }
+      }
+    }
+  }
+  actions {
+    ops {
+      functionName: "Start Conversation"
+      args {
+        call_value {
+          functionName: "Get Map Item (Conversation)"
+          args {
+            string_value: "537123a0643431b120cd3d1d"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (Actor)"
+          args {
+            string_value: "5373e940643431b8017c3d58"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "537acd4d366236b005001a11"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
+triggers {
+  name: "Stop Explosions"
+  events {
+    ops {
+      functionName: "Get Map Item (Event)"
+      args {
+        string_value: "Stop Explosions"
+      }
+    }
+  }
+  conditions {
+  }
+  actions {
+    ops {
+      functionName: "Stop Sound"
+      args {
+        call_value {
+          functionName: "Get Map Item (Sound)"
+          args {
+            string_value: "weapons"
+          }
+          args {
+            string_value: "GrenadeFrag"
+          }
+        }
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "537ad0df366236b005001aeb"
   }
   elseActions {
   }
@@ -3167,54 +3938,10 @@ regions {
   loop_default_music: false
 }
 regions {
-  name: "Ruined Bridge"
-  position {
-    x: -2
-    y: 4
-    width: 4
-    height: 1
-  }
-  enabledAtStart: true
-  is_camera_region: false
-  idRef {
-    id: "5374e3b3643431d710c329fd"
-  }
-  highlight_color {
-    r: 0
-    g: 0
-    b: 0
-    a: 1
-  }
-  visible_at_start: false
-  is_teleporter_region: false
-  directional_light_dir {
-    x: -0.5
-    y: -1
-    z: -0.75
-  }
-  directional_light_color {
-    r: 0.50196081
-    g: 0.50196081
-    b: 0.50196081
-    a: 1
-  }
-  ambient_light_color {
-    r: 0.50196081
-    g: 0.50196081
-    b: 0.50196081
-    a: 1
-  }
-  ambience_template: ""
-  combat_music: ""
-  default_music: ""
-  loop_combat_music: true
-  loop_default_music: false
-}
-regions {
   name: "Wave 2a spawn point"
   position {
     x: -2
-    y: 1
+    y: -3
     width: 4
     height: 2
   }
@@ -3302,7 +4029,7 @@ regions {
   name: "Tabitha Spawn Point"
   position {
     x: -2
-    y: 2
+    y: -2
     width: 1
     height: 1
   }
@@ -3345,8 +4072,8 @@ regions {
 regions {
   name: "Block Movement 1"
   position {
-    x: -61
-    y: -6
+    x: -2
+    y: 1
     width: 1
     height: 1
   }
@@ -3389,8 +4116,8 @@ regions {
 regions {
   name: "Block Movement 2"
   position {
-    x: -59
-    y: -5
+    x: -1
+    y: 1
     width: 1
     height: 1
   }
@@ -3433,8 +4160,8 @@ regions {
 regions {
   name: "Block Movement 3"
   position {
-    x: -57
-    y: -5
+    x: 0
+    y: 1
     width: 1
     height: 1
   }
@@ -3477,8 +4204,8 @@ regions {
 regions {
   name: "Block Movement 4"
   position {
-    x: -54
-    y: -4
+    x: 1
+    y: 1
     width: 1
     height: 1
   }
@@ -3567,7 +4294,7 @@ characters {
   gridPoint {
     x: -1
     y: 0
-    z: 51
+    z: 52
   }
   orientation: ORIENTATION_W
   displayName: "PC0"
@@ -3601,8 +4328,8 @@ characters {
     isEnabled: true
     interactionRadius: 1
     conversationPoint {
-      conversationID: "532f0ce0366236840d003d6f"
-      turnToFace: false
+      conversationID: "537123e6643431b120cd3d2e"
+      turnToFace: true
     }
   }
   lod: 0
@@ -3722,7 +4449,7 @@ characters {
   gridPoint {
     x: -2
     y: 0
-    z: 5
+    z: 1
   }
   orientation: ORIENTATION_S
   GeneralTags: "isExplosiveBarrel"
@@ -3768,7 +4495,7 @@ characters {
   gridPoint {
     x: 1
     y: 0
-    z: 7
+    z: 3
   }
   orientation: ORIENTATION_S
   GeneralTags: "isExplosiveBarrel"
@@ -3818,7 +4545,7 @@ characters {
   }
   orientation: ORIENTATION_E
   GeneralTags: "isElorn"
-  GeneralTags: "isWanderer"
+  GeneralTags: ""
   displayName: "Elorn"
   idRef {
     id: "5373e940643431b8017c3d58"
@@ -3826,29 +4553,13 @@ characters {
   interactionRoot {
     isEnabled: true
     interactionRadius: 1
-    prerequisites {
-      ops {
-        functionName: "Invert Bool"
-        args {
-          call_value {
-            functionName: "Get Variable (bool)"
-            args {
-              string_value: "talkedToElorn"
-            }
-          }
-        }
-      }
-    }
-    conversationPoint {
-      conversationID: "536cfa7b6434312f056397bd"
-      turnToFace: true
-    }
+    interactionIcon: InteractionIcon_Generic
   }
   lod: 0
   character_instance {
     prefab_name: "Seattle:Gangers/ElfMaleGangerDreads"
     character_sheet_id: "a3_crew_elorn_lv2"
-    equipment_sheet_id: "a3_crew_elorn_lv4"
+    equipment_sheet_id: "a3_crew_elorn_lv2"
     character_mod {
       stats {
         body: 0
@@ -3910,7 +4621,7 @@ characters {
     team_id: "Civilians"
     char_name: "Elorn"
     GeneralTags: "isElorn"
-    GeneralTags: "isWanderer"
+    GeneralTags: ""
     pc_spawn_number: -1
     hiring_type: HiringType_Hireable
     portrait {
@@ -3920,6 +4631,7 @@ characters {
     portrait_code_override: "s1h1c4b0t0"
     karma: 4
     hiring_cost_override: 0
+    scale_character_sheet: true
     id: "a3_crew_elorn_lv4"
   }
 }
@@ -4011,8 +4723,22 @@ characters {
   }
   lod: 0
   character_instance {
+    prefab_name: "Seattle:Security/HumanMaleSecurity"
+    character_sheet_id: "BaseCivilian"
     character_mod {
       stats {
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        magic: 0
+        hp: 0
+        ap: 0
+        armor: 0
+        force: 0
         morale: 0
         discipline: 0
         awareness: 0
@@ -4022,15 +4748,47 @@ characters {
         move_speed: 0
       }
       skills {
+        ranged_combat: 0
+        close_combat: 0
+        throwing_weapons: 0
+        spellcasting: 0
+        decking: 0
+        conjuring: 0
+        spirit_summoning: 0
+        drone_control: 0
+        biotech: 0
+        dodge: 0
+        etiquette_corporate: 0
+        etiquette_security: 0
+        etiquette_gang: 0
+        etiquette_socialite: 0
+        chi_casting: 0
+        etiquette_shadowrunner: 0
+        etiquette_street: 0
+        etiquette_academic: 0
       }
       specializations {
+        pistol: 0
+        rifle: 0
+        shotgun: 0
+        smg: 0
+        edged: 0
+        unarmed: 0
+        spirit_control: 0
+        esp_control: 0
+        drone_combat: 0
       }
+      attitude: AttitudeAggressive
       vulnerabilities {
       }
     }
     team_id: "Civilians"
     char_name: "Redding Guard"
     pc_spawn_number: -1
+    portrait {
+      filename: "generic_humanmale_rent-a-cop"
+    }
+    karma: 6
     persistent_body: true
   }
 }
@@ -4208,12 +4966,30 @@ variables {
     typeName: "bool"
   }
 }
+variables {
+  int_value: 0
+  variableref_value {
+    scope: TsVariableScope_Scene
+    name: "bullionTalkState"
+    typeName: "int"
+  }
+}
+variables {
+  int_value: 0
+  variableref_value {
+    scope: TsVariableScope_Scene
+    name: "tabithaCastingState"
+    typeName: "int"
+  }
+}
 mapEvents: "Finishes Restoring Dam"
+mapEvents: "Stop Explosions"
 senseTags: "isHostile"
 senseTags: "isWave1"
 senseTags: "isWave2a"
 senseTags: "isWave2b"
 senseTags: "isWave3"
+senseTags: "isDorbi"
 goals {
   name: "Return to Redding"
   type: GoalType_Primary

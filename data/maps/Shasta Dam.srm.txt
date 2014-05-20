@@ -9512,7 +9512,7 @@ props {
   gridPoint {
     x: -1
     y: 0
-    z: 4
+    z: 0
   }
   orientation: ORIENTATION_S
   GeneralTags: "isBridgeDestructionProp"
@@ -9536,9 +9536,13 @@ props {
   gridPoint {
     x: -2
     y: 0
-    z: 4
+    z: 1
   }
   orientation: ORIENTATION_S
+  GeneralTags: "isBridgeDestructionProp"
+  idRef {
+    id: "537ac0ff366236b005001530"
+  }
   lod: 0
 }
 props {
@@ -9546,12 +9550,16 @@ props {
   gridPoint {
     x: 0
     y: 0
-    z: 5
+    z: 1
   }
   orientation: ORIENTATION_S
   properties {
     property_id: "fxScript"
     string_value: "Berlin:EnvironmentSmokeyFire"
+  }
+  GeneralTags: "isBridgeDestructionProp"
+  idRef {
+    id: "537ac114366236b005001531"
   }
   lod: 0
 }
@@ -13000,6 +13008,84 @@ props {
   GeneralTags: "matrixBlockDeckerToLock"
   idRef {
     id: "537a2e176434313b4381ea62"
+  }
+  lod: 0
+}
+props {
+  name: "haven_groundDecoration_damagedGround01"
+  gridPoint {
+    x: -3
+    y: 0
+    z: 2
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "isBridgeDestructionProp"
+  idRef {
+    id: "537ac118366236b005001532"
+  }
+  lod: 0
+}
+props {
+  name: "haven_groundDecoration_damagedGround01"
+  gridPoint {
+    x: -3
+    y: 0
+    z: 0
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "isBridgeDestructionProp"
+  idRef {
+    id: "537ac120366236b005001533"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_smokeyFire"
+  gridPoint {
+    x: -1
+    y: 0
+    z: 3
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "Berlin:EnvironmentSmokeyFire"
+  }
+  GeneralTags: "isBridgeDestructionProp"
+  idRef {
+    id: "537ac127366236b005001534"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_smokeyFire"
+  gridPoint {
+    x: -2
+    y: 0
+    z: 1
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "Berlin:EnvironmentSmokeyFire"
+  }
+  GeneralTags: "isBridgeDestructionProp"
+  idRef {
+    id: "537ac129366236b005001535"
+  }
+  lod: 0
+}
+props {
+  name: "haven_groundDecoration_damagedGround01"
+  gridPoint {
+    x: 0
+    y: 0
+    z: 2
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "isBridgeDestructionProp"
+  idRef {
+    id: "537ac137366236b005001536"
   }
   lod: 0
 }

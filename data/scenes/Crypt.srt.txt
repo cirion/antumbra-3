@@ -6758,9 +6758,9 @@ regions {
   name: "Camera"
   position {
     x: -56
-    y: -73
+    y: -71
     width: 71
-    height: 67
+    height: 66
   }
   enabledAtStart: true
   is_camera_region: true
@@ -6999,7 +6999,7 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -39
+    x: -38
     y: 0
     z: -74
   }

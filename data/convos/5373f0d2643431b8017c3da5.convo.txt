@@ -7,7 +7,7 @@ nodes {
     id: "5373f0d8643431b8017c3dab"
   }
   index: 0
-  text: "$(l.sir)! I\'m pleased to see you here! But, please, keep your distance.\n\nI just arrived on the scene, and saw that those Native Californians have wired up the dam with IEDs. There\'s a bunch of tripwires right ahead, and a lot more explosives past it.\n\nThere\'s no way around, though, and it sounds like they\'re up to something ugly on the far end."
+  text: "$+(l.sir)! I\'m pleased to see you here! But, please, keep your distance.\n\nI just arrived on the scene, and saw that those Native Californians have wired up the dam with IEDs. There\'s a bunch of tripwires right ahead, and a lot more explosives past it.\n\nThere\'s no way around, though, and it sounds like they\'re up to something ugly on the far end."
   branches {
     responseText: ""
     nextNodeIndex: 1
@@ -100,12 +100,52 @@ nodes {
     auxiliaryLink: true
   }
   branches {
-    responseText: "{{CC}}Charisma: 6{{/CC}} Come on, this is a once-in-a-lifetime opportunity to be a hero! Get out there and take care of those bombs! Who wants to life forever, eh?"
+    responseText: "{{CC}}Charisma: 6{{/CC}} Come on, this is a once-in-a-lifetime opportunity to be a hero! Get out there and take care of those bombs! Who wants to live forever, eh?"
     nextNodeIndex: 5
   }
   branches {
     responseText: "Do I have any volunteers on my team?"
+    conditions {
+      ops {
+        functionName: "Evaluate If Actor is Inside Region"
+        args {
+          call_value {
+            functionName: "Specific Actor"
+            args {
+              call_value {
+                functionName: "Get Map Item (Player)"
+                args {
+                  int_value: 1
+                }
+              }
+            }
+            args {
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "AreOrAreNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Map Item (Region)"
+            args {
+              string_value: "5366874d3662362409008236"
+            }
+          }
+        }
+      }
+    }
     nextNodeIndex: 8
+    hideIfUnavailable: true
   }
   branches {
     responseText: "Looks like I\'ll need to risk it."
@@ -119,6 +159,11 @@ nodes {
   }
   index: 2
   text: "I\'m sorry, $(l.sir), but I cannot. And we don\'t have enough time to call in a demolitions expert."
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
   nodeType: ConversationNodeType_Simple
 }
 nodes {
