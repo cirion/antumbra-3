@@ -1,7 +1,7 @@
 minX: -138
 minZ: 19
-numX: 148
-numZ: 139
+numX: 164
+numZ: 147
 props {
   name: "diveBar_floor_wood05"
   gridPoint {
@@ -19458,7 +19458,7 @@ props {
   gridPoint {
     x: -99
     y: 0
-    z: 124
+    z: 128
   }
   orientation: ORIENTATION_S
   idRef {
@@ -19503,7 +19503,7 @@ props {
       }
     }
     jackPoint {
-      LANIdentifier: ""
+      LANIdentifier: "537ca81a366236a415005f61"
       LANEquipment: ""
     }
   }
@@ -23744,62 +23744,6 @@ props {
   lod: 0
 }
 props {
-  name: "diveBar_furniture_barFront01"
-  gridPoint {
-    x: -99
-    y: 0
-    z: 124
-  }
-  orientation: ORIENTATION_S
-  idRef {
-    id: "537537126434316b13333657"
-  }
-  interactionRoot {
-    isEnabled: true
-    interactionRadius: 1
-    prerequisites {
-      ops {
-        functionName: "Comparison (bool)"
-        args {
-          call_value {
-            functionName: "Get Variable (bool)"
-            args {
-              string_value: "isHackingAvailable"
-            }
-          }
-        }
-        args {
-          call_value {
-            functionName: "Get Preset Value (int)"
-            args {
-              string_value: "IsOrIsNot"
-            }
-            args {
-              int_value: 1
-            }
-          }
-        }
-        args {
-          call_value {
-            functionName: "Get Preset Value (int)"
-            args {
-              string_value: "bool"
-            }
-            args {
-              int_value: 1
-            }
-          }
-        }
-      }
-    }
-    jackPoint {
-      LANIdentifier: ""
-      LANEquipment: ""
-    }
-  }
-  lod: 0
-}
-props {
   name: "diveBar_furniture_barStool01"
   gridPoint {
     x: -101
@@ -23835,6 +23779,1082 @@ props {
   orientation: ORIENTATION_N
   idRef {
     id: "537c29b936623648170076f3"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4bluecorner"
+  gridPoint {
+    x: -12
+    y: 0
+    z: 93
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4blueedge"
+  gridPoint {
+    x: -6
+    y: 0
+    z: 97
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4blueelbow"
+  gridPoint {
+    x: -3
+    y: 0
+    z: 103
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4bluehole"
+  gridPoint {
+    x: 3
+    y: 0
+    z: 103
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4blueisland"
+  gridPoint {
+    x: 5
+    y: 0
+    z: 110
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4bluenotch"
+  gridPoint {
+    x: 12
+    y: 0
+    z: 109
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4opengrid"
+  gridPoint {
+    x: 13
+    y: 0
+    z: 115
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4var1"
+  gridPoint {
+    x: -20
+    y: 0
+    z: 105
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4var2"
+  gridPoint {
+    x: -14
+    y: 0
+    z: 106
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4var2a"
+  gridPoint {
+    x: -14
+    y: 0
+    z: 112
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4var3"
+  gridPoint {
+    x: -7
+    y: 0
+    z: 112
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4var3a"
+  gridPoint {
+    x: -7
+    y: 0
+    z: 118
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4var3b"
+  gridPoint {
+    x: -1
+    y: 0
+    z: 118
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4var4"
+  gridPoint {
+    x: 0
+    y: 0
+    z: 125
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4var4a"
+  gridPoint {
+    x: 6
+    y: 0
+    z: 123
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4var5"
+  gridPoint {
+    x: 8
+    y: 0
+    z: 130
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4var6"
+  gridPoint {
+    x: 14
+    y: 0
+    z: 127
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4var7"
+  gridPoint {
+    x: 14
+    y: 0
+    z: 135
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4var8"
+  gridPoint {
+    x: 21
+    y: 0
+    z: 132
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "matrix_floor_blueplatform"
+  gridPoint {
+    x: -23
+    y: 0
+    z: 92
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "matrix_floor_datacontrol"
+  gridPoint {
+    x: -30
+    y: 0
+    z: 99
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "matrix_floor_entranceexit"
+  gridPoint {
+    x: 16
+    y: 0
+    z: 149
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "matrix_floor_switchcontrol"
+  gridPoint {
+    x: -27
+    y: 0
+    z: 108
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4var4"
+  gridPoint {
+    x: 12
+    y: 0
+    z: 149
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "537ca6ac366236a415005f33"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4var5"
+  gridPoint {
+    x: 8
+    y: 0
+    z: 149
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "537ca6b5366236a415005f34"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4bluenotch"
+  gridPoint {
+    x: 4
+    y: 0
+    z: 149
+  }
+  orientation: ORIENTATION_N
+  idRef {
+    id: "537ca6b9366236a415005f35"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4var7"
+  gridPoint {
+    x: 8
+    y: 0
+    z: 153
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "537ca6cb366236a415005f38"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4var3b"
+  gridPoint {
+    x: 8
+    y: 0
+    z: 145
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "537ca6cf366236a415005f39"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4var3"
+  gridPoint {
+    x: 4
+    y: 0
+    z: 145
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "537ca6d2366236a415005f3a"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4var3"
+  gridPoint {
+    x: 4
+    y: 0
+    z: 153
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "537ca6d5366236a415005f3b"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4bluenotch"
+  gridPoint {
+    x: 0
+    y: 0
+    z: 149
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "537ca6d9366236a415005f3d"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4var8"
+  gridPoint {
+    x: 0
+    y: 0
+    z: 145
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "537ca6df366236a415005f3e"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4var6"
+  gridPoint {
+    x: 0
+    y: 0
+    z: 153
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "537ca6e6366236a415005f3f"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4var7"
+  gridPoint {
+    x: -4
+    y: 0
+    z: 145
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "537ca6e8366236a415005f40"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4var2a"
+  gridPoint {
+    x: -4
+    y: 0
+    z: 153
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "537ca6ec366236a415005f41"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4var1"
+  gridPoint {
+    x: -4
+    y: 0
+    z: 149
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "537ca6ee366236a415005f42"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4var4"
+  gridPoint {
+    x: -8
+    y: 0
+    z: 149
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "537ca6f4366236a415005f43"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4var3b"
+  gridPoint {
+    x: -12
+    y: 0
+    z: 149
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "537ca6f7366236a415005f44"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4var3b"
+  gridPoint {
+    x: -24
+    y: 0
+    z: 149
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "537ca705366236a415005f45"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_blueplatform"
+  gridPoint {
+    x: -9
+    y: 0
+    z: 133
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "537ca717366236a415005f46"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_blueplatform"
+  gridPoint {
+    x: 8
+    y: 0
+    z: 161
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "537ca71a366236a415005f47"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4var5"
+  gridPoint {
+    x: -40
+    y: 0
+    z: 149
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "537ca721366236a415005f48"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4var3"
+  gridPoint {
+    x: -28
+    y: 0
+    z: 145
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "537ca724366236a415005f49"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4var8"
+  gridPoint {
+    x: -28
+    y: 0
+    z: 153
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "537ca72b366236a415005f4a"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4var3b"
+  gridPoint {
+    x: -32
+    y: 0
+    z: 145
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "537ca733366236a415005f4b"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4var2a"
+  gridPoint {
+    x: -32
+    y: 0
+    z: 149
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "537ca736366236a415005f4c"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4var6"
+  gridPoint {
+    x: -32
+    y: 0
+    z: 153
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "537ca73d366236a415005f4d"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_switchcontrol"
+  gridPoint {
+    x: -32
+    y: 0
+    z: 141
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "537ca747366236a415005f4f"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_switchcontrol"
+  gridPoint {
+    x: -32
+    y: 0
+    z: 157
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "537ca748366236a415005f50"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4var3b"
+  gridPoint {
+    x: -36
+    y: 0
+    z: 153
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "537ca74f366236a415005f51"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4var1"
+  gridPoint {
+    x: -36
+    y: 0
+    z: 149
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "537ca752366236a415005f52"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4var2"
+  gridPoint {
+    x: -36
+    y: 0
+    z: 145
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "537ca758366236a415005f53"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4var2a"
+  gridPoint {
+    x: -40
+    y: 0
+    z: 145
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "537ca75d366236a415005f54"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_switchcontrol"
+  gridPoint {
+    x: -40
+    y: 0
+    z: 141
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "537ca765366236a415005f56"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4var3a"
+  gridPoint {
+    x: -28
+    y: 0
+    z: 149
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "537ca783366236a415005f57"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4var2"
+  gridPoint {
+    x: -40
+    y: 0
+    z: 153
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "537ca78b366236a415005f58"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_switchcontrol"
+  gridPoint {
+    x: -40
+    y: 0
+    z: 157
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "537ca78f366236a415005f59"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4var3b"
+  gridPoint {
+    x: -55
+    y: 0
+    z: 149
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "537ca79a366236a415005f5a"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_blueplatform"
+  gridPoint {
+    x: -44
+    y: 0
+    z: 147
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "invisibleFloor"
+  displayName: "Bridge 1"
+  idRef {
+    id: "537ca7b5366236a415005f5c"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    dummyInteraciton {
+    }
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_blueplatform"
+  gridPoint {
+    x: -46
+    y: 0
+    z: 151
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "invisibleFloor"
+  displayName: "Bridge 2"
+  idRef {
+    id: "537ca7b6366236a415005f5d"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    dummyInteraciton {
+    }
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_blueplatform"
+  gridPoint {
+    x: -49
+    y: 0
+    z: 147
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "invisibleFloor"
+  displayName: "Bridge 3"
+  idRef {
+    id: "537ca7b8366236a415005f5e"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    dummyInteraciton {
+    }
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_blueplatform"
+  gridPoint {
+    x: -51
+    y: 0
+    z: 151
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "invisibleFloor"
+  displayName: "Bridge 4"
+  idRef {
+    id: "537ca7be366236a415005f5f"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    dummyInteraciton {
+    }
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_matrixentranceexit"
+  gridPoint {
+    x: -23
+    y: 0
+    z: 150
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "MatrixPortalEnvironment"
+  }
+  idRef {
+    id: "537ca81a366236a415005f61"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    matrixSpawnPoint {
+      dimension: "Matrix"
+    }
+  }
+  lod: 0
+}
+props {
+  name: "matrix_tech_switchcontrol"
+  gridPoint {
+    x: -31
+    y: 0
+    z: 142
+  }
+  orientation: ORIENTATION_S
+  displayName: "matrix switch control 1"
+  idRef {
+    id: "537ca833366236a415005f62"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    matrixNode {
+      prerequisites_control_state: true
+      constant_matrix_fx: "matrixcontrolnode"
+      state_change_offline_fx: ""
+      state_change_offline_sound: ""
+      state_change_offline_sound_volume: 1
+      state_change_hackable_fx: "MatrixControlNodeHacked"
+      state_change_hackable_sound: "MatrixNodeHackReady"
+      state_change_hackable_sound_volume: 1
+      state_change_locked_fx: ""
+      state_change_locked_sound: ""
+      state_change_locked_sound_volume: 1
+      state_change_hacked_fx: ""
+      state_change_hacked_sound: ""
+      state_change_hacked_sound_volume: 1
+    }
+  }
+  lod: 0
+}
+props {
+  name: "matrix_tech_switchcontrol"
+  gridPoint {
+    x: -39
+    y: 0
+    z: 142
+  }
+  orientation: ORIENTATION_S
+  displayName: "matrix switch control 3"
+  idRef {
+    id: "537ca834366236a415005f63"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_tech_switchcontrol"
+  gridPoint {
+    x: -39
+    y: 0
+    z: 158
+  }
+  orientation: ORIENTATION_S
+  displayName: "matrix switch control 4"
+  idRef {
+    id: "537ca836366236a415005f64"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_tech_switchcontrol"
+  gridPoint {
+    x: -31
+    y: 0
+    z: 158
+  }
+  orientation: ORIENTATION_S
+  displayName: "matrix switch control 2"
+  idRef {
+    id: "537ca837366236a415005f65"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    matrixNode {
+      prerequisites_control_state: true
+      constant_matrix_fx: "matrixcontrolnode"
+      state_change_offline_fx: ""
+      state_change_offline_sound: ""
+      state_change_offline_sound_volume: 1
+      state_change_hackable_fx: "MatrixControlNodeHacked"
+      state_change_hackable_sound: "MatrixNodeHackReady"
+      state_change_hackable_sound_volume: 1
+      state_change_locked_fx: ""
+      state_change_locked_sound: ""
+      state_change_locked_sound_volume: 1
+      state_change_hacked_fx: ""
+      state_change_hacked_sound: ""
+      state_change_hacked_sound_volume: 1
+    }
+  }
+  lod: 0
+}
+props {
+  name: "matrix_tech_doorcontrol"
+  gridPoint {
+    x: -22
+    y: 0
+    z: 157
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "system_invisible_blockMove"
+  gridPoint {
+    x: -41
+    y: 0
+    z: 147
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "bridge1Block"
+  idRef {
+    id: "537caf02366236c8170000ac"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_blockMove"
+  gridPoint {
+    x: -41
+    y: 0
+    z: 148
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "bridge1Block"
+  idRef {
+    id: "537caee9366236c8170000a9"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_blockMove"
+  gridPoint {
+    x: -41
+    y: 0
+    z: 149
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "bridge1Block"
+  idRef {
+    id: "537caeeb366236c8170000aa"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_blockMove"
+  gridPoint {
+    x: -41
+    y: 0
+    z: 150
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "bridge1Block"
+  displayName: "Invisible Prop- Block Movement"
+  idRef {
+    id: "537caeec366236c8170000ab"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_blockMove"
+  gridPoint {
+    x: -43
+    y: 0
+    z: 151
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "bridge2Block"
+  displayName: "Invisible Prop- Block Movement"
+  idRef {
+    id: "537caf03366236c8170000ad"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_blockMove"
+  gridPoint {
+    x: -44
+    y: 0
+    z: 151
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "bridge2Block"
+  displayName: "Invisible Prop- Block Movement"
+  idRef {
+    id: "537caf04366236c8170000ae"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_blockMove"
+  gridPoint {
+    x: -45
+    y: 0
+    z: 151
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "bridge2Block"
+  displayName: "Invisible Prop- Block Movement"
+  idRef {
+    id: "537caf05366236c8170000af"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_blockMove"
+  gridPoint {
+    x: -46
+    y: 0
+    z: 150
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "bridge3Block"
+  displayName: "Invisible Prop- Block Movement"
+  idRef {
+    id: "537caf10366236c8170000b0"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_blockMove"
+  gridPoint {
+    x: -47
+    y: 0
+    z: 150
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "bridge3Block"
+  displayName: "Invisible Prop- Block Movement"
+  idRef {
+    id: "537caf16366236c8170000b1"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_blockMove"
+  gridPoint {
+    x: -48
+    y: 0
+    z: 151
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "bridge4Block"
+  displayName: "Invisible Prop- Block Movement"
+  idRef {
+    id: "537caf1b366236c8170000b2"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_blockMove"
+  gridPoint {
+    x: -49
+    y: 0
+    z: 151
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "bridge4Block"
+  displayName: "Invisible Prop- Block Movement"
+  idRef {
+    id: "537caf20366236c8170000b3"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_blockMove"
+  gridPoint {
+    x: -50
+    y: 0
+    z: 151
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "bridge4Block"
+  displayName: "Invisible Prop- Block Movement"
+  idRef {
+    id: "537caf22366236c8170000b4"
   }
   lod: 0
 }

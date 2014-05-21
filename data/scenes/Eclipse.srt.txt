@@ -30,6 +30,47 @@ triggers {
         }
       }
     }
+    ops {
+      functionName: "Set Prop Visible by Tag"
+      args {
+        call_value {
+          functionName: "Get Map Item (SenseTagList)"
+          args {
+            string_value: "invisibleFloor"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        float_value: -1
+      }
+      args {
+        call_value {
+          functionName: "Everywhere"
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "DoesOrDoesNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
   }
   isActive: true
   idRef {
@@ -3529,6 +3570,208 @@ triggers {
   }
   is_oneshot: true
 }
+triggers {
+  name: "Hack Bridge 1"
+  events {
+    ops {
+      functionName: "On Item Interaction"
+      args {
+        call_value {
+          functionName: "Get Map Item (InteractableObject)"
+          args {
+            string_value: "537ca833366236a415005f62"
+          }
+        }
+      }
+    }
+  }
+  conditions {
+  }
+  actions {
+    ops {
+      functionName: "Enable/Disable Interactable Object"
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "EnableOrDisable"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (InteractableObject)"
+          args {
+            string_value: "537ca833366236a415005f62"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Prop Visible"
+      args {
+        call_value {
+          functionName: "Get Map Item (Prop)"
+          args {
+            string_value: "537ca7b5366236a415005f5c"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "DoesOrDoesNot"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Delete Props by Tag"
+      args {
+        call_value {
+          functionName: "Get Map Item (SenseTagList)"
+          args {
+            string_value: "bridge1Block"
+          }
+        }
+      }
+      args {
+        float_value: -1
+      }
+      args {
+        call_value {
+          functionName: "Everywhere"
+        }
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "537cad96366236c81700009f"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
+triggers {
+  name: "Hack Bridge 2"
+  events {
+    ops {
+      functionName: "On Item Interaction"
+      args {
+        call_value {
+          functionName: "Get Map Item (InteractableObject)"
+          args {
+            string_value: "537ca837366236a415005f65"
+          }
+        }
+      }
+    }
+  }
+  conditions {
+  }
+  actions {
+    ops {
+      functionName: "Enable/Disable Interactable Object"
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "EnableOrDisable"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (InteractableObject)"
+          args {
+            string_value: "537ca837366236a415005f65"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Prop Visible"
+      args {
+        call_value {
+          functionName: "Get Map Item (Prop)"
+          args {
+            string_value: "537ca7b6366236a415005f5d"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "DoesOrDoesNot"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Delete Props by Tag"
+      args {
+        call_value {
+          functionName: "Get Map Item (SenseTagList)"
+          args {
+            string_value: "bridge2Block"
+          }
+        }
+      }
+      args {
+        float_value: -1
+      }
+      args {
+        call_value {
+          functionName: "Everywhere"
+        }
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "537cae33366236c8170000a8"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
 regions {
   name: "Camera 1st Floor"
   position {
@@ -3849,6 +4092,50 @@ regions {
   is_camera_region: false
   idRef {
     id: "537535796434316b13333652"
+  }
+  highlight_color {
+    r: 0
+    g: 0
+    b: 0
+    a: 1
+  }
+  visible_at_start: false
+  is_teleporter_region: false
+  directional_light_dir {
+    x: -0.5
+    y: -1
+    z: -0.75
+  }
+  directional_light_color {
+    r: 0.50196081
+    g: 0.50196081
+    b: 0.50196081
+    a: 1
+  }
+  ambient_light_color {
+    r: 0.50196081
+    g: 0.50196081
+    b: 0.50196081
+    a: 1
+  }
+  ambience_template: ""
+  combat_music: ""
+  default_music: ""
+  loop_combat_music: true
+  loop_default_music: false
+}
+regions {
+  name: "Matrix Camera"
+  position {
+    x: -59
+    y: 121
+    width: 83
+    height: 56
+  }
+  enabledAtStart: true
+  is_camera_region: true
+  idRef {
+    id: "537ca988366236a415005f6a"
   }
   highlight_color {
     r: 0
@@ -4723,46 +5010,14 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -4
+    x: -109
     y: 0
-    z: 24
+    z: 123
   }
   orientation: ORIENTATION_E
   displayName: "Hailey"
   idRef {
     id: "537c251736623648170076c5"
-  }
-  interactionRoot {
-    isEnabled: true
-    interactionRadius: 1
-    prerequisites {
-      ops {
-        functionName: "Comparison (int)"
-        args {
-          call_value {
-            functionName: "Get Variable (int)"
-            args {
-              string_value: "johnsonState"
-            }
-          }
-        }
-        args {
-          call_value {
-            functionName: "Get Preset Value (int)"
-            args {
-              string_value: "Comparison Ops"
-            }
-            args {
-              int_value: 0
-            }
-          }
-        }
-        args {
-          int_value: 1
-        }
-      }
-    }
-    interactionIcon: InteractionIcon_Conversation
   }
   lod: 0
   character_instance {
@@ -4847,9 +5102,9 @@ characters {
 characters {
   name: "system_spawner_playerSpawner"
   gridPoint {
-    x: -6
+    x: -110
     y: 0
-    z: 22
+    z: 121
   }
   orientation: ORIENTATION_E
   idRef {
@@ -5057,6 +5312,11 @@ team_affiliations {
 }
 scene_dimensions {
   dimension_name: "Default"
+}
+scene_dimensions {
+  dimension_name: "Matrix"
+  initial_alarm_state: 20
+  turns_per_round: 3
 }
 character_roster {
 }
