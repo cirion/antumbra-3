@@ -13,29 +13,6 @@ nodes {
     nextNodeIndex: 1
   }
   nodeType: ConversationNodeType_Simple
-  actions {
-    ops {
-      functionName: "Add Camera Point of Interest (Actors)"
-      args {
-        call_value {
-          functionName: "Specific Actor"
-          args {
-            call_value {
-              functionName: "Get Map Item (Actor)"
-              args {
-                string_value: "5370f49e643431b120cd377f"
-              }
-            }
-          }
-          args {
-          }
-        }
-      }
-      args {
-        float_value: 0
-      }
-    }
-  }
 }
 nodes {
   idRef {
@@ -153,7 +130,7 @@ nodes {
   index: 7
   text: "If you survive. Farewell."
   branches {
-    responseText: ""
+    responseText: "{{GM}}Wait for Elorn to speak.{{/GM}}"
     conditions {
       ops {
         functionName: "Evaluate If Actor is Inside Region"
@@ -206,6 +183,54 @@ nodes {
   }
   branches {
     responseText: ""
+    conditions {
+      ops {
+        functionName: "Evaluate If Actor is Inside Region"
+        args {
+          call_value {
+            functionName: "All Actors With Tag"
+            args {
+              call_value {
+                functionName: "Tag From String"
+                args {
+                  string_value: "isElorn"
+                }
+              }
+            }
+            args {
+              call_value {
+                functionName: "Get Preset Value (int)"
+                args {
+                  string_value: "AllOrAny"
+                }
+                args {
+                  int_value: 1
+                }
+              }
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "AreOrAreNot"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Map Item (Region)"
+            args {
+              string_value: "53666daf3662362409007fa5"
+            }
+          }
+        }
+      }
+    }
     nextNodeIndex: 10
   }
   nodeType: ConversationNodeType_Simple
