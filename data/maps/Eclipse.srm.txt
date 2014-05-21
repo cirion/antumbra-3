@@ -5107,28 +5107,9 @@ props {
 props {
   name: "hive_storage_weaponCabinet"
   gridPoint {
-    x: -25
+    x: -20
     y: 0
     z: 47
-  }
-  orientation: ORIENTATION_E
-  displayName: "Stash"
-  idRef {
-    id: "522aaf3d366236681200365b"
-  }
-  interactionRoot {
-    isEnabled: true
-    interactionRadius: 1
-    interactionIcon: InteractionIcon_Generic
-  }
-  lod: 0
-}
-props {
-  name: "hive_storage_weaponCabinet"
-  gridPoint {
-    x: -25
-    y: 0
-    z: 51
   }
   orientation: ORIENTATION_N
   idRef {
@@ -5139,11 +5120,11 @@ props {
 props {
   name: "hive_storage_weaponCabinet"
   gridPoint {
-    x: -20
+    x: -25
     y: 0
-    z: 47
+    z: 51
   }
-  orientation: ORIENTATION_N
+  orientation: ORIENTATION_E
   idRef {
     id: "52192648366236e81c004af6"
   }
@@ -21041,30 +21022,6 @@ props {
   lod: 0
 }
 props {
-  name: "vfx_fx_dancingWoman"
-  gridPoint {
-    x: -57
-    y: 0
-    z: 87
-  }
-  orientation: ORIENTATION_S
-  properties {
-    property_id: "fxScript"
-    string_value: "DancingWomanBar"
-  }
-  GeneralTags: "stage 1"
-  idRef {
-    id: "52361d90366236601e002675"
-  }
-  interactionRoot {
-    isEnabled: true
-    interactionRadius: 1
-    dummyInteraciton {
-    }
-  }
-  lod: 0
-}
-props {
   name: "diveBar_clutter_tableSet01"
   gridPoint {
     x: -110
@@ -23368,29 +23325,6 @@ props {
   lod: 0
 }
 props {
-  name: "vfx_fx_dancingMan"
-  gridPoint {
-    x: -103
-    y: 0
-    z: 118
-  }
-  orientation: ORIENTATION_S
-  properties {
-    property_id: "fxScript"
-    string_value: "DancingManBar"
-  }
-  idRef {
-    id: "5236210e366236601e00267c"
-  }
-  interactionRoot {
-    isEnabled: true
-    interactionRadius: 1
-    dummyInteraciton {
-    }
-  }
-  lod: 0
-}
-props {
   name: "vfx_fx_fallingsparks"
   gridPoint {
     x: -58
@@ -23888,6 +23822,19 @@ props {
   orientation: ORIENTATION_S
   idRef {
     id: "5375371e6434316b13333659"
+  }
+  lod: 0
+}
+props {
+  name: "hive_storage_weaponCabinet"
+  gridPoint {
+    x: -25
+    y: 0
+    z: 47
+  }
+  orientation: ORIENTATION_N
+  idRef {
+    id: "537c29b936623648170076f3"
   }
   lod: 0
 }

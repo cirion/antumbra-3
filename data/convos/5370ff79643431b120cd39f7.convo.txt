@@ -95,6 +95,22 @@ nodes {
   index: 3
   text: "Thanks again, you\342\200\231re the best!"
   nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Set Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Variable (int)"
+          args {
+            string_value: "omphalosLeaveState"
+          }
+        }
+      }
+      args {
+        int_value: 1
+      }
+    }
+  }
 }
 roots {
   nextNodeIndex: 0
