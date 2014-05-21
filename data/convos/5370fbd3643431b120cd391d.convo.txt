@@ -101,7 +101,7 @@ nodes {
   index: 5
   text: ""
   branches {
-    responseText: ""
+    responseText: "{{GM}}Wait for Hailey to finish scanning the scene.{{/GM}}"
     conditions {
       ops {
         functionName: "Evaluate If Actor is Inside Region"
@@ -153,7 +153,55 @@ nodes {
     nextNodeIndex: 6
   }
   branches {
-    responseText: ""
+    responseText: "{{GM}}Wait for Hailey to finish speaking.{{/GM}}"
+    conditions {
+      ops {
+        functionName: "Evaluate If Actor is Inside Region"
+        args {
+          call_value {
+            functionName: "All Actors With Tag"
+            args {
+              call_value {
+                functionName: "Tag From String"
+                args {
+                  string_value: "isNorton"
+                }
+              }
+            }
+            args {
+              call_value {
+                functionName: "Get Preset Value (int)"
+                args {
+                  string_value: "AllOrAny"
+                }
+                args {
+                  int_value: 1
+                }
+              }
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "AreOrAreNot"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Map Item (Region)"
+            args {
+              string_value: "5370fcd3643431b120cd393f"
+            }
+          }
+        }
+      }
+    }
     nextNodeIndex: 9
   }
   nodeType: ConversationNodeType_Simple

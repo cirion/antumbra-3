@@ -8154,9 +8154,9 @@ props {
 props {
   name: "undergroundBase_floor_dirt01"
   gridPoint {
-    x: 12
+    x: -3
     y: 0
-    z: -11
+    z: -22
   }
   orientation: ORIENTATION_E
   idRef {
@@ -10788,19 +10788,6 @@ props {
   lod: 0
 }
 props {
-  name: "undergroundBase_wall_rockCorner02"
-  gridPoint {
-    x: -3
-    y: 0
-    z: 9
-  }
-  orientation: ORIENTATION_S
-  idRef {
-    id: "5378f24b3662369815005d6f"
-  }
-  lod: 0
-}
-props {
   name: "undergroundBase_wall_rockEdge01"
   gridPoint {
     x: -3
@@ -11460,58 +11447,6 @@ props {
   orientation: ORIENTATION_S
   idRef {
     id: "5378f39d3662369815005da2"
-  }
-  lod: 0
-}
-props {
-  name: "secretLab_wall_fill"
-  gridPoint {
-    x: 9
-    y: 0
-    z: 3
-  }
-  orientation: ORIENTATION_S
-  idRef {
-    id: "5378f3a33662369815005da3"
-  }
-  lod: 0
-}
-props {
-  name: "secretLab_wall_fill"
-  gridPoint {
-    x: 9
-    y: 0
-    z: 5
-  }
-  orientation: ORIENTATION_S
-  idRef {
-    id: "5378f3a33662369815005da4"
-  }
-  lod: 0
-}
-props {
-  name: "secretLab_wall_fill"
-  gridPoint {
-    x: 9
-    y: 0
-    z: 7
-  }
-  orientation: ORIENTATION_S
-  idRef {
-    id: "5378f3a33662369815005da5"
-  }
-  lod: 0
-}
-props {
-  name: "secretLab_wall_fill"
-  gridPoint {
-    x: 9
-    y: 0
-    z: 9
-  }
-  orientation: ORIENTATION_S
-  idRef {
-    id: "5378f3a33662369815005da6"
   }
   lod: 0
 }
@@ -16259,6 +16194,454 @@ props {
   orientation: ORIENTATION_S
   idRef {
     id: "537963d6366236981500659c"
+  }
+  lod: 0
+}
+props {
+  name: "hive_clutter_hugeRock01"
+  gridPoint {
+    x: 20
+    y: 0
+    z: 8
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "undergroundBase_clutter_rock01"
+  gridPoint {
+    x: 30
+    y: 0
+    z: 8
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "undergroundBase_clutter_rock02"
+  gridPoint {
+    x: 32
+    y: 0
+    z: 14
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "undergroundBase_clutter_rock03"
+  gridPoint {
+    x: 34
+    y: 0
+    z: 10
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "undergroundBase_clutter_rock04"
+  gridPoint {
+    x: 34
+    y: 0
+    z: 13
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "undergroundBase_clutter_rock05"
+  gridPoint {
+    x: 28
+    y: 0
+    z: 13
+  }
+  orientation: ORIENTATION_S
+  displayName: "Cloneable Rubble"
+  idRef {
+    id: "537bdd546434310a674f3263"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    dummyInteraciton {
+    }
+  }
+  lod: 0
+}
+props {
+  name: "undergroundBase_clutter_rock06"
+  gridPoint {
+    x: 37
+    y: 0
+    z: 15
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "undergroundBase_clutter_rock07"
+  gridPoint {
+    x: 41
+    y: 0
+    z: 19
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "undergroundBase_clutter_rock08"
+  gridPoint {
+    x: 36
+    y: 0
+    z: 18
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "undergroundBase_clutter_rock09"
+  gridPoint {
+    x: 32
+    y: 0
+    z: 17
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "cemetery_misc_rock01"
+  gridPoint {
+    x: 33
+    y: 0
+    z: 20
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "cemetery_misc_rock02"
+  gridPoint {
+    x: 29
+    y: 0
+    z: 19
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "cemetery_misc_rock03"
+  gridPoint {
+    x: 31
+    y: 0
+    z: 21
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "cemetery_misc_rock04"
+  gridPoint {
+    x: 31
+    y: 0
+    z: 19
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "hive_clutter_rock01"
+  gridPoint {
+    x: 35
+    y: 0
+    z: 8
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "hive_clutter_rock02"
+  gridPoint {
+    x: 34
+    y: 0
+    z: 6
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "undergroundBase_wall_rockEdge01"
+  gridPoint {
+    x: 10
+    y: 0
+    z: 11
+  }
+  orientation: ORIENTATION_E
+  displayName: "Barrier Wall 1"
+  idRef {
+    id: "537bdbf66434310a674f325a"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    dummyInteraciton {
+    }
+  }
+  lod: 0
+}
+props {
+  name: "undergroundBase_wall_rockEdge01"
+  gridPoint {
+    x: 9
+    y: 0
+    z: 3
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "537bdc076434310a674f325b"
+  }
+  lod: 0
+}
+props {
+  name: "undergroundBase_wall_rockEdge02"
+  gridPoint {
+    x: 9
+    y: 0
+    z: 5
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "537bdc076434310a674f325c"
+  }
+  lod: 0
+}
+props {
+  name: "undergroundBase_wall_rockEdge03"
+  gridPoint {
+    x: 9
+    y: 0
+    z: 7
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "537bdc076434310a674f325d"
+  }
+  lod: 0
+}
+props {
+  name: "undergroundBase_wall_rockEdge01"
+  gridPoint {
+    x: 9
+    y: 0
+    z: 9
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "537bdc0a6434310a674f325e"
+  }
+  lod: 0
+}
+props {
+  name: "undergroundBase_wall_rockEdge01"
+  gridPoint {
+    x: 12
+    y: 0
+    z: 11
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "537bdc196434310a674f325f"
+  }
+  lod: 0
+}
+props {
+  name: "undergroundBase_wall_rockEdge01"
+  gridPoint {
+    x: -3
+    y: 0
+    z: 10
+  }
+  orientation: ORIENTATION_S
+  displayName: "Barrier Wall 2"
+  idRef {
+    id: "537bdd926434310a674f3265"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    dummyInteraciton {
+    }
+  }
+  lod: 0
+}
+props {
+  name: "undergroundBase_wall_rockCorner02"
+  gridPoint {
+    x: -3
+    y: 0
+    z: 9
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "537bddef6434310a674f326b"
+  }
+  lod: 0
+}
+props {
+  name: "secretLab_wall_fill"
+  gridPoint {
+    x: -2
+    y: 0
+    z: 13
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "537bde196434310a674f326d"
+  }
+  lod: 0
+}
+props {
+  name: "undergroundBase_wall_rockEdge02"
+  gridPoint {
+    x: -3
+    y: 0
+    z: 12
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "537bde1f6434310a674f326e"
+  }
+  lod: 0
+}
+props {
+  name: "undergroundBase_wall_rockEdge01"
+  gridPoint {
+    x: -21
+    y: 0
+    z: -4
+  }
+  orientation: ORIENTATION_S
+  displayName: "Barrier Wall 3"
+  idRef {
+    id: "537bde5c6434310a674f3270"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    dummyInteraciton {
+    }
+  }
+  lod: 0
+}
+props {
+  name: "undergroundBase_wall_rockEdge01"
+  gridPoint {
+    x: -21
+    y: 0
+    z: -2
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "537bde796434310a674f3271"
+  }
+  lod: 0
+}
+props {
+  name: "undergroundBase_wall_rockEdge03"
+  gridPoint {
+    x: -21
+    y: 0
+    z: 0
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "537bde7f6434310a674f3272"
+  }
+  lod: 0
+}
+props {
+  name: "undergroundBase_floor_dirt02"
+  gridPoint {
+    x: -18
+    y: 0
+    z: 1
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "537bde826434310a674f3273"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_blockMove"
+  gridPoint {
+    x: -35
+    y: 0
+    z: -34
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "system_invisible_blockMove"
+  gridPoint {
+    x: -35
+    y: 0
+    z: -33
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "537be25e6434310668e2b814"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_blockMove"
+  gridPoint {
+    x: -35
+    y: 0
+    z: -32
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "537be2606434310668e2b815"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_blockMove"
+  gridPoint {
+    x: -35
+    y: 0
+    z: -31
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "537be2676434310668e2b816"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_blockMove"
+  gridPoint {
+    x: -35
+    y: 0
+    z: -30
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "537be2696434310668e2b817"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_blockMove"
+  gridPoint {
+    x: -35
+    y: 0
+    z: -29
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "537be2696434310668e2b818"
   }
   lod: 0
 }

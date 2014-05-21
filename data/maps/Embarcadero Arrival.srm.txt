@@ -77067,7 +77067,7 @@ props {
 props {
   name: "docks_clutter_salvageCrate"
   gridPoint {
-    x: -59
+    x: -58
     y: 0
     z: -1
   }
@@ -95288,9 +95288,9 @@ props {
 props {
   name: "vfx_fx_lowmist"
   gridPoint {
-    x: -61
+    x: -69
     y: 0
-    z: 15
+    z: 11
   }
   orientation: ORIENTATION_S
   properties {
@@ -111212,7 +111212,7 @@ props {
           }
         }
         args {
-          int_value: 2
+          int_value: 3
         }
       }
       ops {
@@ -111262,5 +111262,15 @@ props {
       confirmation_text: "This armored van looks like it could survive the marines\' attack. Do you want to continue to Eclipse?"
     }
   }
+  lod: 0
+}
+props {
+  name: "pikePlace_vehicle_lonestarVan"
+  gridPoint {
+    x: 6
+    y: 0
+    z: 2
+  }
+  orientation: ORIENTATION_S
   lod: 0
 }

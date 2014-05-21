@@ -129,7 +129,7 @@ nodes {
   index: 6
   text: "The megacorps seem relieved by the outcome. A Tir invasion would have been disastrous for their operations. Now they get to maintain the profitable status quo, and they didn\342\200\231t need to incur direct costs associated with fighting the invasion. They can write off their donations to you as in-kind deductions on a depreciating basis. \n\nKnowing them, they\342\200\231ll try to sign trade agreements with Hestaby and open up new markets in dragon-related goods."
   branches {
-    responseText: ""
+    responseText: "{{GM}}Wait for her to continue.{{/GM}}"
     conditions {
       ops {
         functionName: "Comparison (bool)"
@@ -171,7 +171,7 @@ nodes {
     nextNodeIndex: 7
   }
   branches {
-    responseText: ""
+    responseText: "{{GM}}Wait for her to continue.{{/GM}}"
     conditions {
       ops {
         functionName: "Comparison (bool)"
@@ -213,7 +213,7 @@ nodes {
     nextNodeIndex: 8
   }
   branches {
-    responseText: ""
+    responseText: "{{GM}}Wait for her to continue.{{/GM}}"
     nextNodeIndex: 9
   }
   nodeType: ConversationNodeType_Simple

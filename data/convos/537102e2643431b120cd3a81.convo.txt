@@ -31,7 +31,7 @@ nodes {
     id: "5371067a643431b120cd3b13"
   }
   index: 2
-  text: "Anyways, I caught that whole thing on video! Everything from the fight on the pier through the cool-looking battle in Eclipse and the race through the Pyramid. It\342\200\231s all in high-def, and I\342\200\231m gonna add a kickin\342\200\231 soundtrack, too. "
+  text: "Anyways, I caught that whole thing on trideo! Everything from the fight on the pier through the cool-looking battle in Eclipse and the race through the Pyramid. It\342\200\231s all in high-def, and I\342\200\231m gonna add a kickin\342\200\231 soundtrack, too. "
   branches {
     responseText: ""
     nextNodeIndex: 3
@@ -70,6 +70,25 @@ nodes {
     auxiliaryLink: true
   }
   nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Add To Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (int)"
+          args {
+            string_value: "531d26a736623648180018bf"
+          }
+          args {
+            string_value: "Global_Manpower"
+          }
+        }
+      }
+      args {
+        int_value: 1
+      }
+    }
+  }
 }
 nodes {
   idRef {
@@ -83,6 +102,25 @@ nodes {
     auxiliaryLink: true
   }
   nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Add To Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (int)"
+          args {
+            string_value: "531d26a736623648180018bf"
+          }
+          args {
+            string_value: "Global_Supplies"
+          }
+        }
+      }
+      args {
+        int_value: 1
+      }
+    }
+  }
 }
 nodes {
   idRef {
@@ -95,6 +133,25 @@ nodes {
     nextNodeIndex: 7
   }
   nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Set Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (int)"
+          args {
+            string_value: "531d26a736623648180018bf"
+          }
+          args {
+            string_value: "Global_HaileySellingTrideoState"
+          }
+        }
+      }
+      args {
+        int_value: 1
+      }
+    }
+  }
 }
 nodes {
   idRef {

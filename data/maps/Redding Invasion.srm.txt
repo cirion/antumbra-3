@@ -1,6 +1,6 @@
-minX: -120
+minX: -121
 minZ: -62
-numX: 142
+numX: 143
 numZ: 180
 props {
   name: "museum_ground_circle"
@@ -7042,7 +7042,7 @@ props {
     z: 12
   }
   orientation: ORIENTATION_S
-  displayName: "Door to Comm Room"
+  displayName: "Comm Room Door"
   idRef {
     id: "5366dca23662362409008468"
   }
@@ -8481,6 +8481,16 @@ props {
     property_id: "fxScript"
     string_value: "MatrixPortalEnvironment"
   }
+  idRef {
+    id: "537b878d643431435413c3ba"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    matrixSpawnPoint {
+      dimension: "Matrix"
+    }
+  }
   lod: 0
 }
 props {
@@ -8491,6 +8501,56 @@ props {
     z: 110
   }
   orientation: ORIENTATION_S
+  idRef {
+    id: "537b85d8643431435413c3b2"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    prerequisites {
+      ops {
+        functionName: "Comparison (int)"
+        args {
+          call_value {
+            functionName: "Get Variable (int)"
+            args {
+              string_value: "numICCamera"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+        args {
+          int_value: 0
+        }
+      }
+    }
+    matrixNode {
+      prerequisites_control_state: true
+      constant_matrix_fx: "matrixcontrolnode"
+      state_change_offline_fx: ""
+      state_change_offline_sound: ""
+      state_change_offline_sound_volume: 1
+      state_change_hackable_fx: "MatrixControlNodeHacked"
+      state_change_hackable_sound: "MatrixNodeHackReady"
+      state_change_hackable_sound_volume: 1
+      state_change_locked_fx: ""
+      state_change_locked_sound: ""
+      state_change_locked_sound_volume: 1
+      state_change_hacked_fx: ""
+      state_change_hacked_sound: ""
+      state_change_hacked_sound_volume: 1
+    }
+  }
   lod: 0
 }
 props {
@@ -8501,6 +8561,56 @@ props {
     z: 102
   }
   orientation: ORIENTATION_S
+  idRef {
+    id: "537b8992643431435413c3c9"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    prerequisites {
+      ops {
+        functionName: "Comparison (int)"
+        args {
+          call_value {
+            functionName: "Get Variable (int)"
+            args {
+              string_value: "numICCPU"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 5
+            }
+          }
+        }
+        args {
+          int_value: 0
+        }
+      }
+    }
+    matrixNode {
+      prerequisites_control_state: true
+      constant_matrix_fx: "matrixcontrolnode"
+      state_change_offline_fx: ""
+      state_change_offline_sound: ""
+      state_change_offline_sound_volume: 1
+      state_change_hackable_fx: "MatrixControlNodeHacked"
+      state_change_hackable_sound: "MatrixNodeHackReady"
+      state_change_hackable_sound_volume: 1
+      state_change_locked_fx: ""
+      state_change_locked_sound: ""
+      state_change_locked_sound_volume: 1
+      state_change_hacked_fx: ""
+      state_change_hacked_sound: ""
+      state_change_hacked_sound_volume: 1
+    }
+  }
   lod: 0
 }
 props {
@@ -8511,6 +8621,57 @@ props {
     z: 26
   }
   orientation: ORIENTATION_S
+  idRef {
+    id: "537b891b643431435413c3c3"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    prerequisites {
+      ops {
+        functionName: "Comparison (int)"
+        args {
+          call_value {
+            functionName: "Get Variable (int)"
+            args {
+              string_value: "numICDoor"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+        args {
+          int_value: 0
+        }
+      }
+    }
+    matrixNode {
+      hacking_objects: "5366dca23662362409008468"
+      prerequisites_control_state: true
+      constant_matrix_fx: "matrixcontrolnode"
+      state_change_offline_fx: ""
+      state_change_offline_sound: ""
+      state_change_offline_sound_volume: 1
+      state_change_hackable_fx: "MatrixControlNodeHacked"
+      state_change_hackable_sound: "MatrixNodeHackReady"
+      state_change_hackable_sound_volume: 1
+      state_change_locked_fx: ""
+      state_change_locked_sound: ""
+      state_change_locked_sound_volume: 1
+      state_change_hacked_fx: ""
+      state_change_hacked_sound: ""
+      state_change_hacked_sound_volume: 1
+    }
+  }
   lod: 0
 }
 props {
@@ -8521,6 +8682,56 @@ props {
     z: 70
   }
   orientation: ORIENTATION_S
+  idRef {
+    id: "537b897b643431435413c3c7"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    prerequisites {
+      ops {
+        functionName: "Comparison (int)"
+        args {
+          call_value {
+            functionName: "Get Variable (int)"
+            args {
+              string_value: "numICSwitch"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 5
+            }
+          }
+        }
+        args {
+          int_value: 0
+        }
+      }
+    }
+    matrixNode {
+      prerequisites_control_state: true
+      constant_matrix_fx: "matrixcontrolnode"
+      state_change_offline_fx: ""
+      state_change_offline_sound: ""
+      state_change_offline_sound_volume: 1
+      state_change_hackable_fx: "MatrixControlNodeHacked"
+      state_change_hackable_sound: "MatrixNodeHackReady"
+      state_change_hackable_sound_volume: 1
+      state_change_locked_fx: ""
+      state_change_locked_sound: ""
+      state_change_locked_sound_volume: 1
+      state_change_hacked_fx: ""
+      state_change_hacked_sound: ""
+      state_change_hacked_sound_volume: 1
+    }
+  }
   lod: 0
 }
 props {
@@ -10066,6 +10277,200 @@ props {
   orientation: ORIENTATION_W
   idRef {
     id: "537b6f14366236901f00367d"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4var4"
+  gridPoint {
+    x: -79
+    y: 0
+    z: 40
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "537b82d8643431435413c39f"
+  }
+  lod: 0
+}
+props {
+  name: "sleekOffice_tech_terminal01"
+  gridPoint {
+    x: -83
+    y: 1
+    z: -4
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "sleekOffice_tech_terminal01_light"
+  gridPoint {
+    x: -93
+    y: 1
+    z: -5
+  }
+  orientation: ORIENTATION_S
+  displayName: "Jack Point Real"
+  idRef {
+    id: "537b877e643431435413c3b8"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    jackPoint {
+      LANIdentifier: "537b878d643431435413c3ba"
+      LANEquipment: ""
+    }
+  }
+  lod: 0
+}
+props {
+  name: "docks_clutter_shippingCrate01"
+  gridPoint {
+    x: -83
+    y: 0
+    z: -4
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "sleekOffice_tech_terminal01_light"
+  gridPoint {
+    x: -94
+    y: 1
+    z: -1
+  }
+  orientation: ORIENTATION_S
+  displayName: "Jack Point Fake"
+  idRef {
+    id: "537b882a643431435413c3c0"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    interactionIcon: InteractionIcon_Matrix
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_nonsolidProp"
+  gridPoint {
+    x: -121
+    y: 0
+    z: 58
+  }
+  orientation: ORIENTATION_S
+  displayName: "Gate Switch"
+  idRef {
+    id: "537b899e643431435413c3cb"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    dummyInteraciton {
+    }
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_nonsolidProp"
+  gridPoint {
+    x: -121
+    y: 0
+    z: 61
+  }
+  orientation: ORIENTATION_S
+  displayName: "NC Sleaze Program"
+  idRef {
+    id: "537b899f643431435413c3cc"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    dummyInteraciton {
+    }
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_blockMove"
+  gridPoint {
+    x: -99
+    y: 0
+    z: 57
+  }
+  orientation: ORIENTATION_S
+  displayName: "Matrix Lock Door 1"
+  idRef {
+    id: "537b8b10643431435413c3d8"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    dummyInteraciton {
+    }
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_blockMove"
+  gridPoint {
+    x: -98
+    y: 0
+    z: 57
+  }
+  orientation: ORIENTATION_S
+  displayName: "Matrix Lock Door 2"
+  idRef {
+    id: "537b8b17643431435413c3d9"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    dummyInteraciton {
+    }
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_blockMove"
+  gridPoint {
+    x: -99
+    y: 0
+    z: 84
+  }
+  orientation: ORIENTATION_S
+  displayName: "Matrix Lock CPU 1"
+  idRef {
+    id: "537b8b18643431435413c3da"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    dummyInteraciton {
+    }
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_blockMove"
+  gridPoint {
+    x: -98
+    y: 0
+    z: 84
+  }
+  orientation: ORIENTATION_S
+  displayName: "Matrix Lock CPU 2"
+  idRef {
+    id: "537b8b1a643431435413c3db"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    dummyInteraciton {
+    }
   }
   lod: 0
 }

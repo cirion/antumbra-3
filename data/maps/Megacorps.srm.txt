@@ -16650,20 +16650,14 @@ props {
 props {
   name: "office_furniture_execDesk02"
   gridPoint {
-    x: -55
+    x: -48
     y: 0
-    z: 32
+    z: 37
   }
-  orientation: ORIENTATION_S
+  orientation: ORIENTATION_W
   displayName: "Tooms\' Desk"
   idRef {
     id: "5220122d3662367819007160"
-  }
-  interactionRoot {
-    isEnabled: true
-    interactionRadius: 1
-    dummyInteraciton {
-    }
   }
   lod: 0
 }
@@ -18364,39 +18358,6 @@ props {
   lod: 0
 }
 props {
-  name: "office_clutter_bookStacks01"
-  gridPoint {
-    x: -50
-    y: 0
-    z: 24
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "office_clutter_bookStacks02"
-  gridPoint {
-    x: -50
-    y: 0
-    z: 25
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "office_clutter_bookStacks02"
-  gridPoint {
-    x: -54
-    y: 0
-    z: 24
-  }
-  orientation: ORIENTATION_S
-  idRef {
-    id: "521ffd5d3662367819007020"
-  }
-  lod: 0
-}
-props {
   name: "office_clutter_chessboard"
   gridPoint {
     x: -51
@@ -18489,9 +18450,9 @@ props {
 props {
   name: "office_decor_dragonGlobe"
   gridPoint {
-    x: -52
+    x: -56
     y: 0
-    z: 29
+    z: 26
   }
   orientation: ORIENTATION_S
   lod: 0
@@ -18507,21 +18468,11 @@ props {
   lod: 0
 }
 props {
-  name: "office_decor_fallenpottedFicus"
-  gridPoint {
-    x: -57
-    y: 0
-    z: 37
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
   name: "office_decor_flowerVase01"
   gridPoint {
-    x: -57
+    x: -58
     y: 0
-    z: 39
+    z: 38
   }
   orientation: ORIENTATION_S
   lod: 0
@@ -18968,16 +18919,6 @@ props {
   lod: 0
 }
 props {
-  name: "office_furniture_overturnedFileCabinet02"
-  gridPoint {
-    x: -54
-    y: 0
-    z: 37
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
   name: "office_furniture_receptionDesk"
   gridPoint {
     x: -27
@@ -19316,11 +19257,11 @@ props {
 props {
   name: "telestrianEstate_furniture_modernChair01"
   gridPoint {
-    x: -56
+    x: -47
     y: 0
-    z: 33
+    z: 39
   }
-  orientation: ORIENTATION_S
+  orientation: ORIENTATION_W
   lod: 0
 }
 props {
@@ -45681,101 +45622,6 @@ props {
   lod: 0
 }
 props {
-  name: "office_furniture_overturnedFileCabinet01"
-  gridPoint {
-    x: -55
-    y: 0
-    z: 40
-  }
-  orientation: ORIENTATION_E
-  lod: 0
-}
-props {
-  name: "office_decor_bloodSplatter04"
-  gridPoint {
-    x: -52
-    y: 0
-    z: 27
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "office_clutter_bookStacks02"
-  gridPoint {
-    x: -54.1
-    y: 1
-    z: 34.4
-  }
-  orientation: ORIENTATION_E
-  idRef {
-    id: "522fc978366236cc18007a82"
-  }
-  lod: 0
-}
-props {
-  name: "office_clutter_bookStacks02"
-  gridPoint {
-    x: -56
-    y: 0
-    z: 39
-  }
-  orientation: ORIENTATION_S
-  idRef {
-    id: "522fc987366236cc18007a83"
-  }
-  lod: 0
-}
-props {
-  name: "office_clutter_bookStacks02"
-  gridPoint {
-    x: -53
-    y: 0
-    z: 38
-  }
-  orientation: ORIENTATION_E
-  idRef {
-    id: "522fc98f366236cc18007a84"
-  }
-  lod: 0
-}
-props {
-  name: "office_clutter_paperStacks02"
-  gridPoint {
-    x: -54
-    y: 0
-    z: 38
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "office_clutter_paperStacks02"
-  gridPoint {
-    x: -55
-    y: 0
-    z: 39
-  }
-  orientation: ORIENTATION_S
-  idRef {
-    id: "522fc99b366236cc18007a85"
-  }
-  lod: 0
-}
-props {
-  name: "office_clutter_paperStacks02"
-  gridPoint {
-    x: -55
-    y: 0
-    z: 37
-  }
-  orientation: ORIENTATION_S
-  idRef {
-    id: "522fc99d366236cc18007a86"
-  }
-  lod: 0
-}
-props {
   name: "secretLab_wall_4x4fill"
   gridPoint {
     x: -56
@@ -47963,9 +47809,9 @@ props {
 props {
   name: "system_gizmo_lightbulb"
   gridPoint {
-    x: -57
+    x: -55
     y: -1
-    z: 35
+    z: 31
   }
   orientation: ORIENTATION_S
   idRef {
@@ -47987,43 +47833,22 @@ props {
   gridPoint {
     x: -57
     y: -1
-    z: 31
+    z: 38
   }
   orientation: ORIENTATION_S
+  GeneralTags: "hansImage"
   idRef {
     id: "5236000d366236881d001271"
   }
   lod: 0
   light {
-    range: 4
+    range: 2
     color {
-      r: 1
-      g: 1
+      r: 0.011764706
+      g: 0.21944
       b: 1
     }
-    intensity: 3
-  }
-}
-props {
-  name: "system_gizmo_lightbulb"
-  gridPoint {
-    x: -52
-    y: 0
-    z: 29
-  }
-  orientation: ORIENTATION_S
-  idRef {
-    id: "5236001b366236881d001272"
-  }
-  lod: 0
-  light {
-    range: 5
-    color {
-      r: 0.66666669
-      g: 1
-      b: 1
-    }
-    intensity: 5
+    intensity: 8
   }
 }
 props {
@@ -48442,6 +48267,60 @@ props {
     interactionRadius: 1
     dummyInteraciton {
     }
+  }
+  lod: 0
+}
+props {
+  name: "factory_wallDecoration_displayMonitor01"
+  gridPoint {
+    x: -58
+    y: 1.7
+    z: 38
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "factory_wallDecoration_displayMonitor01_lights"
+  gridPoint {
+    x: -58
+    y: 1.7
+    z: 38
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "hansImage"
+  displayName: "Hans Face"
+  idRef {
+    id: "537bce9664343129595f82a4"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    dummyInteraciton {
+    }
+  }
+  lod: 0
+}
+props {
+  name: "office_furniture_boardTable02"
+  gridPoint {
+    x: -53
+    y: 0
+    z: 34
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "office_furniture_boardTable02"
+  gridPoint {
+    x: -53
+    y: 0
+    z: 28
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "537bcdff64343129595f82a2"
   }
   lod: 0
 }

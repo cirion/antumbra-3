@@ -54,6 +54,23 @@ triggers {
         }
       }
     }
+    ops {
+      functionName: "Add To Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (int)"
+          args {
+            string_value: "531d26a736623648180018bf"
+          }
+          args {
+            string_value: "Global_Supplies"
+          }
+        }
+      }
+      args {
+        int_value: 1
+      }
+    }
   }
   isActive: true
   idRef {
@@ -130,6 +147,63 @@ triggers {
           }
           args {
             int_value: 3
+          }
+        }
+      }
+      args {
+        int_value: 0
+      }
+    }
+    ops {
+      functionName: "Comparison (int)"
+      args {
+        call_value {
+          functionName: "Get Count of Alive Actors"
+          args {
+            call_value {
+              functionName: "All Actors on Team"
+              args {
+                call_value {
+                  functionName: "Get Preset Value (string)"
+                  args {
+                    string_value: "FactionList"
+                  }
+                  args {
+                    int_value: 1
+                  }
+                }
+              }
+              args {
+                call_value {
+                  functionName: "Get Preset Value (int)"
+                  args {
+                    string_value: "AllOrAny"
+                  }
+                  args {
+                    int_value: 0
+                  }
+                }
+              }
+              args {
+                call_value {
+                  functionName: "Get Map Item (SceneDimension)"
+                  args {
+                    string_value: "Default"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "Comparison Ops"
+          }
+          args {
+            int_value: 2
           }
         }
       }
@@ -272,6 +346,25 @@ triggers {
           args {
             int_value: 1
           }
+        }
+      }
+    }
+    ops {
+      functionName: "Delete Props by Tag"
+      args {
+        call_value {
+          functionName: "Get Map Item (SenseTagList)"
+          args {
+            string_value: "hansImage"
+          }
+        }
+      }
+      args {
+        float_value: -1
+      }
+      args {
+        call_value {
+          functionName: "Everywhere"
         }
       }
     }
@@ -466,7 +559,7 @@ triggers {
         call_value {
           functionName: "Get Map Item (Trigger)"
           args {
-            string_value: "53710314643431b120cd3a8a"
+            string_value: "53754ff86434316b13333688"
           }
         }
       }
@@ -544,6 +637,28 @@ triggers {
           }
           args {
             int_value: 0
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "isAllBadguysKilled"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
           }
         }
       }
@@ -642,6 +757,23 @@ triggers {
             int_value: 1
           }
         }
+      }
+    }
+    ops {
+      functionName: "Add To Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (int)"
+          args {
+            string_value: "531d26a736623648180018bf"
+          }
+          args {
+            string_value: "Global_Supplies"
+          }
+        }
+      }
+      args {
+        int_value: 1
       }
     }
   }
@@ -768,7 +900,7 @@ triggers {
             string_value: "DeathMethod"
           }
           args {
-            int_value: 0
+            int_value: 2
           }
         }
       }
@@ -5790,6 +5922,52 @@ triggers {
         }
       }
     }
+    ops {
+      functionName: "Display Text over Prop"
+      args {
+        call_value {
+          functionName: "Get Map Item (Prop)"
+          args {
+            string_value: "537657ec6434316b13333749"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "TextPopupStyle"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        string_value: "You have taken control of the Pyramid\'s camera system."
+      }
+      args {
+        float_value: 0
+      }
+      args {
+        float_value: 0
+      }
+      args {
+        float_value: 0
+      }
+      args {
+        float_value: 0
+      }
+      args {
+        float_value: 3
+      }
+      args {
+        float_value: 3
+      }
+      args {
+        float_value: 0
+      }
+    }
   }
   isActive: true
   idRef {
@@ -6261,6 +6439,52 @@ triggers {
         }
       }
     }
+    ops {
+      functionName: "Display Text over Prop"
+      args {
+        call_value {
+          functionName: "Get Map Item (Prop)"
+          args {
+            string_value: "5229e158366236fc09008042"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "TextPopupStyle"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        string_value: "You have retaken control of the pyramid\'s automated defense system."
+      }
+      args {
+        float_value: 0
+      }
+      args {
+        float_value: 0
+      }
+      args {
+        float_value: 0
+      }
+      args {
+        float_value: 0
+      }
+      args {
+        float_value: 3
+      }
+      args {
+        float_value: 3
+      }
+      args {
+        float_value: 0
+      }
+    }
   }
   isActive: true
   idRef {
@@ -6440,6 +6664,52 @@ triggers {
         }
       }
     }
+    ops {
+      functionName: "Display Text over Prop"
+      args {
+        call_value {
+          functionName: "Get Map Item (Prop)"
+          args {
+            string_value: "537658536434316b1333374b"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "TextPopupStyle"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        string_value: "The boardroom safe has been unlocked."
+      }
+      args {
+        float_value: 0
+      }
+      args {
+        float_value: 0
+      }
+      args {
+        float_value: 0
+      }
+      args {
+        float_value: 0
+      }
+      args {
+        float_value: 3
+      }
+      args {
+        float_value: 3
+      }
+      args {
+        float_value: 0
+      }
+    }
   }
   isActive: true
   idRef {
@@ -6604,6 +6874,666 @@ triggers {
   isActive: true
   idRef {
     id: "53765deb6434316b13333760"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
+triggers {
+  name: "Squad 1 Aggro"
+  events {
+    ops {
+      functionName: "On Actor Damage"
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "HPOrAP"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+  }
+  conditions {
+    ops {
+      functionName: "Evaluate Tag for Actor"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Triggering Target Actor"
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "HasOrHasNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SenseTagList)"
+          args {
+            string_value: "squad1"
+          }
+        }
+      }
+    }
+  }
+  actions {
+    ops {
+      functionName: "Order Actor to Hunt And Destroy (Team)"
+      args {
+        call_value {
+          functionName: "All Actors With Tag"
+          args {
+            call_value {
+              functionName: "Get Map Item (SenseTagList)"
+              args {
+                string_value: "squad1"
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Preset Value (int)"
+              args {
+                string_value: "AllOrAny"
+              }
+              args {
+                int_value: 0
+              }
+            }
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SceneDimension)"
+          args {
+            string_value: "Default"
+          }
+        }
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "537bd26764343129595f8676"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
+triggers {
+  name: "Squad 2 Aggro"
+  events {
+    ops {
+      functionName: "On Actor Damage"
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "HPOrAP"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+  }
+  conditions {
+    ops {
+      functionName: "Evaluate Tag for Actor"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Triggering Target Actor"
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "HasOrHasNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SenseTagList)"
+          args {
+            string_value: "squad2"
+          }
+        }
+      }
+    }
+  }
+  actions {
+    ops {
+      functionName: "Order Actor to Hunt And Destroy (Team)"
+      args {
+        call_value {
+          functionName: "All Actors With Tag"
+          args {
+            call_value {
+              functionName: "Get Map Item (SenseTagList)"
+              args {
+                string_value: "squad2"
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Preset Value (int)"
+              args {
+                string_value: "AllOrAny"
+              }
+              args {
+                int_value: 0
+              }
+            }
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SceneDimension)"
+          args {
+            string_value: "Default"
+          }
+        }
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "537bd2a564343129595f8677"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
+triggers {
+  name: "Squad 3 Aggro"
+  events {
+    ops {
+      functionName: "On Actor Damage"
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "HPOrAP"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+  }
+  conditions {
+    ops {
+      functionName: "Evaluate Tag for Actor"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Triggering Target Actor"
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "HasOrHasNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SenseTagList)"
+          args {
+            string_value: "squad3"
+          }
+        }
+      }
+    }
+  }
+  actions {
+    ops {
+      functionName: "Order Actor to Hunt And Destroy (Team)"
+      args {
+        call_value {
+          functionName: "All Actors With Tag"
+          args {
+            call_value {
+              functionName: "Get Map Item (SenseTagList)"
+              args {
+                string_value: "squad3"
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Preset Value (int)"
+              args {
+                string_value: "AllOrAny"
+              }
+              args {
+                int_value: 0
+              }
+            }
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SceneDimension)"
+          args {
+            string_value: "Default"
+          }
+        }
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "537bd2a764343129595f8678"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
+triggers {
+  name: "Squad 4 Aggro"
+  events {
+    ops {
+      functionName: "On Actor Damage"
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "HPOrAP"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+  }
+  conditions {
+    ops {
+      functionName: "Evaluate Tag for Actor"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Triggering Target Actor"
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "HasOrHasNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SenseTagList)"
+          args {
+            string_value: "squad4"
+          }
+        }
+      }
+    }
+  }
+  actions {
+    ops {
+      functionName: "Order Actor to Hunt And Destroy (Team)"
+      args {
+        call_value {
+          functionName: "All Actors With Tag"
+          args {
+            call_value {
+              functionName: "Get Map Item (SenseTagList)"
+              args {
+                string_value: "squad4"
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Preset Value (int)"
+              args {
+                string_value: "AllOrAny"
+              }
+              args {
+                int_value: 0
+              }
+            }
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SceneDimension)"
+          args {
+            string_value: "Default"
+          }
+        }
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "537bd2a964343129595f8679"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
+triggers {
+  name: "Squad 5 Aggro"
+  events {
+    ops {
+      functionName: "On Actor Damage"
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "HPOrAP"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+  }
+  conditions {
+    ops {
+      functionName: "Evaluate Tag for Actor"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Triggering Target Actor"
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "HasOrHasNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SenseTagList)"
+          args {
+            string_value: "squad5"
+          }
+        }
+      }
+    }
+  }
+  actions {
+    ops {
+      functionName: "Order Actor to Hunt And Destroy (Team)"
+      args {
+        call_value {
+          functionName: "All Actors With Tag"
+          args {
+            call_value {
+              functionName: "Get Map Item (SenseTagList)"
+              args {
+                string_value: "squad5"
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Preset Value (int)"
+              args {
+                string_value: "AllOrAny"
+              }
+              args {
+                int_value: 0
+              }
+            }
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SceneDimension)"
+          args {
+            string_value: "Default"
+          }
+        }
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "537bd2aa64343129595f867a"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
+triggers {
+  name: "Squad 6 Aggro"
+  events {
+    ops {
+      functionName: "On Actor Damage"
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "HPOrAP"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+  }
+  conditions {
+    ops {
+      functionName: "Evaluate Tag for Actor"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Triggering Target Actor"
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "HasOrHasNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SenseTagList)"
+          args {
+            string_value: "squad6"
+          }
+        }
+      }
+    }
+  }
+  actions {
+    ops {
+      functionName: "Order Actor to Hunt And Destroy (Team)"
+      args {
+        call_value {
+          functionName: "All Actors With Tag"
+          args {
+            call_value {
+              functionName: "Get Map Item (SenseTagList)"
+              args {
+                string_value: "squad6"
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Preset Value (int)"
+              args {
+                string_value: "AllOrAny"
+              }
+              args {
+                int_value: 0
+              }
+            }
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SceneDimension)"
+          args {
+            string_value: "Default"
+          }
+        }
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "537bd2ac64343129595f867b"
   }
   elseActions {
   }
@@ -7536,9 +8466,9 @@ regions {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -62
+    x: -53
     y: 0
-    z: 53
+    z: 33
   }
   orientation: ORIENTATION_S
   GeneralTags: "isCEO"
@@ -7621,22 +8551,14 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -33
+    x: -19
     y: 0
-    z: 46
+    z: 94
   }
   orientation: ORIENTATION_S
   displayName: "Lofwyr"
   idRef {
     id: "537548ff6434316b13333684"
-  }
-  interactionRoot {
-    isEnabled: true
-    interactionRadius: 1
-    conversationPoint {
-      conversationID: "532f0ce0366236840d003d6f"
-      turnToFace: false
-    }
   }
   lod: 0
   character_instance {
@@ -7702,7 +8624,7 @@ characters {
     isEnabled: true
     interactionRadius: 1
     conversationPoint {
-      conversationID: "5227dbe6366236a0180066d7"
+      conversationID: "53710758643431b120cd3b40"
       turnToFace: true
     }
   }
@@ -7745,6 +8667,2819 @@ characters {
       filename: "pc_humanfemale_04c_whitebob"
     }
     portrait_code_override: "s6h5c14"
+    karma: 6
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -48
+    y: 0
+    z: 7
+  }
+  orientation: ORIENTATION_W
+  GeneralTags: "isCamera"
+  GeneralTags: ""
+  idRef {
+    id: "537bba0764343129595f8260"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Seattle:Objects/SecurityCam"
+    character_sheet_id: "Camera"
+    character_mod {
+      stats {
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+      }
+      specializations {
+      }
+      vulnerabilities {
+      }
+    }
+    team_id: "Civilians"
+    char_name: "Security Camera"
+    GeneralTags: "isCamera"
+    GeneralTags: ""
+    pc_spawn_number: -1
+    ai_ignores: true
+    uninjurable: true
+    unkillable: true
+    portrait {
+      filename: ""
+    }
+    karma: 2
+    hide_floaties: true
+    has_fist: false
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -16
+    y: 0
+    z: 32
+  }
+  orientation: ORIENTATION_N
+  GeneralTags: "isCamera"
+  GeneralTags: ""
+  idRef {
+    id: "537bba6164343129595f8262"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Seattle:Objects/SecurityCam"
+    character_sheet_id: "Camera"
+    character_mod {
+      stats {
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+      }
+      specializations {
+      }
+      vulnerabilities {
+      }
+    }
+    team_id: "Civilians"
+    char_name: "Security Camera"
+    GeneralTags: "isCamera"
+    GeneralTags: ""
+    pc_spawn_number: -1
+    ai_ignores: true
+    uninjurable: true
+    unkillable: true
+    portrait {
+      filename: ""
+    }
+    karma: 2
+    hide_floaties: true
+    has_fist: false
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -12
+    y: 0
+    z: 65
+  }
+  orientation: ORIENTATION_N
+  GeneralTags: "isCamera"
+  GeneralTags: ""
+  idRef {
+    id: "537bba8064343129595f8263"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Seattle:Objects/SecurityCam"
+    character_sheet_id: "Camera"
+    character_mod {
+      stats {
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+      }
+      specializations {
+      }
+      vulnerabilities {
+      }
+    }
+    team_id: "Civilians"
+    char_name: "Security Camera"
+    GeneralTags: "isCamera"
+    GeneralTags: ""
+    pc_spawn_number: -1
+    ai_ignores: true
+    uninjurable: true
+    unkillable: true
+    portrait {
+      filename: ""
+    }
+    karma: 2
+    hide_floaties: true
+    has_fist: false
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -81
+    y: 0
+    z: 46
+  }
+  orientation: ORIENTATION_N
+  GeneralTags: "isCamera"
+  GeneralTags: ""
+  idRef {
+    id: "537bba9164343129595f8264"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Seattle:Objects/SecurityCam"
+    character_sheet_id: "Camera"
+    character_mod {
+      stats {
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+      }
+      specializations {
+      }
+      vulnerabilities {
+      }
+    }
+    team_id: "Civilians"
+    char_name: "Security Camera"
+    GeneralTags: "isCamera"
+    GeneralTags: ""
+    pc_spawn_number: -1
+    ai_ignores: true
+    uninjurable: true
+    unkillable: true
+    portrait {
+      filename: ""
+    }
+    karma: 2
+    hide_floaties: true
+    has_fist: false
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -113
+    y: 0
+    z: 50
+  }
+  orientation: ORIENTATION_N
+  GeneralTags: "isCamera"
+  GeneralTags: ""
+  idRef {
+    id: "537bba9c64343129595f8265"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Seattle:Objects/SecurityCam"
+    character_sheet_id: "Camera"
+    character_mod {
+      stats {
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+      }
+      specializations {
+      }
+      vulnerabilities {
+      }
+    }
+    team_id: "Civilians"
+    char_name: "Security Camera"
+    GeneralTags: "isCamera"
+    GeneralTags: ""
+    pc_spawn_number: -1
+    ai_ignores: true
+    uninjurable: true
+    unkillable: true
+    portrait {
+      filename: ""
+    }
+    karma: 2
+    hide_floaties: true
+    has_fist: false
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -72
+    y: 0
+    z: -7
+  }
+  orientation: ORIENTATION_W
+  GeneralTags: "isCamera"
+  GeneralTags: ""
+  idRef {
+    id: "537bbaaa64343129595f8266"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Seattle:Objects/SecurityCam"
+    character_sheet_id: "Camera"
+    character_mod {
+      stats {
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+      }
+      specializations {
+      }
+      vulnerabilities {
+      }
+    }
+    team_id: "Civilians"
+    char_name: "Security Camera"
+    GeneralTags: "isCamera"
+    GeneralTags: ""
+    pc_spawn_number: -1
+    ai_ignores: true
+    uninjurable: true
+    unkillable: true
+    portrait {
+      filename: ""
+    }
+    karma: 2
+    hide_floaties: true
+    has_fist: false
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -20
+    y: 0
+    z: 30
+  }
+  orientation: ORIENTATION_E
+  GeneralTags: "isTurret"
+  GeneralTags: ""
+  idRef {
+    id: "537bbac964343129595f8267"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Seattle:Objects/CorpTurret"
+    character_sheet_id: "Turret_Lv1"
+    equipment_sheet_id: "Turret_Lv1_Burst_Gear"
+    character_mod {
+      stats {
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        magic: 0
+        hp: 0
+        ap: 0
+        armor: 0
+        force: 0
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+        ranged_combat: 0
+        close_combat: 0
+        throwing_weapons: 0
+        spellcasting: 0
+        decking: 0
+        conjuring: 0
+        spirit_summoning: 0
+        drone_control: 0
+        biotech: 0
+        dodge: 0
+        etiquette_corporate: 0
+        etiquette_security: 0
+        etiquette_gang: 0
+        etiquette_socialite: 0
+        chi_casting: 0
+        etiquette_shadowrunner: 0
+        etiquette_street: 0
+        etiquette_academic: 0
+      }
+      specializations {
+        pistol: 0
+        rifle: 0
+        shotgun: 0
+        smg: 0
+        edged: 0
+        unarmed: 0
+        spirit_control: 0
+        esp_control: 0
+        drone_combat: 0
+      }
+      archetypeName: "Guard - Protect"
+      attitude: AttitudeAggressive
+      vulnerabilities {
+      }
+    }
+    team_id: "Civilians"
+    char_name: "Auto Turret"
+    GeneralTags: "isTurret"
+    GeneralTags: ""
+    pc_spawn_number: -1
+    portrait {
+      filename: ""
+    }
+    karma: 41
+    scale_character_sheet: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -25
+    y: 0
+    z: 30
+  }
+  orientation: ORIENTATION_E
+  GeneralTags: "isTurret"
+  GeneralTags: ""
+  idRef {
+    id: "537bbb3c64343129595f8268"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Seattle:Objects/CorpTurret"
+    character_sheet_id: "Turret_Lv1"
+    equipment_sheet_id: "Turret_Lv1_Burst_Gear"
+    character_mod {
+      stats {
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        magic: 0
+        hp: 0
+        ap: 0
+        armor: 0
+        force: 0
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+        ranged_combat: 0
+        close_combat: 0
+        throwing_weapons: 0
+        spellcasting: 0
+        decking: 0
+        conjuring: 0
+        spirit_summoning: 0
+        drone_control: 0
+        biotech: 0
+        dodge: 0
+        etiquette_corporate: 0
+        etiquette_security: 0
+        etiquette_gang: 0
+        etiquette_socialite: 0
+        chi_casting: 0
+        etiquette_shadowrunner: 0
+        etiquette_street: 0
+        etiquette_academic: 0
+      }
+      specializations {
+        pistol: 0
+        rifle: 0
+        shotgun: 0
+        smg: 0
+        edged: 0
+        unarmed: 0
+        spirit_control: 0
+        esp_control: 0
+        drone_combat: 0
+      }
+      archetypeName: "Guard - Protect"
+      attitude: AttitudeAggressive
+      vulnerabilities {
+      }
+    }
+    team_id: "Civilians"
+    char_name: "Auto Turret"
+    GeneralTags: "isTurret"
+    GeneralTags: ""
+    pc_spawn_number: -1
+    portrait {
+      filename: ""
+    }
+    karma: 41
+    scale_character_sheet: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -20
+    y: 0
+    z: 61
+  }
+  orientation: ORIENTATION_E
+  GeneralTags: "isTurret"
+  GeneralTags: ""
+  idRef {
+    id: "537bbb6964343129595f8269"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Seattle:Objects/CorpTurret"
+    character_sheet_id: "Turret_Lv1"
+    equipment_sheet_id: "Turret_Lv1_Burst_Gear"
+    character_mod {
+      stats {
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        magic: 0
+        hp: 0
+        ap: 0
+        armor: 0
+        force: 0
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+        ranged_combat: 0
+        close_combat: 0
+        throwing_weapons: 0
+        spellcasting: 0
+        decking: 0
+        conjuring: 0
+        spirit_summoning: 0
+        drone_control: 0
+        biotech: 0
+        dodge: 0
+        etiquette_corporate: 0
+        etiquette_security: 0
+        etiquette_gang: 0
+        etiquette_socialite: 0
+        chi_casting: 0
+        etiquette_shadowrunner: 0
+        etiquette_street: 0
+        etiquette_academic: 0
+      }
+      specializations {
+        pistol: 0
+        rifle: 0
+        shotgun: 0
+        smg: 0
+        edged: 0
+        unarmed: 0
+        spirit_control: 0
+        esp_control: 0
+        drone_combat: 0
+      }
+      archetypeName: "Guard - Protect"
+      attitude: AttitudeAggressive
+      vulnerabilities {
+      }
+    }
+    team_id: "Civilians"
+    char_name: "Auto Turret"
+    GeneralTags: "isTurret"
+    GeneralTags: ""
+    pc_spawn_number: -1
+    portrait {
+      filename: ""
+    }
+    karma: 41
+    scale_character_sheet: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -28
+    y: 0
+    z: 61
+  }
+  orientation: ORIENTATION_E
+  GeneralTags: "isTurret"
+  GeneralTags: ""
+  idRef {
+    id: "537bbb7064343129595f826a"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Seattle:Objects/CorpTurret"
+    character_sheet_id: "Turret_Lv1"
+    equipment_sheet_id: "Turret_Lv1_Burst_Gear"
+    character_mod {
+      stats {
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        magic: 0
+        hp: 0
+        ap: 0
+        armor: 0
+        force: 0
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+        ranged_combat: 0
+        close_combat: 0
+        throwing_weapons: 0
+        spellcasting: 0
+        decking: 0
+        conjuring: 0
+        spirit_summoning: 0
+        drone_control: 0
+        biotech: 0
+        dodge: 0
+        etiquette_corporate: 0
+        etiquette_security: 0
+        etiquette_gang: 0
+        etiquette_socialite: 0
+        chi_casting: 0
+        etiquette_shadowrunner: 0
+        etiquette_street: 0
+        etiquette_academic: 0
+      }
+      specializations {
+        pistol: 0
+        rifle: 0
+        shotgun: 0
+        smg: 0
+        edged: 0
+        unarmed: 0
+        spirit_control: 0
+        esp_control: 0
+        drone_combat: 0
+      }
+      archetypeName: "Guard - Protect"
+      attitude: AttitudeAggressive
+      vulnerabilities {
+      }
+    }
+    team_id: "Civilians"
+    char_name: "Auto Turret"
+    GeneralTags: "isTurret"
+    GeneralTags: ""
+    pc_spawn_number: -1
+    portrait {
+      filename: ""
+    }
+    karma: 41
+    scale_character_sheet: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: 16
+    y: 0
+    z: 115
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "isHeatBaddy"
+  GeneralTags: ""
+  displayName: "IC Black Melee"
+  idRef {
+    id: "537bc02c64343129595f826b"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Matrix/MatrixICE_black_melee"
+    character_sheet_id: "IC_Lv1_Black_Ranged"
+    equipment_sheet_id: "IC Black Melee Lv1 Gear"
+    team_id: "IC"
+    char_name: "Black IC"
+    GeneralTags: "isHeatBaddy"
+    GeneralTags: ""
+    pc_spawn_number: -1
+    spawn_type: SpawnType_Matrix
+    portrait {
+      filename: ""
+    }
+    dimension_name: "Matrix"
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: 16
+    y: 0
+    z: 114
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "isHeatBaddy"
+  GeneralTags: ""
+  displayName: "IC Black Ranged"
+  idRef {
+    id: "537bc03664343129595f826c"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Matrix/MatrixICE_black_range"
+    character_sheet_id: "IC_Lv1_Black_Ranged"
+    equipment_sheet_id: "IC Black Ranged Lv1 Gear"
+    character_mod {
+      stats {
+        morale: 24
+        discipline: 24
+        awareness: 24
+        protect_tether_range: 5
+      }
+      skills {
+      }
+      specializations {
+      }
+      archetypeName: "Guard - Seek And Destroy"
+      attitude: AttitudeAggressive
+    }
+    team_id: "IC"
+    char_name: "Black IC"
+    GeneralTags: "isHeatBaddy"
+    GeneralTags: ""
+    pc_spawn_number: -1
+    spawn_type: SpawnType_Matrix
+    portrait {
+      filename: ""
+    }
+    dimension_name: "Matrix"
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: 33
+    y: 0
+    z: 41
+  }
+  orientation: ORIENTATION_S
+  displayName: "IC White Ranged"
+  idRef {
+    id: "537bc0f564343129595f8271"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Matrix/MatrixICE_white_range"
+    character_sheet_id: "IC_Lv1_White_Ranged"
+    equipment_sheet_id: "IC White Ranged Lv1 Gear"
+    character_mod {
+      archetypeName: "Guard - Seek And Destroy"
+      attitude: AttitudeAggressive
+    }
+    team_id: "IC"
+    char_name: "White IC"
+    enabled_at_start: false
+    pc_spawn_number: -1
+    spawn_type: SpawnType_Matrix
+    portrait {
+      filename: ""
+    }
+    dimension_name: "Matrix"
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: 38
+    y: 0
+    z: 42
+  }
+  orientation: ORIENTATION_S
+  displayName: "IC White Melee"
+  idRef {
+    id: "537bc0fe64343129595f8272"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Matrix/MatrixICE_white_melee"
+    character_sheet_id: "IC_Lv1_White_Ranged"
+    equipment_sheet_id: "IC White Melee Lv1 Gear"
+    team_id: "IC"
+    char_name: "White IC"
+    enabled_at_start: false
+    pc_spawn_number: -1
+    spawn_type: SpawnType_Matrix
+    portrait {
+      filename: ""
+    }
+    dimension_name: "Matrix"
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: 33
+    y: 0
+    z: 44
+  }
+  orientation: ORIENTATION_S
+  displayName: "IC White Charge"
+  idRef {
+    id: "537bc10464343129595f8273"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Matrix/SpiritESPAssassin"
+    character_sheet_id: "IC_Lv1_White_ChargeLaser"
+    equipment_sheet_id: "IC White ChargeLaser Lv1 Gear"
+    character_mod {
+      stats {
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+      }
+      specializations {
+      }
+      archetypeName: "Guard - Seek And Destroy"
+      attitude: AttitudeAggressive
+      vulnerabilities {
+      }
+    }
+    team_id: "IC"
+    char_name: "White Sparky IC"
+    enabled_at_start: false
+    pc_spawn_number: -1
+    spawn_type: SpawnType_Matrix
+    portrait {
+      filename: ""
+    }
+    dimension_name: "Matrix"
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: 26
+    y: 0
+    z: -10
+  }
+  orientation: ORIENTATION_E
+  GeneralTags: "isICCamera"
+  GeneralTags: ""
+  displayName: "IC White Support"
+  idRef {
+    id: "537bc11064343129595f8274"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Matrix/SpiritESPShield"
+    character_sheet_id: "IC_Lv1_White_Ranged"
+    equipment_sheet_id: "IC White Support Lv1 Gear"
+    character_mod {
+      archetypeName: "Guard - Seek And Destroy"
+      attitude: AttitudeAggressive
+    }
+    team_id: "IC"
+    char_name: "White Sentry IC"
+    GeneralTags: "isICCamera"
+    GeneralTags: ""
+    enabled_at_start: false
+    pc_spawn_number: -1
+    spawn_type: SpawnType_Matrix
+    portrait {
+      filename: ""
+    }
+    dimension_name: "Matrix"
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: 30
+    y: 0
+    z: -8
+  }
+  orientation: ORIENTATION_E
+  GeneralTags: "isICCamera"
+  GeneralTags: ""
+  displayName: "IC White Ranged"
+  idRef {
+    id: "537bc11a64343129595f8275"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Matrix/MatrixICE_white_range"
+    character_sheet_id: "IC_Lv1_White_Ranged"
+    equipment_sheet_id: "IC White Ranged Lv1 Gear"
+    character_mod {
+      archetypeName: "Guard - Seek And Destroy"
+      attitude: AttitudeAggressive
+    }
+    team_id: "IC"
+    char_name: "White IC"
+    GeneralTags: "isICCamera"
+    GeneralTags: ""
+    enabled_at_start: false
+    pc_spawn_number: -1
+    spawn_type: SpawnType_Matrix
+    portrait {
+      filename: ""
+    }
+    dimension_name: "Matrix"
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: 27
+    y: 0
+    z: -1
+  }
+  orientation: ORIENTATION_E
+  GeneralTags: "isICCamera"
+  GeneralTags: ""
+  displayName: "IC White Ranged"
+  idRef {
+    id: "537bc12064343129595f8276"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Matrix/MatrixICE_white_range"
+    character_sheet_id: "IC_Lv1_White_Ranged"
+    equipment_sheet_id: "IC White Ranged Lv1 Gear"
+    character_mod {
+      archetypeName: "Guard - Seek And Destroy"
+      attitude: AttitudeAggressive
+    }
+    team_id: "IC"
+    char_name: "White IC"
+    GeneralTags: "isICCamera"
+    GeneralTags: ""
+    enabled_at_start: false
+    pc_spawn_number: -1
+    spawn_type: SpawnType_Matrix
+    portrait {
+      filename: ""
+    }
+    dimension_name: "Matrix"
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: 30
+    y: 0
+    z: 3
+  }
+  orientation: ORIENTATION_E
+  GeneralTags: "isICCamera"
+  GeneralTags: ""
+  displayName: "IC White Melee"
+  idRef {
+    id: "537bc12964343129595f8277"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Matrix/MatrixICE_white_melee"
+    character_sheet_id: "IC_Lv1_White_Ranged"
+    equipment_sheet_id: "IC White Melee Lv1 Gear"
+    team_id: "IC"
+    char_name: "White IC"
+    GeneralTags: "isICCamera"
+    GeneralTags: ""
+    enabled_at_start: false
+    pc_spawn_number: -1
+    spawn_type: SpawnType_Matrix
+    portrait {
+      filename: ""
+    }
+    dimension_name: "Matrix"
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: 35
+    y: 0
+    z: 85
+  }
+  orientation: ORIENTATION_N
+  GeneralTags: "isICPaydata"
+  GeneralTags: ""
+  displayName: "IC White Charge"
+  idRef {
+    id: "537bc14e64343129595f8278"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Matrix/SpiritESPAssassin"
+    character_sheet_id: "IC_Lv1_White_ChargeLaser"
+    equipment_sheet_id: "IC White ChargeLaser Lv1 Gear"
+    character_mod {
+      stats {
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+      }
+      specializations {
+      }
+      archetypeName: "Guard - Seek And Destroy"
+      attitude: AttitudeAggressive
+      vulnerabilities {
+      }
+    }
+    team_id: "IC"
+    char_name: "White Sparky IC"
+    GeneralTags: "isICPaydata"
+    GeneralTags: ""
+    enabled_at_start: false
+    pc_spawn_number: -1
+    spawn_type: SpawnType_Matrix
+    portrait {
+      filename: ""
+    }
+    dimension_name: "Matrix"
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: 34
+    y: 0
+    z: 92
+  }
+  orientation: ORIENTATION_W
+  GeneralTags: "isICPaydata"
+  GeneralTags: ""
+  displayName: "IC White Ranged"
+  idRef {
+    id: "537bc15664343129595f8279"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Matrix/MatrixICE_white_range"
+    character_sheet_id: "IC_Lv1_White_Ranged"
+    equipment_sheet_id: "IC White Ranged Lv1 Gear"
+    character_mod {
+      archetypeName: "Guard - Seek And Destroy"
+      attitude: AttitudeAggressive
+    }
+    team_id: "IC"
+    char_name: "White IC"
+    GeneralTags: "isICPaydata"
+    GeneralTags: ""
+    enabled_at_start: false
+    pc_spawn_number: -1
+    spawn_type: SpawnType_Matrix
+    portrait {
+      filename: ""
+    }
+    dimension_name: "Matrix"
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: 37
+    y: 0
+    z: 89
+  }
+  orientation: ORIENTATION_N
+  GeneralTags: "isICPaydata"
+  GeneralTags: ""
+  displayName: "IC White Support"
+  idRef {
+    id: "537bc15c64343129595f827a"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Matrix/SpiritESPShield"
+    character_sheet_id: "IC_Lv1_White_Ranged"
+    equipment_sheet_id: "IC White Support Lv1 Gear"
+    character_mod {
+      archetypeName: "Guard - Seek And Destroy"
+      attitude: AttitudeAggressive
+    }
+    team_id: "IC"
+    char_name: "White Sentry IC"
+    GeneralTags: "isICPaydata"
+    GeneralTags: ""
+    enabled_at_start: false
+    pc_spawn_number: -1
+    spawn_type: SpawnType_Matrix
+    portrait {
+      filename: ""
+    }
+    dimension_name: "Matrix"
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: 17
+    y: 0
+    z: 101
+  }
+  orientation: ORIENTATION_W
+  GeneralTags: "isICPaydata"
+  GeneralTags: ""
+  displayName: "IC White Ranged"
+  idRef {
+    id: "537bc16764343129595f827b"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Matrix/MatrixICE_white_range"
+    character_sheet_id: "IC_Lv1_White_Ranged"
+    equipment_sheet_id: "IC White Ranged Lv1 Gear"
+    character_mod {
+      archetypeName: "Guard - Seek And Destroy"
+      attitude: AttitudeAggressive
+    }
+    team_id: "IC"
+    char_name: "White IC"
+    GeneralTags: "isICPaydata"
+    GeneralTags: ""
+    enabled_at_start: false
+    pc_spawn_number: -1
+    spawn_type: SpawnType_Matrix
+    portrait {
+      filename: ""
+    }
+    dimension_name: "Matrix"
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: 49
+    y: 0
+    z: 152
+  }
+  orientation: ORIENTATION_S
+  displayName: "IC White Ranged"
+  idRef {
+    id: "537bc17864343129595f827c"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Matrix/MatrixICE_white_range"
+    character_sheet_id: "IC_Lv1_White_Ranged"
+    equipment_sheet_id: "IC White Ranged Lv1 Gear"
+    character_mod {
+      archetypeName: "Guard - Seek And Destroy"
+      attitude: AttitudeAggressive
+    }
+    team_id: "IC"
+    char_name: "White IC"
+    enabled_at_start: false
+    pc_spawn_number: -1
+    spawn_type: SpawnType_Matrix
+    portrait {
+      filename: ""
+    }
+    dimension_name: "Matrix"
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: 49
+    y: 0
+    z: 161
+  }
+  orientation: ORIENTATION_S
+  displayName: "IC White Ranged"
+  idRef {
+    id: "537bc17f64343129595f827d"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Matrix/MatrixICE_white_range"
+    character_sheet_id: "IC_Lv1_White_Ranged"
+    equipment_sheet_id: "IC White Ranged Lv1 Gear"
+    character_mod {
+      archetypeName: "Guard - Seek And Destroy"
+      attitude: AttitudeAggressive
+    }
+    team_id: "IC"
+    char_name: "White IC"
+    enabled_at_start: false
+    pc_spawn_number: -1
+    spawn_type: SpawnType_Matrix
+    portrait {
+      filename: ""
+    }
+    dimension_name: "Matrix"
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: 42
+    y: 0
+    z: 156
+  }
+  orientation: ORIENTATION_S
+  displayName: "IC White Charge"
+  idRef {
+    id: "537bc18864343129595f827e"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Matrix/SpiritESPAssassin"
+    character_sheet_id: "IC_Lv1_White_ChargeLaser"
+    equipment_sheet_id: "IC White ChargeLaser Lv1 Gear"
+    character_mod {
+      stats {
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+      }
+      specializations {
+      }
+      archetypeName: "Guard - Seek And Destroy"
+      attitude: AttitudeAggressive
+      vulnerabilities {
+      }
+    }
+    team_id: "IC"
+    char_name: "White Sparky IC"
+    enabled_at_start: false
+    pc_spawn_number: -1
+    spawn_type: SpawnType_Matrix
+    portrait {
+      filename: ""
+    }
+    dimension_name: "Matrix"
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -2
+    y: 0
+    z: 130
+  }
+  orientation: ORIENTATION_E
+  GeneralTags: "isICTurrets"
+  GeneralTags: ""
+  displayName: "IC White Ranged"
+  idRef {
+    id: "537bc19e64343129595f827f"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Matrix/MatrixICE_white_range"
+    character_sheet_id: "IC_Lv1_White_Ranged"
+    equipment_sheet_id: "IC White Ranged Lv1 Gear"
+    character_mod {
+      archetypeName: "Guard - Seek And Destroy"
+      attitude: AttitudeAggressive
+    }
+    team_id: "IC"
+    char_name: "White IC"
+    GeneralTags: "isICTurrets"
+    GeneralTags: ""
+    enabled_at_start: false
+    pc_spawn_number: -1
+    spawn_type: SpawnType_Matrix
+    portrait {
+      filename: ""
+    }
+    dimension_name: "Matrix"
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: 10
+    y: 0
+    z: 163
+  }
+  orientation: ORIENTATION_W
+  GeneralTags: "isICTurrets"
+  GeneralTags: ""
+  displayName: "IC White Melee"
+  idRef {
+    id: "537bc1a464343129595f8280"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Matrix/MatrixICE_white_melee"
+    character_sheet_id: "IC_Lv1_White_Ranged"
+    equipment_sheet_id: "IC White Melee Lv1 Gear"
+    team_id: "IC"
+    char_name: "White IC"
+    GeneralTags: "isICTurrets"
+    GeneralTags: ""
+    enabled_at_start: false
+    pc_spawn_number: -1
+    spawn_type: SpawnType_Matrix
+    portrait {
+      filename: ""
+    }
+    dimension_name: "Matrix"
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: 11
+    y: 0
+    z: 165
+  }
+  orientation: ORIENTATION_W
+  GeneralTags: "isICTurrets"
+  GeneralTags: ""
+  displayName: "IC White Support"
+  idRef {
+    id: "537bc1ab64343129595f8281"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Matrix/SpiritESPShield"
+    character_sheet_id: "IC_Lv1_White_Ranged"
+    equipment_sheet_id: "IC White Support Lv1 Gear"
+    character_mod {
+      archetypeName: "Guard - Seek And Destroy"
+      attitude: AttitudeAggressive
+    }
+    team_id: "IC"
+    char_name: "White Sentry IC"
+    GeneralTags: "isICTurrets"
+    GeneralTags: ""
+    enabled_at_start: false
+    pc_spawn_number: -1
+    spawn_type: SpawnType_Matrix
+    portrait {
+      filename: ""
+    }
+    dimension_name: "Matrix"
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: 5
+    y: 0
+    z: 163
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "isICTurrets"
+  GeneralTags: ""
+  displayName: "IC White Charge"
+  idRef {
+    id: "537bc1b364343129595f8282"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Matrix/SpiritESPAssassin"
+    character_sheet_id: "IC_Lv1_White_ChargeLaser"
+    equipment_sheet_id: "IC White ChargeLaser Lv1 Gear"
+    character_mod {
+      stats {
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+      }
+      specializations {
+      }
+      archetypeName: "Guard - Seek And Destroy"
+      attitude: AttitudeAggressive
+      vulnerabilities {
+      }
+    }
+    team_id: "IC"
+    char_name: "White Sparky IC"
+    GeneralTags: "isICTurrets"
+    GeneralTags: ""
+    enabled_at_start: false
+    pc_spawn_number: -1
+    spawn_type: SpawnType_Matrix
+    portrait {
+      filename: ""
+    }
+    dimension_name: "Matrix"
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -31
+    y: 0
+    z: 148
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "isICSafe"
+  GeneralTags: ""
+  displayName: "IC Black Melee"
+  idRef {
+    id: "537bc1c464343129595f8283"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Matrix/MatrixICE_black_melee"
+    character_sheet_id: "IC_Lv1_Black_Ranged"
+    equipment_sheet_id: "IC Black Melee Lv1 Gear"
+    team_id: "IC"
+    char_name: "Black IC"
+    GeneralTags: "isICSafe"
+    GeneralTags: ""
+    enabled_at_start: false
+    pc_spawn_number: -1
+    spawn_type: SpawnType_Matrix
+    portrait {
+      filename: ""
+    }
+    dimension_name: "Matrix"
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -22
+    y: 0
+    z: 145
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "isICSafe"
+  GeneralTags: ""
+  displayName: "IC White Melee"
+  idRef {
+    id: "537bc1c864343129595f8284"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Matrix/MatrixICE_white_melee"
+    character_sheet_id: "IC_Lv1_White_Ranged"
+    equipment_sheet_id: "IC White Melee Lv1 Gear"
+    team_id: "IC"
+    char_name: "White IC"
+    GeneralTags: "isICSafe"
+    GeneralTags: ""
+    enabled_at_start: false
+    pc_spawn_number: -1
+    spawn_type: SpawnType_Matrix
+    portrait {
+      filename: ""
+    }
+    dimension_name: "Matrix"
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -25
+    y: 0
+    z: 152
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "isICSafe"
+  GeneralTags: ""
+  displayName: "IC White Ranged"
+  idRef {
+    id: "537bc1d464343129595f8285"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Matrix/MatrixICE_white_range"
+    character_sheet_id: "IC_Lv1_White_Ranged"
+    equipment_sheet_id: "IC White Ranged Lv1 Gear"
+    character_mod {
+      archetypeName: "Guard - Seek And Destroy"
+      attitude: AttitudeAggressive
+    }
+    team_id: "IC"
+    char_name: "White IC"
+    GeneralTags: "isICSafe"
+    GeneralTags: ""
+    enabled_at_start: false
+    pc_spawn_number: -1
+    spawn_type: SpawnType_Matrix
+    portrait {
+      filename: ""
+    }
+    dimension_name: "Matrix"
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: 17
+    y: 0
+    z: 114
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "isHeatBaddy"
+  GeneralTags: ""
+  displayName: "IC Black Ranged"
+  idRef {
+    id: "537bc1e564343129595f8286"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Matrix/MatrixICE_black_range"
+    character_sheet_id: "IC_Lv1_Black_Ranged"
+    equipment_sheet_id: "IC Black Ranged Lv1 Gear"
+    character_mod {
+      stats {
+        morale: 24
+        discipline: 24
+        awareness: 24
+        protect_tether_range: 5
+      }
+      skills {
+      }
+      specializations {
+      }
+      archetypeName: "Guard - Seek And Destroy"
+      attitude: AttitudeAggressive
+    }
+    team_id: "IC"
+    char_name: "Black IC"
+    GeneralTags: "isHeatBaddy"
+    GeneralTags: ""
+    pc_spawn_number: -1
+    spawn_type: SpawnType_Matrix
+    portrait {
+      filename: ""
+    }
+    dimension_name: "Matrix"
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -110
+    y: 0
+    z: 28
+  }
+  orientation: ORIENTATION_S
+  displayName: "Tir Captain"
+  idRef {
+    id: "537bc40664343129595f8287"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Berlin:Aztechnology/ElfMaleAztechGuard"
+    character_sheet_id: "Lonestar_Lv1_Captain"
+    equipment_sheet_id: "Lonestar_Lv1_Captain_Gear"
+    character_mod {
+      stats {
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+      }
+      specializations {
+      }
+      vulnerabilities {
+      }
+    }
+    team_id: "Tir"
+    char_name: "Tir Tairngire Captain"
+    pc_spawn_number: -1
+    portrait {
+      filename: ""
+    }
+    karma: 44
+    scale_character_sheet: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -110
+    y: 0
+    z: 29
+  }
+  orientation: ORIENTATION_S
+  displayName: "Tir SMG"
+  idRef {
+    id: "537bc40864343129595f8288"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Seattle:Core/ElfFemale"
+    character_sheet_id: "Lonestar_Lv1_Heavy_SMG"
+    equipment_sheet_id: "Lonestar_Lv1_SMG_Gear"
+    character_mod {
+      stats {
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+      }
+      specializations {
+      }
+      vulnerabilities {
+      }
+    }
+    equipment {
+      prefab_name: "Nixie_Clothes"
+    }
+    team_id: "Tir"
+    char_name: "Tir Tairngire Commando"
+    pc_spawn_number: -1
+    portrait {
+      filename: ""
+    }
+    portrait_code_override: "s4h5c11b0t0"
+    karma: 39
+    scale_character_sheet: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -110
+    y: 0
+    z: 24
+  }
+  orientation: ORIENTATION_S
+  displayName: "Tir Mage"
+  idRef {
+    id: "537bc40a64343129595f8289"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Berlin:Aztechnology/ElfMaleAztechBloodMage"
+    character_sheet_id: "Lonestar_Lv1_Human_Mage"
+    equipment_sheet_id: "Lonestar_Lv1_Mage_Gear"
+    character_mod {
+      stats {
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+      }
+      specializations {
+      }
+      vulnerabilities {
+      }
+    }
+    team_id: "Tir"
+    char_name: "Tir Tairngire Mage"
+    pc_spawn_number: -1
+    portrait {
+      filename: ""
+    }
+    karma: 40
+    scale_character_sheet: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -110
+    y: 0
+    z: 27
+  }
+  orientation: ORIENTATION_S
+  displayName: "Tir Pistol"
+  idRef {
+    id: "537bc40c64343129595f828a"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Seattle:Story/TirTairngireGuard"
+    character_sheet_id: "Lonestar_Lv1_Human_Pistol"
+    equipment_sheet_id: "Lonestar_Lv1_Pistol_Gear"
+    character_mod {
+      stats {
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+      }
+      specializations {
+      }
+      vulnerabilities {
+      }
+    }
+    team_id: "Tir"
+    char_name: "Lonestar Guard"
+    pc_spawn_number: -1
+    portrait {
+      filename: ""
+    }
+    karma: 30
+    scale_character_sheet: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -110
+    y: 0
+    z: 26
+  }
+  orientation: ORIENTATION_S
+  displayName: "Tir Shotgun"
+  idRef {
+    id: "537bc40d64343129595f828b"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Berlin:Gangers/ElfMaleBerlinGanger"
+    character_sheet_id: "Lonestar_Lv1_Ork_Shotgun"
+    equipment_sheet_id: "Lonestar_Lv1_Shotgun_Gear"
+    character_mod {
+      stats {
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+      }
+      specializations {
+      }
+      vulnerabilities {
+      }
+    }
+    team_id: "Tir"
+    char_name: "Tir Tairngire Commando"
+    pc_spawn_number: -1
+    portrait {
+      filename: ""
+    }
+    karma: 33
+    scale_character_sheet: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -110
+    y: 0
+    z: 25
+  }
+  orientation: ORIENTATION_S
+  displayName: "Tir Melee"
+  idRef {
+    id: "537bc81564343129595f828c"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Seattle:Story/GreenLucifer"
+    character_sheet_id: "Generic_Lv1_Human_Melee"
+    equipment_sheet_id: "Generic_Lv1_Melee_Gear"
+    character_mod {
+      stats {
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+      }
+      specializations {
+      }
+      vulnerabilities {
+      }
+    }
+    team_id: "Tir"
+    char_name: "Tir Tairngire Commando"
+    pc_spawn_number: -1
+    portrait {
+      filename: ""
+    }
+    karma: 28
+    scale_character_sheet: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -21
+    y: 0
+    z: 66
+  }
+  orientation: ORIENTATION_N
+  GeneralTags: "squad5"
+  GeneralTags: ""
+  idRef {
+    id: "537bc94c64343129595f828d"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Berlin:Aztechnology/ElfMaleAztechGuard"
+    character_sheet_id: "Lonestar_Lv1_Captain"
+    equipment_sheet_id: "Lonestar_Lv1_Captain_Gear"
+    character_mod {
+      stats {
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+      }
+      specializations {
+      }
+      vulnerabilities {
+      }
+    }
+    team_id: "Tir"
+    char_name: "Tir Tairngire Captain"
+    GeneralTags: "squad5"
+    GeneralTags: ""
+    pc_spawn_number: -1
+    portrait {
+      filename: ""
+    }
+    karma: 44
+    scale_character_sheet: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -27
+    y: 0
+    z: 64
+  }
+  orientation: ORIENTATION_E
+  GeneralTags: "squad5"
+  GeneralTags: ""
+  displayName: "Tir Shotgun"
+  idRef {
+    id: "537bc95264343129595f828e"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Berlin:Gangers/ElfMaleBerlinGanger"
+    character_sheet_id: "Lonestar_Lv1_Ork_Shotgun"
+    equipment_sheet_id: "Lonestar_Lv1_Shotgun_Gear"
+    character_mod {
+      stats {
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+      }
+      specializations {
+      }
+      vulnerabilities {
+      }
+    }
+    team_id: "Tir"
+    char_name: "Tir Tairngire Commando"
+    GeneralTags: "squad5"
+    GeneralTags: ""
+    pc_spawn_number: -1
+    portrait {
+      filename: ""
+    }
+    karma: 33
+    scale_character_sheet: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -14
+    y: 0
+    z: 64
+  }
+  orientation: ORIENTATION_N
+  GeneralTags: "squad5"
+  GeneralTags: ""
+  idRef {
+    id: "537bc96464343129595f828f"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Seattle:Story/TirTairngireGuard"
+    character_sheet_id: "Lonestar_Lv1_Human_Pistol"
+    equipment_sheet_id: "Lonestar_Lv1_Pistol_Gear"
+    character_mod {
+      stats {
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+      }
+      specializations {
+      }
+      vulnerabilities {
+      }
+    }
+    team_id: "Tir"
+    char_name: "Lonestar Guard"
+    GeneralTags: "squad5"
+    GeneralTags: ""
+    pc_spawn_number: -1
+    portrait {
+      filename: ""
+    }
+    karma: 30
+    scale_character_sheet: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -26
+    y: 0
+    z: 68
+  }
+  orientation: ORIENTATION_N
+  GeneralTags: "squad5"
+  GeneralTags: ""
+  displayName: "Tir Mage"
+  idRef {
+    id: "537bc96e64343129595f8290"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Berlin:Aztechnology/ElfMaleAztechBloodMage"
+    character_sheet_id: "Lonestar_Lv1_Human_Mage"
+    equipment_sheet_id: "Lonestar_Lv1_Mage_Gear"
+    character_mod {
+      stats {
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+      }
+      specializations {
+      }
+      vulnerabilities {
+      }
+    }
+    team_id: "Tir"
+    char_name: "Tir Tairngire Mage"
+    GeneralTags: "squad5"
+    GeneralTags: ""
+    pc_spawn_number: -1
+    portrait {
+      filename: ""
+    }
+    karma: 40
+    scale_character_sheet: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -24
+    y: 0
+    z: 32
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "squad6"
+  GeneralTags: ""
+  displayName: "Tir SMG"
+  idRef {
+    id: "537bc98764343129595f8291"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Seattle:Core/ElfFemale"
+    character_sheet_id: "Lonestar_Lv1_Heavy_SMG"
+    equipment_sheet_id: "Lonestar_Lv1_SMG_Gear"
+    character_mod {
+      stats {
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+      }
+      specializations {
+      }
+      vulnerabilities {
+      }
+    }
+    equipment {
+      prefab_name: "Nixie_Clothes"
+    }
+    team_id: "Tir"
+    char_name: "Tir Tairngire Commando"
+    GeneralTags: "squad6"
+    GeneralTags: ""
+    pc_spawn_number: -1
+    portrait {
+      filename: ""
+    }
+    portrait_code_override: "s4h5c11b0t0"
+    karma: 39
+    scale_character_sheet: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -22
+    y: 0
+    z: 29
+  }
+  orientation: ORIENTATION_E
+  GeneralTags: "squad6"
+  GeneralTags: ""
+  idRef {
+    id: "537bc99164343129595f8292"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Berlin:Aztechnology/ElfMaleAztechGuard"
+    character_sheet_id: "Lonestar_Lv1_Captain"
+    equipment_sheet_id: "Lonestar_Lv1_Captain_Gear"
+    character_mod {
+      stats {
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+      }
+      specializations {
+      }
+      vulnerabilities {
+      }
+    }
+    team_id: "Tir"
+    char_name: "Tir Tairngire Captain"
+    GeneralTags: "squad6"
+    GeneralTags: ""
+    pc_spawn_number: -1
+    portrait {
+      filename: ""
+    }
+    karma: 44
+    scale_character_sheet: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -21
+    y: 0
+    z: 33
+  }
+  orientation: ORIENTATION_E
+  GeneralTags: "squad6"
+  GeneralTags: ""
+  displayName: "Tir Mage"
+  idRef {
+    id: "537bc99764343129595f8293"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Berlin:Aztechnology/ElfMaleAztechBloodMage"
+    character_sheet_id: "Lonestar_Lv1_Human_Mage"
+    equipment_sheet_id: "Lonestar_Lv1_Mage_Gear"
+    character_mod {
+      stats {
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+      }
+      specializations {
+      }
+      vulnerabilities {
+      }
+    }
+    team_id: "Tir"
+    char_name: "Tir Tairngire Mage"
+    GeneralTags: "squad6"
+    GeneralTags: ""
+    pc_spawn_number: -1
+    portrait {
+      filename: ""
+    }
+    karma: 40
+    scale_character_sheet: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -24
+    y: 0
+    z: 39
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "squad6"
+  GeneralTags: ""
+  displayName: "Tir Melee"
+  idRef {
+    id: "537bc9a164343129595f8294"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Seattle:Story/GreenLucifer"
+    character_sheet_id: "Generic_Lv1_Human_Melee"
+    equipment_sheet_id: "Generic_Lv1_Melee_Gear"
+    character_mod {
+      stats {
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+      }
+      specializations {
+      }
+      vulnerabilities {
+      }
+    }
+    team_id: "Tir"
+    char_name: "Tir Tairngire Commando"
+    GeneralTags: "squad6"
+    GeneralTags: ""
+    pc_spawn_number: -1
+    portrait {
+      filename: ""
+    }
+    karma: 28
+    scale_character_sheet: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -49
+    y: 0
+    z: -2
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "squad1"
+  GeneralTags: ""
+  idRef {
+    id: "537bc9c864343129595f8295"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Seattle:Story/TirTairngireGuard"
+    character_sheet_id: "Lonestar_Lv1_Human_Pistol"
+    equipment_sheet_id: "Lonestar_Lv1_Pistol_Gear"
+    character_mod {
+      stats {
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+      }
+      specializations {
+      }
+      vulnerabilities {
+      }
+    }
+    team_id: "Tir"
+    char_name: "Lonestar Guard"
+    GeneralTags: "squad1"
+    GeneralTags: ""
+    pc_spawn_number: -1
+    portrait {
+      filename: ""
+    }
+    karma: 30
+    scale_character_sheet: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -50
+    y: 0
+    z: 2
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "squad1"
+  GeneralTags: ""
+  displayName: "Tir Melee"
+  idRef {
+    id: "537bc9d164343129595f8296"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Seattle:Story/GreenLucifer"
+    character_sheet_id: "Generic_Lv1_Human_Melee"
+    equipment_sheet_id: "Generic_Lv1_Melee_Gear"
+    character_mod {
+      stats {
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+      }
+      specializations {
+      }
+      vulnerabilities {
+      }
+    }
+    team_id: "Tir"
+    char_name: "Tir Tairngire Commando"
+    GeneralTags: "squad1"
+    GeneralTags: ""
+    pc_spawn_number: -1
+    portrait {
+      filename: ""
+    }
+    karma: 28
+    scale_character_sheet: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -67
+    y: 0
+    z: -13
+  }
+  orientation: ORIENTATION_E
+  GeneralTags: "squad2"
+  GeneralTags: ""
+  displayName: "Tir Shotgun"
+  idRef {
+    id: "537bc9dc64343129595f8297"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Berlin:Gangers/ElfMaleBerlinGanger"
+    character_sheet_id: "Lonestar_Lv1_Ork_Shotgun"
+    equipment_sheet_id: "Lonestar_Lv1_Shotgun_Gear"
+    character_mod {
+      stats {
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+      }
+      specializations {
+      }
+      vulnerabilities {
+      }
+    }
+    team_id: "Tir"
+    char_name: "Tir Tairngire Commando"
+    GeneralTags: "squad2"
+    GeneralTags: ""
+    pc_spawn_number: -1
+    portrait {
+      filename: ""
+    }
+    karma: 33
+    scale_character_sheet: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -72
+    y: 0
+    z: -12
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "squad2"
+  GeneralTags: ""
+  displayName: "Tir SMG"
+  idRef {
+    id: "537bc9ed64343129595f8298"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Seattle:Core/ElfFemale"
+    character_sheet_id: "Lonestar_Lv1_Heavy_SMG"
+    equipment_sheet_id: "Lonestar_Lv1_SMG_Gear"
+    character_mod {
+      stats {
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+      }
+      specializations {
+      }
+      vulnerabilities {
+      }
+    }
+    equipment {
+      prefab_name: "Nixie_Clothes"
+    }
+    team_id: "Tir"
+    char_name: "Tir Tairngire Commando"
+    GeneralTags: "squad2"
+    GeneralTags: ""
+    pc_spawn_number: -1
+    portrait {
+      filename: ""
+    }
+    portrait_code_override: "s4h5c11b0t0"
+    karma: 39
+    scale_character_sheet: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -74
+    y: 0
+    z: -11
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "squad2"
+  GeneralTags: ""
+  displayName: "Tir Mage"
+  idRef {
+    id: "537bca0564343129595f8299"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Berlin:Aztechnology/ElfMaleAztechBloodMage"
+    character_sheet_id: "Lonestar_Lv1_Human_Mage"
+    equipment_sheet_id: "Lonestar_Lv1_Mage_Gear"
+    character_mod {
+      stats {
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+      }
+      specializations {
+      }
+      vulnerabilities {
+      }
+    }
+    team_id: "Tir"
+    char_name: "Tir Tairngire Mage"
+    GeneralTags: "squad2"
+    GeneralTags: ""
+    pc_spawn_number: -1
+    portrait {
+      filename: ""
+    }
+    karma: 40
+    scale_character_sheet: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -88
+    y: 0
+    z: 46
+  }
+  orientation: ORIENTATION_W
+  GeneralTags: "squad3"
+  GeneralTags: ""
+  idRef {
+    id: "537bca2864343129595f829a"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Berlin:Aztechnology/ElfMaleAztechGuard"
+    character_sheet_id: "Lonestar_Lv1_Captain"
+    equipment_sheet_id: "Lonestar_Lv1_Captain_Gear"
+    character_mod {
+      stats {
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+      }
+      specializations {
+      }
+      vulnerabilities {
+      }
+    }
+    team_id: "Tir"
+    char_name: "Tir Tairngire Captain"
+    GeneralTags: "squad3"
+    GeneralTags: ""
+    pc_spawn_number: -1
+    portrait {
+      filename: ""
+    }
+    karma: 44
+    scale_character_sheet: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -95
+    y: 0
+    z: 40
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "squad3"
+  GeneralTags: ""
+  idRef {
+    id: "537bca3264343129595f829b"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Seattle:Story/TirTairngireGuard"
+    character_sheet_id: "Lonestar_Lv1_Human_Pistol"
+    equipment_sheet_id: "Lonestar_Lv1_Pistol_Gear"
+    character_mod {
+      stats {
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+      }
+      specializations {
+      }
+      vulnerabilities {
+      }
+    }
+    team_id: "Tir"
+    char_name: "Lonestar Guard"
+    GeneralTags: "squad3"
+    GeneralTags: ""
+    pc_spawn_number: -1
+    portrait {
+      filename: ""
+    }
+    karma: 30
+    scale_character_sheet: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -89
+    y: 0
+    z: 50
+  }
+  orientation: ORIENTATION_W
+  GeneralTags: "squad3"
+  GeneralTags: ""
+  displayName: "Tir Shotgun"
+  idRef {
+    id: "537bca4c64343129595f829c"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Berlin:Gangers/ElfMaleBerlinGanger"
+    character_sheet_id: "Lonestar_Lv1_Ork_Shotgun"
+    equipment_sheet_id: "Lonestar_Lv1_Shotgun_Gear"
+    character_mod {
+      stats {
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+      }
+      specializations {
+      }
+      vulnerabilities {
+      }
+    }
+    team_id: "Tir"
+    char_name: "Tir Tairngire Commando"
+    GeneralTags: "squad3"
+    GeneralTags: ""
+    pc_spawn_number: -1
+    portrait {
+      filename: ""
+    }
+    karma: 33
+    scale_character_sheet: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -121
+    y: 0
+    z: 38
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "squad4"
+  GeneralTags: ""
+  displayName: "Tir SMG"
+  idRef {
+    id: "537bca6264343129595f829d"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Seattle:Core/ElfFemale"
+    character_sheet_id: "Lonestar_Lv1_Heavy_SMG"
+    equipment_sheet_id: "Lonestar_Lv1_SMG_Gear"
+    character_mod {
+      stats {
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+      }
+      specializations {
+      }
+      vulnerabilities {
+      }
+    }
+    equipment {
+      prefab_name: "Nixie_Clothes"
+    }
+    team_id: "Tir"
+    char_name: "Tir Tairngire Commando"
+    GeneralTags: "squad4"
+    GeneralTags: ""
+    pc_spawn_number: -1
+    portrait {
+      filename: ""
+    }
+    portrait_code_override: "s4h5c11b0t0"
+    karma: 39
+    scale_character_sheet: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -116
+    y: 0
+    z: 50
+  }
+  orientation: ORIENTATION_W
+  GeneralTags: "squad4"
+  GeneralTags: ""
+  displayName: "Tir Melee"
+  idRef {
+    id: "537bca6a64343129595f829e"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Seattle:Story/GreenLucifer"
+    character_sheet_id: "Generic_Lv1_Human_Melee"
+    equipment_sheet_id: "Generic_Lv1_Melee_Gear"
+    character_mod {
+      stats {
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+      }
+      specializations {
+      }
+      vulnerabilities {
+      }
+    }
+    team_id: "Tir"
+    char_name: "Tir Tairngire Commando"
+    GeneralTags: "squad4"
+    GeneralTags: ""
+    pc_spawn_number: -1
+    portrait {
+      filename: ""
+    }
+    karma: 28
+    scale_character_sheet: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -119
+    y: 0
+    z: 52
+  }
+  orientation: ORIENTATION_W
+  GeneralTags: "squad4"
+  GeneralTags: ""
+  displayName: "Tir Mage"
+  idRef {
+    id: "537bca7c64343129595f829f"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Berlin:Aztechnology/ElfMaleAztechBloodMage"
+    character_sheet_id: "Lonestar_Lv1_Human_Mage"
+    equipment_sheet_id: "Lonestar_Lv1_Mage_Gear"
+    character_mod {
+      stats {
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+      }
+      specializations {
+      }
+      vulnerabilities {
+      }
+    }
+    team_id: "Tir"
+    char_name: "Tir Tairngire Mage"
+    GeneralTags: "squad4"
+    GeneralTags: ""
+    pc_spawn_number: -1
+    portrait {
+      filename: ""
+    }
+    karma: 40
+    scale_character_sheet: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -19
+    y: 0
+    z: 93
+  }
+  orientation: ORIENTATION_S
+  displayName: "Nobody"
+  idRef {
+    id: "537bcf6d64343129595f82dd"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Seattle:Objects/InvisibleActor"
+    character_sheet_id: "BaseCivilian"
+    character_mod {
+      stats {
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        magic: 0
+        hp: 0
+        ap: 0
+        armor: 0
+        force: 0
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+        ranged_combat: 0
+        close_combat: 0
+        throwing_weapons: 0
+        spellcasting: 0
+        decking: 0
+        conjuring: 0
+        spirit_summoning: 0
+        drone_control: 0
+        biotech: 0
+        dodge: 0
+        etiquette_corporate: 0
+        etiquette_security: 0
+        etiquette_gang: 0
+        etiquette_socialite: 0
+        chi_casting: 0
+        etiquette_shadowrunner: 0
+        etiquette_street: 0
+        etiquette_academic: 0
+      }
+      specializations {
+        pistol: 0
+        rifle: 0
+        shotgun: 0
+        smg: 0
+        edged: 0
+        unarmed: 0
+        spirit_control: 0
+        esp_control: 0
+        drone_combat: 0
+      }
+      attitude: AttitudeAggressive
+      vulnerabilities {
+      }
+    }
+    team_id: "Shadowrunners"
+    char_name: ""
+    pc_spawn_number: -1
+    portrait {
+      filename: ""
+    }
     karma: 6
   }
 }
@@ -7821,7 +11556,7 @@ variables {
   }
 }
 variables {
-  int_value: 0
+  int_value: 4
   variableref_value {
     scope: TsVariableScope_Scene
     name: "numICCameraTotal"
@@ -7829,7 +11564,7 @@ variables {
   }
 }
 variables {
-  int_value: 0
+  int_value: 4
   variableref_value {
     scope: TsVariableScope_Scene
     name: "numICPaydataTotal"
@@ -7837,7 +11572,7 @@ variables {
   }
 }
 variables {
-  int_value: 0
+  int_value: 4
   variableref_value {
     scope: TsVariableScope_Scene
     name: "numICTurretTotal"
@@ -7845,7 +11580,7 @@ variables {
   }
 }
 variables {
-  int_value: 0
+  int_value: 3
   variableref_value {
     scope: TsVariableScope_Scene
     name: "numICSafeTotal"
@@ -7887,7 +11622,7 @@ mapName: "Megacorps"
 parentStory: ""
 scene_title: "Pyramid Operations"
 scene_subtitle: ""
-scene_synopsis: "When you first came to San Francisco, this iconic arcology held the battered remains of the local arm of Aztechnology. Now it stands as an icon of the Japanese megacorps\342\200\231 total domination of the city. Flashes of muzzle fire glimpsed through the windows reveal that this icon is in danger of shattering, as a fifth column of Tir Tairngire agents rise up against their corporate overlords\342\200\246."
+scene_synopsis: "When you first came to San Francisco, this iconic arcology held the battered remains of the local arm of Aztechnology. Now it stands as an icon of the Japanese megacorps\342\200\231 total domination of the city. Flashes of muzzle fire glimpsed through the windows reveal that this icon is in danger of shattering, as Tir Tairngire commandos rise up against the corporate overlords\342\200\246."
 scene_image: ""
 scene_continue_button_skip: false
 scene_restore_runner_health: false
@@ -7912,15 +11647,25 @@ team_affiliations {
   affiliation: 0
   affiliation: 1
   affiliation: 0
+  affiliation: 1
 }
 team_affiliations {
   team_name: "Tir"
   affiliation: 1
   affiliation: 0
   affiliation: 0
+  affiliation: 0
 }
 team_affiliations {
   team_name: "Civilians"
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+  affiliation: 0
+}
+team_affiliations {
+  team_name: "IC"
+  affiliation: 1
   affiliation: 0
   affiliation: 0
   affiliation: 0
@@ -7930,10 +11675,8 @@ scene_dimensions {
 }
 scene_dimensions {
   dimension_name: "Matrix"
-  initial_alarm_state: 5
+  initial_alarm_state: 0
   turns_per_round: 3
-}
-character_roster {
 }
 show_hiring_screen_on_scene_load: false
 scene_hiring_prerequisites {

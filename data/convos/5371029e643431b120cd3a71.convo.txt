@@ -37,6 +37,9 @@ nodes {
     nextNodeIndex: 3
   }
   nodeType: ConversationNodeType_Simple
+  sourceInSceneRef {
+    id: "537548ff6434316b13333684"
+  }
 }
 nodes {
   idRef {
@@ -49,6 +52,9 @@ nodes {
     nextNodeIndex: 4
   }
   nodeType: ConversationNodeType_Simple
+  sourceInSceneRef {
+    id: "537bcf6d64343129595f82dd"
+  }
 }
 nodes {
   idRef {
@@ -65,7 +71,7 @@ nodes {
     }
   }
   branches {
-    responseText: ""
+    responseText: "I hope you\'re okay."
     nextNodeIndex: 6
   }
   branches {

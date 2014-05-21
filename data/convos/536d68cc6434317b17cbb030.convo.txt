@@ -129,7 +129,7 @@ nodes {
   index: 6
   text: ""
   branches {
-    responseText: ""
+    responseText: "Norton, do you have any counsel to offer?"
     conditions {
       ops {
         functionName: "Evaluate If Actor is Inside Region"
@@ -185,7 +185,7 @@ nodes {
     }
   }
   branches {
-    responseText: ""
+    responseText: "Elorn, you must have an opinion about this."
     conditions {
       ops {
         functionName: "Evaluate If Actor is Inside Region"
@@ -241,7 +241,7 @@ nodes {
     }
   }
   branches {
-    responseText: ""
+    responseText: "What do you think, Hailey?"
     conditions {
       ops {
         functionName: "Evaluate If Actor is Inside Region"

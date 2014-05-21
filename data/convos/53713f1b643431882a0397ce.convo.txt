@@ -28,6 +28,29 @@ nodes {
   sourceInSceneRef {
     id: "537684326434316a34fc4631"
   }
+  actions {
+    ops {
+      functionName: "Add Camera Point of Interest (Actors)"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Actor)"
+              args {
+                string_value: "537684326434316a34fc4631"
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        float_value: 0
+      }
+    }
+  }
 }
 nodes {
   idRef {

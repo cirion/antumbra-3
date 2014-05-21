@@ -177,6 +177,127 @@ nodes {
     }
   }
   branches {
+    responseText: "Sell megacorp paydata."
+    conditions {
+      ops {
+        functionName: "Evaluate If Actor Has Item"
+        args {
+          call_value {
+            functionName: "Specific Actor"
+            args {
+              call_value {
+                functionName: "Triggering Actor"
+              }
+            }
+            args {
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "HasOrHasNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Map Item (Item)"
+            args {
+              string_value: "a3-paydata-megacorps"
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 60
+    hideIfUnavailable: true
+  }
+  branches {
+    responseText: "Sell Native Californian paydata."
+    conditions {
+      ops {
+        functionName: "Evaluate If Actor Has Item"
+        args {
+          call_value {
+            functionName: "Specific Actor"
+            args {
+              call_value {
+                functionName: "Triggering Actor"
+              }
+            }
+            args {
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "HasOrHasNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Map Item (Item)"
+            args {
+              string_value: "a3-paydata-native_californians"
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 61
+    hideIfUnavailable: true
+  }
+  branches {
+    responseText: "Check for Hailey\'s trideo sales."
+    conditions {
+      ops {
+        functionName: "Comparison (int)"
+        args {
+          call_value {
+            functionName: "Get Story Variable (int)"
+            args {
+              string_value: "531d26a736623648180018bf"
+            }
+            args {
+              string_value: "Global_HaileySellingTrideoState"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+        args {
+          int_value: 0
+        }
+      }
+    }
+    nextNodeIndex: 62
+    hideIfUnavailable: true
+    onlyOnce: true
+    idRef {
+      id: "537bd1c864343129595f84bc"
+    }
+  }
+  branches {
     responseText: "Prepare a convoy to San Francisco."
     conditions {
       ops {
@@ -208,7 +329,7 @@ nodes {
         }
       }
     }
-    nextNodeIndex: 60
+    nextNodeIndex: 63
     hideIfUnavailable: true
   }
   branches {
@@ -294,7 +415,7 @@ nodes {
         }
       }
     }
-    nextNodeIndex: 61
+    nextNodeIndex: 64
     hideIfUnavailable: true
   }
   branches {
@@ -329,7 +450,7 @@ nodes {
         }
       }
     }
-    nextNodeIndex: 62
+    nextNodeIndex: 65
     hideIfUnavailable: true
   }
   branches {
@@ -364,89 +485,7 @@ nodes {
         }
       }
     }
-    nextNodeIndex: 63
-    hideIfUnavailable: true
-  }
-  branches {
-    responseText: "Sell Native Californian paydata."
-    conditions {
-      ops {
-        functionName: "Evaluate If Actor Has Item"
-        args {
-          call_value {
-            functionName: "Specific Actor"
-            args {
-              call_value {
-                functionName: "Triggering Actor"
-              }
-            }
-            args {
-            }
-          }
-        }
-        args {
-          call_value {
-            functionName: "Get Preset Value (int)"
-            args {
-              string_value: "HasOrHasNot"
-            }
-            args {
-              int_value: 1
-            }
-          }
-        }
-        args {
-          call_value {
-            functionName: "Get Map Item (Item)"
-            args {
-              string_value: "a3-paydata-native_californians"
-            }
-          }
-        }
-      }
-    }
-    nextNodeIndex: 64
-    hideIfUnavailable: true
-  }
-  branches {
-    responseText: "Sell megacorp paydata."
-    conditions {
-      ops {
-        functionName: "Evaluate If Actor Has Item"
-        args {
-          call_value {
-            functionName: "Specific Actor"
-            args {
-              call_value {
-                functionName: "Triggering Actor"
-              }
-            }
-            args {
-            }
-          }
-        }
-        args {
-          call_value {
-            functionName: "Get Preset Value (int)"
-            args {
-              string_value: "HasOrHasNot"
-            }
-            args {
-              int_value: 1
-            }
-          }
-        }
-        args {
-          call_value {
-            functionName: "Get Map Item (Item)"
-            args {
-              string_value: "a3-paydata-megacorps"
-            }
-          }
-        }
-      }
-    }
-    nextNodeIndex: 65
+    nextNodeIndex: 66
     hideIfUnavailable: true
   }
   branches {
@@ -3592,73 +3631,254 @@ nodes {
 }
 nodes {
   idRef {
-    id: "536d9c09366236081a002a0c"
+    id: "537674e86434316a34fc42b5"
   }
   index: 60
-  text: "Are you sure?"
+  text: "To whom do you wish to sell?"
   branches {
-    responseText: "Yes, let\'s go!"
+    responseText: "Sell to a standard data broker."
+    actions {
+      ops {
+        functionName: "Add Nuyen"
+        args {
+          int_value: 400
+        }
+      }
+      ops {
+        functionName: "Remove Item from Actor"
+        args {
+          call_value {
+            functionName: "Get Map Item (Item)"
+            args {
+              string_value: "a3-paydata-megacorps"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Specific Actor"
+            args {
+              call_value {
+                functionName: "Triggering Actor"
+              }
+            }
+            args {
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "WithOrWithout"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+      }
+    }
     nextNodeIndex: -1
   }
   branches {
-    responseText: "Wait, I need to do something else first."
+    responseText: "{{CC}}Etiquette: Corporate{{/CC}} Sell to Aztechnology."
+    conditions {
+      ops {
+        functionName: "Compare Actor Skill"
+        args {
+          call_value {
+            functionName: "Triggering Actor"
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "BaseOrCurrent"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "ActorSkills"
+            }
+            args {
+              int_value: 13
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 2
+            }
+          }
+        }
+        args {
+          int_value: 0
+        }
+      }
+    }
+    actions {
+      ops {
+        functionName: "Add Nuyen"
+        args {
+          int_value: 600
+        }
+      }
+      ops {
+        functionName: "Remove Item from Actor"
+        args {
+          call_value {
+            functionName: "Get Map Item (Item)"
+            args {
+              string_value: "a3-paydata-megacorps"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Specific Actor"
+            args {
+              call_value {
+                functionName: "Triggering Actor"
+              }
+            }
+            args {
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "WithOrWithout"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: -1
+  }
+  branches {
+    responseText: "{{CC}}Etiquette: Shadowrunner{{/CC}} Sell to other runners interested in corp runs."
+    conditions {
+      ops {
+        functionName: "Compare Actor Skill"
+        args {
+          call_value {
+            functionName: "Triggering Actor"
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "BaseOrCurrent"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "ActorSkills"
+            }
+            args {
+              int_value: 17
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 2
+            }
+          }
+        }
+        args {
+          int_value: 0
+        }
+      }
+    }
+    actions {
+      ops {
+        functionName: "Remove Item from Actor"
+        args {
+          call_value {
+            functionName: "Get Map Item (Item)"
+            args {
+              string_value: "a3-paydata-megacorps"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Specific Actor"
+            args {
+              call_value {
+                functionName: "Triggering Actor"
+              }
+            }
+            args {
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "WithOrWithout"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+      }
+      ops {
+        functionName: "Add Nuyen"
+        args {
+          int_value: 600
+        }
+      }
+    }
+    nextNodeIndex: -1
+  }
+  branches {
+    responseText: "I\'ll hold on to this for now."
     nextNodeIndex: -1
   }
   nodeType: ConversationNodeType_Simple
-}
-nodes {
-  idRef {
-    id: "536d9c68366236081a002a19"
+  sourceInSceneRef {
+    id: "536c5f88366236d41e0027f2"
   }
-  index: 61
-  text: "Are you sure?"
-  branches {
-    responseText: "Yes, let\'s go!"
-    nextNodeIndex: -1
-  }
-  branches {
-    responseText: "Wait, I need to do something else first."
-    nextNodeIndex: -1
-  }
-  nodeType: ConversationNodeType_Simple
-}
-nodes {
-  idRef {
-    id: "536d9c6b366236081a002a1d"
-  }
-  index: 62
-  text: "Are you sure?"
-  branches {
-    responseText: "Yes, let\'s go!"
-    nextNodeIndex: -1
-  }
-  branches {
-    responseText: "Wait, I need to do something else first."
-    nextNodeIndex: -1
-  }
-  nodeType: ConversationNodeType_Simple
-}
-nodes {
-  idRef {
-    id: "536d9c6d366236081a002a21"
-  }
-  index: 63
-  text: "Are you sure? This is the point of no return. Please be sure all your affairs are in order."
-  branches {
-    responseText: "I am ready."
-    nextNodeIndex: -1
-  }
-  branches {
-    responseText: "Maybe I\'m not totally ready yet."
-    nextNodeIndex: -1
-  }
-  nodeType: ConversationNodeType_Simple
 }
 nodes {
   idRef {
     id: "537674e16434316a34fc42b3"
   }
-  index: 64
+  index: 61
   text: "To whom do you wish to sell?"
   branches {
     responseText: "Sell to a standard data broker."
@@ -3895,245 +4115,106 @@ nodes {
     nextNodeIndex: -1
   }
   nodeType: ConversationNodeType_Simple
+  sourceInSceneRef {
+    id: "536c5f88366236d41e0027f2"
+  }
 }
 nodes {
   idRef {
-    id: "537674e86434316a34fc42b5"
+    id: "537bd1da64343129595f8599"
+  }
+  index: 62
+  text: "Hailey has found a buyer for the trideo. They may see profit in it themselves, or may want to suppress the information. In any case, it\'s out of your hands now."
+  nodeType: ConversationNodeType_Simple
+  sourceInSceneRef {
+    id: "536c5f88366236d41e0027f2"
+  }
+  actions {
+    ops {
+      functionName: "Add Nuyen"
+      args {
+        int_value: 1000
+      }
+    }
+    ops {
+      functionName: "Set Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (int)"
+          args {
+            string_value: "531d26a736623648180018bf"
+          }
+          args {
+            string_value: "Global_HaileySellingTrideoState"
+          }
+        }
+      }
+      args {
+        int_value: 2
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "536d9c09366236081a002a0c"
+  }
+  index: 63
+  text: "Are you sure?"
+  branches {
+    responseText: "Yes, let\'s go!"
+    nextNodeIndex: -1
+  }
+  branches {
+    responseText: "Wait, I need to do something else first."
+    nextNodeIndex: -1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "536d9c68366236081a002a19"
+  }
+  index: 64
+  text: "Are you sure?"
+  branches {
+    responseText: "Yes, let\'s go!"
+    nextNodeIndex: -1
+  }
+  branches {
+    responseText: "Wait, I need to do something else first."
+    nextNodeIndex: -1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "536d9c6b366236081a002a1d"
   }
   index: 65
-  text: "To whom do you wish to sell?"
+  text: "Are you sure?"
   branches {
-    responseText: "Sell to a standard data broker."
-    actions {
-      ops {
-        functionName: "Add Nuyen"
-        args {
-          int_value: 400
-        }
-      }
-      ops {
-        functionName: "Remove Item from Actor"
-        args {
-          call_value {
-            functionName: "Get Map Item (Item)"
-            args {
-              string_value: "a3-paydata-megacorps"
-            }
-          }
-        }
-        args {
-          call_value {
-            functionName: "Specific Actor"
-            args {
-              call_value {
-                functionName: "Triggering Actor"
-              }
-            }
-            args {
-            }
-          }
-        }
-        args {
-          call_value {
-            functionName: "Get Preset Value (int)"
-            args {
-              string_value: "WithOrWithout"
-            }
-            args {
-              int_value: 1
-            }
-          }
-        }
-      }
-    }
+    responseText: "Yes, let\'s go!"
     nextNodeIndex: -1
   }
   branches {
-    responseText: "{{CC}}Etiquette: Corporate{{/CC}} Sell to Aztechnology."
-    conditions {
-      ops {
-        functionName: "Compare Actor Skill"
-        args {
-          call_value {
-            functionName: "Triggering Actor"
-          }
-        }
-        args {
-          call_value {
-            functionName: "Get Preset Value (int)"
-            args {
-              string_value: "BaseOrCurrent"
-            }
-            args {
-              int_value: 1
-            }
-          }
-        }
-        args {
-          call_value {
-            functionName: "Get Preset Value (int)"
-            args {
-              string_value: "ActorSkills"
-            }
-            args {
-              int_value: 13
-            }
-          }
-        }
-        args {
-          call_value {
-            functionName: "Get Preset Value (int)"
-            args {
-              string_value: "Comparison Ops"
-            }
-            args {
-              int_value: 2
-            }
-          }
-        }
-        args {
-          int_value: 0
-        }
-      }
-    }
-    actions {
-      ops {
-        functionName: "Add Nuyen"
-        args {
-          int_value: 600
-        }
-      }
-      ops {
-        functionName: "Remove Item from Actor"
-        args {
-          call_value {
-            functionName: "Get Map Item (Item)"
-            args {
-              string_value: "a3-paydata-megacorps"
-            }
-          }
-        }
-        args {
-          call_value {
-            functionName: "Specific Actor"
-            args {
-              call_value {
-                functionName: "Triggering Actor"
-              }
-            }
-            args {
-            }
-          }
-        }
-        args {
-          call_value {
-            functionName: "Get Preset Value (int)"
-            args {
-              string_value: "WithOrWithout"
-            }
-            args {
-              int_value: 1
-            }
-          }
-        }
-      }
-    }
+    responseText: "Wait, I need to do something else first."
+    nextNodeIndex: -1
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "536d9c6d366236081a002a21"
+  }
+  index: 66
+  text: "Are you sure? This is the point of no return. Please be sure all your affairs are in order."
+  branches {
+    responseText: "I am ready."
     nextNodeIndex: -1
   }
   branches {
-    responseText: "{{CC}}Etiquette: Shadowrunner{{/CC}} Sell to other runners interested in corp runs."
-    conditions {
-      ops {
-        functionName: "Compare Actor Skill"
-        args {
-          call_value {
-            functionName: "Triggering Actor"
-          }
-        }
-        args {
-          call_value {
-            functionName: "Get Preset Value (int)"
-            args {
-              string_value: "BaseOrCurrent"
-            }
-            args {
-              int_value: 1
-            }
-          }
-        }
-        args {
-          call_value {
-            functionName: "Get Preset Value (int)"
-            args {
-              string_value: "ActorSkills"
-            }
-            args {
-              int_value: 17
-            }
-          }
-        }
-        args {
-          call_value {
-            functionName: "Get Preset Value (int)"
-            args {
-              string_value: "Comparison Ops"
-            }
-            args {
-              int_value: 2
-            }
-          }
-        }
-        args {
-          int_value: 0
-        }
-      }
-    }
-    actions {
-      ops {
-        functionName: "Remove Item from Actor"
-        args {
-          call_value {
-            functionName: "Get Map Item (Item)"
-            args {
-              string_value: "a3-paydata-megacorps"
-            }
-          }
-        }
-        args {
-          call_value {
-            functionName: "Specific Actor"
-            args {
-              call_value {
-                functionName: "Triggering Actor"
-              }
-            }
-            args {
-            }
-          }
-        }
-        args {
-          call_value {
-            functionName: "Get Preset Value (int)"
-            args {
-              string_value: "WithOrWithout"
-            }
-            args {
-              int_value: 1
-            }
-          }
-        }
-      }
-      ops {
-        functionName: "Add Nuyen"
-        args {
-          int_value: 600
-        }
-      }
-    }
-    nextNodeIndex: -1
-  }
-  branches {
-    responseText: "I\'ll hold on to this for now."
+    responseText: "Maybe I\'m not totally ready yet."
     nextNodeIndex: -1
   }
   nodeType: ConversationNodeType_Simple

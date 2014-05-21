@@ -228,6 +228,18 @@ variables {
   }
 }
 variables {
+  name: "Global_HaileySellingTrideoState"
+  typeName: "int"
+  defaultValue {
+    int_value: 0
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "Global_HaileySellingTrideoState"
+      typeName: "int"
+    }
+  }
+}
+variables {
   name: "Global_Manpower"
   typeName: "int"
   defaultValue {
