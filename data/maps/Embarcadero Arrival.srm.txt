@@ -77604,11 +77604,6 @@ props {
   idRef {
     id: "5224e073366236a409008299"
   }
-  interactionRoot {
-    isEnabled: false
-    interactionRadius: 1
-    interactionIcon: InteractionIcon_Generic
-  }
   lod: 0
 }
 props {
@@ -78827,7 +78822,7 @@ props {
   name: "pikePlace_wallDecoration_genericGrafitti03"
   gridPoint {
     x: -4
-    y: -1.3877788e-16
+    y: -1.3877788e-016
     z: 18.9
   }
   orientation: ORIENTATION_S
@@ -85966,23 +85961,6 @@ props {
   }
   idRef {
     id: "5235e053366236881d000785"
-  }
-  lod: 0
-}
-props {
-  name: "vfx_fx_lowmist"
-  gridPoint {
-    x: -1
-    y: 0
-    z: 51
-  }
-  orientation: ORIENTATION_S
-  properties {
-    property_id: "fxScript"
-    string_value: "EnvironmentLoopLowMistBank"
-  }
-  idRef {
-    id: "5235e053366236881d000786"
   }
   lod: 0
 }
@@ -111272,5 +111250,22 @@ props {
     z: 2
   }
   orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "vfx_fx_lowmist"
+  gridPoint {
+    x: -1
+    y: 0
+    z: 51
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "EnvironmentLoopLowMistBank"
+  }
+  idRef {
+    id: "537c21b53662364817007586"
+  }
   lod: 0
 }

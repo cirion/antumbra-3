@@ -7,7 +7,7 @@ nodes {
     id: "5370fbd9643431b120cd3923"
   }
   index: 0
-  text: "Are you okay?"
+  text: "I heard gunshots! Are you okay?"
   branches {
     responseText: "I\342\200\231m fine."
     nextNodeIndex: 1
@@ -151,6 +151,7 @@ nodes {
       }
     }
     nextNodeIndex: 6
+    hideIfUnavailable: true
   }
   branches {
     responseText: "{{GM}}Wait for Hailey to finish speaking.{{/GM}}"
@@ -248,7 +249,7 @@ nodes {
     id: "5370fd40643431b120cd394a"
   }
   index: 9
-  text: "As you can see, something\342\200\231s gone wrong. Saito and Kali usually stay out of each others\342\200\231 business, but someone just convinced Saito that the two of you are in league with Tir Tairngire. \n\nHe believes that you\342\200\231re trying to gather all the soldiers and weapons you can up in Redding, then turn them over to Tir as soon as they invade."
+  text: "As you can see, something\342\200\231s gone wrong. Saito and Kali usually stay out of each others\342\200\231 business, but someone just convinced Saito that the two of you are in league with Tir Tairngire. \n\nHe believes that you\342\200\231re trying to gather all the soldiers and weapons you can up in Redding, then hand them over to Tir as soon as they invade."
   branches {
     responseText: ""
     nextNodeIndex: 10
@@ -314,12 +315,12 @@ nodes {
         functionName: "Comparison (bool)"
         args {
           call_value {
-            functionName: "Get Preset Value (int)"
+            functionName: "Get Story Variable (bool)"
             args {
-              string_value: "bool"
+              string_value: "531d26a736623648180018bf"
             }
             args {
-              int_value: 0
+              string_value: "a2_killedShavarus"
             }
           }
         }
@@ -341,7 +342,7 @@ nodes {
               string_value: "bool"
             }
             args {
-              int_value: 0
+              int_value: 1
             }
           }
         }
@@ -437,7 +438,7 @@ nodes {
         call_value {
           functionName: "Get Map Item (Trigger)"
           args {
-            string_value: "5370fe7b643431b120cd3986"
+            string_value: "5374fe856434316b13333620"
           }
         }
       }
