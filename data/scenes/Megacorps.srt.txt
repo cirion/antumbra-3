@@ -71,10 +71,311 @@ triggers {
         int_value: 1
       }
     }
+    ops {
+      functionName: "Set Variable (string)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (string)"
+          args {
+            string_value: "531d26a736623648180018bf"
+          }
+          args {
+            string_value: "Redding_Synopsis"
+          }
+        }
+      }
+      args {
+        string_value: "The megacorps recover from Tir\342\200\231s attack, and start directing a trickle of supplies in the direction of Redding. Kali continues pressing them to send more. The days march forward, and Tir\342\200\231s invasion draws ever closer\342\200\246"
+      }
+    }
   }
   isActive: true
   idRef {
     id: "537554946434316b13333691"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
+triggers {
+  name: "Debug"
+  events {
+    ops {
+      functionName: "On Map Start"
+    }
+  }
+  conditions {
+  }
+  actions {
+    ops {
+      functionName: "Activate Actor Spawner"
+      args {
+        call_value {
+          functionName: "Get Map Item (Actor Reference)"
+          args {
+            string_value: "537c2cc736623648170076f8"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Team Alliance"
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "TeamAlliance"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SceneDimension)"
+          args {
+            string_value: "Default"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Team Alliance"
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "TeamAlliance"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SceneDimension)"
+          args {
+            string_value: "Default"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Enable/Disable Manual Turn Mode"
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "EnableOrDisable"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Variable (int)"
+          args {
+            string_value: "timeRemaining"
+          }
+        }
+      }
+      args {
+        int_value: 3
+      }
+    }
+    ops {
+      functionName: "Teleport Actor"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Actor)"
+              args {
+                string_value: "537555246434316b133336b3"
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Center of Region"
+          args {
+            call_value {
+              functionName: "Get Map Item (Region)"
+              args {
+                string_value: "537554c66434316b133336b2"
+              }
+            }
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "FacingDirection"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "TeleportMethod"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "537c2ce236623648170076f9"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
+triggers {
+  name: "Debug Force Unlock"
+  events {
+    ops {
+      functionName: "On Item Interaction"
+      args {
+        call_value {
+          functionName: "Get Map Item (InteractableObject)"
+          args {
+            string_value: "537c3193366236481700771b"
+          }
+        }
+      }
+    }
+  }
+  conditions {
+  }
+  actions {
+    ops {
+      functionName: "Trigger: Run Alternate Trigger"
+      args {
+        call_value {
+          functionName: "Get Map Item (Trigger)"
+          args {
+            string_value: "53754f606434316b13333687"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WaitOrNot"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Enable/Disable Manual Turn Mode"
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "EnableOrDisable"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "537c3211366236481700771d"
   }
   elseActions {
   }
@@ -209,6 +510,17 @@ triggers {
       }
       args {
         int_value: 0
+      }
+    }
+    ops {
+      functionName: "Invert Bool"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "isAllBadguysKilled"
+          }
+        }
       }
     }
   }
@@ -554,6 +866,28 @@ triggers {
   }
   actions {
     ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "isAllBadguysKilled"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+    ops {
       functionName: "Trigger: Run Alternate Trigger"
       args {
         call_value {
@@ -642,12 +976,12 @@ triggers {
       }
     }
     ops {
-      functionName: "Set Variable (bool)"
+      functionName: "Set Goal Status"
       args {
         call_value {
-          functionName: "Get Variable (bool)"
+          functionName: "Get Map Item (Goal)"
           args {
-            string_value: "isAllBadguysKilled"
+            string_value: "Defeat Tir\'s Invasion Force."
           }
         }
       }
@@ -655,10 +989,32 @@ triggers {
         call_value {
           functionName: "Get Preset Value (int)"
           args {
-            string_value: "bool"
+            string_value: "GoalStatus"
+          }
+          args {
+            int_value: 2
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
           }
           args {
             int_value: 1
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Delete Prop"
+      args {
+        call_value {
+          functionName: "Get Map Item (Prop)"
+          args {
+            string_value: "537c3193366236481700771b"
           }
         }
       }
@@ -971,6 +1327,25 @@ triggers {
   }
   actions {
     ops {
+      functionName: "Add Camera Point of Interest (Point)"
+      args {
+        call_value {
+          functionName: "Current Location of Prop"
+          args {
+            call_value {
+              functionName: "Get Map Item (Prop)"
+              args {
+                string_value: "537bce9664343129595f82a4"
+              }
+            }
+          }
+        }
+      }
+      args {
+        float_value: 60
+      }
+    }
+    ops {
       functionName: "Trigger: Run Alternate Trigger"
       args {
         call_value {
@@ -1221,6 +1596,39 @@ triggers {
         }
       }
     }
+    ops {
+      functionName: "Comparison (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "isAllBadguysKilled"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
   }
   actions {
     ops {
@@ -1378,6 +1786,50 @@ triggers {
         }
       }
     }
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "canExitBuilding"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Enable/Disable Interactable Object"
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "EnableOrDisable"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (InteractableObject)"
+          args {
+            string_value: "537555246434316b133336b3"
+          }
+        }
+      }
+    }
   }
   isActive: true
   idRef {
@@ -1466,6 +1918,14 @@ triggers {
         }
       }
     }
+    ops {
+      functionName: "Teleport Camera To Actor"
+      args {
+        call_value {
+          functionName: "Triggering Actor"
+        }
+      }
+    }
   }
   isActive: true
   idRef {
@@ -1545,8 +2005,16 @@ triggers {
         }
       }
     }
+    ops {
+      functionName: "Teleport Camera To Actor"
+      args {
+        call_value {
+          functionName: "Triggering Actor"
+        }
+      }
+    }
   }
-  is_oneshot: true
+  is_oneshot: false
 }
 triggers {
   name: "Elevator 2 to 1"
@@ -1557,7 +2025,7 @@ triggers {
         call_value {
           functionName: "Get Map Item (InteractableObject)"
           args {
-            string_value: "521ff306366236441f00308a"
+            string_value: "521ff370366236441f00308e"
           }
         }
       }
@@ -1624,6 +2092,14 @@ triggers {
           args {
             int_value: 0
           }
+        }
+      }
+    }
+    ops {
+      functionName: "Teleport Camera To Actor"
+      args {
+        call_value {
+          functionName: "Triggering Actor"
         }
       }
     }
@@ -1706,8 +2182,16 @@ triggers {
         }
       }
     }
+    ops {
+      functionName: "Teleport Camera To Actor"
+      args {
+        call_value {
+          functionName: "Triggering Actor"
+        }
+      }
+    }
   }
-  is_oneshot: true
+  is_oneshot: false
 }
 triggers {
   name: "Elevator 2 to 3"
@@ -1718,7 +2202,7 @@ triggers {
         call_value {
           functionName: "Get Map Item (InteractableObject)"
           args {
-            string_value: "521ff306366236441f00308a"
+            string_value: "521ff367366236441f00308c"
           }
         }
       }
@@ -1785,6 +2269,14 @@ triggers {
           args {
             int_value: 0
           }
+        }
+      }
+    }
+    ops {
+      functionName: "Teleport Camera To Actor"
+      args {
+        call_value {
+          functionName: "Triggering Actor"
         }
       }
     }
@@ -1867,8 +2359,16 @@ triggers {
         }
       }
     }
+    ops {
+      functionName: "Teleport Camera To Actor"
+      args {
+        call_value {
+          functionName: "Triggering Actor"
+        }
+      }
+    }
   }
-  is_oneshot: true
+  is_oneshot: false
 }
 triggers {
   name: "Elevator 3 to 2"
@@ -1879,7 +2379,7 @@ triggers {
         call_value {
           functionName: "Get Map Item (InteractableObject)"
           args {
-            string_value: "521ff306366236441f00308a"
+            string_value: "521ff37b366236441f003090"
           }
         }
       }
@@ -1946,6 +2446,14 @@ triggers {
           args {
             int_value: 0
           }
+        }
+      }
+    }
+    ops {
+      functionName: "Teleport Camera To Actor"
+      args {
+        call_value {
+          functionName: "Triggering Actor"
         }
       }
     }
@@ -2028,8 +2536,16 @@ triggers {
         }
       }
     }
+    ops {
+      functionName: "Teleport Camera To Actor"
+      args {
+        call_value {
+          functionName: "Triggering Actor"
+        }
+      }
+    }
   }
-  is_oneshot: true
+  is_oneshot: false
 }
 triggers {
   name: "Portal_Entry1ToCameras_PC"
@@ -8538,7 +9054,7 @@ characters {
       }
     }
     team_id: "Civilians"
-    char_name: "CEO"
+    char_name: "Executive"
     GeneralTags: "isCEO"
     pc_spawn_number: -1
     portrait {
@@ -10218,274 +10734,6 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -110
-    y: 0
-    z: 28
-  }
-  orientation: ORIENTATION_S
-  displayName: "Tir Captain"
-  idRef {
-    id: "537bc40664343129595f8287"
-  }
-  lod: 0
-  character_instance {
-    prefab_name: "Berlin:Aztechnology/ElfMaleAztechGuard"
-    character_sheet_id: "Lonestar_Lv1_Captain"
-    equipment_sheet_id: "Lonestar_Lv1_Captain_Gear"
-    character_mod {
-      stats {
-        morale: 0
-        discipline: 0
-        awareness: 0
-        perception: 0
-        authority: 0
-        protect_tether_range: 0
-        move_speed: 0
-      }
-      skills {
-      }
-      specializations {
-      }
-      vulnerabilities {
-      }
-    }
-    team_id: "Tir"
-    char_name: "Tir Tairngire Captain"
-    pc_spawn_number: -1
-    portrait {
-      filename: ""
-    }
-    karma: 44
-    scale_character_sheet: true
-  }
-}
-characters {
-  name: "chars_icon_playerIcon"
-  gridPoint {
-    x: -110
-    y: 0
-    z: 29
-  }
-  orientation: ORIENTATION_S
-  displayName: "Tir SMG"
-  idRef {
-    id: "537bc40864343129595f8288"
-  }
-  lod: 0
-  character_instance {
-    prefab_name: "Seattle:Core/ElfFemale"
-    character_sheet_id: "Lonestar_Lv1_Heavy_SMG"
-    equipment_sheet_id: "Lonestar_Lv1_SMG_Gear"
-    character_mod {
-      stats {
-        morale: 0
-        discipline: 0
-        awareness: 0
-        perception: 0
-        authority: 0
-        protect_tether_range: 0
-        move_speed: 0
-      }
-      skills {
-      }
-      specializations {
-      }
-      vulnerabilities {
-      }
-    }
-    equipment {
-      prefab_name: "Nixie_Clothes"
-    }
-    team_id: "Tir"
-    char_name: "Tir Tairngire Commando"
-    pc_spawn_number: -1
-    portrait {
-      filename: ""
-    }
-    portrait_code_override: "s4h5c11b0t0"
-    karma: 39
-    scale_character_sheet: true
-  }
-}
-characters {
-  name: "chars_icon_playerIcon"
-  gridPoint {
-    x: -110
-    y: 0
-    z: 24
-  }
-  orientation: ORIENTATION_S
-  displayName: "Tir Mage"
-  idRef {
-    id: "537bc40a64343129595f8289"
-  }
-  lod: 0
-  character_instance {
-    prefab_name: "Berlin:Aztechnology/ElfMaleAztechBloodMage"
-    character_sheet_id: "Lonestar_Lv1_Human_Mage"
-    equipment_sheet_id: "Lonestar_Lv1_Mage_Gear"
-    character_mod {
-      stats {
-        morale: 0
-        discipline: 0
-        awareness: 0
-        perception: 0
-        authority: 0
-        protect_tether_range: 0
-        move_speed: 0
-      }
-      skills {
-      }
-      specializations {
-      }
-      vulnerabilities {
-      }
-    }
-    team_id: "Tir"
-    char_name: "Tir Tairngire Mage"
-    pc_spawn_number: -1
-    portrait {
-      filename: ""
-    }
-    karma: 40
-    scale_character_sheet: true
-  }
-}
-characters {
-  name: "chars_icon_playerIcon"
-  gridPoint {
-    x: -110
-    y: 0
-    z: 27
-  }
-  orientation: ORIENTATION_S
-  displayName: "Tir Pistol"
-  idRef {
-    id: "537bc40c64343129595f828a"
-  }
-  lod: 0
-  character_instance {
-    prefab_name: "Seattle:Story/TirTairngireGuard"
-    character_sheet_id: "Lonestar_Lv1_Human_Pistol"
-    equipment_sheet_id: "Lonestar_Lv1_Pistol_Gear"
-    character_mod {
-      stats {
-        morale: 0
-        discipline: 0
-        awareness: 0
-        perception: 0
-        authority: 0
-        protect_tether_range: 0
-        move_speed: 0
-      }
-      skills {
-      }
-      specializations {
-      }
-      vulnerabilities {
-      }
-    }
-    team_id: "Tir"
-    char_name: "Lonestar Guard"
-    pc_spawn_number: -1
-    portrait {
-      filename: ""
-    }
-    karma: 30
-    scale_character_sheet: true
-  }
-}
-characters {
-  name: "chars_icon_playerIcon"
-  gridPoint {
-    x: -110
-    y: 0
-    z: 26
-  }
-  orientation: ORIENTATION_S
-  displayName: "Tir Shotgun"
-  idRef {
-    id: "537bc40d64343129595f828b"
-  }
-  lod: 0
-  character_instance {
-    prefab_name: "Berlin:Gangers/ElfMaleBerlinGanger"
-    character_sheet_id: "Lonestar_Lv1_Ork_Shotgun"
-    equipment_sheet_id: "Lonestar_Lv1_Shotgun_Gear"
-    character_mod {
-      stats {
-        morale: 0
-        discipline: 0
-        awareness: 0
-        perception: 0
-        authority: 0
-        protect_tether_range: 0
-        move_speed: 0
-      }
-      skills {
-      }
-      specializations {
-      }
-      vulnerabilities {
-      }
-    }
-    team_id: "Tir"
-    char_name: "Tir Tairngire Commando"
-    pc_spawn_number: -1
-    portrait {
-      filename: ""
-    }
-    karma: 33
-    scale_character_sheet: true
-  }
-}
-characters {
-  name: "chars_icon_playerIcon"
-  gridPoint {
-    x: -110
-    y: 0
-    z: 25
-  }
-  orientation: ORIENTATION_S
-  displayName: "Tir Melee"
-  idRef {
-    id: "537bc81564343129595f828c"
-  }
-  lod: 0
-  character_instance {
-    prefab_name: "Seattle:Story/GreenLucifer"
-    character_sheet_id: "Generic_Lv1_Human_Melee"
-    equipment_sheet_id: "Generic_Lv1_Melee_Gear"
-    character_mod {
-      stats {
-        morale: 0
-        discipline: 0
-        awareness: 0
-        perception: 0
-        authority: 0
-        protect_tether_range: 0
-        move_speed: 0
-      }
-      skills {
-      }
-      specializations {
-      }
-      vulnerabilities {
-      }
-    }
-    team_id: "Tir"
-    char_name: "Tir Tairngire Commando"
-    pc_spawn_number: -1
-    portrait {
-      filename: ""
-    }
-    karma: 28
-    scale_character_sheet: true
-  }
-}
-characters {
-  name: "chars_icon_playerIcon"
-  gridPoint {
     x: -21
     y: 0
     z: 66
@@ -11470,21 +11718,203 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
+      archetypeName: "Non-Combatant"
       attitude: AttitudeAggressive
       vulnerabilities {
       }
     }
-    team_id: "Shadowrunners"
-    char_name: ""
+    team_id: "Civilians"
+    char_name: " "
     pc_spawn_number: -1
+    ai_ignores: true
     portrait {
       filename: ""
     }
     karma: 6
   }
 }
+characters {
+  name: "system_spawner_playerSpawner"
+  gridPoint {
+    x: -38
+    y: 0
+    z: 1
+  }
+  orientation: ORIENTATION_N
+  idRef {
+    id: "537c2c0a36623648170076f4"
+  }
+  lod: 0
+  character_instance {
+    character_mod {
+      archetypeName: "Player"
+    }
+    team_id: "Shadowrunners"
+    char_name: "New Actor"
+    enabled_at_start: true
+    pc_spawn_number: 0
+  }
+}
+characters {
+  name: "system_spawner_playerSpawner"
+  gridPoint {
+    x: -37
+    y: 0
+    z: 1
+  }
+  orientation: ORIENTATION_N
+  idRef {
+    id: "537c2c0f36623648170076f5"
+  }
+  lod: 0
+  character_instance {
+    character_mod {
+      archetypeName: "Player"
+    }
+    team_id: "Shadowrunners"
+    char_name: "New Actor"
+    enabled_at_start: true
+    pc_spawn_number: 3
+  }
+}
+characters {
+  name: "system_spawner_playerSpawner"
+  gridPoint {
+    x: -37
+    y: 0
+    z: 0
+  }
+  orientation: ORIENTATION_N
+  idRef {
+    id: "537c2c1236623648170076f6"
+  }
+  lod: 0
+  character_instance {
+    character_mod {
+      archetypeName: "Player"
+    }
+    team_id: "Shadowrunners"
+    char_name: "New Actor"
+    enabled_at_start: true
+    pc_spawn_number: 1
+  }
+}
+characters {
+  name: "system_spawner_playerSpawner"
+  gridPoint {
+    x: -37
+    y: 0
+    z: 2
+  }
+  orientation: ORIENTATION_N
+  idRef {
+    id: "537c2c1336623648170076f7"
+  }
+  lod: 0
+  character_instance {
+    character_mod {
+      archetypeName: "Player"
+    }
+    team_id: "Shadowrunners"
+    char_name: "New Actor"
+    enabled_at_start: true
+    pc_spawn_number: 2
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -38
+    y: 0
+    z: 0
+  }
+  orientation: ORIENTATION_N
+  displayName: "Hailey"
+  idRef {
+    id: "537c2cc736623648170076f8"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Seattle:Core/HumanFemale"
+    character_sheet_id: "a3_crew_hailey_lv2"
+    equipment_sheet_id: "a3_crew_hailey_lv2"
+    character_mod {
+      stats {
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        magic: 0
+        hp: 0
+        ap: 0
+        armor: 0
+        force: 0
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+        ranged_combat: 0
+        close_combat: 0
+        throwing_weapons: 0
+        spellcasting: 0
+        decking: 0
+        conjuring: 0
+        spirit_summoning: 0
+        drone_control: 0
+        biotech: 0
+        dodge: 0
+        etiquette_corporate: 0
+        etiquette_security: 0
+        etiquette_gang: 0
+        etiquette_socialite: 0
+        chi_casting: 0
+        etiquette_shadowrunner: 0
+        etiquette_street: 0
+        etiquette_academic: 0
+      }
+      specializations {
+        pistol: 0
+        rifle: 0
+        shotgun: 0
+        smg: 0
+        edged: 0
+        unarmed: 0
+        spirit_control: 0
+        esp_control: 0
+        drone_combat: 0
+      }
+      archetypeName: "Player"
+      attitude: AttitudeAggressive
+      vulnerabilities {
+      }
+    }
+    team_id: "Shadowrunners"
+    char_name: "Hailey"
+    GeneralTags: "isHailey"
+    enabled_at_start: false
+    pc_spawn_number: -1
+    hiring_type: HiringType_Hireable
+    cyberware_eyes: "Vision Magnification Eyes"
+    cyberware_jack: "Datajack"
+    portrait {
+      filename: "backer_humanfemale_grahamwilliams_tsilonsiereht"
+    }
+    portrait_code_override: "s6h1c11"
+    karma: 2
+    hiring_cost_override: 0
+    id: "a3_crew_hailey_lv2"
+  }
+}
 variables {
-  int_value: 15
+  int_value: 20
   variableref_value {
     scope: TsVariableScope_Scene
     name: "timeRemaining"
@@ -11599,7 +12029,7 @@ senseTags: "isTurret"
 goals {
   name: "Rescue the Megacorp Executives"
   type: GoalType_Secondary
-  status: GoalStatus_Hidden
+  status: GoalStatus_Started
 }
 goals {
   name: "Return to Redding"
@@ -11610,6 +12040,11 @@ goals {
   name: "Speak with Kali"
   type: GoalType_Primary
   status: GoalStatus_Hidden
+}
+goals {
+  name: "Defeat Tir\'s Invasion Force."
+  type: GoalType_Primary
+  status: GoalStatus_Started
 }
 worldMapLocation {
   filename: ""
@@ -11647,7 +12082,7 @@ team_affiliations {
   affiliation: 0
   affiliation: 1
   affiliation: 0
-  affiliation: 1
+  affiliation: 0
 }
 team_affiliations {
   team_name: "Tir"
@@ -11665,7 +12100,7 @@ team_affiliations {
 }
 team_affiliations {
   team_name: "IC"
-  affiliation: 1
+  affiliation: 0
   affiliation: 0
   affiliation: 0
   affiliation: 0
@@ -11677,6 +12112,8 @@ scene_dimensions {
   dimension_name: "Matrix"
   initial_alarm_state: 0
   turns_per_round: 3
+}
+character_roster {
 }
 show_hiring_screen_on_scene_load: false
 scene_hiring_prerequisites {

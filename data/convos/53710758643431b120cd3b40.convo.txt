@@ -21,7 +21,7 @@ nodes {
   index: 1
   text: ""
   branches {
-    responseText: ""
+    responseText: "Norton, what\'s your opinion on Saito?"
     conditions {
       ops {
         functionName: "Evaluate If Actor is Inside Region"
@@ -71,9 +71,14 @@ nodes {
       }
     }
     nextNodeIndex: 2
+    hideIfUnavailable: true
+    onlyOnce: true
+    idRef {
+      id: "537c376b36623648170077d1"
+    }
   }
   branches {
-    responseText: ""
+    responseText: "Do you think we should accept his support, Dorbi?"
     conditions {
       ops {
         functionName: "Evaluate If Actor is Inside Region"
@@ -123,9 +128,14 @@ nodes {
       }
     }
     nextNodeIndex: 3
+    hideIfUnavailable: true
+    onlyOnce: true
+    idRef {
+      id: "537c376e36623648170077d2"
+    }
   }
   branches {
-    responseText: ""
+    responseText: "Elorn, you look like you have something to say."
     conditions {
       ops {
         functionName: "Evaluate If Actor is Inside Region"
@@ -175,9 +185,14 @@ nodes {
       }
     }
     nextNodeIndex: 4
+    hideIfUnavailable: true
+    onlyOnce: true
+    idRef {
+      id: "537c377136623648170077d3"
+    }
   }
   branches {
-    responseText: ""
+    responseText: "I see..."
     nextNodeIndex: 5
   }
   nodeType: ConversationNodeType_Simple
@@ -194,6 +209,7 @@ nodes {
     auxiliaryLink: true
   }
   nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isNorton"
 }
 nodes {
   idRef {
@@ -207,19 +223,21 @@ nodes {
     auxiliaryLink: true
   }
   nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isDorbi"
 }
 nodes {
   idRef {
     id: "53710807643431b120cd3b75"
   }
   index: 4
-  text: "Saito is barely better than the Native Californians. Actually, he might be worse, since he has an entire army backing him. \n\nYeah, he\342\200\231ll happily slaughter Tir elves, but once you let him into the Central Valley, he\342\200\231ll never leave."
+  text: "Saito is barely better than the Native Californians. In fact, he might be worse, since he has an entire army backing him. \n\nYeah, he\342\200\231ll happily slaughter Tir elves, but once you let him into the Central Valley, he\342\200\231ll never leave."
   branches {
     responseText: ""
     nextNodeIndex: 1
     auxiliaryLink: true
   }
   nodeType: ConversationNodeType_Simple
+  sourceWithTagInScene: "isElorn"
 }
 nodes {
   idRef {

@@ -55,6 +55,19 @@ nodes {
   sourceInSceneRef {
     id: "537bcf6d64343129595f82dd"
   }
+  actions {
+    ops {
+      functionName: "Delete Prop"
+      args {
+        call_value {
+          functionName: "Get Map Item (Prop)"
+          args {
+            string_value: "537bce9664343129595f82a4"
+          }
+        }
+      }
+    }
+  }
 }
 nodes {
   idRef {

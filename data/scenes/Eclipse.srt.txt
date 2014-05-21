@@ -327,6 +327,17 @@ triggers {
         int_value: 0
       }
     }
+    ops {
+      functionName: "Activate Actor Spawner"
+      args {
+        call_value {
+          functionName: "Get Map Item (Actor Reference)"
+          args {
+            string_value: "537c251736623648170076c5"
+          }
+        }
+      }
+    }
   }
   isActive: true
   idRef {
@@ -4819,6 +4830,7 @@ characters {
     team_id: "Shadowrunners"
     char_name: "Hailey"
     GeneralTags: "isHailey"
+    enabled_at_start: false
     pc_spawn_number: -1
     hiring_type: HiringType_Hireable
     cyberware_eyes: "Vision Magnification Eyes"
