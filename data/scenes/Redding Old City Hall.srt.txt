@@ -299,106 +299,6 @@ triggers {
   is_oneshot: true
 }
 triggers {
-  name: "Kill Lazarus"
-  events {
-    ops {
-      functionName: "On Map Start"
-    }
-  }
-  conditions {
-    ops {
-      functionName: "OR"
-      args {
-        call_value {
-          functionName: "Comparison (bool)"
-          args {
-            call_value {
-              functionName: "Get Story Variable (bool)"
-              args {
-                string_value: "531d26a736623648180018bf"
-              }
-              args {
-                string_value: "isLazarusRecruited"
-              }
-            }
-          }
-          args {
-            call_value {
-              functionName: "Get Preset Value (int)"
-              args {
-                string_value: "IsOrIsNot"
-              }
-              args {
-                int_value: 1
-              }
-            }
-          }
-          args {
-            call_value {
-              functionName: "Get Preset Value (int)"
-              args {
-                string_value: "bool"
-              }
-              args {
-                int_value: 0
-              }
-            }
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Story Variable (bool)"
-          args {
-            string_value: "531d26a736623648180018bf"
-          }
-          args {
-            string_value: "isLazarusDead"
-          }
-        }
-      }
-    }
-  }
-  actions {
-    ops {
-      functionName: "Kill Actor"
-      args {
-        call_value {
-          functionName: "Specific Actor"
-          args {
-            call_value {
-              functionName: "Get Map Item (Actor)"
-              args {
-                string_value: "536b0d3a366236e0040077d3"
-              }
-            }
-          }
-          args {
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "DeathMethod"
-          }
-          args {
-            int_value: 3
-          }
-        }
-      }
-    }
-  }
-  isActive: true
-  idRef {
-    id: "536b1470366236e0040077d9"
-  }
-  elseActions {
-  }
-  is_oneshot: true
-}
-triggers {
   name: "Kill Hailey"
   events {
     ops {
@@ -493,6 +393,106 @@ triggers {
   isActive: true
   idRef {
     id: "536b15d5366236e0040077e0"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
+triggers {
+  name: "Kill Elorn"
+  events {
+    ops {
+      functionName: "On Map Start"
+    }
+  }
+  conditions {
+    ops {
+      functionName: "OR"
+      args {
+        call_value {
+          functionName: "Comparison (bool)"
+          args {
+            call_value {
+              functionName: "Get Story Variable (bool)"
+              args {
+                string_value: "531d26a736623648180018bf"
+              }
+              args {
+                string_value: "isElornRecruited"
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Preset Value (int)"
+              args {
+                string_value: "IsOrIsNot"
+              }
+              args {
+                int_value: 1
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Preset Value (int)"
+              args {
+                string_value: "bool"
+              }
+              args {
+                int_value: 0
+              }
+            }
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Story Variable (bool)"
+          args {
+            string_value: "531d26a736623648180018bf"
+          }
+          args {
+            string_value: "isElornDead"
+          }
+        }
+      }
+    }
+  }
+  actions {
+    ops {
+      functionName: "Kill Actor"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Actor)"
+              args {
+                string_value: "536c40ed366236d41e0026a7"
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "DeathMethod"
+          }
+          args {
+            int_value: 3
+          }
+        }
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "537d6b32366236a41f000371"
   }
   elseActions {
   }
@@ -2220,106 +2220,6 @@ triggers {
   }
   is_oneshot: true
 }
-triggers {
-  name: "Kill Elorn"
-  events {
-    ops {
-      functionName: "On Map Start"
-    }
-  }
-  conditions {
-    ops {
-      functionName: "OR"
-      args {
-        call_value {
-          functionName: "Comparison (bool)"
-          args {
-            call_value {
-              functionName: "Get Story Variable (bool)"
-              args {
-                string_value: "531d26a736623648180018bf"
-              }
-              args {
-                string_value: "isElornRecruited"
-              }
-            }
-          }
-          args {
-            call_value {
-              functionName: "Get Preset Value (int)"
-              args {
-                string_value: "IsOrIsNot"
-              }
-              args {
-                int_value: 1
-              }
-            }
-          }
-          args {
-            call_value {
-              functionName: "Get Preset Value (int)"
-              args {
-                string_value: "bool"
-              }
-              args {
-                int_value: 0
-              }
-            }
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Story Variable (bool)"
-          args {
-            string_value: "531d26a736623648180018bf"
-          }
-          args {
-            string_value: "isElornDead"
-          }
-        }
-      }
-    }
-  }
-  actions {
-    ops {
-      functionName: "Kill Actor"
-      args {
-        call_value {
-          functionName: "Specific Actor"
-          args {
-            call_value {
-              functionName: "Get Map Item (Actor)"
-              args {
-                string_value: "536c40ed366236d41e0026a7"
-              }
-            }
-          }
-          args {
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "DeathMethod"
-          }
-          args {
-            int_value: 3
-          }
-        }
-      }
-    }
-  }
-  isActive: true
-  idRef {
-    id: "537d6b32366236a41f000371"
-  }
-  elseActions {
-  }
-  is_oneshot: true
-}
 regions {
   name: "Camera"
   position {
@@ -2560,14 +2460,14 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Seattle:Creature/CreatureHellhound"
-    character_sheet_id: "Hellhound (normal)"
-    equipment_sheet_id: "Hellhound Critter Powers"
+    prefab_name: "Berlin:Creatures/CreatureDogAngry"
+    character_sheet_id: "a3_crew_lazarus_lv1"
+    equipment_sheet_id: "a3_crew_lazarus_lv1"
     character_mod {
       stats {
-        body: -1
-        quickness: -1
-        strength: -2
+        body: 0
+        quickness: 0
+        strength: 0
         charisma: 0
         intelligence: 0
         willpower: 0
@@ -2577,7 +2477,7 @@ characters {
         ap: 0
         armor: 0
         force: 0
-        morale: -1
+        morale: 0
         discipline: 0
         awareness: 0
         perception: 0
@@ -2587,9 +2487,9 @@ characters {
       }
       skills {
         ranged_combat: 0
-        close_combat: -2
+        close_combat: 0
         throwing_weapons: 0
-        spellcasting: -3
+        spellcasting: 0
         decking: 0
         conjuring: 0
         spirit_summoning: 0
@@ -2616,13 +2516,11 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Hunt And Destroy"
+      archetypeName: "Player"
       attitude: AttitudeAggressive
       vulnerabilities {
+        fire: VulnerabilityLevel_Default
       }
-    }
-    equipment {
-      prefab_name: "Dante Fireball"
     }
     team_id: "Civilians"
     char_name: "Lazarus"
@@ -2632,14 +2530,16 @@ characters {
     enabled_at_start: true
     pc_spawn_number: -1
     unkillable: true
-    hiring_type: HiringType_None
+    hiring_type: HiringType_Hireable
     disable_pickups: true
     portrait {
-      filename: "npc_dog_dantecombat"
+      filename: "NPC_Dog_DanteCombat"
     }
-    karma: 45
-    hiring_cost_override: 1000
+    description_bio: "Norton\'s dog has faced lethal situations innumerable times, and somehow keeps on coming back for more."
+    karma: 1
+    hiring_cost_override: 0
     has_fist: false
+    id: "a3_crew_lazarus_lv1"
   }
 }
 characters {
@@ -2652,7 +2552,6 @@ characters {
   orientation: ORIENTATION_W
   GeneralTags: "isBummer"
   GeneralTags: "isDog"
-  GeneralTags: "isWanderer"
   displayName: "Bummer"
   idRef {
     id: "536b0d3a366236e0040077d4"
@@ -2660,12 +2559,13 @@ characters {
   lod: 0
   character_instance {
     prefab_name: "Berlin:Creatures/CreatureDogFriendly"
-    character_sheet_id: "Hellhound (normal)"
+    character_sheet_id: "a3_crew_bummer_lv2"
+    equipment_sheet_id: "a3_crew_bummer_lv2"
     character_mod {
       stats {
-        body: -1
-        quickness: -1
-        strength: -2
+        body: 0
+        quickness: 0
+        strength: 0
         charisma: 0
         intelligence: 0
         willpower: 0
@@ -2675,7 +2575,7 @@ characters {
         ap: 0
         armor: 0
         force: 0
-        morale: -1
+        morale: 0
         discipline: 0
         awareness: 0
         perception: 0
@@ -2685,9 +2585,9 @@ characters {
       }
       skills {
         ranged_combat: 0
-        close_combat: -2
+        close_combat: 0
         throwing_weapons: 0
-        spellcasting: -3
+        spellcasting: 0
         decking: 0
         conjuring: 0
         spirit_summoning: 0
@@ -2714,33 +2614,28 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Guard - Hunt And Destroy"
+      archetypeName: "Player"
       attitude: AttitudeAggressive
       vulnerabilities {
       }
-    }
-    equipment {
-      prefab_name: "Dante Chomp"
-    }
-    equipment {
-      prefab_name: "Dante Petrify"
     }
     team_id: "Civilians"
     char_name: "Bummer"
     GeneralTags: "isBummer"
     GeneralTags: "isDog"
-    GeneralTags: "isWanderer"
     enabled_at_start: true
     pc_spawn_number: -1
     unkillable: true
-    hiring_type: HiringType_None
+    hiring_type: HiringType_Hireable
     disable_pickups: true
     portrait {
       filename: "npc_dog_dante"
     }
-    karma: 45
-    hiring_cost_override: 1000
+    description_bio: "An Emperor\'s best friend, Bummer is loyal, brave, and very protective of his master."
+    karma: 2
+    hiring_cost_override: 0
     has_fist: false
+    id: "a3_crew_bummer_lv2"
   }
 }
 characters {
@@ -4240,6 +4135,8 @@ scene_dimensions {
   dimension_name: "Matrix"
   initial_alarm_state: 20
   turns_per_round: 3
+}
+character_roster {
 }
 show_hiring_screen_on_scene_load: false
 scene_hiring_prerequisites {
