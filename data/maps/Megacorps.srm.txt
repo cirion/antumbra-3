@@ -27161,7 +27161,7 @@ props {
     isEnabled: true
     interactionRadius: 1
     matrixSpawnPoint {
-      dimension: "Aztechnology Local Network"
+      dimension: "Matrix"
     }
   }
   lod: 0
@@ -35281,7 +35281,7 @@ props {
     z: 81
   }
   orientation: ORIENTATION_S
-  displayName: "Paydata"
+  displayName: "Megacorp Board Minutes"
   idRef {
     id: "522933c8366236f0190011c7"
   }
@@ -36044,7 +36044,7 @@ props {
     z: 35
   }
   orientation: ORIENTATION_S
-  displayName: "Research Projects Data Store"
+  displayName: "Megacorp Board Minutes"
   idRef {
     id: "522943ce366236f01900121a"
   }
@@ -36670,7 +36670,7 @@ props {
     isEnabled: true
     interactionRadius: 1
     matrixSpawnPoint {
-      dimension: "Aztechnology Secure Network"
+      dimension: "Matrix"
     }
   }
   lod: 0
@@ -38022,9 +38022,9 @@ props {
 props {
   name: "matrix_floor_blueplatform"
   gridPoint {
-    x: -4
+    x: 0
     y: 0
-    z: 128
+    z: 131
   }
   orientation: ORIENTATION_S
   idRef {
@@ -38037,7 +38037,7 @@ props {
   gridPoint {
     x: -47
     y: 0
-    z: 128
+    z: 129
   }
   orientation: ORIENTATION_S
   idRef {
@@ -44861,19 +44861,6 @@ props {
   lod: 0
 }
 props {
-  name: "office_furniture_execChair02"
-  gridPoint {
-    x: -116
-    y: 0
-    z: 49
-  }
-  orientation: ORIENTATION_W
-  idRef {
-    id: "522fc2e0366236cc18007a5f"
-  }
-  lod: 0
-}
-props {
   name: "office_tech_computer01"
   gridPoint {
     x: -119
@@ -48021,6 +48008,7 @@ props {
       }
     }
     matrixNode {
+      hacking_objects: "537bba6164343129595f8262"
       prerequisites_control_state: true
       constant_matrix_fx: "matrixcontrolnode"
       state_change_offline_fx: ""
@@ -48400,5 +48388,15 @@ props {
   idRef {
     id: "537d8814366236041b0015e4"
   }
+  lod: 0
+}
+props {
+  name: "sleekOffice_furniture_overturnedChair03"
+  gridPoint {
+    x: -116
+    y: 0
+    z: 47
+  }
+  orientation: ORIENTATION_S
   lod: 0
 }

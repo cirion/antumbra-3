@@ -831,11 +831,42 @@ triggers {
   }
   is_oneshot: true
 }
+triggers {
+  name: "Fade In"
+  events {
+    ops {
+      functionName: "Get Map Item (Event)"
+      args {
+        string_value: "Game Ends"
+      }
+    }
+  }
+  conditions {
+  }
+  actions {
+    ops {
+      functionName: "Fade Camera In"
+      args {
+        float_value: 3
+      }
+      args {
+        float_value: 0
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "537e0eb1366236c410001956"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
 regions {
   name: "Kali Arrival"
   position {
-    x: -46
-    y: -25
+    x: -20
+    y: -15
     width: 1
     height: 1
   }
@@ -887,6 +918,50 @@ regions {
   is_camera_region: false
   idRef {
     id: "53768a21643431bf375d1522"
+  }
+  highlight_color {
+    r: 0
+    g: 0
+    b: 0
+    a: 1
+  }
+  visible_at_start: false
+  is_teleporter_region: false
+  directional_light_dir {
+    x: -0.5
+    y: -1
+    z: -0.75
+  }
+  directional_light_color {
+    r: 0.50196081
+    g: 0.50196081
+    b: 0.50196081
+    a: 1
+  }
+  ambient_light_color {
+    r: 0.50196081
+    g: 0.50196081
+    b: 0.50196081
+    a: 1
+  }
+  ambience_template: ""
+  combat_music: ""
+  default_music: ""
+  loop_combat_music: true
+  loop_default_music: false
+}
+regions {
+  name: "Camera"
+  position {
+    x: -34
+    y: -38
+    width: 18
+    height: 22
+  }
+  enabledAtStart: true
+  is_camera_region: true
+  idRef {
+    id: "537e0e5b366236c410001955"
   }
   highlight_color {
     r: 0
@@ -2290,6 +2365,7 @@ variables {
   }
 }
 mapEvents: "Game Ends"
+mapEvents: "Fade In"
 worldMapLocation {
   filename: ""
   location {
@@ -2357,8 +2433,6 @@ scene_dimensions {
   initial_alarm_state: 20
   turns_per_round: 3
 }
-character_roster {
-}
 show_hiring_screen_on_scene_load: false
 scene_hiring_prerequisites {
   prereq_description: ""
@@ -2374,5 +2448,5 @@ use_hiring_cost_warning: false
 hiring_average_cost: 99999
 override_hiring_average_cost: true
 show_equip_screen_on_scene_load: false
-can_move_outside_camera_regions: true
+can_move_outside_camera_regions: false
 can_start_before_triggers: true
