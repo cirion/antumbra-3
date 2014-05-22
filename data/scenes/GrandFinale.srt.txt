@@ -862,6 +862,506 @@ triggers {
   }
   is_oneshot: true
 }
+triggers {
+  name: "Kill Dorbi"
+  events {
+    ops {
+      functionName: "On Map Start"
+    }
+  }
+  conditions {
+    ops {
+      functionName: "OR"
+      args {
+        call_value {
+          functionName: "Comparison (bool)"
+          args {
+            call_value {
+              functionName: "Get Story Variable (bool)"
+              args {
+                string_value: "531d26a736623648180018bf"
+              }
+              args {
+                string_value: "isDorbiRecruited"
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Preset Value (int)"
+              args {
+                string_value: "IsOrIsNot"
+              }
+              args {
+                int_value: 1
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Preset Value (int)"
+              args {
+                string_value: "bool"
+              }
+              args {
+                int_value: 0
+              }
+            }
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Story Variable (bool)"
+          args {
+            string_value: "531d26a736623648180018bf"
+          }
+          args {
+            string_value: "isDorbiDead"
+          }
+        }
+      }
+    }
+  }
+  actions {
+    ops {
+      functionName: "Kill Actor"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Actor)"
+              args {
+                string_value: "537686d56434316a34fc4697"
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "DeathMethod"
+          }
+          args {
+            int_value: 3
+          }
+        }
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "536b1400366236e0040077d6"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
+triggers {
+  name: "Kill Norton"
+  events {
+    ops {
+      functionName: "On Map Start"
+    }
+  }
+  conditions {
+    ops {
+      functionName: "OR"
+      args {
+        call_value {
+          functionName: "Comparison (bool)"
+          args {
+            call_value {
+              functionName: "Get Story Variable (bool)"
+              args {
+                string_value: "531d26a736623648180018bf"
+              }
+              args {
+                string_value: "isNortonRecruited"
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Preset Value (int)"
+              args {
+                string_value: "IsOrIsNot"
+              }
+              args {
+                int_value: 1
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Preset Value (int)"
+              args {
+                string_value: "bool"
+              }
+              args {
+                int_value: 0
+              }
+            }
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Story Variable (bool)"
+          args {
+            string_value: "531d26a736623648180018bf"
+          }
+          args {
+            string_value: "isNortonDead"
+          }
+        }
+      }
+    }
+  }
+  actions {
+    ops {
+      functionName: "Kill Actor"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Actor)"
+              args {
+                string_value: "537686d56434316a34fc4693"
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "DeathMethod"
+          }
+          args {
+            int_value: 3
+          }
+        }
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "536b1441366236e0040077d7"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
+triggers {
+  name: "Kill Bummer"
+  events {
+    ops {
+      functionName: "On Map Start"
+    }
+  }
+  conditions {
+    ops {
+      functionName: "OR"
+      args {
+        call_value {
+          functionName: "Comparison (bool)"
+          args {
+            call_value {
+              functionName: "Get Story Variable (bool)"
+              args {
+                string_value: "531d26a736623648180018bf"
+              }
+              args {
+                string_value: "isBummerRecruited"
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Preset Value (int)"
+              args {
+                string_value: "IsOrIsNot"
+              }
+              args {
+                int_value: 1
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Preset Value (int)"
+              args {
+                string_value: "bool"
+              }
+              args {
+                int_value: 0
+              }
+            }
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Story Variable (bool)"
+          args {
+            string_value: "531d26a736623648180018bf"
+          }
+          args {
+            string_value: "isBummerDead"
+          }
+        }
+      }
+    }
+  }
+  actions {
+    ops {
+      functionName: "Kill Actor"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Actor)"
+              args {
+                string_value: "537e3ace6434315228188b36"
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "DeathMethod"
+          }
+          args {
+            int_value: 3
+          }
+        }
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "536b1457366236e0040077d8"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
+triggers {
+  name: "Kill Hailey"
+  events {
+    ops {
+      functionName: "On Map Start"
+    }
+  }
+  conditions {
+    ops {
+      functionName: "OR"
+      args {
+        call_value {
+          functionName: "Comparison (bool)"
+          args {
+            call_value {
+              functionName: "Get Story Variable (bool)"
+              args {
+                string_value: "531d26a736623648180018bf"
+              }
+              args {
+                string_value: "isHaileyRecruited"
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Preset Value (int)"
+              args {
+                string_value: "IsOrIsNot"
+              }
+              args {
+                int_value: 1
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Preset Value (int)"
+              args {
+                string_value: "bool"
+              }
+              args {
+                int_value: 0
+              }
+            }
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Story Variable (bool)"
+          args {
+            string_value: "531d26a736623648180018bf"
+          }
+          args {
+            string_value: "isHaileyDead"
+          }
+        }
+      }
+    }
+  }
+  actions {
+    ops {
+      functionName: "Kill Actor"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Actor)"
+              args {
+                string_value: "537686d56434316a34fc4694"
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "DeathMethod"
+          }
+          args {
+            int_value: 3
+          }
+        }
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "536b15d5366236e0040077e0"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
+triggers {
+  name: "Kill Elorn"
+  events {
+    ops {
+      functionName: "On Map Start"
+    }
+  }
+  conditions {
+    ops {
+      functionName: "OR"
+      args {
+        call_value {
+          functionName: "Comparison (bool)"
+          args {
+            call_value {
+              functionName: "Get Story Variable (bool)"
+              args {
+                string_value: "531d26a736623648180018bf"
+              }
+              args {
+                string_value: "isElornRecruited"
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Preset Value (int)"
+              args {
+                string_value: "IsOrIsNot"
+              }
+              args {
+                int_value: 1
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Preset Value (int)"
+              args {
+                string_value: "bool"
+              }
+              args {
+                int_value: 0
+              }
+            }
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Story Variable (bool)"
+          args {
+            string_value: "531d26a736623648180018bf"
+          }
+          args {
+            string_value: "isElornDead"
+          }
+        }
+      }
+    }
+  }
+  actions {
+    ops {
+      functionName: "Kill Actor"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Actor)"
+              args {
+                string_value: "53768be9643431bf375d152e"
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "DeathMethod"
+          }
+          args {
+            int_value: 3
+          }
+        }
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "537d6b32366236a41f000371"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
 regions {
   name: "Kali Arrival"
   position {
@@ -1095,11 +1595,11 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -69
+    x: -24
     y: 0
-    z: -37
+    z: -26
   }
-  orientation: ORIENTATION_S
+  orientation: ORIENTATION_N
   GeneralTags: "isWanderer"
   displayName: "Tomas"
   idRef {
@@ -1180,9 +1680,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -69
+    x: -25
     y: 0
-    z: -36
+    z: -31
   }
   orientation: ORIENTATION_S
   GeneralTags: "isMerchantLevel2"
@@ -1258,11 +1758,11 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -68
+    x: -27
     y: 0
-    z: -36
+    z: -24
   }
-  orientation: ORIENTATION_S
+  orientation: ORIENTATION_W
   displayName: "Selene"
   idRef {
     id: "537686d56434316a34fc4692"
@@ -1341,7 +1841,7 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -69
+    x: -32
     y: 0
     z: -35
   }
@@ -1454,11 +1954,11 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -71
+    x: -26
     y: 0
-    z: -35
+    z: -37
   }
-  orientation: ORIENTATION_N
+  orientation: ORIENTATION_E
   GeneralTags: "isHailey"
   displayName: "Hailey"
   idRef {
@@ -1570,11 +2070,11 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -71
+    x: -23
     y: 0
-    z: -36
+    z: -35
   }
-  orientation: ORIENTATION_S
+  orientation: ORIENTATION_N
   GeneralTags: "isLazarus"
   GeneralTags: "isDog"
   GeneralTags: "isWanderer"
@@ -1669,11 +2169,11 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -71
+    x: -29
     y: 0
-    z: -37
+    z: -27
   }
-  orientation: ORIENTATION_E
+  orientation: ORIENTATION_N
   GeneralTags: "isMerchantLevel2"
   displayName: "Hrafna"
   idRef {
@@ -1755,11 +2255,11 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -71
+    x: -29
     y: 0
-    z: -39
+    z: -37
   }
-  orientation: ORIENTATION_N
+  orientation: ORIENTATION_E
   GeneralTags: "isDorbi"
   displayName: "Dorbi"
   idRef {
@@ -1868,11 +2368,11 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -71
+    x: -22
     y: 0
-    z: -38
+    z: -36
   }
-  orientation: ORIENTATION_S
+  orientation: ORIENTATION_N
   GeneralTags: "isMerchantLevel2"
   displayName: "Horatio"
   idRef {
@@ -1946,9 +2446,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -69
+    x: 2
     y: 0
-    z: -39
+    z: -6
   }
   orientation: ORIENTATION_E
   displayName: "Kali"
@@ -2040,11 +2540,11 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -69
+    x: -22
     y: 0
-    z: -38
+    z: -31
   }
-  orientation: ORIENTATION_S
+  orientation: ORIENTATION_N
   GeneralTags: "isElorn"
   GeneralTags: "isWanderer"
   displayName: "Elorn"
@@ -2154,11 +2654,11 @@ characters {
 characters {
   name: "system_spawner_playerSpawner"
   gridPoint {
-    x: -25
+    x: -24
     y: 0
-    z: -32
+    z: -23
   }
-  orientation: ORIENTATION_N
+  orientation: ORIENTATION_W
   idRef {
     id: "53777b993662364c1b004dfe"
   }
@@ -2186,7 +2686,7 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Seattle:Core/TrollMale"
+    prefab_name: "Seattle:Objects/InvisibleActor"
     character_sheet_id: "AGChemie_Cyberzombie_Lv1"
     character_mod {
       stats {
@@ -2223,7 +2723,7 @@ characters {
       }
     }
     team_id: "Shadowrunners"
-    char_name: "New Actor"
+    char_name: " "
     pc_spawn_number: -1
     ai_ignores: true
     uninjurable: true
@@ -2234,6 +2734,104 @@ characters {
     karma: 177
     is_prop_character: true
     hide_floaties: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -28
+    y: 0
+    z: -30
+  }
+  orientation: ORIENTATION_W
+  GeneralTags: "isBummer"
+  GeneralTags: "isDog"
+  GeneralTags: "isWanderer"
+  displayName: "Bummer"
+  idRef {
+    id: "537e3ace6434315228188b36"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Berlin:Creatures/CreatureDogFriendly"
+    character_sheet_id: "a3_crew_bummer_lv2"
+    equipment_sheet_id: "a3_crew_bummer_lv2"
+    character_mod {
+      stats {
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        magic: 0
+        hp: 0
+        ap: 0
+        armor: 0
+        force: 0
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+        ranged_combat: 0
+        close_combat: 0
+        throwing_weapons: 0
+        spellcasting: 0
+        decking: 0
+        conjuring: 0
+        spirit_summoning: 0
+        drone_control: 0
+        biotech: 0
+        dodge: 0
+        etiquette_corporate: 0
+        etiquette_security: 0
+        etiquette_gang: 0
+        etiquette_socialite: 0
+        chi_casting: 0
+        etiquette_shadowrunner: 0
+        etiquette_street: 0
+        etiquette_academic: 0
+      }
+      specializations {
+        pistol: 0
+        rifle: 0
+        shotgun: 0
+        smg: 0
+        edged: 0
+        unarmed: 0
+        spirit_control: 0
+        esp_control: 0
+        drone_combat: 0
+      }
+      archetypeName: "Player"
+      attitude: AttitudeAggressive
+      vulnerabilities {
+      }
+    }
+    team_id: "Civilians"
+    char_name: "Bummer"
+    GeneralTags: "isBummer"
+    GeneralTags: "isDog"
+    GeneralTags: "isWanderer"
+    enabled_at_start: true
+    pc_spawn_number: -1
+    unkillable: true
+    hiring_type: HiringType_Hireable
+    disable_pickups: true
+    portrait {
+      filename: "npc_dog_dante"
+    }
+    description_bio: "An Emperor\'s best friend, Bummer is loyal, brave, and very protective of his master."
+    karma: 2
+    hiring_cost_override: 0
+    has_fist: false
+    id: "a3_crew_bummer_lv2"
   }
 }
 variables {
@@ -2432,6 +3030,8 @@ scene_dimensions {
   dimension_name: "Matrix"
   initial_alarm_state: 20
   turns_per_round: 3
+}
+character_roster {
 }
 show_hiring_screen_on_scene_load: false
 scene_hiring_prerequisites {
