@@ -43806,16 +43806,9 @@ props {
     z: 76
   }
   orientation: ORIENTATION_W
+  displayName: "Jack Point "
   idRef {
     id: "522a7b09366236681200323e"
-  }
-  interactionRoot {
-    isEnabled: true
-    interactionRadius: 1
-    jackPoint {
-      LANIdentifier: "522a7b183662366812003240"
-      LANEquipment: ""
-    }
   }
   lod: 0
 }
@@ -44304,6 +44297,7 @@ props {
     z: 4.2
   }
   orientation: ORIENTATION_E
+  displayName: "Jack Point 1 Real"
   idRef {
     id: "53765c6c6434316b1333375a"
   }
@@ -44817,6 +44811,7 @@ props {
     z: 48
   }
   orientation: ORIENTATION_E
+  displayName: "Jack Point 2 Real"
   idRef {
     id: "53765cb16434316b1333375c"
   }
@@ -48195,6 +48190,44 @@ props {
       inspectText: "The boardroom has gone into lockdown mode due to the invasion. You must wipe out the remaining forces to enter."
       disableAfterInteracting: false
     }
+  }
+  lod: 0
+}
+props {
+  name: "tenements_tech_cyberTerminal01"
+  gridPoint {
+    x: -107
+    y: 0
+    z: 58
+  }
+  orientation: ORIENTATION_E
+  displayName: "Jack Point 2 Fake"
+  idRef {
+    id: "537ce378643431520477f885"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    interactionIcon: InteractionIcon_Matrix
+  }
+  lod: 0
+}
+props {
+  name: "tenements_tech_cyberTerminal01"
+  gridPoint {
+    x: -36
+    y: 0
+    z: 15.2
+  }
+  orientation: ORIENTATION_E
+  displayName: "Jack Point 1 Fake"
+  idRef {
+    id: "537ce3b7643431520477f889"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    interactionIcon: InteractionIcon_Matrix
   }
   lod: 0
 }

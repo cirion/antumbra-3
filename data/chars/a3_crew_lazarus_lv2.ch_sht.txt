@@ -1,25 +1,25 @@
-unique_id: "a3_crew_norton_lv4"
-archetypeName: "Guard - Hunt And Destroy"
-attitude: AttitudeBoss
+unique_id: "a3_crew_lazarus_lv2"
+archetypeName: "Player"
+attitude: AttitudeAggressive
 stats {
-  body: 6
+  body: 4
   quickness: 3
-  strength: 1
-  charisma: 6
+  strength: 4
+  charisma: 3
   intelligence: 1
-  willpower: 4
+  willpower: 5
   essence: 6
   magic: 6
   reaction: 4
-  hp: 60
+  hp: 40
   ap: 3
-  armor: 2
-  force: 0
-  morale: 75
-  discipline: 75
+  armor: 3
+  force: 4
+  morale: 99
+  discipline: 25
   awareness: 80
   perception: 40
-  authority: 50
+  authority: 5
   protect_tether_range: 5
   move_speed: 6
   is_fearless: 0
@@ -27,20 +27,20 @@ stats {
 }
 skills {
   ranged_combat: 0
-  close_combat: 0
+  close_combat: 4
   throwing_weapons: 0
-  spellcasting: 4
+  spellcasting: 3
   decking: 0
   deck_build_repair: 0
-  conjuring: 6
-  spirit_summoning: 4
+  conjuring: 0
+  spirit_summoning: 0
   spirit_banishing: 0
   magic_defense: 0
   drone_control: 0
   remote_gunnery: 0
   drone_build_repair: 0
   athletics: 0
-  biotech: 1
+  biotech: 0
   dodge: 2
   negotiation: 0
   stealth: 0
@@ -66,7 +66,7 @@ specializations {
   clubs: 0
   edged: 0
   polearms: 0
-  unarmed: 0
+  unarmed: 2
   whips: 0
   throwing_blades: 0
   attack_spells: 0
@@ -76,13 +76,13 @@ specializations {
   combat_programs: 0
   defensive_programs: 0
   trap_programs: 0
-  spirit_control: 3
+  spirit_control: 0
   esp_control: 0
   drone_combat: 0
 }
-prefab_name: "Seattle:Core/HumanMale"
+prefab_name: "Berlin:Creatures/CreatureDogAngry"
 portrait {
-  filename: "EmperorNorton"
+  filename: "NPC_Dog_DanteCombat"
 }
 attackRandom: AttackStyle_AllEqual
 vulnerabilities {

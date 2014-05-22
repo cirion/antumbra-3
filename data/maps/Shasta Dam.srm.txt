@@ -1,6 +1,6 @@
 minX: -81
 minZ: -169
-numX: 132
+numX: 126
 numZ: 230
 props {
   name: "barrens_ground_twoLaneSingle01"
@@ -313,9 +313,9 @@ props {
 props {
   name: "docks_floor_3x3panel"
   gridPoint {
-    x: 37
+    x: 41
     y: 0
-    z: 7
+    z: -42
   }
   orientation: ORIENTATION_S
   lod: 0
@@ -323,9 +323,9 @@ props {
 props {
   name: "docks_floor_3x3panel15"
   gridPoint {
-    x: 47
+    x: 41
     y: 0
-    z: 17
+    z: -48
   }
   orientation: ORIENTATION_S
   lod: 0
@@ -333,9 +333,9 @@ props {
 props {
   name: "docks_floor_3x3panel16"
   gridPoint {
-    x: 40
+    x: 41
     y: 0
-    z: 12
+    z: -36
   }
   orientation: ORIENTATION_S
   lod: 0
@@ -4384,26 +4384,6 @@ props {
     z: -67
   }
   orientation: ORIENTATION_N
-  lod: 0
-}
-props {
-  name: "hive_ground_undergroundWallCorner01"
-  gridPoint {
-    x: 25
-    y: 0
-    z: -53
-  }
-  orientation: ORIENTATION_N
-  lod: 0
-}
-props {
-  name: "hive_ground_undergroundWallCorner02"
-  gridPoint {
-    x: 34
-    y: 0
-    z: -43
-  }
-  orientation: ORIENTATION_S
   lod: 0
 }
 props {

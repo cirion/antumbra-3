@@ -5,9 +5,9 @@ numZ: 162
 props {
   name: "undergroundBase_floor_dirt01"
   gridPoint {
-    x: 25
+    x: -1
     y: 0
-    z: -12
+    z: -31
   }
   orientation: ORIENTATION_S
   lod: 0
@@ -16642,6 +16642,225 @@ props {
   orientation: ORIENTATION_S
   idRef {
     id: "537be2696434310668e2b818"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_nonsolidProp"
+  gridPoint {
+    x: 39
+    y: 0
+    z: 64
+  }
+  orientation: ORIENTATION_S
+  displayName: "Descend Look"
+  idRef {
+    id: "537d01b0643431b00cc09d10"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    prerequisites {
+      ops {
+        functionName: "Evaluate If Actor Has Item"
+        args {
+          call_value {
+            functionName: "Specific Actor"
+            args {
+              call_value {
+                functionName: "Triggering Actor"
+              }
+            }
+            args {
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "HasOrHasNot"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Map Item (Item)"
+            args {
+              string_value: "a3-spelunking_gear"
+            }
+          }
+        }
+      }
+    }
+    inspectInteraction {
+      dispalyTime: 0
+      fadeTime: 0
+      inspectText: "You can barely make out the bottom of the shaft. Jumping in would be suicide. You\'ll need to find a way to climb down safely."
+      disableAfterInteracting: false
+    }
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_nonsolidProp"
+  gridPoint {
+    x: 39
+    y: 0
+    z: 63
+  }
+  orientation: ORIENTATION_S
+  displayName: "Climb Down"
+  idRef {
+    id: "537d0307643431b00cc09d13"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    prerequisites {
+      ops {
+        functionName: "Evaluate If Actor Has Item"
+        args {
+          call_value {
+            functionName: "Specific Actor"
+            args {
+              call_value {
+                functionName: "Triggering Actor"
+              }
+            }
+            args {
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "HasOrHasNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Map Item (Item)"
+            args {
+              string_value: "a3-spelunking_gear"
+            }
+          }
+        }
+      }
+    }
+    interactionIcon: InteractionIcon_Warp
+  }
+  lod: 0
+}
+props {
+  name: "undergroundBase_groundDecoration_rope01"
+  gridPoint {
+    x: 37
+    y: 0
+    z: 65
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "537d03de643431950db69ee4"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    prerequisites {
+      ops {
+        functionName: "Comparison (int)"
+        args {
+          call_value {
+            functionName: "Get Variable (int)"
+            args {
+              string_value: "spelunkerConvoState"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+        args {
+          int_value: 2
+        }
+      }
+    }
+    pickupItem {
+      itemName: "a3-spelunking_gear"
+      destroyOnPickup: true
+    }
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_nonsolidProp"
+  gridPoint {
+    x: 25
+    y: 0
+    z: 57
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "system_invisible_nonsolidProp"
+  gridPoint {
+    x: 37
+    y: 0
+    z: 65
+  }
+  orientation: ORIENTATION_S
+  displayName: "Fake Take Rope"
+  idRef {
+    id: "537d045d643431950db69f12"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    prerequisites {
+      ops {
+        functionName: "Comparison (int)"
+        args {
+          call_value {
+            functionName: "Get Variable (int)"
+            args {
+              string_value: "spelunkerConvoState"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+        args {
+          int_value: 0
+        }
+      }
+    }
+    interactionIcon: InteractionIcon_ItemPickup
   }
   lod: 0
 }

@@ -11,8 +11,8 @@ stats {
   essence: 6
   magic: 0
   reaction: 1
-  hp: 40
-  ap: 2
+  hp: 60
+  ap: 3
   armor: 1
   force: 0
   morale: 75
@@ -83,7 +83,7 @@ specializations {
 }
 prefab_name: "Seattle:Core/DwarfFemale"
 portrait {
-  filename: "pc_dwarffemale_06"
+  filename: "pc_elfmale_06_dreads"
 }
 attackRandom: AttackStyle_AllEqual
 vulnerabilities {
