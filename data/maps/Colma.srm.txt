@@ -10096,19 +10096,6 @@ props {
   lod: 0
 }
 props {
-  name: "cemetery_decor_headstone08"
-  gridPoint {
-    x: -26
-    y: 0
-    z: -111
-  }
-  orientation: ORIENTATION_E
-  idRef {
-    id: "521a85833662367c1d00745d"
-  }
-  lod: 0
-}
-props {
   name: "cemetery_decor_headstone07"
   gridPoint {
     x: -23
@@ -10177,19 +10164,6 @@ props {
   orientation: ORIENTATION_E
   idRef {
     id: "521a85833662367c1d007461"
-  }
-  lod: 0
-}
-props {
-  name: "cemetery_decor_headstone09"
-  gridPoint {
-    x: -34
-    y: 0
-    z: -111
-  }
-  orientation: ORIENTATION_E
-  idRef {
-    id: "521a858a3662367c1d007462"
   }
   lod: 0
 }
@@ -20158,12 +20132,12 @@ props {
 props {
   name: "cemetery_ground_grave02"
   gridPoint {
-    x: -52
+    x: -49
     y: 0
-    z: -172
+    z: -154
   }
-  orientation: ORIENTATION_S
-  displayName: "Summon Strong Abomination"
+  orientation: ORIENTATION_E
+  displayName: "Summon Mid Abomination"
   idRef {
     id: "521a8f423662367c1d00795c"
   }
@@ -20236,6 +20210,8 @@ props {
       }
       archetypeName: "Player"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
     portrait {
       filename: "Generic_Spirit_Abomination"
@@ -20246,12 +20222,12 @@ props {
 props {
   name: "cemetery_ground_grave02"
   gridPoint {
-    x: -40
+    x: -26
     y: 0
-    z: -101
+    z: -110
   }
   orientation: ORIENTATION_S
-  displayName: "Summon Weak Abomination"
+  displayName: "Summon Mid Abomination"
   idRef {
     id: "521a8f503662367c1d007960"
   }
@@ -20261,7 +20237,7 @@ props {
     summonPoint {
       hasCharacter: true
       summon_icon: ""
-      max_summon_force: 2
+      max_summon_force: 3
     }
   }
   lod: 0
@@ -20486,19 +20462,6 @@ props {
       scene_name: "Embarcadero 2"
       confirmation_text: "Are you ready to pursue Shavarus?"
     }
-  }
-  lod: 0
-}
-props {
-  name: "cemetery_ground_grave02"
-  gridPoint {
-    x: -49
-    y: 0
-    z: -154
-  }
-  orientation: ORIENTATION_E
-  idRef {
-    id: "522a9fd736623668120035c3"
   }
   lod: 0
 }
@@ -70057,9 +70020,9 @@ props {
 props {
   name: "vfx_fx_ambientMagic"
   gridPoint {
-    x: -37
+    x: -23
     y: 0
-    z: -99
+    z: -104
   }
   orientation: ORIENTATION_S
   properties {
@@ -71127,9 +71090,9 @@ props {
 props {
   name: "system_gizmo_lightbulb"
   gridPoint {
-    x: -39
+    x: -26
     y: 0
-    z: -100
+    z: -109
   }
   orientation: ORIENTATION_S
   idRef {
@@ -71433,9 +71396,9 @@ props {
 props {
   name: "tempbad_leyline_light"
   gridPoint {
-    x: -25
+    x: -29
     y: 0
-    z: -113
+    z: -103
   }
   orientation: ORIENTATION_S
   properties {
@@ -71458,9 +71421,9 @@ props {
 props {
   name: "tempbad_leyline_light"
   gridPoint {
-    x: -44
+    x: -35
     y: 0
-    z: -93
+    z: -114
   }
   orientation: ORIENTATION_S
   properties {
@@ -71572,6 +71535,81 @@ props {
       itemName: "a3-pu_saito_records"
       destroyOnPickup: true
     }
+  }
+  lod: 0
+}
+props {
+  name: "tempbad_leyline_light"
+  gridPoint {
+    x: -36
+    y: 0
+    z: -115
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "leyline_fx_on_tile"
+    string_value: "LeyLineLow"
+  }
+  properties {
+    property_id: "leyline_sfx_on_tile"
+    string_value: "StandOnLeylineFar"
+  }
+  properties {
+    property_id: "leyline_fx_on_visible"
+    string_value: "LeyLineTileLow"
+  }
+  idRef {
+    id: "537d8077366236041b0015a3"
+  }
+  lod: 0
+}
+props {
+  name: "tempbad_leyline_light"
+  gridPoint {
+    x: -35
+    y: 0
+    z: -116
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "leyline_fx_on_tile"
+    string_value: "LeyLineLow"
+  }
+  properties {
+    property_id: "leyline_sfx_on_tile"
+    string_value: "StandOnLeylineFar"
+  }
+  properties {
+    property_id: "leyline_fx_on_visible"
+    string_value: "LeyLineTileLow"
+  }
+  idRef {
+    id: "537d8078366236041b0015a4"
+  }
+  lod: 0
+}
+props {
+  name: "tempbad_leyline_light"
+  gridPoint {
+    x: -34
+    y: 0
+    z: -115
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "leyline_fx_on_tile"
+    string_value: "LeyLineLow"
+  }
+  properties {
+    property_id: "leyline_sfx_on_tile"
+    string_value: "StandOnLeylineFar"
+  }
+  properties {
+    property_id: "leyline_fx_on_visible"
+    string_value: "LeyLineTileLow"
+  }
+  idRef {
+    id: "537d8079366236041b0015a5"
   }
   lod: 0
 }

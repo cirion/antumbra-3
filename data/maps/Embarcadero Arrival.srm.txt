@@ -77200,12 +77200,12 @@ props {
     summonPoint {
       hasCharacter: true
       summon_icon: ""
-      max_summon_force: 3
+      max_summon_force: 4
     }
   }
   lod: 0
   character_instance {
-    prefab_name: "Spirit/SpiritWater"
+    prefab_name: "Seattle:Spirit/SpiritWater"
     character_sheet_id: "Spirit Water"
     equipment_sheet_id: "Spirit Water F6 Gear"
     character_mod {
@@ -77263,8 +77263,10 @@ props {
       }
       archetypeName: "Player"
       attitude: AttitudeAggressive
+      vulnerabilities {
+      }
     }
-    char_name: "Water Elemental"
+    char_name: "Water Spirit"
     portrait {
       filename: "Generic_Spirit_Water"
     }
@@ -78822,7 +78824,7 @@ props {
   name: "pikePlace_wallDecoration_genericGrafitti03"
   gridPoint {
     x: -4
-    y: -1.3877788e-16
+    y: -1.3877788e-016
     z: 18.9
   }
   orientation: ORIENTATION_S
@@ -111266,6 +111268,50 @@ props {
   }
   idRef {
     id: "537c21b53662364817007586"
+  }
+  lod: 0
+}
+props {
+  name: "tempbad_leyline_light"
+  gridPoint {
+    x: -45
+    y: 0
+    z: 44
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "leyline_fx_on_tile"
+    string_value: "LeyLineLow"
+  }
+  properties {
+    property_id: "leyline_sfx_on_tile"
+    string_value: "StandOnLeylineFar"
+  }
+  properties {
+    property_id: "leyline_fx_on_visible"
+    string_value: "LeyLineTileLow"
+  }
+  lod: 0
+}
+props {
+  name: "tempbad_leyline_light"
+  gridPoint {
+    x: -75
+    y: 0
+    z: 7
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "leyline_fx_on_tile"
+    string_value: "LeyLineLow"
+  }
+  properties {
+    property_id: "leyline_sfx_on_tile"
+    string_value: "StandOnLeylineFar"
+  }
+  properties {
+    property_id: "leyline_fx_on_visible"
+    string_value: "LeyLineTileLow"
   }
   lod: 0
 }

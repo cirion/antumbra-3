@@ -19016,7 +19016,87 @@ props {
     z: 64
   }
   orientation: ORIENTATION_S
+  idRef {
+    id: "537d886b366236041b0015e6"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 7
+    summonPoint {
+      hasCharacter: true
+      summon_icon: ""
+      max_summon_force: 4
+    }
+  }
   lod: 0
+  character_instance {
+    prefab_name: "Seattle:Spirit/SpiritAir"
+    character_sheet_id: "Spirit Air"
+    equipment_sheet_id: "Spirit Air F6 Gear"
+    character_mod {
+      stats {
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        magic: 0
+        hp: 0
+        ap: 0
+        armor: 0
+        force: 0
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+        ranged_combat: 0
+        close_combat: 0
+        throwing_weapons: 0
+        spellcasting: 0
+        decking: 0
+        conjuring: 0
+        spirit_summoning: 0
+        drone_control: 0
+        biotech: 0
+        dodge: 0
+        etiquette_corporate: 0
+        etiquette_security: 0
+        etiquette_gang: 0
+        etiquette_socialite: 0
+        chi_casting: 0
+        etiquette_shadowrunner: 0
+        etiquette_street: 0
+        etiquette_academic: 0
+      }
+      specializations {
+        pistol: 0
+        rifle: 0
+        shotgun: 0
+        smg: 0
+        edged: 0
+        unarmed: 0
+        spirit_control: 0
+        esp_control: 0
+        drone_combat: 0
+      }
+      archetypeName: "Player"
+      attitude: AttitudeAggressive
+      vulnerabilities {
+      }
+    }
+    char_name: "Air Spirit"
+    portrait {
+      filename: "Generic_Spirit_Air"
+    }
+    karma: 341
+  }
 }
 props {
   name: "hive_magic_summoningConsole01"
@@ -36513,7 +36593,7 @@ props {
   gridPoint {
     x: -30
     y: 0
-    z: 66
+    z: 65
   }
   orientation: ORIENTATION_S
   properties {
@@ -36533,7 +36613,7 @@ props {
 props {
   name: "tempbad_leyline_medium"
   gridPoint {
-    x: -20
+    x: -25
     y: 0
     z: 65
   }
@@ -36557,7 +36637,7 @@ props {
   gridPoint {
     x: -57
     y: 0
-    z: 33
+    z: 37
   }
   orientation: ORIENTATION_S
   properties {
@@ -48228,6 +48308,97 @@ props {
     isEnabled: true
     interactionRadius: 1
     interactionIcon: InteractionIcon_Matrix
+  }
+  lod: 0
+}
+props {
+  name: "tempbad_leyline_heavy"
+  gridPoint {
+    x: -19
+    y: 0
+    z: 65
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "leyline_fx_on_tile"
+    string_value: "LeyLineHigh"
+  }
+  properties {
+    property_id: "leyline_sfx_on_tile"
+    string_value: "StandOnLeylineClose"
+  }
+  properties {
+    property_id: "leyline_fx_on_visible"
+    string_value: "LeyLineTileHigh"
+  }
+  lod: 0
+}
+props {
+  name: "tempbad_leyline_medium"
+  gridPoint {
+    x: -57
+    y: 0
+    z: 29
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "leyline_fx_on_tile"
+    string_value: "LeyLineMedium"
+  }
+  properties {
+    property_id: "leyline_sfx_on_tile"
+    string_value: "StandOnLeylineMed"
+  }
+  properties {
+    property_id: "leyline_fx_on_visible"
+    string_value: "LeyLineTileMed"
+  }
+  lod: 0
+}
+props {
+  name: "tempbad_leyline_heavy"
+  gridPoint {
+    x: -57
+    y: 0
+    z: 33
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "leyline_fx_on_tile"
+    string_value: "LeyLineHigh"
+  }
+  properties {
+    property_id: "leyline_sfx_on_tile"
+    string_value: "StandOnLeylineClose"
+  }
+  properties {
+    property_id: "leyline_fx_on_visible"
+    string_value: "LeyLineTileHigh"
+  }
+  lod: 0
+}
+props {
+  name: "tempbad_leyline_medium"
+  gridPoint {
+    x: -54
+    y: 0
+    z: 33
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "leyline_fx_on_tile"
+    string_value: "LeyLineMedium"
+  }
+  properties {
+    property_id: "leyline_sfx_on_tile"
+    string_value: "StandOnLeylineMed"
+  }
+  properties {
+    property_id: "leyline_fx_on_visible"
+    string_value: "LeyLineTileMed"
+  }
+  idRef {
+    id: "537d8814366236041b0015e4"
   }
   lod: 0
 }
