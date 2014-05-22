@@ -3685,6 +3685,40 @@ props {
           }
         }
       }
+      ops {
+        functionName: "Evaluate If Actor Has Item"
+        args {
+          call_value {
+            functionName: "Specific Actor"
+            args {
+              call_value {
+                functionName: "Triggering Actor"
+              }
+            }
+            args {
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "HasOrHasNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Map Item (Item)"
+            args {
+              string_value: "a3-redding_office_key"
+            }
+          }
+        }
+      }
     }
     doorPoint {
       doorState: false
@@ -7370,7 +7404,7 @@ props {
     z: 12
   }
   orientation: ORIENTATION_S
-  displayName: "Investigate Door"
+  displayName: "Investigate Comm Door"
   idRef {
     id: "537ad667366236b005001b83"
   }
@@ -10781,4 +10815,112 @@ props {
     }
     karma: 268
   }
+}
+props {
+  name: "system_invisible_nonsolidProp"
+  gridPoint {
+    x: -48
+    y: 0
+    z: 11
+  }
+  orientation: ORIENTATION_S
+  displayName: "Investigate Office Door"
+  idRef {
+    id: "537e710b643431fe35b6885c"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    prerequisites {
+      ops {
+        functionName: "Actor is Player Controlled"
+        args {
+          call_value {
+            functionName: "Specific Actor"
+            args {
+              call_value {
+                functionName: "Triggering Actor"
+              }
+            }
+            args {
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+      }
+      ops {
+        functionName: "Evaluate If Actor Has Item"
+        args {
+          call_value {
+            functionName: "Specific Actor"
+            args {
+              call_value {
+                functionName: "Triggering Actor"
+              }
+            }
+            args {
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "HasOrHasNot"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Map Item (Item)"
+            args {
+              string_value: "a3-redding_office_key"
+            }
+          }
+        }
+      }
+    }
+    inspectInteraction {
+      dispalyTime: 10
+      fadeTime: 0
+      inspectText: "You never lock your office door, but it looks like the Native Californians have. You\'ll need to find the key to get inside."
+      disableAfterInteracting: false
+    }
+  }
+  lod: 0
+}
+props {
+  name: "office_tech_keycardLanyard"
+  gridPoint {
+    x: -82
+    y: 0
+    z: 10
+  }
+  orientation: ORIENTATION_S
+  displayName: "Office Key"
+  idRef {
+    id: "537e7161643431fe35b6885e"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    pickupItem {
+      itemName: "a3-redding_office_key"
+      destroyOnPickup: true
+    }
+  }
+  lod: 0
 }

@@ -15275,9 +15275,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -52
+    x: -53
     y: 0
-    z: 7
+    z: 8
   }
   orientation: ORIENTATION_S
   displayName: "NC Melee"
@@ -15319,9 +15319,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -52
+    x: -54
     y: 0
-    z: 8
+    z: 13
   }
   orientation: ORIENTATION_S
   displayName: "NC Shotgun"
@@ -15363,9 +15363,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -68
+    x: -70
     y: 0
-    z: 13
+    z: 11
   }
   orientation: ORIENTATION_S
   GeneralTags: "squadFinal"
@@ -15555,11 +15555,11 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -38
+    x: -39
     y: 0
     z: 1
   }
-  orientation: ORIENTATION_N
+  orientation: ORIENTATION_S
   GeneralTags: "isNCThug"
   GeneralTags: ""
   displayName: "NC Mage"
@@ -15603,9 +15603,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -59
+    x: -57
     y: 0
-    z: -1
+    z: -5
   }
   orientation: ORIENTATION_S
   GeneralTags: "isNCThug"
@@ -15651,11 +15651,11 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -40
+    x: -39
     y: 0
-    z: 3
+    z: 4
   }
-  orientation: ORIENTATION_N
+  orientation: ORIENTATION_S
   GeneralTags: "isNCThug"
   GeneralTags: ""
   displayName: "NC Captain"
@@ -15699,11 +15699,11 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -38
+    x: -35
     y: 0
     z: 3
   }
-  orientation: ORIENTATION_N
+  orientation: ORIENTATION_S
   GeneralTags: "isNCThug"
   GeneralTags: ""
   displayName: "NC Pistol"
@@ -15747,7 +15747,7 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -59
+    x: -58
     y: 0
     z: 0
   }
@@ -15795,9 +15795,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -59
+    x: -54
     y: 0
-    z: 1
+    z: -3
   }
   orientation: ORIENTATION_S
   GeneralTags: "isNCThug"
@@ -15943,9 +15943,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -78
+    x: -77
     y: 0
-    z: 9
+    z: 12
   }
   orientation: ORIENTATION_W
   GeneralTags: "isNCThug"
@@ -17348,9 +17348,9 @@ characters {
 characters {
   name: "system_spawner_playerSpawner"
   gridPoint {
-    x: -77
+    x: -27
     y: 0
-    z: 4
+    z: 5
   }
   orientation: ORIENTATION_N
   idRef {
