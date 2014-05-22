@@ -1859,7 +1859,7 @@ triggers {
             string_value: "531d26a736623648180018bf"
           }
           args {
-            string_value: "Global_numMissionsCompleted"
+            string_value: "Global_Supplies"
           }
         }
       }
@@ -1875,7 +1875,7 @@ triggers {
         }
       }
       args {
-        int_value: 1
+        int_value: 5
       }
     }
   }
