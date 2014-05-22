@@ -415,7 +415,23 @@ nodes {
         }
       }
     }
-    nextNodeIndex: 64
+    actions {
+      ops {
+        functionName: "Open Hiring Screen and Open Scene"
+        args {
+          call_value {
+            functionName: "Get Map Item (Scene)"
+            args {
+              string_value: "Shasta Dam"
+            }
+          }
+        }
+        args {
+          string_value: "Are you ready to leave?"
+        }
+      }
+    }
+    nextNodeIndex: -1
     hideIfUnavailable: true
   }
   branches {
@@ -450,7 +466,23 @@ nodes {
         }
       }
     }
-    nextNodeIndex: 65
+    actions {
+      ops {
+        functionName: "Open Hiring Screen and Open Scene"
+        args {
+          call_value {
+            functionName: "Get Map Item (Scene)"
+            args {
+              string_value: "Colma"
+            }
+          }
+        }
+        args {
+          string_value: "Are you ready to leave?"
+        }
+      }
+    }
+    nextNodeIndex: -1
     hideIfUnavailable: true
   }
   branches {
@@ -485,7 +517,7 @@ nodes {
         }
       }
     }
-    nextNodeIndex: 66
+    nextNodeIndex: 64
     hideIfUnavailable: true
   }
   branches {
@@ -4173,44 +4205,28 @@ nodes {
 }
 nodes {
   idRef {
-    id: "536d9c68366236081a002a19"
-  }
-  index: 64
-  text: "Are you sure?"
-  branches {
-    responseText: "Yes, let\'s go!"
-    nextNodeIndex: -1
-  }
-  branches {
-    responseText: "Wait, I need to do something else first."
-    nextNodeIndex: -1
-  }
-  nodeType: ConversationNodeType_Simple
-}
-nodes {
-  idRef {
-    id: "536d9c6b366236081a002a1d"
-  }
-  index: 65
-  text: "Are you sure?"
-  branches {
-    responseText: "Yes, let\'s go!"
-    nextNodeIndex: -1
-  }
-  branches {
-    responseText: "Wait, I need to do something else first."
-    nextNodeIndex: -1
-  }
-  nodeType: ConversationNodeType_Simple
-}
-nodes {
-  idRef {
     id: "536d9c6d366236081a002a21"
   }
-  index: 66
+  index: 64
   text: "Are you sure? This is the point of no return. Please be sure all your affairs are in order."
   branches {
     responseText: "I am ready."
+    actions {
+      ops {
+        functionName: "Open Hiring Screen and Open Scene"
+        args {
+          call_value {
+            functionName: "Get Map Item (Scene)"
+            args {
+              string_value: "FinaleDam"
+            }
+          }
+        }
+        args {
+          string_value: "Are you ready to leave?"
+        }
+      }
+    }
     nextNodeIndex: -1
   }
   branches {

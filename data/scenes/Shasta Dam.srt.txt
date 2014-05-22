@@ -433,6 +433,35 @@ triggers {
         }
       }
     }
+    ops {
+      functionName: "Kill Actor"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Actor)"
+              args {
+                string_value: "536c5969366236d41e0027a9"
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "DeathMethod"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
   }
   isActive: false
   idRef {
@@ -1508,7 +1537,7 @@ triggers {
         }
       }
       args {
-        int_value: 1
+        int_value: 100
       }
       args {
         call_value {
@@ -3479,7 +3508,7 @@ triggers {
         call_value {
           functionName: "Get Map Item (Scene)"
           args {
-            string_value: "Redding Invasion"
+            string_value: "Redding Old City Hall"
           }
         }
       }
