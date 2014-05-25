@@ -8535,6 +8535,7 @@ props {
     z: 116
   }
   orientation: ORIENTATION_S
+  displayName: "Camera Control"
   idRef {
     id: "537b85d8643431435413c3b2"
   }
@@ -8569,6 +8570,7 @@ props {
       }
     }
     matrixNode {
+      hacking_objects: "537b865d643431435413c3b6"
       prerequisites_control_state: true
       constant_matrix_fx: "matrixcontrolnode"
       state_change_offline_fx: ""
@@ -8629,6 +8631,7 @@ props {
       }
     }
     matrixNode {
+      hacking_objects: "537b899f643431435413c3cc"
       prerequisites_control_state: true
       constant_matrix_fx: "matrixcontrolnode"
       state_change_offline_fx: ""
@@ -10340,9 +10343,9 @@ props {
 props {
   name: "sleekOffice_tech_terminal01_light"
   gridPoint {
-    x: -93
+    x: -83
     y: 1
-    z: -5
+    z: -4
   }
   orientation: ORIENTATION_S
   displayName: "Jack Point Real"
@@ -10372,9 +10375,9 @@ props {
 props {
   name: "sleekOffice_tech_terminal01_light"
   gridPoint {
-    x: -94
+    x: -92
     y: 1
-    z: -1
+    z: -3
   }
   orientation: ORIENTATION_S
   displayName: "Jack Point Fake"

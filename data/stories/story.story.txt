@@ -1200,6 +1200,18 @@ variables {
   }
 }
 variables {
+  name: "Redding_Convo_Selene_NC"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "Redding_Convo_Selene_NC"
+      typeName: "bool"
+    }
+  }
+}
+variables {
   name: "Redding_Convo_Selene_Who"
   typeName: "bool"
   defaultValue {

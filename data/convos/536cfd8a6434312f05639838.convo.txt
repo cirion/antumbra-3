@@ -233,6 +233,94 @@ nodes {
     }
   }
   branches {
+    responseText: "What\'s the deal with those Native Californians?"
+    conditions {
+      ops {
+        functionName: "Invert Bool"
+        args {
+          call_value {
+            functionName: "Get Story Variable (bool)"
+            args {
+              string_value: "531d26a736623648180018bf"
+            }
+            args {
+              string_value: "Redding_Convo_Selene_NC"
+            }
+          }
+        }
+      }
+      ops {
+        functionName: "OR"
+        args {
+          call_value {
+            functionName: "Comparison (int)"
+            args {
+              call_value {
+                functionName: "Get Story Variable (int)"
+                args {
+                  string_value: "531d26a736623648180018bf"
+                }
+                args {
+                  string_value: "Global_MissionState_Five"
+                }
+              }
+            }
+            args {
+              call_value {
+                functionName: "Get Preset Value (int)"
+                args {
+                  string_value: "Comparison Ops"
+                }
+                args {
+                  int_value: 2
+                }
+              }
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Comparison (int)"
+            args {
+              call_value {
+                functionName: "Get Story Variable (int)"
+                args {
+                  string_value: "531d26a736623648180018bf"
+                }
+                args {
+                  string_value: "Global_MissionState_Dam"
+                }
+              }
+            }
+            args {
+              call_value {
+                functionName: "Get Preset Value (int)"
+                args {
+                  string_value: "Comparison Ops"
+                }
+                args {
+                  int_value: 2
+                }
+              }
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+      }
+    }
+    nextNodeIndex: 14
+    hideIfUnavailable: true
+    onlyOnce: true
+    idRef {
+      id: "53810aeb643431fe35b68a7a"
+    }
+  }
+  branches {
     responseText: "How can I get some more supplies to prepare for this war?"
     conditions {
       ops {
@@ -264,7 +352,7 @@ nodes {
         }
       }
     }
-    nextNodeIndex: 14
+    nextNodeIndex: 16
     hideIfUnavailable: true
     onlyOnce: true
     idRef {
@@ -339,7 +427,7 @@ nodes {
         }
       }
     }
-    nextNodeIndex: 16
+    nextNodeIndex: 18
     hideIfUnavailable: true
     onlyOnce: true
     idRef {
@@ -857,13 +945,65 @@ nodes {
 }
 nodes {
   idRef {
-    id: "536d04fc6434312f056398dd"
+    id: "5380b493643431fe35b688ef"
   }
   index: 14
-  text: "Right now, the major problem I\342\200\231m seeing is that the resources being dispatched here from the San Francisco Bay Area just aren\342\200\231t arriving. \n\nYou have a major problem with gangs on the old Interstate Five freeway south of Redding. Waterjackers and worse are picking off convoys before they can reach our perimeter."
+  text: "Don\'t let the name fool you. They aren\'t real natives, not the way the NAN or Pueblo are. Their ancestors immigrated here from Europe just like everyone else.\n\nThe NC are our own local, homegrown version of Humanis. They\'re human-supremecists who want to expel all metatypes from the territory, and they exterminate anyone who refuses to leave. Real nasty characters."
   branches {
     responseText: ""
     nextNodeIndex: 15
+  }
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (bool)"
+          args {
+            string_value: "531d26a736623648180018bf"
+          }
+          args {
+            string_value: "Redding_Convo_Selene_NC"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "53810a25643431fe35b68982"
+  }
+  index: 15
+  text: "We were all happy to hear that you threw a spanner in their works. They like to pretend that they speak for humans, but the truth is most folks here in Redding get along just fine with one another, whether we have pointy ears or not. Hopefully they\'ll get the message that we won\'t tolerate their activities here any more."
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "536d04fc6434312f056398dd"
+  }
+  index: 16
+  text: "Right now, the major problem I\342\200\231m seeing is that the resources being dispatched here from the San Francisco Bay Area just aren\342\200\231t arriving. \n\nYou have a major problem with gangs on the old Interstate Five freeway south of Redding. Waterjackers and worse are picking off convoys before they can reach our perimeter."
+  branches {
+    responseText: ""
+    nextNodeIndex: 17
   }
   nodeType: ConversationNodeType_Simple
   actions {
@@ -890,7 +1030,7 @@ nodes {
   idRef {
     id: "536d05606434312f056398e0"
   }
-  index: 15
+  index: 17
   text: "I have a colleague patrolling the area, a good man named Rick. Please look him up if you\342\200\231re ever in that area. \n\nIf you work together, you might be able to strengthen that supply chain."
   branches {
     responseText: ""
@@ -938,11 +1078,11 @@ nodes {
   idRef {
     id: "536d069e6434312f056398e5"
   }
-  index: 16
+  index: 18
   text: "{{GM}}She hesitates, choosing her words carefully.{{/GM}}\n\nIt\342\200\231ll be tough. Those of us who saw them cross the border in \342\200\23036 remember them as this enormous green wave, inexorable, sweeping over everything in its path.\n"
   branches {
     responseText: ""
-    nextNodeIndex: 17
+    nextNodeIndex: 19
   }
   nodeType: ConversationNodeType_Simple
   actions {
@@ -977,11 +1117,11 @@ nodes {
   idRef {
     id: "536d06bf6434312f056398e8"
   }
-  index: 17
+  index: 19
   text: "The one advantage you have is that you\342\200\231re prepared. Back then, nobody suspected they would come. We were the first state to recognize their independence, after all. \n\nI think we all felt betrayed back then, and we don\342\200\231t want to make the mistake of underestimating them again."
   branches {
     responseText: ""
-    nextNodeIndex: 18
+    nextNodeIndex: 20
   }
   nodeType: ConversationNodeType_Simple
 }
@@ -989,7 +1129,7 @@ nodes {
   idRef {
     id: "536d06d56434312f056398eb"
   }
-  index: 18
+  index: 20
   text: "Then again, just knowing that you\342\200\231re going to get reamed doesn\342\200\231t exactly help against it happening, or make it feel any better when it does. I think this is beyond all of us. \n\nThe best we can hope for is to delay their approach, make them bleed, and pray that some greater power will come to our aid before we\342\200\231re all washed away."
   branches {
     responseText: ""
@@ -1002,7 +1142,7 @@ nodes {
   idRef {
     id: "536cfe476434312f05639848"
   }
-  index: 19
+  index: 21
   text: "Welcome to Redding, $(l.name)!"
   branches {
     responseText: ""
@@ -1081,5 +1221,5 @@ roots {
 }
 roots {
   responseText: ""
-  nextNodeIndex: 19
+  nextNodeIndex: 21
 }
