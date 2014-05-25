@@ -1,7 +1,7 @@
 minX: -81
-minZ: -169
+minZ: -160
 numX: 126
-numZ: 230
+numZ: 221
 props {
   name: "barrens_ground_twoLaneSingle01"
   gridPoint {
@@ -9743,16 +9743,6 @@ props {
   lod: 0
 }
 props {
-  name: "matrix_floor_4x4bluecorner"
-  gridPoint {
-    x: -18
-    y: 0
-    z: -156
-  }
-  orientation: ORIENTATION_N
-  lod: 0
-}
-props {
   name: "matrix_floor_4x4blueedge"
   gridPoint {
     x: -2
@@ -9760,56 +9750,6 @@ props {
     z: -128
   }
   orientation: ORIENTATION_N
-  lod: 0
-}
-props {
-  name: "matrix_floor_4x4blueelbow"
-  gridPoint {
-    x: -15
-    y: 0
-    z: -161
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "matrix_floor_4x4bluehole"
-  gridPoint {
-    x: -1
-    y: 0
-    z: -166
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "matrix_floor_4x4blueisland"
-  gridPoint {
-    x: -19
-    y: 0
-    z: -148
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "matrix_floor_4x4bluenotch"
-  gridPoint {
-    x: -10
-    y: 0
-    z: -167
-  }
-  orientation: ORIENTATION_N
-  lod: 0
-}
-props {
-  name: "matrix_floor_4x4opengrid"
-  gridPoint {
-    x: -6
-    y: 0
-    z: -169
-  }
-  orientation: ORIENTATION_S
   lod: 0
 }
 props {
@@ -10608,26 +10548,6 @@ props {
 props {
   name: "matrix_wall_door01Far"
   gridPoint {
-    x: -7
-    y: 0
-    z: -140
-  }
-  orientation: ORIENTATION_E
-  lod: 0
-}
-props {
-  name: "matrix_wall_door01Near"
-  gridPoint {
-    x: -7
-    y: 0
-    z: -137
-  }
-  orientation: ORIENTATION_E
-  lod: 0
-}
-props {
-  name: "matrix_wall_door01Far"
-  gridPoint {
     x: 2
     y: 0
     z: -138
@@ -10867,14 +10787,24 @@ props {
 props {
   name: "vfx_fx_matrixDoor"
   gridPoint {
-    x: 3
+    x: -5
     y: 0
-    z: -128
+    z: -137
   }
   orientation: ORIENTATION_E
   properties {
     property_id: "fxScript"
     string_value: "MatrixDoorEnvironment"
+  }
+  displayName: "Matrix Locked Door"
+  idRef {
+    id: "538146836434316255e82b1c"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    dummyInteraciton {
+    }
   }
   lod: 0
 }
@@ -10962,7 +10892,7 @@ props {
     z: -76
   }
   orientation: ORIENTATION_S
-  displayName: "Lock Control"
+  displayName: "Matrix Gate Override"
   idRef {
     id: "537a2bb46434318b3f5d135b"
   }
@@ -11087,6 +11017,16 @@ props {
   properties {
     property_id: "fxScript"
     string_value: "MatrixPortalEnvironment"
+  }
+  idRef {
+    id: "538137f5643431c34d6cc9d9"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    matrixSpawnPoint {
+      dimension: "Matrix"
+    }
   }
   lod: 0
 }
@@ -20262,6 +20202,137 @@ props {
   orientation: ORIENTATION_S
   idRef {
     id: "53813723643431c34d6cc9d5"
+  }
+  lod: 0
+}
+props {
+  name: "undergroundBase_tech_PDA01"
+  gridPoint {
+    x: 0
+    y: 0
+    z: 27
+  }
+  orientation: ORIENTATION_S
+  displayName: "Mobile Uplink Terminal"
+  idRef {
+    id: "538138c66434318f54fa4cf5"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    jackPoint {
+      LANIdentifier: "538137f5643431c34d6cc9d9"
+      LANEquipment: ""
+    }
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_matrixDoor2"
+  gridPoint {
+    x: -19
+    y: 0
+    z: -115
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "matrixDoorEnvironment90"
+  }
+  idRef {
+    id: "538145446434316255e82b14"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_matrixDoor2"
+  gridPoint {
+    x: -38
+    y: 0
+    z: -115
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "matrixDoorEnvironment90"
+  }
+  idRef {
+    id: "538145496434316255e82b15"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_matrixDoor2"
+  gridPoint {
+    x: -46
+    y: 0
+    z: -116
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "matrixDoorEnvironment90"
+  }
+  idRef {
+    id: "5381454e6434316255e82b16"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_matrixDoor"
+  gridPoint {
+    x: 3
+    y: 0
+    z: -138
+  }
+  orientation: ORIENTATION_E
+  properties {
+    property_id: "fxScript"
+    string_value: "MatrixDoorEnvironment"
+  }
+  idRef {
+    id: "538145736434316255e82b17"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_matrixDoor"
+  gridPoint {
+    x: -69
+    y: 0
+    z: -96
+  }
+  orientation: ORIENTATION_E
+  properties {
+    property_id: "fxScript"
+    string_value: "MatrixDoorEnvironment"
+  }
+  displayName: "Matrix Gate FX Lock"
+  idRef {
+    id: "538145816434316255e82b18"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    dummyInteraciton {
+    }
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_matrixDoor"
+  gridPoint {
+    x: -60
+    y: 0
+    z: -93
+  }
+  orientation: ORIENTATION_E
+  properties {
+    property_id: "fxScript"
+    string_value: "MatrixDoorEnvironment"
+  }
+  idRef {
+    id: "538145856434316255e82b19"
   }
   lod: 0
 }

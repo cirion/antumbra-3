@@ -291,11 +291,8 @@ triggers {
   conditions {
   }
   actions {
-    ops {
-      functionName: "No Effect"
-    }
   }
-  isActive: false
+  isActive: true
   idRef {
     id: "537a27ff6434318b3f5d133f"
   }
@@ -983,7 +980,7 @@ triggers {
   }
   elseActions {
   }
-  is_oneshot: true
+  is_oneshot: false
 }
 triggers {
   name: "Hack Helicopter"
@@ -1134,17 +1131,6 @@ triggers {
           functionName: "Get Map Item (SceneDimension)"
           args {
             string_value: "Matrix"
-          }
-        }
-      }
-    }
-    ops {
-      functionName: "Invert Bool"
-      args {
-        call_value {
-          functionName: "Get Variable (bool)"
-          args {
-            string_value: "debugging"
           }
         }
       }
@@ -4708,73 +4694,6 @@ triggers {
         }
       }
     }
-    ops {
-      functionName: "Display Text over Actor"
-      args {
-        call_value {
-          functionName: "Get Map Item (Actor)"
-          args {
-            string_value: "537d232c643431531bbde93c"
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "TextPopupStyle"
-          }
-          args {
-            int_value: 0
-          }
-        }
-      }
-      args {
-        string_value: "Welcome to your nightmare. Tir will destroy you all!"
-      }
-      args {
-        float_value: 0
-      }
-      args {
-        float_value: 0
-      }
-      args {
-        float_value: 0
-      }
-      args {
-        float_value: 0
-      }
-      args {
-        float_value: 3
-      }
-      args {
-        float_value: 3
-      }
-      args {
-        float_value: 0
-      }
-    }
-    ops {
-      functionName: "Add Camera Point of Interest (Actors)"
-      args {
-        call_value {
-          functionName: "Specific Actor"
-          args {
-            call_value {
-              functionName: "Get Map Item (Actor)"
-              args {
-                string_value: "537d232c643431531bbde93c"
-              }
-            }
-          }
-          args {
-          }
-        }
-      }
-      args {
-        float_value: 3
-      }
-    }
   }
   isActive: true
   idRef {
@@ -4833,7 +4752,7 @@ triggers {
         call_value {
           functionName: "Get Map Item (SceneDimension)"
           args {
-            string_value: "Default"
+            string_value: "Matrix"
           }
         }
       }
@@ -5322,7 +5241,31 @@ triggers {
         }
       }
       args {
-        float_value: 2
+        float_value: 3
+      }
+    }
+    ops {
+      functionName: "Move Prop"
+      args {
+        call_value {
+          functionName: "Get Map Item (Prop)"
+          args {
+            string_value: "538146836434316255e82b1c"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Center of Region"
+          args {
+            call_value {
+              functionName: "Get Map Item (Region)"
+              args {
+                string_value: "5376a4ec643431623bd669ee"
+              }
+            }
+          }
+        }
       }
     }
   }
@@ -5621,6 +5564,30 @@ triggers {
       }
       args {
         float_value: 1
+      }
+    }
+    ops {
+      functionName: "Move Prop"
+      args {
+        call_value {
+          functionName: "Get Map Item (Prop)"
+          args {
+            string_value: "538145816434316255e82b18"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Center of Region"
+          args {
+            call_value {
+              functionName: "Get Map Item (Region)"
+              args {
+                string_value: "5376a526643431623bd669f2"
+              }
+            }
+          }
+        }
       }
     }
   }
@@ -11902,6 +11869,319 @@ triggers {
   }
   is_oneshot: true
 }
+triggers {
+  name: "Enemy Drops Terminal"
+  events {
+    ops {
+      functionName: "On Actor Death"
+    }
+  }
+  conditions {
+    ops {
+      functionName: "Compare Actor Team"
+      args {
+        call_value {
+          functionName: "Triggering Target Actor"
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SceneDimension)"
+          args {
+            string_value: "Default"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Compare Actor Team"
+      args {
+        call_value {
+          functionName: "Triggering Actor"
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SceneDimension)"
+          args {
+            string_value: "Default"
+          }
+        }
+      }
+    }
+  }
+  actions {
+    ops {
+      functionName: "Move Prop"
+      args {
+        call_value {
+          functionName: "Get Map Item (Prop)"
+          args {
+            string_value: "538138c66434318f54fa4cf5"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Current Location of Actor"
+          args {
+            call_value {
+              functionName: "Triggering Actor"
+            }
+          }
+        }
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "538138c96434318f54fa4cf6"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
+triggers {
+  name: "IC Decker Taunts"
+  events {
+    ops {
+      functionName: "On Actor Awareness of Another Actor"
+    }
+  }
+  conditions {
+    ops {
+      functionName: "Compare Actor Team"
+      args {
+        call_value {
+          functionName: "Triggering Target Actor"
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SceneDimension)"
+          args {
+            string_value: "Matrix"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Comparison (Actor)"
+      args {
+        call_value {
+          functionName: "Triggering Actor"
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (Actor)"
+          args {
+            string_value: "537d232c643431531bbde93c"
+          }
+        }
+      }
+    }
+  }
+  actions {
+    ops {
+      functionName: "Display Text over Actor"
+      args {
+        call_value {
+          functionName: "Get Map Item (Actor)"
+          args {
+            string_value: "537d232c643431531bbde93c"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "TextPopupStyle"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        string_value: "Welcome to your nightmare. Tir will destroy you all!"
+      }
+      args {
+        float_value: 0
+      }
+      args {
+        float_value: 0
+      }
+      args {
+        float_value: 0
+      }
+      args {
+        float_value: 0
+      }
+      args {
+        float_value: 3
+      }
+      args {
+        float_value: 3
+      }
+      args {
+        float_value: 0
+      }
+    }
+    ops {
+      functionName: "Add Camera Point of Interest (Actors)"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Actor)"
+              args {
+                string_value: "537d232c643431531bbde93c"
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        float_value: 3
+      }
+    }
+    ops {
+      functionName: "Order Actor to Hunt And Destroy (Team)"
+      args {
+        call_value {
+          functionName: "All Actors With Tag"
+          args {
+            call_value {
+              functionName: "Get Map Item (SenseTagList)"
+              args {
+                string_value: "squad4"
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Preset Value (int)"
+              args {
+                string_value: "AllOrAny"
+              }
+              args {
+                int_value: 0
+              }
+            }
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SceneDimension)"
+          args {
+            string_value: "Matrix"
+          }
+        }
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "538145c96434316255e82b1a"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
 regions {
   name: "Matrix Entrance to Hub"
   position {
@@ -12790,7 +13070,7 @@ characters {
     portrait {
       filename: ""
     }
-    dimension_name: "matrix"
+    dimension_name: "Matrix"
   }
 }
 characters {
@@ -12832,7 +13112,7 @@ characters {
     portrait {
       filename: ""
     }
-    dimension_name: "matrix"
+    dimension_name: "Matrix"
   }
 }
 characters {
@@ -12950,7 +13230,7 @@ characters {
     GeneralTags: "squad1"
     enabled_at_start: false
     pc_spawn_number: -1
-    spawn_type: SpawnType_Normal
+    spawn_type: SpawnType_Matrix
     portrait {
       filename: ""
     }
@@ -13241,7 +13521,7 @@ characters {
     GeneralTags: "squad3"
     enabled_at_start: false
     pc_spawn_number: -1
-    spawn_type: SpawnType_Normal
+    spawn_type: SpawnType_Matrix
     portrait {
       filename: ""
     }
@@ -13531,7 +13811,7 @@ characters {
     GeneralTags: "squad5"
     enabled_at_start: false
     pc_spawn_number: -1
-    spawn_type: SpawnType_Normal
+    spawn_type: SpawnType_Matrix
     portrait {
       filename: ""
     }
@@ -13622,7 +13902,7 @@ characters {
     GeneralTags: "squad5"
     enabled_at_start: false
     pc_spawn_number: -1
-    spawn_type: SpawnType_Normal
+    spawn_type: SpawnType_Matrix
     portrait {
       filename: ""
     }
@@ -14437,9 +14717,28 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Core/HumanMale"
+    prefab_name: "Seattle:Core/HumanMale"
     character_sheet_id: "Persona_Lv2_Decker"
     equipment_sheet_id: "NPC Decker Lv2 Gear"
+    character_mod {
+      stats {
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+      }
+      specializations {
+      }
+      archetypeName: "Guard - Hunt And Destroy"
+      attitude: AttitudeBoss
+      vulnerabilities {
+      }
+    }
     team_id: "IC"
     char_name: "Tir Decker"
     GeneralTags: "squad4"
@@ -14450,6 +14749,7 @@ characters {
       filename: ""
     }
     dimension_name: "Matrix"
+    karma: 12
     scale_character_sheet: true
   }
 }
@@ -14641,7 +14941,7 @@ team_affiliations {
   team_name: "Tir"
   affiliation: 0
   affiliation: 0
-  affiliation: 1
+  affiliation: 0
   affiliation: 0
   affiliation: 0
   affiliation: 0
@@ -14649,7 +14949,7 @@ team_affiliations {
 team_affiliations {
   team_name: "IC"
   affiliation: 1
-  affiliation: 1
+  affiliation: 0
   affiliation: 0
   affiliation: 0
   affiliation: 0
