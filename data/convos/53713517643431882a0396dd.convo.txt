@@ -43,6 +43,22 @@ nodes {
   index: 2
   text: "Keep him away\342\200\246 I must flee\342\200\246\n\nPlease, buy me some time. I beg of you. Help me live\342\200\246"
   nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Set Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Variable (int)"
+          args {
+            string_value: "hansArriving"
+          }
+        }
+      }
+      args {
+        int_value: 3
+      }
+    }
+  }
 }
 roots {
   nextNodeIndex: 0

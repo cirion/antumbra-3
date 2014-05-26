@@ -13,6 +13,9 @@ nodes {
     nextNodeIndex: 1
   }
   nodeType: ConversationNodeType_Simple
+  sourceInSceneRef {
+    id: "536c5c82366236d41e0027ac"
+  }
 }
 nodes {
   idRef {
@@ -40,6 +43,9 @@ nodes {
     nextNodeIndex: 3
   }
   nodeType: ConversationNodeType_Simple
+  sourceInSceneRef {
+    id: "536c5c82366236d41e0027ac"
+  }
 }
 nodes {
   idRef {
@@ -63,6 +69,25 @@ nodes {
   index: 4
   text: "I haven\342\200\231t the faintest idea what you\342\200\231re talking about.\n\n{{GM}}A faint sneer briefly plays at the corner of Hans\342\200\231s face.{{/GM}}  \n\nAll I know is that you\342\200\231ve overstepped your bounds. You\342\200\231re surrounded by my army, in the middle of what will soon be my lands. I suggest you leave before the situation gets any worse."
   nodeType: ConversationNodeType_Simple
+  sourceInSceneRef {
+    id: "536c5c82366236d41e0027ac"
+  }
+  actions {
+    ops {
+      functionName: "Set Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Variable (int)"
+          args {
+            string_value: "hansArriving"
+          }
+        }
+      }
+      args {
+        int_value: 2
+      }
+    }
+  }
 }
 roots {
   nextNodeIndex: 0

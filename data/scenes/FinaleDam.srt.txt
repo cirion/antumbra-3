@@ -272,6 +272,35 @@ triggers {
         }
       }
     }
+    ops {
+      functionName: "Set Actor In Passive Mode"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Actor)"
+              args {
+                string_value: "536c5c82366236d41e0027ab"
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
   }
   isActive: true
   idRef {
@@ -291,8 +320,19 @@ triggers {
   conditions {
   }
   actions {
+    ops {
+      functionName: "Activate Actor Spawner"
+      args {
+        call_value {
+          functionName: "Get Map Item (Actor Reference)"
+          args {
+            string_value: "5383b667366236841300082c"
+          }
+        }
+      }
+    }
   }
-  isActive: true
+  isActive: false
   idRef {
     id: "537a27ff6434318b3f5d133f"
   }
@@ -1029,6 +1069,52 @@ triggers {
       }
     }
     ops {
+      functionName: "Display Text over Prop"
+      args {
+        call_value {
+          functionName: "Get Map Item (Prop)"
+          args {
+            string_value: "537a2b736434318b3f5d1356"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "TextPopupStyle"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        string_value: "You have reduced Tir\'s ability to reinforce this position."
+      }
+      args {
+        float_value: 0
+      }
+      args {
+        float_value: 0
+      }
+      args {
+        float_value: 0
+      }
+      args {
+        float_value: 0
+      }
+      args {
+        float_value: 4
+      }
+      args {
+        float_value: 3
+      }
+      args {
+        float_value: 0
+      }
+    }
+    ops {
       functionName: "Set Hack Status On Matrix Node Object"
       args {
         call_value {
@@ -1046,6 +1132,44 @@ triggers {
           functionName: "Get Map Item (InteractableObject)"
           args {
             string_value: "537a2b686434318b3f5d1354"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Add Camera Point of Interest (Point)"
+      args {
+        call_value {
+          functionName: "Current Location of Prop"
+          args {
+            call_value {
+              functionName: "Get Map Item (Prop)"
+              args {
+                string_value: "537a2b736434318b3f5d1356"
+              }
+            }
+          }
+        }
+      }
+      args {
+        float_value: 4
+      }
+    }
+    ops {
+      functionName: "Play FX at Point"
+      args {
+        string_value: "EnvironmentExplosion"
+      }
+      args {
+        call_value {
+          functionName: "Current Location of Prop"
+          args {
+            call_value {
+              functionName: "Get Map Item (Prop)"
+              args {
+                string_value: "537a2b736434318b3f5d1356"
+              }
+            }
           }
         }
       }
@@ -1070,6 +1194,59 @@ triggers {
             string_value: "537a2b686434318b3f5d1354"
           }
         }
+      }
+    }
+    ops {
+      functionName: "Delete Prop"
+      args {
+        call_value {
+          functionName: "Get Map Item (Prop)"
+          args {
+            string_value: "537a2b736434318b3f5d1356"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Play Sound"
+      args {
+        call_value {
+          functionName: "Get Map Item (Sound)"
+          args {
+            string_value: "weapons"
+          }
+          args {
+            string_value: "GrenadeFrag"
+          }
+        }
+      }
+      args {
+        float_value: 1
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Add To Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Variable (int)"
+          args {
+            string_value: "TirGruntThreshold"
+          }
+        }
+      }
+      args {
+        int_value: -3
       }
     }
   }
@@ -1137,6 +1314,94 @@ triggers {
     }
   }
   actions {
+    ops {
+      functionName: "Set Team Alliance"
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 2
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "TeamAlliance"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SceneDimension)"
+          args {
+            string_value: "Matrix"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Team Alliance"
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "TeamAlliance"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 2
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SceneDimension)"
+          args {
+            string_value: "Matrix"
+          }
+        }
+      }
+    }
     ops {
       functionName: "Activate Actor Spawner By Tag"
       args {
@@ -5025,6 +5290,125 @@ triggers {
         }
       }
     }
+    ops {
+      functionName: "Change Actor Team"
+      args {
+        call_value {
+          functionName: "All Actors With Tag"
+          args {
+            call_value {
+              functionName: "Get Map Item (SenseTagList)"
+              args {
+                string_value: "isTurret"
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Preset Value (int)"
+              args {
+                string_value: "AllOrAny"
+              }
+              args {
+                int_value: 0
+              }
+            }
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SceneDimension)"
+          args {
+            string_value: "Default"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Order Actor to Clear ThreatList"
+      args {
+        call_value {
+          functionName: "All Actors With Tag"
+          args {
+            call_value {
+              functionName: "Get Map Item (SenseTagList)"
+              args {
+                string_value: "isTurret"
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Preset Value (int)"
+              args {
+                string_value: "AllOrAny"
+              }
+              args {
+                int_value: 0
+              }
+            }
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Order Actor to Hunt And Destroy (Team)"
+      args {
+        call_value {
+          functionName: "All Actors With Tag"
+          args {
+            call_value {
+              functionName: "Get Map Item (SenseTagList)"
+              args {
+                string_value: "isTurret"
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Preset Value (int)"
+              args {
+                string_value: "AllOrAny"
+              }
+              args {
+                int_value: 0
+              }
+            }
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SceneDimension)"
+          args {
+            string_value: "Default"
+          }
+        }
+      }
+    }
   }
   isActive: true
   idRef {
@@ -5708,28 +6092,7 @@ triggers {
   }
   actions {
     ops {
-      functionName: "Set Variable (string)"
-      args {
-        call_value {
-          functionName: "Get Variable (string)"
-          args {
-            string_value: "deadPCName"
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Actor Name"
-          args {
-            call_value {
-              functionName: "Triggering Target Actor"
-            }
-          }
-        }
-      }
-    }
-    ops {
-      functionName: "Teleport Actor near Actor"
+      functionName: "Teleport Actor"
       args {
         call_value {
           functionName: "Specific Actor"
@@ -5746,11 +6109,16 @@ triggers {
         }
       }
       args {
-        int_value: 2
-      }
-      args {
         call_value {
-          functionName: "Triggering Target Actor"
+          functionName: "Center of Region"
+          args {
+            call_value {
+              functionName: "Get Map Item (Region)"
+              args {
+                string_value: "5383c7f53662368413000886"
+              }
+            }
+          }
         }
       }
       args {
@@ -5772,6 +6140,27 @@ triggers {
           }
           args {
             int_value: 0
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Variable (string)"
+      args {
+        call_value {
+          functionName: "Get Variable (string)"
+          args {
+            string_value: "deadPCName"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Actor Name"
+          args {
+            call_value {
+              functionName: "Triggering Target Actor"
+            }
           }
         }
       }
@@ -5909,6 +6298,27 @@ triggers {
       }
     }
     ops {
+      functionName: "Add Camera Point of Interest (Actors)"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Actor)"
+              args {
+                string_value: "536c5c82366236d41e0027ab"
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        float_value: 0
+      }
+    }
+    ops {
       functionName: "Enable/Disable Team\'s Turn"
       args {
         call_value {
@@ -6011,7 +6421,7 @@ triggers {
       }
     }
     ops {
-      functionName: "Add Camera Point of Interest (Actors)"
+      functionName: "Teleport Actor"
       args {
         call_value {
           functionName: "Specific Actor"
@@ -6019,7 +6429,7 @@ triggers {
             call_value {
               functionName: "Get Map Item (Actor)"
               args {
-                string_value: "536c5c82366236d41e0027ab"
+                string_value: "5383c4023662368413000872"
               }
             }
           }
@@ -6028,7 +6438,89 @@ triggers {
         }
       }
       args {
-        float_value: 0
+        call_value {
+          functionName: "Current Location of Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Actor)"
+              args {
+                string_value: "536c5c82366236d41e0027ab"
+              }
+            }
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "FacingDirection"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "TeleportMethod"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Teleport Actor"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Actor)"
+              args {
+                string_value: "5383c4483662368413000873"
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Current Location of Actor"
+          args {
+            call_value {
+              functionName: "Triggering Target Actor"
+            }
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "FacingDirection"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "TeleportMethod"
+          }
+          args {
+            int_value: 0
+          }
+        }
       }
     }
   }
@@ -6176,6 +6668,31 @@ triggers {
             string_value: "536c5c82366236d41e0027ab"
           }
         }
+      }
+    }
+    ops {
+      functionName: "Comparison (int)"
+      args {
+        call_value {
+          functionName: "Get Variable (int)"
+          args {
+            string_value: "tabithaHealing"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "Comparison Ops"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        int_value: 2
       }
     }
   }
@@ -6392,6 +6909,59 @@ triggers {
         }
       }
     }
+    ops {
+      functionName: "Teleport Actor"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Actor)"
+              args {
+                string_value: "5383c4483662368413000873"
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Center of Region"
+          args {
+            call_value {
+              functionName: "Get Map Item (Region)"
+              args {
+                string_value: "5383c45a3662368413000874"
+              }
+            }
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "FacingDirection"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "TeleportMethod"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
   }
   isActive: true
   idRef {
@@ -6505,6 +7075,9 @@ triggers {
           }
         }
       }
+    }
+    ops {
+      functionName: "End Current Team Round"
     }
   }
   isActive: true
@@ -6913,20 +7486,6 @@ triggers {
       }
     }
     ops {
-      functionName: "Set Variable (int)"
-      args {
-        call_value {
-          functionName: "Get Variable (int)"
-          args {
-            string_value: "hansArriving"
-          }
-        }
-      }
-      args {
-        int_value: 2
-      }
-    }
-    ops {
       functionName: "Start Conversation Between Actors"
       args {
         call_value {
@@ -7030,20 +7589,6 @@ triggers {
   }
   actions {
     ops {
-      functionName: "Set Variable (int)"
-      args {
-        call_value {
-          functionName: "Get Variable (int)"
-          args {
-            string_value: "hansArriving"
-          }
-        }
-      }
-      args {
-        int_value: 3
-      }
-    }
-    ops {
       functionName: "Play Animation From Manifest"
       args {
         call_value {
@@ -7088,6 +7633,20 @@ triggers {
             int_value: 0
           }
         }
+      }
+    }
+    ops {
+      functionName: "Send Event After Delay"
+      args {
+        call_value {
+          functionName: "Get Map Item (Event)"
+          args {
+            string_value: "Hans Casts"
+          }
+        }
+      }
+      args {
+        float_value: 0
       }
     }
   }
@@ -7247,7 +7806,7 @@ triggers {
   }
   actions {
     ops {
-      functionName: "Autosave Game"
+      functionName: "Trigger: Wait for Triggers"
     }
     ops {
       functionName: "Order Actor to Move To (Region)"
@@ -7380,50 +7939,6 @@ triggers {
           functionName: "Get Map Item (Actor)"
           args {
             string_value: "536c5c82366236d41e0027ab"
-          }
-        }
-      }
-    }
-    ops {
-      functionName: "Set Team Alliance"
-      args {
-        call_value {
-          functionName: "Get Preset Value (string)"
-          args {
-            string_value: "FactionList"
-          }
-          args {
-            int_value: 1
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "TeamAlliance"
-          }
-          args {
-            int_value: 1
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (string)"
-          args {
-            string_value: "FactionList"
-          }
-          args {
-            int_value: 4
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Map Item (SceneDimension)"
-          args {
-            string_value: "Default"
           }
         }
       }
@@ -7626,6 +8141,28 @@ triggers {
           functionName: "Get Map Item (SceneDimension)"
           args {
             string_value: "Default"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "shouldAutosave"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
           }
         }
       }
@@ -8141,6 +8678,59 @@ triggers {
         }
       }
     }
+    ops {
+      functionName: "Teleport Actor"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Actor)"
+              args {
+                string_value: "5383c4023662368413000872"
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Center of Region"
+          args {
+            call_value {
+              functionName: "Get Map Item (Region)"
+              args {
+                string_value: "5383c45a3662368413000874"
+              }
+            }
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "FacingDirection"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "TeleportMethod"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
   }
   isActive: true
   idRef {
@@ -8428,133 +9018,95 @@ triggers {
             string_value: "IsOrIsNot"
           }
           args {
-            int_value: 1
-          }
-        }
-      }
-    }
-    ops {
-      functionName: "Set Team Alliance"
-      args {
-        call_value {
-          functionName: "Get Preset Value (string)"
-          args {
-            string_value: "FactionList"
-          }
-          args {
-            int_value: 5
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "TeamAlliance"
-          }
-          args {
-            int_value: 1
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (string)"
-          args {
-            string_value: "FactionList"
-          }
-          args {
-            int_value: 1
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Map Item (SceneDimension)"
-          args {
-            string_value: "Default"
-          }
-        }
-      }
-    }
-    ops {
-      functionName: "Set Team Alliance"
-      args {
-        call_value {
-          functionName: "Get Preset Value (string)"
-          args {
-            string_value: "FactionList"
-          }
-          args {
-            int_value: 1
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "TeamAlliance"
-          }
-          args {
-            int_value: 1
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (string)"
-          args {
-            string_value: "FactionList"
-          }
-          args {
-            int_value: 5
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Map Item (SceneDimension)"
-          args {
-            string_value: "Default"
-          }
-        }
-      }
-    }
-    ops {
-      functionName: "Order Actor to Seek And Destroy (ThreatType)"
-      args {
-        call_value {
-          functionName: "All Actors With Tag"
-          args {
-            call_value {
-              functionName: "Get Map Item (SenseTagList)"
-              args {
-                string_value: "isReddingGrunt"
-              }
-            }
-          }
-          args {
-            call_value {
-              functionName: "Get Preset Value (int)"
-              args {
-                string_value: "AllOrAny"
-              }
-              args {
-                int_value: 0
-              }
-            }
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "ThreatType"
-          }
-          args {
             int_value: 0
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Team Alliance"
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 5
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "TeamAlliance"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SceneDimension)"
+          args {
+            string_value: "Default"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Team Alliance"
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "TeamAlliance"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 5
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SceneDimension)"
+          args {
+            string_value: "Default"
           }
         }
       }
@@ -8611,6 +9163,55 @@ triggers {
             }
           }
           args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "ThreatType"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Order Actor to Hunt And Destroy (ThreatType)"
+      args {
+        call_value {
+          functionName: "All Actors on Team"
+          args {
+            call_value {
+              functionName: "Get Preset Value (string)"
+              args {
+                string_value: "FactionList"
+              }
+              args {
+                int_value: 5
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Preset Value (int)"
+              args {
+                string_value: "AllOrAny"
+              }
+              args {
+                int_value: 0
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Map Item (SceneDimension)"
+              args {
+                string_value: "Default"
+              }
+            }
           }
         }
       }
@@ -8743,7 +9344,7 @@ triggers {
         call_value {
           functionName: "Get Map Item (SenseTagList)"
           args {
-            string_value: "isTirGrunt"
+            string_value: "isTirSpawner"
           }
         }
       }
@@ -8839,7 +9440,7 @@ triggers {
   }
   elseActions {
   }
-  is_oneshot: true
+  is_oneshot: false
 }
 triggers {
   name: "Check for Manpower Stage 1"
@@ -11970,7 +12571,7 @@ triggers {
           functionName: "Current Location of Actor"
           args {
             call_value {
-              functionName: "Triggering Actor"
+              functionName: "Triggering Target Actor"
             }
           }
         }
@@ -12177,6 +12778,215 @@ triggers {
   isActive: true
   idRef {
     id: "538145c96434316255e82b1a"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
+triggers {
+  name: "Update Redding Speeds"
+  events {
+    ops {
+      functionName: "On Region Enter"
+      args {
+        call_value {
+          functionName: "Get Map Item (Region)"
+          args {
+            string_value: "537a61f66434313b4381eb34"
+          }
+        }
+      }
+    }
+  }
+  conditions {
+    ops {
+      functionName: "Compare Actor Team"
+      args {
+        call_value {
+          functionName: "Triggering Actor"
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 5
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SceneDimension)"
+          args {
+            string_value: "Default"
+          }
+        }
+      }
+    }
+  }
+  actions {
+    ops {
+      functionName: "Set Actor Base Attribute"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Triggering Actor"
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        int_value: 6
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "ActorAttributes"
+          }
+          args {
+            int_value: 12
+          }
+        }
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "5383ca1736623684130008ae"
+  }
+  elseActions {
+  }
+  is_oneshot: false
+}
+triggers {
+  name: "Autosave"
+  events {
+    ops {
+      functionName: "On Actor Start Turn"
+    }
+  }
+  conditions {
+    ops {
+      functionName: "Comparison (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "shouldAutosave"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Compare Actor Team"
+      args {
+        call_value {
+          functionName: "Triggering Actor"
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SceneDimension)"
+          args {
+            string_value: "Default"
+          }
+        }
+      }
+    }
+  }
+  actions {
+    ops {
+      functionName: "Autosave Game"
+    }
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "shouldAutosave"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "5383cca336623684130008af"
   }
   elseActions {
   }
@@ -12625,8 +13435,8 @@ regions {
 regions {
   name: "Tabitha Healing Mark"
   position {
-    x: -53
-    y: -48
+    x: -54
+    y: -47
     width: 3
     height: 3
   }
@@ -12804,12 +13614,100 @@ regions {
     x: -2
     y: -28
     width: 4
-    height: 3
+    height: 5
   }
   enabledAtStart: true
   is_camera_region: false
   idRef {
     id: "537a61f66434313b4381eb34"
+  }
+  highlight_color {
+    r: 0
+    g: 0
+    b: 0
+    a: 1
+  }
+  visible_at_start: false
+  is_teleporter_region: false
+  directional_light_dir {
+    x: -0.5
+    y: -1
+    z: -0.75
+  }
+  directional_light_color {
+    r: 0.50196081
+    g: 0.50196081
+    b: 0.50196081
+    a: 1
+  }
+  ambient_light_color {
+    r: 0.50196081
+    g: 0.50196081
+    b: 0.50196081
+    a: 1
+  }
+  ambience_template: ""
+  combat_music: ""
+  default_music: ""
+  loop_combat_music: true
+  loop_default_music: false
+}
+regions {
+  name: "Holding Pen"
+  position {
+    x: -68
+    y: -59
+    width: 3
+    height: 3
+  }
+  enabledAtStart: true
+  is_camera_region: false
+  idRef {
+    id: "5383c45a3662368413000874"
+  }
+  highlight_color {
+    r: 0
+    g: 0
+    b: 0
+    a: 1
+  }
+  visible_at_start: false
+  is_teleporter_region: false
+  directional_light_dir {
+    x: -0.5
+    y: -1
+    z: -0.75
+  }
+  directional_light_color {
+    r: 0.50196081
+    g: 0.50196081
+    b: 0.50196081
+    a: 1
+  }
+  ambient_light_color {
+    r: 0.50196081
+    g: 0.50196081
+    b: 0.50196081
+    a: 1
+  }
+  ambience_template: ""
+  combat_music: ""
+  default_music: ""
+  loop_combat_music: true
+  loop_default_music: false
+}
+regions {
+  name: "Tabitha Arrival"
+  position {
+    x: -22
+    y: -50
+    width: 1
+    height: 1
+  }
+  enabledAtStart: true
+  is_camera_region: false
+  idRef {
+    id: "5383c7f53662368413000886"
   }
   highlight_color {
     r: 0
@@ -12891,7 +13789,7 @@ characters {
       vulnerabilities {
       }
     }
-    team_id: "Tir"
+    team_id: "Tabitha"
     char_name: "Tabitha"
     pc_spawn_number: -1
     portrait {
@@ -13002,7 +13900,8 @@ characters {
   lod: 0
   character_instance {
     prefab_name: "Seattle:Spirit/SpiritFire"
-    character_sheet_id: "AGChemie_Cyberzombie_Lv1"
+    character_sheet_id: "a3_badguy_ember_Lv4"
+    equipment_sheet_id: "a3_badguy_ember_Lv4"
     character_mod {
       stats {
         body: 0
@@ -13012,9 +13911,11 @@ characters {
         intelligence: 0
         willpower: 0
         essence: 0
+        magic: 0
         hp: 0
         ap: 0
         armor: 0
+        force: 0
         morale: 0
         discipline: 0
         awareness: 0
@@ -13022,27 +13923,56 @@ characters {
         authority: 0
         protect_tether_range: 0
         move_speed: 0
+        is_fearless: 1
       }
       skills {
         ranged_combat: 0
         close_combat: 0
+        throwing_weapons: 0
+        spellcasting: 0
+        decking: 0
+        conjuring: 0
+        spirit_summoning: 0
+        drone_control: 0
+        biotech: 0
         dodge: 0
+        etiquette_corporate: 0
+        etiquette_security: 0
+        etiquette_gang: 0
+        etiquette_socialite: 0
+        chi_casting: 0
+        etiquette_shadowrunner: 0
+        etiquette_street: 0
+        etiquette_academic: 0
       }
       specializations {
+        pistol: 0
         rifle: 0
+        shotgun: 0
+        smg: 0
         edged: 0
         unarmed: 0
+        spirit_control: 0
+        esp_control: 0
+        drone_combat: 0
       }
+      archetypeName: "Guard - Seek And Destroy"
+      attitude: AttitudeBoss
       vulnerabilities {
+        heal: VulnerabilityLevel_Immune
+        fire: VulnerabilityLevel_Immune
       }
     }
-    team_id: "Civilians"
+    team_id: "Tir"
     char_name: "Tophet"
+    enabled_at_start: false
     pc_spawn_number: -1
+    uninjurable: true
+    unkillable: true
     portrait {
       filename: "generic_spirit_fire"
     }
-    karma: 177
+    karma: 127
   }
 }
 characters {
@@ -14017,6 +14947,7 @@ characters {
   }
   orientation: ORIENTATION_N
   GeneralTags: "isTirGrunt"
+  GeneralTags: "isTirSpawner"
   GeneralTags: ""
   displayName: "Tir Captain"
   idRef {
@@ -14047,6 +14978,7 @@ characters {
     team_id: "Tir"
     char_name: "Tir Captain"
     GeneralTags: "isTirGrunt"
+    GeneralTags: "isTirSpawner"
     GeneralTags: ""
     enabled_at_start: false
     pc_spawn_number: -1
@@ -14066,6 +14998,7 @@ characters {
   }
   orientation: ORIENTATION_N
   GeneralTags: "isTirGrunt"
+  GeneralTags: "isTirSpawner"
   GeneralTags: ""
   displayName: "Tir Soldier - SMG"
   idRef {
@@ -14096,6 +15029,7 @@ characters {
     team_id: "Tir"
     char_name: "Tir Soldier"
     GeneralTags: "isTirGrunt"
+    GeneralTags: "isTirSpawner"
     GeneralTags: ""
     enabled_at_start: false
     pc_spawn_number: -1
@@ -14115,6 +15049,7 @@ characters {
   }
   orientation: ORIENTATION_N
   GeneralTags: "isTirGrunt"
+  GeneralTags: "isTirSpawner"
   GeneralTags: ""
   displayName: "Tir Mage"
   idRef {
@@ -14145,6 +15080,7 @@ characters {
     team_id: "Tir"
     char_name: "Tir Mage"
     GeneralTags: "isTirGrunt"
+    GeneralTags: "isTirSpawner"
     GeneralTags: ""
     enabled_at_start: false
     pc_spawn_number: -1
@@ -14164,6 +15100,7 @@ characters {
   }
   orientation: ORIENTATION_N
   GeneralTags: "isTirGrunt"
+  GeneralTags: "isTirSpawner"
   GeneralTags: ""
   displayName: "Tir Soldier - Pistol"
   idRef {
@@ -14194,6 +15131,7 @@ characters {
     team_id: "Tir"
     char_name: "Tir Soldier"
     GeneralTags: "isTirGrunt"
+    GeneralTags: "isTirSpawner"
     GeneralTags: ""
     enabled_at_start: false
     pc_spawn_number: -1
@@ -14213,6 +15151,7 @@ characters {
   }
   orientation: ORIENTATION_N
   GeneralTags: "isTirGrunt"
+  GeneralTags: "isTirSpawner"
   GeneralTags: ""
   displayName: "Tir Soldier - Shotgun"
   idRef {
@@ -14243,6 +15182,7 @@ characters {
     team_id: "Tir"
     char_name: "Tir Soldier"
     GeneralTags: "isTirGrunt"
+    GeneralTags: "isTirSpawner"
     GeneralTags: ""
     enabled_at_start: false
     pc_spawn_number: -1
@@ -14499,7 +15439,7 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Lonestar/HumanMaleLonestarGuard"
+    prefab_name: "Seattle:Security/DwarfFemaleSecurity"
     character_sheet_id: "Lonestar_Lv1_Human_Pistol"
     equipment_sheet_id: "Lonestar_Lv1_Pistol_Gear"
     character_mod {
@@ -14510,11 +15450,13 @@ characters {
         perception: 0
         authority: 0
         protect_tether_range: 0
-        move_speed: 0
+        move_speed: 18
       }
       skills {
       }
       specializations {
+      }
+      vulnerabilities {
       }
     }
     team_id: "Redding"
@@ -14526,6 +15468,7 @@ characters {
     portrait {
       filename: ""
     }
+    karma: 30
     scale_character_sheet: true
   }
 }
@@ -14546,7 +15489,7 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Lonestar/OrkLoneStarCaptain"
+    prefab_name: "Seattle:Security/OrkMaleSecurity"
     character_sheet_id: "Lonestar_Lv1_Ork_Shotgun"
     equipment_sheet_id: "Lonestar_Lv1_Shotgun_Gear"
     character_mod {
@@ -14557,11 +15500,13 @@ characters {
         perception: 0
         authority: 0
         protect_tether_range: 0
-        move_speed: 0
+        move_speed: 18
       }
       skills {
       }
       specializations {
+      }
+      vulnerabilities {
       }
     }
     team_id: "Redding"
@@ -14573,6 +15518,7 @@ characters {
     portrait {
       filename: ""
     }
+    karma: 33
     scale_character_sheet: true
   }
 }
@@ -14593,7 +15539,7 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Lonestar/TrollMaleLoneStarHeavyGuard"
+    prefab_name: "Seattle:Security/TrollMalesSecurity"
     character_sheet_id: "Lonestar_Lv1_Heavy_SMG"
     equipment_sheet_id: "Lonestar_Lv1_SMG_Gear"
     character_mod {
@@ -14604,11 +15550,13 @@ characters {
         perception: 0
         authority: 0
         protect_tether_range: 0
-        move_speed: 0
+        move_speed: 18
       }
       skills {
       }
       specializations {
+      }
+      vulnerabilities {
       }
     }
     team_id: "Redding"
@@ -14620,6 +15568,7 @@ characters {
     portrait {
       filename: ""
     }
+    karma: 39
     scale_character_sheet: true
   }
 }
@@ -14640,7 +15589,7 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Lonestar/HumanMaleLonestarMage"
+    prefab_name: "Seattle:Security/HumanMaleSecurity"
     character_sheet_id: "Lonestar_Lv1_Human_Mage"
     equipment_sheet_id: "Lonestar_Lv1_Mage_Gear"
     character_mod {
@@ -14651,11 +15600,13 @@ characters {
         perception: 0
         authority: 0
         protect_tether_range: 0
-        move_speed: 0
+        move_speed: 18
       }
       skills {
       }
       specializations {
+      }
+      vulnerabilities {
       }
     }
     team_id: "Redding"
@@ -14667,6 +15618,7 @@ characters {
     portrait {
       filename: ""
     }
+    karma: 40
     scale_character_sheet: true
   }
 }
@@ -14687,9 +15639,26 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Lonestar/HumanFemaleLonestarCaptain"
+    prefab_name: "Seattle:Security/ElfFemaleExecSecurity"
     character_sheet_id: "Lonestar_Lv1_Captain"
     equipment_sheet_id: "Lonestar_Lv1_Captain_Gear"
+    character_mod {
+      stats {
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 18
+      }
+      skills {
+      }
+      specializations {
+      }
+      vulnerabilities {
+      }
+    }
     team_id: "Redding"
     char_name: "Redding Captain"
     GeneralTags: "isReddingGrunt"
@@ -14699,6 +15668,7 @@ characters {
     portrait {
       filename: ""
     }
+    karma: 44
     scale_character_sheet: true
   }
 }
@@ -14751,6 +15721,411 @@ characters {
     dimension_name: "Matrix"
     karma: 12
     scale_character_sheet: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: 1
+    y: 0
+    z: 33
+  }
+  orientation: ORIENTATION_W
+  GeneralTags: "isHailey"
+  displayName: "Hailey"
+  idRef {
+    id: "5383b667366236841300082c"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Seattle:Core/HumanFemale"
+    character_sheet_id: "a3_crew_hailey_lv3"
+    equipment_sheet_id: "a3_crew_hailey_lv3"
+    character_mod {
+      stats {
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        magic: 0
+        hp: 0
+        ap: 0
+        armor: 0
+        force: 0
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+        ranged_combat: 0
+        close_combat: 0
+        throwing_weapons: 0
+        spellcasting: 0
+        decking: 0
+        conjuring: 0
+        spirit_summoning: 0
+        drone_control: 0
+        biotech: 0
+        dodge: 0
+        etiquette_corporate: 0
+        etiquette_security: 0
+        etiquette_gang: 0
+        etiquette_socialite: 0
+        chi_casting: 0
+        etiquette_shadowrunner: 0
+        etiquette_street: 0
+        etiquette_academic: 0
+      }
+      specializations {
+        pistol: 0
+        rifle: 0
+        shotgun: 0
+        smg: 0
+        edged: 0
+        unarmed: 0
+        spirit_control: 0
+        esp_control: 0
+        drone_combat: 0
+      }
+      archetypeName: "Player"
+      attitude: AttitudeAggressive
+      vulnerabilities {
+      }
+    }
+    equipment {
+      prefab_name: "DeckerFab"
+    }
+    team_id: "Shadowrunners"
+    char_name: "Hailey"
+    GeneralTags: "isHailey"
+    enabled_at_start: false
+    pc_spawn_number: -1
+    hiring_type: HiringType_Hireable
+    cyberware_eyes: "Berlin_Laser Designator"
+    cyberware_jack: "Datajack"
+    cyberware_left_arm: "Obvious Cyberarm"
+    portrait {
+      filename: "backer_humanfemale_grahamwilliams_tsilonsiereht"
+    }
+    portrait_code_override: "s6h1c11"
+    karma: 4
+    hiring_cost_override: 0
+    id: "a3_crew_hailey_lv4"
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -68
+    y: 0
+    z: -58
+  }
+  orientation: ORIENTATION_S
+  displayName: "Camera Tabitha"
+  idRef {
+    id: "5383c4023662368413000872"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Seattle:Objects/InvisibleActor"
+    character_sheet_id: "Camera"
+    character_mod {
+      stats {
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        magic: 0
+        hp: 0
+        ap: 0
+        armor: 0
+        force: 0
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+        ranged_combat: 0
+        close_combat: 0
+        throwing_weapons: 0
+        spellcasting: 0
+        decking: 0
+        conjuring: 0
+        spirit_summoning: 0
+        drone_control: 0
+        biotech: 0
+        dodge: 0
+        etiquette_corporate: 0
+        etiquette_security: 0
+        etiquette_gang: 0
+        etiquette_socialite: 0
+        chi_casting: 0
+        etiquette_shadowrunner: 0
+        etiquette_street: 0
+        etiquette_academic: 0
+      }
+      specializations {
+        pistol: 0
+        rifle: 0
+        shotgun: 0
+        smg: 0
+        edged: 0
+        unarmed: 0
+        spirit_control: 0
+        esp_control: 0
+        drone_combat: 0
+      }
+      attitude: AttitudeCautious
+      vulnerabilities {
+      }
+    }
+    team_id: "Shadowrunners"
+    char_name: " "
+    pc_spawn_number: -1
+    portrait {
+      filename: ""
+    }
+    karma: 2
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -67
+    y: 0
+    z: -58
+  }
+  orientation: ORIENTATION_S
+  displayName: "Camera Downed Runner"
+  idRef {
+    id: "5383c4483662368413000873"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Seattle:Objects/InvisibleActor"
+    character_sheet_id: "Camera"
+    character_mod {
+      stats {
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        magic: 0
+        hp: 0
+        ap: 0
+        armor: 0
+        force: 0
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+        ranged_combat: 0
+        close_combat: 0
+        throwing_weapons: 0
+        spellcasting: 0
+        decking: 0
+        conjuring: 0
+        spirit_summoning: 0
+        drone_control: 0
+        biotech: 0
+        dodge: 0
+        etiquette_corporate: 0
+        etiquette_security: 0
+        etiquette_gang: 0
+        etiquette_socialite: 0
+        chi_casting: 0
+        etiquette_shadowrunner: 0
+        etiquette_street: 0
+        etiquette_academic: 0
+      }
+      specializations {
+        pistol: 0
+        rifle: 0
+        shotgun: 0
+        smg: 0
+        edged: 0
+        unarmed: 0
+        spirit_control: 0
+        esp_control: 0
+        drone_combat: 0
+      }
+      attitude: AttitudeCautious
+      vulnerabilities {
+      }
+    }
+    team_id: "Shadowrunners"
+    char_name: " "
+    pc_spawn_number: -1
+    portrait {
+      filename: ""
+    }
+    karma: 2
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: 11
+    y: 0
+    z: -47
+  }
+  orientation: ORIENTATION_E
+  GeneralTags: "isTurret"
+  GeneralTags: ""
+  displayName: "Turret 1"
+  idRef {
+    id: "5383d01436623684130008d8"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Objects/AutoTurret"
+    character_sheet_id: "Turret_Lv1"
+    equipment_sheet_id: "Turret_Lv1_Burst_Gear"
+    character_mod {
+      stats {
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+      }
+      specializations {
+      }
+      vulnerabilities {
+      }
+    }
+    team_id: "Tir"
+    char_name: "Tir Turret"
+    GeneralTags: "isTurret"
+    GeneralTags: ""
+    pc_spawn_number: -1
+    portrait {
+      filename: ""
+    }
+    scale_character_sheet: true
+    has_fist: false
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: 14
+    y: 0
+    z: -39
+  }
+  orientation: ORIENTATION_N
+  GeneralTags: "isTurret"
+  GeneralTags: ""
+  displayName: "Turret 3"
+  idRef {
+    id: "5383d02a36623684130008d9"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Objects/AutoTurret"
+    character_sheet_id: "Turret_Lv1"
+    equipment_sheet_id: "Turret_Lv1_Burst_Gear"
+    character_mod {
+      stats {
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+      }
+      specializations {
+      }
+      vulnerabilities {
+      }
+    }
+    team_id: "Tir"
+    char_name: "Tir Turret"
+    GeneralTags: "isTurret"
+    GeneralTags: ""
+    pc_spawn_number: -1
+    portrait {
+      filename: ""
+    }
+    scale_character_sheet: true
+    has_fist: false
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: 14
+    y: 0
+    z: -45
+  }
+  orientation: ORIENTATION_N
+  GeneralTags: "isTurret"
+  GeneralTags: ""
+  displayName: "Turret 2"
+  idRef {
+    id: "5383d03536623684130008da"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Objects/AutoTurret"
+    character_sheet_id: "Turret_Lv1"
+    equipment_sheet_id: "Turret_Lv1_Burst_Gear"
+    character_mod {
+      stats {
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+      }
+      specializations {
+      }
+      vulnerabilities {
+      }
+    }
+    team_id: "Tir"
+    char_name: "Tir Turret"
+    GeneralTags: "isTurret"
+    GeneralTags: ""
+    pc_spawn_number: -1
+    portrait {
+      filename: ""
+    }
+    scale_character_sheet: true
+    has_fist: false
   }
 }
 variables {
@@ -14865,6 +16240,14 @@ variables {
     typeName: "bool"
   }
 }
+variables {
+  bool_value: false
+  variableref_value {
+    scope: TsVariableScope_Scene
+    name: "shouldAutosave"
+    typeName: "bool"
+  }
+}
 mapEvents: "Teleport Baddies"
 mapEvents: "Tabitha Finishes Healing"
 mapEvents: "Tabitha Finishes Banishing"
@@ -14932,7 +16315,7 @@ team_affiliations {
   team_name: "Shadowrunners"
   affiliation: 0
   affiliation: 0
-  affiliation: 1
+  affiliation: 0
   affiliation: 0
   affiliation: 0
   affiliation: 0
@@ -14948,7 +16331,7 @@ team_affiliations {
 }
 team_affiliations {
   team_name: "IC"
-  affiliation: 1
+  affiliation: 0
   affiliation: 0
   affiliation: 0
   affiliation: 0
