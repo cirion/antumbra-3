@@ -848,20 +848,6 @@ triggers {
         }
       }
     }
-    ops {
-      functionName: "Set Variable (int)"
-      args {
-        call_value {
-          functionName: "Get Variable (int)"
-          args {
-            string_value: "bullionTalkState"
-          }
-        }
-      }
-      args {
-        int_value: 1
-      }
-    }
   }
   isActive: true
   idRef {
@@ -1246,26 +1232,31 @@ triggers {
   }
   conditions {
     ops {
-      functionName: "Evaluate If Actor is Inside Region"
+      functionName: "Comparison (int)"
       args {
         call_value {
-          functionName: "All Actors With Tag"
+          functionName: "Get Count of Alive Actors"
           args {
             call_value {
-              functionName: "Get Map Item (SenseTagList)"
+              functionName: "All Actors With Tag"
               args {
-                string_value: "isExiter"
-              }
-            }
-          }
-          args {
-            call_value {
-              functionName: "Get Preset Value (int)"
-              args {
-                string_value: "AllOrAny"
+                call_value {
+                  functionName: "Get Map Item (SenseTagList)"
+                  args {
+                    string_value: "isExiter"
+                  }
+                }
               }
               args {
-                int_value: 1
+                call_value {
+                  functionName: "Get Preset Value (int)"
+                  args {
+                    string_value: "AllOrAny"
+                  }
+                  args {
+                    int_value: 0
+                  }
+                }
               }
             }
           }
@@ -1275,7 +1266,7 @@ triggers {
         call_value {
           functionName: "Get Preset Value (int)"
           args {
-            string_value: "AreOrAreNot"
+            string_value: "Comparison Ops"
           }
           args {
             int_value: 0
@@ -1283,12 +1274,7 @@ triggers {
         }
       }
       args {
-        call_value {
-          functionName: "Get Map Item (Region)"
-          args {
-            string_value: "5366874d3662362409008236"
-          }
-        }
+        int_value: 0
       }
     }
   }
@@ -9839,6 +9825,223 @@ triggers {
   }
   is_oneshot: false
 }
+triggers {
+  name: "Cowards Start to Exit"
+  events {
+  }
+  conditions {
+  }
+  actions {
+    ops {
+      functionName: "Order Actor to Move To (Region)"
+      args {
+        call_value {
+          functionName: "All Actors With Tag"
+          args {
+            call_value {
+              functionName: "Get Map Item (SenseTagList)"
+              args {
+                string_value: "isCoward"
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Preset Value (int)"
+              args {
+                string_value: "AllOrAny"
+              }
+              args {
+                int_value: 0
+              }
+            }
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (Region)"
+          args {
+            string_value: "5373ec53643431b8017c3da1"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "FacingDirection"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Enforce Actor Current Orders"
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "EnableOrDisable"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "All Actors With Tag"
+          args {
+            call_value {
+              functionName: "Get Map Item (SenseTagList)"
+              args {
+                string_value: "isCoward"
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Preset Value (int)"
+              args {
+                string_value: "AllOrAny"
+              }
+              args {
+                int_value: 0
+              }
+            }
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Start Conversation"
+      args {
+        call_value {
+          functionName: "Get Map Item (Conversation)"
+          args {
+            string_value: "537109bd643431b120cd3baf"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (Actor)"
+          args {
+            string_value: "536c5969366236d41e0027a9"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "538398173662368413000587"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
+triggers {
+  name: "Coward Exits"
+  events {
+    ops {
+      functionName: "On Region Enter"
+      args {
+        call_value {
+          functionName: "Get Map Item (Region)"
+          args {
+            string_value: "5366874d3662362409008236"
+          }
+        }
+      }
+    }
+  }
+  conditions {
+    ops {
+      functionName: "Evaluate Tag for Actor"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Triggering Actor"
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "HasOrHasNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SenseTagList)"
+          args {
+            string_value: "isCoward"
+          }
+        }
+      }
+    }
+  }
+  actions {
+    ops {
+      functionName: "Kill Actor"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Triggering Actor"
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "DeathMethod"
+          }
+          args {
+            int_value: 3
+          }
+        }
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "538398d43662368413000588"
+  }
+  elseActions {
+  }
+  is_oneshot: false
+}
 regions {
   name: "Camera"
   position {
@@ -10546,9 +10749,9 @@ regions {
 characters {
   name: "system_spawner_playerSpawner"
   gridPoint {
-    x: -1
+    x: 1
     y: 0
-    z: 52
+    z: 8
   }
   orientation: ORIENTATION_W
   displayName: "PC0"
@@ -11850,6 +12053,7 @@ characters {
   }
   orientation: ORIENTATION_E
   GeneralTags: "isWave1"
+  GeneralTags: "isCoward"
   GeneralTags: ""
   idRef {
     id: "537ce992643431520477f89c"
@@ -11879,6 +12083,7 @@ characters {
     team_id: "Civilians"
     char_name: "NC Thug"
     GeneralTags: "isWave1"
+    GeneralTags: "isCoward"
     GeneralTags: ""
     pc_spawn_number: -1
     portrait {
@@ -11896,6 +12101,7 @@ characters {
   }
   orientation: ORIENTATION_E
   GeneralTags: "isWave1"
+  GeneralTags: "isCoward"
   GeneralTags: ""
   displayName: "Squad 1 Shooting Target"
   idRef {
@@ -11926,6 +12132,7 @@ characters {
     team_id: "Civilians"
     char_name: "NC Thug"
     GeneralTags: "isWave1"
+    GeneralTags: "isCoward"
     GeneralTags: ""
     pc_spawn_number: -1
     portrait {
@@ -11989,7 +12196,7 @@ characters {
     z: -29
   }
   orientation: ORIENTATION_E
-  GeneralTags: "isExiter"
+  GeneralTags: "isCoward"
   GeneralTags: ""
   displayName: "Minion 3"
   idRef {
@@ -12019,7 +12226,7 @@ characters {
     }
     team_id: "Civilians"
     char_name: "NC Mage"
-    GeneralTags: "isExiter"
+    GeneralTags: "isCoward"
     GeneralTags: ""
     pc_spawn_number: -1
     portrait {
@@ -12036,7 +12243,7 @@ characters {
     z: -27
   }
   orientation: ORIENTATION_N
-  GeneralTags: "isExiter"
+  GeneralTags: "isCoward"
   GeneralTags: ""
   displayName: "Minion 2"
   idRef {
@@ -12066,7 +12273,7 @@ characters {
     }
     team_id: "Civilians"
     char_name: "NC Thug"
-    GeneralTags: "isExiter"
+    GeneralTags: "isCoward"
     GeneralTags: ""
     pc_spawn_number: -1
     portrait {
@@ -12152,6 +12359,14 @@ variables {
   variableref_value {
     scope: TsVariableScope_Scene
     name: "bantered"
+    typeName: "bool"
+  }
+}
+variables {
+  bool_value: false
+  variableref_value {
+    scope: TsVariableScope_Scene
+    name: "cowardsExiting"
     typeName: "bool"
   }
 }
