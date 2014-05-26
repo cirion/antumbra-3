@@ -1,377 +1,7 @@
 minX: -121
-minZ: -62
-numX: 143
-numZ: 198
-props {
-  name: "museum_ground_circle"
-  gridPoint {
-    x: 3
-    y: 0
-    z: -13
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "museum_ground_cornerGutter"
-  gridPoint {
-    x: 8
-    y: 0
-    z: -10
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "museum_ground_edgeCornerGutter"
-  gridPoint {
-    x: 11
-    y: 0
-    z: -6
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "museum_ground_edgeGutter"
-  gridPoint {
-    x: 15
-    y: 0
-    z: -3
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "museum_ground_edgeGutter"
-  gridPoint {
-    x: 19
-    y: 0
-    z: -1
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "museum_ground_glassFloor"
-  gridPoint {
-    x: 17
-    y: 0
-    z: 2
-  }
-  orientation: ORIENTATION_N
-  lod: 0
-}
-props {
-  name: "museum_ground_gutter"
-  gridPoint {
-    x: 16
-    y: 0
-    z: -6
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "museum_ground_largeMarble01"
-  gridPoint {
-    x: 1
-    y: 0
-    z: -9
-  }
-  orientation: ORIENTATION_N
-  lod: 0
-}
-props {
-  name: "museum_ground_marble01"
-  gridPoint {
-    x: 8
-    y: 0
-    z: -5
-  }
-  orientation: ORIENTATION_N
-  lod: 0
-}
-props {
-  name: "museum_ground_marble02"
-  gridPoint {
-    x: 10
-    y: 0
-    z: -2
-  }
-  orientation: ORIENTATION_N
-  lod: 0
-}
-props {
-  name: "museum_ground_marble03"
-  gridPoint {
-    x: 12
-    y: 0
-    z: 0
-  }
-  orientation: ORIENTATION_N
-  lod: 0
-}
-props {
-  name: "museum_ground_marble04"
-  gridPoint {
-    x: 12
-    y: 0
-    z: 3
-  }
-  orientation: ORIENTATION_N
-  lod: 0
-}
-props {
-  name: "museum_ground_marble05"
-  gridPoint {
-    x: 8
-    y: 0
-    z: 1
-  }
-  orientation: ORIENTATION_N
-  lod: 0
-}
-props {
-  name: "museum_ground_marble06"
-  gridPoint {
-    x: 6
-    y: 0
-    z: -2
-  }
-  orientation: ORIENTATION_N
-  lod: 0
-}
-props {
-  name: "museum_ground_marble07"
-  gridPoint {
-    x: 4
-    y: 0
-    z: 1
-  }
-  orientation: ORIENTATION_N
-  lod: 0
-}
-props {
-  name: "museum_ground_triangle"
-  gridPoint {
-    x: 7
-    y: 0
-    z: 5
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "museum_groundDecoration_rug02"
-  gridPoint {
-    x: 13
-    y: 0
-    z: 9
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "museum_wall_window01"
-  gridPoint {
-    x: -6
-    y: 0
-    z: -4
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "museum_wall_Window02"
-  gridPoint {
-    x: -2
-    y: 0
-    z: -1
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "museum_wall_Window03"
-  gridPoint {
-    x: 2
-    y: 0
-    z: 5
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "museum_wall_window04"
-  gridPoint {
-    x: 7
-    y: 0
-    z: 9
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "museum_wall_window05"
-  gridPoint {
-    x: 11
-    y: 0
-    z: 13
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "museum_wall_window06"
-  gridPoint {
-    x: 14
-    y: 0
-    z: 17
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "museum_wall_window07"
-  gridPoint {
-    x: 2
-    y: 0
-    z: 8
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "museum_wall_edge01"
-  gridPoint {
-    x: -10
-    y: 0
-    z: 0
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "museum_wall_edge02"
-  gridPoint {
-    x: -6
-    y: 0
-    z: 4
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "museum_wall_edge03"
-  gridPoint {
-    x: -2
-    y: 0
-    z: 8
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "museum_wall_edge04"
-  gridPoint {
-    x: 1
-    y: 0
-    z: 11
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "museum_wall_end01"
-  gridPoint {
-    x: 4
-    y: 0
-    z: 14
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "museum_wall_connector01"
-  gridPoint {
-    x: 7
-    y: 0
-    z: 16
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "museum_wall_door01Back"
-  gridPoint {
-    x: -15
-    y: 0
-    z: 1
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "museum_wall_door01Front"
-  gridPoint {
-    x: -12
-    y: 0
-    z: 8
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "museum_wall_door01Middle"
-  gridPoint {
-    x: -11
-    y: 0
-    z: 5
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "museum_wall_doorWide01Back"
-  gridPoint {
-    x: -7
-    y: 0
-    z: 10
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "museum_wall_doorWide01Front"
-  gridPoint {
-    x: -7
-    y: 0
-    z: 15
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "museum_wall_doorWide01Middle"
-  gridPoint {
-    x: 0
-    y: 0
-    z: 16
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "museum_wall_doubleWindow01"
-  gridPoint {
-    x: -9
-    y: 0
-    z: -14
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
+minZ: -15
+numX: 101
+numZ: 151
 props {
   name: "museum_ground_largeMarble01"
   gridPoint {
@@ -1875,32 +1505,6 @@ props {
 props {
   name: "museum_wall_end01"
   gridPoint {
-    x: -21
-    y: 0
-    z: -9
-  }
-  orientation: ORIENTATION_S
-  idRef {
-    id: "5366cf8d3662362409008318"
-  }
-  lod: 0
-}
-props {
-  name: "museum_wall_connector01"
-  gridPoint {
-    x: -20
-    y: 0
-    z: -9
-  }
-  orientation: ORIENTATION_S
-  idRef {
-    id: "5366cf8e3662362409008319"
-  }
-  lod: 0
-}
-props {
-  name: "museum_wall_end01"
-  gridPoint {
     x: -49
     y: 0
     z: -5
@@ -1921,32 +1525,6 @@ props {
   orientation: ORIENTATION_S
   idRef {
     id: "5366cf92366236240900831b"
-  }
-  lod: 0
-}
-props {
-  name: "museum_wall_end01"
-  gridPoint {
-    x: -18
-    y: 0
-    z: -29
-  }
-  orientation: ORIENTATION_S
-  idRef {
-    id: "5366cf95366236240900831c"
-  }
-  lod: 0
-}
-props {
-  name: "museum_wall_connector01"
-  gridPoint {
-    x: -18
-    y: 0
-    z: -29
-  }
-  orientation: ORIENTATION_S
-  idRef {
-    id: "5366cf96366236240900831d"
   }
   lod: 0
 }
@@ -2347,19 +1925,6 @@ props {
   orientation: ORIENTATION_S
   idRef {
     id: "5366d050366236240900833b"
-  }
-  lod: 0
-}
-props {
-  name: "museum_wall_doorWide01Back"
-  gridPoint {
-    x: -31
-    y: 0
-    z: -29
-  }
-  orientation: ORIENTATION_E
-  idRef {
-    id: "5366d052366236240900833c"
   }
   lod: 0
 }
@@ -3781,146 +3346,6 @@ props {
   lod: 0
 }
 props {
-  name: "sleekOffice_floor_geo01"
-  gridPoint {
-    x: -29
-    y: 0
-    z: -36
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "sleekOffice_floor_gray01"
-  gridPoint {
-    x: -26
-    y: 0
-    z: -37
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "sleekOffice_floor_gutter01"
-  gridPoint {
-    x: -29
-    y: 0
-    z: -44
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "sleekOffice_floor_gutterCorner03"
-  gridPoint {
-    x: -24
-    y: 0
-    z: -43
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "sleekOffice_floor_gutterCorner04"
-  gridPoint {
-    x: -22
-    y: 0
-    z: -42
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "sleekOffice_floor_gutterDoorframe01"
-  gridPoint {
-    x: -19
-    y: 0
-    z: -40
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "sleekOffice_floor_gutterEnd01"
-  gridPoint {
-    x: -26
-    y: 0
-    z: -25
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "sleekOffice_floor_gutterEnd02"
-  gridPoint {
-    x: -24
-    y: 0
-    z: -22
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "sleekOffice_floor_gutterEnd03"
-  gridPoint {
-    x: -21
-    y: 0
-    z: -23
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "sleekOffice_floor_plain01"
-  gridPoint {
-    x: -34
-    y: 0
-    z: -38
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "sleekOffice_floor_reflected01"
-  gridPoint {
-    x: -38
-    y: 0
-    z: -35
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "sleekOffice_floor_reflected02"
-  gridPoint {
-    x: -34
-    y: 0
-    z: -35
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "sleekOffice_floor_reflected03"
-  gridPoint {
-    x: -40
-    y: 0
-    z: -33
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "sleekOffice_floor_reflected04"
-  gridPoint {
-    x: -36
-    y: 0
-    z: -33
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
   name: "sleekOffice_floor_tile01"
   gridPoint {
     x: -68
@@ -4885,76 +4310,6 @@ props {
   lod: 0
 }
 props {
-  name: "warehouse_floor_01"
-  gridPoint {
-    x: -64
-    y: 0
-    z: -54
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "warehouse_floor_02"
-  gridPoint {
-    x: -60
-    y: 0
-    z: -60
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "warehouse_floor_03"
-  gridPoint {
-    x: -54
-    y: 0
-    z: -57
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "warehouse_floor_04"
-  gridPoint {
-    x: -54
-    y: 0
-    z: -54
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "warehouse_floor_05"
-  gridPoint {
-    x: -58
-    y: 0
-    z: -52
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "warehouse_floor_06"
-  gridPoint {
-    x: -61
-    y: 0
-    z: -50
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "warehouse_floor_07"
-  gridPoint {
-    x: -66
-    y: 0
-    z: -51
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
   name: "warehouse_floor_08"
   gridPoint {
     x: -70
@@ -4962,166 +4317,6 @@ props {
     z: 2
   }
   orientation: ORIENTATION_E
-  lod: 0
-}
-props {
-  name: "warehouse_floor_09"
-  gridPoint {
-    x: -62
-    y: 0
-    z: -46
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "warehouse_floor_10"
-  gridPoint {
-    x: -67
-    y: 0
-    z: -46
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "warehouse_floor_11"
-  gridPoint {
-    x: -58
-    y: 0
-    z: -41
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "warehouse_floor_12"
-  gridPoint {
-    x: -54
-    y: 0
-    z: -46
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "warehouse_floor_13"
-  gridPoint {
-    x: -52
-    y: 0
-    z: -49
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "warehouse_floor_14"
-  gridPoint {
-    x: -49
-    y: 0
-    z: -53
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "warehouse_floor_15"
-  gridPoint {
-    x: -49
-    y: 0
-    z: -60
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "warehouse_floor_16"
-  gridPoint {
-    x: -69
-    y: 0
-    z: -55
-  }
-  orientation: ORIENTATION_E
-  lod: 0
-}
-props {
-  name: "warehouse_floor_17"
-  gridPoint {
-    x: -54
-    y: 0
-    z: -41
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "warehouse_floor_18"
-  gridPoint {
-    x: -65
-    y: 0
-    z: -59
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "warehouse_floor_19"
-  gridPoint {
-    x: -56
-    y: 0
-    z: -62
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "warehouse_floor_20"
-  gridPoint {
-    x: -72
-    y: 0
-    z: -49
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "warehouse_floor_21"
-  gridPoint {
-    x: -48
-    y: 0
-    z: -48
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "warehouse_floor_22"
-  gridPoint {
-    x: -50
-    y: 0
-    z: -45
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "warehouse_floor_23"
-  gridPoint {
-    x: -50
-    y: 0
-    z: -40
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "warehouse_floor_24"
-  gridPoint {
-    x: -62
-    y: 0
-    z: -42
-  }
-  orientation: ORIENTATION_S
   lod: 0
 }
 props {
@@ -5142,62 +4337,6 @@ props {
     z: -10
   }
   orientation: ORIENTATION_W
-  lod: 0
-}
-props {
-  name: "warehouse_wall_exteriorEdge01"
-  gridPoint {
-    x: -40
-    y: 0
-    z: -22
-  }
-  orientation: ORIENTATION_E
-  lod: 0
-}
-props {
-  name: "museum_wall_edge03"
-  gridPoint {
-    x: -45
-    y: 0
-    z: -30
-  }
-  orientation: ORIENTATION_E
-  idRef {
-    id: "5366d6a936623624090083e4"
-  }
-  lod: 0
-}
-props {
-  name: "museum_wall_edge03"
-  gridPoint {
-    x: -45
-    y: 3
-    z: -30
-  }
-  orientation: ORIENTATION_E
-  idRef {
-    id: "5366d6ac36623624090083e5"
-  }
-  lod: 0
-}
-props {
-  name: "warehouse_wall_exteriorConnector01"
-  gridPoint {
-    x: -64
-    y: 0
-    z: -29
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "warehouse_wall_exteriorConnector02"
-  gridPoint {
-    x: -62
-    y: 0
-    z: -31
-  }
-  orientation: ORIENTATION_S
   lod: 0
 }
 props {
@@ -5525,19 +4664,6 @@ props {
 props {
   name: "secretLab_wall_fill"
   gridPoint {
-    x: -44
-    y: 4
-    z: -14
-  }
-  orientation: ORIENTATION_S
-  idRef {
-    id: "5366d7d836623624090083fe"
-  }
-  lod: 0
-}
-props {
-  name: "secretLab_wall_fill"
-  gridPoint {
     x: -49
     y: 3
     z: -9
@@ -5575,46 +4701,6 @@ props {
   lod: 0
 }
 props {
-  name: "warehouse_wall_exteriorEdge01"
-  gridPoint {
-    x: -75
-    y: 0
-    z: -27
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "warehouse_wall_exteriorEdge02"
-  gridPoint {
-    x: -89
-    y: 0
-    z: -29
-  }
-  orientation: ORIENTATION_N
-  lod: 0
-}
-props {
-  name: "warehouse_wall_exteriorEdge03"
-  gridPoint {
-    x: -81
-    y: 0
-    z: -29
-  }
-  orientation: ORIENTATION_N
-  lod: 0
-}
-props {
-  name: "warehouse_wall_exteriorEdge04"
-  gridPoint {
-    x: -95
-    y: 0
-    z: -17
-  }
-  orientation: ORIENTATION_N
-  lod: 0
-}
-props {
   name: "warehouse_wall_exteriorEdge04"
   gridPoint {
     x: -60
@@ -5625,16 +4711,6 @@ props {
   idRef {
     id: "5366d8203662362409008402"
   }
-  lod: 0
-}
-props {
-  name: "warehouse_wall_exteriorEdge05"
-  gridPoint {
-    x: -95
-    y: 0
-    z: -29
-  }
-  orientation: ORIENTATION_N
   lod: 0
 }
 props {
@@ -5658,16 +4734,6 @@ props {
     z: -10
   }
   orientation: ORIENTATION_W
-  lod: 0
-}
-props {
-  name: "warehouse_wall_exteriorEdge07"
-  gridPoint {
-    x: -89
-    y: 0
-    z: -41
-  }
-  orientation: ORIENTATION_E
   lod: 0
 }
 props {
@@ -6094,19 +5160,6 @@ props {
   lod: 0
 }
 props {
-  name: "warehouse_floor_10"
-  gridPoint {
-    x: -70
-    y: 0
-    z: -23
-  }
-  orientation: ORIENTATION_S
-  idRef {
-    id: "5366d97a3662362409008423"
-  }
-  lod: 0
-}
-props {
   name: "warehouse_floor_11"
   gridPoint {
     x: -73
@@ -6350,19 +5403,6 @@ props {
   orientation: ORIENTATION_S
   idRef {
     id: "5366da4c3662362409008437"
-  }
-  lod: 0
-}
-props {
-  name: "warehouse_floor_10"
-  gridPoint {
-    x: -72
-    y: 0
-    z: -30
-  }
-  orientation: ORIENTATION_S
-  idRef {
-    id: "5366da533662362409008438"
   }
   lod: 0
 }
@@ -7311,16 +6351,6 @@ props {
   lod: 0
 }
 props {
-  name: "undergroundBase_tech_computerWorkstation01"
-  gridPoint {
-    x: -65
-    y: 0
-    z: 32
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
   name: "undergroundBase_misc_target01"
   gridPoint {
     x: -83
@@ -7494,36 +6524,6 @@ props {
   lod: 0
 }
 props {
-  name: "matrix_floor_4x4blueelbow"
-  gridPoint {
-    x: -38
-    y: 0
-    z: 36
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "matrix_floor_4x4bluehole"
-  gridPoint {
-    x: -25
-    y: 0
-    z: 38
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "matrix_floor_4x4blueisland"
-  gridPoint {
-    x: -26
-    y: 0
-    z: 43
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
   name: "matrix_floor_4x4bluenotch"
   gridPoint {
     x: -56
@@ -7531,26 +6531,6 @@ props {
     z: 107
   }
   orientation: ORIENTATION_N
-  lod: 0
-}
-props {
-  name: "matrix_floor_4x4opengrid"
-  gridPoint {
-    x: -59
-    y: 0
-    z: 54
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "matrix_floor_blueplatform"
-  gridPoint {
-    x: -49
-    y: 0
-    z: 39
-  }
-  orientation: ORIENTATION_S
   lod: 0
 }
 props {
@@ -8719,6 +7699,7 @@ props {
     z: 76
   }
   orientation: ORIENTATION_S
+  displayName: "Switch Control"
   idRef {
     id: "537b897b643431435413c3c7"
   }
@@ -9907,16 +8888,6 @@ props {
 props {
   name: "matrix_floor_4x4bluecorner"
   gridPoint {
-    x: -66
-    y: 0
-    z: 46
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "matrix_floor_4x4bluecorner"
-  gridPoint {
     x: -92
     y: 0
     z: 51
@@ -10296,7 +9267,7 @@ props {
   gridPoint {
     x: -120
     y: 0
-    z: 101
+    z: 107
   }
   orientation: ORIENTATION_N
   idRef {
@@ -10309,7 +9280,7 @@ props {
   gridPoint {
     x: -120
     y: 0
-    z: 105
+    z: 111
   }
   orientation: ORIENTATION_W
   idRef {
@@ -10338,6 +9309,10 @@ props {
     z: -4
   }
   orientation: ORIENTATION_S
+  displayName: "Jack Point Fake"
+  idRef {
+    id: "538390c13662368413000486"
+  }
   lod: 0
 }
 props {
@@ -10348,17 +9323,9 @@ props {
     z: -4
   }
   orientation: ORIENTATION_S
-  displayName: "Jack Point Real"
+  displayName: "Screen"
   idRef {
     id: "537b877e643431435413c3b8"
-  }
-  interactionRoot {
-    isEnabled: true
-    interactionRadius: 1
-    jackPoint {
-      LANIdentifier: "537b878d643431435413c3ba"
-      LANEquipment: ""
-    }
   }
   lod: 0
 }
@@ -10370,19 +9337,9 @@ props {
     z: -4
   }
   orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "sleekOffice_tech_terminal01_light"
-  gridPoint {
-    x: -92
-    y: 1
-    z: -3
-  }
-  orientation: ORIENTATION_S
   displayName: "Jack Point Fake"
   idRef {
-    id: "537b882a643431435413c3c0"
+    id: "538390ef366236841300048a"
   }
   interactionRoot {
     isEnabled: true
@@ -18325,6 +17282,41 @@ props {
   orientation: ORIENTATION_S
   idRef {
     id: "538330be64343147644f3632"
+  }
+  lod: 0
+}
+props {
+  name: "docks_clutter_shippingCrate01"
+  gridPoint {
+    x: -95
+    y: 0
+    z: -8
+  }
+  orientation: ORIENTATION_S
+  displayName: "Jack Point Real"
+  idRef {
+    id: "538390e03662368413000488"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    jackPoint {
+      LANIdentifier: "537b878d643431435413c3ba"
+      LANEquipment: ""
+    }
+  }
+  lod: 0
+}
+props {
+  name: "matrix_tech_1x2cover"
+  gridPoint {
+    x: -93
+    y: 0
+    z: 76
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "538395143662368413000490"
   }
   lod: 0
 }
