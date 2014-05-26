@@ -24156,7 +24156,7 @@ props {
 props {
   name: "matrix_floor_blueplatform"
   gridPoint {
-    x: 49
+    x: 36
     y: 0
     z: 161
   }
@@ -24503,13 +24503,61 @@ props {
     z: 142
   }
   orientation: ORIENTATION_S
-  displayName: "matrix switch control 1"
+  displayName: "Switch Alpha"
   idRef {
     id: "537ca833366236a415005f62"
   }
   interactionRoot {
     isEnabled: true
     interactionRadius: 1
+    prerequisites {
+      ops {
+        functionName: "Comparison (int)"
+        args {
+          call_value {
+            functionName: "Get Count of Alive Actors"
+            args {
+              call_value {
+                functionName: "All Actors With Tag"
+                args {
+                  call_value {
+                    functionName: "Get Map Item (SenseTagList)"
+                    args {
+                      string_value: "isICPuzzle"
+                    }
+                  }
+                }
+                args {
+                  call_value {
+                    functionName: "Get Preset Value (int)"
+                    args {
+                      string_value: "AllOrAny"
+                    }
+                    args {
+                      int_value: 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+        args {
+          int_value: 0
+        }
+      }
+    }
     matrixNode {
       prerequisites_control_state: true
       constant_matrix_fx: "matrixcontrolnode"
@@ -24537,13 +24585,61 @@ props {
     z: 142
   }
   orientation: ORIENTATION_S
-  displayName: "matrix switch control 3"
+  displayName: "Switch Charlie"
   idRef {
     id: "537ca834366236a415005f63"
   }
   interactionRoot {
     isEnabled: true
     interactionRadius: 1
+    prerequisites {
+      ops {
+        functionName: "Comparison (int)"
+        args {
+          call_value {
+            functionName: "Get Count of Alive Actors"
+            args {
+              call_value {
+                functionName: "All Actors With Tag"
+                args {
+                  call_value {
+                    functionName: "Get Map Item (SenseTagList)"
+                    args {
+                      string_value: "isICPuzzle"
+                    }
+                  }
+                }
+                args {
+                  call_value {
+                    functionName: "Get Preset Value (int)"
+                    args {
+                      string_value: "AllOrAny"
+                    }
+                    args {
+                      int_value: 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+        args {
+          int_value: 0
+        }
+      }
+    }
     matrixNode {
       prerequisites_control_state: true
       constant_matrix_fx: "matrixcontrolnode"
@@ -24571,13 +24667,61 @@ props {
     z: 158
   }
   orientation: ORIENTATION_S
-  displayName: "matrix switch control 4"
+  displayName: "Switch Delta"
   idRef {
     id: "537ca836366236a415005f64"
   }
   interactionRoot {
     isEnabled: true
     interactionRadius: 1
+    prerequisites {
+      ops {
+        functionName: "Comparison (int)"
+        args {
+          call_value {
+            functionName: "Get Count of Alive Actors"
+            args {
+              call_value {
+                functionName: "All Actors With Tag"
+                args {
+                  call_value {
+                    functionName: "Get Map Item (SenseTagList)"
+                    args {
+                      string_value: "isICPuzzle"
+                    }
+                  }
+                }
+                args {
+                  call_value {
+                    functionName: "Get Preset Value (int)"
+                    args {
+                      string_value: "AllOrAny"
+                    }
+                    args {
+                      int_value: 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+        args {
+          int_value: 0
+        }
+      }
+    }
     matrixNode {
       prerequisites_control_state: true
       constant_matrix_fx: "matrixcontrolnode"
@@ -24605,13 +24749,61 @@ props {
     z: 158
   }
   orientation: ORIENTATION_S
-  displayName: "matrix switch control 2"
+  displayName: "Switch Bravo"
   idRef {
     id: "537ca837366236a415005f65"
   }
   interactionRoot {
     isEnabled: true
     interactionRadius: 1
+    prerequisites {
+      ops {
+        functionName: "Comparison (int)"
+        args {
+          call_value {
+            functionName: "Get Count of Alive Actors"
+            args {
+              call_value {
+                functionName: "All Actors With Tag"
+                args {
+                  call_value {
+                    functionName: "Get Map Item (SenseTagList)"
+                    args {
+                      string_value: "isICPuzzle"
+                    }
+                  }
+                }
+                args {
+                  call_value {
+                    functionName: "Get Preset Value (int)"
+                    args {
+                      string_value: "AllOrAny"
+                    }
+                    args {
+                      int_value: 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+        args {
+          int_value: 0
+        }
+      }
+    }
     matrixNode {
       prerequisites_control_state: true
       constant_matrix_fx: "matrixcontrolnode"
@@ -25261,7 +25453,7 @@ props {
     z: 142
   }
   orientation: ORIENTATION_S
-  displayName: "matrix switch control 5"
+  displayName: "Switch Echo"
   idRef {
     id: "537d1bce643431950db69f6d"
   }
@@ -25382,79 +25574,6 @@ props {
     interactionRadius: 1
     dummyInteraciton {
     }
-  }
-  lod: 0
-}
-props {
-  name: "vfx_fx_matrixentranceexit"
-  gridPoint {
-    x: -13
-    y: 0
-    z: 166
-  }
-  orientation: ORIENTATION_S
-  properties {
-    property_id: "fxScript"
-    string_value: "MatrixPortalEnvironment"
-  }
-  displayName: "Matrix Emergency Exit"
-  idRef {
-    id: "537d1bf3643431950db69f73"
-  }
-  interactionRoot {
-    isEnabled: true
-    interactionRadius: 1
-    prerequisites {
-      ops {
-        functionName: "Comparison (bool)"
-        args {
-          call_value {
-            functionName: "Get Variable (bool)"
-            args {
-              string_value: "isTirArrived"
-            }
-          }
-        }
-        args {
-          call_value {
-            functionName: "Get Preset Value (int)"
-            args {
-              string_value: "IsOrIsNot"
-            }
-            args {
-              int_value: 1
-            }
-          }
-        }
-        args {
-          call_value {
-            functionName: "Get Preset Value (int)"
-            args {
-              string_value: "bool"
-            }
-            args {
-              int_value: 1
-            }
-          }
-        }
-      }
-    }
-    matrixSpawnPoint {
-      dimension: "Matrix"
-    }
-  }
-  lod: 0
-}
-props {
-  name: "matrix_floor_entranceexit"
-  gridPoint {
-    x: -14
-    y: 0
-    z: 165
-  }
-  orientation: ORIENTATION_S
-  idRef {
-    id: "537d1bf5643431950db69f74"
   }
   lod: 0
 }
@@ -25731,9 +25850,9 @@ props {
 props {
   name: "vfx_fx_fallingsparks"
   gridPoint {
-    x: -102
+    x: -101
     y: 0
-    z: 140
+    z: 141
   }
   orientation: ORIENTATION_S
   properties {
@@ -26418,45 +26537,6 @@ props {
 props {
   name: "matrix_floor_4x4blueedge"
   gridPoint {
-    x: 49
-    y: 0
-    z: 157
-  }
-  orientation: ORIENTATION_E
-  idRef {
-    id: "53816c716434316255e82b58"
-  }
-  lod: 0
-}
-props {
-  name: "matrix_floor_4x4blueedge"
-  gridPoint {
-    x: 45
-    y: 0
-    z: 157
-  }
-  orientation: ORIENTATION_E
-  idRef {
-    id: "53816c736434316255e82b59"
-  }
-  lod: 0
-}
-props {
-  name: "matrix_floor_4x4blueedge"
-  gridPoint {
-    x: 41
-    y: 0
-    z: 157
-  }
-  orientation: ORIENTATION_E
-  idRef {
-    id: "53816c756434316255e82b5a"
-  }
-  lod: 0
-}
-props {
-  name: "matrix_floor_4x4blueedge"
-  gridPoint {
     x: 37
     y: 0
     z: 157
@@ -27127,19 +27207,6 @@ props {
   orientation: ORIENTATION_S
   idRef {
     id: "53816de26434316255e82b92"
-  }
-  lod: 0
-}
-props {
-  name: "matrix_floor_4x4bluecorner"
-  gridPoint {
-    x: -10
-    y: 0
-    z: 161
-  }
-  orientation: ORIENTATION_N
-  idRef {
-    id: "53816dec6434316255e82b93"
   }
   lod: 0
 }
@@ -32535,6 +32602,420 @@ props {
   orientation: ORIENTATION_S
   idRef {
     id: "53832df464343147644f33fb"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_tech_1x1cover"
+  gridPoint {
+    x: 51
+    y: 0
+    z: 146
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "matrix_tech_1x1cover"
+  gridPoint {
+    x: 51
+    y: 0
+    z: 155
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "53839f5d36623684130007e3"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_tech_1x1cover"
+  gridPoint {
+    x: 39
+    y: 0
+    z: 155
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "53839f5f36623684130007e4"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_tech_1x1cover"
+  gridPoint {
+    x: 39
+    y: 0
+    z: 146
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "53839f6036623684130007e5"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_tech_1x1cover"
+  gridPoint {
+    x: 15
+    y: 0
+    z: 151
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "53839f6836623684130007e6"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_tech_1x1cover"
+  gridPoint {
+    x: 15
+    y: 0
+    z: 147
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "53839f6b36623684130007e7"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_tech_1x1cover"
+  gridPoint {
+    x: 15
+    y: 0
+    z: 155
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "53839f6c36623684130007e8"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_tech_1x1cover"
+  gridPoint {
+    x: 7
+    y: 0
+    z: 153
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "53839f7036623684130007e9"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_tech_1x1cover"
+  gridPoint {
+    x: 7
+    y: 0
+    z: 148
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "53839f7736623684130007ea"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_tech_1x1cover"
+  gridPoint {
+    x: -29
+    y: 0
+    z: 148
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "53839f7b36623684130007eb"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_tech_1x1cover"
+  gridPoint {
+    x: -29
+    y: 0
+    z: 153
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "53839f8036623684130007ec"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_tech_1x1cover"
+  gridPoint {
+    x: -34
+    y: 0
+    z: 159
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "53839f8236623684130007ed"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_tech_1x1cover"
+  gridPoint {
+    x: -34
+    y: 0
+    z: 142
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "53839f8436623684130007ee"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_tech_1x1cover"
+  gridPoint {
+    x: -44
+    y: 0
+    z: 144
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "53839f8636623684130007ef"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_tech_1x1cover"
+  gridPoint {
+    x: -44
+    y: 0
+    z: 157
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "53839f8836623684130007f0"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4var3b"
+  gridPoint {
+    x: 45
+    y: 0
+    z: 157
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "5383a71036623684130007f9"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4blueedge"
+  gridPoint {
+    x: 45
+    y: 0
+    z: 161
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "5383a71436623684130007fa"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4blueelbow"
+  gridPoint {
+    x: 41
+    y: 0
+    z: 157
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "5383a71b36623684130007fb"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4blueelbow"
+  gridPoint {
+    x: 49
+    y: 0
+    z: 157
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "5383a71d36623684130007fc"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4bluecorner"
+  gridPoint {
+    x: 41
+    y: 0
+    z: 161
+  }
+  orientation: ORIENTATION_W
+  idRef {
+    id: "5383a72b36623684130007fd"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4bluecorner"
+  gridPoint {
+    x: 49
+    y: 0
+    z: 161
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "5383a72d36623684130007fe"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_wall_door01RedNear"
+  gridPoint {
+    x: 48
+    y: 0
+    z: 160
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "5383a7583662368413000802"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_wall_door01RedFar"
+  gridPoint {
+    x: 45
+    y: 0
+    z: 160
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "5383a75e3662368413000803"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_floor_4x4var3b"
+  gridPoint {
+    x: -14
+    y: 0
+    z: 165
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "5383a7733662368413000804"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_wall_door01Near"
+  gridPoint {
+    x: -11
+    y: 0
+    z: 168
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "5383a7783662368413000805"
+  }
+  lod: 0
+}
+props {
+  name: "matrix_wall_door01Far"
+  gridPoint {
+    x: -14
+    y: 0
+    z: 168
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "5383a77c3662368413000806"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_blockMove"
+  gridPoint {
+    x: 46
+    y: 0
+    z: 160
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "system_invisible_blockMove"
+  gridPoint {
+    x: 47
+    y: 0
+    z: 160
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "5383b0c33662368413000827"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_blockMove"
+  gridPoint {
+    x: -11
+    y: 0
+    z: 164
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "bridge5Block"
+  idRef {
+    id: "5383b3763662368413000828"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_blockMove"
+  gridPoint {
+    x: -12
+    y: 0
+    z: 164
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "bridge5Block"
+  idRef {
+    id: "5383b3783662368413000829"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_blockMove"
+  gridPoint {
+    x: -13
+    y: 0
+    z: 164
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "bridge5Block"
+  idRef {
+    id: "5383b379366236841300082a"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_blockMove"
+  gridPoint {
+    x: -14
+    y: 0
+    z: 164
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "bridge5Block"
+  idRef {
+    id: "5383b37c366236841300082b"
   }
   lod: 0
 }

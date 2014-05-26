@@ -71,6 +71,47 @@ triggers {
         }
       }
     }
+    ops {
+      functionName: "Set Prop Visible by Tag"
+      args {
+        call_value {
+          functionName: "Get Map Item (SenseTagList)"
+          args {
+            string_value: "Bridge5"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        float_value: -1
+      }
+      args {
+        call_value {
+          functionName: "Everywhere"
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "DoesOrDoesNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
   }
   isActive: true
   idRef {
@@ -380,7 +421,7 @@ triggers {
       }
     }
   }
-  isActive: true
+  isActive: false
   idRef {
     id: "537c255436623648170076ca"
   }
@@ -887,7 +928,7 @@ triggers {
   }
   elseActions {
   }
-  is_oneshot: true
+  is_oneshot: false
 }
 triggers {
   name: "Spawn Tir Floor 3b"
@@ -1037,7 +1078,7 @@ triggers {
   }
   elseActions {
   }
-  is_oneshot: true
+  is_oneshot: false
 }
 triggers {
   name: "Spawn Tir Floor 2a"
@@ -1187,7 +1228,7 @@ triggers {
   }
   elseActions {
   }
-  is_oneshot: true
+  is_oneshot: false
 }
 triggers {
   name: "Spawn Tir Floor 2b"
@@ -1337,7 +1378,7 @@ triggers {
   }
   elseActions {
   }
-  is_oneshot: true
+  is_oneshot: false
 }
 triggers {
   name: "Spawn Tir Floor 1a"
@@ -1487,7 +1528,7 @@ triggers {
   }
   elseActions {
   }
-  is_oneshot: true
+  is_oneshot: false
 }
 triggers {
   name: "Spawn Tir Floor 1b"
@@ -1637,7 +1678,7 @@ triggers {
   }
   elseActions {
   }
-  is_oneshot: true
+  is_oneshot: false
 }
 triggers {
   name: "Spawn Marine Floor 3a"
@@ -1787,7 +1828,7 @@ triggers {
   }
   elseActions {
   }
-  is_oneshot: true
+  is_oneshot: false
 }
 triggers {
   name: "Spawn Marine Floor 3b"
@@ -1937,7 +1978,7 @@ triggers {
   }
   elseActions {
   }
-  is_oneshot: true
+  is_oneshot: false
 }
 triggers {
   name: "Spawn Marine Floor 2a"
@@ -2075,7 +2116,7 @@ triggers {
         call_value {
           functionName: "Get Map Item (Actor Reference)"
           args {
-            string_value: "53750d896434316b13333633"
+            string_value: "53751b9e6434316b13333637"
           }
         }
       }
@@ -2087,7 +2128,7 @@ triggers {
   }
   elseActions {
   }
-  is_oneshot: true
+  is_oneshot: false
 }
 triggers {
   name: "Spawn Marine Floor 2b"
@@ -2237,7 +2278,7 @@ triggers {
   }
   elseActions {
   }
-  is_oneshot: true
+  is_oneshot: false
 }
 triggers {
   name: "Spawn Marine Floor 1a"
@@ -2375,7 +2416,7 @@ triggers {
         call_value {
           functionName: "Get Map Item (Actor Reference)"
           args {
-            string_value: "53751c8a6434316b1333363c"
+            string_value: "53750d526434316b13333632"
           }
         }
       }
@@ -2387,7 +2428,7 @@ triggers {
   }
   elseActions {
   }
-  is_oneshot: true
+  is_oneshot: false
 }
 triggers {
   name: "Spawn Marine Floor 1b"
@@ -2537,7 +2578,7 @@ triggers {
   }
   elseActions {
   }
-  is_oneshot: true
+  is_oneshot: false
 }
 triggers {
   name: "Check for any living PC deckers"
@@ -2891,6 +2932,39 @@ triggers {
         }
       }
     }
+    ops {
+      functionName: "Set Goal Status"
+      args {
+        call_value {
+          functionName: "Get Map Item (Goal)"
+          args {
+            string_value: "Find proof of your innocence in the Matrix."
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "GoalStatus"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
   }
   isActive: true
   idRef {
@@ -2993,7 +3067,7 @@ triggers {
   }
   elseActions {
   }
-  is_oneshot: true
+  is_oneshot: false
 }
 triggers {
   name: "Stairs Floor 2 to 1"
@@ -3088,7 +3162,7 @@ triggers {
   }
   elseActions {
   }
-  is_oneshot: true
+  is_oneshot: false
 }
 triggers {
   name: "Elevator Floor 2 to 3"
@@ -3183,7 +3257,7 @@ triggers {
   }
   elseActions {
   }
-  is_oneshot: true
+  is_oneshot: false
 }
 triggers {
   name: "Elevator Floor 3 to 2"
@@ -3278,7 +3352,7 @@ triggers {
   }
   elseActions {
   }
-  is_oneshot: true
+  is_oneshot: false
 }
 triggers {
   name: "Omphalos Starts Exiting"
@@ -6360,6 +6434,27 @@ triggers {
         float_value: 0
       }
     }
+    ops {
+      functionName: "Add Camera Point of Interest (Actors)"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Actor)"
+              args {
+                string_value: "537d1e75643431531bbde925"
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        float_value: 5
+      }
+    }
   }
   isActive: true
   idRef {
@@ -8161,6 +8256,479 @@ triggers {
   }
   is_oneshot: true
 }
+triggers {
+  name: "Portal_EmergencyReturn_PC"
+  events {
+    ops {
+      functionName: "On Region Enter"
+      args {
+        call_value {
+          functionName: "Get Map Item (Region)"
+          args {
+            string_value: "5383a7823662368413000807"
+          }
+        }
+      }
+    }
+  }
+  conditions {
+    ops {
+      functionName: "Actor is Player Controlled"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Triggering Actor"
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Compare Actor Race"
+      args {
+        call_value {
+          functionName: "Triggering Actor"
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "Race"
+          }
+          args {
+            int_value: 12
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Actor Has Run Speed"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Triggering Actor"
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "HasOrHasNot"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "RunSpeedMethod"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+  }
+  actions {
+    ops {
+      functionName: "Add Camera Point of Interest (Actors)"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Triggering Actor"
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        float_value: 0
+      }
+    }
+    ops {
+      functionName: "Teleport Actor"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Triggering Actor"
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Random Point Within Region"
+          args {
+            call_value {
+              functionName: "Get Map Item (Region)"
+              args {
+                string_value: "5383a73b3662368413000801"
+              }
+            }
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "FacingDirection"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "TeleportMethod"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Send Event"
+      args {
+        call_value {
+          functionName: "Get Map Item (Event)"
+          args {
+            string_value: "Teleport Baddies"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Play Sound"
+      args {
+        call_value {
+          functionName: "Get Map Item (Sound)"
+          args {
+            string_value: "decker"
+          }
+          args {
+            string_value: "Matrix_TeleportDoor"
+          }
+        }
+      }
+      args {
+        float_value: 1
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "5383a7a33662368413000808"
+  }
+  elseActions {
+  }
+  is_oneshot: false
+}
+triggers {
+  name: "Portal_EmergencyReturn_ESP"
+  events {
+    ops {
+      functionName: "On Region Enter"
+      args {
+        call_value {
+          functionName: "Get Map Item (Region)"
+          args {
+            string_value: "5383a7823662368413000807"
+          }
+        }
+      }
+    }
+  }
+  conditions {
+    ops {
+      functionName: "Actor is Player Controlled"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Triggering Actor"
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Compare Actor Race"
+      args {
+        call_value {
+          functionName: "Triggering Actor"
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "Race"
+          }
+          args {
+            int_value: 12
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Actor Has Run Speed"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Triggering Actor"
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "HasOrHasNot"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "RunSpeedMethod"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+  }
+  actions {
+    ops {
+      functionName: "Add Camera Point of Interest (Actors)"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Triggering Actor"
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        float_value: 0
+      }
+    }
+    ops {
+      functionName: "Teleport Actor"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Triggering Actor"
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Random Point Within Region"
+          args {
+            call_value {
+              functionName: "Get Map Item (Region)"
+              args {
+                string_value: "5383a73b3662368413000801"
+              }
+            }
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "FacingDirection"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "TeleportMethod"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Play Sound"
+      args {
+        call_value {
+          functionName: "Get Map Item (Sound)"
+          args {
+            string_value: "decker"
+          }
+          args {
+            string_value: "Matrix_TeleportDoor"
+          }
+        }
+      }
+      args {
+        float_value: 1
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "5383a7a33662368413000809"
+  }
+  elseActions {
+  }
+  is_oneshot: false
+}
+triggers {
+  name: "Debug Just Hailey"
+  events {
+    ops {
+      functionName: "On Map Start"
+    }
+  }
+  conditions {
+  }
+  actions {
+    ops {
+      functionName: "Activate Actor Spawner"
+      args {
+        call_value {
+          functionName: "Get Map Item (Actor Reference)"
+          args {
+            string_value: "537c251736623648170076c5"
+          }
+        }
+      }
+    }
+  }
+  isActive: false
+  idRef {
+    id: "5383a881366236841300080a"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
 regions {
   name: "Camera 1st Floor"
   position {
@@ -8733,6 +9301,94 @@ regions {
   loop_combat_music: true
   loop_default_music: false
 }
+regions {
+  name: "Teleport Entance Returned"
+  position {
+    x: 46
+    y: 159
+    width: 2
+    height: 1
+  }
+  enabledAtStart: true
+  is_camera_region: false
+  idRef {
+    id: "5383a73b3662368413000801"
+  }
+  highlight_color {
+    r: 0
+    g: 0
+    b: 0
+    a: 1
+  }
+  visible_at_start: false
+  is_teleporter_region: false
+  directional_light_dir {
+    x: -0.5
+    y: -1
+    z: -0.75
+  }
+  directional_light_color {
+    r: 0.50196081
+    g: 0.50196081
+    b: 0.50196081
+    a: 1
+  }
+  ambient_light_color {
+    r: 0.50196081
+    g: 0.50196081
+    b: 0.50196081
+    a: 1
+  }
+  ambience_template: ""
+  combat_music: ""
+  default_music: ""
+  loop_combat_music: true
+  loop_default_music: false
+}
+regions {
+  name: "Teleport Emergency Return"
+  position {
+    x: -13
+    y: 168
+    width: 2
+    height: 1
+  }
+  enabledAtStart: true
+  is_camera_region: false
+  idRef {
+    id: "5383a7823662368413000807"
+  }
+  highlight_color {
+    r: 0
+    g: 0
+    b: 0
+    a: 1
+  }
+  visible_at_start: false
+  is_teleporter_region: false
+  directional_light_dir {
+    x: -0.5
+    y: -1
+    z: -0.75
+  }
+  directional_light_color {
+    r: 0.50196081
+    g: 0.50196081
+    b: 0.50196081
+    a: 1
+  }
+  ambient_light_color {
+    r: 0.50196081
+    g: 0.50196081
+    b: 0.50196081
+    a: 1
+  }
+  ambience_template: ""
+  combat_music: ""
+  default_music: ""
+  loop_combat_music: true
+  loop_default_music: false
+}
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
@@ -8762,7 +9418,7 @@ characters {
         hp: 10
         ap: 0
         armor: 0
-        force: 0
+        force: 9
         morale: 0
         discipline: 0
         awareness: 0
@@ -9224,8 +9880,8 @@ characters {
     equipment {
       prefab_name: "Outfit_Security"
     }
-    team_id: "LoneStar"
-    char_name: "s6h1c4b3c4"
+    team_id: "Marines"
+    char_name: "Marine"
     GeneralTags: "isFloor2Marine"
     GeneralTags: ""
     enabled_at_start: false
@@ -9575,9 +10231,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -109
+    x: -3
     y: 0
-    z: 123
+    z: 22
   }
   orientation: ORIENTATION_E
   displayName: "Hailey"
@@ -9667,9 +10323,9 @@ characters {
 characters {
   name: "system_spawner_playerSpawner"
   gridPoint {
-    x: -110
+    x: -6
     y: 0
-    z: 121
+    z: 22
   }
   orientation: ORIENTATION_E
   idRef {
@@ -10519,6 +11175,726 @@ characters {
     scale_character_sheet: true
   }
 }
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -12
+    y: 0
+    z: 35
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "isFloor1Marine"
+  GeneralTags: ""
+  displayName: "Floor 1 Marine Mage Initial"
+  idRef {
+    id: "5383a98c366236841300080b"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Seattle:Core/HumanMale"
+    character_sheet_id: "Lonestar_Lv1_Human_Mage"
+    equipment_sheet_id: "Lonestar_Lv1_Mage_Gear"
+    character_mod {
+      stats {
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+      }
+      specializations {
+      }
+      archetypeName: "Guard - Hunt And Destroy"
+      vulnerabilities {
+      }
+    }
+    equipment {
+      prefab_name: "Outfit_Security"
+    }
+    team_id: "Marines"
+    char_name: "Marine Mage"
+    GeneralTags: "isFloor1Marine"
+    GeneralTags: ""
+    enabled_at_start: true
+    pc_spawn_number: -1
+    portrait {
+      filename: ""
+    }
+    portrait_code_override: "s6h3c4b4c4"
+    karma: 40
+    scale_character_sheet: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -6
+    y: 0
+    z: 36
+  }
+  orientation: ORIENTATION_W
+  GeneralTags: "isFloor1Marine"
+  GeneralTags: ""
+  displayName: "Floor 1 SMG Initial"
+  idRef {
+    id: "5383a990366236841300080c"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Seattle:Core/HumanMale"
+    character_sheet_id: "Lonestar_Lv1_Heavy_SMG"
+    equipment_sheet_id: "Lonestar_Lv1_SMG_Gear"
+    character_mod {
+      stats {
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+      }
+      specializations {
+      }
+      archetypeName: "Guard - Hunt And Destroy"
+      vulnerabilities {
+      }
+    }
+    equipment {
+      prefab_name: "Outfit_Security"
+    }
+    team_id: "Marines"
+    char_name: "Marine"
+    GeneralTags: "isFloor1Marine"
+    GeneralTags: ""
+    enabled_at_start: true
+    pc_spawn_number: -1
+    portrait {
+      filename: ""
+    }
+    portrait_code_override: "s6h1c4b3c4"
+    karma: 39
+    scale_character_sheet: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -24
+    y: 0
+    z: 40
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "isFloor1Marine"
+  GeneralTags: ""
+  displayName: "Floor 1 Shotgun Initial"
+  idRef {
+    id: "5383ac94366236841300080e"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Seattle:Core/HumanMale"
+    character_sheet_id: "Lonestar_Lv1_Ork_Shotgun"
+    equipment_sheet_id: "Lonestar_Lv1_Shotgun_Gear"
+    character_mod {
+      stats {
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+      }
+      specializations {
+      }
+      vulnerabilities {
+      }
+    }
+    equipment {
+      prefab_name: "Outfit_Security"
+    }
+    team_id: "Marines"
+    char_name: "Marine"
+    GeneralTags: "isFloor1Marine"
+    GeneralTags: ""
+    enabled_at_start: true
+    pc_spawn_number: -1
+    portrait {
+      filename: ""
+    }
+    karma: 33
+    scale_character_sheet: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -19
+    y: 0
+    z: 52
+  }
+  orientation: ORIENTATION_W
+  GeneralTags: "isFloor1Marine"
+  GeneralTags: ""
+  displayName: "Floor 1 Marine Captain Initial"
+  idRef {
+    id: "5383ad0a3662368413000810"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Seattle:Core/HumanMale"
+    character_sheet_id: "Lonestar_Lv1_Captain"
+    equipment_sheet_id: "Lonestar_Lv1_Captain_Gear"
+    character_mod {
+      stats {
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+      }
+      specializations {
+      }
+      vulnerabilities {
+      }
+    }
+    equipment {
+      prefab_name: "Outfit_Security"
+    }
+    team_id: "Marines"
+    char_name: "Marine"
+    GeneralTags: "isFloor1Marine"
+    GeneralTags: ""
+    enabled_at_start: true
+    pc_spawn_number: -1
+    portrait {
+      filename: ""
+    }
+    portrait_code_override: "s6h6c4b1c4"
+    karma: 44
+    scale_character_sheet: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -54
+    y: 0
+    z: 68
+  }
+  orientation: ORIENTATION_E
+  GeneralTags: "isFloor2Marine"
+  GeneralTags: ""
+  displayName: "Floor 2 Marine Pistol Initial"
+  idRef {
+    id: "5383ad393662368413000811"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Seattle:Core/HumanMale"
+    character_sheet_id: "Lonestar_Lv1_Human_Pistol"
+    equipment_sheet_id: "Lonestar_Lv1_Pistol_Gear"
+    character_mod {
+      stats {
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        magic: 0
+        hp: 0
+        ap: 0
+        armor: 0
+        force: 0
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+        ranged_combat: 0
+        close_combat: 0
+        throwing_weapons: 0
+        spellcasting: 0
+        decking: 0
+        conjuring: 0
+        spirit_summoning: 0
+        drone_control: 0
+        biotech: 0
+        dodge: 0
+        etiquette_corporate: 0
+        etiquette_security: 0
+        etiquette_gang: 0
+        etiquette_socialite: 0
+        chi_casting: 0
+        etiquette_shadowrunner: 0
+        etiquette_street: 0
+        etiquette_academic: 0
+      }
+      specializations {
+        pistol: 0
+        rifle: 0
+        shotgun: 0
+        smg: 0
+        edged: 0
+        unarmed: 0
+        spirit_control: 0
+        esp_control: 0
+        drone_combat: 0
+      }
+      archetypeName: "Guard - Seek And Destroy"
+      attitude: AttitudeAggressive
+      vulnerabilities {
+      }
+    }
+    equipment {
+      prefab_name: "Outfit_Security"
+    }
+    team_id: "Marines"
+    char_name: "Marine"
+    GeneralTags: "isFloor2Marine"
+    GeneralTags: ""
+    enabled_at_start: true
+    pc_spawn_number: -1
+    portrait {
+      filename: ""
+    }
+    portrait_code_override: "s6h1c4b2c4"
+    karma: 30
+    scale_character_sheet: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -63
+    y: 0
+    z: 74
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "isFloor2Marine"
+  GeneralTags: ""
+  displayName: "Floor 2 Marine Captain Initial"
+  idRef {
+    id: "5383ad393662368413000812"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Seattle:Core/HumanMale"
+    character_sheet_id: "Lonestar_Lv1_Captain"
+    equipment_sheet_id: "Lonestar_Lv1_Captain_Gear"
+    character_mod {
+      stats {
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+      }
+      specializations {
+      }
+      vulnerabilities {
+      }
+    }
+    equipment {
+      prefab_name: "Outfit_Security"
+    }
+    team_id: "Marines"
+    char_name: "Marine"
+    GeneralTags: "isFloor2Marine"
+    GeneralTags: ""
+    enabled_at_start: true
+    pc_spawn_number: -1
+    portrait {
+      filename: ""
+    }
+    portrait_code_override: "s6h6c4b1c4"
+    karma: 44
+    scale_character_sheet: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -78
+    y: 0
+    z: 83
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "isFloor2Marine"
+  GeneralTags: ""
+  displayName: "Floor 2 SMG Initial"
+  idRef {
+    id: "5383ad5b3662368413000813"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Seattle:Core/HumanMale"
+    character_sheet_id: "Lonestar_Lv1_Heavy_SMG"
+    equipment_sheet_id: "Lonestar_Lv1_SMG_Gear"
+    character_mod {
+      stats {
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+      }
+      specializations {
+      }
+      vulnerabilities {
+      }
+    }
+    equipment {
+      prefab_name: "Outfit_Security"
+    }
+    team_id: "Marines"
+    char_name: "Marine"
+    GeneralTags: "isFloor2Marine"
+    GeneralTags: ""
+    enabled_at_start: true
+    pc_spawn_number: -1
+    portrait {
+      filename: ""
+    }
+    portrait_code_override: "s6h1c4b3c4"
+    karma: 39
+    scale_character_sheet: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -77
+    y: 0
+    z: 90
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "isFloor2Marine"
+  GeneralTags: ""
+  displayName: "Floor 2 Marine Pistol Initial"
+  idRef {
+    id: "5383ad793662368413000814"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Seattle:Core/HumanMale"
+    character_sheet_id: "Lonestar_Lv1_Human_Pistol"
+    equipment_sheet_id: "Lonestar_Lv1_Pistol_Gear"
+    character_mod {
+      stats {
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        magic: 0
+        hp: 0
+        ap: 0
+        armor: 0
+        force: 0
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+        ranged_combat: 0
+        close_combat: 0
+        throwing_weapons: 0
+        spellcasting: 0
+        decking: 0
+        conjuring: 0
+        spirit_summoning: 0
+        drone_control: 0
+        biotech: 0
+        dodge: 0
+        etiquette_corporate: 0
+        etiquette_security: 0
+        etiquette_gang: 0
+        etiquette_socialite: 0
+        chi_casting: 0
+        etiquette_shadowrunner: 0
+        etiquette_street: 0
+        etiquette_academic: 0
+      }
+      specializations {
+        pistol: 0
+        rifle: 0
+        shotgun: 0
+        smg: 0
+        edged: 0
+        unarmed: 0
+        spirit_control: 0
+        esp_control: 0
+        drone_combat: 0
+      }
+      archetypeName: "Guard - Seek And Destroy"
+      attitude: AttitudeAggressive
+      vulnerabilities {
+      }
+    }
+    equipment {
+      prefab_name: "Outfit_Security"
+    }
+    team_id: "Marines"
+    char_name: "Marine"
+    GeneralTags: "isFloor2Marine"
+    GeneralTags: ""
+    enabled_at_start: true
+    pc_spawn_number: -1
+    portrait {
+      filename: ""
+    }
+    portrait_code_override: "s6h1c4b2c4"
+    karma: 30
+    scale_character_sheet: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -98
+    y: 0
+    z: 141
+  }
+  orientation: ORIENTATION_N
+  GeneralTags: "isFloor3Marine"
+  GeneralTags: ""
+  displayName: "Floor 3 SMG Initial"
+  idRef {
+    id: "5383ade53662368413000815"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Seattle:Core/HumanMale"
+    character_sheet_id: "Lonestar_Lv1_Heavy_SMG"
+    equipment_sheet_id: "Lonestar_Lv1_SMG_Gear"
+    character_mod {
+      stats {
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+      }
+      specializations {
+      }
+      archetypeName: "Guard - Hunt And Destroy"
+      vulnerabilities {
+      }
+    }
+    equipment {
+      prefab_name: "Outfit_Security"
+    }
+    team_id: "Marines"
+    char_name: "Marine"
+    GeneralTags: "isFloor3Marine"
+    GeneralTags: ""
+    enabled_at_start: true
+    pc_spawn_number: -1
+    portrait {
+      filename: ""
+    }
+    portrait_code_override: "s6h1c4b3c4"
+    karma: 39
+    scale_character_sheet: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -109
+    y: 0
+    z: 132
+  }
+  orientation: ORIENTATION_N
+  GeneralTags: "isFloor3Marine"
+  GeneralTags: ""
+  displayName: "Floor 3 Marine Mage Initial"
+  idRef {
+    id: "5383ade53662368413000816"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Seattle:Core/HumanMale"
+    character_sheet_id: "Lonestar_Lv1_Human_Mage"
+    equipment_sheet_id: "Lonestar_Lv1_Mage_Gear"
+    character_mod {
+      stats {
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+      }
+      specializations {
+      }
+      archetypeName: "Guard - Hunt And Destroy"
+      vulnerabilities {
+      }
+    }
+    equipment {
+      prefab_name: "Outfit_Security"
+    }
+    team_id: "Marines"
+    char_name: "Marine Mage"
+    GeneralTags: "isFloor3Marine"
+    GeneralTags: ""
+    enabled_at_start: true
+    pc_spawn_number: -1
+    portrait {
+      filename: ""
+    }
+    portrait_code_override: "s6h3c4b4c4"
+    karma: 40
+    scale_character_sheet: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -120
+    y: 0
+    z: 130
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "isFloor3Marine"
+  GeneralTags: ""
+  displayName: "Floor 3 Shotgun Initial"
+  idRef {
+    id: "5383ade53662368413000817"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Seattle:Core/HumanMale"
+    character_sheet_id: "Lonestar_Lv1_Ork_Shotgun"
+    equipment_sheet_id: "Lonestar_Lv1_Shotgun_Gear"
+    character_mod {
+      stats {
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+      }
+      specializations {
+      }
+      vulnerabilities {
+      }
+    }
+    equipment {
+      prefab_name: "Outfit_Security"
+    }
+    team_id: "Marines"
+    char_name: "Marine"
+    GeneralTags: "isFloor3Marine"
+    GeneralTags: ""
+    enabled_at_start: true
+    pc_spawn_number: -1
+    portrait {
+      filename: ""
+    }
+    karma: 33
+    scale_character_sheet: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -115
+    y: 0
+    z: 145
+  }
+  orientation: ORIENTATION_N
+  GeneralTags: "isFloor3Marine"
+  GeneralTags: ""
+  displayName: "Floor 3 Marine Captain Initial"
+  idRef {
+    id: "5383ade53662368413000818"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Seattle:Core/HumanMale"
+    character_sheet_id: "Lonestar_Lv1_Captain"
+    equipment_sheet_id: "Lonestar_Lv1_Captain_Gear"
+    character_mod {
+      stats {
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+      }
+      specializations {
+      }
+      vulnerabilities {
+      }
+    }
+    equipment {
+      prefab_name: "Outfit_Security"
+    }
+    team_id: "Marines"
+    char_name: "Marine"
+    GeneralTags: "isFloor3Marine"
+    GeneralTags: ""
+    enabled_at_start: true
+    pc_spawn_number: -1
+    portrait {
+      filename: ""
+    }
+    portrait_code_override: "s6h6c4b1c4"
+    karma: 44
+    scale_character_sheet: true
+  }
+}
 variables {
   bool_value: false
   variableref_value {
@@ -10587,7 +11963,7 @@ senseTags: "isLazarus"
 goals {
   name: "Keep at least one decker on your team alive."
   type: GoalType_Primary
-  status: GoalStatus_Success
+  status: GoalStatus_Started
 }
 goals {
   name: "Leave Eclipse."
