@@ -7806,9 +7806,6 @@ triggers {
   }
   actions {
     ops {
-      functionName: "Trigger: Wait for Triggers"
-    }
-    ops {
       functionName: "Order Actor to Move To (Region)"
       args {
         call_value {
@@ -16289,12 +16286,12 @@ worldMapLocation {
 }
 mapName: "Shasta Dam"
 parentStory: ""
-scene_title: "New Scene"
+scene_title: "The Battle of Shasta Dam"
 scene_subtitle: ""
-scene_synopsis: ""
+scene_synopsis: "Gunshots! Explosions! You bolt from your bed and race to the armory. This is it. The invasion has started, and the war with Tir Tairngire is upon you.\n\nWeeks of preparation and training have transformed your motley band of raw recruits into a disciplined fighting force. Well-drilled, they seize their weapons and follow you into the bloody night. Frantic communications from your perimeter guards direct you to your fortifications at Shasta Dam, the boundary between Tir\342\200\231s wilderness and Redding\342\200\231s resistance.\n\nYour heart sinks as you see waves of rotorcraft descending. No matter how much you prepared, you couldn\342\200\231t have hoped to win this battle. All you can do is seek to delay them, make them pay, and hope that Kali\342\200\231s promised reinforcements arrive before every last defender is wiped out."
 scene_image: ""
 scene_continue_button_skip: false
-scene_restore_runner_health: false
+scene_restore_runner_health: true
 directional_light_dir {
   x: -0.5
   y: -1
@@ -16373,8 +16370,6 @@ scene_dimensions {
   initial_alarm_state: 20
   turns_per_round: 3
 }
-character_roster {
-}
 show_hiring_screen_on_scene_load: false
 scene_hiring_prerequisites {
   prereq_description: ""
@@ -16390,5 +16385,5 @@ use_hiring_cost_warning: false
 hiring_average_cost: 99999
 override_hiring_average_cost: true
 show_equip_screen_on_scene_load: false
-can_move_outside_camera_regions: true
-can_start_before_triggers: true
+can_move_outside_camera_regions: false
+can_start_before_triggers: false
