@@ -100,6 +100,23 @@ triggers {
         int_value: 1
       }
     }
+    ops {
+      functionName: "Set Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (int)"
+          args {
+            string_value: "531d26a736623648180018bf"
+          }
+          args {
+            string_value: "Global_MissionState_Colma"
+          }
+        }
+      }
+      args {
+        int_value: 2
+      }
+    }
   }
   isActive: true
   idRef {

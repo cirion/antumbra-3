@@ -112,6 +112,44 @@ triggers {
         }
       }
     }
+    ops {
+      functionName: "Kill Actor"
+      args {
+        call_value {
+          functionName: "All Actors With Tag"
+          args {
+            call_value {
+              functionName: "Get Map Item (SenseTagList)"
+              args {
+                string_value: "preLoader"
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Preset Value (int)"
+              args {
+                string_value: "AllOrAny"
+              }
+              args {
+                int_value: 0
+              }
+            }
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "DeathMethod"
+          }
+          args {
+            int_value: 3
+          }
+        }
+      }
+    }
   }
   isActive: true
   idRef {
@@ -11892,6 +11930,634 @@ characters {
     }
     portrait_code_override: "s6h6c4b1c4"
     karma: 44
+    scale_character_sheet: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -138
+    y: 0
+    z: 122
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "preLoader"
+  displayName: "Pre Loader 1"
+  idRef {
+    id: "53850b9e6434312404d12f0c"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Seattle:Core/HumanMale"
+    character_sheet_id: "Lonestar_Lv1_Human_Mage"
+    equipment_sheet_id: "Lonestar_Lv1_Mage_Gear"
+    character_mod {
+      stats {
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+      }
+      specializations {
+      }
+      vulnerabilities {
+      }
+    }
+    equipment {
+      prefab_name: "Outfit_Security"
+    }
+    team_id: "Marines"
+    char_name: "Marine Mage"
+    GeneralTags: "preLoader"
+    enabled_at_start: true
+    pc_spawn_number: -1
+    portrait {
+      filename: ""
+    }
+    portrait_code_override: "s6h3c4b4c4"
+    karma: 40
+    scale_character_sheet: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -138
+    y: 0
+    z: 121
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "preLoader"
+  displayName: "Pre Loader Floor 3 Tir Melee Spawner"
+  idRef {
+    id: "53850ba16434312404d12f0d"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Berlin:Gangers/ElfMaleBerlinGanger"
+    character_sheet_id: "Generic_Lv1_Human_Melee"
+    equipment_sheet_id: "Generic_Lv1_Melee_Gear"
+    character_mod {
+      stats {
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+      }
+      specializations {
+      }
+      vulnerabilities {
+      }
+    }
+    team_id: "Tir"
+    char_name: "Tir Commando"
+    GeneralTags: "preLoader"
+    enabled_at_start: true
+    pc_spawn_number: -1
+    portrait {
+      filename: ""
+    }
+    karma: 28
+    scale_character_sheet: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -138
+    y: 0
+    z: 120
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "preLoader"
+  displayName: "Pre Loader Floor 3 SMG Spawner"
+  idRef {
+    id: "53850ba36434312404d12f0e"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Seattle:Core/HumanMale"
+    character_sheet_id: "Lonestar_Lv1_Heavy_SMG"
+    equipment_sheet_id: "Lonestar_Lv1_SMG_Gear"
+    character_mod {
+      stats {
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+      }
+      specializations {
+      }
+      vulnerabilities {
+      }
+    }
+    equipment {
+      prefab_name: "Outfit_Security"
+    }
+    team_id: "Marines"
+    char_name: "Marine"
+    GeneralTags: "preLoader"
+    enabled_at_start: true
+    pc_spawn_number: -1
+    portrait {
+      filename: ""
+    }
+    portrait_code_override: "s6h1c4b3c4"
+    karma: 39
+    scale_character_sheet: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -138
+    y: 0
+    z: 119
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "preLoader"
+  displayName: "Pre Loader Floor 3 Tir Pistol Spawner"
+  idRef {
+    id: "53850ba66434312404d12f0f"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Berlin:Gangers/ElfFemaleBerlinGanger"
+    character_sheet_id: "Lonestar_Lv1_Human_Pistol"
+    equipment_sheet_id: "Lonestar_Lv1_Pistol_Gear"
+    character_mod {
+      stats {
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+      }
+      specializations {
+      }
+      vulnerabilities {
+      }
+    }
+    team_id: "Tir"
+    char_name: "Tir Commando"
+    GeneralTags: "preLoader"
+    enabled_at_start: true
+    pc_spawn_number: -1
+    portrait {
+      filename: ""
+    }
+    karma: 30
+    scale_character_sheet: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -137
+    y: 0
+    z: 122
+  }
+  orientation: ORIENTATION_N
+  GeneralTags: "preLoader"
+  displayName: "Pre Loader Floor 2 Tir Melee Spawner"
+  idRef {
+    id: "53850bb86434312404d12f10"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Seattle:Gangers/ElfMaleGangerEyepatch"
+    character_sheet_id: "Generic_Lv1_Human_Melee"
+    equipment_sheet_id: "Generic_Lv1_Melee_Gear"
+    character_mod {
+      stats {
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+      }
+      specializations {
+      }
+      vulnerabilities {
+      }
+    }
+    team_id: "Tir"
+    char_name: "Tir Commando"
+    GeneralTags: "preLoader"
+    enabled_at_start: true
+    pc_spawn_number: -1
+    portrait {
+      filename: ""
+    }
+    karma: 28
+    scale_character_sheet: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -137
+    y: 0
+    z: 121
+  }
+  orientation: ORIENTATION_N
+  GeneralTags: "preLoader"
+  displayName: "Pre Loader Floor 2 Shotgun Spawner"
+  idRef {
+    id: "53850bb86434312404d12f11"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Seattle:Core/HumanMale"
+    character_sheet_id: "Lonestar_Lv1_Ork_Shotgun"
+    equipment_sheet_id: "Lonestar_Lv1_Shotgun_Gear"
+    character_mod {
+      stats {
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+      }
+      specializations {
+      }
+      vulnerabilities {
+      }
+    }
+    equipment {
+      prefab_name: "Outfit_Security"
+    }
+    team_id: "Marines"
+    char_name: "Marine"
+    GeneralTags: "preLoader"
+    enabled_at_start: true
+    pc_spawn_number: -1
+    portrait {
+      filename: ""
+    }
+    karma: 33
+    scale_character_sheet: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -137
+    y: 0
+    z: 120
+  }
+  orientation: ORIENTATION_N
+  GeneralTags: "preLoader"
+  displayName: "Pre Loader Floor 2 Tir Captain Spawner"
+  idRef {
+    id: "53850bb96434312404d12f12"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Seattle:Gangers/ElfFemaleGangerMohawk"
+    character_sheet_id: "Lonestar_Lv1_Captain"
+    equipment_sheet_id: "Lonestar_Lv1_Captain_Gear"
+    character_mod {
+      stats {
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+      }
+      specializations {
+      }
+      vulnerabilities {
+      }
+    }
+    team_id: "Tir"
+    char_name: "Tir Commando"
+    GeneralTags: "preLoader"
+    enabled_at_start: true
+    pc_spawn_number: -1
+    portrait {
+      filename: ""
+    }
+    karma: 44
+    scale_character_sheet: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -137
+    y: 0
+    z: 119
+  }
+  orientation: ORIENTATION_N
+  GeneralTags: "preLoader"
+  displayName: "Pre Loader Floor 2 Mage Spawner"
+  idRef {
+    id: "53850bb96434312404d12f13"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Seattle:Core/HumanMale"
+    character_sheet_id: "Lonestar_Lv1_Human_Mage"
+    equipment_sheet_id: "Lonestar_Lv1_Mage_Gear"
+    character_mod {
+      stats {
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+      }
+      specializations {
+      }
+      vulnerabilities {
+      }
+    }
+    equipment {
+      prefab_name: "Outfit_Security"
+    }
+    team_id: "Marines"
+    char_name: "Marine Mage"
+    GeneralTags: "preLoader"
+    enabled_at_start: true
+    pc_spawn_number: -1
+    portrait {
+      filename: ""
+    }
+    portrait_code_override: "s5h7c4b5c4"
+    karma: 40
+    scale_character_sheet: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -136
+    y: 0
+    z: 119
+  }
+  orientation: ORIENTATION_E
+  GeneralTags: "preLoader"
+  displayName: "Pre Loader Floor 1 Marine Pistol Spawner"
+  idRef {
+    id: "53850bd06434312404d12f14"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Seattle:Core/HumanMale"
+    character_sheet_id: "Lonestar_Lv1_Human_Pistol"
+    equipment_sheet_id: "Lonestar_Lv1_Pistol_Gear"
+    character_mod {
+      stats {
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        magic: 0
+        hp: 0
+        ap: 0
+        armor: 0
+        force: 0
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+        ranged_combat: 0
+        close_combat: 0
+        throwing_weapons: 0
+        spellcasting: 0
+        decking: 0
+        conjuring: 0
+        spirit_summoning: 0
+        drone_control: 0
+        biotech: 0
+        dodge: 0
+        etiquette_corporate: 0
+        etiquette_security: 0
+        etiquette_gang: 0
+        etiquette_socialite: 0
+        chi_casting: 0
+        etiquette_shadowrunner: 0
+        etiquette_street: 0
+        etiquette_academic: 0
+      }
+      specializations {
+        pistol: 0
+        rifle: 0
+        shotgun: 0
+        smg: 0
+        edged: 0
+        unarmed: 0
+        spirit_control: 0
+        esp_control: 0
+        drone_combat: 0
+      }
+      archetypeName: "Guard - Seek And Destroy"
+      attitude: AttitudeAggressive
+      vulnerabilities {
+      }
+    }
+    equipment {
+      prefab_name: "Outfit_Security"
+    }
+    team_id: "Marines"
+    char_name: "Marine"
+    GeneralTags: "preLoader"
+    enabled_at_start: true
+    pc_spawn_number: -1
+    portrait {
+      filename: ""
+    }
+    portrait_code_override: "s6h1c4b2c4"
+    karma: 30
+    scale_character_sheet: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -136
+    y: 0
+    z: 120
+  }
+  orientation: ORIENTATION_E
+  GeneralTags: "preLoader"
+  displayName: "Pre Loader Floor 1 Tir Mage Spawner"
+  idRef {
+    id: "53850bd06434312404d12f15"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Seattle:Standard/ElfMaleGanger"
+    character_sheet_id: "Lonestar_Lv1_Human_Mage"
+    equipment_sheet_id: "Lonestar_Lv1_Mage_Gear"
+    character_mod {
+      stats {
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+      }
+      specializations {
+      }
+      vulnerabilities {
+      }
+    }
+    team_id: "Tir"
+    char_name: "Tir Mage"
+    GeneralTags: "preLoader"
+    enabled_at_start: true
+    pc_spawn_number: -1
+    portrait {
+      filename: ""
+    }
+    karma: 40
+    scale_character_sheet: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -136
+    y: 0
+    z: 121
+  }
+  orientation: ORIENTATION_E
+  GeneralTags: "preLoader"
+  displayName: "Pre Loader Floor 1 Marine Captain Spawner"
+  idRef {
+    id: "53850bd06434312404d12f16"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Seattle:Core/HumanMale"
+    character_sheet_id: "Lonestar_Lv1_Captain"
+    equipment_sheet_id: "Lonestar_Lv1_Captain_Gear"
+    character_mod {
+      stats {
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+      }
+      specializations {
+      }
+      vulnerabilities {
+      }
+    }
+    equipment {
+      prefab_name: "Outfit_Security"
+    }
+    team_id: "Marines"
+    char_name: "Marine"
+    GeneralTags: "preLoader"
+    enabled_at_start: true
+    pc_spawn_number: -1
+    portrait {
+      filename: ""
+    }
+    portrait_code_override: "s6h6c4b1c4"
+    karma: 44
+    scale_character_sheet: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -136
+    y: 0
+    z: 122
+  }
+  orientation: ORIENTATION_E
+  GeneralTags: "isFloor1Tir"
+  displayName: "Pre Loader Floor 1 Tir SMG Spawner"
+  idRef {
+    id: "53850bd06434312404d12f17"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Seattle:Standard/ElfFemaleStreetSamurai"
+    character_sheet_id: "Lonestar_Lv1_Heavy_SMG"
+    equipment_sheet_id: "Lonestar_Lv1_SMG_Gear"
+    character_mod {
+      stats {
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+      }
+      specializations {
+      }
+      vulnerabilities {
+      }
+    }
+    team_id: "Tir"
+    char_name: "Tir Commando"
+    GeneralTags: "isFloor1Tir"
+    enabled_at_start: true
+    pc_spawn_number: -1
+    portrait {
+      filename: ""
+    }
+    karma: 39
     scale_character_sheet: true
   }
 }

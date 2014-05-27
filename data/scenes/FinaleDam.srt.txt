@@ -301,6 +301,44 @@ triggers {
         }
       }
     }
+    ops {
+      functionName: "Kill Actor"
+      args {
+        call_value {
+          functionName: "All Actors With Tag"
+          args {
+            call_value {
+              functionName: "Get Map Item (SenseTagList)"
+              args {
+                string_value: "isPreloaded"
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Preset Value (int)"
+              args {
+                string_value: "AllOrAny"
+              }
+              args {
+                int_value: 0
+              }
+            }
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "DeathMethod"
+          }
+          args {
+            int_value: 3
+          }
+        }
+      }
+    }
   }
   isActive: true
   idRef {
@@ -13432,8 +13470,8 @@ regions {
 regions {
   name: "Tabitha Healing Mark"
   position {
-    x: -54
-    y: -47
+    x: -53
+    y: -45
     width: 3
     height: 3
   }
@@ -13520,7 +13558,7 @@ regions {
 regions {
   name: "Hans Mark"
   position {
-    x: -62
+    x: -61
     y: -45
     width: 3
     height: 3
@@ -16125,6 +16163,241 @@ characters {
     has_fist: false
   }
 }
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -57
+    y: 0
+    z: -51
+  }
+  orientation: ORIENTATION_N
+  GeneralTags: "isPreloaded"
+  displayName: "Preloaded Tir Soldier - Shotgun"
+  idRef {
+    id: "53850e246434312404d12f54"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Seattle:Story/TirTairngireGuard"
+    character_sheet_id: "Lonestar_Lv1_Ork_Shotgun"
+    equipment_sheet_id: "Lonestar_Lv1_Shotgun_Gear"
+    character_mod {
+      stats {
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+      }
+      specializations {
+      }
+      vulnerabilities {
+      }
+    }
+    team_id: "Tir"
+    char_name: "Tir Soldier"
+    GeneralTags: "isPreloaded"
+    enabled_at_start: true
+    pc_spawn_number: -1
+    portrait {
+      filename: ""
+    }
+    karma: 33
+    scale_character_sheet: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -58
+    y: 0
+    z: -52
+  }
+  orientation: ORIENTATION_N
+  GeneralTags: "isPreloaded"
+  displayName: "Preloaded Tir Mage"
+  idRef {
+    id: "53850e246434312404d12f55"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Berlin:Aztechnology/ElfMaleAztechBloodMage"
+    character_sheet_id: "Lonestar_Lv1_Human_Mage"
+    equipment_sheet_id: "Lonestar_Lv1_Mage_Gear"
+    character_mod {
+      stats {
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+      }
+      specializations {
+      }
+      vulnerabilities {
+      }
+    }
+    team_id: "Tir"
+    char_name: "Tir Mage"
+    GeneralTags: "isPreloaded"
+    enabled_at_start: true
+    pc_spawn_number: -1
+    portrait {
+      filename: ""
+    }
+    karma: 40
+    scale_character_sheet: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -57
+    y: 0
+    z: -50
+  }
+  orientation: ORIENTATION_N
+  GeneralTags: "isPreloaded"
+  displayName: "Preloaded Tir Captain"
+  idRef {
+    id: "53850e246434312404d12f56"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Berlin:Aztechnology/ElfMaleAztechGuard"
+    character_sheet_id: "Lonestar_Lv1_Captain"
+    equipment_sheet_id: "Lonestar_Lv1_Captain_Gear"
+    character_mod {
+      stats {
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+      }
+      specializations {
+      }
+      vulnerabilities {
+      }
+    }
+    team_id: "Tir"
+    char_name: "Tir Captain"
+    GeneralTags: "isPreloaded"
+    enabled_at_start: true
+    pc_spawn_number: -1
+    portrait {
+      filename: ""
+    }
+    karma: 44
+    scale_character_sheet: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -58
+    y: 0
+    z: -51
+  }
+  orientation: ORIENTATION_N
+  GeneralTags: "isPreloaded"
+  displayName: "Preloaded Tir Soldier - SMG"
+  idRef {
+    id: "53850e246434312404d12f57"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Seattle:Story/TirTairngireGuard"
+    character_sheet_id: "Lonestar_Lv1_Heavy_SMG"
+    equipment_sheet_id: "Lonestar_Lv1_SMG_Gear"
+    character_mod {
+      stats {
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+      }
+      specializations {
+      }
+      vulnerabilities {
+      }
+    }
+    team_id: "Tir"
+    char_name: "Tir Soldier"
+    GeneralTags: "isPreloaded"
+    enabled_at_start: true
+    pc_spawn_number: -1
+    portrait {
+      filename: ""
+    }
+    karma: 39
+    scale_character_sheet: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -58
+    y: 0
+    z: -50
+  }
+  orientation: ORIENTATION_N
+  GeneralTags: "isPreloaded"
+  displayName: "Preloaded Tir Soldier - Pistol"
+  idRef {
+    id: "53850e246434312404d12f58"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Seattle:Story/TirTairngireGuard"
+    character_sheet_id: "Lonestar_Lv1_Human_Pistol"
+    equipment_sheet_id: "Lonestar_Lv1_Pistol_Gear"
+    character_mod {
+      stats {
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+      }
+      specializations {
+      }
+      vulnerabilities {
+      }
+    }
+    team_id: "Tir"
+    char_name: "Tir Soldier"
+    GeneralTags: "isPreloaded"
+    enabled_at_start: true
+    pc_spawn_number: -1
+    portrait {
+      filename: ""
+    }
+    karma: 30
+    scale_character_sheet: true
+  }
+}
 variables {
   string_value: ""
   variableref_value {
@@ -16369,6 +16642,8 @@ scene_dimensions {
   dimension_name: "Matrix"
   initial_alarm_state: 20
   turns_per_round: 3
+}
+character_roster {
 }
 show_hiring_screen_on_scene_load: false
 scene_hiring_prerequisites {
