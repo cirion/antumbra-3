@@ -16357,11 +16357,12 @@ props {
 props {
   name: "undergroundBase_wall_rockEdge01"
   gridPoint {
-    x: 10
+    x: 11
     y: 0
-    z: 7
+    z: 8
   }
   orientation: ORIENTATION_E
+  GeneralTags: "wall1"
   displayName: "Barrier Wall 1"
   idRef {
     id: "537bdbf66434310a674f325a"
@@ -16442,11 +16443,12 @@ props {
 props {
   name: "undergroundBase_wall_rockEdge01"
   gridPoint {
-    x: -3
+    x: -7
     y: 0
-    z: 10
+    z: 11
   }
   orientation: ORIENTATION_S
+  GeneralTags: "wall2"
   displayName: "Barrier Wall 2"
   idRef {
     id: "537bdd926434310a674f3265"
@@ -16490,7 +16492,7 @@ props {
   gridPoint {
     x: -3
     y: 0
-    z: 12
+    z: 10
   }
   orientation: ORIENTATION_S
   idRef {
@@ -16503,7 +16505,7 @@ props {
   gridPoint {
     x: -21
     y: 0
-    z: -4
+    z: -2
   }
   orientation: ORIENTATION_S
   displayName: "Barrier Wall 3"
@@ -16523,7 +16525,7 @@ props {
   gridPoint {
     x: -21
     y: 0
-    z: -2
+    z: -4
   }
   orientation: ORIENTATION_S
   idRef {
@@ -17362,5 +17364,37 @@ props {
     z: 11
   }
   orientation: ORIENTATION_E
+  GeneralTags: "wall1"
+  displayName: "caverns_wall_shootable01 1"
+  idRef {
+    id: "538418613662360414007366"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    dummyInteraciton {
+    }
+  }
+  lod: 0
+}
+props {
+  name: "caverns_wall_shootable01"
+  gridPoint {
+    x: -3
+    y: 0
+    z: 12
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "wall2"
+  displayName: "caverns_wall_shootable01 2"
+  idRef {
+    id: "538419613662360414007368"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    dummyInteraciton {
+    }
+  }
   lod: 0
 }

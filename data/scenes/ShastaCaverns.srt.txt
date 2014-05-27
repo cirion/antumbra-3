@@ -801,7 +801,7 @@ triggers {
             call_value {
               functionName: "Get Map Item (Prop)"
               args {
-                string_value: "537bdbf66434310a674f325a"
+                string_value: "538418613662360414007366"
               }
             }
           }
@@ -809,12 +809,48 @@ triggers {
       }
     }
     ops {
-      functionName: "Delete Prop"
+      functionName: "Delete Props by Tag"
       args {
         call_value {
-          functionName: "Get Map Item (Prop)"
+          functionName: "Get Map Item (SenseTagList)"
           args {
-            string_value: "537bdbf66434310a674f325a"
+            string_value: "wall1"
+          }
+        }
+      }
+      args {
+        float_value: -1
+      }
+      args {
+        call_value {
+          functionName: "Everywhere"
+        }
+      }
+    }
+    ops {
+      functionName: "Play Sound"
+      args {
+        call_value {
+          functionName: "Get Map Item (Sound)"
+          args {
+            string_value: "props"
+          }
+          args {
+            string_value: "Door_RockSlide"
+          }
+        }
+      }
+      args {
+        float_value: 1
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 0
           }
         }
       }
@@ -5281,7 +5317,7 @@ triggers {
             call_value {
               functionName: "Get Map Item (Prop)"
               args {
-                string_value: "537bdd926434310a674f3265"
+                string_value: "538419613662360414007368"
               }
             }
           }
@@ -5289,12 +5325,48 @@ triggers {
       }
     }
     ops {
-      functionName: "Delete Prop"
+      functionName: "Delete Props by Tag"
       args {
         call_value {
-          functionName: "Get Map Item (Prop)"
+          functionName: "Get Map Item (SenseTagList)"
           args {
-            string_value: "537bdd926434310a674f3265"
+            string_value: "wall2"
+          }
+        }
+      }
+      args {
+        float_value: -1
+      }
+      args {
+        call_value {
+          functionName: "Everywhere"
+        }
+      }
+    }
+    ops {
+      functionName: "Play Sound"
+      args {
+        call_value {
+          functionName: "Get Map Item (Sound)"
+          args {
+            string_value: "props"
+          }
+          args {
+            string_value: "Door_RockSlide"
+          }
+        }
+      }
+      args {
+        float_value: 1
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 0
           }
         }
       }
@@ -5370,15 +5442,35 @@ triggers {
       }
     }
     ops {
-      functionName: "Delete Prop"
+      functionName: "Play Sound"
       args {
         call_value {
-          functionName: "Get Map Item (Prop)"
+          functionName: "Get Map Item (Sound)"
           args {
-            string_value: "537bde5c6434310a674f3270"
+            string_value: "props"
+          }
+          args {
+            string_value: "Door_RockSlide"
           }
         }
       }
+      args {
+        float_value: 1
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "No Effect"
     }
   }
   isActive: true
@@ -6336,9 +6428,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -2
+    x: -4
     y: 0
-    z: 11
+    z: 13
   }
   orientation: ORIENTATION_S
   displayName: "Wall 2"
@@ -6423,7 +6515,7 @@ characters {
   gridPoint {
     x: -22
     y: 0
-    z: -4
+    z: -3
   }
   orientation: ORIENTATION_S
   displayName: "Wall 3"
@@ -7358,9 +7450,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 15
+    x: 12
     y: 0
-    z: 21
+    z: 18
   }
   orientation: ORIENTATION_W
   GeneralTags: "isDorbi"
@@ -7450,9 +7542,9 @@ characters {
 characters {
   name: "system_spawner_playerSpawner"
   gridPoint {
-    x: 13
+    x: 10
     y: 0
-    z: 19
+    z: 16
   }
   orientation: ORIENTATION_W
   idRef {
@@ -7538,9 +7630,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 16
+    x: 13
     y: 0
-    z: 21
+    z: 18
   }
   orientation: ORIENTATION_W
   GeneralTags: "isNorton"
@@ -7631,9 +7723,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 14
+    x: 11
     y: 0
-    z: 21
+    z: 18
   }
   orientation: ORIENTATION_W
   GeneralTags: "isHailey"
