@@ -108,6 +108,44 @@ triggers {
         }
       }
     }
+    ops {
+      functionName: "Kill Actor"
+      args {
+        call_value {
+          functionName: "All Actors With Tag"
+          args {
+            call_value {
+              functionName: "Get Map Item (SenseTagList)"
+              args {
+                string_value: "isCritter"
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Preset Value (int)"
+              args {
+                string_value: "AllOrAny"
+              }
+              args {
+                int_value: 0
+              }
+            }
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "DeathMethod"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
   }
   isActive: true
   idRef {
@@ -252,6 +290,9 @@ triggers {
           }
         }
       }
+    }
+    ops {
+      functionName: "End Current Actor Turn"
     }
   }
   isActive: true
@@ -398,6 +439,9 @@ triggers {
         }
       }
     }
+    ops {
+      functionName: "End Current Actor Turn"
+    }
   }
   isActive: true
   idRef {
@@ -543,6 +587,9 @@ triggers {
         }
       }
     }
+    ops {
+      functionName: "End Current Actor Turn"
+    }
   }
   isActive: true
   idRef {
@@ -687,6 +734,9 @@ triggers {
           }
         }
       }
+    }
+    ops {
+      functionName: "End Current Actor Turn"
     }
   }
   isActive: true
@@ -969,7 +1019,7 @@ triggers {
         }
       }
       args {
-        int_value: 0
+        int_value: 1
       }
     }
     ops {
@@ -3552,7 +3602,51 @@ triggers {
         }
       }
       args {
-        int_value: 1
+        int_value: 2
+      }
+    }
+    ops {
+      functionName: "Trigger: Run Alternate Trigger"
+      args {
+        call_value {
+          functionName: "Get Map Item (Trigger)"
+          args {
+            string_value: "5383f8363662363c120074fe"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WaitOrNot"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 0
+          }
+        }
       }
     }
   }
@@ -3779,6 +3873,17 @@ triggers {
       }
       args {
         float_value: 0
+      }
+    }
+    ops {
+      functionName: "Teleport Camera To Actor"
+      args {
+        call_value {
+          functionName: "Get Map Item (Player)"
+          args {
+            int_value: 0
+          }
+        }
       }
     }
   }
@@ -5067,6 +5172,223 @@ triggers {
   }
   is_oneshot: true
 }
+triggers {
+  name: "Rope Available"
+  events {
+    ops {
+      functionName: "On Conversation Complete"
+    }
+  }
+  conditions {
+    ops {
+      functionName: "Comparison (int)"
+      args {
+        call_value {
+          functionName: "Get Variable (int)"
+          args {
+            string_value: "spelunkerConvoState"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "Comparison Ops"
+          }
+          args {
+            int_value: 2
+          }
+        }
+      }
+      args {
+        int_value: 1
+      }
+    }
+  }
+  actions {
+    ops {
+      functionName: "Delete Prop"
+      args {
+        call_value {
+          functionName: "Get Map Item (Prop)"
+          args {
+            string_value: "537d045d643431950db69f12"
+          }
+        }
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "5383f8363662363c120074fe"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
+triggers {
+  name: "Destroy Wall 2"
+  events {
+    ops {
+      functionName: "On Actor Death"
+    }
+  }
+  conditions {
+    ops {
+      functionName: "Comparison (Actor)"
+      args {
+        call_value {
+          functionName: "Triggering Target Actor"
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (Actor)"
+          args {
+            string_value: "537bde336434310a674f326f"
+          }
+        }
+      }
+    }
+  }
+  actions {
+    ops {
+      functionName: "Clone Prop"
+      args {
+        call_value {
+          functionName: "Get Map Item (Prop)"
+          args {
+            string_value: "537bdd546434310a674f3263"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Current Location of Prop"
+          args {
+            call_value {
+              functionName: "Get Map Item (Prop)"
+              args {
+                string_value: "537bdd926434310a674f3265"
+              }
+            }
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Delete Prop"
+      args {
+        call_value {
+          functionName: "Get Map Item (Prop)"
+          args {
+            string_value: "537bdd926434310a674f3265"
+          }
+        }
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "5383fb473662363c12007500"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
+triggers {
+  name: "Destroy Wall 3"
+  events {
+    ops {
+      functionName: "On Actor Death"
+    }
+  }
+  conditions {
+    ops {
+      functionName: "Comparison (Actor)"
+      args {
+        call_value {
+          functionName: "Triggering Target Actor"
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (Actor)"
+          args {
+            string_value: "537bde8f6434310a674f3274"
+          }
+        }
+      }
+    }
+  }
+  actions {
+    ops {
+      functionName: "Clone Prop"
+      args {
+        call_value {
+          functionName: "Get Map Item (Prop)"
+          args {
+            string_value: "537bdd546434310a674f3263"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Current Location of Prop"
+          args {
+            call_value {
+              functionName: "Get Map Item (Prop)"
+              args {
+                string_value: "537bde5c6434310a674f3270"
+              }
+            }
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Delete Prop"
+      args {
+        call_value {
+          functionName: "Get Map Item (Prop)"
+          args {
+            string_value: "537bde5c6434310a674f3270"
+          }
+        }
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "5383fb4f3662363c12007501"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
 regions {
   name: "Banter Elorn"
   position {
@@ -5158,8 +5480,8 @@ regions {
 regions {
   name: "Banter Norton"
   position {
-    x: 54
-    y: 66
+    x: 57
+    y: 67
     width: 1
     height: 6
   }
@@ -5202,7 +5524,7 @@ regions {
 regions {
   name: "Banter Hailey"
   position {
-    x: 59
+    x: 61
     y: 68
     width: 1
     height: 7
@@ -5422,7 +5744,7 @@ regions {
 regions {
   name: "Hestaby Mark"
   position {
-    x: -34
+    x: -33
     y: -32
     width: 1
     height: 1
@@ -5626,7 +5948,7 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -34
+    x: -33
     y: 0
     z: -32
   }
@@ -5929,9 +6251,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 11
+    x: 10
     y: 0
-    z: 13
+    z: 10
   }
   orientation: ORIENTATION_E
   displayName: "Wall 1"
@@ -6184,9 +6506,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -2
+    x: -67
     y: 0
-    z: -22
+    z: -37
   }
   orientation: ORIENTATION_S
   displayName: "Camera"
@@ -6707,9 +7029,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 44
+    x: 38
     y: 0
-    z: 74
+    z: 70
   }
   orientation: ORIENTATION_S
   GeneralTags: "isCritter"
@@ -6889,18 +7211,57 @@ characters {
   gridPoint {
     x: 37
     y: 0
-    z: 66
+    z: 67
   }
-  orientation: ORIENTATION_S
+  orientation: ORIENTATION_E
   displayName: "Spelunking Body"
   idRef {
     id: "537d017e643431b00cc09d0e"
   }
   lod: 0
   character_instance {
+    prefab_name: "Seattle:Creature/CreatureGhoulHumanMale"
+    character_sheet_id: "AGChemie_Cyberzombie_Lv1"
+    character_mod {
+      stats {
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        hp: 0
+        ap: 0
+        armor: 0
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+        ranged_combat: 0
+        close_combat: 0
+        dodge: 0
+      }
+      specializations {
+        rifle: 0
+        edged: 0
+        unarmed: 0
+      }
+      vulnerabilities {
+      }
+    }
     team_id: "Civilians"
     char_name: "Spelunking Body"
     pc_spawn_number: -1
+    portrait {
+      filename: ""
+    }
+    karma: 177
     persistent_body: true
   }
 }
@@ -6997,9 +7358,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 60
+    x: 15
     y: 0
-    z: 82
+    z: 21
   }
   orientation: ORIENTATION_W
   GeneralTags: "isDorbi"
@@ -7089,9 +7450,9 @@ characters {
 characters {
   name: "system_spawner_playerSpawner"
   gridPoint {
-    x: 61
+    x: 13
     y: 0
-    z: 84
+    z: 19
   }
   orientation: ORIENTATION_W
   idRef {
@@ -7177,9 +7538,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 61
+    x: 16
     y: 0
-    z: 82
+    z: 21
   }
   orientation: ORIENTATION_W
   GeneralTags: "isNorton"
@@ -7270,9 +7631,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 59
+    x: 14
     y: 0
-    z: 82
+    z: 21
   }
   orientation: ORIENTATION_W
   GeneralTags: "isHailey"
@@ -7511,6 +7872,8 @@ team_affiliations {
 scene_dimensions {
   dimension_name: "Default"
   initial_alarm_state: 0
+}
+character_roster {
 }
 show_hiring_screen_on_scene_load: false
 scene_hiring_prerequisites {

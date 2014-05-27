@@ -5138,7 +5138,7 @@ props {
 props {
   name: "undergroundBase_floor_dirt03"
   gridPoint {
-    x: -22
+    x: -23
     y: 0
     z: -5
   }
@@ -16359,7 +16359,7 @@ props {
   gridPoint {
     x: 10
     y: 0
-    z: 11
+    z: 7
   }
   orientation: ORIENTATION_E
   displayName: "Barrier Wall 1"
@@ -16798,9 +16798,9 @@ props {
 props {
   name: "system_invisible_nonsolidProp"
   gridPoint {
-    x: 25
+    x: 23
     y: 0
-    z: 57
+    z: 56
   }
   orientation: ORIENTATION_S
   lod: 0
@@ -16973,7 +16973,7 @@ props {
 props {
   name: "tempbad_leyline_heavy"
   gridPoint {
-    x: -34
+    x: -33
     y: 0
     z: -32
   }
@@ -17285,4 +17285,72 @@ props {
     }
     karma: 282
   }
+}
+props {
+  name: "vfx_fx_poisongasYellowvent"
+  gridPoint {
+    x: 10
+    y: 0
+    z: 13
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "PoisonGasYellowVentEnvironment"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_poisongasYellowvent"
+  gridPoint {
+    x: -1
+    y: 0
+    z: 12
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "PoisonGasYellowVentEnvironment"
+  }
+  idRef {
+    id: "5383fcbd3662363c12007502"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_poisongasYellowvent"
+  gridPoint {
+    x: -23
+    y: 0
+    z: -3
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "PoisonGasYellowVentEnvironment"
+  }
+  idRef {
+    id: "5383fccc3662363c12007503"
+  }
+  lod: 0
+}
+props {
+  name: "undergroundBase_wall_rockEdge01"
+  gridPoint {
+    x: 10
+    y: 0
+    z: 11
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "undergroundBase_wall_rockEdge01"
+  gridPoint {
+    x: 6
+    y: 0
+    z: 15
+  }
+  orientation: ORIENTATION_S
+  lod: 0
 }
