@@ -17337,9 +17337,9 @@ props {
 props {
   name: "undergroundBase_wall_rockEdge01"
   gridPoint {
-    x: 10
+    x: 6
     y: 0
-    z: 11
+    z: 13
   }
   orientation: ORIENTATION_E
   lod: 0
@@ -17352,5 +17352,15 @@ props {
     z: 15
   }
   orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "caverns_wall_shootable01"
+  gridPoint {
+    x: 10
+    y: 0
+    z: 11
+  }
+  orientation: ORIENTATION_E
   lod: 0
 }
