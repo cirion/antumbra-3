@@ -169,6 +169,7 @@ nodes {
       }
     }
     nextNodeIndex: 7
+    hideIfUnavailable: true
   }
   branches {
     responseText: "{{GM}}Wait for her to continue.{{/GM}}"
@@ -211,10 +212,50 @@ nodes {
       }
     }
     nextNodeIndex: 8
+    hideIfUnavailable: true
   }
   branches {
     responseText: "{{GM}}Wait for her to continue.{{/GM}}"
+    conditions {
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Story Variable (bool)"
+            args {
+              string_value: "531d26a736623648180018bf"
+            }
+            args {
+              string_value: "Global_WorkForSelf"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+      }
+    }
     nextNodeIndex: 9
+    hideIfUnavailable: true
   }
   nodeType: ConversationNodeType_Simple
 }

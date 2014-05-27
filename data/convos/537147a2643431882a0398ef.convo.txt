@@ -102,7 +102,7 @@ nodes {
     id: "537147f3643431882a039908"
   }
   index: 4
-  text: "You must be an optimistic ($l.man). I saw only clouds and darkness. You somehow expected that ray of light."
+  text: "You must be an optimistic $(l.man). I saw only clouds and darkness. You somehow expected that ray of light."
   branches {
     responseText: ""
     nextNodeIndex: 6
@@ -143,10 +143,18 @@ nodes {
   branches {
     responseText: "What\342\200\231s the damage like in Redding?"
     nextNodeIndex: 8
+    onlyOnce: true
+    idRef {
+      id: "5384c1a1643431946fc66a67"
+    }
   }
   branches {
     responseText: "Do you have plans for the future?"
     nextNodeIndex: 9
+    onlyOnce: true
+    idRef {
+      id: "5384c1a4643431946fc66a68"
+    }
   }
   branches {
     responseText: "Goodbye."

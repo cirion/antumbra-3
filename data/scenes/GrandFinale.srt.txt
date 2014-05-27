@@ -57,6 +57,25 @@ triggers {
         }
       }
     }
+    ops {
+      functionName: "Delete Props by Tag"
+      args {
+        call_value {
+          functionName: "Get Map Item (SenseTagList)"
+          args {
+            string_value: "tabithaWall"
+          }
+        }
+      }
+      args {
+        float_value: -1
+      }
+      args {
+        call_value {
+          functionName: "Everywhere"
+        }
+      }
+    }
   }
   isActive: true
   idRef {
@@ -1362,6 +1381,233 @@ triggers {
   }
   is_oneshot: true
 }
+triggers {
+  name: "Start Wandering"
+  events {
+    ops {
+      functionName: "On Map Start"
+    }
+  }
+  conditions {
+  }
+  actions {
+    ops {
+      functionName: "Set Actor In Passive Mode"
+      args {
+        call_value {
+          functionName: "All Actors on Team"
+          args {
+            call_value {
+              functionName: "Get Preset Value (string)"
+              args {
+                string_value: "FactionList"
+              }
+              args {
+                int_value: 3
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Preset Value (int)"
+              args {
+                string_value: "AllOrAny"
+              }
+              args {
+                int_value: 0
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Map Item (SceneDimension)"
+              args {
+                string_value: "Default"
+              }
+            }
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Actor Run Speed"
+      args {
+        call_value {
+          functionName: "All Actors on Team"
+          args {
+            call_value {
+              functionName: "Get Preset Value (string)"
+              args {
+                string_value: "FactionList"
+              }
+              args {
+                int_value: 3
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Preset Value (int)"
+              args {
+                string_value: "AllOrAny"
+              }
+              args {
+                int_value: 0
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Map Item (SceneDimension)"
+              args {
+                string_value: "Default"
+              }
+            }
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "RunSpeedMethod"
+          }
+          args {
+            int_value: 3
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Actor Wander Range"
+      args {
+        call_value {
+          functionName: "All Actors With Tag"
+          args {
+            call_value {
+              functionName: "Get Map Item (SenseTagList)"
+              args {
+                string_value: "isWanderer"
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Preset Value (int)"
+              args {
+                string_value: "AllOrAny"
+              }
+              args {
+                int_value: 0
+              }
+            }
+          }
+        }
+      }
+      args {
+        int_value: 4
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "5384c01c643431946fc66a03"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
+triggers {
+  name: "Set Count Countess"
+  events {
+    ops {
+      functionName: "On Map Start"
+    }
+  }
+  conditions {
+    ops {
+      functionName: "Compare Actor Gender"
+      args {
+        call_value {
+          functionName: "Get Map Item (Player)"
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "Gender"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+  actions {
+    ops {
+      functionName: "Set Variable (string)"
+      args {
+        call_value {
+          functionName: "Get Variable (string)"
+          args {
+            string_value: "CountCountess"
+          }
+        }
+      }
+      args {
+        string_value: "Count"
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "5384c585643431937085656a"
+  }
+  elseActions {
+    ops {
+      functionName: "Set Variable (string)"
+      args {
+        call_value {
+          functionName: "Get Variable (string)"
+          args {
+            string_value: "CountCountess"
+          }
+        }
+      }
+      args {
+        string_value: "Countess"
+      }
+    }
+  }
+  is_oneshot: true
+}
 regions {
   name: "Kali Arrival"
   position {
@@ -1600,7 +1846,6 @@ characters {
     z: -26
   }
   orientation: ORIENTATION_N
-  GeneralTags: "isWanderer"
   displayName: "Tomas"
   idRef {
     id: "537686d56434316a34fc468f"
@@ -1668,7 +1913,6 @@ characters {
     }
     team_id: "Civilians"
     char_name: "Tomas"
-    GeneralTags: "isWanderer"
     pc_spawn_number: -1
     portrait {
       filename: "backerpc_trollmale_isaacnagel_bryanlitelightner"
@@ -1715,8 +1959,6 @@ characters {
   character_instance {
     prefab_name: "Seattle:Story/WeaponsDealer"
     character_sheet_id: "BaseCivilian"
-    equipment_sheet_id: "Merchant_Outfit_High"
-    equipment_sheet_id: "Merchant_Weapons_High"
     character_mod {
       stats {
         body: 0
@@ -1747,7 +1989,7 @@ characters {
     team_id: "Civilians"
     char_name: "Amelia"
     GeneralTags: "isMerchantLevel2"
-    enabled_at_start: false
+    enabled_at_start: true
     pc_spawn_number: -1
     portrait {
       filename: "npc_humanfemale_weaponstechdealer"
@@ -2243,7 +2485,7 @@ characters {
     team_id: "Civilians"
     char_name: "Hrafna"
     GeneralTags: "isMerchantLevel2"
-    enabled_at_start: false
+    enabled_at_start: true
     pc_spawn_number: -1
     portrait {
       filename: "pc_orkfemale_06a"
@@ -2435,7 +2677,7 @@ characters {
     team_id: "Civilians"
     char_name: "Horatio"
     GeneralTags: "isMerchantLevel2"
-    enabled_at_start: false
+    enabled_at_start: true
     pc_spawn_number: -1
     portrait {
       filename: "pc_dwarfmale_02a_beardie"
@@ -2485,6 +2727,17 @@ characters {
             functionName: "Get Variable (int)"
             args {
               string_value: "numConvosBeforeKali"
+            }
+          }
+        }
+      }
+      ops {
+        functionName: "Invert Bool"
+        args {
+          call_value {
+            functionName: "Get Variable (bool)"
+            args {
+              string_value: "talkedToKali"
             }
           }
         }
@@ -2546,7 +2799,7 @@ characters {
   }
   orientation: ORIENTATION_N
   GeneralTags: "isElorn"
-  GeneralTags: "isWanderer"
+  GeneralTags: ""
   displayName: "Elorn"
   idRef {
     id: "53768be9643431bf375d152e"
@@ -2638,7 +2891,7 @@ characters {
     team_id: "Civilians"
     char_name: "Elorn"
     GeneralTags: "isElorn"
-    GeneralTags: "isWanderer"
+    GeneralTags: ""
     pc_spawn_number: -1
     hiring_type: HiringType_Hireable
     portrait {
@@ -2809,7 +3062,7 @@ characters {
         esp_control: 0
         drone_combat: 0
       }
-      archetypeName: "Player"
+      archetypeName: "Non-Combatant"
       attitude: AttitudeAggressive
       vulnerabilities {
       }
@@ -2962,6 +3215,14 @@ variables {
     typeName: "int"
   }
 }
+variables {
+  string_value: ""
+  variableref_value {
+    scope: TsVariableScope_Scene
+    name: "CountCountess"
+    typeName: "string"
+  }
+}
 mapEvents: "Game Ends"
 mapEvents: "Fade In"
 worldMapLocation {
@@ -2975,7 +3236,7 @@ mapName: "ShastaCaverns"
 parentStory: ""
 scene_title: "A New Order"
 scene_subtitle: ""
-scene_synopsis: ""
+scene_synopsis: "Tir Tairngire\'s enormous army marches back north, abandoning their seemingly-inevitable conquest of CalFree in the blink of an eye. Their power may be unrivaled among the nations, but Tir knows better than to tangle with a dragon.\n\nIn the coming hours, curious visitors from Redding make their way down into the caverns. The trickle becomes a flood, as word spreads about the majesty of the dragon. Hestaby holds court, providing counsel and wisdom in the time before she departs for Mount Shasta.\n\nHas it all come to this? You can hardly believe that the nightmare of endless war has ended almost before it began. You resolve to take stock of the situation, and figure out exactly what the dragon\'s presence will mean for you and your city..."
 scene_image: ""
 scene_continue_button_skip: false
 scene_restore_runner_health: false
@@ -3049,4 +3310,4 @@ hiring_average_cost: 99999
 override_hiring_average_cost: true
 show_equip_screen_on_scene_load: false
 can_move_outside_camera_regions: false
-can_start_before_triggers: true
+can_start_before_triggers: false

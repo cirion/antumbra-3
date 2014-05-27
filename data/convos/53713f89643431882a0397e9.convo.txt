@@ -129,6 +129,22 @@ nodes {
   sourceInSceneRef {
     id: "537684326434316a34fc4630"
   }
+  actions {
+    ops {
+      functionName: "Set Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Variable (int)"
+          args {
+            string_value: "endgameTalkState"
+          }
+        }
+      }
+      args {
+        int_value: 2
+      }
+    }
+  }
 }
 roots {
   nextNodeIndex: 0

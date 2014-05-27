@@ -119,14 +119,26 @@ nodes {
   branches {
     responseText: "How\342\200\231s your family doing?"
     nextNodeIndex: 6
+    onlyOnce: true
+    idRef {
+      id: "5384c247643431946fc66ad8"
+    }
   }
   branches {
     responseText: "Will you stay in Redding?"
     nextNodeIndex: 8
+    onlyOnce: true
+    idRef {
+      id: "5384c249643431946fc66ad9"
+    }
   }
   branches {
     responseText: "What do you think about Hestaby?"
     nextNodeIndex: 10
+    onlyOnce: true
+    idRef {
+      id: "5384c24d643431946fc66ada"
+    }
   }
   branches {
     responseText: "Goodbye, Elorn."
@@ -139,7 +151,7 @@ nodes {
     id: "53714e03643431882a039ac1"
   }
   index: 6
-  text: "I sent my parents out of the city a few days ago. \n\nDad was really grumpy about it\342\200\246 he kept talking about how many Tir soldiers he\342\200\231d killed last time, and that we\342\200\231d all mess up without him around to give us pointers. He finally relented when I told him that we needed him to plan for a guerilla campaign closer to Chico."
+  text: "I sent my parents out of the city a few days ago. \n\nDad was rather upset about it\342\200\246 he kept talking about how many Tir soldiers he\342\200\231d killed last time, and that we\342\200\231d all mess up without him around to give us pointers. He finally relented when I told him that we needed him to plan for a guerilla campaign closer to Chico."
   branches {
     responseText: ""
     nextNodeIndex: 7

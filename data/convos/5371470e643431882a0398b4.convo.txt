@@ -61,10 +61,18 @@ nodes {
   branches {
     responseText: "And what are those goals?"
     nextNodeIndex: 2
+    onlyOnce: true
+    idRef {
+      id: "5384b2dd643431616b8564b7"
+    }
   }
   branches {
     responseText: "What will you do next?"
     nextNodeIndex: 3
+    onlyOnce: true
+    idRef {
+      id: "5384b2e0643431616b8564b8"
+    }
   }
   branches {
     responseText: "Thank you for your service."
