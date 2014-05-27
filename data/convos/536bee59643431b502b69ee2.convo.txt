@@ -329,7 +329,23 @@ nodes {
         }
       }
     }
-    nextNodeIndex: 63
+    actions {
+      ops {
+        functionName: "Open Hiring Screen and Open Scene"
+        args {
+          call_value {
+            functionName: "Get Map Item (Scene)"
+            args {
+              string_value: "Embarcadero"
+            }
+          }
+        }
+        args {
+          string_value: "Are you ready to leave?"
+        }
+      }
+    }
+    nextNodeIndex: -1
     hideIfUnavailable: true
   }
   branches {
@@ -517,7 +533,7 @@ nodes {
         }
       }
     }
-    nextNodeIndex: 64
+    nextNodeIndex: 63
     hideIfUnavailable: true
   }
   branches {
@@ -4189,25 +4205,9 @@ nodes {
 }
 nodes {
   idRef {
-    id: "536d9c09366236081a002a0c"
-  }
-  index: 63
-  text: "Are you sure?"
-  branches {
-    responseText: "Yes, let\'s go!"
-    nextNodeIndex: -1
-  }
-  branches {
-    responseText: "Wait, I need to do something else first."
-    nextNodeIndex: -1
-  }
-  nodeType: ConversationNodeType_Simple
-}
-nodes {
-  idRef {
     id: "536d9c6d366236081a002a21"
   }
-  index: 64
+  index: 63
   text: "Are you sure? This is the point of no return. Please be sure all your affairs are in order."
   branches {
     responseText: "I am ready."

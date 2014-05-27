@@ -3856,16 +3856,6 @@ props {
   lod: 0
 }
 props {
-  name: "sleekOffice_floor_tile01"
-  gridPoint {
-    x: -68
-    y: 0
-    z: 22
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
   name: "sleekOffice_floor_twoToneRound01"
   gridPoint {
     x: -103
@@ -3906,19 +3896,6 @@ props {
   lod: 0
 }
 props {
-  name: "sleekOffice_floor_gutterCorner04"
-  gridPoint {
-    x: -62
-    y: 0
-    z: 22
-  }
-  orientation: ORIENTATION_N
-  idRef {
-    id: "5366d37d36623624090083a6"
-  }
-  lod: 0
-}
-props {
   name: "sleekOffice_floor_gutter01"
   gridPoint {
     x: -63
@@ -3929,16 +3906,6 @@ props {
   idRef {
     id: "5366d38436623624090083a7"
   }
-  lod: 0
-}
-props {
-  name: "sleekOffice_floor_gutterEnd03"
-  gridPoint {
-    x: -60
-    y: 0
-    z: 21
-  }
-  orientation: ORIENTATION_S
   lod: 0
 }
 props {
