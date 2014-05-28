@@ -4819,16 +4819,6 @@ props {
 props {
   name: "secretLab_furniture_officeChair"
   gridPoint {
-    x: -2
-    y: 0
-    z: 44
-  }
-  orientation: ORIENTATION_N
-  lod: 0
-}
-props {
-  name: "secretLab_furniture_officeChair"
-  gridPoint {
     x: 3
     y: 0
     z: 43
@@ -5302,9 +5292,9 @@ props {
 props {
   name: "secretLab_magic_crystalBall"
   gridPoint {
-    x: -17
+    x: -16
     y: 0.3
-    z: 28
+    z: 27
   }
   orientation: ORIENTATION_S
   lod: 0
@@ -18709,11 +18699,11 @@ props {
 props {
   name: "barrens_market_stall09"
   gridPoint {
-    x: -11
+    x: -13
     y: 0
-    z: 46
+    z: 42
   }
-  orientation: ORIENTATION_S
+  orientation: ORIENTATION_E
   lod: 0
 }
 props {
@@ -19018,9 +19008,9 @@ props {
 props {
   name: "telestrianEstate_furniture_baroqueEndTable01"
   gridPoint {
-    x: -17
+    x: -16
     y: 0
-    z: 28
+    z: 27
   }
   orientation: ORIENTATION_S
   lod: 0
@@ -19942,9 +19932,9 @@ props {
 props {
   name: "diveBar_tech_speaker01"
   gridPoint {
-    x: -67
+    x: -64
     y: 0
-    z: 73
+    z: 76
   }
   orientation: ORIENTATION_S
   lod: 0
@@ -20004,9 +19994,9 @@ props {
 props {
   name: "diveBar_tech_speaker01"
   gridPoint {
-    x: -71
+    x: -68
     y: 0
-    z: 77
+    z: 80
   }
   orientation: ORIENTATION_E
   idRef {
@@ -33163,6 +33153,226 @@ props {
   orientation: ORIENTATION_S
   idRef {
     id: "53850cd86434312404d12f2a"
+  }
+  lod: 0
+}
+props {
+  name: "sleekOffice_furniture_overturnedTable02"
+  gridPoint {
+    x: -18
+    y: 0
+    z: 35
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "office_furniture_overturnedDesk01"
+  gridPoint {
+    x: -20
+    y: 0
+    z: 41
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "haven_street_overturnedBarrel01"
+  gridPoint {
+    x: -1
+    y: 0
+    z: 29
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "haven_street_overturnedBarrel02"
+  gridPoint {
+    x: -2
+    y: 0
+    z: 28
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "haven_street_overturnedChair01"
+  gridPoint {
+    x: -11
+    y: 0
+    z: 32
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "haven_street_overturnedChair01"
+  gridPoint {
+    x: -8
+    y: 0
+    z: 28
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "53854ec03662366411001335"
+  }
+  lod: 0
+}
+props {
+  name: "haven_street_cafeChair01"
+  gridPoint {
+    x: -12
+    y: 0
+    z: 27
+  }
+  orientation: ORIENTATION_N
+  lod: 0
+}
+props {
+  name: "sleekOffice_furniture_overturnedChair03"
+  gridPoint {
+    x: -2
+    y: 0
+    z: 44
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "sleekOffice_furniture_overturnedChair03"
+  gridPoint {
+    x: -29
+    y: 0
+    z: 50
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "53854ee73662366411001336"
+  }
+  lod: 0
+}
+props {
+  name: "undergroundBase_tech_experimentwire01"
+  gridPoint {
+    x: -68
+    y: 0
+    z: 69
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "undergroundBase_tech_experimentwire01"
+  gridPoint {
+    x: -75
+    y: 0
+    z: 76
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "53854f723662366411001337"
+  }
+  lod: 0
+}
+props {
+  name: "haven_furniture_barStool01"
+  gridPoint {
+    x: -54
+    y: 0
+    z: 71
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "haven_furniture_barStool01"
+  gridPoint {
+    x: -74
+    y: 0
+    z: 83
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "53854f9e3662366411001338"
+  }
+  lod: 0
+}
+props {
+  name: "haven_furniture_barStool01"
+  gridPoint {
+    x: -103
+    y: 0
+    z: 129
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "53854fb73662366411001339"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_fallingsparks"
+  gridPoint {
+    x: -67
+    y: 1
+    z: 81
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "SparksEnvironment"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_fallingsparks"
+  gridPoint {
+    x: -63
+    y: 1
+    z: 77
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "SparksEnvironment"
+  }
+  idRef {
+    id: "538550bc366236641100133a"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_fallingsparks"
+  gridPoint {
+    x: -74
+    y: 1
+    z: 78
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "SparksEnvironment"
+  }
+  idRef {
+    id: "538550bf366236641100133b"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_fallingsparks"
+  gridPoint {
+    x: -66
+    y: 1
+    z: 70
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "SparksEnvironment"
+  }
+  idRef {
+    id: "538550c4366236641100133c"
   }
   lod: 0
 }
