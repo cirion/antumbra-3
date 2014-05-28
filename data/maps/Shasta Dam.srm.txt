@@ -20959,3 +20959,412 @@ props {
   }
   lod: 0
 }
+props {
+  name: "docks_clutter_anchorChain"
+  gridPoint {
+    x: -26
+    y: 0
+    z: -39
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "docks_appliance_fuelContainer01"
+  gridPoint {
+    x: 4
+    y: 0
+    z: -20
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "docks_appliance_fuelContainer02"
+  gridPoint {
+    x: 4
+    y: 0
+    z: 10
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "docks_appliance_powerSupply"
+  gridPoint {
+    x: 5
+    y: 0
+    z: 12.5
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "docks_building_craneBeam01"
+  gridPoint {
+    x: 4
+    y: -6
+    z: -4.8
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "docks_building_craneBeam01"
+  gridPoint {
+    x: 4
+    y: -6
+    z: -2.2
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "5385537c366236641100133d"
+  }
+  lod: 0
+}
+props {
+  name: "docks_building_craneLadder01"
+  gridPoint {
+    x: 19
+    y: 0
+    z: -11
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "docks_building_cranemachinery"
+  gridPoint {
+    x: 8
+    y: -4
+    z: -10
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "docks_building_craneLadder02"
+  gridPoint {
+    x: 11
+    y: 0
+    z: -2
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "docks_building_craneMechanicalRoom"
+  gridPoint {
+    x: 5
+    y: -7
+    z: -10
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "docks_clutter_anchorChain"
+  gridPoint {
+    x: -19
+    y: 0
+    z: 16
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "docks_clutter_largeTrafficCone"
+  gridPoint {
+    x: -2
+    y: 0
+    z: -25
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "docks_clutter_largeTrafficCone"
+  gridPoint {
+    x: 1
+    y: 0
+    z: -22
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "53855428366236641100133e"
+  }
+  lod: 0
+}
+props {
+  name: "docks_clutter_largeTrafficCone"
+  gridPoint {
+    x: -1
+    y: 0
+    z: -19
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "5385542a366236641100133f"
+  }
+  lod: 0
+}
+props {
+  name: "docks_clutter_palletPile"
+  gridPoint {
+    x: -7
+    y: 0
+    z: -28
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "docks_clutter_puddle01"
+  gridPoint {
+    x: 9
+    y: 0
+    z: -19
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "docks_clutter_puddle01"
+  gridPoint {
+    x: -2
+    y: 0
+    z: -15
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "5385544d3662366411001340"
+  }
+  lod: 0
+}
+props {
+  name: "docks_clutter_puddle01"
+  gridPoint {
+    x: -2
+    y: 0
+    z: 9
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "538554503662366411001341"
+  }
+  lod: 0
+}
+props {
+  name: "docks_clutter_puddle02"
+  gridPoint {
+    x: 0
+    y: 0
+    z: -21
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "docks_clutter_puddle02"
+  gridPoint {
+    x: 1
+    y: 0
+    z: -2
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "538554603662366411001342"
+  }
+  lod: 0
+}
+props {
+  name: "docks_clutter_puddle02"
+  gridPoint {
+    x: -1
+    y: 0
+    z: 11
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "538554653662366411001343"
+  }
+  lod: 0
+}
+props {
+  name: "docks_clutter_puddle03"
+  gridPoint {
+    x: -2
+    y: 0
+    z: -9
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "docks_clutter_puddle03"
+  gridPoint {
+    x: 5
+    y: 0
+    z: 2
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "5385547a3662366411001344"
+  }
+  lod: 0
+}
+props {
+  name: "docks_clutter_tangledNetting"
+  gridPoint {
+    x: -21
+    y: 0
+    z: -33
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "docks_clutter_tangledNetting"
+  gridPoint {
+    x: -9
+    y: 0
+    z: 17
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "538554a03662366411001345"
+  }
+  lod: 0
+}
+props {
+  name: "docks_decor_buoy02"
+  gridPoint {
+    x: -24
+    y: 0
+    z: -25
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "docks_decor_buoy02"
+  gridPoint {
+    x: -15
+    y: 0
+    z: 8
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "538554b83662366411001346"
+  }
+  lod: 0
+}
+props {
+  name: "docks_decor_buoy02"
+  gridPoint {
+    x: -39
+    y: 0
+    z: -45
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "538554c33662366411001347"
+  }
+  lod: 0
+}
+props {
+  name: "docks_vehicle_rowboat"
+  gridPoint {
+    x: -26
+    y: 0
+    z: -9
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "asylum_bathroom_concreteToilet"
+  gridPoint {
+    x: 7
+    y: 0
+    z: -32
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "barrens_buildingOrnament_roofShack"
+  gridPoint {
+    x: 5
+    y: 0
+    z: -33
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "barrens_street_dumpster03"
+  gridPoint {
+    x: 3
+    y: 0
+    z: -32
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "mitte_street_trashcan01"
+  gridPoint {
+    x: -8
+    y: 0
+    z: 35
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "mitte_street_trashcan01"
+  gridPoint {
+    x: 4
+    y: 0
+    z: 33
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "538555df3662366411001348"
+  }
+  lod: 0
+}
+props {
+  name: "barrens_street_signNoParking"
+  gridPoint {
+    x: -8
+    y: 0
+    z: 36
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "pikePlace_furniture_parkbench"
+  gridPoint {
+    x: -10
+    y: 0
+    z: 29
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "pikePlace_furniture_parkbench"
+  gridPoint {
+    x: 4
+    y: 0
+    z: 26
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "538556323662366411001349"
+  }
+  lod: 0
+}
