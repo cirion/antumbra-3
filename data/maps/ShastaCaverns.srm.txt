@@ -10363,19 +10363,6 @@ props {
   lod: 0
 }
 props {
-  name: "undergroundBase_wall_rockEdge03"
-  gridPoint {
-    x: -10
-    y: 0
-    z: 3
-  }
-  orientation: ORIENTATION_S
-  idRef {
-    id: "5378f21f3662369815005d67"
-  }
-  lod: 0
-}
-props {
   name: "undergroundBase_wall_rockCorner01"
   gridPoint {
     x: -13
@@ -16111,7 +16098,7 @@ props {
   gridPoint {
     x: -7
     y: 0
-    z: 11
+    z: 12
   }
   orientation: ORIENTATION_S
   GeneralTags: "wall2"
@@ -16992,26 +16979,6 @@ props {
   lod: 0
 }
 props {
-  name: "undergroundBase_wall_rockEdge01"
-  gridPoint {
-    x: 6
-    y: 0
-    z: 13
-  }
-  orientation: ORIENTATION_E
-  lod: 0
-}
-props {
-  name: "undergroundBase_wall_rockEdge01"
-  gridPoint {
-    x: 6
-    y: 0
-    z: 15
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
   name: "caverns_wall_shootable01"
   gridPoint {
     x: 10
@@ -17058,7 +17025,7 @@ props {
   gridPoint {
     x: -7
     y: 0
-    z: 9
+    z: 8
   }
   orientation: ORIENTATION_S
   GeneralTags: "wall2"
@@ -17592,6 +17559,248 @@ props {
   GeneralTags: "tabithaWall"
   idRef {
     id: "5384b803643431616b856536"
+  }
+  lod: 0
+}
+props {
+  name: "undergroundBase_clutter_rock09"
+  gridPoint {
+    x: 15
+    y: 0
+    z: 19
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "5385617b3662366411001422"
+  }
+  lod: 0
+}
+props {
+  name: "undergroundBase_clutter_rock03"
+  gridPoint {
+    x: 5
+    y: 0
+    z: 19
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "5385617d3662366411001423"
+  }
+  lod: 0
+}
+props {
+  name: "cemetery_misc_rock01"
+  gridPoint {
+    x: 7
+    y: 0
+    z: 14
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "538561843662366411001424"
+  }
+  lod: 0
+}
+props {
+  name: "undergroundBase_clutter_rock03"
+  gridPoint {
+    x: 5
+    y: 0
+    z: -6
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "538561943662366411001425"
+  }
+  lod: 0
+}
+props {
+  name: "undergroundBase_clutter_rock08"
+  gridPoint {
+    x: 11
+    y: 0
+    z: 4
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "538561a73662366411001426"
+  }
+  lod: 0
+}
+props {
+  name: "cemetery_misc_rock01"
+  gridPoint {
+    x: 3
+    y: 0
+    z: 0
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "538561ad3662366411001427"
+  }
+  lod: 0
+}
+props {
+  name: "undergroundBase_clutter_rock06"
+  gridPoint {
+    x: 0
+    y: 0
+    z: 5
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "538561b33662366411001428"
+  }
+  lod: 0
+}
+props {
+  name: "undergroundBase_clutter_rock08"
+  gridPoint {
+    x: -16
+    y: 0
+    z: 9
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "538561c03662366411001429"
+  }
+  lod: 0
+}
+props {
+  name: "undergroundBase_clutter_rock07"
+  gridPoint {
+    x: -25
+    y: 0
+    z: 7
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "538561d4366236641100142a"
+  }
+  lod: 0
+}
+props {
+  name: "undergroundBase_clutter_rock08"
+  gridPoint {
+    x: -19
+    y: 0
+    z: -6
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "538561e3366236641100142c"
+  }
+  lod: 0
+}
+props {
+  name: "undergroundBase_clutter_rock02"
+  gridPoint {
+    x: -24
+    y: 0
+    z: -36
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "538561ee366236641100142d"
+  }
+  lod: 0
+}
+props {
+  name: "cemetery_misc_rock02"
+  gridPoint {
+    x: -27
+    y: 0
+    z: 1
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "53856223366236641100142e"
+  }
+  lod: 0
+}
+props {
+  name: "undergroundBase_wall_rockEdge01"
+  gridPoint {
+    x: -7
+    y: 0
+    z: 10
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "wall2"
+  displayName: "Barrier Wall 2"
+  idRef {
+    id: "53856233366236641100142f"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    dummyInteraciton {
+    }
+  }
+  lod: 0
+}
+props {
+  name: "cemetery_misc_rock03"
+  gridPoint {
+    x: 65
+    y: 0
+    z: 74
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "538562433662366411001430"
+  }
+  lod: 0
+}
+props {
+  name: "undergroundBase_clutter_rock08"
+  gridPoint {
+    x: 50
+    y: 0
+    z: 63
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "538562493662366411001431"
+  }
+  lod: 0
+}
+props {
+  name: "undergroundBase_clutter_rock02"
+  gridPoint {
+    x: 40
+    y: 0
+    z: 57
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "5385624d3662366411001432"
+  }
+  lod: 0
+}
+props {
+  name: "undergroundBase_clutter_rock03"
+  gridPoint {
+    x: 47
+    y: 0
+    z: 74
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "538562563662366411001433"
+  }
+  lod: 0
+}
+props {
+  name: "cemetery_misc_rock04"
+  gridPoint {
+    x: 36
+    y: 0
+    z: 68
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "538562673662366411001434"
   }
   lod: 0
 }
