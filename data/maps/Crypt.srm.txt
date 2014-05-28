@@ -9191,9 +9191,9 @@ props {
 props {
   name: "mitte_decor_gargoylePillar02"
   gridPoint {
-    x: -28
+    x: -16
     y: 0
-    z: -23
+    z: -30
   }
   orientation: ORIENTATION_S
   GeneralTags: "isRubble"
@@ -10255,28 +10255,6 @@ props {
   lod: 0
 }
 props {
-  name: "tempbad_leyline_heavy"
-  gridPoint {
-    x: -33
-    y: 0
-    z: -65
-  }
-  orientation: ORIENTATION_S
-  properties {
-    property_id: "leyline_fx_on_tile"
-    string_value: "LeyLineHigh"
-  }
-  properties {
-    property_id: "leyline_sfx_on_tile"
-    string_value: "StandOnLeylineClose"
-  }
-  properties {
-    property_id: "leyline_fx_on_visible"
-    string_value: "LeyLineTileHigh"
-  }
-  lod: 0
-}
-props {
   name: "tempbad_leyline_medium"
   gridPoint {
     x: -36
@@ -10909,7 +10887,7 @@ props {
   gridPoint {
     x: -38
     y: 0
-    z: -62
+    z: -60.5
   }
   orientation: ORIENTATION_S
   properties {
@@ -10921,14 +10899,675 @@ props {
 props {
   name: "vfx_fx_fallingwater"
   gridPoint {
-    x: -38
-    y: 0
-    z: -61
+    x: -38.7
+    y: 1
+    z: -60.7
   }
   orientation: ORIENTATION_S
   properties {
     property_id: "fxScript"
     string_value: "EnvironmentLoopFallingWater"
+  }
+  lod: 0
+}
+props {
+  name: "cemetery_decor_obelisk01"
+  gridPoint {
+    x: -52
+    y: 0
+    z: -47
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "cemetery_decor_headstone10"
+  gridPoint {
+    x: -35
+    y: 0
+    z: -34
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "cemetery_decor_obelisk02"
+  gridPoint {
+    x: -48
+    y: 0
+    z: -40
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "cemetery_ground_grave04"
+  gridPoint {
+    x: -52
+    y: 0
+    z: -51
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "cemetery_storage_pot05"
+  gridPoint {
+    x: -36
+    y: 0
+    z: -40
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "cemetery_storage_pot05"
+  gridPoint {
+    x: -47
+    y: 0
+    z: -37
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "5385471f366236641100130d"
+  }
+  lod: 0
+}
+props {
+  name: "cemetery_storage_pots02"
+  gridPoint {
+    x: -44
+    y: 0
+    z: -34
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "museum_decor_paintedVase01"
+  gridPoint {
+    x: -39
+    y: 0
+    z: -65
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "museum_decor_paintedVase02"
+  gridPoint {
+    x: -37
+    y: 0
+    z: -70
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "museum_lighting_candleSconce01"
+  gridPoint {
+    x: -26
+    y: 0
+    z: -36
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "museum_lighting_candleSconce01"
+  gridPoint {
+    x: -24
+    y: 0
+    z: -36
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "538547db366236641100130e"
+  }
+  lod: 0
+}
+props {
+  name: "museum_lighting_candleSconce01"
+  gridPoint {
+    x: -4
+    y: 0
+    z: -37
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "538547e4366236641100130f"
+  }
+  lod: 0
+}
+props {
+  name: "museum_lighting_candleSconce01"
+  gridPoint {
+    x: -16
+    y: 0
+    z: -44
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "538547f63662366411001310"
+  }
+  lod: 0
+}
+props {
+  name: "museum_lighting_candleSconce01"
+  gridPoint {
+    x: -16
+    y: 0
+    z: -48
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "538547fb3662366411001311"
+  }
+  lod: 0
+}
+props {
+  name: "museum_lighting_candleSconce01"
+  gridPoint {
+    x: -24
+    y: 0
+    z: -56
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "538548013662366411001312"
+  }
+  lod: 0
+}
+props {
+  name: "museum_lighting_candleSconce01"
+  gridPoint {
+    x: -24
+    y: 0
+    z: -60
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "538548043662366411001313"
+  }
+  lod: 0
+}
+props {
+  name: "museum_lighting_standingLight01"
+  gridPoint {
+    x: -28
+    y: 0
+    z: -66
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "museum_lighting_lightSconce02"
+  gridPoint {
+    x: -29
+    y: 2
+    z: -71
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "museum_lighting_lightSconce02"
+  gridPoint {
+    x: -37
+    y: 2
+    z: -71
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "5385482f3662366411001314"
+  }
+  lod: 0
+}
+props {
+  name: "museum_lighting_lightSconce02"
+  gridPoint {
+    x: -39
+    y: 2
+    z: -69
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "538548343662366411001315"
+  }
+  lod: 0
+}
+props {
+  name: "museum_lighting_lightSconce02"
+  gridPoint {
+    x: -39
+    y: 2
+    z: -62
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "538548383662366411001316"
+  }
+  lod: 0
+}
+props {
+  name: "museum_wallDecoration_filigree01"
+  gridPoint {
+    x: -37
+    y: 0
+    z: -75
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "museum_wallDecoration_filigree01"
+  gridPoint {
+    x: -28.4
+    y: 0
+    z: -71
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "538548783662366411001317"
+  }
+  lod: 0
+}
+props {
+  name: "mitte_decor_gargoylePillar01"
+  gridPoint {
+    x: -8
+    y: 0
+    z: -30
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "telestrianEstate_floor_marbleTile03"
+  gridPoint {
+    x: -32
+    y: 0
+    z: -50
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "5385492e366236641100131d"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_solidProp"
+  gridPoint {
+    x: -33
+    y: 0
+    z: -48
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "system_invisible_solidProp"
+  gridPoint {
+    x: -33
+    y: 0
+    z: -49
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "538549a13662366411001320"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_solidProp"
+  gridPoint {
+    x: -33
+    y: 0
+    z: -50
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "538549a23662366411001321"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_solidProp"
+  gridPoint {
+    x: -33
+    y: 0
+    z: -51
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "538549a33662366411001322"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_solidProp"
+  gridPoint {
+    x: -32
+    y: 0
+    z: -51
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "538549a43662366411001323"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_solidProp"
+  gridPoint {
+    x: -30
+    y: 0
+    z: -51
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "538549a63662366411001324"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_solidProp"
+  gridPoint {
+    x: -31
+    y: 0
+    z: -51
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "538549a73662366411001325"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_solidProp"
+  gridPoint {
+    x: -30
+    y: 0
+    z: -50
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "538549a73662366411001326"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_solidProp"
+  gridPoint {
+    x: -30
+    y: 0
+    z: -49
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "538549a83662366411001327"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_solidProp"
+  gridPoint {
+    x: -30
+    y: 0
+    z: -48
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "538549a93662366411001328"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_solidProp"
+  gridPoint {
+    x: -31
+    y: 0
+    z: -48
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "538549aa3662366411001329"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_solidProp"
+  gridPoint {
+    x: -32
+    y: 0
+    z: -48
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "538549ab366236641100132a"
+  }
+  lod: 0
+}
+props {
+  name: "cemetery_decor_headstone10"
+  gridPoint {
+    x: -41
+    y: 0
+    z: -34
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "538549be366236641100132b"
+  }
+  lod: 0
+}
+props {
+  name: "cemetery_decor_headstone10"
+  gridPoint {
+    x: -35
+    y: 0
+    z: -41
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "538549c0366236641100132c"
+  }
+  lod: 0
+}
+props {
+  name: "cemetery_storage_pots02"
+  gridPoint {
+    x: -47
+    y: 0
+    z: -53
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "538549d3366236641100132d"
+  }
+  lod: 0
+}
+props {
+  name: "cemetery_ground_grave01"
+  gridPoint {
+    x: -46
+    y: 0
+    z: -53
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "mitte_decor_gargoyle01"
+  gridPoint {
+    x: -10
+    y: 1
+    z: -24
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "isPropRoom1"
+  idRef {
+    id: "53854a0e366236641100132e"
+  }
+  lod: 0
+}
+props {
+  name: "mitte_decor_gargoylePillar01"
+  gridPoint {
+    x: -10
+    y: 0
+    z: -24
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "53854a19366236641100132f"
+  }
+  lod: 0
+}
+props {
+  name: "cemetery_ground_grave02"
+  gridPoint {
+    x: 8
+    y: 0
+    z: -36
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "telestrianEstate_decor_giantVase"
+  gridPoint {
+    x: 7
+    y: 0
+    z: -29
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "cemetery_storage_pots02"
+  gridPoint {
+    x: 6
+    y: 0
+    z: -29
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "53854a9d3662366411001331"
+  }
+  lod: 0
+}
+props {
+  name: "cemetery_storage_pot05"
+  gridPoint {
+    x: 7
+    y: 0
+    z: -30
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "53854aa33662366411001332"
+  }
+  lod: 0
+}
+props {
+  name: "secretLab_magic_bookPedestal"
+  gridPoint {
+    x: -32
+    y: 0
+    z: -65
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "secretLab_magic_ceremonialBrazier01"
+  gridPoint {
+    x: -31
+    y: 0
+    z: -61
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "secretLab_magic_crystalBall"
+  gridPoint {
+    x: -37
+    y: 0
+    z: -62
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "secretLab_magic_sacrificialTable01"
+  gridPoint {
+    x: -30
+    y: 0
+    z: -68
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "secretLab_magic_skullPile"
+  gridPoint {
+    x: -34
+    y: 0
+    z: -65
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "vfx_fx_ambientMagic"
+  gridPoint {
+    x: -29
+    y: 0.6
+    z: -67.7
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "LeyLineMedium"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_smolderingFire"
+  gridPoint {
+    x: -31
+    y: 1.2
+    z: -61
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "Berlin:EnvironmentSmolderingFire"
+  }
+  lod: 0
+}
+props {
+  name: "tempbad_leyline_heavy"
+  gridPoint {
+    x: -33
+    y: 0
+    z: -65
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "leyline_fx_on_tile"
+    string_value: "LeyLineHigh"
+  }
+  properties {
+    property_id: "leyline_sfx_on_tile"
+    string_value: "StandOnLeylineClose"
+  }
+  properties {
+    property_id: "leyline_fx_on_visible"
+    string_value: "LeyLineTileHigh"
   }
   lod: 0
 }
