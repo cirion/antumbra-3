@@ -91,6 +91,7 @@ nodes {
       }
     }
     nextNodeIndex: 4
+    hideIfUnavailable: true
   }
   branches {
     responseText: "Well, we\342\200\231re the best there is, Elorn! Go team Elf!"
@@ -127,6 +128,7 @@ nodes {
       }
     }
     nextNodeIndex: 5
+    hideIfUnavailable: true
   }
   branches {
     responseText: "Ugh\342\200\246 I\342\200\231ve been surrounded by elves my entire life. I\342\200\231m a bit sick of it."
@@ -163,9 +165,10 @@ nodes {
       }
     }
     nextNodeIndex: 6
+    hideIfUnavailable: true
   }
   branches {
-    responseText: "Probably the same way you feel about $(l.race_plural). They\342\200\231re different, but not intrinsically better or worse."
+    responseText: "Probably the same way you feel about $(s.race_plural). They\342\200\231re different, but not intrinsically better or worse."
     conditions {
       ops {
         functionName: "Compare Actor Race"
@@ -199,6 +202,7 @@ nodes {
       }
     }
     nextNodeIndex: 7
+    hideIfUnavailable: true
   }
   branches {
     responseText: "I admire them, maybe even envy them a little. "
@@ -235,6 +239,7 @@ nodes {
       }
     }
     nextNodeIndex: 8
+    hideIfUnavailable: true
   }
   branches {
     responseText: "They seem dangerous. It isn\342\200\231t coincidental that elves lead many corps and independent states."
@@ -271,10 +276,12 @@ nodes {
       }
     }
     nextNodeIndex: 9
+    hideIfUnavailable: true
   }
   branches {
     responseText: "There are good elves and bad elves, so I\342\200\231ll help the good and help kill the bad."
     nextNodeIndex: 10
+    hideIfUnavailable: true
   }
   nodeType: ConversationNodeType_Simple
   sourceWithTagInScene: "isElorn"

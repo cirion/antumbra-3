@@ -286,7 +286,7 @@ nodes {
           }
         }
         args {
-          int_value: 0
+          int_value: 1
         }
       }
     }
@@ -4208,10 +4208,54 @@ nodes {
     id: "536d9c6d366236081a002a21"
   }
   index: 63
-  text: "Are you sure? This is the point of no return. Please be sure all your affairs are in order."
+  text: "Are you sure? This is the point of no return. Please be sure all your affairs are in order.\n\nIf you choose to proceed, you will receive a final assortment of equipment based on your total preparedness up until this point. You may want to distribute some or all of these items to your companions; your stash will not be accessible past this point."
   branches {
     responseText: "I am ready."
     actions {
+      ops {
+        functionName: "Trigger: Run Alternate Trigger"
+        args {
+          call_value {
+            functionName: "Get Map Item (Trigger)"
+            args {
+              string_value: "538562e63662366411001508"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "WithOrWithout"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "WaitOrNot"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "WithOrWithout"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+      }
       ops {
         functionName: "Open Hiring Screen and Open Scene"
         args {
@@ -4223,7 +4267,7 @@ nodes {
           }
         }
         args {
-          string_value: "Are you ready to leave?"
+          string_value: "Are you prepared for the final battle?"
         }
       }
     }
@@ -4234,6 +4278,9 @@ nodes {
     nextNodeIndex: -1
   }
   nodeType: ConversationNodeType_Simple
+  sourceInSceneRef {
+    id: "536c5f88366236d41e0027f2"
+  }
 }
 roots {
   nextNodeIndex: 0

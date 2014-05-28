@@ -9,14 +9,14 @@ activationStatusEffects: {
     attribute: Attribute_Move_Speed
     damageType: VulnerabilityType_Normal
     floatModValue: 0
-    intModValue: 1
+    intModValue: 2
     skill: Skill_None
     specialization: Specialization_None
   }
   uirep: {
     description: ""
     icon: "icon_packtactics"
-    name: "Pack Tactics: Movement +1"
+    name: "Pack Tactics: Movement +2"
     thumbnail: ""
   }
 }
@@ -64,7 +64,7 @@ effectModTable: 1
 effectOnTile: false
 effectRadius: 3
 equipPrefabName: ""
-forceRating: 1
+forceRating: 0
 fxrep: {
   actionFxName: "RacoonTotemCastAction"
   hitReactionFxName: "GenericSpellBuffHitReaction"
@@ -101,7 +101,7 @@ store_cost: -1
 team_as_melee: false
 type: ItemType_ShamanTotem
 uirep: {
-  description: "Everyone feels brave when Bummer leads the pack! Allies within a range of 3 gain +1 Movement. Lasts 2 RND."
+  description: "Everyone feels brave when Bummer leads the pack! Allies within a range of 3 gain +2 Movement. Lasts 2 RND."
   icon: "icon_packtactics"
   name: "Pack Tactics"
   thumbnail: ""
