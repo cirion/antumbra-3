@@ -340,9 +340,66 @@ triggers {
       }
     }
   }
-  isActive: true
+  isActive: false
   idRef {
     id: "5383d79c36623684130008e0"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
+triggers {
+  name: "Debug Kill Critters Only"
+  events {
+    ops {
+      functionName: "On Map Start"
+    }
+  }
+  conditions {
+  }
+  actions {
+    ops {
+      functionName: "Kill Actor"
+      args {
+        call_value {
+          functionName: "All Actors With Tag"
+          args {
+            call_value {
+              functionName: "Get Map Item (SenseTagList)"
+              args {
+                string_value: "isCritter"
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Preset Value (int)"
+              args {
+                string_value: "AllOrAny"
+              }
+              args {
+                int_value: 0
+              }
+            }
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "DeathMethod"
+          }
+          args {
+            int_value: 3
+          }
+        }
+      }
+    }
+  }
+  isActive: false
+  idRef {
+    id: "538646f06434319e117ffb5f"
   }
   elseActions {
   }
@@ -8298,9 +8355,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -21
+    x: 60
     y: 0
-    z: -15
+    z: 82
   }
   orientation: ORIENTATION_W
   GeneralTags: "isDorbi"
@@ -8390,9 +8447,9 @@ characters {
 characters {
   name: "system_spawner_playerSpawner"
   gridPoint {
-    x: -24
+    x: 61
     y: 0
-    z: -17
+    z: 84
   }
   orientation: ORIENTATION_W
   idRef {
@@ -8478,9 +8535,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -20
+    x: 62
     y: 0
-    z: -15
+    z: 82
   }
   orientation: ORIENTATION_W
   GeneralTags: "isNorton"
@@ -8571,9 +8628,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -22
+    x: 62
     y: 0
-    z: -15
+    z: 84
   }
   orientation: ORIENTATION_W
   GeneralTags: "isHailey"

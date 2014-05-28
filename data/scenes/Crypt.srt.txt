@@ -5543,7 +5543,7 @@ triggers {
             call_value {
               functionName: "Get Map Item (Actor)"
               args {
-                string_value: "536d4fa66434317b17cbac80"
+                string_value: "53854d853662366411001334"
               }
             }
           }
@@ -5699,7 +5699,7 @@ triggers {
             call_value {
               functionName: "Get Map Item (Actor)"
               args {
-                string_value: "536d4fa66434317b17cbac80"
+                string_value: "53854d853662366411001334"
               }
             }
           }
@@ -5771,7 +5771,7 @@ triggers {
         call_value {
           functionName: "Get Map Item (Actor)"
           args {
-            string_value: "536d4fa66434317b17cbac80"
+            string_value: "53854d853662366411001334"
           }
         }
       }
@@ -5860,7 +5860,7 @@ triggers {
             call_value {
               functionName: "Get Map Item (Actor)"
               args {
-                string_value: "536d4fa66434317b17cbac80"
+                string_value: "53854d853662366411001334"
               }
             }
           }
@@ -6041,7 +6041,7 @@ triggers {
             call_value {
               functionName: "Get Map Item (Actor)"
               args {
-                string_value: "536d4fa66434317b17cbac80"
+                string_value: "53854d853662366411001334"
               }
             }
           }
@@ -6070,7 +6070,7 @@ triggers {
             call_value {
               functionName: "Get Map Item (Actor)"
               args {
-                string_value: "536d4fa66434317b17cbac80"
+                string_value: "53854d853662366411001334"
               }
             }
           }
@@ -6421,7 +6421,7 @@ triggers {
         call_value {
           functionName: "Get Map Item (Actor)"
           args {
-            string_value: "536d4fa66434317b17cbac80"
+            string_value: "53854d853662366411001334"
           }
         }
       }
@@ -6480,7 +6480,7 @@ triggers {
         call_value {
           functionName: "Get Map Item (Actor)"
           args {
-            string_value: "536d4fa66434317b17cbac80"
+            string_value: "53854d853662366411001334"
           }
         }
       }
@@ -6781,6 +6781,44 @@ triggers {
             int_value: 1
           }
         }
+      }
+    }
+    ops {
+      functionName: "Add Actor Karma"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Player)"
+              args {
+                int_value: 0
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        int_value: 7
+      }
+    }
+    ops {
+      functionName: "Set Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (int)"
+          args {
+            string_value: "531d26a736623648180018bf"
+          }
+          args {
+            string_value: "Redding_PendingNuyen"
+          }
+        }
+      }
+      args {
+        int_value: 2000
       }
     }
   }
@@ -13913,6 +13951,8 @@ team_affiliations {
 }
 scene_dimensions {
   dimension_name: "Default"
+}
+character_roster {
 }
 show_hiring_screen_on_scene_load: false
 scene_hiring_prerequisites {

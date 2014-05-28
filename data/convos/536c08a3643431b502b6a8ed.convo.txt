@@ -218,8 +218,66 @@ nodes {
     }
   }
   branches {
-    responseText: "Let me see what you have."
+    responseText: "It looks like you have more gear than before."
+    conditions {
+      ops {
+        functionName: "Invert Bool"
+        args {
+          call_value {
+            functionName: "Get Story Variable (bool)"
+            args {
+              string_value: "531d26a736623648180018bf"
+            }
+            args {
+              string_value: "Redding_Convo_Amelia_Upgrades"
+            }
+          }
+        }
+      }
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Variable (bool)"
+            args {
+              string_value: "sawAmeliaGear"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+      }
+    }
     nextNodeIndex: 9
+    hideIfUnavailable: true
+    onlyOnce: true
+    idRef {
+      id: "53862f9c643431570bac7dee"
+    }
+  }
+  branches {
+    responseText: "Let me see what you have."
+    nextNodeIndex: 11
   }
   branches {
     responseText: "{{GM}}Leave.{{/GM}}"
@@ -380,9 +438,34 @@ nodes {
 }
 nodes {
   idRef {
-    id: "536c0bcb643431b502b6a963"
+    id: "53862fe8643431570bac7df0"
   }
   index: 9
+  text: "Not just more: higher quality, too!\n\nI\'d like to claim all the credit, but really, it\'s a result of your own hard work. Your missions have resulted in more supplies flowing into Redding. The big dealers now know that your cell here isn\'t just a flash in the pan: you\'re a serious military organization, with the resources to pay for the good stuff."
+  branches {
+    responseText: ""
+    nextNodeIndex: 10
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "538630b7643431570bac7e23"
+  }
+  index: 10
+  text: "As a result, the other merchants and I can offer a wider selection of useful gear. The really important part, though, is that your entire army is getting equipped at the same time. When Tir finally does invade, you\'ll be really glad that your grunts are carrying better equipment. Makes it easier for them to stay alive and do more damage!"
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "536c0bcb643431b502b6a963"
+  }
+  index: 11
   text: "Not bad, huh?"
   branches {
     responseText: ""
@@ -399,13 +482,35 @@ nodes {
         }
       }
     }
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "sawAmeliaGear"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
   }
 }
 nodes {
   idRef {
     id: "536c09f1643431b502b6a8fc"
   }
-  index: 10
+  index: 12
   text: ""
   branches {
     responseText: ""
@@ -447,11 +552,11 @@ nodes {
         }
       }
     }
-    nextNodeIndex: 11
+    nextNodeIndex: 13
   }
   branches {
     responseText: ""
-    nextNodeIndex: 13
+    nextNodeIndex: 15
   }
   nodeType: ConversationNodeType_Simple
   actions {
@@ -486,11 +591,11 @@ nodes {
   idRef {
     id: "536c0a31643431b502b6a8ff"
   }
-  index: 11
+  index: 13
   text: "Well, well! If it isn\342\200\231t $(l.name)! I\342\200\231d heard rumors that you had drifted out east. It\342\200\231s always good to see one of my customers still alive, no doubt thanks to my excellent armor. Welcome to my new emporium!"
   branches {
     responseText: ""
-    nextNodeIndex: 12
+    nextNodeIndex: 14
   }
   nodeType: ConversationNodeType_Simple
 }
@@ -498,7 +603,7 @@ nodes {
   idRef {
     id: "536c0a36643431b502b6a902"
   }
-  index: 12
+  index: 14
   text: "I\342\200\231ve just opened this new store as our first location outside of San Francisco. Amelia\342\200\231s Armaments is a name you can trust: trust my armor to stop a bullet, and trust my bullets to pierce the other $(l.guy)\342\200\231s armor. What can I get you?"
   branches {
     responseText: ""
@@ -511,11 +616,11 @@ nodes {
   idRef {
     id: "536c0a61643431b502b6a911"
   }
-  index: 13
+  index: 15
   text: "Hello, and welcome to Amelia\342\200\231s Emporium!"
   branches {
     responseText: ""
-    nextNodeIndex: 12
+    nextNodeIndex: 14
     auxiliaryLink: true
   }
   nodeType: ConversationNodeType_Simple
@@ -563,5 +668,5 @@ roots {
 }
 roots {
   responseText: ""
-  nextNodeIndex: 10
+  nextNodeIndex: 12
 }

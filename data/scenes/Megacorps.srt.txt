@@ -1865,6 +1865,44 @@ triggers {
         }
       }
     }
+    ops {
+      functionName: "Add Actor Karma"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Player)"
+              args {
+                int_value: 0
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        int_value: 7
+      }
+    }
+    ops {
+      functionName: "Set Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (int)"
+          args {
+            string_value: "531d26a736623648180018bf"
+          }
+          args {
+            string_value: "Redding_PendingNuyen"
+          }
+        }
+      }
+      args {
+        int_value: 2500
+      }
+    }
   }
   isActive: true
   idRef {
@@ -19770,7 +19808,7 @@ characters {
     pc_spawn_number: -1
     ai_ignores: true
     portrait {
-      filename: ""
+      filename: "generic_static_blank"
     }
     karma: 6
   }
@@ -19956,7 +19994,7 @@ characters {
   }
 }
 variables {
-  int_value: 20
+  int_value: 30
   variableref_value {
     scope: TsVariableScope_Scene
     name: "timeRemaining"

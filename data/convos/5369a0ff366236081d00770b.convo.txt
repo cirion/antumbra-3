@@ -9,8 +9,47 @@ nodes {
   index: 0
   text: "Finely done, $(l.name)! We knew our trust in you was well-founded."
   branches {
-    responseText: ""
+    responseText: "It\'s good to see you again, Norton."
+    conditions {
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Story Variable (bool)"
+            args {
+              string_value: "531d26a736623648180018bf"
+            }
+            args {
+              string_value: "a2_beatGame"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+      }
+    }
     nextNodeIndex: 1
+    hideIfUnavailable: true
   }
   branches {
     responseText: ""
@@ -53,6 +92,7 @@ nodes {
       }
     }
     nextNodeIndex: 2
+    hideIfUnavailable: true
   }
   nodeType: ConversationNodeType_Simple
 }
@@ -271,6 +311,7 @@ nodes {
       }
     }
     nextNodeIndex: 13
+    hideIfUnavailable: true
   }
   branches {
     responseText: ""
@@ -313,6 +354,7 @@ nodes {
       }
     }
     nextNodeIndex: 15
+    hideIfUnavailable: true
   }
   branches {
     responseText: ""
@@ -355,6 +397,7 @@ nodes {
       }
     }
     nextNodeIndex: 16
+    hideIfUnavailable: true
   }
   nodeType: ConversationNodeType_Simple
 }
