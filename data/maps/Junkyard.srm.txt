@@ -20358,3 +20358,260 @@ props {
     karma: 327
   }
 }
+props {
+  name: "docks_clutter_tirePile"
+  gridPoint {
+    x: -41
+    y: 0
+    z: 2
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "haven_clutter_trashPile01"
+  gridPoint {
+    x: -43
+    y: 0
+    z: 14
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "haven_clutter_trashPile02"
+  gridPoint {
+    x: -32
+    y: 0
+    z: 21
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "mitte_clutter_trash01"
+  gridPoint {
+    x: -22
+    y: 0
+    z: 47
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "mitte_clutter_trash02"
+  gridPoint {
+    x: -30
+    y: 0
+    z: 45
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "tenements_clutter_trashpile04"
+  gridPoint {
+    x: -37
+    y: 0
+    z: 64
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "tenements_clutter_trashPile03"
+  gridPoint {
+    x: -30
+    y: 0
+    z: 67
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "tenements_clutter_trashPile03"
+  gridPoint {
+    x: -40
+    y: 0
+    z: 29
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "5385598636623664110013b7"
+  }
+  lod: 0
+}
+props {
+  name: "tenements_clutter_trashPile02"
+  gridPoint {
+    x: -25
+    y: 0
+    z: 35
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "tenements_clutter_trashPile01"
+  gridPoint {
+    x: -42
+    y: 0
+    z: 34
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "tenements_clutter_trashPile01"
+  gridPoint {
+    x: -29
+    y: 0
+    z: 52
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "538559a736623664110013b8"
+  }
+  lod: 0
+}
+props {
+  name: "haven_clutter_trashPile01"
+  gridPoint {
+    x: -18
+    y: 0
+    z: 65
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "538559b636623664110013b9"
+  }
+  lod: 0
+}
+props {
+  name: "tenements_clutter_trashPile03"
+  gridPoint {
+    x: -38
+    y: 0
+    z: 11
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "538559bf36623664110013ba"
+  }
+  lod: 0
+}
+props {
+  name: "haven_clutter_trashPile02"
+  gridPoint {
+    x: -24
+    y: 0
+    z: 71
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "538559cb36623664110013bb"
+  }
+  lod: 0
+}
+props {
+  name: "tenements_clutter_trashPile03"
+  gridPoint {
+    x: -17
+    y: 0
+    z: 64
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "538559db36623664110013bc"
+  }
+  lod: 0
+}
+props {
+  name: "mitte_clutter_trash01"
+  gridPoint {
+    x: -41
+    y: 0
+    z: 40
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "tenements_clutter_trashPile03"
+  gridPoint {
+    x: -26
+    y: 0
+    z: 30
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "53855a1136623664110013bd"
+  }
+  lod: 0
+}
+props {
+  name: "haven_clutter_trashBin01"
+  gridPoint {
+    x: -26
+    y: 0
+    z: 23
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "mitte_clutter_trash02"
+  gridPoint {
+    x: -30
+    y: 0
+    z: 26
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "haven_clutter_trashPile01"
+  gridPoint {
+    x: -21
+    y: 0
+    z: 38
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "53855a5c36623664110013bf"
+  }
+  lod: 0
+}
+props {
+  name: "tenements_clutter_trashPile03"
+  gridPoint {
+    x: -42
+    y: 0
+    z: 2
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "53855a7c36623664110013c0"
+  }
+  lod: 0
+}
+props {
+  name: "tenements_clutter_trashPile02"
+  gridPoint {
+    x: -53
+    y: 0
+    z: 4
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "haven_clutter_trashPile01"
+  gridPoint {
+    x: -46
+    y: 0
+    z: 6
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
