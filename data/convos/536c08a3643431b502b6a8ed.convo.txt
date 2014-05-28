@@ -395,10 +395,7 @@ nodes {
       functionName: "Open Store Screen From Actor"
       args {
         call_value {
-          functionName: "Get Map Item (Actor)"
-          args {
-            string_value: "536c4ab7366236d41e0026ab"
-          }
+          functionName: "Triggering Target Actor"
         }
       }
     }
