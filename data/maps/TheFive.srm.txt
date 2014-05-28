@@ -161,16 +161,6 @@ props {
   lod: 0
 }
 props {
-  name: "barrens_decor_concreteRailEdge02"
-  gridPoint {
-    x: -10
-    y: 0
-    z: -33
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
   name: "barrens_decor_concreteRailEdge03"
   gridPoint {
     x: -17
@@ -1444,7 +1434,7 @@ props {
 props {
   name: "undergroundBase_misc_pickaxe01"
   gridPoint {
-    x: -20
+    x: -23
     y: 0
     z: -16
   }
@@ -13081,7 +13071,7 @@ props {
   gridPoint {
     x: -71
     y: 0
-    z: 14
+    z: 12
   }
   orientation: ORIENTATION_S
   lod: 0
@@ -13241,9 +13231,9 @@ props {
 props {
   name: "docks_clutter_largeTrafficCone"
   gridPoint {
-    x: -42
+    x: -44
     y: 0
-    z: -16
+    z: -14
   }
   orientation: ORIENTATION_S
   idRef {
@@ -13612,6 +13602,165 @@ props {
   }
   idRef {
     id: "537d85e0366236041b0015d7"
+  }
+  lod: 0
+}
+props {
+  name: "docks_clutter_largeTrafficCone"
+  gridPoint {
+    x: -34
+    y: 0
+    z: -10
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "538556bd366236641100134a"
+  }
+  lod: 0
+}
+props {
+  name: "mitte_street_trashcan01"
+  gridPoint {
+    x: -49
+    y: 0
+    z: 11
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "538556f2366236641100134b"
+  }
+  lod: 0
+}
+props {
+  name: "docks_clutter_largeTrafficCone"
+  gridPoint {
+    x: -67
+    y: 0
+    z: 4
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "53855711366236641100134c"
+  }
+  lod: 0
+}
+props {
+  name: "docks_clutter_largeTrafficCone"
+  gridPoint {
+    x: -68
+    y: 0
+    z: 1
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "53855718366236641100134d"
+  }
+  lod: 0
+}
+props {
+  name: "docks_clutter_largeTrafficCone"
+  gridPoint {
+    x: -69
+    y: 0
+    z: -2
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "5385571a366236641100134e"
+  }
+  lod: 0
+}
+props {
+  name: "tenements_decor_bike03"
+  gridPoint {
+    x: -42
+    y: 0
+    z: -8
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "barrens_market_foodCartBike"
+  gridPoint {
+    x: -45
+    y: 0
+    z: -22
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "hive_clutter_rock02"
+  gridPoint {
+    x: 4
+    y: 0
+    z: 0
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "53855792366236641100134f"
+  }
+  lod: 0
+}
+props {
+  name: "hive_clutter_hugeRock01"
+  gridPoint {
+    x: 2
+    y: 0
+    z: 0
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "538557963662366411001350"
+  }
+  lod: 0
+}
+props {
+  name: "undergroundBase_tech_barricade01"
+  gridPoint {
+    x: -6
+    y: 0
+    z: -12
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "538557f03662366411001351"
+  }
+  lod: 0
+}
+props {
+  name: "barrens_vehicle_mcCainMotorcycle01"
+  gridPoint {
+    x: -2
+    y: 0
+    z: -21
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "tempbad_leyline_light"
+  gridPoint {
+    x: -8
+    y: 0
+    z: -22
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "leyline_fx_on_tile"
+    string_value: "LeyLineLow"
+  }
+  properties {
+    property_id: "leyline_sfx_on_tile"
+    string_value: "StandOnLeylineFar"
+  }
+  properties {
+    property_id: "leyline_fx_on_visible"
+    string_value: "LeyLineTileLow"
+  }
+  idRef {
+    id: "538558413662366411001352"
   }
   lod: 0
 }
