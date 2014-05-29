@@ -73,7 +73,10 @@ nodes {
           functionName: "Specific Actor"
           args {
             call_value {
-              functionName: "Triggering Actor"
+              functionName: "Get Map Item (Actor)"
+              args {
+                string_value: "5386772c643431661294f685"
+              }
             }
           }
           args {
