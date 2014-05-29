@@ -321,7 +321,7 @@ triggers {
       }
     }
   }
-  isActive: true
+  isActive: false
   idRef {
     id: "537a8538643431b04e37ee64"
   }
@@ -17938,8 +17938,6 @@ scene_dimensions {
   initial_alarm_state: 10
   turns_per_round: 3
 }
-character_roster {
-}
 show_hiring_screen_on_scene_load: false
 scene_hiring_prerequisites {
   prereq_description: ""
@@ -17956,4 +17954,4 @@ hiring_average_cost: 99999
 override_hiring_average_cost: true
 show_equip_screen_on_scene_load: false
 can_move_outside_camera_regions: false
-can_start_before_triggers: true
+can_start_before_triggers: false

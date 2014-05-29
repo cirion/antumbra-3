@@ -12502,7 +12502,7 @@ scene_subtitle: ""
 scene_synopsis: "Assembling a small team, you leave your compound and walk through the streets of Redding. Already you can see the signs of civil unrest: pro-Human graffiti, smoldering fires, distant gunshots. Following the commotion north, you pass through the outskirts of town and arrive at Shasta Dam. You see a group of belligerents huddled near the lake. The beauty of the natural surroundings seems to mock the ugliness of the scene in front of you."
 scene_image: ""
 scene_continue_button_skip: false
-scene_restore_runner_health: false
+scene_restore_runner_health: true
 directional_light_dir {
   x: -0.5
   y: -1
@@ -12544,8 +12544,6 @@ scene_dimensions {
   dimension_name: "Matrix"
   initial_alarm_state: 20
   turns_per_round: 3
-}
-character_roster {
 }
 show_hiring_screen_on_scene_load: false
 scene_hiring_prerequisites {
@@ -14753,4 +14751,4 @@ hiring_average_cost: 99999
 override_hiring_average_cost: true
 show_equip_screen_on_scene_load: false
 can_move_outside_camera_regions: false
-can_start_before_triggers: true
+can_start_before_triggers: false
