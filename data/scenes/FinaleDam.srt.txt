@@ -6605,6 +6605,39 @@ triggers {
         }
       }
     }
+    ops {
+      functionName: "Enable/Disable Team\'s Turn"
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 6
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "EnableOrDisable"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SceneDimension)"
+          args {
+            string_value: "Matrix"
+          }
+        }
+      }
+    }
   }
   isActive: true
   idRef {
@@ -8246,6 +8279,39 @@ triggers {
         }
       }
     }
+    ops {
+      functionName: "Enable/Disable Team\'s Turn"
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 6
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "EnableOrDisable"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SceneDimension)"
+          args {
+            string_value: "Default"
+          }
+        }
+      }
+    }
   }
   isActive: true
   idRef {
@@ -8463,7 +8529,7 @@ triggers {
             string_value: "DeathMethod"
           }
           args {
-            int_value: 0
+            int_value: 3
           }
         }
       }
@@ -13975,7 +14041,7 @@ triggers {
         float_value: 0
       }
       args {
-        float_value: 7
+        float_value: 10
       }
       args {
         float_value: 3
@@ -17822,7 +17888,7 @@ characters {
         move_speed: 0
       }
       skills {
-        ranged_combat: 0
+        ranged_combat: 1
         close_combat: 0
         throwing_weapons: 0
         spellcasting: -4
@@ -17858,13 +17924,13 @@ characters {
       }
     }
     equipment {
-      prefab_name: "SMG 2 Colt TZ-110"
-    }
-    equipment {
       prefab_name: "HealthPack"
     }
     equipment {
       prefab_name: "SamuraiBunnyMaskless"
+    }
+    equipment {
+      prefab_name: "SMG 2 Ingram Smartgun"
     }
     team_id: "Civilians"
     char_name: "Troll Soldier"
@@ -17878,7 +17944,7 @@ characters {
       filename: ""
     }
     portrait_code_override: "s6h4b5t6"
-    karma: 55
+    karma: 58
   }
 }
 characters {
@@ -17922,7 +17988,7 @@ characters {
         move_speed: 0
       }
       skills {
-        ranged_combat: 0
+        ranged_combat: 1
         close_combat: 0
         throwing_weapons: 0
         spellcasting: -4
@@ -17961,10 +18027,10 @@ characters {
       prefab_name: "Grenade 1 (Frag)"
     }
     equipment {
-      prefab_name: "AR 2 FN HAR"
+      prefab_name: "SamuraiPunk"
     }
     equipment {
-      prefab_name: "SamuraiPunk"
+      prefab_name: "AR 2 HK G12A3z"
     }
     team_id: "Civilians"
     char_name: "Troll Soldier"
@@ -17978,7 +18044,7 @@ characters {
       filename: ""
     }
     portrait_code_override: "s6h1b2t5"
-    karma: 55
+    karma: 58
   }
 }
 characters {
