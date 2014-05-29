@@ -819,15 +819,6 @@ triggers {
   }
   actions {
     ops {
-      functionName: "Fade Camera Out"
-      args {
-        float_value: 5
-      }
-      args {
-        float_value: 0
-      }
-    }
-    ops {
       functionName: "Send Event After Delay"
       args {
         call_value {
@@ -838,44 +829,13 @@ triggers {
         }
       }
       args {
-        float_value: 5
-      }
-    }
-  }
-  isActive: true
-  idRef {
-    id: "537692b6643431bf375d1536"
-  }
-  elseActions {
-  }
-  is_oneshot: true
-}
-triggers {
-  name: "Fade In"
-  events {
-    ops {
-      functionName: "Get Map Item (Event)"
-      args {
-        string_value: "Game Ends"
-      }
-    }
-  }
-  conditions {
-  }
-  actions {
-    ops {
-      functionName: "Fade Camera In"
-      args {
-        float_value: 3
-      }
-      args {
         float_value: 0
       }
     }
   }
   isActive: true
   idRef {
-    id: "537e0eb1366236c410001956"
+    id: "537692b6643431bf375d1536"
   }
   elseActions {
   }
@@ -1518,6 +1478,9 @@ triggers {
       args {
         int_value: 4
       }
+    }
+    ops {
+      functionName: "End Current Team Round"
     }
   }
   isActive: true
