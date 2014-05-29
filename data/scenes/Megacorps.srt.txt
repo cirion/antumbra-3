@@ -591,7 +591,7 @@ triggers {
         }
       }
       args {
-        int_value: 20
+        int_value: 30
       }
     }
   }
@@ -9143,7 +9143,7 @@ triggers {
         call_value {
           functionName: "Get Map Item (SceneDimension)"
           args {
-            string_value: "Default"
+            string_value: "Matrix"
           }
         }
       }
@@ -9229,7 +9229,7 @@ triggers {
                 string_value: "AllOrAny"
               }
               args {
-                int_value: 1
+                int_value: 0
               }
             }
           }
@@ -9286,7 +9286,7 @@ triggers {
                 string_value: "AllOrAny"
               }
               args {
-                int_value: 1
+                int_value: 0
               }
             }
           }
@@ -9343,7 +9343,7 @@ triggers {
                 string_value: "AllOrAny"
               }
               args {
-                int_value: 1
+                int_value: 0
               }
             }
           }
@@ -17142,7 +17142,7 @@ characters {
     GeneralTags: "isCEO"
     pc_spawn_number: -1
     portrait {
-      filename: ""
+      filename: "backerpc_humanmale_robertbowling_dashyoung"
     }
     karma: 6
     persistent_body: true
@@ -19021,7 +19021,7 @@ characters {
       }
     }
     team_id: "Tir"
-    char_name: "Lonestar Guard"
+    char_name: "Tir Tairngire Commando"
     GeneralTags: "squad5"
     GeneralTags: ""
     pc_spawn_number: -1
@@ -19311,7 +19311,7 @@ characters {
       }
     }
     team_id: "Tir"
-    char_name: "Lonestar Guard"
+    char_name: "Tir Tairngire Commando"
     GeneralTags: "squad1"
     GeneralTags: ""
     pc_spawn_number: -1
@@ -19601,7 +19601,7 @@ characters {
       }
     }
     team_id: "Tir"
-    char_name: "Lonestar Guard"
+    char_name: "Tir Tairngire Commando"
     GeneralTags: "squad3"
     GeneralTags: ""
     pc_spawn_number: -1
