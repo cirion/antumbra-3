@@ -1886,7 +1886,7 @@ triggers {
         call_value {
           functionName: "Get Map Item (SenseTagList)"
           args {
-            string_value: "isMerchantLevel1"
+            string_value: "isMerchantLevel2"
           }
         }
       }
@@ -1903,7 +1903,7 @@ triggers {
         call_value {
           functionName: "Get Map Item (SenseTagList)"
           args {
-            string_value: "isMerchantLevel2"
+            string_value: "isMerchantLevel1"
           }
         }
       }

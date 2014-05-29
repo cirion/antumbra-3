@@ -267,6 +267,33 @@ nodes {
           }
         }
       }
+      ops {
+        functionName: "Comparison (Actor)"
+        args {
+          call_value {
+            functionName: "Triggering Target Actor"
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Map Item (Actor)"
+            args {
+              string_value: "536e8bf336623684180063cc"
+            }
+          }
+        }
+      }
     }
     nextNodeIndex: 9
     hideIfUnavailable: true

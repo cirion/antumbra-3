@@ -9,7 +9,7 @@ nodes {
   index: 0
   text: "Finely done, $(l.name)! We knew our trust in you was well-founded."
   branches {
-    responseText: "It\'s good to see you again, Norton."
+    responseText: "This brings back memories of our fight in Colma."
     conditions {
       ops {
         functionName: "Comparison (bool)"
@@ -101,7 +101,7 @@ nodes {
     id: "5369a608366236081d007723"
   }
   index: 1
-  text: "We expected no less from our $(story.LordLady) of the Mission. Would that all our subjects comported themselves so well!"
+  text: "We expected no less valor from our $(story.LordLady) of the Mission. Would that all our subjects comported themselves so well!"
   branches {
     responseText: ""
     nextNodeIndex: 2

@@ -17,78 +17,12 @@ triggers {
       }
     }
     ops {
-      functionName: "Display Text at Screen Position"
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "TextPopupStyle"
-          }
-          args {
-            int_value: 0
-          }
-        }
-      }
-      args {
-        string_value: "SPAWNING EMBERS"
-      }
-      args {
-        float_value: 0
-      }
-      args {
-        float_value: 0
-      }
-      args {
-        float_value: 0
-      }
-      args {
-        float_value: 0
-      }
-      args {
-        float_value: 0
-      }
-      args {
-        float_value: 0
-      }
-      args {
-        float_value: 5
-      }
-      args {
-        float_value: 3
-      }
-      args {
-        float_value: 0
-      }
-    }
-    ops {
       functionName: "Activate Actor Spawner"
       args {
         call_value {
           functionName: "Get Map Item (Actor Reference)"
           args {
             string_value: "53699d4d366236081d0076af"
-          }
-        }
-      }
-    }
-    ops {
-      functionName: "Activate Actor Spawner"
-      args {
-        call_value {
-          functionName: "Get Map Item (Actor Reference)"
-          args {
-            string_value: "53686fb7366236141f0041bc"
-          }
-        }
-      }
-    }
-    ops {
-      functionName: "Activate Actor Spawner"
-      args {
-        call_value {
-          functionName: "Get Map Item (Actor Reference)"
-          args {
-            string_value: "53699d51366236081d0076b0"
           }
         }
       }
@@ -859,7 +793,7 @@ triggers {
                 string_value: "51f7429764343188990041a8"
               }
               args {
-                string_value: "A1_Bool_Won"
+                string_value: "A1_Bool_KilledBoss"
               }
             }
           }
@@ -960,50 +894,6 @@ triggers {
             int_value: 1
           }
         }
-      }
-    }
-    ops {
-      functionName: "Display Text at Screen Position"
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "TextPopupStyle"
-          }
-          args {
-            int_value: 0
-          }
-        }
-      }
-      args {
-        string_value: "INITIALIZED VARS"
-      }
-      args {
-        float_value: 0
-      }
-      args {
-        float_value: 0
-      }
-      args {
-        float_value: 0
-      }
-      args {
-        float_value: 0
-      }
-      args {
-        float_value: 0
-      }
-      args {
-        float_value: 0
-      }
-      args {
-        float_value: 5
-      }
-      args {
-        float_value: 3
-      }
-      args {
-        float_value: 0
       }
     }
   }
@@ -1126,100 +1016,12 @@ triggers {
         }
       }
     }
-    ops {
-      functionName: "Display Text at Screen Position"
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "TextPopupStyle"
-          }
-          args {
-            int_value: 0
-          }
-        }
-      }
-      args {
-        string_value: "BEAT GAME"
-      }
-      args {
-        float_value: 0
-      }
-      args {
-        float_value: 0
-      }
-      args {
-        float_value: 0
-      }
-      args {
-        float_value: 0
-      }
-      args {
-        float_value: 0
-      }
-      args {
-        float_value: 0
-      }
-      args {
-        float_value: 5
-      }
-      args {
-        float_value: 3
-      }
-      args {
-        float_value: 0
-      }
-    }
   }
   isActive: true
   idRef {
     id: "5369a4f6366236081d00771c"
   }
   elseActions {
-    ops {
-      functionName: "Display Text at Screen Position"
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "TextPopupStyle"
-          }
-          args {
-            int_value: 0
-          }
-        }
-      }
-      args {
-        string_value: "DID NOT BEAT GAME"
-      }
-      args {
-        float_value: 0
-      }
-      args {
-        float_value: 0
-      }
-      args {
-        float_value: 0
-      }
-      args {
-        float_value: 0
-      }
-      args {
-        float_value: 0
-      }
-      args {
-        float_value: 0
-      }
-      args {
-        float_value: 5
-      }
-      args {
-        float_value: 3
-      }
-      args {
-        float_value: 0
-      }
-    }
   }
   is_oneshot: true
 }
@@ -4126,6 +3928,8 @@ team_affiliations {
 }
 scene_dimensions {
   dimension_name: "Default"
+}
+character_roster {
 }
 show_hiring_screen_on_scene_load: false
 scene_hiring_prerequisites {
