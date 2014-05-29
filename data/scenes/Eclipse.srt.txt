@@ -14726,7 +14726,7 @@ variables {
   }
 }
 variables {
-  int_value: 1
+  int_value: 10
   variableref_value {
     scope: TsVariableScope_Scene
     name: "oddsOfBark"
