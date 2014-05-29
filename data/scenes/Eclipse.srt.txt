@@ -11554,6 +11554,21 @@ characters {
     equipment {
       prefab_name: "HealthPack_hi"
     }
+    equipment {
+      prefab_name: "HealthPack_hi"
+    }
+    equipment {
+      prefab_name: "HealthPack_med"
+    }
+    equipment {
+      prefab_name: "HealthPack_med"
+    }
+    equipment {
+      prefab_name: "Grenade 2 (Frag)"
+    }
+    equipment {
+      prefab_name: "Grenade (HE Phosphorus)"
+    }
     team_id: "Civilians"
     char_name: "Kali"
     pc_spawn_number: -1
@@ -12316,8 +12331,8 @@ characters {
   lod: 0
   character_instance {
     prefab_name: "Seattle:Core/HumanFemale"
-    character_sheet_id: "a3_crew_hailey_lv2"
-    equipment_sheet_id: "a3_crew_hailey_lv2"
+    character_sheet_id: "a3_crew_hailey_Lv2"
+    equipment_sheet_id: "a3_crew_hailey_Lv2"
     character_mod {
       stats {
         body: 0
@@ -14610,8 +14625,8 @@ characters {
   lod: 0
   character_instance {
     prefab_name: "Seattle:Core/DwarfFemale"
-    character_sheet_id: "a3_crew_dorbi_lv4"
-    equipment_sheet_id: "a3_crew_dorbi_lv4"
+    character_sheet_id: "a3_crew_dorbi_Lv4"
+    equipment_sheet_id: "a3_crew_dorbi_Lv4"
     character_mod {
       stats {
         body: 0
@@ -14700,8 +14715,8 @@ characters {
   lod: 0
   character_instance {
     prefab_name: "Seattle:Core/HumanMale"
-    character_sheet_id: "a3_crew_norton_lv4"
-    equipment_sheet_id: "a3_crew_norton_lv4"
+    character_sheet_id: "a3_crew_norton_Lv4"
+    equipment_sheet_id: "a3_crew_norton_Lv4"
     character_mod {
       stats {
         body: 0
