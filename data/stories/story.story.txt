@@ -87,10 +87,22 @@ variables {
   name: "CharacterScaleAmount"
   typeName: "int"
   defaultValue {
-    int_value: 2
+    int_value: 1
     variableref_value {
       scope: TsVariableScope_Story
       name: "CharacterScaleAmount"
+      typeName: "int"
+    }
+  }
+}
+variables {
+  name: "Const_OddsOfBark"
+  typeName: "int"
+  defaultValue {
+    int_value: 10
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "Const_OddsOfBark"
       typeName: "int"
     }
   }

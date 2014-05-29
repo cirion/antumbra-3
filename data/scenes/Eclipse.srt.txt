@@ -8893,9 +8893,12 @@ triggers {
           }
           args {
             call_value {
-              functionName: "Get Variable (int)"
+              functionName: "Get Story Variable (int)"
               args {
-                string_value: "oddsOfBark"
+                string_value: "531d26a736623648180018bf"
+              }
+              args {
+                string_value: "Const_OddsOfBark"
               }
             }
           }
@@ -9052,9 +9055,12 @@ triggers {
           }
           args {
             call_value {
-              functionName: "Get Variable (int)"
+              functionName: "Get Story Variable (int)"
               args {
-                string_value: "oddsOfBark"
+                string_value: "531d26a736623648180018bf"
+              }
+              args {
+                string_value: "Const_OddsOfBark"
               }
             }
           }
@@ -9211,9 +9217,12 @@ triggers {
           }
           args {
             call_value {
-              functionName: "Get Variable (int)"
+              functionName: "Get Story Variable (int)"
               args {
-                string_value: "oddsOfBark"
+                string_value: "531d26a736623648180018bf"
+              }
+              args {
+                string_value: "Const_OddsOfBark"
               }
             }
           }
@@ -9370,9 +9379,12 @@ triggers {
           }
           args {
             call_value {
-              functionName: "Get Variable (int)"
+              functionName: "Get Story Variable (int)"
               args {
-                string_value: "oddsOfBark"
+                string_value: "531d26a736623648180018bf"
+              }
+              args {
+                string_value: "Const_OddsOfBark"
               }
             }
           }
@@ -9529,9 +9541,12 @@ triggers {
           }
           args {
             call_value {
-              functionName: "Get Variable (int)"
+              functionName: "Get Story Variable (int)"
               args {
-                string_value: "oddsOfBark"
+                string_value: "531d26a736623648180018bf"
+              }
+              args {
+                string_value: "Const_OddsOfBark"
               }
             }
           }
@@ -9688,9 +9703,12 @@ triggers {
           }
           args {
             call_value {
-              functionName: "Get Variable (int)"
+              functionName: "Get Story Variable (int)"
               args {
-                string_value: "oddsOfBark"
+                string_value: "531d26a736623648180018bf"
+              }
+              args {
+                string_value: "Const_OddsOfBark"
               }
             }
           }
@@ -9813,9 +9831,12 @@ triggers {
           }
           args {
             call_value {
-              functionName: "Get Variable (int)"
+              functionName: "Get Story Variable (int)"
               args {
-                string_value: "oddsOfBark"
+                string_value: "531d26a736623648180018bf"
+              }
+              args {
+                string_value: "Const_OddsOfBark"
               }
             }
           }
@@ -10076,9 +10097,12 @@ triggers {
           }
           args {
             call_value {
-              functionName: "Get Variable (int)"
+              functionName: "Get Story Variable (int)"
               args {
-                string_value: "oddsOfBark"
+                string_value: "531d26a736623648180018bf"
+              }
+              args {
+                string_value: "Const_OddsOfBark"
               }
             }
           }
@@ -10400,9 +10424,12 @@ triggers {
           }
           args {
             call_value {
-              functionName: "Get Variable (int)"
+              functionName: "Get Story Variable (int)"
               args {
-                string_value: "oddsOfBark"
+                string_value: "531d26a736623648180018bf"
+              }
+              args {
+                string_value: "Const_OddsOfBark"
               }
             }
           }
@@ -10586,9 +10613,12 @@ triggers {
           }
           args {
             call_value {
-              functionName: "Get Variable (int)"
+              functionName: "Get Story Variable (int)"
               args {
-                string_value: "oddsOfBark"
+                string_value: "531d26a736623648180018bf"
+              }
+              args {
+                string_value: "Const_OddsOfBark"
               }
             }
           }
@@ -10688,6 +10718,85 @@ triggers {
   isActive: true
   idRef {
     id: "538663af643431661294f5ad"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
+triggers {
+  name: "PC0 Dies"
+  events {
+    ops {
+      functionName: "On Actor Downed"
+    }
+  }
+  conditions {
+    ops {
+      functionName: "Comparison (Actor)"
+      args {
+        call_value {
+          functionName: "Triggering Target Actor"
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (Player)"
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+  }
+  actions {
+    ops {
+      functionName: "Set Goal Status"
+      args {
+        call_value {
+          functionName: "Get Map Item (Goal)"
+          args {
+            string_value: "You Died."
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "GoalStatus"
+          }
+          args {
+            int_value: 3
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "5387360e366236cc1c00606d"
   }
   elseActions {
   }
@@ -14725,14 +14834,6 @@ variables {
     typeName: "int"
   }
 }
-variables {
-  int_value: 10
-  variableref_value {
-    scope: TsVariableScope_Scene
-    name: "oddsOfBark"
-    typeName: "int"
-  }
-}
 mapEvents: "Teleport Baddies"
 senseTags: "isICData"
 senseTags: "isICPuzzle"
@@ -14761,6 +14862,11 @@ goals {
   name: "Find Kali."
   type: GoalType_Primary
   status: GoalStatus_Started
+}
+goals {
+  name: "You Died."
+  type: GoalType_Primary
+  status: GoalStatus_Hidden
 }
 worldMapLocation {
   filename: ""
