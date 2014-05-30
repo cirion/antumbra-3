@@ -7,7 +7,7 @@ nodes {
     id: "536ced5c6434312f05639634"
   }
   index: 0
-  text: "Felicitous salutations to you, $+(l.sir) $(l.name)! Do you seek a boon from us on this fine day?"
+  text: "Felicitous salutations to you, $+(story.LordLady) $(l.name)! Do you seek a boon from us on this fine day?"
   branches {
     responseText: ""
     nextNodeIndex: 1

@@ -322,27 +322,6 @@ triggers {
   }
   actions {
     ops {
-      functionName: "Add Actor Karma"
-      args {
-        call_value {
-          functionName: "Specific Actor"
-          args {
-            call_value {
-              functionName: "Get Map Item (Player)"
-              args {
-                int_value: 0
-              }
-            }
-          }
-          args {
-          }
-        }
-      }
-      args {
-        int_value: 7
-      }
-    }
-    ops {
       functionName: "Set Goal Status"
       args {
         call_value {
@@ -4845,7 +4824,7 @@ triggers {
         call_value {
           functionName: "Get Map Item (SceneDimension)"
           args {
-            string_value: "Default"
+            string_value: "Matrix"
           }
         }
       }
@@ -4889,7 +4868,7 @@ triggers {
         call_value {
           functionName: "Get Map Item (SceneDimension)"
           args {
-            string_value: "Default"
+            string_value: "Matrix"
           }
         }
       }
@@ -4922,7 +4901,7 @@ triggers {
         call_value {
           functionName: "Get Map Item (SceneDimension)"
           args {
-            string_value: "Default"
+            string_value: "Matrix"
           }
         }
       }
@@ -5666,7 +5645,7 @@ triggers {
         call_value {
           functionName: "Get Map Item (SceneDimension)"
           args {
-            string_value: "Default"
+            string_value: "Matrix"
           }
         }
       }
@@ -5799,7 +5778,7 @@ triggers {
         call_value {
           functionName: "Get Map Item (SceneDimension)"
           args {
-            string_value: "Default"
+            string_value: "Matrix"
           }
         }
       }
@@ -5932,7 +5911,7 @@ triggers {
         call_value {
           functionName: "Get Map Item (SceneDimension)"
           args {
-            string_value: "Default"
+            string_value: "Matrix"
           }
         }
       }
@@ -6616,7 +6595,7 @@ triggers {
       }
     }
     ops {
-      functionName: "Order Actor to Seek And Destroy (Team)"
+      functionName: "Order Actor to Hunt And Destroy (Team)"
       args {
         call_value {
           functionName: "All Actors With Tag"
@@ -16632,6 +16611,7 @@ characters {
       filename: ""
     }
     karma: 40
+    scale_character_sheet: true
   }
 }
 characters {
@@ -16676,6 +16656,7 @@ characters {
       filename: ""
     }
     karma: 30
+    scale_character_sheet: true
   }
 }
 characters {
@@ -16720,6 +16701,7 @@ characters {
       filename: ""
     }
     karma: 33
+    scale_character_sheet: true
   }
 }
 characters {
@@ -17478,6 +17460,7 @@ characters {
       filename: ""
     }
     karma: 28
+    scale_character_sheet: true
   }
 }
 characters {
@@ -17522,6 +17505,7 @@ characters {
       filename: ""
     }
     karma: 28
+    scale_character_sheet: true
   }
 }
 characters {
@@ -17566,6 +17550,7 @@ characters {
       filename: ""
     }
     karma: 28
+    scale_character_sheet: true
   }
 }
 characters {
@@ -17610,6 +17595,7 @@ characters {
       filename: ""
     }
     karma: 28
+    scale_character_sheet: true
   }
 }
 characters {
@@ -17654,12 +17640,13 @@ characters {
       filename: ""
     }
     karma: 39
+    scale_character_sheet: true
   }
 }
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -40
+    x: -41
     y: 0
     z: 46
   }
@@ -17698,16 +17685,17 @@ characters {
       filename: ""
     }
     karma: 40
+    scale_character_sheet: true
   }
 }
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -39
+    x: -41
     y: 0
-    z: 45
+    z: 43
   }
-  orientation: ORIENTATION_S
+  orientation: ORIENTATION_W
   GeneralTags: "squad3"
   idRef {
     id: "53781e45366236101d00493e"
@@ -17742,6 +17730,7 @@ characters {
       filename: ""
     }
     karma: 44
+    scale_character_sheet: true
   }
 }
 characters {
@@ -17786,6 +17775,7 @@ characters {
       filename: ""
     }
     karma: 30
+    scale_character_sheet: true
   }
 }
 characters {
@@ -17830,6 +17820,7 @@ characters {
       filename: ""
     }
     karma: 44
+    scale_character_sheet: true
   }
 }
 characters {
@@ -17874,16 +17865,17 @@ characters {
       filename: ""
     }
     karma: 30
+    scale_character_sheet: true
   }
 }
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -38
+    x: -39
     y: 0
-    z: 47
+    z: 44
   }
-  orientation: ORIENTATION_S
+  orientation: ORIENTATION_W
   GeneralTags: "squad3"
   idRef {
     id: "53781ee4366236101d004942"
@@ -17918,6 +17910,7 @@ characters {
       filename: ""
     }
     karma: 39
+    scale_character_sheet: true
   }
 }
 characters {
@@ -17962,6 +17955,7 @@ characters {
       filename: ""
     }
     karma: 33
+    scale_character_sheet: true
   }
 }
 characters {
@@ -18006,6 +18000,7 @@ characters {
       filename: ""
     }
     karma: 40
+    scale_character_sheet: true
   }
 }
 characters {
@@ -18050,6 +18045,7 @@ characters {
       filename: ""
     }
     karma: 44
+    scale_character_sheet: true
   }
 }
 characters {
@@ -18094,6 +18090,7 @@ characters {
       filename: ""
     }
     karma: 44
+    scale_character_sheet: true
   }
 }
 characters {
@@ -18138,6 +18135,7 @@ characters {
       filename: ""
     }
     karma: 39
+    scale_character_sheet: true
   }
 }
 characters {
@@ -18182,6 +18180,7 @@ characters {
       filename: ""
     }
     karma: 33
+    scale_character_sheet: true
   }
 }
 characters {
@@ -18469,7 +18468,7 @@ mapName: "Junkyard"
 parentStory: ""
 scene_title: "Junkyard"
 scene_subtitle: ""
-scene_synopsis: "You suppress the urge to gag as you proceed into the junkyard. Piles of discarded trash are piled high up to the sky, and the refuse has taken on a characteristic odor after being baked for more than a century under the merciless desert heat.\n\nUpon further reflection, this is the ideal location for the Native Californians\' regional hideout. No bystanders would accidentally wander in, and the scrapyard contains a variety of twisted and jagged metal pieces that they can twist into their horrid bombs. On the bright side, it seems like they didn\'t expect anyone to come looking for them, and you appear to have them on the run... "
+scene_synopsis: "You suppress the urge to gag as you proceed into the junkyard. Piles of discarded trash are piled high up to the sky, and the refuse has taken on a characteristic odor after being baked for more than a century under the merciless desert heat.\n\nUpon further reflection, this is the ideal location for the Native Californians\' regional hideout. No bystanders would accidentally wander in, and the scrapyard contains a variety of torn and jagged metal pieces that they can twist into their horrid bombs. On the bright side, it seems like they didn\'t expect anyone to come looking for them, and you appear to have them on the run... "
 scene_image: ""
 scene_continue_button_skip: false
 scene_restore_runner_health: false
@@ -18522,10 +18521,8 @@ scene_dimensions {
 }
 scene_dimensions {
   dimension_name: "Matrix"
-  initial_alarm_state: 20
+  initial_alarm_state: 25
   turns_per_round: 3
-}
-character_roster {
 }
 show_hiring_screen_on_scene_load: false
 scene_hiring_prerequisites {

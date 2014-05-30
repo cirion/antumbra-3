@@ -171,7 +171,7 @@ triggers {
       }
     }
   }
-  isActive: false
+  isActive: true
   idRef {
     id: "536fbe49366236941d00309b"
   }
@@ -237,25 +237,6 @@ triggers {
   isActive: false
   idRef {
     id: "537794913662364c1b004e93"
-  }
-  elseActions {
-  }
-  is_oneshot: true
-}
-triggers {
-  name: "Is Norton Here"
-  events {
-    ops {
-      functionName: "On Map Start"
-    }
-  }
-  conditions {
-  }
-  actions {
-  }
-  isActive: true
-  idRef {
-    id: "536f08c8366236cc16000036"
   }
   elseActions {
   }
@@ -2713,7 +2694,7 @@ triggers {
             string_value: "FacingDirection"
           }
           args {
-            int_value: 5
+            int_value: 7
           }
         }
       }
@@ -2921,6 +2902,9 @@ triggers {
     }
   }
   actions {
+    ops {
+      functionName: "End Current Actor Turn"
+    }
     ops {
       functionName: "Set Goal Status"
       args {
@@ -5121,7 +5105,7 @@ triggers {
         float_value: 3
       }
       args {
-        float_value: 5
+        float_value: 3
       }
     }
     ops {
@@ -6258,16 +6242,36 @@ triggers {
       functionName: "Change Actor Team"
       args {
         call_value {
-          functionName: "Specific Actor"
+          functionName: "All Actors on Team"
           args {
             call_value {
-              functionName: "Get Map Item (Actor)"
+              functionName: "Get Preset Value (string)"
               args {
-                string_value: "536d5ffa6434317b17cbaec5"
+                string_value: "FactionList"
+              }
+              args {
+                int_value: 2
               }
             }
           }
           args {
+            call_value {
+              functionName: "Get Preset Value (int)"
+              args {
+                string_value: "AllOrAny"
+              }
+              args {
+                int_value: 0
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Map Item (SceneDimension)"
+              args {
+                string_value: "Default"
+              }
+            }
           }
         }
       }
@@ -6292,19 +6296,77 @@ triggers {
       }
     }
     ops {
-      functionName: "Order Actor to become a Non-Combatant"
+      functionName: "Clear Actor Orders"
       args {
         call_value {
-          functionName: "Specific Actor"
+          functionName: "All Actors on Team"
           args {
             call_value {
-              functionName: "Get Map Item (Actor)"
+              functionName: "Get Preset Value (string)"
               args {
-                string_value: "536d5ffa6434317b17cbaec5"
+                string_value: "FactionList"
+              }
+              args {
+                int_value: 3
               }
             }
           }
           args {
+            call_value {
+              functionName: "Get Preset Value (int)"
+              args {
+                string_value: "AllOrAny"
+              }
+              args {
+                int_value: 0
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Map Item (SceneDimension)"
+              args {
+                string_value: "Default"
+              }
+            }
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Order Actor to become a Non-Combatant"
+      args {
+        call_value {
+          functionName: "All Actors on Team"
+          args {
+            call_value {
+              functionName: "Get Preset Value (string)"
+              args {
+                string_value: "FactionList"
+              }
+              args {
+                int_value: 3
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Preset Value (int)"
+              args {
+                string_value: "AllOrAny"
+              }
+              args {
+                int_value: 0
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Map Item (SceneDimension)"
+              args {
+                string_value: "Default"
+              }
+            }
           }
         }
       }
@@ -6313,16 +6375,36 @@ triggers {
       functionName: "Order Actor to Clear ThreatList"
       args {
         call_value {
-          functionName: "Specific Actor"
+          functionName: "All Actors on Team"
           args {
             call_value {
-              functionName: "Get Map Item (Actor)"
+              functionName: "Get Preset Value (string)"
               args {
-                string_value: "536d5ffa6434317b17cbaec5"
+                string_value: "FactionList"
+              }
+              args {
+                int_value: 3
               }
             }
           }
           args {
+            call_value {
+              functionName: "Get Preset Value (int)"
+              args {
+                string_value: "AllOrAny"
+              }
+              args {
+                int_value: 0
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Map Item (SceneDimension)"
+              args {
+                string_value: "Default"
+              }
+            }
           }
         }
       }
@@ -7214,7 +7296,7 @@ triggers {
         call_value {
           functionName: "Get Map Item (Conversation)"
           args {
-            string_value: "536d34b5643431740d169c33"
+            string_value: "536d1611643431740d1698bd"
           }
         }
       }
@@ -7925,7 +8007,7 @@ triggers {
         call_value {
           functionName: "Get Map Item (Conversation)"
           args {
-            string_value: "536d2830643431740d169b62"
+            string_value: "536d0fa76434312f05639a82"
           }
         }
       }
@@ -9143,7 +9225,7 @@ triggers {
         call_value {
           functionName: "Get Map Item (Conversation)"
           args {
-            string_value: "536d18e4643431740d169943"
+            string_value: "536d39a2643431740d169cd6"
           }
         }
       }
@@ -9617,7 +9699,7 @@ triggers {
         call_value {
           functionName: "Get Map Item (Conversation)"
           args {
-            string_value: "536d1792643431740d169905"
+            string_value: "536d3a88643431740d169d0f"
           }
         }
       }
@@ -9854,7 +9936,7 @@ triggers {
         call_value {
           functionName: "Get Map Item (Conversation)"
           args {
-            string_value: "536d142a6434312f05639bef"
+            string_value: "536d3830643431740d169c85"
           }
         }
       }
@@ -16078,6 +16160,7 @@ characters {
       filename: ""
     }
     karma: 40
+    scale_character_sheet: true
   }
 }
 characters {

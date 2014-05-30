@@ -179,6 +179,7 @@ nodes {
       }
     }
     nextNodeIndex: 7
+    hideIfUnavailable: true
     onlyOnce: true
     idRef {
       id: "536d69ce6434317b17cbb050"
@@ -235,6 +236,7 @@ nodes {
       }
     }
     nextNodeIndex: 8
+    hideIfUnavailable: true
     onlyOnce: true
     idRef {
       id: "536d6a136434317b17cbb066"
@@ -291,6 +293,7 @@ nodes {
       }
     }
     nextNodeIndex: 9
+    hideIfUnavailable: true
     onlyOnce: true
     idRef {
       id: "536d6a106434317b17cbb065"

@@ -4942,34 +4942,47 @@ characters {
     interactionRadius: 1
     prerequisites {
       ops {
-        functionName: "Comparison (bool)"
+        functionName: "OR"
         args {
           call_value {
-            functionName: "Get Variable (bool)"
+            functionName: "Invert Bool"
             args {
-              string_value: "talkedToTomas"
+              call_value {
+                functionName: "Get Variable (bool)"
+                args {
+                  string_value: "talkedToTomas"
+                }
+              }
             }
           }
         }
         args {
           call_value {
-            functionName: "Get Preset Value (int)"
+            functionName: "Comparison (int)"
             args {
-              string_value: "IsOrIsNot"
+              call_value {
+                functionName: "Get Story Variable (int)"
+                args {
+                  string_value: "531d26a736623648180018bf"
+                }
+                args {
+                  string_value: "Global_SideMissionState_Mercenaries"
+                }
+              }
+            }
+            args {
+              call_value {
+                functionName: "Get Preset Value (int)"
+                args {
+                  string_value: "Comparison Ops"
+                }
+                args {
+                  int_value: 0
+                }
+              }
             }
             args {
               int_value: 1
-            }
-          }
-        }
-        args {
-          call_value {
-            functionName: "Get Preset Value (int)"
-            args {
-              string_value: "bool"
-            }
-            args {
-              int_value: 0
             }
           }
         }
