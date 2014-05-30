@@ -11571,3 +11571,35 @@ props {
   }
   lod: 0
 }
+props {
+  name: "mitte_decor_gargoylePillar02"
+  gridPoint {
+    x: -40
+    y: 0
+    z: -41
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "isRubble"
+  GeneralTags: "isRubbleRoom3"
+  displayName: "Gargoyle Pillar Rubble"
+  idRef {
+    id: "5387bb1f6434314e3392be13"
+  }
+  lod: 0
+}
+props {
+  name: "mitte_decor_gargoylePillar02"
+  gridPoint {
+    x: -33
+    y: 0
+    z: -41
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "isRubble"
+  GeneralTags: "isRubbleRoom3"
+  displayName: "Gargoyle Pillar Rubble"
+  idRef {
+    id: "5387bb226434314e3392be14"
+  }
+  lod: 0
+}

@@ -4224,6 +4224,50 @@ triggers {
         }
       }
     }
+    ops {
+      functionName: "Trigger: Run Alternate Trigger"
+      args {
+        call_value {
+          functionName: "Get Map Item (Trigger)"
+          args {
+            string_value: "5387ba146434311b3303af91"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WaitOrNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
   }
   isActive: true
   idRef {
@@ -4639,6 +4683,50 @@ triggers {
         }
       }
     }
+    ops {
+      functionName: "Trigger: Run Alternate Trigger"
+      args {
+        call_value {
+          functionName: "Get Map Item (Trigger)"
+          args {
+            string_value: "5387ba146434311b3303af91"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WaitOrNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
   }
   isActive: true
   idRef {
@@ -4840,6 +4928,52 @@ triggers {
       }
     }
     ops {
+      functionName: "Order Actor to Hunt And Destroy (Team)"
+      args {
+        call_value {
+          functionName: "All Actors With Tag"
+          args {
+            call_value {
+              functionName: "Get Map Item (SenseTagList)"
+              args {
+                string_value: "isGargoyleRoom3"
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Preset Value (int)"
+              args {
+                string_value: "AllOrAny"
+              }
+              args {
+                int_value: 0
+              }
+            }
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SceneDimension)"
+          args {
+            string_value: "Default"
+          }
+        }
+      }
+    }
+    ops {
       functionName: "Set Prop Visible by Tag"
       args {
         call_value {
@@ -4889,7 +5023,7 @@ triggers {
             call_value {
               functionName: "Get Map Item (SenseTagList)"
               args {
-                string_value: "isGargoyleRoom3"
+                string_value: "isGhoulRoom3"
               }
             }
           }
@@ -4927,47 +5061,45 @@ triggers {
       }
     }
     ops {
-      functionName: "Order Actor to Hunt And Destroy (Team)"
+      functionName: "Trigger: Run Alternate Trigger"
       args {
         call_value {
-          functionName: "All Actors With Tag"
+          functionName: "Get Map Item (Trigger)"
           args {
-            call_value {
-              functionName: "Get Map Item (SenseTagList)"
-              args {
-                string_value: "isGhoulRoom3"
-              }
-            }
-          }
-          args {
-            call_value {
-              functionName: "Get Preset Value (int)"
-              args {
-                string_value: "AllOrAny"
-              }
-              args {
-                int_value: 0
-              }
-            }
+            string_value: "5387ba146434311b3303af91"
           }
         }
       }
       args {
         call_value {
-          functionName: "Get Preset Value (string)"
+          functionName: "Get Preset Value (int)"
           args {
-            string_value: "FactionList"
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WaitOrNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
           }
           args {
             int_value: 0
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Map Item (SceneDimension)"
-          args {
-            string_value: "Default"
           }
         }
       }
@@ -13942,6 +14074,134 @@ triggers {
   elseActions {
   }
   is_oneshot: true
+}
+triggers {
+  name: "Freeze Enemies"
+  events {
+  }
+  conditions {
+  }
+  actions {
+    ops {
+      functionName: "Enable/Disable Team\'s Turn"
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 2
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "EnableOrDisable"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SceneDimension)"
+          args {
+            string_value: "Default"
+          }
+        }
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "5387ba146434311b3303af91"
+  }
+  elseActions {
+  }
+  is_oneshot: false
+}
+triggers {
+  name: "Unfreeze Enemies"
+  events {
+    ops {
+      functionName: "On Actor Start Turn"
+    }
+  }
+  conditions {
+    ops {
+      functionName: "Comparison (Actor)"
+      args {
+        call_value {
+          functionName: "Triggering Actor"
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (Player)"
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+  }
+  actions {
+    ops {
+      functionName: "Enable/Disable Team\'s Turn"
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 2
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "EnableOrDisable"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SceneDimension)"
+          args {
+            string_value: "Default"
+          }
+        }
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "5387ba1a6434311b3303af92"
+  }
+  elseActions {
+  }
+  is_oneshot: false
 }
 regions {
   name: "Camera"

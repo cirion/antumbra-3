@@ -3416,7 +3416,7 @@ nodes {
     nextNodeIndex: 57
   }
   branches {
-    responseText: "{{CC}}\302\245750{/CC}} {{GM}}Hire a decker to locate the University.{{/GM}}"
+    responseText: "{{CC}}\302\245750{{/CC}} {{GM}}Hire a decker to locate the University.{{/GM}}"
     conditions {
       ops {
         functionName: "Evaluate Nuyen"

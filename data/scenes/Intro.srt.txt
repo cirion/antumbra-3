@@ -1022,6 +1022,12 @@ triggers {
     id: "5369a4f6366236081d00771c"
   }
   elseActions {
+    ops {
+      functionName: "Add Nuyen"
+      args {
+        int_value: 1000
+      }
+    }
   }
   is_oneshot: true
 }
