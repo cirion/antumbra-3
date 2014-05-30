@@ -1854,31 +1854,66 @@ triggers {
   }
   conditions {
     ops {
-      functionName: "Comparison (int)"
+      functionName: "OR"
       args {
         call_value {
-          functionName: "Get Story Variable (int)"
+          functionName: "Comparison (int)"
           args {
-            string_value: "531d26a736623648180018bf"
+            call_value {
+              functionName: "Get Story Variable (int)"
+              args {
+                string_value: "531d26a736623648180018bf"
+              }
+              args {
+                string_value: "Global_Supplies"
+              }
+            }
           }
           args {
-            string_value: "Global_Supplies"
+            call_value {
+              functionName: "Get Preset Value (int)"
+              args {
+                string_value: "Comparison Ops"
+              }
+              args {
+                int_value: 3
+              }
+            }
+          }
+          args {
+            int_value: 5
           }
         }
       }
       args {
         call_value {
-          functionName: "Get Preset Value (int)"
+          functionName: "Comparison (int)"
           args {
-            string_value: "Comparison Ops"
+            call_value {
+              functionName: "Get Story Variable (int)"
+              args {
+                string_value: "531d26a736623648180018bf"
+              }
+              args {
+                string_value: "Global_numMissionsCompleted"
+              }
+            }
           }
           args {
-            int_value: 2
+            call_value {
+              functionName: "Get Preset Value (int)"
+              args {
+                string_value: "Comparison Ops"
+              }
+              args {
+                int_value: 2
+              }
+            }
+          }
+          args {
+            int_value: 3
           }
         }
-      }
-      args {
-        int_value: 5
       }
     }
   }

@@ -20243,9 +20243,9 @@ props {
 props {
   name: "undergroundBase_tech_PDA01"
   gridPoint {
-    x: -7
+    x: -1
     y: 0
-    z: -59
+    z: 28
   }
   orientation: ORIENTATION_S
   displayName: "Mobile Uplink Terminal"
@@ -21647,6 +21647,253 @@ props {
   orientation: ORIENTATION_S
   idRef {
     id: "53866c5d643431661294f5e4"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_solidProp"
+  gridPoint {
+    x: -25
+    y: 0
+    z: -137
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "53890610643431654a5d14c6"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_solidProp"
+  gridPoint {
+    x: -25
+    y: 0
+    z: -138
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "53890610643431654a5d14c7"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_solidProp"
+  gridPoint {
+    x: -25
+    y: 0
+    z: -139
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "53890610643431654a5d14c8"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_solidProp"
+  gridPoint {
+    x: -25
+    y: 0
+    z: -140
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "53890610643431654a5d14c9"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_solidProp"
+  gridPoint {
+    x: -20
+    y: 0
+    z: -137
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "53890612643431654a5d14ca"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_solidProp"
+  gridPoint {
+    x: -20
+    y: 0
+    z: -138
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "53890612643431654a5d14cb"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_solidProp"
+  gridPoint {
+    x: -20
+    y: 0
+    z: -139
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "53890612643431654a5d14cc"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_solidProp"
+  gridPoint {
+    x: -20
+    y: 0
+    z: -140
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "53890612643431654a5d14cd"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_solidProp"
+  gridPoint {
+    x: -21
+    y: 0
+    z: -140
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "53890617643431654a5d14ce"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_solidProp"
+  gridPoint {
+    x: -22
+    y: 0
+    z: -140
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "53890618643431654a5d14cf"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_solidProp"
+  gridPoint {
+    x: -23
+    y: 0
+    z: -140
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "53890618643431654a5d14d0"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_solidProp"
+  gridPoint {
+    x: -24
+    y: 0
+    z: -140
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "53890619643431654a5d14d1"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_solidProp"
+  gridPoint {
+    x: -25
+    y: 0
+    z: -136
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "5389061a643431654a5d14d2"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_solidProp"
+  gridPoint {
+    x: -23
+    y: 0
+    z: -136
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "5389061c643431654a5d14d3"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_solidProp"
+  gridPoint {
+    x: -24
+    y: 0
+    z: -136
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "5389061e643431654a5d14d4"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_solidProp"
+  gridPoint {
+    x: -22
+    y: 0
+    z: -136
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "5389061e643431654a5d14d5"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_solidProp"
+  gridPoint {
+    x: -21
+    y: 0
+    z: -136
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "5389061f643431654a5d14d6"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_solidProp"
+  gridPoint {
+    x: -20
+    y: 0
+    z: -136
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "53890620643431654a5d14d7"
+  }
+  lod: 0
+}
+props {
+  name: "undergroundBase_clutter_rock05"
+  gridPoint {
+    x: 7
+    y: 0
+    z: -29
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "53890730643431654a5d14d9"
   }
   lod: 0
 }

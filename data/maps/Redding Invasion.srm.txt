@@ -9279,9 +9279,9 @@ props {
 props {
   name: "docks_clutter_shippingCrate01"
   gridPoint {
-    x: -83
+    x: -93
     y: 0
-    z: -4
+    z: -9
   }
   orientation: ORIENTATION_S
   displayName: "Jack Point Fake"
@@ -17235,9 +17235,9 @@ props {
 props {
   name: "docks_clutter_shippingCrate01"
   gridPoint {
-    x: -95
+    x: -83
     y: 0
-    z: -8
+    z: -4
   }
   orientation: ORIENTATION_S
   displayName: "Jack Point Real"
@@ -17719,19 +17719,6 @@ props {
     z: -6
   }
   orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "system_invisible_solidProp"
-  gridPoint {
-    x: -56
-    y: 0
-    z: 12
-  }
-  orientation: ORIENTATION_S
-  idRef {
-    id: "53855d1236623664110013c7"
-  }
   lod: 0
 }
 props {
@@ -18315,5 +18302,15 @@ props {
   idRef {
     id: "538560b83662366411001421"
   }
+  lod: 0
+}
+props {
+  name: "system_invisible_blockMove"
+  gridPoint {
+    x: -56
+    y: 0
+    z: 12
+  }
+  orientation: ORIENTATION_S
   lod: 0
 }

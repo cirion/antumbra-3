@@ -9928,7 +9928,7 @@ props {
   gridPoint {
     x: 0
     y: 1
-    z: -37
+    z: -36
   }
   orientation: ORIENTATION_E
   GeneralTags: "isPropRoom2"
@@ -9942,7 +9942,7 @@ props {
   gridPoint {
     x: 0
     y: 0
-    z: -37
+    z: -36
   }
   orientation: ORIENTATION_S
   GeneralTags: "isBlockRoom2"
@@ -9956,7 +9956,7 @@ props {
   gridPoint {
     x: 0
     y: 0
-    z: -37
+    z: -36
   }
   orientation: ORIENTATION_S
   GeneralTags: "isPropRoom2"
@@ -9970,7 +9970,7 @@ props {
   gridPoint {
     x: 0
     y: 0
-    z: -37
+    z: -36
   }
   orientation: ORIENTATION_S
   GeneralTags: "isRubble"
@@ -9986,7 +9986,7 @@ props {
   gridPoint {
     x: -2
     y: 1
-    z: -37
+    z: -36
   }
   orientation: ORIENTATION_E
   GeneralTags: "isPropRoom2"
@@ -10000,7 +10000,7 @@ props {
   gridPoint {
     x: -2
     y: 0
-    z: -37
+    z: -36
   }
   orientation: ORIENTATION_S
   GeneralTags: "isBlockRoom2"
@@ -10014,7 +10014,7 @@ props {
   gridPoint {
     x: -2
     y: 0
-    z: -37
+    z: -36
   }
   orientation: ORIENTATION_S
   GeneralTags: "isPropRoom2"
@@ -10028,7 +10028,7 @@ props {
   gridPoint {
     x: -2
     y: 0
-    z: -37
+    z: -36
   }
   orientation: ORIENTATION_S
   GeneralTags: "isRubble"
@@ -10795,7 +10795,7 @@ props {
 props {
   name: "office_decor_fountain01"
   gridPoint {
-    x: -39
+    x: -38
     y: 0
     z: -61
   }
@@ -10885,7 +10885,7 @@ props {
 props {
   name: "vfx_fx_watersplashes"
   gridPoint {
-    x: -38
+    x: -37
     y: 0
     z: -60.5
   }
@@ -10899,7 +10899,7 @@ props {
 props {
   name: "vfx_fx_fallingwater"
   gridPoint {
-    x: -38.7
+    x: -37.7
     y: 1
     z: -60.7
   }
@@ -11600,6 +11600,52 @@ props {
   displayName: "Gargoyle Pillar Rubble"
   idRef {
     id: "5387bb226434314e3392be14"
+  }
+  lod: 0
+}
+props {
+  name: "museum_wall_column02"
+  gridPoint {
+    x: -42
+    y: 0
+    z: -61
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "mitte_decor_gargoylePillar01"
+  gridPoint {
+    x: -39
+    y: 0
+    z: -61
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "mitte_decor_gargoylePillar01"
+  gridPoint {
+    x: -39
+    y: 1
+    z: -61
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "5388f862643431654a5d128e"
+  }
+  lod: 0
+}
+props {
+  name: "mitte_decor_gargoylePillar01"
+  gridPoint {
+    x: -39
+    y: 1.88
+    z: -61
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "5388f86c643431654a5d128f"
   }
   lod: 0
 }
