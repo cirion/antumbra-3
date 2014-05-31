@@ -14479,8 +14479,8 @@ regions {
 regions {
   name: "Ambush 3"
   position {
-    x: -31
-    y: -24
+    x: -39
+    y: -42
     width: 1
     height: 12
   }
@@ -14635,7 +14635,7 @@ characters {
   gridPoint {
     x: -31
     y: 0
-    z: -50
+    z: -53
   }
   orientation: ORIENTATION_S
   displayName: "Orion"
@@ -15810,7 +15810,7 @@ characters {
   gridPoint {
     x: -32
     y: 0
-    z: -49
+    z: -52
   }
   orientation: ORIENTATION_W
   GeneralTags: "isPreloaded"
@@ -15858,7 +15858,7 @@ characters {
   gridPoint {
     x: -31
     y: 0
-    z: -49
+    z: -52
   }
   orientation: ORIENTATION_E
   GeneralTags: "isPreloaded"
