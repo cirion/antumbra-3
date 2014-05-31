@@ -32,7 +32,7 @@ damageBucket: {
     weight: 0.5
   }
 }
-damageFunction: "buffTarget"
+damageFunction: "weaponDamage"
 damageType: VulnerabilityType_Normal
 defensiveAbility: false
 effectDuration: -1
@@ -42,7 +42,7 @@ intended_user: IntendedUser_Player
 offensiveAbility: true
 repetition: 1
 spreadAngle: 0
-toHitFunction: "autoHitActorNotSelfInRange"
+toHitFunction: "actorSpellAttackToHit"
 uirep: {
   description: "Using Heat Wave Power"
   icon: "icon_fireball"
