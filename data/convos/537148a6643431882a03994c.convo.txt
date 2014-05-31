@@ -135,6 +135,10 @@ nodes {
   branches {
     responseText: "Now that it\342\200\231s over, what are your thoughts on this run?"
     nextNodeIndex: 11
+    onlyOnce: true
+    idRef {
+      id: "53895c27366236380a006eb6"
+    }
   }
   branches {
     responseText: "Take care, Hailey."
@@ -226,7 +230,7 @@ nodes {
     id: "53714a59643431882a0399b7"
   }
   index: 12
-  text: "The most important thing, though, is that you made the world a better place. \n\nI\342\200\231m not just saying that: there\342\200\231s way fewer anti-metahuman supremacists running around, Colonel Saito has calmed down, and, oh yeah, there\342\200\231s that little war that you helped stop, saving millions of lives. \n\nYou\342\200\231re incredible, $(l.name)! I\342\200\231m so glad that I got to help you out. This will be the most important shadowrun of my entire life."
+  text: "The most important thing, though, is that you made the world a better place. \n\nI\342\200\231m not just saying that: there\342\200\231s way fewer anti-metahuman supremacists running around, Colonel Saito has backed down, and, oh yeah, there\342\200\231s that little war that you helped stop, saving millions of lives. \n\nYou\342\200\231re incredible, $(l.name)! I\342\200\231m so glad that I got to help you out. This will be the most important shadowrun of my entire life."
   branches {
     responseText: ""
     nextNodeIndex: 5

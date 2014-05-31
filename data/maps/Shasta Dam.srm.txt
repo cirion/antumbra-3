@@ -20243,9 +20243,9 @@ props {
 props {
   name: "undergroundBase_tech_PDA01"
   gridPoint {
-    x: -1
+    x: 6
     y: 0
-    z: 28
+    z: -29
   }
   orientation: ORIENTATION_S
   displayName: "Mobile Uplink Terminal"
@@ -21885,15 +21885,28 @@ props {
   lod: 0
 }
 props {
-  name: "undergroundBase_clutter_rock05"
+  name: "undergroundBase_clutter_rock01"
   gridPoint {
     x: 7
     y: 0
-    z: -29
+    z: -30
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "538945ed366236380a006e7f"
+  }
+  lod: 0
+}
+props {
+  name: "undergroundBase_clutter_rock08"
+  gridPoint {
+    x: 7
+    y: 0
+    z: -28
   }
   orientation: ORIENTATION_E
   idRef {
-    id: "53890730643431654a5d14d9"
+    id: "538945f8366236380a006e80"
   }
   lod: 0
 }
