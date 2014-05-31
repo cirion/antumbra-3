@@ -2157,6 +2157,42 @@ triggers {
         int_value: 2000
       }
     }
+    ops {
+      functionName: "Order Actor to Clear ThreatList"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Actor)"
+              args {
+                string_value: "53838f6c366236841300047c"
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Clear Actor Orders"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Actor)"
+              args {
+                string_value: "53838f6c366236841300047c"
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+    }
   }
   isActive: true
   idRef {
