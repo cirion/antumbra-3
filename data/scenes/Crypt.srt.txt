@@ -6190,7 +6190,7 @@ triggers {
             string_value: "FacingDirection"
           }
           args {
-            int_value: 0
+            int_value: 3
           }
         }
       }
@@ -6236,6 +6236,34 @@ triggers {
           functionName: "Get Preset Value (int)"
           args {
             string_value: "FacingDirection"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Play Sound"
+      args {
+        call_value {
+          functionName: "Get Map Item (Sound)"
+          args {
+            string_value: "props"
+          }
+          args {
+            string_value: "DoorStone"
+          }
+        }
+      }
+      args {
+        float_value: 1
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
           }
           args {
             int_value: 0
@@ -14319,7 +14347,7 @@ regions {
 regions {
   name: "Gargoyle Ambush 1a"
   position {
-    x: -19
+    x: -20
     y: -33
     width: 1
     height: 2
@@ -14451,8 +14479,8 @@ regions {
 regions {
   name: "Ambush 3"
   position {
-    x: -39
-    y: -42
+    x: -31
+    y: -24
     width: 1
     height: 12
   }
@@ -14539,8 +14567,8 @@ regions {
 regions {
   name: "Orion Arrival"
   position {
-    x: -38
-    y: -74
+    x: -33
+    y: -70
     width: 1
     height: 1
   }
