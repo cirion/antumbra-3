@@ -383,6 +383,28 @@ triggers {
         float_value: 0
       }
     }
+    ops {
+      functionName: "Enable/Disable Interactable Object"
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "EnableOrDisable"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (InteractableObject)"
+          args {
+            string_value: "537d853b366236041b0015d2"
+          }
+        }
+      }
+    }
   }
   isActive: true
   idRef {
