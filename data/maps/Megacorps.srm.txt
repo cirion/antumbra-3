@@ -48400,3 +48400,461 @@ props {
   orientation: ORIENTATION_S
   lod: 0
 }
+props {
+  name: "haven_wallDecoration_bulletholes01"
+  gridPoint {
+    x: -52.3
+    y: 1.2
+    z: -5
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "haven_wallDecoration_bulletholes02"
+  gridPoint {
+    x: -69
+    y: 1
+    z: -3
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "haven_wallDecoration_bulletholes01"
+  gridPoint {
+    x: -76.2
+    y: 1.3
+    z: -17
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "haven_wallDecoration_bulletholes02"
+  gridPoint {
+    x: -78
+    y: 1
+    z: -10
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "haven_wallDecoration_bulletholes01"
+  gridPoint {
+    x: -87
+    y: 1
+    z: 26
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "haven_wallDecoration_bulletholes02"
+  gridPoint {
+    x: -87
+    y: 1
+    z: 34
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "haven_wallDecoration_bulletholes01"
+  gridPoint {
+    x: -112
+    y: 1
+    z: 41
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "haven_wallDecoration_bulletholes02"
+  gridPoint {
+    x: -123
+    y: 1.4
+    z: 44
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "haven_wallDecoration_bulletholes01"
+  gridPoint {
+    x: -135
+    y: 1
+    z: 46
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "haven_wallDecoration_bulletholes02"
+  gridPoint {
+    x: -36
+    y: 1
+    z: 77
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "haven_wallDecoration_bulletholes01"
+  gridPoint {
+    x: -20
+    y: 1
+    z: 60
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "haven_wallDecoration_bulletholes02"
+  gridPoint {
+    x: -20.5
+    y: 1.2
+    z: 60
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "haven_wallDecoration_bulletholes01"
+  gridPoint {
+    x: -19
+    y: 1.4
+    z: 44.4
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "haven_wallDecoration_bulletholes02"
+  gridPoint {
+    x: -28
+    y: 1
+    z: 34.4
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "haven_wallDecoration_bulletholes01"
+  gridPoint {
+    x: -33
+    y: 1
+    z: 30
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "mitte_decor_corpse01"
+  gridPoint {
+    x: -67
+    y: 0
+    z: -4
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "pikePlace_decor_corpse02"
+  gridPoint {
+    x: -52
+    y: 0
+    z: 4
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "mitte_decor_corpse02"
+  gridPoint {
+    x: -80
+    y: 0
+    z: 26
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "mitte_decor_corpse03"
+  gridPoint {
+    x: -132
+    y: 0
+    z: 48
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "docks_clutter_loneStarCorpse01"
+  gridPoint {
+    x: -32
+    y: 0
+    z: 63
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "haven_groundDecoration_bloodSplatter01"
+  gridPoint {
+    x: -52
+    y: 0
+    z: 4
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "haven_groundDecoration_bloodSplatter02"
+  gridPoint {
+    x: -66.1
+    y: 0
+    z: -3.3
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "haven_groundDecoration_bloodSplatter03"
+  gridPoint {
+    x: -79
+    y: 0
+    z: 27
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "office_decor_bloodSplatter04"
+  gridPoint {
+    x: -132.3
+    y: 0
+    z: 47.9
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "office_decor_bloodSplatter05"
+  gridPoint {
+    x: -31.8
+    y: 0
+    z: 63.5
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "office_decor_bloodSplatter05"
+  gridPoint {
+    x: -52
+    y: 0
+    z: 32
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "isCEOBlood"
+  idRef {
+    id: "538b5d783662360820003393"
+  }
+  lod: 0
+}
+props {
+  name: "office_decor_bloodSplatter04"
+  gridPoint {
+    x: -53
+    y: 0
+    z: 26
+  }
+  orientation: ORIENTATION_E
+  GeneralTags: "isCEOBlood"
+  idRef {
+    id: "538b5d8a3662360820003394"
+  }
+  lod: 0
+}
+props {
+  name: "office_decor_bloodSplatter06"
+  gridPoint {
+    x: -55
+    y: 0
+    z: 30
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "isCEOBlood"
+  idRef {
+    id: "538b5d963662360820003395"
+  }
+  lod: 0
+}
+props {
+  name: "office_decor_bloodSplatter07"
+  gridPoint {
+    x: -52
+    y: 0
+    z: 38
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "isCEOBlood"
+  idRef {
+    id: "538b5d9e3662360820003396"
+  }
+  lod: 0
+}
+props {
+  name: "haven_groundDecoration_bloodSplatter01"
+  gridPoint {
+    x: -55
+    y: 0
+    z: 35
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "isCEOBlood"
+  idRef {
+    id: "538b5da63662360820003397"
+  }
+  lod: 0
+}
+props {
+  name: "haven_wallDecoration_bloodSplatter02"
+  gridPoint {
+    x: -58
+    y: 0.7
+    z: 29
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "isCEOBlood"
+  idRef {
+    id: "538b5db83662360820003398"
+  }
+  lod: 0
+}
+props {
+  name: "office_decor_bloodSplatter01"
+  gridPoint {
+    x: -52.4
+    y: 1
+    z: 24
+  }
+  orientation: ORIENTATION_E
+  GeneralTags: "isCEOBlood"
+  idRef {
+    id: "538b5dcd3662360820003399"
+  }
+  lod: 0
+}
+props {
+  name: "office_decor_bloodSplatter05"
+  gridPoint {
+    x: -26
+    y: 0
+    z: 35
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "office_decor_bloodSplatter03"
+  gridPoint {
+    x: -21
+    y: 1
+    z: 60
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "haven_groundDecoration_bloodSplatter02"
+  gridPoint {
+    x: -33
+    y: 0
+    z: 76
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "haven_groundDecoration_bloodSplatter03"
+  gridPoint {
+    x: -79
+    y: 0
+    z: 14
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "office_decor_bloodSplatter02"
+  gridPoint {
+    x: -87.2
+    y: 0.4
+    z: 25.3
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "office_decor_bloodSplatter05"
+  gridPoint {
+    x: -96
+    y: 0
+    z: 36
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "office_decor_bloodSplatter07"
+  gridPoint {
+    x: -91
+    y: 0
+    z: 46
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "haven_groundDecoration_bloodSplatter03"
+  gridPoint {
+    x: -122
+    y: 0
+    z: 40
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "haven_groundDecoration_bloodSplatter02"
+  gridPoint {
+    x: -48
+    y: 0
+    z: -3
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "office_decor_bloodSplatter04"
+  gridPoint {
+    x: -74
+    y: 0
+    z: -11
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "office_decor_bloodSplatter02"
+  gridPoint {
+    x: -68.8
+    y: 1
+    z: -3.2
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
