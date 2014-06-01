@@ -4497,6 +4497,17 @@ props {
     z: 24
   }
   orientation: ORIENTATION_S
+  idRef {
+    id: "538b57013662360820003381"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    pickupItem {
+      itemName: "Spell Flamethrower 1"
+      destroyOnPickup: false
+    }
+  }
   lod: 0
 }
 props {
@@ -4586,6 +4597,17 @@ props {
     z: 48
   }
   orientation: ORIENTATION_S
+  idRef {
+    id: "538b57443662360820003383"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    pickupItem {
+      itemName: "PR Firewall 1"
+      destroyOnPickup: false
+    }
+  }
   lod: 0
 }
 props {
@@ -5072,6 +5094,17 @@ props {
     z: 46
   }
   orientation: ORIENTATION_S
+  idRef {
+    id: "538b575d3662360820003385"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    pickupItem {
+      itemName: "SMG 1 Beretta Model 70"
+      destroyOnPickup: false
+    }
+  }
   lod: 0
 }
 props {
@@ -5117,6 +5150,14 @@ props {
   orientation: ORIENTATION_E
   idRef {
     id: "52192648366236e81c004af6"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    pickupItem {
+      itemName: "Grenade 1 (Frag)"
+      destroyOnPickup: false
+    }
   }
   lod: 0
 }
@@ -13949,19 +13990,6 @@ props {
   lod: 0
 }
 props {
-  name: "telestrianEstate_wall_wallpaperConnector"
-  gridPoint {
-    x: -119
-    y: 0
-    z: 123
-  }
-  orientation: ORIENTATION_S
-  idRef {
-    id: "5219401f3662365808004be0"
-  }
-  lod: 0
-}
-props {
   name: "telestrianEstate_wall_wallpaperEdge02"
   gridPoint {
     x: -120
@@ -16049,19 +16077,6 @@ props {
   orientation: ORIENTATION_S
   idRef {
     id: "521941e53662365808004c82"
-  }
-  lod: 0
-}
-props {
-  name: "diveBar_misc_balconyTileWalkable"
-  gridPoint {
-    x: -110
-    y: 0
-    z: 127
-  }
-  orientation: ORIENTATION_S
-  idRef {
-    id: "521941e63662365808004c83"
   }
   lod: 0
 }
@@ -33627,5 +33642,308 @@ props {
   idRef {
     id: "5387c6d66434314e3392be2d"
   }
+  lod: 0
+}
+props {
+  name: "docks_clutter_loneStarCorpse01"
+  gridPoint {
+    x: 0
+    y: 0
+    z: 45
+  }
+  orientation: ORIENTATION_W
+  lod: 0
+}
+props {
+  name: "mitte_decor_corpse02"
+  gridPoint {
+    x: -22
+    y: 0
+    z: 36
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "mitte_decor_corpse01"
+  gridPoint {
+    x: -60
+    y: 0
+    z: 71
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "pikePlace_decor_corpse02"
+  gridPoint {
+    x: -71
+    y: 0
+    z: 92
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "docks_clutter_loneStarCorpse02"
+  gridPoint {
+    x: -120
+    y: 0
+    z: 142
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "pikePlace_decor_corpse03"
+  gridPoint {
+    x: -123
+    y: 0
+    z: 128
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "haven_groundDecoration_bloodSplatter01"
+  gridPoint {
+    x: -120
+    y: 0
+    z: 143
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "haven_groundDecoration_bloodSplatter02"
+  gridPoint {
+    x: -123
+    y: 0
+    z: 128
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "haven_groundDecoration_bloodSplatter03"
+  gridPoint {
+    x: -71
+    y: 0
+    z: 92
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "office_decor_bloodSplatter04"
+  gridPoint {
+    x: -60.1
+    y: 0
+    z: 71.2
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "office_decor_bloodSplatter05"
+  gridPoint {
+    x: -1
+    y: 0
+    z: 45
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "office_decor_bloodSplatter06"
+  gridPoint {
+    x: -21
+    y: 0
+    z: 37
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "asylum_decor_doctorBag"
+  gridPoint {
+    x: -76
+    y: -1
+    z: 85
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "538b57aa3662360820003388"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    pickupItem {
+      itemName: "HealthPack_med"
+      destroyOnPickup: true
+    }
+  }
+  lod: 0
+}
+props {
+  name: "hive_clutter_dockWagonLocker01"
+  gridPoint {
+    x: -95
+    y: 0
+    z: 124
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "538b57d6366236082000338a"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    pickupItem {
+      itemName: "DocWagonBasic"
+      destroyOnPickup: true
+    }
+  }
+  lod: 0
+}
+props {
+  name: "hive_wallDecoration_firstAidStation"
+  gridPoint {
+    x: -112
+    y: 0
+    z: 117
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "538b57f5366236082000338c"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    pickupItem {
+      itemName: "HealthPack_hi"
+      destroyOnPickup: true
+    }
+  }
+  lod: 0
+}
+props {
+  name: "haven_groundDecoration_bloodSplatter01"
+  gridPoint {
+    x: -2
+    y: 0
+    z: 26
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "haven_groundDecoration_bloodSplatter02"
+  gridPoint {
+    x: -10
+    y: 0
+    z: 38
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "office_decor_bloodSplatter07"
+  gridPoint {
+    x: -57
+    y: 0
+    z: 77
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "office_decor_bloodSplatter06"
+  gridPoint {
+    x: -77
+    y: 0
+    z: 85
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "office_decor_bloodSplatter04"
+  gridPoint {
+    x: -119
+    y: 0
+    z: 135
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "office_decor_bloodSplatter05"
+  gridPoint {
+    x: -111
+    y: 0
+    z: 127
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "haven_wallDecoration_bulletholes01"
+  gridPoint {
+    x: -106
+    y: 1
+    z: 117
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "haven_wallDecoration_bulletholes02"
+  gridPoint {
+    x: -127
+    y: 1
+    z: 134
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "office_decor_bulletholes05"
+  gridPoint {
+    x: -76
+    y: 0
+    z: 82
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "haven_wallDecoration_bulletholes02"
+  gridPoint {
+    x: -30
+    y: 1
+    z: 50.1
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "haven_wallDecoration_bulletholes01"
+  gridPoint {
+    x: -4
+    y: 2
+    z: 20
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "haven_wallDecoration_bulletholes02"
+  gridPoint {
+    x: -8.2
+    y: 1.2
+    z: 20
+  }
+  orientation: ORIENTATION_E
   lod: 0
 }
