@@ -12479,3 +12479,76 @@ props {
   orientation: ORIENTATION_E
   lod: 0
 }
+props {
+  name: "morgue_clutter_burntRemains"
+  gridPoint {
+    x: -34
+    y: 0
+    z: -66
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "undergroundBase_groundDecoration_scorchMark05"
+  gridPoint {
+    x: -33
+    y: 0
+    z: -70
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "undergroundBase_groundDecoration_scorchMark02"
+  gridPoint {
+    x: -7
+    y: 0
+    z: -16
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "undergroundBase_groundDecoration_scorchMark03"
+  gridPoint {
+    x: -14
+    y: 0
+    z: -45
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "undergroundBase_groundDecoration_scorchMark04"
+  gridPoint {
+    x: -20
+    y: 0
+    z: -56
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "undergroundBase_groundDecoration_scorchMark05"
+  gridPoint {
+    x: -19
+    y: 0
+    z: -60
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "office_decor_bloodSplatter05"
+  gridPoint {
+    x: -14.7
+    y: 0
+    z: -48
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "538b6358366236082000339a"
+  }
+  lod: 0
+}
