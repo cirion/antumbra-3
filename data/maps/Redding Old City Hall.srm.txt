@@ -7473,3 +7473,103 @@ props {
   }
   lod: 0
 }
+props {
+  name: "haven_wallDecoration_BearAKBanner01"
+  gridPoint {
+    x: -67
+    y: 0
+    z: -26
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "haven_wallDecoration_BearAKBanner02"
+  gridPoint {
+    x: -39.5
+    y: 3.6
+    z: -4
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "haven_wallDecoration_flags02"
+  gridPoint {
+    x: -55
+    y: 3
+    z: -15
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "haven_wallDecoration_solarPanel01"
+  gridPoint {
+    x: -43.2
+    y: 6
+    z: -10.7
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "museum_lighting_candleSconce02"
+  gridPoint {
+    x: -44
+    y: 0
+    z: -17
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "telestrianEstate_storage_gunSafe"
+  gridPoint {
+    x: -45
+    y: 0
+    z: -21
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "telestrianEstate_wallDecoration_worldMap"
+  gridPoint {
+    x: -43
+    y: 0
+    z: -20
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "hive_clutter_grenadeBoxes"
+  gridPoint {
+    x: -53
+    y: 0
+    z: -18
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "factory_decor_ladder01"
+  gridPoint {
+    x: -56
+    y: 4
+    z: -14
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "factory_wallDecoration_industrialFan01"
+  gridPoint {
+    x: -65
+    y: 0
+    z: -19
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
