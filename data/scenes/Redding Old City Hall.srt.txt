@@ -818,7 +818,7 @@ triggers {
     ops {
       functionName: "Get Map Item (Event)"
       args {
-        string_value: "Barrel Explode Loop"
+        string_value: "Barrel Finishes Exploding"
       }
     }
   }
@@ -859,7 +859,7 @@ triggers {
     ops {
       functionName: "Get Map Item (Event)"
       args {
-        string_value: "Barrel Explode Loop"
+        string_value: "Barrel Finishes Exploding"
       }
     }
   }
@@ -965,6 +965,28 @@ triggers {
   }
   actions {
     ops {
+      functionName: "Set Variable (float)"
+      args {
+        call_value {
+          functionName: "Get Variable (float)"
+          args {
+            string_value: "dorbiExplodeTime"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Random (float)"
+          args {
+            float_value: 3
+          }
+          args {
+            float_value: 15
+          }
+        }
+      }
+    }
+    ops {
       functionName: "Send Event After Delay"
       args {
         call_value {
@@ -976,12 +998,66 @@ triggers {
       }
       args {
         call_value {
-          functionName: "Random (float)"
+          functionName: "Get Variable (float)"
           args {
-            float_value: 5
+            string_value: "dorbiExplodeTime"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Send Event After Delay"
+      args {
+        call_value {
+          functionName: "Get Map Item (Event)"
+          args {
+            string_value: "Barrel Finishes Exploding"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Arithmetic (float)"
+          args {
+            call_value {
+              functionName: "Get Variable (float)"
+              args {
+                string_value: "dorbiExplodeTime"
+              }
+            }
           }
           args {
-            float_value: 15
+            call_value {
+              functionName: "Get Preset Value (int)"
+              args {
+                string_value: "Arithmetic Ops"
+              }
+              args {
+                int_value: 0
+              }
+            }
+          }
+          args {
+            float_value: 1.5
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Play Animation From Manifest"
+      args {
+        call_value {
+          functionName: "Get Map Item (Actor)"
+          args {
+            string_value: "536b0cf7366236e0040077d2"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (Animation)"
+          args {
+            string_value: "Seattle:General/standing_cast"
           }
         }
       }
@@ -1862,7 +1938,7 @@ triggers {
   }
   elseActions {
   }
-  is_oneshot: true
+  is_oneshot: false
 }
 triggers {
   name: "Init Merchants"
@@ -4790,6 +4866,43 @@ triggers {
     }
   }
   conditions {
+    ops {
+      functionName: "Evaluate If Actor is Inside Region"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Actor)"
+              args {
+                string_value: "538a7bc53662367809006969"
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "AreOrAreNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (Region)"
+          args {
+            string_value: "5366ff88366236240900846b"
+          }
+        }
+      }
+    }
   }
   actions {
     ops {
@@ -4981,6 +5094,55 @@ triggers {
   isActive: true
   idRef {
     id: "538aa4d736623678090069b4"
+  }
+  elseActions {
+  }
+  is_oneshot: false
+}
+triggers {
+  name: "Start Talking to Dorbi"
+  events {
+    ops {
+      functionName: "On Item Interaction"
+      args {
+        call_value {
+          functionName: "Get Map Item (InteractableObject)"
+          args {
+            string_value: "536b0cf7366236e0040077d2"
+          }
+        }
+      }
+    }
+  }
+  conditions {
+  }
+  actions {
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "talkingToDorbi"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "538ab0c33662367809006a05"
   }
   elseActions {
   }
@@ -9113,9 +9275,18 @@ variables {
     typeName: "float"
   }
 }
+variables {
+  float_value: 0
+  variableref_value {
+    scope: TsVariableScope_Scene
+    name: "dorbiExplodeTime"
+    typeName: "float"
+  }
+}
 mapEvents: "Barrel Explode Loop"
 mapEvents: "Civilian Shoots"
 mapEvents: "Hear Shooting"
+mapEvents: "Barrel Finishes Exploding"
 goals {
   name: "Convince the San Francisco Megacorps to Help You"
   type: GoalType_Primary

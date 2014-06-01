@@ -6926,9 +6926,9 @@ props {
 props {
   name: "system_invisible_solidProp"
   gridPoint {
-    x: -60
+    x: -61
     y: 0
-    z: 5
+    z: 4
   }
   orientation: ORIENTATION_S
   idRef {
@@ -6965,9 +6965,9 @@ props {
 props {
   name: "system_invisible_solidProp"
   gridPoint {
-    x: -61
+    x: -62
     y: 0
-    z: 6
+    z: 5
   }
   orientation: ORIENTATION_S
   idRef {
@@ -6978,9 +6978,9 @@ props {
 props {
   name: "system_invisible_solidProp"
   gridPoint {
-    x: -60
+    x: -62
     y: 0
-    z: 6
+    z: 4
   }
   orientation: ORIENTATION_S
   idRef {
@@ -7108,7 +7108,7 @@ props {
 props {
   name: "system_invisible_solidProp"
   gridPoint {
-    x: -73
+    x: -74
     y: 0
     z: 6
   }
@@ -7121,7 +7121,7 @@ props {
 props {
   name: "system_invisible_solidProp"
   gridPoint {
-    x: -73
+    x: -74
     y: 0
     z: 7
   }
@@ -7134,7 +7134,7 @@ props {
 props {
   name: "system_invisible_solidProp"
   gridPoint {
-    x: -73
+    x: -74
     y: 0
     z: 8
   }
@@ -7147,7 +7147,7 @@ props {
 props {
   name: "system_invisible_solidProp"
   gridPoint {
-    x: -73
+    x: -74
     y: 0
     z: 9
   }
@@ -7160,7 +7160,7 @@ props {
 props {
   name: "system_invisible_solidProp"
   gridPoint {
-    x: -73
+    x: -74
     y: 0
     z: 10
   }
@@ -7173,7 +7173,7 @@ props {
 props {
   name: "system_invisible_solidProp"
   gridPoint {
-    x: -73
+    x: -74
     y: 0
     z: 11
   }
@@ -7186,7 +7186,7 @@ props {
 props {
   name: "system_invisible_solidProp"
   gridPoint {
-    x: -73
+    x: -74
     y: 0
     z: 12
   }
@@ -7199,7 +7199,7 @@ props {
 props {
   name: "system_invisible_solidProp"
   gridPoint {
-    x: -73
+    x: -74
     y: 0
     z: 13
   }
@@ -7212,7 +7212,7 @@ props {
 props {
   name: "system_invisible_solidProp"
   gridPoint {
-    x: -73
+    x: -74
     y: 0
     z: 14
   }
@@ -7225,7 +7225,7 @@ props {
 props {
   name: "system_invisible_solidProp"
   gridPoint {
-    x: -73
+    x: -74
     y: 0
     z: 15
   }
@@ -7238,7 +7238,7 @@ props {
 props {
   name: "system_invisible_solidProp"
   gridPoint {
-    x: -73
+    x: -74
     y: 0
     z: 16
   }
@@ -7251,7 +7251,7 @@ props {
 props {
   name: "system_invisible_solidProp"
   gridPoint {
-    x: -73
+    x: -74
     y: 0
     z: 18
   }
@@ -7264,7 +7264,7 @@ props {
 props {
   name: "system_invisible_solidProp"
   gridPoint {
-    x: -73
+    x: -74
     y: 0
     z: 17
   }
@@ -7277,7 +7277,7 @@ props {
 props {
   name: "system_invisible_solidProp"
   gridPoint {
-    x: -73
+    x: -74
     y: 0
     z: 19
   }
@@ -7326,62 +7326,6 @@ props {
 props {
   name: "system_invisible_solidProp"
   gridPoint {
-    x: -82
-    y: 0
-    z: -6
-  }
-  orientation: ORIENTATION_S
-  GeneralTags: "isDorbiProp"
-  idRef {
-    id: "538aa8ce36623678090069b7"
-  }
-  lod: 0
-}
-props {
-  name: "system_invisible_solidProp"
-  gridPoint {
-    x: -81
-    y: 0
-    z: -6
-  }
-  orientation: ORIENTATION_S
-  GeneralTags: "isDorbiProp"
-  idRef {
-    id: "538aa8d236623678090069b8"
-  }
-  lod: 0
-}
-props {
-  name: "system_invisible_solidProp"
-  gridPoint {
-    x: -80
-    y: 0
-    z: -6
-  }
-  orientation: ORIENTATION_S
-  GeneralTags: "isDorbiProp"
-  idRef {
-    id: "538aa8d336623678090069b9"
-  }
-  lod: 0
-}
-props {
-  name: "system_invisible_solidProp"
-  gridPoint {
-    x: -79
-    y: 0
-    z: -6
-  }
-  orientation: ORIENTATION_S
-  GeneralTags: "isDorbiProp"
-  idRef {
-    id: "538aa8d436623678090069ba"
-  }
-  lod: 0
-}
-props {
-  name: "system_invisible_solidProp"
-  gridPoint {
     x: -50
     y: 0
     z: 5
@@ -7415,6 +7359,117 @@ props {
   orientation: ORIENTATION_S
   idRef {
     id: "538aa97236623678090069bd"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_blockMove"
+  gridPoint {
+    x: -79
+    y: 0
+    z: -6
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "isDorbiProp"
+  idRef {
+    id: "538ab1693662367809006a06"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_blockMove"
+  gridPoint {
+    x: -80
+    y: 0
+    z: -6
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "isDorbiProp"
+  idRef {
+    id: "538ab1723662367809006a07"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_blockMove"
+  gridPoint {
+    x: -81
+    y: 0
+    z: -6
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "isDorbiProp"
+  idRef {
+    id: "538ab1733662367809006a08"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_blockMove"
+  gridPoint {
+    x: -82
+    y: 0
+    z: -6
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "isDorbiProp"
+  idRef {
+    id: "538ab1743662367809006a09"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_blockMove"
+  gridPoint {
+    x: -82
+    y: 0
+    z: -3
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "isManpower2Prop"
+  idRef {
+    id: "538ab1783662367809006a0a"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_blockMove"
+  gridPoint {
+    x: -81
+    y: 0
+    z: -3
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "isManpower2Prop"
+  idRef {
+    id: "538ab18b3662367809006a0d"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_blockMove"
+  gridPoint {
+    x: -80
+    y: 0
+    z: -3
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "isManpower2Prop"
+  idRef {
+    id: "538ab18d3662367809006a0e"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_solidProp"
+  gridPoint {
+    x: -73
+    y: 0
+    z: 6
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "538ab1b83662367809006a0f"
   }
   lod: 0
 }
