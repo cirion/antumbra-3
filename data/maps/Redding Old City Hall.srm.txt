@@ -5735,6 +5735,10 @@ props {
     z: -6
   }
   orientation: ORIENTATION_S
+  GeneralTags: "isSupply1"
+  idRef {
+    id: "538b36223662360820003290"
+  }
   lod: 0
 }
 props {
@@ -5745,6 +5749,10 @@ props {
     z: -7
   }
   orientation: ORIENTATION_S
+  GeneralTags: "isSupply1"
+  idRef {
+    id: "538b36293662360820003291"
+  }
   lod: 0
 }
 props {
@@ -5950,6 +5958,10 @@ props {
     z: 10
   }
   orientation: ORIENTATION_S
+  GeneralTags: "isSupply1"
+  idRef {
+    id: "538b37183662360820003298"
+  }
   lod: 0
 }
 props {
@@ -6211,6 +6223,7 @@ props {
     z: -5
   }
   orientation: ORIENTATION_S
+  GeneralTags: "isSupply1"
   idRef {
     id: "538a6c643662360c160054fa"
   }
@@ -7476,11 +7489,15 @@ props {
 props {
   name: "haven_wallDecoration_BearAKBanner01"
   gridPoint {
-    x: -67
-    y: 0
-    z: -26
+    x: -33.4
+    y: 3.6
+    z: -4
   }
-  orientation: ORIENTATION_S
+  orientation: ORIENTATION_E
+  GeneralTags: "isSupply1"
+  idRef {
+    id: "538b3603366236082000328f"
+  }
   lod: 0
 }
 props {
@@ -7491,6 +7508,10 @@ props {
     z: -4
   }
   orientation: ORIENTATION_E
+  GeneralTags: "isSupply1"
+  idRef {
+    id: "538b35ee366236082000328e"
+  }
   lod: 0
 }
 props {
@@ -7516,9 +7537,9 @@ props {
 props {
   name: "museum_lighting_candleSconce02"
   gridPoint {
-    x: -44
-    y: 0
-    z: -17
+    x: -46.5
+    y: 0.5
+    z: -4
   }
   orientation: ORIENTATION_S
   lod: 0
@@ -7546,11 +7567,15 @@ props {
 props {
   name: "hive_clutter_grenadeBoxes"
   gridPoint {
-    x: -53
+    x: -64
     y: 0
-    z: -18
+    z: -5
   }
-  orientation: ORIENTATION_S
+  orientation: ORIENTATION_E
+  GeneralTags: "isSupply1"
+  idRef {
+    id: "538b3a3836623608200032a9"
+  }
   lod: 0
 }
 props {
@@ -7571,5 +7596,371 @@ props {
     z: -19
   }
   orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "hive_storage_weaponCabinet"
+  gridPoint {
+    x: -52
+    y: 0
+    z: -8
+  }
+  orientation: ORIENTATION_N
+  GeneralTags: "isSupply1"
+  idRef {
+    id: "538b36373662360820003292"
+  }
+  lod: 0
+}
+props {
+  name: "brotherhood_furniture_weaponRack01"
+  gridPoint {
+    x: -54
+    y: 0
+    z: -8
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "isSupply1"
+  idRef {
+    id: "538b36493662360820003293"
+  }
+  lod: 0
+}
+props {
+  name: "brotherhood_furniture_weaponCloset02"
+  gridPoint {
+    x: -64
+    y: 0
+    z: -6
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "isSupply1"
+  idRef {
+    id: "538b36543662360820003294"
+  }
+  lod: 0
+}
+props {
+  name: "brotherhood_furniture_weaponRack01"
+  gridPoint {
+    x: -59
+    y: 0
+    z: -8
+  }
+  orientation: ORIENTATION_E
+  GeneralTags: "isSupply1"
+  idRef {
+    id: "538b36613662360820003295"
+  }
+  lod: 0
+}
+props {
+  name: "brotherhood_furniture_weaponRack01"
+  gridPoint {
+    x: -65
+    y: 0
+    z: -8
+  }
+  orientation: ORIENTATION_E
+  GeneralTags: "isSupply1"
+  idRef {
+    id: "538b36713662360820003296"
+  }
+  lod: 0
+}
+props {
+  name: "warehouse_storage_ammoPile"
+  gridPoint {
+    x: -52
+    y: 0
+    z: -5
+  }
+  orientation: ORIENTATION_E
+  GeneralTags: "isSupply1"
+  idRef {
+    id: "538b369f3662360820003297"
+  }
+  lod: 0
+}
+props {
+  name: "barrens_street_lightpole02"
+  gridPoint {
+    x: -64
+    y: -0.1
+    z: 13
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "sleekOffice_wallDecoration_displayMonitor01"
+  gridPoint {
+    x: -64
+    y: 0.8
+    z: 8
+  }
+  orientation: ORIENTATION_E
+  GeneralTags: "isSupply1"
+  idRef {
+    id: "538b37a7366236082000329a"
+  }
+  lod: 0
+}
+props {
+  name: "sleekOffice_wallDecoration_displayMonitor01_lights"
+  gridPoint {
+    x: -64
+    y: 0.8
+    z: 8
+  }
+  orientation: ORIENTATION_E
+  GeneralTags: "isSupply1"
+  idRef {
+    id: "538b37a43662360820003299"
+  }
+  lod: 0
+}
+props {
+  name: "secretLab_tech_largeWallMonitor03"
+  gridPoint {
+    x: -72
+    y: 1
+    z: 14.3
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "isSupply1"
+  idRef {
+    id: "538b37ff366236082000329c"
+  }
+  lod: 0
+}
+props {
+  name: "secretLab_tech_largeWallMonitor03_lights"
+  gridPoint {
+    x: -70
+    y: 3
+    z: 15.2
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "isSupply1"
+  idRef {
+    id: "538b37fd366236082000329b"
+  }
+  lod: 0
+}
+props {
+  name: "secretLab_tech_largeWallMonitor01"
+  gridPoint {
+    x: -84
+    y: 2
+    z: -6
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "isSupply1"
+  idRef {
+    id: "538b3860366236082000329d"
+  }
+  lod: 0
+}
+props {
+  name: "secretLab_tech_largeWallMonitor02"
+  gridPoint {
+    x: -84
+    y: 3
+    z: 10
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "isSupply1"
+  idRef {
+    id: "538b3886366236082000329e"
+  }
+  lod: 0
+}
+props {
+  name: "secretLab_tech_largeWallMonitor02_lights"
+  gridPoint {
+    x: -81
+    y: 6
+    z: 12
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "isSupply1"
+  idRef {
+    id: "538b388a366236082000329f"
+  }
+  lod: 0
+}
+props {
+  name: "secretLab_tech_largeWallMonitor04"
+  gridPoint {
+    x: -79
+    y: 3
+    z: -8
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "isSupply1"
+  idRef {
+    id: "538b391d36623608200032a0"
+  }
+  lod: 0
+}
+props {
+  name: "secretLab_tech_largeWallMonitor04_Lights"
+  gridPoint {
+    x: -78.7
+    y: 4.4
+    z: -7.1
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "isSupply1"
+  idRef {
+    id: "538b392136623608200032a1"
+  }
+  lod: 0
+}
+props {
+  name: "secretLab_tech_largeWallMonitor03"
+  gridPoint {
+    x: -53
+    y: 3
+    z: -9
+  }
+  orientation: ORIENTATION_E
+  GeneralTags: "isSupply1"
+  idRef {
+    id: "538b399936623608200032a3"
+  }
+  lod: 0
+}
+props {
+  name: "secretLab_tech_largeWallMonitor03_lights"
+  gridPoint {
+    x: -52.1
+    y: 5.1
+    z: -7
+  }
+  orientation: ORIENTATION_E
+  GeneralTags: "isSupply1"
+  idRef {
+    id: "538b399636623608200032a2"
+  }
+  lod: 0
+}
+props {
+  name: "museum_wallDecoration_techDisplayStand02"
+  gridPoint {
+    x: -76
+    y: 0
+    z: 2
+  }
+  orientation: ORIENTATION_W
+  GeneralTags: "isSupply1"
+  idRef {
+    id: "538b39e836623608200032a4"
+  }
+  lod: 0
+}
+props {
+  name: "museum_wallDecoration_techDisplayStand02"
+  gridPoint {
+    x: -71
+    y: 0
+    z: 2
+  }
+  orientation: ORIENTATION_E
+  GeneralTags: "isSupply1"
+  idRef {
+    id: "538b3a0936623608200032a5"
+  }
+  lod: 0
+}
+props {
+  name: "museum_wallDecoration_techDisplayStand01"
+  gridPoint {
+    x: -73
+    y: 0
+    z: 4
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "isSupply1"
+  idRef {
+    id: "538b3a2536623608200032a8"
+  }
+  lod: 0
+}
+props {
+  name: "hive_clutter_grenadeBoxes"
+  gridPoint {
+    x: -59
+    y: 0
+    z: -6
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "isSupply1"
+  idRef {
+    id: "538b3a4336623608200032aa"
+  }
+  lod: 0
+}
+props {
+  name: "museum_lighting_candleSconce02"
+  gridPoint {
+    x: -48.1
+    y: 0.2
+    z: 3.5
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "538b3a6336623608200032ab"
+  }
+  lod: 0
+}
+props {
+  name: "museum_lighting_candleSconce02"
+  gridPoint {
+    x: -48.1
+    y: 0.2
+    z: 7.5
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "538b3a7936623608200032ac"
+  }
+  lod: 0
+}
+props {
+  name: "museum_lighting_modernLight01"
+  gridPoint {
+    x: -57
+    y: 0
+    z: -3
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "museum_lighting_modernLight01"
+  gridPoint {
+    x: -77
+    y: 0
+    z: -4
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "538b3aa136623608200032ad"
+  }
+  lod: 0
+}
+props {
+  name: "museum_lighting_modernLight01"
+  gridPoint {
+    x: -79
+    y: 0
+    z: 7
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "538b3aa936623608200032ae"
+  }
   lod: 0
 }
