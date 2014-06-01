@@ -47721,9 +47721,9 @@ props {
 props {
   name: "system_gizmo_lightbulb"
   gridPoint {
-    x: -55
+    x: -54
     y: -1
-    z: 31
+    z: 32
   }
   orientation: ORIENTATION_S
   idRef {
@@ -47731,7 +47731,7 @@ props {
   }
   lod: 0
   light {
-    range: 4
+    range: 5
     color {
       r: 0.66666669
       g: 1
@@ -48653,7 +48653,7 @@ props {
 props {
   name: "office_decor_bloodSplatter05"
   gridPoint {
-    x: -52
+    x: -51
     y: 0
     z: 32
   }

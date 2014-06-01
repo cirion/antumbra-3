@@ -117,6 +117,23 @@ triggers {
         int_value: 2
       }
     }
+    ops {
+      functionName: "Set Environmental Effect Amount"
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "EnvironmentalEffects"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        int_value: 50
+      }
+    }
   }
   isActive: true
   idRef {
@@ -11956,15 +11973,15 @@ regions {
     z: -0.75
   }
   directional_light_color {
-    r: 0.50196081
-    g: 0.50196081
-    b: 0.50196081
+    r: 0.68235296
+    g: 0.37254903
+    b: 0.73725492
     a: 1
   }
   ambient_light_color {
-    r: 0.50196081
-    g: 0.50196081
-    b: 0.50196081
+    r: 0.22745098
+    g: 0.29411766
+    b: 0.35686275
     a: 1
   }
   ambience_template: ""
