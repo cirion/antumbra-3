@@ -3102,6 +3102,107 @@ triggers {
   }
   actions {
     ops {
+      functionName: "Kill Actor"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Actor)"
+              args {
+                string_value: "537684326434316a34fc4631"
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "DeathMethod"
+          }
+          args {
+            int_value: 3
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Delete Props by Tag"
+      args {
+        call_value {
+          functionName: "Get Map Item (SenseTagList)"
+          args {
+            string_value: "tabithaWall"
+          }
+        }
+      }
+      args {
+        float_value: -1
+      }
+      args {
+        call_value {
+          functionName: "Everywhere"
+        }
+      }
+    }
+    ops {
+      functionName: "Teleport Actor"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Actor)"
+              args {
+                string_value: "537684736434316a34fc4655"
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Center of Region"
+          args {
+            call_value {
+              functionName: "Get Map Item (Region)"
+              args {
+                string_value: "537be63d64343117695cf51e"
+              }
+            }
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "FacingDirection"
+          }
+          args {
+            int_value: 5
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "TeleportMethod"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+    ops {
       functionName: "Teleport Actor"
       args {
         call_value {
@@ -3228,88 +3329,6 @@ triggers {
       }
     }
     ops {
-      functionName: "Kill Actor"
-      args {
-        call_value {
-          functionName: "Specific Actor"
-          args {
-            call_value {
-              functionName: "Get Map Item (Actor)"
-              args {
-                string_value: "537684326434316a34fc4631"
-              }
-            }
-          }
-          args {
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "DeathMethod"
-          }
-          args {
-            int_value: 3
-          }
-        }
-      }
-    }
-    ops {
-      functionName: "Teleport Actor"
-      args {
-        call_value {
-          functionName: "Specific Actor"
-          args {
-            call_value {
-              functionName: "Get Map Item (Actor)"
-              args {
-                string_value: "537684736434316a34fc4655"
-              }
-            }
-          }
-          args {
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Center of Region"
-          args {
-            call_value {
-              functionName: "Get Map Item (Region)"
-              args {
-                string_value: "537be63d64343117695cf51e"
-              }
-            }
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "FacingDirection"
-          }
-          args {
-            int_value: 5
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "TeleportMethod"
-          }
-          args {
-            int_value: 0
-          }
-        }
-      }
-    }
-    ops {
       functionName: "Start Conversation"
       args {
         call_value {
@@ -3367,25 +3386,6 @@ triggers {
       }
       args {
         int_value: 15
-      }
-    }
-    ops {
-      functionName: "Delete Props by Tag"
-      args {
-        call_value {
-          functionName: "Get Map Item (SenseTagList)"
-          args {
-            string_value: "tabithaWall"
-          }
-        }
-      }
-      args {
-        float_value: -1
-      }
-      args {
-        call_value {
-          functionName: "Everywhere"
-        }
       }
     }
   }
@@ -8340,8 +8340,8 @@ triggers {
 regions {
   name: "Banter Elorn"
   position {
-    x: 61
-    y: 76
+    x: 64
+    y: 18
     width: 7
     height: 1
   }
@@ -8384,8 +8384,8 @@ regions {
 regions {
   name: "Banter Dorbi"
   position {
-    x: 61
-    y: 79
+    x: 64
+    y: 21
     width: 5
     height: 1
   }
@@ -8428,8 +8428,8 @@ regions {
 regions {
   name: "Banter Norton"
   position {
-    x: 57
-    y: 67
+    x: 60
+    y: 9
     width: 1
     height: 6
   }
@@ -8472,8 +8472,8 @@ regions {
 regions {
   name: "Banter Hailey"
   position {
-    x: 61
-    y: 68
+    x: 64
+    y: 10
     width: 1
     height: 7
   }
@@ -8516,8 +8516,8 @@ regions {
 regions {
   name: "Camera Above"
   position {
-    x: 31
-    y: 52
+    x: 34
+    y: -6
     width: 40
     height: 43
   }
@@ -8648,8 +8648,8 @@ regions {
 regions {
   name: "Witness Tabitha"
   position {
-    x: -31
-    y: -34
+    x: -30
+    y: -33
     width: 4
     height: 4
   }
@@ -9720,9 +9720,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 41
+    x: 44
     y: 0
-    z: 59
+    z: 1
   }
   orientation: ORIENTATION_S
   GeneralTags: "isCritter"
@@ -9809,9 +9809,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 37
+    x: 40
     y: 0
-    z: 64
+    z: 6
   }
   orientation: ORIENTATION_S
   GeneralTags: "isCritter"
@@ -9898,9 +9898,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 42
+    x: 45
     y: 0
-    z: 57
+    z: -1
   }
   orientation: ORIENTATION_S
   GeneralTags: "isCritter"
@@ -9987,9 +9987,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 38
+    x: 41
     y: 0
-    z: 70
+    z: 12
   }
   orientation: ORIENTATION_S
   GeneralTags: "isCritter"
@@ -10077,9 +10077,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 37
+    x: 40
     y: 0
-    z: 68
+    z: 10
   }
   orientation: ORIENTATION_S
   GeneralTags: "isCritter"
@@ -10167,9 +10167,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 37
+    x: 40
     y: 0
-    z: 67
+    z: 9
   }
   orientation: ORIENTATION_E
   displayName: "Spelunking Body"
@@ -10226,9 +10226,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 35
+    x: 38
     y: 0
-    z: 68
+    z: 10
   }
   orientation: ORIENTATION_S
   displayName: "Earth Elemental"
@@ -10316,9 +10316,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 60
+    x: 63
     y: 0
-    z: 82
+    z: 24
   }
   orientation: ORIENTATION_W
   GeneralTags: "isDorbi"
@@ -10408,9 +10408,9 @@ characters {
 characters {
   name: "system_spawner_playerSpawner"
   gridPoint {
-    x: 61
+    x: 64
     y: 0
-    z: 84
+    z: 26
   }
   orientation: ORIENTATION_W
   idRef {
@@ -10430,9 +10430,9 @@ characters {
 characters {
   name: "system_spawner_playerSpawner"
   gridPoint {
-    x: 62
+    x: 65
     y: 0
-    z: 85
+    z: 27
   }
   orientation: ORIENTATION_W
   idRef {
@@ -10452,9 +10452,9 @@ characters {
 characters {
   name: "system_spawner_playerSpawner"
   gridPoint {
-    x: 60
+    x: 63
     y: 0
-    z: 85
+    z: 27
   }
   orientation: ORIENTATION_W
   idRef {
@@ -10474,9 +10474,9 @@ characters {
 characters {
   name: "system_spawner_playerSpawner"
   gridPoint {
-    x: 61
+    x: 64
     y: 0
-    z: 86
+    z: 28
   }
   orientation: ORIENTATION_W
   idRef {
@@ -10496,9 +10496,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 62
+    x: 65
     y: 0
-    z: 82
+    z: 24
   }
   orientation: ORIENTATION_W
   GeneralTags: "isNorton"
@@ -10589,9 +10589,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 62
+    x: 65
     y: 0
-    z: 84
+    z: 26
   }
   orientation: ORIENTATION_W
   GeneralTags: "isHailey"
