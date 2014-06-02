@@ -255,7 +255,7 @@ triggers {
   is_oneshot: true
 }
 triggers {
-  name: "Debug Enabled"
+  name: "Debug "
   events {
     ops {
       functionName: "On Map Start"
@@ -14431,15 +14431,15 @@ regions {
     z: -0.75
   }
   directional_light_color {
-    r: 0.50196081
-    g: 0.50196081
-    b: 0.50196081
+    r: 0.33333334
+    g: 0.21568628
+    b: 0.11372549
     a: 1
   }
   ambient_light_color {
-    r: 0.50196081
-    g: 0.50196081
-    b: 0.50196081
+    r: 0.29803923
+    g: 0
+    b: 0
     a: 1
   }
   ambience_template: ""

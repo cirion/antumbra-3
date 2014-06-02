@@ -9008,130 +9008,6 @@ props {
   lod: 0
 }
 props {
-  name: "cemetery_wall_stoneDoor01"
-  gridPoint {
-    x: -25
-    y: 0
-    z: -59
-  }
-  orientation: ORIENTATION_E
-  idRef {
-    id: "537928ff366236981500613b"
-  }
-  interactionRoot {
-    isEnabled: true
-    interactionRadius: 1
-    prerequisites {
-      ops {
-        functionName: "Comparison (bool)"
-        args {
-          call_value {
-            functionName: "Get Variable (bool)"
-            args {
-              string_value: "isUnlockedRed"
-            }
-          }
-        }
-        args {
-          call_value {
-            functionName: "Get Preset Value (int)"
-            args {
-              string_value: "IsOrIsNot"
-            }
-            args {
-              int_value: 1
-            }
-          }
-        }
-        args {
-          call_value {
-            functionName: "Get Preset Value (int)"
-            args {
-              string_value: "bool"
-            }
-            args {
-              int_value: 1
-            }
-          }
-        }
-      }
-      ops {
-        functionName: "Comparison (bool)"
-        args {
-          call_value {
-            functionName: "Get Variable (bool)"
-            args {
-              string_value: "isUnlockedGreen"
-            }
-          }
-        }
-        args {
-          call_value {
-            functionName: "Get Preset Value (int)"
-            args {
-              string_value: "IsOrIsNot"
-            }
-            args {
-              int_value: 1
-            }
-          }
-        }
-        args {
-          call_value {
-            functionName: "Get Preset Value (int)"
-            args {
-              string_value: "bool"
-            }
-            args {
-              int_value: 1
-            }
-          }
-        }
-      }
-      ops {
-        functionName: "Comparison (bool)"
-        args {
-          call_value {
-            functionName: "Get Variable (bool)"
-            args {
-              string_value: "isUnlockedPurple"
-            }
-          }
-        }
-        args {
-          call_value {
-            functionName: "Get Preset Value (int)"
-            args {
-              string_value: "IsOrIsNot"
-            }
-            args {
-              int_value: 1
-            }
-          }
-        }
-        args {
-          call_value {
-            functionName: "Get Preset Value (int)"
-            args {
-              string_value: "bool"
-            }
-            args {
-              int_value: 1
-            }
-          }
-        }
-      }
-    }
-    doorPoint {
-      doorState: false
-      aiOnlyDoor: false
-      doorSound: "DoorStone"
-      doorSoundBundle: "props"
-    }
-  }
-  lod: 0
-}
-props {
   name: "system_invisible_blockSight"
   gridPoint {
     x: -39
@@ -11688,7 +11564,7 @@ props {
   name: "vfx_fx_candleStand"
   gridPoint {
     x: -28
-    y: 2
+    y: 0
     z: -66
   }
   orientation: ORIENTATION_S
@@ -12080,7 +11956,7 @@ props {
 props {
   name: "morgue_clutter_burntRemains"
   gridPoint {
-    x: -34
+    x: -35
     y: 0
     z: -66
   }
@@ -12147,6 +12023,130 @@ props {
   orientation: ORIENTATION_E
   idRef {
     id: "538b6358366236082000339a"
+  }
+  lod: 0
+}
+props {
+  name: "cemetery_wall_stoneDoor01"
+  gridPoint {
+    x: -25
+    y: 0
+    z: -59
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "538bc9cf366236a416002292"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    prerequisites {
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Variable (bool)"
+            args {
+              string_value: "isUnlockedRed"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+      }
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Variable (bool)"
+            args {
+              string_value: "isUnlockedGreen"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+      }
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Variable (bool)"
+            args {
+              string_value: "isUnlockedPurple"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+      }
+    }
+    doorPoint {
+      doorState: false
+      aiOnlyDoor: false
+      doorSound: "DoorStone"
+      doorSoundBundle: "props"
+    }
   }
   lod: 0
 }
