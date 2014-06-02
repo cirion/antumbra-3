@@ -371,6 +371,55 @@ triggers {
         }
       }
     }
+    ops {
+      functionName: "Kill Actor"
+      args {
+        call_value {
+          functionName: "All Actors on Team"
+          args {
+            call_value {
+              functionName: "Get Preset Value (string)"
+              args {
+                string_value: "FactionList"
+              }
+              args {
+                int_value: 2
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Preset Value (int)"
+              args {
+                string_value: "AllOrAny"
+              }
+              args {
+                int_value: 0
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Map Item (SceneDimension)"
+              args {
+                string_value: "Default"
+              }
+            }
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "DeathMethod"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
   }
   isActive: false
   idRef {
@@ -530,6 +579,30 @@ triggers {
             int_value: 3
           }
         }
+      }
+    }
+    ops {
+      functionName: "Send Event"
+      args {
+        call_value {
+          functionName: "Get Map Item (Event)"
+          args {
+            string_value: "Directional Light Cycles"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Light Transition"
+      args {
+        call_value {
+          functionName: "Get Map Item (Prop)"
+          args {
+            string_value: "521c112e366236581b006b90"
+          }
+        }
+      }
+      args {
       }
     }
   }
@@ -10826,13 +10899,330 @@ triggers {
   }
   is_oneshot: false
 }
+triggers {
+  name: "Directional Light Cycles"
+  events {
+    ops {
+      functionName: "Get Map Item (Event)"
+      args {
+        string_value: "Directional Light Cycles"
+      }
+    }
+  }
+  conditions {
+  }
+  actions {
+    ops {
+      functionName: "Set Directional Light Color"
+      args {
+        call_value {
+          functionName: "Random (float)"
+          args {
+            float_value: 0.1
+          }
+          args {
+            float_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Random (float)"
+          args {
+            float_value: 0.1
+          }
+          args {
+            float_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Random (float)"
+          args {
+            float_value: 0.1
+          }
+          args {
+            float_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Random (float)"
+          args {
+            float_value: 0.75
+          }
+          args {
+            float_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Random (float)"
+          args {
+            float_value: 0
+          }
+          args {
+            float_value: -1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Random (float)"
+          args {
+            float_value: 0
+          }
+          args {
+            float_value: -1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Random (float)"
+          args {
+            float_value: 0
+          }
+          args {
+            float_value: -1
+          }
+        }
+      }
+      args {
+        float_value: 0.75
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (CameraRegion)"
+          args {
+            string_value: "5375060b6434316b1333362c"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Directional Light Color"
+      args {
+        call_value {
+          functionName: "Random (float)"
+          args {
+            float_value: 0.1
+          }
+          args {
+            float_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Random (float)"
+          args {
+            float_value: 0.1
+          }
+          args {
+            float_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Random (float)"
+          args {
+            float_value: 0.1
+          }
+          args {
+            float_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Random (float)"
+          args {
+            float_value: 0.75
+          }
+          args {
+            float_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Random (float)"
+          args {
+            float_value: 0
+          }
+          args {
+            float_value: -1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Random (float)"
+          args {
+            float_value: 0
+          }
+          args {
+            float_value: -1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Random (float)"
+          args {
+            float_value: 0
+          }
+          args {
+            float_value: -1
+          }
+        }
+      }
+      args {
+        float_value: 0.75
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (CameraRegion)"
+          args {
+            string_value: "537506206434316b1333362d"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Directional Light Color"
+      args {
+        call_value {
+          functionName: "Random (float)"
+          args {
+            float_value: 0.1
+          }
+          args {
+            float_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Random (float)"
+          args {
+            float_value: 0.1
+          }
+          args {
+            float_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Random (float)"
+          args {
+            float_value: 0.1
+          }
+          args {
+            float_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Random (float)"
+          args {
+            float_value: 0.75
+          }
+          args {
+            float_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Random (float)"
+          args {
+            float_value: 0
+          }
+          args {
+            float_value: -1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Random (float)"
+          args {
+            float_value: 0
+          }
+          args {
+            float_value: -1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Random (float)"
+          args {
+            float_value: 0
+          }
+          args {
+            float_value: -1
+          }
+        }
+      }
+      args {
+        float_value: 0.75
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (CameraRegion)"
+          args {
+            string_value: "537506266434316b1333362e"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Send Event After Delay"
+      args {
+        call_value {
+          functionName: "Get Map Item (Event)"
+          args {
+            string_value: "Directional Light Cycles"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Random (float)"
+          args {
+            float_value: 2
+          }
+          args {
+            float_value: 5
+          }
+        }
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "52340201366236e81a00268b"
+  }
+  elseActions {
+  }
+  is_oneshot: false
+}
 regions {
   name: "Camera 1st Floor"
   position {
-    x: -36
-    y: 12
-    width: 51
-    height: 50
+    x: 18
+    y: 71
+    width: 46
+    height: 46
   }
   enabledAtStart: true
   is_camera_region: true
@@ -10859,9 +11249,9 @@ regions {
     a: 1
   }
   ambient_light_color {
-    r: 0.50196081
-    g: 0.50196081
-    b: 0.50196081
+    r: 0.082352944
+    g: 0.19607843
+    b: 0.36470589
     a: 1
   }
   ambience_template: ""
@@ -10873,8 +11263,8 @@ regions {
 regions {
   name: "Camera 2nd Floor"
   position {
-    x: -39
-    y: 105
+    x: 8
+    y: 117
     width: -45
     height: -44
   }
@@ -10917,8 +11307,8 @@ regions {
 regions {
   name: "Camera 3rd Floor"
   position {
-    x: -88
-    y: 155
+    x: -41
+    y: 115
     width: -45
     height: -44
   }
@@ -10961,8 +11351,8 @@ regions {
 regions {
   name: "Stairs Floor 1 to 2"
   position {
-    x: -28
-    y: 39
+    x: 26
+    y: 98
     width: 1
     height: 4
   }
@@ -11005,8 +11395,8 @@ regions {
 regions {
   name: "Stairs Floor 2 to 1"
   position {
-    x: -42
-    y: 76
+    x: 5
+    y: 88
     width: 1
     height: 4
   }
@@ -11049,8 +11439,8 @@ regions {
 regions {
   name: "Elevator Floor 2 to 3"
   position {
-    x: -78
-    y: 89
+    x: -31
+    y: 101
     width: 1
     height: 2
   }
@@ -11093,8 +11483,8 @@ regions {
 regions {
   name: "Elevator Floor 3 to 2"
   position {
-    x: -126
-    y: 137
+    x: -79
+    y: 97
     width: 1
     height: 2
   }
@@ -11137,8 +11527,8 @@ regions {
 regions {
   name: "Kali Proximity"
   position {
-    x: -106
-    y: 118
+    x: -59
+    y: 78
     width: 12
     height: 10
   }
@@ -11182,9 +11572,9 @@ regions {
   name: "Matrix Camera"
   position {
     x: -51
-    y: 123
-    width: 117
-    height: 60
+    y: 133
+    width: 114
+    height: 37
   }
   enabledAtStart: true
   is_camera_region: true
@@ -11205,15 +11595,15 @@ regions {
     z: -0.75
   }
   directional_light_color {
-    r: 0.50196081
-    g: 0.50196081
-    b: 0.50196081
+    r: 0.14901961
+    g: 0.40784314
+    b: 0.40784314
     a: 1
   }
   ambient_light_color {
-    r: 0.50196081
-    g: 0.50196081
-    b: 0.50196081
+    r: 0.12941177
+    g: 0.43921569
+    b: 0.5411765
     a: 1
   }
   ambience_template: ""
@@ -11489,9 +11879,9 @@ regions {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -102
+    x: -55
     y: 0
-    z: 120
+    z: 80
   }
   orientation: ORIENTATION_E
   displayName: "Kali"
@@ -11609,9 +11999,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -78
+    x: -31
     y: 0
-    z: 80
+    z: 92
   }
   orientation: ORIENTATION_S
   displayName: "DJ Omphalos"
@@ -11703,9 +12093,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -6
+    x: 48
     y: 0
-    z: 21
+    z: 80
   }
   orientation: ORIENTATION_E
   GeneralTags: "isFloor1Marine"
@@ -11756,9 +12146,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -4
+    x: 50
     y: 0
-    z: 21
+    z: 80
   }
   orientation: ORIENTATION_E
   GeneralTags: "isFloor1Marine"
@@ -11850,9 +12240,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -126
+    x: -79
     y: 0
-    z: 136
+    z: 96
   }
   orientation: ORIENTATION_S
   GeneralTags: "isFloor3Marine"
@@ -11903,9 +12293,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -126
+    x: -79
     y: 0
-    z: 138
+    z: 98
   }
   orientation: ORIENTATION_S
   GeneralTags: "isFloor3Marine"
@@ -11956,9 +12346,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -43
+    x: 4
     y: 0
-    z: 77
+    z: 89
   }
   orientation: ORIENTATION_N
   GeneralTags: "isFloor2Marine"
@@ -12008,9 +12398,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -43
+    x: 4
     y: 0
-    z: 75
+    z: 87
   }
   orientation: ORIENTATION_N
   GeneralTags: "isFloor2Marine"
@@ -12061,9 +12451,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -126
+    x: -79
     y: 0
-    z: 137
+    z: 97
   }
   orientation: ORIENTATION_S
   GeneralTags: "isFloor3Tir"
@@ -12108,9 +12498,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -43
+    x: 4
     y: 0
-    z: 78
+    z: 90
   }
   orientation: ORIENTATION_N
   GeneralTags: "isFloor2Tir"
@@ -12155,9 +12545,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -5
+    x: 49
     y: 0
-    z: 21
+    z: 80
   }
   orientation: ORIENTATION_E
   GeneralTags: "isFloor1Tir"
@@ -12202,9 +12592,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -126
+    x: -79
     y: 0
-    z: 139
+    z: 99
   }
   orientation: ORIENTATION_S
   GeneralTags: "isFloor3Tir"
@@ -12249,9 +12639,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -7
+    x: 47
     y: 0
-    z: 21
+    z: 80
   }
   orientation: ORIENTATION_E
   GeneralTags: "isFloor1Tir"
@@ -12296,9 +12686,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -43
+    x: 4
     y: 0
-    z: 76
+    z: 88
   }
   orientation: ORIENTATION_N
   GeneralTags: "isFloor2Tir"
@@ -12384,9 +12774,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -3
+    x: 51
     y: 0
-    z: 22
+    z: 81
   }
   orientation: ORIENTATION_E
   displayName: "Hailey"
@@ -12476,9 +12866,9 @@ characters {
 characters {
   name: "system_spawner_playerSpawner"
   gridPoint {
-    x: -6
+    x: 48
     y: 0
-    z: 22
+    z: 81
   }
   orientation: ORIENTATION_E
   idRef {
@@ -12498,9 +12888,9 @@ characters {
 characters {
   name: "system_spawner_playerSpawner"
   gridPoint {
-    x: -7
+    x: 47
     y: 0
-    z: 22
+    z: 81
   }
   orientation: ORIENTATION_E
   idRef {
@@ -12520,9 +12910,9 @@ characters {
 characters {
   name: "system_spawner_playerSpawner"
   gridPoint {
-    x: -5
+    x: 49
     y: 0
-    z: 22
+    z: 81
   }
   orientation: ORIENTATION_E
   idRef {
@@ -12542,9 +12932,9 @@ characters {
 characters {
   name: "system_spawner_playerSpawner"
   gridPoint {
-    x: -4
+    x: 50
     y: 0
-    z: 22
+    z: 81
   }
   orientation: ORIENTATION_E
   idRef {
@@ -13294,9 +13684,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -12
+    x: 42
     y: 0
-    z: 35
+    z: 94
   }
   orientation: ORIENTATION_S
   GeneralTags: "isFloor1Marine"
@@ -13348,9 +13738,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -6
+    x: 48
     y: 0
-    z: 36
+    z: 95
   }
   orientation: ORIENTATION_W
   GeneralTags: "isFloor1Marine"
@@ -13402,9 +13792,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -24
+    x: 30
     y: 0
-    z: 40
+    z: 99
   }
   orientation: ORIENTATION_S
   GeneralTags: "isFloor1Marine"
@@ -13454,9 +13844,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -19
+    x: 35
     y: 0
-    z: 52
+    z: 111
   }
   orientation: ORIENTATION_W
   GeneralTags: "isFloor1Marine"
@@ -13507,9 +13897,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -54
+    x: -7
     y: 0
-    z: 68
+    z: 80
   }
   orientation: ORIENTATION_E
   GeneralTags: "isFloor2Marine"
@@ -13601,9 +13991,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -63
+    x: -16
     y: 0
-    z: 74
+    z: 86
   }
   orientation: ORIENTATION_S
   GeneralTags: "isFloor2Marine"
@@ -13654,9 +14044,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -78
+    x: -31
     y: 0
-    z: 83
+    z: 95
   }
   orientation: ORIENTATION_S
   GeneralTags: "isFloor2Marine"
@@ -13707,9 +14097,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -77
+    x: -30
     y: 0
-    z: 90
+    z: 102
   }
   orientation: ORIENTATION_S
   GeneralTags: "isFloor2Marine"
@@ -13801,9 +14191,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -98
+    x: -51
     y: 0
-    z: 141
+    z: 101
   }
   orientation: ORIENTATION_N
   GeneralTags: "isFloor3Marine"
@@ -13855,9 +14245,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -109
+    x: -62
     y: 0
-    z: 132
+    z: 92
   }
   orientation: ORIENTATION_N
   GeneralTags: "isFloor3Marine"
@@ -13909,9 +14299,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -120
+    x: -73
     y: 0
-    z: 130
+    z: 90
   }
   orientation: ORIENTATION_S
   GeneralTags: "isFloor3Marine"
@@ -13961,9 +14351,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -115
+    x: -68
     y: 0
-    z: 145
+    z: 105
   }
   orientation: ORIENTATION_N
   GeneralTags: "isFloor3Marine"
@@ -14014,9 +14404,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -138
+    x: -91
     y: 0
-    z: 122
+    z: 82
   }
   orientation: ORIENTATION_S
   GeneralTags: "preLoader"
@@ -14065,9 +14455,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -138
+    x: -91
     y: 0
-    z: 121
+    z: 81
   }
   orientation: ORIENTATION_S
   GeneralTags: "preLoader"
@@ -14112,9 +14502,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -138
+    x: -91
     y: 0
-    z: 120
+    z: 80
   }
   orientation: ORIENTATION_S
   GeneralTags: "preLoader"
@@ -14163,9 +14553,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -138
+    x: -91
     y: 0
-    z: 119
+    z: 79
   }
   orientation: ORIENTATION_S
   GeneralTags: "preLoader"
@@ -14210,9 +14600,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -137
+    x: -90
     y: 0
-    z: 122
+    z: 82
   }
   orientation: ORIENTATION_N
   GeneralTags: "preLoader"
@@ -14257,9 +14647,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -137
+    x: -90
     y: 0
-    z: 121
+    z: 81
   }
   orientation: ORIENTATION_N
   GeneralTags: "preLoader"
@@ -14307,9 +14697,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -137
+    x: -90
     y: 0
-    z: 120
+    z: 80
   }
   orientation: ORIENTATION_N
   GeneralTags: "preLoader"
@@ -14354,9 +14744,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -137
+    x: -90
     y: 0
-    z: 119
+    z: 79
   }
   orientation: ORIENTATION_N
   GeneralTags: "preLoader"
@@ -14405,9 +14795,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -136
+    x: -89
     y: 0
-    z: 119
+    z: 79
   }
   orientation: ORIENTATION_E
   GeneralTags: "preLoader"
@@ -14497,9 +14887,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -136
+    x: -89
     y: 0
-    z: 120
+    z: 80
   }
   orientation: ORIENTATION_E
   GeneralTags: "preLoader"
@@ -14544,9 +14934,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -136
+    x: -89
     y: 0
-    z: 121
+    z: 81
   }
   orientation: ORIENTATION_E
   GeneralTags: "preLoader"
@@ -14595,9 +14985,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -136
+    x: -89
     y: 0
-    z: 122
+    z: 82
   }
   orientation: ORIENTATION_E
   GeneralTags: "isFloor1Tir"
@@ -14642,9 +15032,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -3
+    x: 51
     y: 0
-    z: 21
+    z: 80
   }
   orientation: ORIENTATION_S
   idRef {
@@ -14732,9 +15122,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -2
+    x: 52
     y: 0
-    z: 21
+    z: 80
   }
   orientation: ORIENTATION_S
   idRef {
@@ -14886,6 +15276,7 @@ variables {
   }
 }
 mapEvents: "Teleport Baddies"
+mapEvents: "Directional Light Cycles"
 senseTags: "isICData"
 senseTags: "isICPuzzle"
 senseTags: "isNorton"
