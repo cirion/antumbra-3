@@ -9861,11 +9861,11 @@ regions {
     b: 0.45490196
     a: 1
   }
-  ambience_template: ""
-  combat_music: ""
-  default_music: ""
+  ambience_template: "docks-night"
+  combat_music: "Seattle-Set3-Combat"
+  default_music: "Berlin-Set3-Stealth"
   loop_combat_music: true
-  loop_default_music: false
+  loop_default_music: true
 }
 regions {
   name: "Banter"

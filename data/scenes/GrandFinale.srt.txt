@@ -1697,11 +1697,11 @@ regions {
     b: 0.090196081
     a: 1
   }
-  ambience_template: ""
+  ambience_template: "estate-quiet"
   combat_music: ""
-  default_music: ""
-  loop_combat_music: true
-  loop_default_music: false
+  default_music: "Berlin-Haven"
+  loop_combat_music: false
+  loop_default_music: true
 }
 characters {
   name: "chars_icon_playerIcon"

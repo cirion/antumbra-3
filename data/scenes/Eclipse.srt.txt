@@ -978,6 +978,34 @@ triggers {
         }
       }
     }
+    ops {
+      functionName: "Play Music"
+      args {
+        call_value {
+          functionName: "Get Map Item (Music)"
+          args {
+            string_value: "Berlin_Set18"
+          }
+          args {
+            string_value: "Berlin-Set18-Combat"
+          }
+        }
+      }
+      args {
+        float_value: 1
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
   }
   isActive: true
   idRef {
@@ -11216,6 +11244,50 @@ triggers {
   }
   is_oneshot: false
 }
+triggers {
+  name: "NewTrigger"
+  events {
+  }
+  conditions {
+  }
+  actions {
+    ops {
+      functionName: "Play Sound"
+      args {
+        call_value {
+          functionName: "Get Map Item (Sound)"
+          args {
+            string_value: "Berlin:spellcasting"
+          }
+          args {
+            string_value: "BloodBoltCast"
+          }
+        }
+      }
+      args {
+        float_value: 0
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "538c995f6434312153c43535"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
 regions {
   name: "Camera 1st Floor"
   position {
@@ -11254,8 +11326,8 @@ regions {
     b: 0.36470589
     a: 1
   }
-  ambience_template: ""
-  combat_music: ""
+  ambience_template: "haven-attack"
+  combat_music: "Berlin-Club01"
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
@@ -11298,8 +11370,8 @@ regions {
     b: 0.50196081
     a: 1
   }
-  ambience_template: ""
-  combat_music: ""
+  ambience_template: "haven-attack"
+  combat_music: "Berlin-Club01"
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
@@ -11342,8 +11414,8 @@ regions {
     b: 0.50196081
     a: 1
   }
-  ambience_template: ""
-  combat_music: ""
+  ambience_template: "haven-attack"
+  combat_music: "Berlin-Club01"
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
@@ -11608,9 +11680,9 @@ regions {
   }
   ambience_template: ""
   combat_music: ""
-  default_music: ""
-  loop_combat_music: true
-  loop_default_music: false
+  default_music: "Seattle-Set8-MatrixLoop"
+  loop_combat_music: false
+  loop_default_music: true
 }
 regions {
   name: "Teleport Entrance to Puzzle"

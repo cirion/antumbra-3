@@ -6153,6 +6153,34 @@ triggers {
         float_value: 3
       }
     }
+    ops {
+      functionName: "Play Music"
+      args {
+        call_value {
+          functionName: "Get Map Item (Music)"
+          args {
+            string_value: "Berlin_Set5"
+          }
+          args {
+            string_value: "Berlin-Set5-Stealth"
+          }
+        }
+      }
+      args {
+        float_value: 1
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
   }
   isActive: true
   idRef {
@@ -14442,11 +14470,11 @@ regions {
     b: 0
     a: 1
   }
-  ambience_template: ""
-  combat_music: ""
-  default_music: ""
+  ambience_template: "asylum-quiet"
+  combat_music: "Berlin-Set28-Combat"
+  default_music: "Berlin-Set28-Legwork"
   loop_combat_music: true
-  loop_default_music: false
+  loop_default_music: true
 }
 regions {
   name: "Gargoyle Ambush 1a"

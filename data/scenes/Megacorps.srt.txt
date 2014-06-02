@@ -1569,6 +1569,34 @@ triggers {
         }
       }
     }
+    ops {
+      functionName: "Play Music"
+      args {
+        call_value {
+          functionName: "Get Map Item (Music)"
+          args {
+            string_value: "Berlin_Bossfight"
+          }
+          args {
+            string_value: "Berlin-Bossfight"
+          }
+        }
+      }
+      args {
+        float_value: 0.75
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
   }
   isActive: true
   idRef {
@@ -1601,6 +1629,34 @@ triggers {
           }
           args {
             int_value: 0
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Play Music"
+      args {
+        call_value {
+          functionName: "Get Map Item (Music)"
+          args {
+            string_value: "Berlin_Bossfight"
+          }
+          args {
+            string_value: "Berlin-Bossfight"
+          }
+        }
+      }
+      args {
+        float_value: 0.75
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
           }
         }
       }
@@ -17993,8 +18049,8 @@ regions {
     b: 0.19607843
     a: 1
   }
-  ambience_template: ""
-  combat_music: ""
+  ambience_template: "darklab-quiet"
+  combat_music: "Berlin-Set5-Combat"
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
@@ -18037,8 +18093,8 @@ regions {
     b: 0.19607843
     a: 1
   }
-  ambience_template: ""
-  combat_music: ""
+  ambience_template: "darklab-quiet"
+  combat_music: "Berlin-Set5-Combat"
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
@@ -18081,8 +18137,8 @@ regions {
     b: 0.19607843
     a: 1
   }
-  ambience_template: ""
-  combat_music: ""
+  ambience_template: "darklab-quiet"
+  combat_music: "Seattle-Set5-Combat"
   default_music: ""
   loop_combat_music: true
   loop_default_music: false
@@ -18919,9 +18975,9 @@ regions {
   }
   ambience_template: ""
   combat_music: ""
-  default_music: ""
-  loop_combat_music: true
-  loop_default_music: false
+  default_music: "Seattle-Set8-MatrixLoop"
+  loop_combat_music: false
+  loop_default_music: true
 }
 regions {
   name: "Matrix Camera 2"
@@ -18963,9 +19019,9 @@ regions {
   }
   ambience_template: ""
   combat_music: ""
-  default_music: ""
-  loop_combat_music: true
-  loop_default_music: false
+  default_music: "Seattle-Set8-MatrixLoop"
+  loop_combat_music: false
+  loop_default_music: true
 }
 regions {
   name: "Banter"

@@ -2964,6 +2964,9 @@ triggers {
         }
       }
     }
+    ops {
+      functionName: "Stop Music"
+    }
   }
   isActive: true
   idRef {
@@ -3408,6 +3411,34 @@ triggers {
       }
       args {
         int_value: 15
+      }
+    }
+    ops {
+      functionName: "Play Music"
+      args {
+        call_value {
+          functionName: "Get Map Item (Music)"
+          args {
+            string_value: "Title"
+          }
+          args {
+            string_value: "Seattle-TitleTheme"
+          }
+        }
+      }
+      args {
+        float_value: 1
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
       }
     }
   }
@@ -8655,11 +8686,11 @@ regions {
     b: 0.031372551
     a: 1
   }
-  ambience_template: ""
-  combat_music: ""
-  default_music: ""
+  ambience_template: "underground-quiet"
+  combat_music: "Seattle-Set7-Combat"
+  default_music: "Berlin-Set5-Legwork"
   loop_combat_music: true
-  loop_default_music: false
+  loop_default_music: true
 }
 regions {
   name: "Camera Below"
@@ -8699,8 +8730,8 @@ regions {
     b: 0.0627451
     a: 1
   }
-  ambience_template: ""
-  combat_music: ""
+  ambience_template: "underground-busy"
+  combat_music: "Berlin-Set18-Combat"
   default_music: ""
   loop_combat_music: true
   loop_default_music: false

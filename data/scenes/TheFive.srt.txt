@@ -5085,6 +5085,34 @@ triggers {
         }
       }
     }
+    ops {
+      functionName: "Play Music"
+      args {
+        call_value {
+          functionName: "Get Map Item (Music)"
+          args {
+            string_value: "Seattle_Set3"
+          }
+          args {
+            string_value: "Seattle-Set3-Legwork"
+          }
+        }
+      }
+      args {
+        float_value: 1
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
   }
   isActive: true
   idRef {
@@ -14526,11 +14554,11 @@ regions {
     b: 0.20392157
     a: 1
   }
-  ambience_template: ""
-  combat_music: ""
-  default_music: ""
+  ambience_template: "mitte-night"
+  combat_music: "Seattle-Set3-Combat"
+  default_music: "Berlin-Set9-Stealth"
   loop_combat_music: true
-  loop_default_music: false
+  loop_default_music: true
 }
 regions {
   name: "Banter"
@@ -15041,9 +15069,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 16
+    x: 17
     y: 0
-    z: -39
+    z: -34
   }
   orientation: ORIENTATION_S
   displayName: "Ranger Rick"
@@ -15149,9 +15177,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 10
+    x: -11
     y: 0
-    z: -48
+    z: -34
   }
   orientation: ORIENTATION_S
   GeneralTags: "isBullion"
@@ -15214,9 +15242,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 8
+    x: -13
     y: 0
-    z: -48
+    z: -34
   }
   orientation: ORIENTATION_S
   displayName: "Water Gang Leader"
@@ -15305,9 +15333,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 12
+    x: -9
     y: 0
-    z: -48
+    z: -34
   }
   orientation: ORIENTATION_S
   GeneralTags: "isDorbi"
@@ -15396,9 +15424,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 16
+    x: 17
     y: 0
-    z: -41
+    z: -36
   }
   orientation: ORIENTATION_S
   displayName: "Commlink"
@@ -15498,9 +15526,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 7
+    x: 8
     y: 0
-    z: -42
+    z: -37
   }
   orientation: ORIENTATION_S
   GeneralTags: "isWave1"
@@ -15587,9 +15615,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 7
+    x: 8
     y: 0
-    z: -41
+    z: -36
   }
   orientation: ORIENTATION_S
   GeneralTags: "isWave1"
@@ -15676,9 +15704,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 7
+    x: 8
     y: 0
-    z: -40
+    z: -35
   }
   orientation: ORIENTATION_S
   GeneralTags: "isWave1"
@@ -15765,9 +15793,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 5
+    x: 6
     y: 0
-    z: -42
+    z: -37
   }
   orientation: ORIENTATION_S
   GeneralTags: "isWave2"
@@ -15813,9 +15841,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 5
+    x: 6
     y: 0
-    z: -41
+    z: -36
   }
   orientation: ORIENTATION_S
   GeneralTags: "isWave2"
@@ -15902,9 +15930,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 5
+    x: 6
     y: 0
-    z: -40
+    z: -35
   }
   orientation: ORIENTATION_S
   GeneralTags: "isWave2"
@@ -15950,9 +15978,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 5
+    x: 6
     y: 0
-    z: -39
+    z: -34
   }
   orientation: ORIENTATION_S
   GeneralTags: "isWave2"
@@ -15998,9 +16026,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 2
+    x: 3
     y: 0
-    z: -42
+    z: -37
   }
   orientation: ORIENTATION_S
   GeneralTags: "isWave3"
@@ -16047,9 +16075,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 2
+    x: 3
     y: 0
-    z: -41
+    z: -36
   }
   orientation: ORIENTATION_S
   GeneralTags: "isWave3"
@@ -16096,9 +16124,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 2
+    x: 3
     y: 0
-    z: -43
+    z: -38
   }
   orientation: ORIENTATION_S
   GeneralTags: "isWave3"
@@ -16145,9 +16173,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -3
+    x: -2
     y: 0
-    z: -42
+    z: -37
   }
   orientation: ORIENTATION_S
   GeneralTags: "isWave5"
@@ -16193,9 +16221,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -3
+    x: -2
     y: 0
-    z: -41
+    z: -36
   }
   orientation: ORIENTATION_S
   GeneralTags: "isWave5"
@@ -16241,9 +16269,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -3
+    x: -2
     y: 0
-    z: -40
+    z: -35
   }
   orientation: ORIENTATION_S
   GeneralTags: "isWave5"
@@ -16292,9 +16320,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -1
+    x: 0
     y: 0
-    z: -43
+    z: -38
   }
   orientation: ORIENTATION_S
   GeneralTags: "isWave4"
@@ -16340,9 +16368,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -1
+    x: 0
     y: 0
-    z: -42
+    z: -37
   }
   orientation: ORIENTATION_S
   GeneralTags: "isWave4"
@@ -16388,9 +16416,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -1
+    x: 0
     y: 0
-    z: -41
+    z: -36
   }
   orientation: ORIENTATION_S
   GeneralTags: "isWave4"
@@ -16627,9 +16655,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 8
+    x: -13
     y: 0
-    z: -51
+    z: -37
   }
   orientation: ORIENTATION_S
   displayName: "Van"

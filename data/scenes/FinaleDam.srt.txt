@@ -6682,6 +6682,34 @@ triggers {
         }
       }
     }
+    ops {
+      functionName: "Play Music"
+      args {
+        call_value {
+          functionName: "Get Map Item (Music)"
+          args {
+            string_value: "Berlin_Set9"
+          }
+          args {
+            string_value: "Berlin-Set9-Legwork"
+          }
+        }
+      }
+      args {
+        float_value: 1
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
   }
   isActive: true
   idRef {
@@ -7712,6 +7740,34 @@ triggers {
       }
       args {
         float_value: 0
+      }
+    }
+    ops {
+      functionName: "Play Music"
+      args {
+        call_value {
+          functionName: "Get Map Item (Music)"
+          args {
+            string_value: "Berlin_Bossfight"
+          }
+          args {
+            string_value: "Berlin-Bossfight"
+          }
+        }
+      }
+      args {
+        float_value: 1
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
       }
     }
   }
@@ -16565,9 +16621,9 @@ regions {
   }
   ambience_template: ""
   combat_music: ""
-  default_music: ""
-  loop_combat_music: true
-  loop_default_music: false
+  default_music: "Seattle-Set8-MatrixLoop"
+  loop_combat_music: false
+  loop_default_music: true
 }
 regions {
   name: "Camera"
@@ -16607,11 +16663,11 @@ regions {
     b: 0.047058824
     a: 1
   }
-  ambience_template: ""
-  combat_music: ""
-  default_music: ""
+  ambience_template: "docks-night"
+  combat_music: "Seattle-Set9-Combat"
+  default_music: "Berlin-TitleTheme"
   loop_combat_music: true
-  loop_default_music: false
+  loop_default_music: true
 }
 regions {
   name: "Tabitha Healing Mark"
