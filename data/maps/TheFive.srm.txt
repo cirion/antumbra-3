@@ -1,6 +1,6 @@
-minX: -84
+minX: -88
 minZ: -39
-numX: 121
+numX: 125
 numZ: 68
 props {
   name: "barrens_ground_twoLaneWhite01"
@@ -12095,7 +12095,7 @@ props {
   gridPoint {
     x: -58
     y: 0
-    z: -24
+    z: -23
   }
   orientation: ORIENTATION_S
   idRef {
@@ -14872,7 +14872,7 @@ props {
 props {
   name: "cemetery_misc_bush01"
   gridPoint {
-    x: -21
+    x: -20
     y: 0
     z: -4
   }
@@ -17132,4 +17132,791 @@ props {
     id: "538cac66643431965539d43d"
   }
   lod: 0
+}
+props {
+  name: "system_invisible_blockMove"
+  gridPoint {
+    x: -43
+    y: 0
+    z: -4
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "538cc916643431965539d49b"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_barrelFire"
+  gridPoint {
+    x: -43
+    y: 0
+    z: -4
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "EnvironmentLoopBarrelFire"
+  }
+  idRef {
+    id: "538cc916643431965539d49c"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_blockMove"
+  gridPoint {
+    x: -56
+    y: 0
+    z: -25
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "538cc91b643431965539d49d"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_barrelFire"
+  gridPoint {
+    x: -53
+    y: 0
+    z: 2
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "EnvironmentLoopBarrelFire"
+  }
+  idRef {
+    id: "538cc91b643431965539d49e"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_barrelFire"
+  gridPoint {
+    x: -56
+    y: 0
+    z: -25
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "EnvironmentLoopBarrelFire"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_blockMove"
+  gridPoint {
+    x: -66
+    y: 0
+    z: 6
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "538cc952643431965539d4a1"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_barrelFire"
+  gridPoint {
+    x: -66
+    y: 0
+    z: 6
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "EnvironmentLoopBarrelFire"
+  }
+  idRef {
+    id: "538cc952643431965539d4a2"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_blockMove"
+  gridPoint {
+    x: 3
+    y: 0
+    z: -18
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "538cc963643431965539d4a3"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_barrelFire"
+  gridPoint {
+    x: 3
+    y: 0
+    z: -18
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "EnvironmentLoopBarrelFire"
+  }
+  idRef {
+    id: "538cc963643431965539d4a4"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_blockMove"
+  gridPoint {
+    x: -14
+    y: 0
+    z: -16
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "538cc96f643431965539d4a5"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_smolderingFire"
+  gridPoint {
+    x: -45
+    y: 0
+    z: 6
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "Berlin:EnvironmentSmolderingFire"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_smokeyFire"
+  gridPoint {
+    x: 11
+    y: 0
+    z: -25
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "Berlin:EnvironmentSmokeyFire"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_smokeyFire"
+  gridPoint {
+    x: -49
+    y: 0
+    z: -26
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "Berlin:EnvironmentSmokeyFire"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_crows"
+  gridPoint {
+    x: -49
+    y: 0
+    z: -16
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "EnvironmentLoopCrowGroup"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_crows"
+  gridPoint {
+    x: -62
+    y: 0
+    z: 21
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "EnvironmentLoopCrowGroup"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_crows"
+  gridPoint {
+    x: -54
+    y: 0
+    z: 13
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "EnvironmentLoopCrowGroup"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_crows"
+  gridPoint {
+    x: 2
+    y: 0
+    z: -15
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "EnvironmentLoopCrowGroup"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_crows"
+  gridPoint {
+    x: -67
+    y: 0
+    z: -17
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "EnvironmentLoopCrowGroup"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_dustDevil"
+  gridPoint {
+    x: -60
+    y: 0
+    z: -13
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "EnvironmentLoopDustDevil"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_dustyWind"
+  gridPoint {
+    x: -69
+    y: 0
+    z: 6
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "EnvironmentLoopDustyWind"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_dustyWind"
+  gridPoint {
+    x: -33
+    y: 0
+    z: -4
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "EnvironmentLoopDustyWind"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_dustDevil"
+  gridPoint {
+    x: -8
+    y: 0
+    z: -19
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "EnvironmentLoopDustDevil"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_dustyWind"
+  gridPoint {
+    x: 11
+    y: 0
+    z: -11
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "EnvironmentLoopDustyWind"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_firebarrel"
+  gridPoint {
+    x: -77
+    y: 0
+    z: 2
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "CrowdBarrelFire"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_firebarrel"
+  gridPoint {
+    x: -27
+    y: 0
+    z: -26
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "CrowdBarrelFire"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_firebarrelDuo"
+  gridPoint {
+    x: 18
+    y: 0
+    z: -3
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "CrowdBarrelFireDuo"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_firebarrelDuo"
+  gridPoint {
+    x: -46
+    y: 0
+    z: -25
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "CrowdBarrelFireDuo"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_flies"
+  gridPoint {
+    x: -65
+    y: 0
+    z: -22
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "SpotlightFliesEnvironment"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_flies"
+  gridPoint {
+    x: -75
+    y: 0
+    z: -1
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "SpotlightFliesEnvironment"
+  }
+  idRef {
+    id: "538ccab1643431965539d4a6"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_flies"
+  gridPoint {
+    x: -69
+    y: 0
+    z: 14
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "SpotlightFliesEnvironment"
+  }
+  idRef {
+    id: "538ccab5643431965539d4a7"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_flies"
+  gridPoint {
+    x: -50
+    y: 0
+    z: 19
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "SpotlightFliesEnvironment"
+  }
+  idRef {
+    id: "538ccab8643431965539d4a8"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_flies"
+  gridPoint {
+    x: -75
+    y: 0
+    z: 20
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "SpotlightFliesEnvironment"
+  }
+  idRef {
+    id: "538ccac0643431965539d4a9"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_flies"
+  gridPoint {
+    x: -36
+    y: 0
+    z: -22
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "SpotlightFliesEnvironment"
+  }
+  idRef {
+    id: "538ccac2643431965539d4aa"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_flies"
+  gridPoint {
+    x: 20
+    y: 0
+    z: -22
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "SpotlightFliesEnvironment"
+  }
+  idRef {
+    id: "538ccacf643431965539d4ab"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_lowmist"
+  gridPoint {
+    x: -3
+    y: 0
+    z: 0
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "EnvironmentLoopLowMistBank"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_lowmist"
+  gridPoint {
+    x: 1
+    y: 0
+    z: -2
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "EnvironmentLoopLowMistBank"
+  }
+  idRef {
+    id: "538ccaef643431965539d4ac"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_lowmist"
+  gridPoint {
+    x: 7
+    y: 0
+    z: 0
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "EnvironmentLoopLowMistBank"
+  }
+  idRef {
+    id: "538ccaf1643431965539d4ad"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_lowmist"
+  gridPoint {
+    x: 9
+    y: 0
+    z: -3
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "EnvironmentLoopLowMistBank"
+  }
+  idRef {
+    id: "538ccaf5643431965539d4af"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_lowmist"
+  gridPoint {
+    x: -50
+    y: 0
+    z: 21
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "EnvironmentLoopLowMistBank"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_lowmist"
+  gridPoint {
+    x: -71
+    y: 0
+    z: 21
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "EnvironmentLoopLowMistBank"
+  }
+  idRef {
+    id: "538ccb03643431965539d4b0"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_lowmist"
+  gridPoint {
+    x: -58
+    y: 0
+    z: 22
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "EnvironmentLoopLowMistBank"
+  }
+  idRef {
+    id: "538ccb07643431965539d4b1"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_poisongasYellowvent"
+  gridPoint {
+    x: -66
+    y: 0
+    z: 22
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "PoisonGasYellowVentEnvironment"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_poisongasvent"
+  gridPoint {
+    x: -47
+    y: 0
+    z: 20
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "PoisonGasVentEnvironment"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_roach"
+  gridPoint {
+    x: -88
+    y: 0
+    z: 6
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "EnvironmentLoopRoachScurry"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_roach"
+  gridPoint {
+    x: -53
+    y: 0
+    z: 10
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "EnvironmentLoopRoachScurry"
+  }
+  idRef {
+    id: "538ccb2b643431965539d4b2"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_roach"
+  gridPoint {
+    x: -57
+    y: 0
+    z: -15
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "EnvironmentLoopRoachScurry"
+  }
+  idRef {
+    id: "538ccb35643431965539d4b3"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_roach"
+  gridPoint {
+    x: -21
+    y: 0
+    z: -8
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "EnvironmentLoopRoachScurry"
+  }
+  idRef {
+    id: "538ccb3d643431965539d4b4"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_roach"
+  gridPoint {
+    x: 1
+    y: 0
+    z: -17
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "EnvironmentLoopRoachScurry"
+  }
+  idRef {
+    id: "538ccb46643431965539d4b5"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_roach"
+  gridPoint {
+    x: 24
+    y: 0
+    z: -4
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "EnvironmentLoopRoachScurry"
+  }
+  idRef {
+    id: "538ccb4f643431965539d4b6"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_steam"
+  gridPoint {
+    x: -63
+    y: 6
+    z: 5
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "SteamEnvironment"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_poisongasYellowvent"
+  gridPoint {
+    x: -69
+    y: 0
+    z: -5
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "PoisonGasYellowVentEnvironment"
+  }
+  lod: 0
+}
+props {
+  name: "system_gizmo_lightbulb"
+  gridPoint {
+    x: -25
+    y: 0
+    z: 8
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+  light {
+    range: 5
+    color {
+      r: 1
+      g: 1
+      b: 1
+    }
+  }
 }

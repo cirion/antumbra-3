@@ -321,7 +321,7 @@ triggers {
       }
     }
   }
-  isActive: true
+  isActive: false
   idRef {
     id: "537a8538643431b04e37ee64"
   }
@@ -5089,7 +5089,7 @@ triggers {
         call_value {
           functionName: "Get Map Item (Prop)"
           args {
-            string_value: "537b8b1a643431435413c3db"
+            string_value: "537b8b17643431435413c3d9"
           }
         }
       }
@@ -19899,7 +19899,7 @@ characters {
 characters {
   name: "system_spawner_playerSpawner"
   gridPoint {
-    x: -27
+    x: -26
     y: 0
     z: 5
   }
@@ -20539,6 +20539,8 @@ scene_dimensions {
   dimension_name: "Matrix"
   initial_alarm_state: 10
   turns_per_round: 3
+}
+character_roster {
 }
 show_hiring_screen_on_scene_load: false
 scene_hiring_prerequisites {
