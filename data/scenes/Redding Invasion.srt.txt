@@ -321,7 +321,7 @@ triggers {
       }
     }
   }
-  isActive: false
+  isActive: true
   idRef {
     id: "537a8538643431b04e37ee64"
   }
@@ -16892,8 +16892,8 @@ regions {
     a: 1
   }
   ambient_light_color {
-    r: 0.50196081
-    g: 0.50196081
+    r: 0.68627453
+    g: 0.58039218
     b: 0.50196081
     a: 1
   }
@@ -16950,8 +16950,8 @@ regions {
 regions {
   name: "Holding Region"
   position {
-    x: -100
-    y: -6
+    x: -97
+    y: -4
     width: 4
     height: 4
   }
@@ -16994,7 +16994,7 @@ regions {
 regions {
   name: "Matrix Lock Door 1"
   position {
-    x: -99
+    x: -72
     y: 63
     width: 1
     height: 1
@@ -17038,7 +17038,7 @@ regions {
 regions {
   name: "Matrix Lock Door 2"
   position {
-    x: -98
+    x: -71
     y: 63
     width: 1
     height: 1
@@ -17082,7 +17082,7 @@ regions {
 regions {
   name: "Matrix Lock CPU 1"
   position {
-    x: -99
+    x: -72
     y: 90
     width: 1
     height: 1
@@ -17126,7 +17126,7 @@ regions {
 regions {
   name: "Matrix Lock CPU 2"
   position {
-    x: -98
+    x: -71
     y: 90
     width: 1
     height: 1
@@ -17170,7 +17170,7 @@ regions {
 regions {
   name: "Teleport Entrance to Switch"
   position {
-    x: -76
+    x: -49
     y: 76
     width: 1
     height: 2
@@ -17214,7 +17214,7 @@ regions {
 regions {
   name: "Teleport Switch to Entrance"
   position {
-    x: -85
+    x: -58
     y: 76
     width: 1
     height: 2
@@ -17258,7 +17258,7 @@ regions {
 regions {
   name: "Teleport Entrance to Cameras"
   position {
-    x: -63
+    x: -36
     y: 90
     width: 2
     height: 1
@@ -17302,7 +17302,7 @@ regions {
 regions {
   name: "Teleport Cameras to Entrance"
   position {
-    x: -63
+    x: -36
     y: 103
     width: 2
     height: 1
@@ -17346,7 +17346,7 @@ regions {
 regions {
   name: "Teleport CPU to Switch"
   position {
-    x: -99
+    x: -72
     y: 99
     width: 2
     height: 1
@@ -17390,7 +17390,7 @@ regions {
 regions {
   name: "Teleport Switch to CPU"
   position {
-    x: -99
+    x: -72
     y: 90
     width: 2
     height: 1
@@ -17434,7 +17434,7 @@ regions {
 regions {
   name: "Teleport Switch to Door"
   position {
-    x: -99
+    x: -72
     y: 63
     width: 2
     height: 1
@@ -17478,7 +17478,7 @@ regions {
 regions {
   name: "Teleport Door to Switch"
   position {
-    x: -99
+    x: -72
     y: 54
     width: 2
     height: 1
@@ -17522,7 +17522,7 @@ regions {
 regions {
   name: "Matrix Camera"
   position {
-    x: -116
+    x: -89
     y: 31
     width: 72
     height: 92
@@ -17546,15 +17546,15 @@ regions {
     z: -0.75
   }
   directional_light_color {
-    r: 0.50196081
-    g: 0.50196081
-    b: 0.50196081
+    r: 0.14901961
+    g: 0.40784314
+    b: 0.40784314
     a: 1
   }
   ambient_light_color {
-    r: 0.50196081
-    g: 0.50196081
-    b: 0.50196081
+    r: 0.12941177
+    g: 0.43921569
+    b: 0.5411765
     a: 1
   }
   ambience_template: ""
@@ -18688,7 +18688,7 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -77
+    x: -50
     y: 0
     z: 47
   }
@@ -18737,7 +18737,7 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -77
+    x: -50
     y: 0
     z: 48
   }
@@ -18783,7 +18783,7 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -69
+    x: -42
     y: 0
     z: 77
   }
@@ -18820,7 +18820,7 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -62
+    x: -35
     y: 0
     z: 85
   }
@@ -18872,7 +18872,7 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -63
+    x: -36
     y: 0
     z: 77
   }
@@ -18909,7 +18909,7 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -95
+    x: -68
     y: 0
     z: 75
   }
@@ -18959,7 +18959,7 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -97
+    x: -70
     y: 0
     z: 68
   }
@@ -18996,7 +18996,7 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -97
+    x: -70
     y: 0
     z: 85
   }
@@ -19033,7 +19033,7 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -95
+    x: -68
     y: 0
     z: 77
   }
@@ -19085,7 +19085,7 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -105
+    x: -78
     y: 0
     z: 76
   }
@@ -19122,7 +19122,7 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -98
+    x: -71
     y: 0
     z: 37
   }
@@ -19169,7 +19169,7 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -94
+    x: -67
     y: 0
     z: 43
   }
@@ -19206,7 +19206,7 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -102
+    x: -75
     y: 0
     z: 44
   }
@@ -19256,7 +19256,7 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -110
+    x: -83
     y: 0
     z: 108
   }
@@ -19306,7 +19306,7 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -110
+    x: -83
     y: 0
     z: 104
   }
@@ -19343,7 +19343,7 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -101
+    x: -74
     y: 0
     z: 106
   }
@@ -19395,7 +19395,7 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -50
+    x: -23
     y: 0
     z: 111
   }
@@ -19432,7 +19432,7 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -51
+    x: -24
     y: 0
     z: 104
   }
@@ -19470,7 +19470,7 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -55
+    x: -28
     y: 0
     z: 113
   }
@@ -20059,7 +20059,7 @@ characters {
   gridPoint {
     x: -77
     y: 0
-    z: -24
+    z: -21
   }
   orientation: ORIENTATION_N
   GeneralTags: "isPreLoader"
@@ -20106,7 +20106,7 @@ characters {
   gridPoint {
     x: -76
     y: 0
-    z: -24
+    z: -21
   }
   orientation: ORIENTATION_N
   GeneralTags: "isPreLoader"
@@ -20153,7 +20153,7 @@ characters {
   gridPoint {
     x: -76
     y: 0
-    z: -23
+    z: -20
   }
   orientation: ORIENTATION_E
   GeneralTags: "isPreLoader"
@@ -20200,7 +20200,7 @@ characters {
   gridPoint {
     x: -77
     y: 0
-    z: -23
+    z: -20
   }
   orientation: ORIENTATION_E
   GeneralTags: "isPreLoader"
@@ -20247,7 +20247,7 @@ characters {
   gridPoint {
     x: -77
     y: 0
-    z: -22
+    z: -19
   }
   orientation: ORIENTATION_S
   GeneralTags: "isPreLoader"
@@ -20294,7 +20294,7 @@ characters {
   gridPoint {
     x: -76
     y: 0
-    z: -22
+    z: -19
   }
   orientation: ORIENTATION_S
   GeneralTags: "isPreLoader"

@@ -458,7 +458,7 @@ triggers {
       }
     }
   }
-  isActive: false
+  isActive: true
   idRef {
     id: "537a27ff6434318b3f5d133f"
   }
@@ -16591,20 +16591,20 @@ regions {
   visible_at_start: false
   is_teleporter_region: false
   directional_light_dir {
-    x: -0.5
+    x: -0.85
     y: -1
-    z: -0.75
+    z: -0.4
   }
   directional_light_color {
-    r: 0.50196081
-    g: 0.50196081
-    b: 0.50196081
+    r: 0.2
+    g: 0.14901961
+    b: 0.14901961
     a: 1
   }
   ambient_light_color {
-    r: 0.50196081
-    g: 0.50196081
-    b: 0.50196081
+    r: 0.047058824
+    g: 0.098039217
+    b: 0.047058824
     a: 1
   }
   ambience_template: ""

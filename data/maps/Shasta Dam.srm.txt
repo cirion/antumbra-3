@@ -26782,9 +26782,9 @@ props {
 props {
   name: "system_invisible_solidProp"
   gridPoint {
-    x: 20
+    x: 19
     y: 0
-    z: 17
+    z: 16
   }
   orientation: ORIENTATION_S
   idRef {
@@ -26795,9 +26795,9 @@ props {
 props {
   name: "system_invisible_solidProp"
   gridPoint {
-    x: 24
+    x: 23
     y: 0
-    z: 17
+    z: 16
   }
   orientation: ORIENTATION_S
   idRef {
@@ -26899,9 +26899,9 @@ props {
 props {
   name: "system_invisible_solidProp"
   gridPoint {
-    x: 21
+    x: 20
     y: 0
-    z: 17
+    z: 16
   }
   orientation: ORIENTATION_S
   idRef {
@@ -26912,9 +26912,9 @@ props {
 props {
   name: "system_invisible_solidProp"
   gridPoint {
-    x: 22
+    x: 21
     y: 0
-    z: 17
+    z: 16
   }
   orientation: ORIENTATION_S
   idRef {
@@ -26925,9 +26925,9 @@ props {
 props {
   name: "system_invisible_solidProp"
   gridPoint {
-    x: 23
+    x: 22
     y: 0
-    z: 17
+    z: 16
   }
   orientation: ORIENTATION_S
   idRef {
@@ -27913,9 +27913,9 @@ props {
 props {
   name: "cemetery_misc_bush02"
   gridPoint {
-    x: 22
+    x: 22.4
     y: 0
-    z: 17
+    z: 16.5
   }
   orientation: ORIENTATION_E
   idRef {
@@ -29855,9 +29855,9 @@ props {
 props {
   name: "docks_clutter_glassFloats"
   gridPoint {
-    x: -5
+    x: -27
     y: 0
-    z: -3
+    z: 17
   }
   orientation: ORIENTATION_S
   lod: 0
@@ -30673,6 +30673,84 @@ props {
   orientation: ORIENTATION_S
   idRef {
     id: "538b95953662365821004680"
+  }
+  lod: 0
+}
+props {
+  name: "hive_floor_dirt02"
+  gridPoint {
+    x: 25
+    y: 0
+    z: 18
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "538bd857366236a41600230a"
+  }
+  lod: 0
+}
+props {
+  name: "hive_floor_dirt02"
+  gridPoint {
+    x: 23
+    y: 0
+    z: 18
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "538bd857366236a41600230b"
+  }
+  lod: 0
+}
+props {
+  name: "hive_floor_dirt02"
+  gridPoint {
+    x: 21
+    y: 0
+    z: 18
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "538bd857366236a41600230c"
+  }
+  lod: 0
+}
+props {
+  name: "hive_floor_dirt02"
+  gridPoint {
+    x: 27
+    y: 0
+    z: 18
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "538bd859366236a41600230d"
+  }
+  lod: 0
+}
+props {
+  name: "cemetery_misc_bush02"
+  gridPoint {
+    x: 21.699999
+    y: 0
+    z: 16.9
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "538bd86c366236a41600230e"
+  }
+  lod: 0
+}
+props {
+  name: "pikePlace_furniture_parkbench"
+  gridPoint {
+    x: 20.8
+    y: 0
+    z: 17.1
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "538bd883366236a41600230f"
   }
   lod: 0
 }

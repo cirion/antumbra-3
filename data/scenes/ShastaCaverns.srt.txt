@@ -8639,20 +8639,20 @@ regions {
   visible_at_start: false
   is_teleporter_region: false
   directional_light_dir {
-    x: -0.5
-    y: -1
-    z: -0.75
+    x: -0.6
+    y: -0.3
+    z: -0.4
   }
   directional_light_color {
-    r: 0.50196081
-    g: 0.50196081
-    b: 0.50196081
+    r: 0.25490198
+    g: 0.29411766
+    b: 0.29411766
     a: 1
   }
   ambient_light_color {
-    r: 0.50196081
-    g: 0.50196081
-    b: 0.50196081
+    r: 0.031372551
+    g: 0.031372551
+    b: 0.031372551
     a: 1
   }
   ambience_template: ""
@@ -8688,15 +8688,15 @@ regions {
     z: -0.75
   }
   directional_light_color {
-    r: 0.50196081
-    g: 0.50196081
-    b: 0.50196081
+    r: 0.3137255
+    g: 0.36470589
+    b: 0.36470589
     a: 1
   }
   ambient_light_color {
-    r: 0.50196081
-    g: 0.50196081
-    b: 0.50196081
+    r: 0.0627451
+    g: 0.0627451
+    b: 0.0627451
     a: 1
   }
   ambience_template: ""
