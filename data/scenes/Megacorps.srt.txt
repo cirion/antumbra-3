@@ -22578,7 +22578,7 @@ mapName: "Megacorps"
 parentStory: ""
 scene_title: "Pyramid Operations"
 scene_subtitle: ""
-scene_synopsis: "When you first came to San Francisco, this iconic arcology held the battered remains of the local arm of Aztechnology. Now it stands as an icon of the Japanese megacorps\342\200\231 total domination of the city. Flashes of muzzle fire glimpsed through the windows reveal that this icon is in danger of shattering, as Tir Tairngire commandos rise up against the corporate overlords\342\200\246."
+scene_synopsis: "When you first came to San Francisco, this iconic arcology held the battered remains of the local arm of Aztechnology. Now it stands as an icon of the Japanese megacorps\342\200\231 total domination of the city. From this lofty perch they scheme, together and separately, to seize advantage in CalFree, UCAS, and the entire globe.\n\nFlashes of muzzle fire glimpsed through the windows reveal that this icon is in danger of shattering, as Tir Tairngire commandos rise up against the corporate overlords. Megacorp security has become complacent, believing themselves invulnerable behind Colonel Saito\'s iron shield. The shock of this attack might persuade them to join your cause... if they manage to survive."
 scene_image: ""
 scene_continue_button_skip: false
 scene_restore_runner_health: false
@@ -22633,8 +22633,6 @@ scene_dimensions {
   dimension_name: "Matrix"
   initial_alarm_state: 0
   turns_per_round: 3
-}
-character_roster {
 }
 show_hiring_screen_on_scene_load: false
 scene_hiring_prerequisites {
