@@ -311,6 +311,34 @@ triggers {
         }
       }
     }
+    ops {
+      functionName: "Play Music"
+      args {
+        call_value {
+          functionName: "Get Map Item (Music)"
+          args {
+            string_value: "Berlin_Set28"
+          }
+          args {
+            string_value: "Berlin-Set28-Legwork"
+          }
+        }
+      }
+      args {
+        float_value: 1
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
   }
   isActive: true
   idRef {
@@ -393,23 +421,29 @@ triggers {
       }
     }
     ops {
-      functionName: "Activate Actor Spawner"
+      functionName: "Play Music"
       args {
         call_value {
-          functionName: "Get Map Item (Actor Reference)"
+          functionName: "Get Map Item (Music)"
           args {
-            string_value: "5367035b3662362409008471"
+            string_value: "Berlin_Set18"
+          }
+          args {
+            string_value: "Berlin-Set18-Stealth"
           }
         }
       }
-    }
-    ops {
-      functionName: "Activate Actor Spawner"
+      args {
+        float_value: 1
+      }
       args {
         call_value {
-          functionName: "Get Map Item (Actor Reference)"
+          functionName: "Get Preset Value (int)"
           args {
-            string_value: "536705653662362409008484"
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
           }
         }
       }
@@ -589,6 +623,34 @@ triggers {
           functionName: "Get Preset Value (int)"
           args {
             string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Play Music"
+      args {
+        call_value {
+          functionName: "Get Map Item (Music)"
+          args {
+            string_value: "Seattle_Set10"
+          }
+          args {
+            string_value: "Seattle-Set10-Legwork"
+          }
+        }
+      }
+      args {
+        float_value: 1
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
           }
           args {
             int_value: 1
@@ -2990,11 +3052,11 @@ regions {
     b: 0.6
     a: 1
   }
-  ambience_template: ""
-  combat_music: ""
-  default_music: ""
+  ambience_template: "mitte-day"
+  combat_music: "Berlin-Set18-Stealth"
+  default_music: "Seattle-Set10-Legwork"
   loop_combat_music: true
-  loop_default_music: false
+  loop_default_music: true
 }
 regions {
   name: "Start Norton Convo"
