@@ -29435,3 +29435,26 @@ props {
   }
   lod: 0
 }
+props {
+  name: "haven_wallDecoration_humanisForever"
+  gridPoint {
+    x: -21
+    y: 1
+    z: 59
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "haven_wallDecoration_humanisForever"
+  gridPoint {
+    x: -45
+    y: 0.4
+    z: 38.4
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "538ca7b5643431965539d293"
+  }
+  lod: 0
+}

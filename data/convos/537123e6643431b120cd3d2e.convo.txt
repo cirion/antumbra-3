@@ -509,8 +509,16 @@ nodes {
     }
   }
   branches {
-    responseText: "Can you help us return to Redding?"
+    responseText: "What do you think about our chances here in CalFree?"
     nextNodeIndex: 20
+    onlyOnce: true
+    idRef {
+      id: "538ca9f9643431965539d303"
+    }
+  }
+  branches {
+    responseText: "Can you help us return to Redding?"
+    nextNodeIndex: 22
   }
   branches {
     responseText: "I don\342\200\231t need anything right now."
@@ -586,9 +594,34 @@ nodes {
 }
 nodes {
   idRef {
-    id: "53712a48643431882a039527"
+    id: "538ca8ed643431965539d2de"
   }
   index: 20
+  text: "They certainly appear hopeless. However, the impossibility of the task should not deter you from your struggle.\n\nI believe that we all have an obligation to do what we can to change things for the better, even if it is impossible. No: especially if it is impossible."
+  branches {
+    responseText: ""
+    nextNodeIndex: 21
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "538ca93f643431965539d2e1"
+  }
+  index: 21
+  text: "The day may come when darkness surrounds you, death presses in, and you can see no escape. Even then, do not give in to despair.\n\nDeclare your intention to live. Tear down the very walls that surround you. Death may still find you, but you might persuade it to show mercy on that day."
+  branches {
+    responseText: ""
+    nextNodeIndex: 16
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "53712a48643431882a039527"
+  }
+  index: 22
   text: "Yes, this is within my power. Accept this as my thanks for the enlightenment you have provided."
   nodeType: ConversationNodeType_Simple
   actions {

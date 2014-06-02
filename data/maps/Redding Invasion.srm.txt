@@ -18731,3 +18731,39 @@ props {
   orientation: ORIENTATION_E
   lod: 0
 }
+props {
+  name: "haven_wallDecoration_humanisForever"
+  gridPoint {
+    x: -58
+    y: 1
+    z: 6
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "haven_wallDecoration_humanisForever"
+  gridPoint {
+    x: -70.3
+    y: 2
+    z: -9
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "538ca811643431965539d294"
+  }
+  lod: 0
+}
+props {
+  name: "haven_wallDecoration_humanisForever"
+  gridPoint {
+    x: -84.3
+    y: 1.5
+    z: 11
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "538ca82e643431965539d295"
+  }
+  lod: 0
+}
