@@ -14705,9 +14705,9 @@ props {
   gridPoint {
     x: -2
     y: 8
-    z: -7
+    z: -9
   }
-  orientation: ORIENTATION_E
+  orientation: ORIENTATION_W
   idRef {
     id: "5389eb29366236681e0012f8"
   }
@@ -14731,9 +14731,9 @@ props {
   gridPoint {
     x: 13
     y: 8
-    z: -7
+    z: -9
   }
-  orientation: ORIENTATION_E
+  orientation: ORIENTATION_W
   idRef {
     id: "5389eb31366236681e0012fa"
   }
@@ -17905,18 +17905,505 @@ props {
 props {
   name: "system_gizmo_lightbulb"
   gridPoint {
-    x: -25
+    x: -33
     y: 0
-    z: 8
+    z: -9
   }
   orientation: ORIENTATION_S
+  GeneralTags: "isStreetlight"
+  idRef {
+    id: "538ce0a2643431965539d525"
+  }
   lod: 0
   light {
-    range: 5
+    range: 6
     color {
       r: 1
-      g: 1
-      b: 1
+      g: 0.7647059
+      b: 0.54509807
     }
+    intensity: 4
+  }
+}
+props {
+  name: "system_gizmo_lightbulb"
+  gridPoint {
+    x: -49
+    y: 0
+    z: -20
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "isStreetlight"
+  idRef {
+    id: "538ce0c9643431965539d526"
+  }
+  lod: 0
+  light {
+    range: 6
+    color {
+      r: 1
+      g: 0.7647059
+      b: 0.54509807
+    }
+    intensity: 4
+  }
+}
+props {
+  name: "system_gizmo_lightbulb"
+  gridPoint {
+    x: -67
+    y: 0
+    z: -20
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "isStreetlight"
+  idRef {
+    id: "538ce0cc643431965539d527"
+  }
+  lod: 0
+  light {
+    range: 6
+    color {
+      r: 1
+      g: 0.7647059
+      b: 0.54509807
+    }
+    intensity: 4
+  }
+}
+props {
+  name: "system_gizmo_lightbulb"
+  gridPoint {
+    x: -47
+    y: 0
+    z: -9
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "isStreetlight"
+  idRef {
+    id: "538ce0d1643431965539d528"
+  }
+  lod: 0
+  light {
+    range: 6
+    color {
+      r: 1
+      g: 0.7647059
+      b: 0.54509807
+    }
+    intensity: 4
+  }
+}
+props {
+  name: "system_gizmo_lightbulb"
+  gridPoint {
+    x: -55
+    y: 0
+    z: 16
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "isStreetlight"
+  idRef {
+    id: "538ce0d9643431965539d529"
+  }
+  lod: 0
+  light {
+    range: 6
+    color {
+      r: 1
+      g: 0.7647059
+      b: 0.54509807
+    }
+    intensity: 4
+  }
+}
+props {
+  name: "system_gizmo_lightbulb"
+  gridPoint {
+    x: -63
+    y: 0
+    z: 16
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "isStreetlight"
+  idRef {
+    id: "538ce0e0643431965539d52a"
+  }
+  lod: 0
+  light {
+    range: 6
+    color {
+      r: 1
+      g: 0.7647059
+      b: 0.54509807
+    }
+    intensity: 4
+  }
+}
+props {
+  name: "system_gizmo_lightbulb"
+  gridPoint {
+    x: 13
+    y: 0
+    z: -9
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "isStreetlight"
+  idRef {
+    id: "538ce0fc643431965539d52b"
+  }
+  lod: 0
+  light {
+    range: 6
+    color {
+      r: 1
+      g: 0.7647059
+      b: 0.54509807
+    }
+    intensity: 4
+  }
+}
+props {
+  name: "system_gizmo_lightbulb"
+  gridPoint {
+    x: -17
+    y: 0
+    z: -20
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "isStreetlight"
+  idRef {
+    id: "538ce100643431965539d52c"
+  }
+  lod: 0
+  light {
+    range: 6
+    color {
+      r: 1
+      g: 0.7647059
+      b: 0.54509807
+    }
+    intensity: 4
+  }
+}
+props {
+  name: "system_gizmo_lightbulb"
+  gridPoint {
+    x: -2
+    y: 0
+    z: -9
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "isStreetlight"
+  idRef {
+    id: "538ce105643431965539d52d"
+  }
+  lod: 0
+  light {
+    range: 6
+    color {
+      r: 1
+      g: 0.7647059
+      b: 0.54509807
+    }
+    intensity: 4
+  }
+}
+props {
+  name: "system_gizmo_lightbulb"
+  gridPoint {
+    x: 11
+    y: 0
+    z: -20
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "isStreetlight"
+  idRef {
+    id: "538ce11f643431965539d52e"
+  }
+  lod: 0
+  light {
+    range: 6
+    color {
+      r: 1
+      g: 0.7647059
+      b: 0.54509807
+    }
+    intensity: 4
+  }
+}
+props {
+  name: "system_gizmo_lightbulb"
+  gridPoint {
+    x: -55
+    y: 0
+    z: 3
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "538ce168643431965539d52f"
+  }
+  lod: 0
+  light {
+    range: 6
+    color {
+      r: 1
+      g: 0.66666669
+      b: 0
+    }
+    intensity: 4
+  }
+}
+props {
+  name: "system_gizmo_lightbulb"
+  gridPoint {
+    x: 3
+    y: 0
+    z: -18
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "isFireLight"
+  idRef {
+    id: "538ce18b643431965539d530"
+  }
+  lod: 0
+  light {
+    range: 3
+    color {
+      r: 0.76862746
+      g: 0.22481117
+      b: 0.22560464
+    }
+    intensity: 5
+  }
+}
+props {
+  name: "system_gizmo_lightbulb"
+  gridPoint {
+    x: -56
+    y: 0
+    z: -25
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "isFireLight"
+  idRef {
+    id: "538ce1c7643431965539d531"
+  }
+  lod: 0
+  light {
+    range: 3
+    color {
+      r: 0.76862746
+      g: 0.22481117
+      b: 0.22560464
+    }
+    intensity: 5
+  }
+}
+props {
+  name: "system_gizmo_lightbulb"
+  gridPoint {
+    x: -44
+    y: 0
+    z: 7
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "isFireLight"
+  idRef {
+    id: "538ce1da643431965539d532"
+  }
+  lod: 0
+  light {
+    range: 3
+    color {
+      r: 0.76862746
+      g: 0.22481117
+      b: 0.22560464
+    }
+    intensity: 5
+  }
+}
+props {
+  name: "system_gizmo_lightbulb"
+  gridPoint {
+    x: -76
+    y: 0
+    z: 3
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "isFireLight"
+  idRef {
+    id: "538ce1e9643431965539d533"
+  }
+  lod: 0
+  light {
+    range: 3
+    color {
+      r: 0.76862746
+      g: 0.22481117
+      b: 0.22560464
+    }
+    intensity: 5
+  }
+}
+props {
+  name: "system_gizmo_lightbulb"
+  gridPoint {
+    x: -39
+    y: 0
+    z: -25
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "isFireLight"
+  idRef {
+    id: "538ce1f5643431965539d534"
+  }
+  lod: 0
+  light {
+    range: 3
+    color {
+      r: 0.76862746
+      g: 0.22481117
+      b: 0.22560464
+    }
+    intensity: 5
+  }
+}
+props {
+  name: "system_gizmo_lightbulb"
+  gridPoint {
+    x: -26
+    y: 0
+    z: -25
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "isFireLight"
+  idRef {
+    id: "538ce1fb643431965539d535"
+  }
+  lod: 0
+  light {
+    range: 3
+    color {
+      r: 0.76862746
+      g: 0.22481117
+      b: 0.22560464
+    }
+    intensity: 5
+  }
+}
+props {
+  name: "system_gizmo_lightbulb"
+  gridPoint {
+    x: 18
+    y: 0
+    z: -3
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "isFireLight"
+  idRef {
+    id: "538ce234643431965539d536"
+  }
+  lod: 0
+  light {
+    range: 3
+    color {
+      r: 0.76862746
+      g: 0.22481117
+      b: 0.22560464
+    }
+    intensity: 5
+  }
+}
+props {
+  name: "system_gizmo_lightbulb"
+  gridPoint {
+    x: 17
+    y: 0
+    z: -25
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "isFireLight"
+  idRef {
+    id: "538ce241643431965539d537"
+  }
+  lod: 0
+  light {
+    range: 3
+    color {
+      r: 0.76862746
+      g: 0.22481117
+      b: 0.22560464
+    }
+    intensity: 5
+  }
+}
+props {
+  name: "system_gizmo_lightbulb"
+  gridPoint {
+    x: 22
+    y: 0
+    z: -13
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "isStreetlight"
+  idRef {
+    id: "538ce247643431965539d538"
+  }
+  lod: 0
+  light {
+    range: 4
+    color {
+      r: 0.51764709
+      g: 0.59014267
+      b: 0.83747613
+    }
+    intensity: 3
+  }
+}
+props {
+  name: "system_gizmo_lightbulb"
+  gridPoint {
+    x: -4
+    y: 0
+    z: -23
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "isEmergencyLight"
+  idRef {
+    id: "538ce269643431965539d539"
+  }
+  lod: 0
+  light {
+    range: 3
+    color {
+      r: 1
+      g: 0
+      b: 0
+    }
+    intensity: 5
+  }
+}
+props {
+  name: "system_gizmo_lightbulb"
+  gridPoint {
+    x: -37
+    y: 0
+    z: -7
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "isEmergencyLight"
+  idRef {
+    id: "538ce287643431965539d53a"
+  }
+  lod: 0
+  light {
+    range: 3
+    color {
+      r: 1
+      g: 0
+      b: 0
+    }
+    intensity: 5
   }
 }
