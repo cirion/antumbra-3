@@ -1,17 +1,7 @@
 minX: -96
 minZ: -34
-numX: 85
+numX: 83
 numZ: 59
-props {
-  name: "museum_groundDecoration_rug02"
-  gridPoint {
-    x: -15
-    y: 0
-    z: -4
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
 props {
   name: "museum_wall_window04"
   gridPoint {
@@ -1469,7 +1459,7 @@ props {
   name: "museum_wall_doorWide01Middle"
   gridPoint {
     x: -23
-    y: 0
+    y: 0.1
     z: 6
   }
   orientation: ORIENTATION_S
@@ -10002,6 +9992,19 @@ props {
   GeneralTags: "isSupply5"
   idRef {
     id: "538b4e4b3662360820003354"
+  }
+  lod: 0
+}
+props {
+  name: "secretLab_wall_4x4fill"
+  gridPoint {
+    x: -19
+    y: 0
+    z: 18
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "538bcf84366236a4160022c5"
   }
   lod: 0
 }

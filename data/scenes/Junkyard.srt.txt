@@ -15961,20 +15961,20 @@ regions {
   visible_at_start: false
   is_teleporter_region: false
   directional_light_dir {
-    x: -0.5
-    y: -1
-    z: -0.75
+    x: -0.2
+    y: -0.8
+    z: -0.4
   }
   directional_light_color {
-    r: 0.50196081
-    g: 0.50196081
-    b: 0.50196081
+    r: 0.4
+    g: 0.34901962
+    b: 0.34901962
     a: 1
   }
   ambient_light_color {
     r: 0.50196081
-    g: 0.50196081
-    b: 0.50196081
+    g: 0.34901962
+    b: 0.2
     a: 1
   }
   ambience_template: ""
@@ -15986,8 +15986,8 @@ regions {
 regions {
   name: "Teleport Hub to Paydata"
   position {
-    x: 68
-    y: 43
+    x: 33
+    y: 13
     width: 1
     height: 2
   }
@@ -16030,8 +16030,8 @@ regions {
 regions {
   name: "Teleport Paydata to Hub"
   position {
-    x: 79
-    y: 43
+    x: 44
+    y: 13
     width: 1
     height: 2
   }
@@ -16074,8 +16074,8 @@ regions {
 regions {
   name: "Teleport Hub to Lifter"
   position {
-    x: 58
-    y: 53
+    x: 23
+    y: 23
     width: 2
     height: 1
   }
@@ -16118,8 +16118,8 @@ regions {
 regions {
   name: "Teleport Lifter to Hub"
   position {
-    x: 65
-    y: 65
+    x: 30
+    y: 35
     width: 2
     height: 1
   }
@@ -16162,8 +16162,8 @@ regions {
 regions {
   name: "Teleport Lifter to Paydata"
   position {
-    x: 81
-    y: 69
+    x: 46
+    y: 39
     width: 2
     height: 1
   }
@@ -16206,8 +16206,8 @@ regions {
 regions {
   name: "Teleport Paydata to Lifter"
   position {
-    x: 88
-    y: 61
+    x: 53
+    y: 31
     width: 2
     height: 1
   }
@@ -16338,8 +16338,8 @@ regions {
 regions {
   name: "Matrix"
   position {
-    x: 35
-    y: 23
+    x: 0
+    y: -7
     width: 79
     height: 74
   }
@@ -16362,15 +16362,15 @@ regions {
     z: -0.75
   }
   directional_light_color {
-    r: 0.50196081
-    g: 0.50196081
-    b: 0.50196081
+    r: 0.14901961
+    g: 0.40784314
+    b: 0.40784314
     a: 1
   }
   ambient_light_color {
-    r: 0.50196081
-    g: 0.50196081
-    b: 0.50196081
+    r: 0.12941177
+    g: 0.43921569
+    b: 0.5411765
     a: 1
   }
   ambience_template: ""
@@ -16689,7 +16689,7 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -89
+    x: -72
     y: 0
     z: 26
   }
@@ -17053,9 +17053,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 71
+    x: 36
     y: 0
-    z: 27
+    z: -3
   }
   orientation: ORIENTATION_S
   GeneralTags: "isHeatBaddy"
@@ -17096,9 +17096,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 72
+    x: 37
     y: 0
-    z: 27
+    z: -3
   }
   orientation: ORIENTATION_S
   GeneralTags: "isHeatBaddy"
@@ -17184,7 +17184,7 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -84
+    x: -67
     y: 0
     z: 26
   }
@@ -17242,9 +17242,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 61
+    x: 26
     y: 0
-    z: 42
+    z: 12
   }
   orientation: ORIENTATION_N
   GeneralTags: "isICHub"
@@ -17272,9 +17272,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 56
+    x: 21
     y: 0
-    z: 47
+    z: 17
   }
   orientation: ORIENTATION_E
   GeneralTags: "isICHub"
@@ -17306,9 +17306,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 56
+    x: 21
     y: 0
-    z: 38
+    z: 8
   }
   orientation: ORIENTATION_S
   GeneralTags: "isICHub"
@@ -17340,9 +17340,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 73
+    x: 38
     y: 0
-    z: 72
+    z: 42
   }
   orientation: ORIENTATION_W
   GeneralTags: "isICLifter"
@@ -17370,9 +17370,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 66
+    x: 31
     y: 0
-    z: 79
+    z: 49
   }
   orientation: ORIENTATION_W
   GeneralTags: "isICLifter"
@@ -17404,9 +17404,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 88
+    x: 53
     y: 0
-    z: 81
+    z: 51
   }
   orientation: ORIENTATION_N
   GeneralTags: "isICLifter"
@@ -17438,9 +17438,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 74
+    x: 39
     y: 0
-    z: 87
+    z: 57
   }
   orientation: ORIENTATION_W
   GeneralTags: "isICLifter"
@@ -17468,9 +17468,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 96
+    x: 61
     y: 0
-    z: 47
+    z: 17
   }
   orientation: ORIENTATION_N
   GeneralTags: "isICPaydata"
@@ -17498,9 +17498,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 89
+    x: 54
     y: 0
-    z: 54
+    z: 24
   }
   orientation: ORIENTATION_N
   GeneralTags: "isICPaydata"
@@ -17532,9 +17532,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 94
+    x: 59
     y: 0
-    z: 43
+    z: 13
   }
   orientation: ORIENTATION_N
   GeneralTags: "isICPaydata"
@@ -17566,9 +17566,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: 85
+    x: 50
     y: 0
-    z: 38
+    z: 8
   }
   orientation: ORIENTATION_E
   GeneralTags: "isICPaydata"
@@ -18230,7 +18230,7 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -84
+    x: -67
     y: 0
     z: 21
   }
@@ -18275,7 +18275,7 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -86
+    x: -69
     y: 0
     z: 21
   }
@@ -18320,7 +18320,7 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -88
+    x: -71
     y: 0
     z: 21
   }
@@ -18365,7 +18365,7 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -89
+    x: -72
     y: 0
     z: 21
   }
@@ -18410,7 +18410,7 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -89
+    x: -72
     y: 0
     z: 23
   }

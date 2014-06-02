@@ -2974,20 +2974,20 @@ regions {
   visible_at_start: false
   is_teleporter_region: false
   directional_light_dir {
-    x: -0.5
-    y: -1
-    z: -0.75
+    x: -0.6
+    y: -2.5
+    z: -0.8
   }
   directional_light_color {
-    r: 0.50196081
-    g: 0.50196081
-    b: 0.50196081
+    r: 0.90196079
+    g: 0.8509804
+    b: 0.8509804
     a: 1
   }
   ambient_light_color {
-    r: 0.50196081
-    g: 0.50196081
-    b: 0.50196081
+    r: 0.8
+    g: 0.8
+    b: 0.6
     a: 1
   }
   ambience_template: ""

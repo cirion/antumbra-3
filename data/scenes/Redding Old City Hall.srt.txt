@@ -6705,15 +6705,15 @@ regions {
     z: -0.75
   }
   directional_light_color {
-    r: 0.50196081
-    g: 0.50196081
-    b: 0.50196081
+    r: 0.89019608
+    g: 0.64313728
+    b: 0.55686277
     a: 1
   }
   ambient_light_color {
-    r: 0.50196081
-    g: 0.50196081
-    b: 0.50196081
+    r: 0.78431374
+    g: 0.6901961
+    b: 0.7647059
     a: 1
   }
   ambience_template: ""
@@ -6769,9 +6769,9 @@ regions {
 characters {
   name: "system_spawner_playerSpawner"
   gridPoint {
-    x: -44
+    x: -26
     y: 0
-    z: 1
+    z: 7
   }
   orientation: ORIENTATION_N
   idRef {
