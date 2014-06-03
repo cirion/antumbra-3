@@ -331,12 +331,19 @@ triggers {
       }
     }
     ops {
-      functionName: "Trigger: Run Alternate Trigger"
+      functionName: "Kill Actor"
       args {
         call_value {
-          functionName: "Get Map Item (Trigger)"
+          functionName: "Specific Actor"
           args {
-            string_value: "5373e67c643431b8017c3cc9"
+            call_value {
+              functionName: "Get Map Item (Actor)"
+              args {
+                string_value: "53854d853662366411001334"
+              }
+            }
+          }
+          args {
           }
         }
       }
@@ -344,32 +351,21 @@ triggers {
         call_value {
           functionName: "Get Preset Value (int)"
           args {
-            string_value: "WithOrWithout"
-          }
-          args {
-            int_value: 1
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "WaitOrNot"
+            string_value: "DeathMethod"
           }
           args {
             int_value: 0
           }
         }
       }
+    }
+    ops {
+      functionName: "Delete Prop"
       args {
         call_value {
-          functionName: "Get Preset Value (int)"
+          functionName: "Get Map Item (Prop)"
           args {
-            string_value: "WithOrWithout"
-          }
-          args {
-            int_value: 0
+            string_value: "538bc9cf366236a416002292"
           }
         }
       }

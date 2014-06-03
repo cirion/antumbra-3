@@ -10648,23 +10648,6 @@ props {
   lod: 0
 }
 props {
-  name: "vfx_fx_smallfire"
-  gridPoint {
-    x: -18
-    y: 2.3
-    z: -38
-  }
-  orientation: ORIENTATION_S
-  properties {
-    property_id: "fxScript"
-    string_value: "CampfireEnvironment"
-  }
-  idRef {
-    id: "538a56e13662360c160052eb"
-  }
-  lod: 0
-}
-props {
   name: "cemetery_decor_obelisk02"
   gridPoint {
     x: -38
@@ -12034,6 +12017,7 @@ props {
     z: -59
   }
   orientation: ORIENTATION_E
+  displayName: "Door to Tophet"
   idRef {
     id: "538bc9cf366236a416002292"
   }
@@ -12151,20 +12135,6 @@ props {
   lod: 0
 }
 props {
-  name: "vfx_fx_candleflicker"
-  gridPoint {
-    x: -25
-    y: 2
-    z: -49
-  }
-  orientation: ORIENTATION_S
-  properties {
-    property_id: "fxScript"
-    string_value: "CandleLightEnvironment"
-  }
-  lod: 0
-}
-props {
   name: "system_gizmo_lightbulb"
   gridPoint {
     x: -13
@@ -12278,34 +12248,6 @@ props {
     }
     intensity: 8
   }
-}
-props {
-  name: "vfx_fx_doomFlow"
-  gridPoint {
-    x: -9
-    y: 0
-    z: -18
-  }
-  orientation: ORIENTATION_S
-  properties {
-    property_id: "fxScript"
-    string_value: "Berlin:EnvironmentLoopDoomFlow"
-  }
-  lod: 0
-}
-props {
-  name: "vfx_fx_doomFlowStop"
-  gridPoint {
-    x: -8
-    y: 0
-    z: -18
-  }
-  orientation: ORIENTATION_S
-  properties {
-    property_id: "fxScript"
-    string_value: "Berlin:EnvironmentDoomFlowStop"
-  }
-  lod: 0
 }
 props {
   name: "vfx_fx_ambientMagic"
@@ -12460,9 +12402,9 @@ props {
 props {
   name: "vfx_fx_candleflicker"
   gridPoint {
-    x: -11
-    y: 2.5
-    z: -16
+    x: -9.8
+    y: 3.5
+    z: -15
   }
   orientation: ORIENTATION_S
   properties {
@@ -12472,24 +12414,10 @@ props {
   lod: 0
 }
 props {
-  name: "vfx_fx_dustDevil"
-  gridPoint {
-    x: -7
-    y: 0
-    z: -17
-  }
-  orientation: ORIENTATION_S
-  properties {
-    property_id: "fxScript"
-    string_value: "EnvironmentLoopDustDevil"
-  }
-  lod: 0
-}
-props {
   name: "vfx_fx_fallingwater"
   gridPoint {
     x: -2
-    y: 0
+    y: 1
     z: -18
   }
   orientation: ORIENTATION_S
@@ -12523,20 +12451,6 @@ props {
   }
 }
 props {
-  name: "vfx_fx_flies"
-  gridPoint {
-    x: -9
-    y: 0
-    z: -16
-  }
-  orientation: ORIENTATION_S
-  properties {
-    property_id: "fxScript"
-    string_value: "SpotlightFliesEnvironment"
-  }
-  lod: 0
-}
-props {
   name: "vfx_fx_lowmist"
   gridPoint {
     x: -10
@@ -12553,28 +12467,14 @@ props {
 props {
   name: "vfx_fx_poisongasvent"
   gridPoint {
-    x: -6
+    x: -28
     y: 0
-    z: -17
+    z: -70
   }
-  orientation: ORIENTATION_S
+  orientation: ORIENTATION_E
   properties {
     property_id: "fxScript"
     string_value: "PoisonGasVentEnvironment"
-  }
-  lod: 0
-}
-props {
-  name: "vfx_fx_poisongasYellowvent"
-  gridPoint {
-    x: -5
-    y: 0
-    z: -17
-  }
-  orientation: ORIENTATION_S
-  properties {
-    property_id: "fxScript"
-    string_value: "PoisonGasYellowVentEnvironment"
   }
   lod: 0
 }
@@ -12629,14 +12529,362 @@ props {
 props {
   name: "vfx_fx_slimeDrip"
   gridPoint {
-    x: -9
-    y: 1
-    z: -18
+    x: 4.6
+    y: 0
+    z: -29.8
   }
   orientation: ORIENTATION_S
   properties {
     property_id: "fxScript"
     string_value: "EnvironmentLoopSlimeDrip"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_poisongasvent"
+  gridPoint {
+    x: 8
+    y: 0
+    z: -28
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "PoisonGasVentEnvironment"
+  }
+  idRef {
+    id: "538ddab83662369817001950"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_candleflicker"
+  gridPoint {
+    x: -8.05
+    y: 3.5
+    z: -16.800001
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "CandleLightEnvironment"
+  }
+  idRef {
+    id: "538ddb843662369817001951"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_candleflicker"
+  gridPoint {
+    x: -9.8
+    y: 3.5
+    z: -8
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "CandleLightEnvironment"
+  }
+  idRef {
+    id: "538ddc0e3662369817001952"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_candleflicker"
+  gridPoint {
+    x: -8.8
+    y: 3.5
+    z: -21
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "CandleLightEnvironment"
+  }
+  idRef {
+    id: "538ddc123662369817001953"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_candleflicker"
+  gridPoint {
+    x: -3.0500002
+    y: 3.5
+    z: -16.800001
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "CandleLightEnvironment"
+  }
+  idRef {
+    id: "538ddc9c3662369817001954"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_candleflicker"
+  gridPoint {
+    x: -25.05
+    y: 3.5
+    z: -34.800003
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "CandleLightEnvironment"
+  }
+  idRef {
+    id: "538ddca23662369817001955"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_candleflicker"
+  gridPoint {
+    x: -3.0499992
+    y: 3.5
+    z: -35.800003
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "CandleLightEnvironment"
+  }
+  idRef {
+    id: "538ddcae3662369817001956"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_candleflicker"
+  gridPoint {
+    x: 0.95000076
+    y: 3.5
+    z: -35.800003
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "CandleLightEnvironment"
+  }
+  idRef {
+    id: "538ddcb03662369817001957"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_candleflicker"
+  gridPoint {
+    x: -14.8
+    y: 3.5
+    z: -43
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "CandleLightEnvironment"
+  }
+  idRef {
+    id: "538ddcba3662369817001958"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_candleflicker"
+  gridPoint {
+    x: -14.8
+    y: 3.5
+    z: -47
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "CandleLightEnvironment"
+  }
+  idRef {
+    id: "538ddcbd3662369817001959"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_candleflicker"
+  gridPoint {
+    x: -22.8
+    y: 3.5
+    z: -55
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "CandleLightEnvironment"
+  }
+  idRef {
+    id: "538ddcc3366236981700195a"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_candleflicker"
+  gridPoint {
+    x: -22.8
+    y: 3.5
+    z: -59
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "CandleLightEnvironment"
+  }
+  idRef {
+    id: "538ddcc5366236981700195b"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_flies"
+  gridPoint {
+    x: 11
+    y: 0
+    z: -33
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "SpotlightFliesEnvironment"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_flies"
+  gridPoint {
+    x: -19
+    y: 0
+    z: -54
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "SpotlightFliesEnvironment"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_flies"
+  gridPoint {
+    x: -32
+    y: 0
+    z: -63
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "SpotlightFliesEnvironment"
+  }
+  idRef {
+    id: "538dddba366236981700195c"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_lowmist"
+  gridPoint {
+    x: -8
+    y: 0
+    z: -14
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "EnvironmentLoopLowMistBank"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_lowmist"
+  gridPoint {
+    x: -8
+    y: 0
+    z: -24
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "EnvironmentLoopLowMistBank"
+  }
+  idRef {
+    id: "538ddddb366236981700195d"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_lowmist"
+  gridPoint {
+    x: -46
+    y: 0
+    z: -50
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "EnvironmentLoopLowMistBank"
+  }
+  idRef {
+    id: "538ddde0366236981700195e"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_lowmist"
+  gridPoint {
+    x: -50
+    y: 0
+    z: -48
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "EnvironmentLoopLowMistBank"
+  }
+  idRef {
+    id: "538ddde8366236981700195f"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_lowmist"
+  gridPoint {
+    x: 6
+    y: 0
+    z: -34
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "EnvironmentLoopLowMistBank"
+  }
+  idRef {
+    id: "538dddea3662369817001960"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_smolderingFire"
+  gridPoint {
+    x: -18
+    y: 2.3
+    z: -38
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "Berlin:EnvironmentSmolderingFire"
+  }
+  idRef {
+    id: "538dde6d3662369817001962"
   }
   lod: 0
 }
