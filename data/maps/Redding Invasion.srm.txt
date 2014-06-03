@@ -18091,7 +18091,7 @@ props {
     isEnabled: true
     interactionRadius: 1
     pickupItem {
-      itemName: "Grenade 1 (Frag)"
+      itemName: "Grenade (Smoke)"
       destroyOnPickup: false
     }
   }
@@ -19610,34 +19610,6 @@ props {
   }
 }
 props {
-  name: "vfx_fx_smokeyFire"
-  gridPoint {
-    x: -30
-    y: 0
-    z: 2
-  }
-  orientation: ORIENTATION_S
-  properties {
-    property_id: "fxScript"
-    string_value: "Berlin:EnvironmentSmokeyFire"
-  }
-  lod: 0
-}
-props {
-  name: "vfx_fx_smolderingFire"
-  gridPoint {
-    x: -30
-    y: 0
-    z: 4
-  }
-  orientation: ORIENTATION_S
-  properties {
-    property_id: "fxScript"
-    string_value: "Berlin:EnvironmentSmolderingFire"
-  }
-  lod: 0
-}
-props {
   name: "vfx_fx_fallingsparks"
   gridPoint {
     x: -74
@@ -19662,48 +19634,6 @@ props {
   properties {
     property_id: "fxScript"
     string_value: "SparksEnvironment"
-  }
-  lod: 0
-}
-props {
-  name: "vfx_fx_flashingAlarm"
-  gridPoint {
-    x: -31
-    y: 0
-    z: 2
-  }
-  orientation: ORIENTATION_S
-  properties {
-    property_id: "fxScript"
-    string_value: "EnvironmentLoopFlashingAlarm"
-  }
-  lod: 0
-}
-props {
-  name: "vfx_fx_flicker"
-  gridPoint {
-    x: -29
-    y: 0
-    z: 6
-  }
-  orientation: ORIENTATION_S
-  properties {
-    property_id: "fxScript"
-    string_value: "FlickeringLightEnvironment"
-  }
-  lod: 0
-}
-props {
-  name: "vfx_fx_flickerFill"
-  gridPoint {
-    x: -29
-    y: 0
-    z: 8
-  }
-  orientation: ORIENTATION_S
-  properties {
-    property_id: "fxScript"
-    string_value: "EnvironmentLoopFlickeringLightFill"
   }
   lod: 0
 }
@@ -19784,48 +19714,6 @@ props {
   lod: 0
 }
 props {
-  name: "vfx_fx_poisongasvent"
-  gridPoint {
-    x: -32
-    y: 0
-    z: 7
-  }
-  orientation: ORIENTATION_S
-  properties {
-    property_id: "fxScript"
-    string_value: "PoisonGasVentEnvironment"
-  }
-  lod: 0
-}
-props {
-  name: "vfx_fx_poisongasYellowvent"
-  gridPoint {
-    x: -32
-    y: 0
-    z: 8
-  }
-  orientation: ORIENTATION_S
-  properties {
-    property_id: "fxScript"
-    string_value: "PoisonGasYellowVentEnvironment"
-  }
-  lod: 0
-}
-props {
-  name: "vfx_fx_policeSiren"
-  gridPoint {
-    x: -31
-    y: 0
-    z: 1
-  }
-  orientation: ORIENTATION_S
-  properties {
-    property_id: "fxScript"
-    string_value: "SirenLightsEnvironment"
-  }
-  lod: 0
-}
-props {
   name: "vfx_fx_roach"
   gridPoint {
     x: -63
@@ -19850,20 +19738,6 @@ props {
   properties {
     property_id: "fxScript"
     string_value: "EnvironmentLoopRoachScurry"
-  }
-  lod: 0
-}
-props {
-  name: "vfx_fx_smallfire"
-  gridPoint {
-    x: -30
-    y: 0
-    z: 1
-  }
-  orientation: ORIENTATION_S
-  properties {
-    property_id: "fxScript"
-    string_value: "CampfireEnvironment"
   }
   lod: 0
 }
@@ -19913,6 +19787,757 @@ props {
     x: -59
     y: 1
     z: -9
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "system_gizmo_lightbulb"
+  gridPoint {
+    x: -45
+    y: 0
+    z: -2
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "isFireLight"
+  idRef {
+    id: "538d4fc9366236ec2000029b"
+  }
+  lod: 0
+  light {
+    range: 3
+    color {
+      r: 0.76862746
+      g: 0.22481117
+      b: 0.22560464
+    }
+    intensity: 5
+  }
+}
+props {
+  name: "system_gizmo_lightbulb"
+  gridPoint {
+    x: -37
+    y: 0
+    z: 8
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "isFireLight"
+  idRef {
+    id: "538d4fcd366236ec2000029c"
+  }
+  lod: 0
+  light {
+    range: 3
+    color {
+      r: 0.76862746
+      g: 0.22481117
+      b: 0.22560464
+    }
+    intensity: 5
+  }
+}
+props {
+  name: "system_gizmo_lightbulb"
+  gridPoint {
+    x: -56
+    y: 0
+    z: 9
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "isFireLight"
+  idRef {
+    id: "538d4fd1366236ec2000029d"
+  }
+  lod: 0
+  light {
+    range: 5
+    color {
+      r: 0.76862746
+      g: 0.22481117
+      b: 0.22560464
+    }
+    intensity: 7
+  }
+}
+props {
+  name: "system_gizmo_lightbulb"
+  gridPoint {
+    x: -67
+    y: 0
+    z: -5
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "isFireLight"
+  idRef {
+    id: "538d4fe1366236ec2000029e"
+  }
+  lod: 0
+  light {
+    range: 3
+    color {
+      r: 0.76862746
+      g: 0.22481117
+      b: 0.22560464
+    }
+    intensity: 5
+  }
+}
+props {
+  name: "system_gizmo_lightbulb"
+  gridPoint {
+    x: -81
+    y: 0
+    z: -6
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "isFireLight"
+  idRef {
+    id: "538d4fe9366236ec2000029f"
+  }
+  lod: 0
+  light {
+    range: 3
+    color {
+      r: 0.76862746
+      g: 0.22481117
+      b: 0.22560464
+    }
+    intensity: 5
+  }
+}
+props {
+  name: "system_gizmo_lightbulb"
+  gridPoint {
+    x: -82
+    y: 0
+    z: 7
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "isFireLight"
+  idRef {
+    id: "538d4ff8366236ec200002a0"
+  }
+  lod: 0
+  light {
+    range: 2
+    color {
+      r: 0.33333334
+      g: 0.66666669
+      b: 1
+    }
+    intensity: 6
+  }
+}
+props {
+  name: "system_gizmo_lightbulb"
+  gridPoint {
+    x: -82
+    y: 0
+    z: -4
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "isFireLight"
+  idRef {
+    id: "538d5009366236ec200002a1"
+  }
+  lod: 0
+  light {
+    range: 2
+    color {
+      r: 0.66666669
+      g: 1
+      b: 1
+    }
+    intensity: 6
+  }
+}
+props {
+  name: "system_gizmo_lightbulb"
+  gridPoint {
+    x: -68
+    y: 0
+    z: 12
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "isFireLight"
+  idRef {
+    id: "538d5027366236ec200002a2"
+  }
+  lod: 0
+  light {
+    range: 5
+    color {
+      r: 0.66666669
+      g: 0.33333334
+      b: 0.49803922
+    }
+    intensity: 7
+  }
+}
+props {
+  name: "vfx_fx_flickerFill"
+  gridPoint {
+    x: -66
+    y: 0
+    z: 14
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "EnvironmentLoopFlickeringLightFill"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_smolderingFire"
+  gridPoint {
+    x: -74
+    y: 0
+    z: -3
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "Berlin:EnvironmentSmolderingFire"
+  }
+  lod: 0
+}
+props {
+  name: "system_gizmo_lightbulb"
+  gridPoint {
+    x: -74
+    y: 0
+    z: -3
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "isFireLight"
+  idRef {
+    id: "538d5058366236ec200002a3"
+  }
+  lod: 0
+  light {
+    range: 3
+    color {
+      r: 0.76862746
+      g: 0.22481117
+      b: 0.22560464
+    }
+    intensity: 5
+  }
+}
+props {
+  name: "system_gizmo_lightbulb"
+  gridPoint {
+    x: -61
+    y: 0
+    z: -8
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+  light {
+    range: 4
+    color {
+      r: 1
+      g: 0.66666669
+      b: 0
+    }
+    intensity: 3
+  }
+}
+props {
+  name: "mitte_clutter_trash02"
+  gridPoint {
+    x: -54
+    y: 0
+    z: -6
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "vfx_fx_smokeyFire"
+  gridPoint {
+    x: -54
+    y: 0
+    z: -6
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "Berlin:EnvironmentSmokeyFire"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_brokenPipe"
+  gridPoint {
+    x: -71.7
+    y: -0.3
+    z: -9
+  }
+  orientation: ORIENTATION_E
+  properties {
+    property_id: "fxScript"
+    string_value: "EnvironmentLoopGushingPipe"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_dustyWind"
+  gridPoint {
+    x: -28
+    y: 0
+    z: -1
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "EnvironmentLoopDustyWind"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_dustyWind"
+  gridPoint {
+    x: -60
+    y: 0
+    z: -6
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "EnvironmentLoopDustyWind"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_dustyWind"
+  gridPoint {
+    x: -74
+    y: 0
+    z: -7
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "EnvironmentLoopDustyWind"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_dustyWind"
+  gridPoint {
+    x: -83
+    y: 0
+    z: 2
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "EnvironmentLoopDustyWind"
+  }
+  idRef {
+    id: "538d5183366236ec200002a4"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_flies"
+  gridPoint {
+    x: -33
+    y: 0
+    z: 0
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "SpotlightFliesEnvironment"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_flies"
+  gridPoint {
+    x: -38
+    y: 0
+    z: 6
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "SpotlightFliesEnvironment"
+  }
+  idRef {
+    id: "538d51ba366236ec200002a5"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_flies"
+  gridPoint {
+    x: -76
+    y: 0
+    z: 18
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "SpotlightFliesEnvironment"
+  }
+  idRef {
+    id: "538d51d3366236ec200002a8"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_policeSiren"
+  gridPoint {
+    x: -55
+    y: 1
+    z: 11
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "SirenLightsEnvironment"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_policeSiren"
+  gridPoint {
+    x: -47.2
+    y: 2
+    z: 13.5
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "SirenLightsEnvironment"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_slimeDrip"
+  gridPoint {
+    x: -72.1
+    y: 0
+    z: -2.7755576e-017
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "EnvironmentLoopSlimeDrip"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_steam"
+  gridPoint {
+    x: -69
+    y: 0
+    z: 0
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "SteamEnvironment"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_brokenPipe"
+  gridPoint {
+    x: -56.699997
+    y: 1
+    z: -9
+  }
+  orientation: ORIENTATION_E
+  properties {
+    property_id: "fxScript"
+    string_value: "EnvironmentLoopGushingPipe"
+  }
+  idRef {
+    id: "538d527f366236ec200002a9"
+  }
+  lod: 0
+}
+props {
+  name: "office_tech_alarmOn"
+  gridPoint {
+    x: -48
+    y: 1.5
+    z: 13
+  }
+  orientation: ORIENTATION_N
+  lod: 0
+}
+props {
+  name: "haven_clutter_trashPile02"
+  gridPoint {
+    x: -31
+    y: 0
+    z: -1
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "vfx_fx_poisongasYellowvent"
+  gridPoint {
+    x: -61
+    y: 1
+    z: -8
+  }
+  orientation: ORIENTATION_E
+  properties {
+    property_id: "fxScript"
+    string_value: "PoisonGasYellowVentEnvironment"
+  }
+  idRef {
+    id: "538d535a366236ec200002ab"
+  }
+  lod: 0
+}
+props {
+  name: "haven_clutter_trashPile01"
+  gridPoint {
+    x: -33
+    y: 0
+    z: 4
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "tenements_clutter_trashPile02"
+  gridPoint {
+    x: -37
+    y: 0
+    z: 4
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "tenements_clutter_trashPile01"
+  gridPoint {
+    x: -41
+    y: 0
+    z: 1
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "vfx_fx_smolderingFire"
+  gridPoint {
+    x: -31
+    y: 0
+    z: 0
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "Berlin:EnvironmentSmolderingFire"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_smolderingFire"
+  gridPoint {
+    x: -37
+    y: 0
+    z: 4
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "Berlin:EnvironmentSmolderingFire"
+  }
+  idRef {
+    id: "538d53bf366236ec200002ad"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_smokeyFire"
+  gridPoint {
+    x: -32.4
+    y: 0
+    z: 3.8
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "Berlin:EnvironmentSmokeyFire"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_smokeyFire"
+  gridPoint {
+    x: -40
+    y: 0
+    z: 2
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "Berlin:EnvironmentSmokeyFire"
+  }
+  idRef {
+    id: "538d5420366236ec200002b0"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_policeSiren"
+  gridPoint {
+    x: -59.2
+    y: 2
+    z: 8.7
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "SirenLightsEnvironment"
+  }
+  idRef {
+    id: "538d547a366236ec200002b1"
+  }
+  lod: 0
+}
+props {
+  name: "office_tech_alarmOn"
+  gridPoint {
+    x: -60
+    y: 1.5
+    z: 8.2
+  }
+  orientation: ORIENTATION_N
+  idRef {
+    id: "538d547a366236ec200002b2"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_policeSiren"
+  gridPoint {
+    x: -71.2
+    y: 2
+    z: 15.4
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "SirenLightsEnvironment"
+  }
+  idRef {
+    id: "538d54c8366236ec200002b3"
+  }
+  lod: 0
+}
+props {
+  name: "office_tech_alarmOn"
+  gridPoint {
+    x: -72
+    y: 1.5
+    z: 14.9
+  }
+  orientation: ORIENTATION_N
+  idRef {
+    id: "538d54c8366236ec200002b4"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_policeSiren"
+  gridPoint {
+    x: -84.2
+    y: 2
+    z: 1.8999999
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "SirenLightsEnvironment"
+  }
+  idRef {
+    id: "538d54e0366236ec200002b5"
+  }
+  lod: 0
+}
+props {
+  name: "office_tech_alarmOn"
+  gridPoint {
+    x: -85
+    y: 1.5
+    z: 1.3999999
+  }
+  orientation: ORIENTATION_N
+  idRef {
+    id: "538d54e0366236ec200002b6"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_policeSiren"
+  gridPoint {
+    x: -65.6
+    y: 2.3
+    z: -8.1
+  }
+  orientation: ORIENTATION_E
+  properties {
+    property_id: "fxScript"
+    string_value: "SirenLightsEnvironment"
+  }
+  idRef {
+    id: "538d54e7366236ec200002b7"
+  }
+  lod: 0
+}
+props {
+  name: "office_tech_alarmOn"
+  gridPoint {
+    x: -66.4
+    y: 1.8
+    z: -8.6
+  }
+  orientation: ORIENTATION_W
+  idRef {
+    id: "538d54e7366236ec200002b8"
+  }
+  lod: 0
+}
+props {
+  name: "sleekOffice_storage_polyCabinet02"
+  gridPoint {
+    x: -55
+    y: 0
+    z: -8
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "sleekOffice_storage_filingCabinetMid01"
+  gridPoint {
+    x: -55
+    y: 0
+    z: -9
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "pikePlace_wallDecoration_fragTheKeebs"
+  gridPoint {
+    x: -53
+    y: -1
+    z: 6
   }
   orientation: ORIENTATION_E
   lod: 0

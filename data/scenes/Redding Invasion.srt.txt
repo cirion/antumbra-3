@@ -1204,7 +1204,7 @@ triggers {
         }
       }
       args {
-        string_value: "Agh, we\342\200\231re too late! At least Ted escaped in time."
+        string_value: "Agh, we\342\200\231re too late! At least Claude escaped in time."
       }
       args {
         float_value: 0
@@ -16663,6 +16663,28 @@ triggers {
   actions {
     ops {
       functionName: "Autosave Game"
+    }
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "shouldAutosave"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
     }
   }
   isActive: true
