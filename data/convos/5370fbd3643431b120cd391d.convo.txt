@@ -204,6 +204,7 @@ nodes {
       }
     }
     nextNodeIndex: 9
+    hideIfUnavailable: true
   }
   nodeType: ConversationNodeType_Simple
 }

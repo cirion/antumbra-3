@@ -15523,9 +15523,9 @@ props {
 props {
   name: "office_ground_groundCrack02"
   gridPoint {
-    x: -34
+    x: -28
     y: 0
-    z: -10
+    z: -11
   }
   orientation: ORIENTATION_S
   idRef {
@@ -16273,19 +16273,6 @@ props {
   orientation: ORIENTATION_E
   idRef {
     id: "5389f24b366236681e001343"
-  }
-  lod: 0
-}
-props {
-  name: "docks_clutter_largeTrafficCone"
-  gridPoint {
-    x: 15
-    y: 0
-    z: -19
-  }
-  orientation: ORIENTATION_E
-  idRef {
-    id: "5389f25a366236681e001344"
   }
   lod: 0
 }
@@ -17168,7 +17155,7 @@ props {
   gridPoint {
     x: -56
     y: 0
-    z: -25
+    z: -26
   }
   orientation: ORIENTATION_S
   idRef {
@@ -17198,7 +17185,7 @@ props {
   gridPoint {
     x: -56
     y: 0
-    z: -25
+    z: -26
   }
   orientation: ORIENTATION_S
   properties {
@@ -17277,20 +17264,6 @@ props {
   orientation: ORIENTATION_S
   idRef {
     id: "538cc96f643431965539d4a5"
-  }
-  lod: 0
-}
-props {
-  name: "vfx_fx_smolderingFire"
-  gridPoint {
-    x: -45
-    y: 0
-    z: 6
-  }
-  orientation: ORIENTATION_S
-  properties {
-    property_id: "fxScript"
-    string_value: "Berlin:EnvironmentSmolderingFire"
   }
   lod: 0
 }
@@ -17393,20 +17366,6 @@ props {
   lod: 0
 }
 props {
-  name: "vfx_fx_dustDevil"
-  gridPoint {
-    x: -60
-    y: 0
-    z: -13
-  }
-  orientation: ORIENTATION_S
-  properties {
-    property_id: "fxScript"
-    string_value: "EnvironmentLoopDustDevil"
-  }
-  lod: 0
-}
-props {
   name: "vfx_fx_dustyWind"
   gridPoint {
     x: -69
@@ -17431,20 +17390,6 @@ props {
   properties {
     property_id: "fxScript"
     string_value: "EnvironmentLoopDustyWind"
-  }
-  lod: 0
-}
-props {
-  name: "vfx_fx_dustDevil"
-  gridPoint {
-    x: -8
-    y: 0
-    z: -19
-  }
-  orientation: ORIENTATION_S
-  properties {
-    property_id: "fxScript"
-    string_value: "EnvironmentLoopDustDevil"
   }
   lod: 0
 }
@@ -18182,7 +18127,7 @@ props {
   gridPoint {
     x: -56
     y: 0
-    z: -25
+    z: -26
   }
   orientation: ORIENTATION_S
   GeneralTags: "isFireLight"
@@ -18343,7 +18288,7 @@ props {
   gridPoint {
     x: 22
     y: 0
-    z: -13
+    z: -10
   }
   orientation: ORIENTATION_S
   GeneralTags: "isStreetlight"
@@ -18406,4 +18351,150 @@ props {
     }
     intensity: 5
   }
+}
+props {
+  name: "vfx_fx_dustyWind"
+  gridPoint {
+    x: -60
+    y: 0
+    z: -13
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "EnvironmentLoopDustyWind"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_smokeyFire"
+  gridPoint {
+    x: -44
+    y: 0
+    z: 7
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "Berlin:EnvironmentSmokeyFire"
+  }
+  lod: 0
+}
+props {
+  name: "system_gizmo_lightbulb"
+  gridPoint {
+    x: -14
+    y: 0
+    z: -16
+  }
+  orientation: ORIENTATION_S
+  GeneralTags: "isFireLight"
+  idRef {
+    id: "538d3852366236ec20000228"
+  }
+  lod: 0
+  light {
+    range: 3
+    color {
+      r: 0.76862746
+      g: 0.22481117
+      b: 0.22560464
+    }
+    intensity: 5
+  }
+}
+props {
+  name: "system_invisible_blockMove"
+  gridPoint {
+    x: 10
+    y: 0
+    z: -18
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "538d39c5366236ec20000229"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_blockMove"
+  gridPoint {
+    x: 9
+    y: 0
+    z: -18
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "538d39ca366236ec2000022a"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_blockMove"
+  gridPoint {
+    x: 9
+    y: 0
+    z: -19
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "538d39cb366236ec2000022b"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_blockMove"
+  gridPoint {
+    x: 10
+    y: 0
+    z: -19
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "538d39cc366236ec2000022c"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_blockMove"
+  gridPoint {
+    x: -7
+    y: 0
+    z: -18
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "538d39d8366236ec2000022d"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_blockMove"
+  gridPoint {
+    x: -7
+    y: 0
+    z: -17
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "538d39da366236ec2000022e"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_dustyWind"
+  gridPoint {
+    x: -8
+    y: 0
+    z: -19
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "EnvironmentLoopDustyWind"
+  }
+  idRef {
+    id: "538d3d3f366236ec2000022f"
+  }
+  lod: 0
 }

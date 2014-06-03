@@ -171,7 +171,7 @@ triggers {
       }
     }
   }
-  isActive: false
+  isActive: true
   idRef {
     id: "536fbe49366236941d00309b"
   }
@@ -4795,6 +4795,39 @@ triggers {
         }
       }
     }
+    ops {
+      functionName: "Enable/Disable Team\'s Turn"
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 3
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "EnableOrDisable"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SceneDimension)"
+          args {
+            string_value: "Default"
+          }
+        }
+      }
+    }
   }
   isActive: true
   idRef {
@@ -6483,6 +6516,55 @@ triggers {
     }
     ops {
       functionName: "End Current Team Round"
+    }
+    ops {
+      functionName: "Set Actor In Passive Mode"
+      args {
+        call_value {
+          functionName: "All Actors on Team"
+          args {
+            call_value {
+              functionName: "Get Preset Value (string)"
+              args {
+                string_value: "FactionList"
+              }
+              args {
+                int_value: 3
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Preset Value (int)"
+              args {
+                string_value: "AllOrAny"
+              }
+              args {
+                int_value: 0
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Map Item (SceneDimension)"
+              args {
+                string_value: "Default"
+              }
+            }
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
     }
   }
   isActive: true
@@ -14507,6 +14589,28 @@ triggers {
     ops {
       functionName: "Autosave Game"
     }
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "shouldAutosave"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
   }
   isActive: true
   idRef {
@@ -14552,7 +14656,7 @@ regions {
     r: 0.10980392
     g: 0.21960784
     b: 0.20392157
-    a: 1
+    a: 0.50196081
   }
   ambience_template: "mitte-night"
   combat_music: "Seattle-Set3-Combat"
@@ -15177,9 +15281,9 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -11
+    x: 3
     y: 0
-    z: -34
+    z: -35
   }
   orientation: ORIENTATION_S
   GeneralTags: "isBullion"
@@ -16698,6 +16802,7 @@ characters {
         edged: 0
         unarmed: 0
       }
+      archetypeName: "Non-Combatant"
       vulnerabilities {
       }
     }
@@ -16841,7 +16946,7 @@ mapName: "TheFive"
 parentStory: ""
 scene_title: "The 5"
 scene_subtitle: "Jacking the Waterjackers"
-scene_synopsis: "Selene introduces you to Rick, a California Ranger who patrols the old Interstate Five freeway south of Redding. He\342\200\231s been effective at intercepting individual waterjackers, but now has something more ambitious in mind: a trap that will capture the gang leaders.\n\nFollowing his instructions, you and your small crew drive south from Redding in a decoy water tanker. Each stretch of road is maintained by a separate Ranger, and you notice that each takes on the character of its overseer: some are pristine and run with military efficiency, while others have a characteristically Californian funk. Rick\'s seems to be one of the latter, including a display of trophies from foolish motorists who thought they could defy him. You feel glad to have him as an ally. With some luck and intelligence, you may be able to restore this vital artery into Redding."
+scene_synopsis: "Selene introduces you to Rick, a California Ranger who patrols the old Interstate Five freeway south of Redding. He\342\200\231s been effective at intercepting individual waterjackers, but now has something more ambitious in mind: a trap that will capture the gang leaders.\n\nFollowing his instructions, you and your small crew drive south from Redding in a decoy water tanker. Each stretch of road is maintained by a separate Ranger, and you notice that each takes on the character of its overseer: some are pristine and run with military efficiency, while others have a characteristically Californian funk. Rick\'s seems to be one of the latter, including a display of trophies from foolish motorists who thought they could defy him. You feel glad to have him as an ally. With some luck and assistance, you may be able to restore this vital artery into Redding."
 scene_image: ""
 scene_continue_button_skip: false
 scene_restore_runner_health: true
@@ -16903,8 +17008,6 @@ team_affiliations {
 }
 scene_dimensions {
   dimension_name: "Default"
-}
-character_roster {
 }
 show_hiring_screen_on_scene_load: false
 scene_hiring_prerequisites {

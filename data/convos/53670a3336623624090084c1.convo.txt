@@ -358,6 +358,9 @@ nodes {
   index: 7
   text: "{{GM}}Norton lets out a long, high whistle.{{/GM}}\n\nBummer! Lazarus! Come here, boys!"
   nodeType: ConversationNodeType_Simple
+  sourceInSceneRef {
+    id: "5367035b3662362409008472"
+  }
   actions {
     ops {
       functionName: "Activate Actor Spawner"
