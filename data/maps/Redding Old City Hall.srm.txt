@@ -9652,34 +9652,6 @@ props {
 props {
   name: "sleekOffice_furniture_chair03"
   gridPoint {
-    x: -62
-    y: 0
-    z: -21
-  }
-  orientation: ORIENTATION_S
-  GeneralTags: "isSupply8"
-  idRef {
-    id: "538b4b81366236082000333b"
-  }
-  lod: 0
-}
-props {
-  name: "asylum_furniture_plainChair"
-  gridPoint {
-    x: -60
-    y: 0
-    z: -19
-  }
-  orientation: ORIENTATION_S
-  GeneralTags: "isSupply8"
-  idRef {
-    id: "538b4b87366236082000333c"
-  }
-  lod: 0
-}
-props {
-  name: "sleekOffice_furniture_chair03"
-  gridPoint {
     x: -54
     y: 0
     z: 11
