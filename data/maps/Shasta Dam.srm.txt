@@ -25729,40 +25729,6 @@ props {
 props {
   name: "vfx_fx_water4x4"
   gridPoint {
-    x: 18
-    y: -6
-    z: -28
-  }
-  orientation: ORIENTATION_S
-  properties {
-    property_id: "fxScript"
-    string_value: "WaterTile4x4Environment"
-  }
-  idRef {
-    id: "538b66f836623608200034f4"
-  }
-  lod: 0
-}
-props {
-  name: "vfx_fx_water4x4"
-  gridPoint {
-    x: 18
-    y: -6
-    z: -32
-  }
-  orientation: ORIENTATION_S
-  properties {
-    property_id: "fxScript"
-    string_value: "WaterTile4x4Environment"
-  }
-  idRef {
-    id: "538b66f836623608200034f5"
-  }
-  lod: 0
-}
-props {
-  name: "vfx_fx_water4x4"
-  gridPoint {
     x: 24
     y: 0
     z: -11
@@ -26246,142 +26212,6 @@ props {
   orientation: ORIENTATION_E
   idRef {
     id: "538b67bc366236082000351a"
-  }
-  lod: 0
-}
-props {
-  name: "vfx_fx_water4x4"
-  gridPoint {
-    x: 18
-    y: -6
-    z: -36
-  }
-  orientation: ORIENTATION_S
-  properties {
-    property_id: "fxScript"
-    string_value: "WaterTile4x4Environment"
-  }
-  idRef {
-    id: "538b67d13662360820003523"
-  }
-  lod: 0
-}
-props {
-  name: "vfx_fx_water4x4"
-  gridPoint {
-    x: 18
-    y: -6
-    z: -40
-  }
-  orientation: ORIENTATION_S
-  properties {
-    property_id: "fxScript"
-    string_value: "WaterTile4x4Environment"
-  }
-  idRef {
-    id: "538b67d43662360820003524"
-  }
-  lod: 0
-}
-props {
-  name: "vfx_fx_water4x4"
-  gridPoint {
-    x: 18
-    y: -6
-    z: -44
-  }
-  orientation: ORIENTATION_S
-  properties {
-    property_id: "fxScript"
-    string_value: "WaterTile4x4Environment"
-  }
-  idRef {
-    id: "538b67d43662360820003525"
-  }
-  lod: 0
-}
-props {
-  name: "vfx_fx_water4x4"
-  gridPoint {
-    x: 18
-    y: -6
-    z: -48
-  }
-  orientation: ORIENTATION_S
-  properties {
-    property_id: "fxScript"
-    string_value: "WaterTile4x4Environment"
-  }
-  idRef {
-    id: "538b67d63662360820003526"
-  }
-  lod: 0
-}
-props {
-  name: "vfx_fx_water4x4"
-  gridPoint {
-    x: 18
-    y: -6
-    z: -52
-  }
-  orientation: ORIENTATION_S
-  properties {
-    property_id: "fxScript"
-    string_value: "WaterTile4x4Environment"
-  }
-  idRef {
-    id: "538b67d63662360820003527"
-  }
-  lod: 0
-}
-props {
-  name: "vfx_fx_water4x4"
-  gridPoint {
-    x: 18
-    y: -6
-    z: -56
-  }
-  orientation: ORIENTATION_S
-  properties {
-    property_id: "fxScript"
-    string_value: "WaterTile4x4Environment"
-  }
-  idRef {
-    id: "538b67d83662360820003528"
-  }
-  lod: 0
-}
-props {
-  name: "vfx_fx_water4x4"
-  gridPoint {
-    x: 18
-    y: -6
-    z: -60
-  }
-  orientation: ORIENTATION_S
-  properties {
-    property_id: "fxScript"
-    string_value: "WaterTile4x4Environment"
-  }
-  idRef {
-    id: "538b67d83662360820003529"
-  }
-  lod: 0
-}
-props {
-  name: "vfx_fx_water4x4"
-  gridPoint {
-    x: 18
-    y: -6
-    z: -64
-  }
-  orientation: ORIENTATION_S
-  properties {
-    property_id: "fxScript"
-    string_value: "WaterTile4x4Environment"
-  }
-  idRef {
-    id: "538b67da366236082000352a"
   }
   lod: 0
 }
@@ -31732,23 +31562,6 @@ props {
 props {
   name: "vfx_fx_flies"
   gridPoint {
-    x: -1
-    y: 0
-    z: 29
-  }
-  orientation: ORIENTATION_S
-  properties {
-    property_id: "fxScript"
-    string_value: "SpotlightFliesEnvironment"
-  }
-  idRef {
-    id: "538d00a16434314b64394e5f"
-  }
-  lod: 0
-}
-props {
-  name: "vfx_fx_flies"
-  gridPoint {
     x: -6.5
     y: 0
     z: 36.6
@@ -31969,7 +31782,7 @@ props {
 props {
   name: "vfx_fx_watersplashes"
   gridPoint {
-    x: 15
+    x: 13
     y: 0
     z: -1
   }
@@ -32078,20 +31891,20 @@ props {
 props {
   name: "system_gizmo_lightbulb"
   gridPoint {
-    x: -24
+    x: -22
     y: 0
-    z: -52
+    z: -50
   }
   orientation: ORIENTATION_S
   lod: 0
   light {
-    range: 3
+    range: 5
     color {
       r: 0.50196081
       g: 0
       b: 0
     }
-    intensity: 4
+    intensity: 5
   }
 }
 props {
@@ -32145,8 +31958,8 @@ props {
 props {
   name: "system_gizmo_lightbulb"
   gridPoint {
-    x: 5
-    y: 0
+    x: 5.2
+    y: -2
     z: -29
   }
   orientation: ORIENTATION_S
@@ -32157,7 +31970,7 @@ props {
   }
   lod: 0
   light {
-    range: 1
+    range: 2
     color {
       r: 0.050980393
       g: 0.65238422
@@ -32197,6 +32010,12 @@ props {
   displayName: "Tir Light"
   idRef {
     id: "538d03256434314b64394e73"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    dummyInteraciton {
+    }
   }
   lod: 0
   light {
@@ -32868,9 +32687,9 @@ props {
 props {
   name: "vfx_fx_watersplashes"
   gridPoint {
-    x: 12
+    x: 11
     y: 0
-    z: -1
+    z: -2
   }
   orientation: ORIENTATION_S
   properties {
@@ -32883,19 +32702,172 @@ props {
   lod: 0
 }
 props {
-  name: "vfx_fx_brokenPipe"
+  name: "vfx_fx_watersplashes"
   gridPoint {
-    x: 10
+    x: 10.7
     y: 0
-    z: 2
+    z: -0.2
   }
   orientation: ORIENTATION_S
   properties {
     property_id: "fxScript"
-    string_value: "EnvironmentLoopGushingPipe"
+    string_value: "EnvironmentLoopWaterSplashes"
   }
   idRef {
-    id: "538de22f366236981700197e"
+    id: "538e0730643431e16a842afa"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_watersplashes"
+  gridPoint {
+    x: 8.7
+    y: 0
+    z: -0.2
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "EnvironmentLoopWaterSplashes"
+  }
+  idRef {
+    id: "538e0733643431e16a842afb"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_watersplashes"
+  gridPoint {
+    x: 8.5
+    y: 0
+    z: -1.3
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "EnvironmentLoopWaterSplashes"
+  }
+  idRef {
+    id: "538e0735643431e16a842afc"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_watersplashes"
+  gridPoint {
+    x: 8.9
+    y: 0
+    z: -2.2
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "EnvironmentLoopWaterSplashes"
+  }
+  idRef {
+    id: "538e0737643431e16a842afd"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_watersplashes"
+  gridPoint {
+    x: 11.9
+    y: 0
+    z: -0.6
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "EnvironmentLoopWaterSplashes"
+  }
+  idRef {
+    id: "538e073b643431e16a842afe"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_watersplashes"
+  gridPoint {
+    x: 9.9
+    y: 0
+    z: -1.6
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "EnvironmentLoopWaterSplashes"
+  }
+  idRef {
+    id: "538e073f643431e16a842aff"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_watersplashes"
+  gridPoint {
+    x: 10
+    y: 0
+    z: 0
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "EnvironmentLoopWaterSplashes"
+  }
+  idRef {
+    id: "538e0b3f643431006be3138d"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_watersplashes"
+  gridPoint {
+    x: 12
+    y: 0
+    z: 0
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "EnvironmentLoopWaterSplashes"
+  }
+  idRef {
+    id: "538e0b43643431006be3138e"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_watersplashes"
+  gridPoint {
+    x: 12
+    y: 0
+    z: -2
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "EnvironmentLoopWaterSplashes"
+  }
+  idRef {
+    id: "538e0b45643431006be3138f"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_watersplashes"
+  gridPoint {
+    x: 12
+    y: 0
+    z: -2
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "EnvironmentLoopWaterSplashes"
+  }
+  idRef {
+    id: "538e0b48643431006be31390"
   }
   lod: 0
 }

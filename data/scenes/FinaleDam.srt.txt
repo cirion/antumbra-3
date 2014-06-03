@@ -384,28 +384,6 @@ triggers {
       }
     }
     ops {
-      functionName: "Enable/Disable Interactable Object"
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "EnableOrDisable"
-          }
-          args {
-            int_value: 1
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Map Item (InteractableObject)"
-          args {
-            string_value: "537d853b366236041b0015d2"
-          }
-        }
-      }
-    }
-    ops {
       functionName: "Set Prop Visible"
       args {
         call_value {
@@ -438,6 +416,17 @@ triggers {
         }
       }
     }
+    ops {
+      functionName: "Delete Prop"
+      args {
+        call_value {
+          functionName: "Get Map Item (Prop)"
+          args {
+            string_value: "537d853b366236041b0015d2"
+          }
+        }
+      }
+    }
   }
   isActive: true
   idRef {
@@ -458,12 +447,49 @@ triggers {
   }
   actions {
     ops {
-      functionName: "Activate Actor Spawner"
+      functionName: "Enable/Disable Trigger"
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "EnableOrDisable"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (Trigger)"
+          args {
+            string_value: "537a409f6434313b4381eb0e"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Actor Body Prefab"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Player)"
+              args {
+                int_value: 0
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
       args {
         call_value {
           functionName: "Get Map Item (Actor Reference)"
           args {
-            string_value: "5383b667366236841300082c"
+            string_value: "5383c4023662368413000872"
           }
         }
       }
@@ -485,7 +511,7 @@ triggers {
         call_value {
           functionName: "Get Map Item (Trigger)"
           args {
-            string_value: "537a409f6434313b4381eb0e"
+            string_value: "5386b8ab3662368010000498"
           }
         }
       }
@@ -20168,7 +20194,7 @@ mapName: "Shasta Dam"
 parentStory: ""
 scene_title: "The Battle of Shasta Dam"
 scene_subtitle: ""
-scene_synopsis: "Gunshots! Explosions! You bolt from your bed and race to the armory. This is it. The invasion has started, and the war with Tir Tairngire is upon you.\n\nWeeks of preparation and training have transformed your motley band of raw recruits into a disciplined fighting force. Well-drilled, they seize their weapons and follow you into the bloody night. Frantic communications from your perimeter guards direct you to your fortifications at Shasta Dam, the boundary between Tir\342\200\231s wilderness and Redding\342\200\231s resistance.\n\nYour heart sinks as you see waves of rotorcraft descending. No matter how much you prepared, you couldn\342\200\231t have hoped to win this battle. All you can do is seek to delay them, make them pay, and hope that Kali\342\200\231s promised reinforcements arrive before every last defender is wiped out."
+scene_synopsis: "Gunshots! Explosions! You bolt from your bed and race to the armory. This is it. The invasion has started, and the war with Tir Tairngire is upon you.\n\nWeeks of preparation and training have transformed your motley band of raw recruits into a disciplined fighting force. Well-drilled, they seize their weapons and follow you into the bloody night. Frantic communications from your perimeter guards direct you to your outpost at Shasta Dam, the boundary between Tir\342\200\231s wilderness and Redding\342\200\231s resistance.\n\nYour heart sinks as you see waves of rotorcraft descending. No matter how much you prepared, you couldn\342\200\231t have hoped to win this battle. All you can do is seek to delay them, make them pay, and hope that Kali\342\200\231s promised reinforcements arrive before every last defender is wiped out."
 scene_image: ""
 scene_continue_button_skip: false
 scene_restore_runner_health: true
@@ -20265,8 +20291,6 @@ scene_dimensions {
   dimension_name: "Matrix"
   initial_alarm_state: 20
   turns_per_round: 3
-}
-character_roster {
 }
 show_hiring_screen_on_scene_load: false
 scene_hiring_prerequisites {
