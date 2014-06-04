@@ -8775,6 +8775,43 @@ props {
   idRef {
     id: "5366642f3662362409007f0d"
   }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    prerequisites {
+      ops {
+        functionName: "Comparison (int)"
+        args {
+          call_value {
+            functionName: "Get Variable (int)"
+            args {
+              string_value: "crateQuest"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+        args {
+          int_value: 1
+        }
+      }
+    }
+    inspectInteraction {
+      dispalyTime: 0
+      fadeTime: 0
+      inspectText: "You find nothing useful."
+      disableAfterInteracting: false
+    }
+  }
   lod: 0
 }
 props {
@@ -8859,7 +8896,12 @@ props {
         }
       }
     }
-    interactionIcon: InteractionIcon_Inspect
+    inspectInteraction {
+      dispalyTime: 0
+      fadeTime: 0
+      inspectText: "You find nothing useful."
+      disableAfterInteracting: false
+    }
   }
   lod: 0
 }
@@ -9060,6 +9102,43 @@ props {
   idRef {
     id: "5366652d3662362409007f1e"
   }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    prerequisites {
+      ops {
+        functionName: "Comparison (int)"
+        args {
+          call_value {
+            functionName: "Get Variable (int)"
+            args {
+              string_value: "crateQuest"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+        args {
+          int_value: 1
+        }
+      }
+    }
+    inspectInteraction {
+      dispalyTime: 0
+      fadeTime: 0
+      inspectText: "You find nothing useful."
+      disableAfterInteracting: false
+    }
+  }
   lod: 0
 }
 props {
@@ -9176,6 +9255,43 @@ props {
   orientation: ORIENTATION_S
   idRef {
     id: "536665953662362409007f27"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    prerequisites {
+      ops {
+        functionName: "Comparison (int)"
+        args {
+          call_value {
+            functionName: "Get Variable (int)"
+            args {
+              string_value: "crateQuest"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+        args {
+          int_value: 1
+        }
+      }
+    }
+    inspectInteraction {
+      dispalyTime: 0
+      fadeTime: 0
+      inspectText: "You find nothing useful."
+      disableAfterInteracting: false
+    }
   }
   lod: 0
 }
@@ -9984,6 +10100,43 @@ props {
   orientation: ORIENTATION_E
   idRef {
     id: "536668dd3662362409007f61"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    prerequisites {
+      ops {
+        functionName: "Comparison (int)"
+        args {
+          call_value {
+            functionName: "Get Variable (int)"
+            args {
+              string_value: "crateQuest"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+        args {
+          int_value: 1
+        }
+      }
+    }
+    inspectInteraction {
+      dispalyTime: 0
+      fadeTime: 0
+      inspectText: "You find nothing useful."
+      disableAfterInteracting: false
+    }
   }
   lod: 0
 }
@@ -18800,6 +18953,46 @@ props {
     z: 47
   }
   orientation: ORIENTATION_S
+  idRef {
+    id: "538f506c643431df04e88963"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    prerequisites {
+      ops {
+        functionName: "Comparison (int)"
+        args {
+          call_value {
+            functionName: "Get Variable (int)"
+            args {
+              string_value: "crateQuest"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+        args {
+          int_value: 1
+        }
+      }
+    }
+    inspectInteraction {
+      dispalyTime: 0
+      fadeTime: 0
+      inspectText: "You find nothing useful."
+      disableAfterInteracting: false
+    }
+  }
   lod: 0
 }
 props {
@@ -18961,6 +19154,46 @@ props {
     z: 23
   }
   orientation: ORIENTATION_S
+  idRef {
+    id: "538f504d643431df04e88961"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    prerequisites {
+      ops {
+        functionName: "Comparison (int)"
+        args {
+          call_value {
+            functionName: "Get Variable (int)"
+            args {
+              string_value: "crateQuest"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+        args {
+          int_value: 1
+        }
+      }
+    }
+    inspectInteraction {
+      dispalyTime: 0
+      fadeTime: 0
+      inspectText: "You find nothing useful."
+      disableAfterInteracting: false
+    }
+  }
   lod: 0
 }
 props {
@@ -28574,6 +28807,43 @@ props {
   orientation: ORIENTATION_S
   idRef {
     id: "538a4eff3662360c160052dd"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    prerequisites {
+      ops {
+        functionName: "Comparison (int)"
+        args {
+          call_value {
+            functionName: "Get Variable (int)"
+            args {
+              string_value: "crateQuest"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+        args {
+          int_value: 1
+        }
+      }
+    }
+    inspectInteraction {
+      dispalyTime: 0
+      fadeTime: 0
+      inspectText: "You find nothing useful."
+      disableAfterInteracting: false
+    }
   }
   lod: 0
 }

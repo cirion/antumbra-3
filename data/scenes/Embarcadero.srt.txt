@@ -11851,7 +11851,7 @@ parentStory: ""
 scene_title: "The Embarcadero"
 scene_subtitle: ""
 scene_synopsis: "Despite Kali\342\200\231s support, approaching San Francisco remains difficult. Colonel Saito\342\200\231s troops routinely shut down all routes into the city, accepting only high-level corp employees and military operators. With every passing year his grasp on the city tightens, and his hostility towards metahumans grows more legendary.\n\nFollowing Kali\'s instructions, you locate a charter boat in Orkland and once again brave the bay crossing, returning to a familiar spot along the Embarcadero. Chilly fog greets you, as does one of the most trusted employees from Antumbra Enterprises. With luck, you will soon be able to tap San Francisco\'s legendary wealth to aid your struggle against a common foe."
-scene_image: ""
+scene_image: "embarcadero"
 scene_continue_button_skip: false
 scene_restore_runner_health: true
 directional_light_dir {
@@ -11900,8 +11900,6 @@ team_affiliations {
 }
 scene_dimensions {
   dimension_name: "Default"
-}
-character_roster {
 }
 show_hiring_screen_on_scene_load: false
 scene_hiring_prerequisites {

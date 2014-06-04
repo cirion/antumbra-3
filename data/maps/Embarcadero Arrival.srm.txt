@@ -78824,7 +78824,7 @@ props {
   name: "pikePlace_wallDecoration_genericGrafitti03"
   gridPoint {
     x: -4
-    y: -1.3877788e-016
+    y: -1.3877788e-16
     z: 18.9
   }
   orientation: ORIENTATION_S
@@ -81364,7 +81364,7 @@ props {
 props {
   name: "tenements_clutter_woodenCrates"
   gridPoint {
-    x: -51
+    x: -43
     y: 0
     z: 44
   }
@@ -111312,6 +111312,39 @@ props {
   properties {
     property_id: "leyline_fx_on_visible"
     string_value: "LeyLineTileLow"
+  }
+  lod: 0
+}
+props {
+  name: "barrens_vehicle_headTurnerMotorcycle01"
+  gridPoint {
+    x: -39
+    y: 0
+    z: 46
+  }
+  orientation: ORIENTATION_E
+  lod: 0
+}
+props {
+  name: "mitte_street_trashcan01"
+  gridPoint {
+    x: -41
+    y: 0
+    z: 42
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "tenements_clutter_woodenCrates"
+  gridPoint {
+    x: -52
+    y: 0
+    z: 44
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "538f432164343136026f6487"
   }
   lod: 0
 }

@@ -49456,3 +49456,24 @@ props {
     intensity: 5
   }
 }
+props {
+  name: "hive_wallDecoration_firstAidStation"
+  gridPoint {
+    x: -54
+    y: 0.25
+    z: 2.5
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "538f3f8d64343136026f6486"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    pickupItem {
+      itemName: "HealthPack"
+      destroyOnPickup: true
+    }
+  }
+  lod: 0
+}

@@ -176,7 +176,7 @@ triggers {
       }
     }
   }
-  isActive: true
+  isActive: false
   idRef {
     id: "538ec369366236b4180013f0"
   }
@@ -1785,16 +1785,16 @@ regions {
     z: -0.75
   }
   directional_light_color {
-    r: 0.4509804
-    g: 0.17647059
-    b: 0.43529412
+    r: 0.67843139
+    g: 0.25882354
+    b: 0.65098041
     a: 1
   }
   ambient_light_color {
-    r: 0.074509807
-    g: 0.32941177
-    b: 0.090196081
-    a: 0.50196081
+    r: 0.14117648
+    g: 0.67843139
+    b: 0.17254902
+    a: 1
   }
   ambience_template: "estate-quiet"
   combat_music: ""
@@ -3299,7 +3299,7 @@ parentStory: ""
 scene_title: "A New Order"
 scene_subtitle: ""
 scene_synopsis: "Tir Tairngire\'s enormous army marches back north, abandoning their seemingly-inevitable conquest of CalFree in the blink of an eye. Their power may be unrivaled among the nations, but Tir knows better than to tangle with a dragon.\n\nIn the coming hours, curious visitors from Redding make their way down into the caverns. The trickle becomes a flood, as word spreads about the majesty of the dragon. Hestaby holds court, providing counsel and wisdom in the time before she departs for Mount Shasta.\n\nHas it all come to this? You can hardly believe that the nightmare of endless war has ended almost before it began. You resolve to take stock of the situation, and figure out exactly what the dragon\'s presence will mean for you and your city..."
-scene_image: ""
+scene_image: "grand_finale"
 scene_continue_button_skip: false
 scene_restore_runner_health: false
 directional_light_dir {
@@ -3353,8 +3353,6 @@ scene_dimensions {
   dimension_name: "Matrix"
   initial_alarm_state: 20
   turns_per_round: 3
-}
-character_roster {
 }
 show_hiring_screen_on_scene_load: false
 scene_hiring_prerequisites {

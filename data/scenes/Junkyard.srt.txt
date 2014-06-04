@@ -343,6 +343,20 @@ triggers {
         }
       }
     }
+    ops {
+      functionName: "Set Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Variable (int)"
+          args {
+            string_value: "crateQuest"
+          }
+        }
+      }
+      args {
+        int_value: 1
+      }
+    }
   }
   isActive: false
   idRef {
@@ -18862,7 +18876,7 @@ parentStory: ""
 scene_title: "Junkyard"
 scene_subtitle: ""
 scene_synopsis: "You suppress the urge to gag as you proceed into the junkyard. Piles of discarded trash are piled high up to the sky, and the refuse has taken on a characteristic odor after being baked for more than a century under the merciless desert heat.\n\nUpon further reflection, this is the ideal location for the Native Californians\' regional hideout. No bystanders would accidentally wander in, and the scrapyard contains a variety of torn and jagged metal pieces that they can twist into their horrid bombs. On the bright side, it seems like they didn\'t expect anyone to come looking for them, and you appear to have them on the run... "
-scene_image: ""
+scene_image: "junkyard"
 scene_continue_button_skip: false
 scene_restore_runner_health: false
 directional_light_dir {
@@ -18916,8 +18930,6 @@ scene_dimensions {
   dimension_name: "Matrix"
   initial_alarm_state: 25
   turns_per_round: 3
-}
-character_roster {
 }
 show_hiring_screen_on_scene_load: false
 scene_hiring_prerequisites {

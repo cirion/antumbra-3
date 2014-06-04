@@ -171,7 +171,7 @@ triggers {
       }
     }
   }
-  isActive: false
+  isActive: true
   idRef {
     id: "536fbe49366236941d00309b"
   }
@@ -234,7 +234,7 @@ triggers {
       }
     }
   }
-  isActive: true
+  isActive: false
   idRef {
     id: "537794913662364c1b004e93"
   }
@@ -16947,7 +16947,7 @@ parentStory: ""
 scene_title: "The 5"
 scene_subtitle: "Jacking the Waterjackers"
 scene_synopsis: "Selene introduces you to Rick, a California Ranger who patrols the old Interstate Five freeway south of Redding. He\342\200\231s been effective at intercepting individual waterjackers, but now has something more ambitious in mind: a trap that will capture the gang leaders.\n\nFollowing his instructions, you and your small crew drive south from Redding in a decoy water tanker. Each stretch of road is maintained by a separate Ranger, and you notice that each takes on the character of its overseer: some are pristine and run with military efficiency, while others have a characteristically Californian funk. Rick\'s seems to be one of the latter, including a display of trophies from foolish motorists who thought they could defy him. You feel glad to have him as an ally. With some luck and assistance, you may be able to restore this vital artery into Redding."
-scene_image: ""
+scene_image: "five"
 scene_continue_button_skip: false
 scene_restore_runner_health: true
 directional_light_dir {

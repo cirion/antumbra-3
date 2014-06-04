@@ -4074,7 +4074,7 @@ parentStory: ""
 scene_title: "A Call to Arms"
 scene_subtitle: "Somewhere on Interstate Five..."
 scene_synopsis: "You\342\200\231ve been running a long time. It feels like forever. Running from your enemies, running from your fans, running from the past. A shadowrunner whose face is known makes an easy target, and you\342\200\231ve headed even deeper into the shadows to try and lose your pursuers.\n\nLeaving behind the madness of San Francisco, you have found a limited solace in the wild regions of the California Free State. The ineffectual central government in Sacramento keeps a loose grasp on its citizens, and you can eke out a low-profile lifestyle on milk runs for the water gangs and California Rangers.\n\nWhile you have outrun your past, your past never stopped chasing you, and it\342\200\231s about to catch up..."
-scene_image: ""
+scene_image: "intro2"
 scene_continue_button_skip: false
 scene_restore_runner_health: true
 directional_light_dir {
@@ -4123,8 +4123,6 @@ team_affiliations {
 }
 scene_dimensions {
   dimension_name: "Default"
-}
-character_roster {
 }
 show_hiring_screen_on_scene_load: false
 scene_hiring_prerequisites {

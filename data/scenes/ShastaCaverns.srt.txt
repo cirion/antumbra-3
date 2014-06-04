@@ -307,7 +307,7 @@ triggers {
       }
     }
   }
-  isActive: true
+  isActive: false
   idRef {
     id: "5383d79c36623684130008e0"
   }
@@ -8670,9 +8670,9 @@ regions {
     a: 1
   }
   ambient_light_color {
-    r: 0.031372551
-    g: 0.031372551
-    b: 0.031372551
+    r: 0.0627451
+    g: 0.0627451
+    b: 0.0627451
     a: 1
   }
   ambience_template: "underground-quiet"
@@ -8714,9 +8714,9 @@ regions {
     a: 1
   }
   ambient_light_color {
-    r: 0.0627451
-    g: 0.0627451
-    b: 0.0627451
+    r: 0.1254902
+    g: 0.1254902
+    b: 0.1254902
     a: 1
   }
   ambience_template: "underground-busy"
@@ -10532,9 +10532,9 @@ characters {
 characters {
   name: "system_spawner_playerSpawner"
   gridPoint {
-    x: 55
+    x: 64
     y: 0
-    z: 8
+    z: 26
   }
   orientation: ORIENTATION_W
   idRef {
@@ -11603,7 +11603,7 @@ parentStory: ""
 scene_title: "Shasta Caverns"
 scene_subtitle: ""
 scene_synopsis: "You briefly pause to catch your breath. Hundreds of elite commandos from Tir Tairngire are hot on your trail, and somewhere farther back, the ominous figure of Hans Brackhaus is driving them forward.\n\nThe Shasta caverns are hundreds of millions years old, and witnessed great events in the Fourth World and earlier. Powerful magic seeps through the corridors, contrasting with the furious technology of your pursuers. Groaning, you resume jogging forward. You\342\200\231ll need to keep moving to have a chance at survival."
-scene_image: ""
+scene_image: "caverns"
 scene_continue_button_skip: false
 scene_restore_runner_health: false
 directional_light_dir {
@@ -11665,8 +11665,6 @@ team_affiliations {
 scene_dimensions {
   dimension_name: "Default"
   initial_alarm_state: 0
-}
-character_roster {
 }
 show_hiring_screen_on_scene_load: false
 scene_hiring_prerequisites {
