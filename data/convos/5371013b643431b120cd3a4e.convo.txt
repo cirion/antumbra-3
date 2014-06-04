@@ -7,7 +7,7 @@ nodes {
     id: "5371018b643431b120cd3a58"
   }
   index: 0
-  text: "You got them! Excellent! I knew I could rely on you.\n\nI\342\200\231ll go ahead and forward these to Saito immediately. It\342\200\231ll take him a little while to verify, but hopefully it\342\200\231ll buy us some time\342\200\246"
+  text: "You got them! Excellent! I knew I could rely on you.\n\nI\342\200\231ll go ahead and forward these to Saito immediately."
   branches {
     responseText: ""
     nextNodeIndex: 1
@@ -31,7 +31,7 @@ nodes {
     id: "537101b8643431b120cd3a5e"
   }
   index: 2
-  text: "DREK! They\342\200\231re still in the system! \n\nTir\'s hackers know that the charade is over, just told the commandos to launch an attack on the megacorps. \n\nYou\342\200\231ve got to get moving now! The corp executives meeting in the conference suite of the old Aztechnology Pyramid. I\342\200\231ll try and contain the Tir agents inside the building."
+  text: "DREK! They\342\200\231re still in the system! \n\nTir\'s hackers know that the charade is over, and just told the commandos to launch an attack on San Francisco. \n\nYou\342\200\231ve got to get moving now! The corp executives are meeting in the conference suite of the old Aztechnology Pyramid. I\342\200\231ll try and contain the Tir agents inside Eclipse.\n\nSaito is no fool. His soldiers should help your escape. Now leave, quickly!"
   nodeType: ConversationNodeType_Simple
   actions {
     ops {
