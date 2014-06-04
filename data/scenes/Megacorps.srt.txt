@@ -169,17 +169,6 @@ triggers {
       }
     }
     ops {
-      functionName: "Activate Actor Spawner"
-      args {
-        call_value {
-          functionName: "Get Map Item (Actor Reference)"
-          args {
-            string_value: "537c2cc736623648170076f8"
-          }
-        }
-      }
-    }
-    ops {
       functionName: "Set Team Alliance"
       args {
         call_value {

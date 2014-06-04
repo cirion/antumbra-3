@@ -18498,3 +18498,79 @@ props {
   }
   lod: 0
 }
+props {
+  name: "vfx_fx_fallingwater"
+  gridPoint {
+    x: 26
+    y: 3
+    z: -10
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "EnvironmentLoopFallingWater"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_steam"
+  gridPoint {
+    x: 21.2
+    y: 3
+    z: -10.6
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "SteamEnvironment"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_steam"
+  gridPoint {
+    x: -62.8
+    y: 0
+    z: -16.5
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "SteamEnvironment"
+  }
+  idRef {
+    id: "538eb98b366236b4180013ec"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_steam"
+  gridPoint {
+    x: -22
+    y: 0
+    z: -16
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "SteamEnvironment"
+  }
+  idRef {
+    id: "538eb99f366236b4180013ed"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_watersplashes"
+  gridPoint {
+    x: 26
+    y: 0
+    z: -10
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "EnvironmentLoopWaterSplashes"
+  }
+  lod: 0
+}

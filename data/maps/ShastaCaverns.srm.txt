@@ -491,19 +491,6 @@ props {
   lod: 0
 }
 props {
-  name: "undergroundBase_floor_dirt02"
-  gridPoint {
-    x: -40
-    y: 0
-    z: -27
-  }
-  orientation: ORIENTATION_S
-  idRef {
-    id: "53777b823662364c1b004dea"
-  }
-  lod: 0
-}
-props {
   name: "undergroundBase_floor_dirt03"
   gridPoint {
     x: -40
@@ -19539,32 +19526,6 @@ props {
   lod: 0
 }
 props {
-  name: "undergroundBase_floor_dirt02"
-  gridPoint {
-    x: -44
-    y: 0
-    z: -27
-  }
-  orientation: ORIENTATION_E
-  idRef {
-    id: "538be266366236a41600231f"
-  }
-  lod: 0
-}
-props {
-  name: "undergroundBase_floor_dirt03"
-  gridPoint {
-    x: -44
-    y: 0
-    z: -29
-  }
-  orientation: ORIENTATION_E
-  idRef {
-    id: "538be266366236a416002320"
-  }
-  lod: 0
-}
-props {
   name: "undergroundBase_floor_dirt01"
   gridPoint {
     x: -44
@@ -20839,4 +20800,86 @@ props {
     }
     intensity: 2
   }
+}
+props {
+  name: "vfx_fx_lowmist"
+  gridPoint {
+    x: -36
+    y: 6
+    z: -32
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "EnvironmentLoopLowMistBank"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_lowmist"
+  gridPoint {
+    x: -36
+    y: 6
+    z: -34
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "EnvironmentLoopLowMistBank"
+  }
+  idRef {
+    id: "538ec34f366236b4180013ee"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_lowmist"
+  gridPoint {
+    x: -36
+    y: 6
+    z: -33
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "EnvironmentLoopLowMistBank"
+  }
+  idRef {
+    id: "538ec352366236b4180013ef"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_lowmist"
+  gridPoint {
+    x: -35
+    y: 6
+    z: -33
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "EnvironmentLoopLowMistBank"
+  }
+  idRef {
+    id: "538ec46d366236b4180013f1"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_lowmist"
+  gridPoint {
+    x: -35
+    y: 6
+    z: -34
+  }
+  orientation: ORIENTATION_S
+  properties {
+    property_id: "fxScript"
+    string_value: "EnvironmentLoopLowMistBank"
+  }
+  idRef {
+    id: "538ec46f366236b4180013f2"
+  }
+  lod: 0
 }
