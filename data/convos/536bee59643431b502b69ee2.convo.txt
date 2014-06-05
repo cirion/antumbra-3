@@ -2457,7 +2457,7 @@ nodes {
     id: "536c00ae643431b502b6a30d"
   }
   index: 29
-  text: ""
+  text: "{{GM}}Start the shoot!{{/GM}}"
   branches {
     responseText: ""
     nextNodeIndex: 30
@@ -2550,6 +2550,39 @@ nodes {
             }
           }
           args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Goal Status"
+      args {
+        call_value {
+          functionName: "Get Map Item (Goal)"
+          args {
+            string_value: "Record a Trideo for Kali: Find a Tri-Vid Recorder and a Supporting Performer"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "GoalStatus"
+          }
+          args {
+            int_value: 0
           }
         }
       }
@@ -2944,7 +2977,7 @@ nodes {
     id: "536c03a5643431b502b6a3ba"
   }
   index: 39
-  text: ""
+  text: "As for what comes next..."
   branches {
     responseText: ""
     conditions {
@@ -3476,6 +3509,41 @@ nodes {
   sourceInSceneRef {
     id: "536c5ffd366236d41e0027f3"
   }
+  actions {
+    ops {
+      functionName: "Set Goal Status"
+      args {
+        call_value {
+          functionName: "Get Map Item (Goal)"
+          args {
+            string_value: "Locate the People\'s University"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "GoalStatus"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
 }
 nodes {
   idRef {
@@ -3518,6 +3586,39 @@ nodes {
       }
       args {
         int_value: 2
+      }
+    }
+    ops {
+      functionName: "Set Goal Status"
+      args {
+        call_value {
+          functionName: "Get Map Item (Goal)"
+          args {
+            string_value: "Help the People\'s University: Retrieve Saito\'s Contact List and Disable Native Californian Sleaze IC"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "GoalStatus"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
+          }
+        }
       }
     }
   }
@@ -3673,6 +3774,39 @@ nodes {
       }
       args {
         int_value: 1
+      }
+    }
+    ops {
+      functionName: "Set Goal Status"
+      args {
+        call_value {
+          functionName: "Get Map Item (Goal)"
+          args {
+            string_value: "Help the People\'s University: Retrieve Saito\'s Contact List and Disable Native Californian Sleaze IC"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "GoalStatus"
+          }
+          args {
+            int_value: 2
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
+          }
+        }
       }
     }
   }
