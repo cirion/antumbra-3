@@ -246,55 +246,6 @@ triggers {
                 string_value: "FactionList"
               }
               args {
-                int_value: 2
-              }
-            }
-          }
-          args {
-            call_value {
-              functionName: "Get Preset Value (int)"
-              args {
-                string_value: "AllOrAny"
-              }
-              args {
-                int_value: 0
-              }
-            }
-          }
-          args {
-            call_value {
-              functionName: "Get Map Item (SceneDimension)"
-              args {
-                string_value: "Default"
-              }
-            }
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "DeathMethod"
-          }
-          args {
-            int_value: 0
-          }
-        }
-      }
-    }
-    ops {
-      functionName: "Kill Actor"
-      args {
-        call_value {
-          functionName: "All Actors on Team"
-          args {
-            call_value {
-              functionName: "Get Preset Value (string)"
-              args {
-                string_value: "FactionList"
-              }
-              args {
                 int_value: 1
               }
             }
@@ -361,6 +312,63 @@ triggers {
   isActive: false
   idRef {
     id: "5378273a366236101d004965"
+  }
+  elseActions {
+  }
+  is_oneshot: true
+}
+triggers {
+  name: "Debug Aggro Triggers"
+  events {
+    ops {
+      functionName: "On Map Start"
+    }
+  }
+  conditions {
+  }
+  actions {
+    ops {
+      functionName: "Kill Actor"
+      args {
+        call_value {
+          functionName: "All Actors With Tag"
+          args {
+            call_value {
+              functionName: "Get Map Item (SenseTagList)"
+              args {
+                string_value: "squad1"
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Preset Value (int)"
+              args {
+                string_value: "AllOrAny"
+              }
+              args {
+                int_value: 0
+              }
+            }
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "DeathMethod"
+          }
+          args {
+            int_value: 3
+          }
+        }
+      }
+    }
+  }
+  isActive: false
+  idRef {
+    id: "53908354643431812c2750f4"
   }
   elseActions {
   }
@@ -6713,9 +6721,6 @@ triggers {
   }
   actions {
     ops {
-      functionName: "End Current Actor Turn"
-    }
-    ops {
       functionName: "Change Actor Team"
       args {
         call_value {
@@ -7224,6 +7229,67 @@ triggers {
   }
   actions {
     ops {
+      functionName: "Play Music"
+      args {
+        call_value {
+          functionName: "Get Map Item (Music)"
+          args {
+            string_value: "Berlin_Set9"
+          }
+          args {
+            string_value: "Berlin-Set9-Combat"
+          }
+        }
+      }
+      args {
+        float_value: 1
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Goal Status"
+      args {
+        call_value {
+          functionName: "Get Map Item (Goal)"
+          args {
+            string_value: "Find Claude Bullion."
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "GoalStatus"
+          }
+          args {
+            int_value: 2
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+    ops {
       functionName: "Change Actor Team"
       args {
         call_value {
@@ -7270,7 +7336,7 @@ triggers {
       }
     }
     ops {
-      functionName: "Order Actor to Seek And Destroy (Team)"
+      functionName: "Order Actor to Hunt And Destroy (Team)"
       args {
         call_value {
           functionName: "All Actors With Tag"
@@ -7628,67 +7694,6 @@ triggers {
           functionName: "Get Map Item (SceneDimension)"
           args {
             string_value: "Default"
-          }
-        }
-      }
-    }
-    ops {
-      functionName: "Set Goal Status"
-      args {
-        call_value {
-          functionName: "Get Map Item (Goal)"
-          args {
-            string_value: "Find Claude Bullion."
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "GoalStatus"
-          }
-          args {
-            int_value: 2
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "WithOrWithout"
-          }
-          args {
-            int_value: 1
-          }
-        }
-      }
-    }
-    ops {
-      functionName: "Play Music"
-      args {
-        call_value {
-          functionName: "Get Map Item (Music)"
-          args {
-            string_value: "Berlin_Set9"
-          }
-          args {
-            string_value: "Berlin-Set9-Combat"
-          }
-        }
-      }
-      args {
-        float_value: 1
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "bool"
-          }
-          args {
-            int_value: 1
           }
         }
       }
@@ -12036,6 +12041,56 @@ triggers {
         }
       }
     }
+    ops {
+      functionName: "End Current Team Round"
+    }
+    ops {
+      functionName: "Trigger: Wait for Rounds"
+      args {
+        int_value: 1
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SceneDimension)"
+          args {
+            string_value: "Default"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Enable/Disable Team\'s Turn"
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "EnableOrDisable"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SceneDimension)"
+          args {
+            string_value: "Default"
+          }
+        }
+      }
+    }
   }
   isActive: true
   idRef {
@@ -12116,7 +12171,7 @@ triggers {
       }
     }
   }
-  isActive: true
+  isActive: false
   idRef {
     id: "5387bb6f6434314e3392be16"
   }
@@ -17910,11 +17965,23 @@ characters {
   }
   lod: 0
   character_instance {
-    prefab_name: "Berlin:Humanis/HumanMaleHumanisPonytail"
-    character_sheet_id: "Generic_Lv1_Human_Melee"
+    prefab_name: "Seattle:Standard/HumanMaleStreetSamurai"
+    character_sheet_id: "Generic_Lv2_Human_Melee"
     equipment_sheet_id: "Generic_Lv1_Melee_Gear"
     character_mod {
       stats {
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        magic: 0
+        hp: 0
+        ap: 0
+        armor: 0
+        force: 0
         morale: 0
         discipline: 0
         awareness: 0
@@ -17924,20 +17991,49 @@ characters {
         move_speed: 0
       }
       skills {
+        ranged_combat: 0
+        close_combat: 0
+        throwing_weapons: 0
+        spellcasting: 0
+        decking: 0
+        conjuring: 0
+        spirit_summoning: 0
+        drone_control: 0
+        biotech: 0
+        dodge: 0
+        etiquette_corporate: 0
+        etiquette_security: 0
+        etiquette_gang: 0
+        etiquette_socialite: 0
+        chi_casting: 0
+        etiquette_shadowrunner: 0
+        etiquette_street: 0
+        etiquette_academic: 0
       }
       specializations {
+        pistol: 0
+        rifle: 0
+        shotgun: 0
+        smg: 0
+        edged: 0
+        unarmed: 0
+        spirit_control: 0
+        esp_control: 0
+        drone_combat: 0
       }
+      archetypeName: "Guard - Seek And Destroy"
+      attitude: AttitudeBoss
       vulnerabilities {
       }
     }
     team_id: "Civilians"
-    char_name: "NC Thug"
+    char_name: "NC Cell Leader"
     GeneralTags: "squad4"
     pc_spawn_number: -1
     portrait {
       filename: ""
     }
-    karma: 28
+    karma: 41
     scale_character_sheet: true
   }
 }
@@ -18541,10 +18637,22 @@ characters {
   lod: 0
   character_instance {
     prefab_name: "Berlin:Humanis/HumanFemaleHumanisLongSleeve_2"
-    character_sheet_id: "Lonestar_Lv1_Ork_Shotgun"
+    character_sheet_id: "Lonestar_Lv2_Ork_Shotgun"
     equipment_sheet_id: "Lonestar_Lv1_Shotgun_Gear"
     character_mod {
       stats {
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        magic: 0
+        hp: 0
+        ap: 0
+        armor: 0
+        force: 0
         morale: 0
         discipline: 0
         awareness: 0
@@ -18554,20 +18662,49 @@ characters {
         move_speed: 0
       }
       skills {
+        ranged_combat: 0
+        close_combat: 0
+        throwing_weapons: 0
+        spellcasting: 0
+        decking: 0
+        conjuring: 0
+        spirit_summoning: 0
+        drone_control: 0
+        biotech: 0
+        dodge: 0
+        etiquette_corporate: 0
+        etiquette_security: 0
+        etiquette_gang: 0
+        etiquette_socialite: 0
+        chi_casting: 0
+        etiquette_shadowrunner: 0
+        etiquette_street: 0
+        etiquette_academic: 0
       }
       specializations {
+        pistol: 0
+        rifle: 0
+        shotgun: 0
+        smg: 0
+        edged: 0
+        unarmed: 0
+        spirit_control: 0
+        esp_control: 0
+        drone_combat: 0
       }
+      archetypeName: "Guard - Seek And Destroy"
+      attitude: AttitudeAggressive
       vulnerabilities {
       }
     }
     team_id: "Civilians"
-    char_name: "NC Thug"
+    char_name: "NC Cell Leader"
     GeneralTags: "squad5"
     pc_spawn_number: -1
     portrait {
       filename: ""
     }
-    karma: 33
+    karma: 41
     scale_character_sheet: true
   }
 }

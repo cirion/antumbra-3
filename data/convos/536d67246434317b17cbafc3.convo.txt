@@ -89,47 +89,17 @@ nodes {
   }
   actions {
     ops {
-      functionName: "Trigger: Run Alternate Trigger"
+      functionName: "Set Variable (int)"
       args {
         call_value {
-          functionName: "Get Map Item (Trigger)"
+          functionName: "Get Variable (int)"
           args {
-            string_value: "536fc361366236941d003167"
+            string_value: "rickAttackState"
           }
         }
       }
       args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "WithOrWithout"
-          }
-          args {
-            int_value: 1
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "WaitOrNot"
-          }
-          args {
-            int_value: 0
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "WithOrWithout"
-          }
-          args {
-            int_value: 0
-          }
-        }
+        int_value: 1
       }
     }
   }

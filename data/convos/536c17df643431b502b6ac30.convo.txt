@@ -792,13 +792,48 @@ nodes {
     id: "536c4e27366236d41e00275f"
   }
   index: 12
-  text: "Unfortunately, they\342\200\231re really hard to get ahold of these days. Saito has been trying to destroy them; he claims that they\342\200\231re arming and training insurgents to use against him. You might try sending a message from your terminal, though, and seeing if they pick up on it."
+  text: "Unfortunately, they\342\200\231re really hard to get ahold of these days. Saito has been trying to destroy them; he claims that they\342\200\231re arming and training insurgents to use against him. You might try sending a message from your terminal, though, and seeing if they pick up on it.\n\nLet me know if you have trouble reaching them and I can help you out. For a fee, of course. Hey, this gear doesn\'t pay for itself!"
   branches {
     responseText: ""
     nextNodeIndex: 1
     auxiliaryLink: true
   }
   nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Set Goal Status"
+      args {
+        call_value {
+          functionName: "Get Map Item (Goal)"
+          args {
+            string_value: "Contact the People\'s University"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "GoalStatus"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
 }
 nodes {
   idRef {

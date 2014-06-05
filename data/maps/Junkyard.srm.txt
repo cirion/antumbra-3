@@ -32788,3 +32788,46 @@ props {
     intensity: 5
   }
 }
+props {
+  name: "warehouse_storage_barrel01"
+  gridPoint {
+    x: -34
+    y: 0
+    z: 63
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "warehouse_storage_barrels02"
+  gridPoint {
+    x: -33
+    y: 0
+    z: 66
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
+props {
+  name: "warehouse_storage_barrel01"
+  gridPoint {
+    x: -23
+    y: 0
+    z: 67
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "5390956c643431812c27531e"
+  }
+  lod: 0
+}
+props {
+  name: "warehouse_storage_barrels01"
+  gridPoint {
+    x: -25
+    y: 0
+    z: 69
+  }
+  orientation: ORIENTATION_S
+  lod: 0
+}
