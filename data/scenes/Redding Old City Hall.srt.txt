@@ -80,7 +80,7 @@ triggers {
       }
     }
   }
-  isActive: false
+  isActive: true
   idRef {
     id: "538eb008366236b4180013de"
   }
@@ -112,7 +112,7 @@ triggers {
         call_value {
           functionName: "Get Map Item (Scene)"
           args {
-            string_value: "Colma"
+            string_value: "TheFive"
           }
         }
       }
@@ -121,7 +121,7 @@ triggers {
       }
     }
   }
-  isActive: false
+  isActive: true
   idRef {
     id: "5390931b643431812c27531c"
   }

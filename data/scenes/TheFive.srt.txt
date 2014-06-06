@@ -192,39 +192,6 @@ triggers {
         int_value: 1000
       }
     }
-    ops {
-      functionName: "Enable/Disable Team\'s Turn"
-      args {
-        call_value {
-          functionName: "Get Preset Value (string)"
-          args {
-            string_value: "FactionList"
-          }
-          args {
-            int_value: 3
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "EnableOrDisable"
-          }
-          args {
-            int_value: 1
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Map Item (SceneDimension)"
-          args {
-            string_value: "Default"
-          }
-        }
-      }
-    }
   }
   isActive: true
   idRef {
@@ -5109,7 +5076,7 @@ triggers {
         call_value {
           functionName: "Get Map Item (Prop)"
           args {
-            string_value: "5369ad10366236081d0078db"
+            string_value: "536fdd20366236941d0032c7"
           }
         }
       }
