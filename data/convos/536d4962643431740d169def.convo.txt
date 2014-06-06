@@ -134,6 +134,10 @@ nodes {
   branches {
     responseText: "Do you make a habit of hanging out in graveyards?"
     nextNodeIndex: 6
+    onlyOnce: true
+    idRef {
+      id: "53924c64643431c922f5eba7"
+    }
   }
   branches {
     responseText: "{{CC}}Etiquette: Academic{{/CC}} That looks like a Byzantine seal. Can you help me depress the opening?"
@@ -272,7 +276,7 @@ nodes {
     id: "538caa60643431965539d3d2"
   }
   index: 6
-  text: "Many find graveyards to be frightening places. They fear death, and wish to avoid all reminders of death. \n\nBy doing so, they become slaves to their fear, and death holds more power over them than it would if they embraced their ends."
+  text: "Many find graveyards to be frightening places. Such people fear death, and wish to avoid all reminders of death. \n\nBy doing so, they become slaves to their fear, and death holds more power over them than it would if they welcomed their passing."
   branches {
     responseText: ""
     nextNodeIndex: 7
