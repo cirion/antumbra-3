@@ -7628,6 +7628,36 @@ triggers {
   }
   is_oneshot: true
 }
+triggers {
+  name: "Open Stash"
+  events {
+    ops {
+      functionName: "On Item Interaction"
+      args {
+        call_value {
+          functionName: "Get Map Item (InteractableObject)"
+          args {
+            string_value: "53938c443662368c20003a3e"
+          }
+        }
+      }
+    }
+  }
+  conditions {
+  }
+  actions {
+    ops {
+      functionName: "Open Equip Screen"
+    }
+  }
+  isActive: true
+  idRef {
+    id: "53938c453662368c20003a3f"
+  }
+  elseActions {
+  }
+  is_oneshot: false
+}
 regions {
   name: "Camera"
   position {

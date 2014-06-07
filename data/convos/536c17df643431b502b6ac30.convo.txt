@@ -479,8 +479,83 @@ nodes {
     }
   }
   branches {
-    responseText: "Talk with you later."
+    responseText: "Do you want to go on a run to Colma with me?"
+    conditions {
+      ops {
+        functionName: "Comparison (int)"
+        args {
+          call_value {
+            functionName: "Get Story Variable (int)"
+            args {
+              string_value: "531d26a736623648180018bf"
+            }
+            args {
+              string_value: "Global_MissionState_Colma"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+        args {
+          int_value: 1
+        }
+      }
+      ops {
+        functionName: "Comparison (bool)"
+        args {
+          call_value {
+            functionName: "Get Story Variable (bool)"
+            args {
+              string_value: "531d26a736623648180018bf"
+            }
+            args {
+              string_value: "Redding_Convo_Hailey_Colma"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "IsOrIsNot"
+            }
+            args {
+              int_value: 1
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "bool"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+      }
+    }
     nextNodeIndex: 13
+    hideIfUnavailable: true
+    onlyOnce: true
+    idRef {
+      id: "53938b0b3662368c2000396d"
+    }
+  }
+  branches {
+    responseText: "Talk with you later."
+    nextNodeIndex: 15
   }
   nodeType: ConversationNodeType_Simple
   actions {
@@ -837,9 +912,61 @@ nodes {
 }
 nodes {
   idRef {
-    id: "536c4e39366236d41e002763"
+    id: "53938b763662368c200039c7"
   }
   index: 13
+  text: "Wow... you want to hang out in a graveyard with me? How could I possibly refuse?"
+  branches {
+    responseText: ""
+    nextNodeIndex: 14
+  }
+  nodeType: ConversationNodeType_Simple
+  actions {
+    ops {
+      functionName: "Set Variable (bool)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (bool)"
+          args {
+            string_value: "531d26a736623648180018bf"
+          }
+          args {
+            string_value: "Redding_Convo_Hailey_Colma"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+}
+nodes {
+  idRef {
+    id: "53938b973662368c200039ca"
+  }
+  index: 14
+  text: "In all seriousness... I\'m happy to head back there, but to be honest, I don\'t see myself being all that useful in that particular place. They\'re pretty intentionally off the grid there, so no Matrix jacks and no awesome chances for me to shine and show what I do best.\n\nBut hey, I won\'t turn down the chance at a road trip. And my drones might get a kick out of the change in scenery."
+  branches {
+    responseText: ""
+    nextNodeIndex: 1
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+}
+nodes {
+  idRef {
+    id: "536c4e39366236d41e002763"
+  }
+  index: 15
   text: "See ya! Hope to catch you on a run later!"
   nodeType: ConversationNodeType_Simple
 }

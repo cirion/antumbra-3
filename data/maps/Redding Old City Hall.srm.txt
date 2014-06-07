@@ -5753,6 +5753,15 @@ props {
     z: -9
   }
   orientation: ORIENTATION_E
+  displayName: "Stash"
+  idRef {
+    id: "53938c443662368c20003a3e"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    interactionIcon: InteractionIcon_Generic
+  }
   lod: 0
 }
 props {

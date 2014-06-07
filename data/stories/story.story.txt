@@ -804,6 +804,18 @@ variables {
   }
 }
 variables {
+  name: "Redding_Convo_Hailey_Colma"
+  typeName: "bool"
+  defaultValue {
+    bool_value: false
+    variableref_value {
+      scope: TsVariableScope_Story
+      name: "Redding_Convo_Hailey_Colma"
+      typeName: "bool"
+    }
+  }
+}
+variables {
   name: "Redding_Convo_Hailey_KaliDoing"
   typeName: "bool"
   defaultValue {
