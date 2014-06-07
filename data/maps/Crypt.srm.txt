@@ -7913,6 +7913,7 @@ props {
     z: -35
   }
   orientation: ORIENTATION_E
+  displayName: "Southern Stone Door"
   idRef {
     id: "5366606f3662362409007c14"
   }
@@ -11006,16 +11007,6 @@ props {
 props {
   name: "secretLab_wall_4x4fill"
   gridPoint {
-    x: 4
-    y: 0
-    z: -16
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "secretLab_wall_4x4fill"
-  gridPoint {
     x: -9
     y: 0
     z: -4
@@ -12885,6 +12876,136 @@ props {
   }
   idRef {
     id: "538dde6d3662369817001962"
+  }
+  lod: 0
+}
+props {
+  name: "secretLab_wall_4x4fill"
+  gridPoint {
+    x: 4
+    y: 0
+    z: -16
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "53928abf366236ac13007430"
+  }
+  lod: 0
+}
+props {
+  name: "telestrianEstate_floor_marbleTile03"
+  gridPoint {
+    x: -35
+    y: 0
+    z: -53
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "53928e12366236ac13007431"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_solidProp"
+  gridPoint {
+    x: -34
+    y: 0
+    z: -54
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "53928e17366236ac13007432"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_solidProp"
+  gridPoint {
+    x: -35
+    y: 0
+    z: -54
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "53928e17366236ac13007433"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_solidProp"
+  gridPoint {
+    x: -36
+    y: 0
+    z: -54
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "53928e17366236ac13007434"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_solidProp"
+  gridPoint {
+    x: -36
+    y: 0
+    z: -53
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "53928e17366236ac13007435"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_solidProp"
+  gridPoint {
+    x: -34
+    y: 0
+    z: -51
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "53928e1e366236ac13007436"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_solidProp"
+  gridPoint {
+    x: -35
+    y: 0
+    z: -51
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "53928e1e366236ac13007437"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_solidProp"
+  gridPoint {
+    x: -36
+    y: 0
+    z: -51
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "53928e1e366236ac13007438"
+  }
+  lod: 0
+}
+props {
+  name: "system_invisible_solidProp"
+  gridPoint {
+    x: -36
+    y: 0
+    z: -52
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "53928e20366236ac13007439"
   }
   lod: 0
 }
