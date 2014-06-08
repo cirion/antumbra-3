@@ -2158,6 +2158,24 @@ triggers {
       }
     }
     ops {
+      functionName: "Clear Actor Orders"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Actor)"
+              args {
+                string_value: "53838f6c366236841300047c"
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+    }
+    ops {
       functionName: "Set Variable (bool)"
       args {
         call_value {
@@ -2302,7 +2320,7 @@ triggers {
       }
     }
     ops {
-      functionName: "Clear Actor Orders"
+      functionName: "Order Actor to Move To (Prop)"
       args {
         call_value {
           functionName: "Specific Actor"
@@ -2315,6 +2333,25 @@ triggers {
             }
           }
           args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (Prop)"
+          args {
+            string_value: "537a92c6643431b04e37ee97"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "FacingDirection"
+          }
+          args {
+            int_value: 0
           }
         }
       }
