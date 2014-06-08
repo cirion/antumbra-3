@@ -300,6 +300,20 @@ nodes {
         }
       }
     }
+    ops {
+      functionName: "Set Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Variable (int)"
+          args {
+            string_value: "bombDefuseState"
+          }
+        }
+      }
+      args {
+        int_value: 2
+      }
+    }
   }
 }
 nodes {

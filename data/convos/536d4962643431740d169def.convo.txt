@@ -329,17 +329,6 @@ nodes {
   nodeType: ConversationNodeType_Simple
   actions {
     ops {
-      functionName: "Send Event"
-      args {
-        call_value {
-          functionName: "Get Map Item (Event)"
-          args {
-            string_value: "Open Tomb"
-          }
-        }
-      }
-    }
-    ops {
       functionName: "Set Variable (bool)"
       args {
         call_value {

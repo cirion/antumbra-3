@@ -55,7 +55,7 @@ nodes {
     id: "536d1d2e643431740d169a12"
   }
   index: 3
-  text: "Let me be blunt: what\342\200\231s your opinion of elves? \n\nYou seem happy enough having someone like me on the team, but you\342\200\231re clearly raising an army that\342\200\231s going to be killing a massive number of elves. How does that make you feel?"
+  text: "You seem happy enough having someone like me on the team, but you\342\200\231re clearly raising an army that\342\200\231s going to be killing a massive number of elves.\n\nLet me be blunt: what\342\200\231s your opinion of elves? "
   branches {
     responseText: "Being an elf myself, I don\342\200\231t think about it much."
     conditions {
@@ -168,7 +168,7 @@ nodes {
     hideIfUnavailable: true
   }
   branches {
-    responseText: "Probably the same way you feel about $(s.race_plural). They\342\200\231re different, but not intrinsically better or worse."
+    responseText: "Probably the same as your opinion about about $(s.race_plural). They\342\200\231re different, but not intrinsically better or worse."
     conditions {
       ops {
         functionName: "Compare Actor Race"
