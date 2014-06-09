@@ -1838,7 +1838,7 @@ props {
   gridPoint {
     x: -37.5
     y: 2
-    z: -35.399998
+    z: -45.399998
   }
   orientation: ORIENTATION_S
   idRef {
@@ -1851,7 +1851,7 @@ props {
   gridPoint {
     x: -38.1
     y: 2
-    z: -35.399998
+    z: -45.399998
   }
   orientation: ORIENTATION_S
   idRef {
@@ -15298,9 +15298,9 @@ props {
 props {
   name: "undergroundBase_clutter_rock08"
   gridPoint {
-    x: 53
+    x: 55
     y: 0
-    z: 5
+    z: 6
   }
   orientation: ORIENTATION_S
   idRef {
@@ -15324,9 +15324,9 @@ props {
 props {
   name: "undergroundBase_clutter_rock03"
   gridPoint {
-    x: 50
+    x: 49
     y: 0
-    z: 16
+    z: 15
   }
   orientation: ORIENTATION_S
   idRef {
@@ -19515,19 +19515,6 @@ props {
 props {
   name: "undergroundBase_floor_dirt01"
   gridPoint {
-    x: -42
-    y: 0
-    z: -39
-  }
-  orientation: ORIENTATION_S
-  idRef {
-    id: "538be25f366236a41600231e"
-  }
-  lod: 0
-}
-props {
-  name: "undergroundBase_floor_dirt01"
-  gridPoint {
     x: -44
     y: 0
     z: -31
@@ -19574,19 +19561,6 @@ props {
   orientation: ORIENTATION_E
   idRef {
     id: "538be266366236a416002324"
-  }
-  lod: 0
-}
-props {
-  name: "undergroundBase_floor_dirt01"
-  gridPoint {
-    x: -44
-    y: 0
-    z: -39
-  }
-  orientation: ORIENTATION_E
-  idRef {
-    id: "538be266366236a416002325"
   }
   lod: 0
 }
@@ -20880,6 +20854,189 @@ props {
   }
   idRef {
     id: "538ec46f366236b4180013f2"
+  }
+  lod: 0
+}
+props {
+  name: "asylum_decor_doctorBag"
+  gridPoint {
+    x: 61
+    y: -1
+    z: 26
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "5394e769366236d8290039e6"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    pickupItem {
+      itemName: "HealthPack_hi"
+      destroyOnPickup: true
+    }
+  }
+  lod: 0
+}
+props {
+  name: "asylum_decor_doctorBag"
+  gridPoint {
+    x: 61
+    y: -1
+    z: 25
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "5394e76b366236d8290039e7"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    pickupItem {
+      itemName: "HealthPack_hi"
+      destroyOnPickup: true
+    }
+  }
+  lod: 0
+}
+props {
+  name: "asylum_decor_doctorBag"
+  gridPoint {
+    x: 41
+    y: -1
+    z: 8
+  }
+  orientation: ORIENTATION_E
+  idRef {
+    id: "5394e778366236d8290039e8"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    pickupItem {
+      itemName: "HealthPack_hi"
+      destroyOnPickup: true
+    }
+  }
+  lod: 0
+}
+props {
+  name: "asylum_decor_doctorBag"
+  gridPoint {
+    x: 8
+    y: -1
+    z: 17
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "5394e781366236d8290039e9"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    pickupItem {
+      itemName: "HealthPack_hi"
+      destroyOnPickup: true
+    }
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_poisongasYellowvent"
+  gridPoint {
+    x: -32
+    y: 6
+    z: -30
+  }
+  orientation: ORIENTATION_E
+  properties {
+    property_id: "fxScript"
+    string_value: "PoisonGasYellowVentEnvironment"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_poisongasYellowvent"
+  gridPoint {
+    x: -35
+    y: 6
+    z: -46
+  }
+  orientation: ORIENTATION_E
+  properties {
+    property_id: "fxScript"
+    string_value: "PoisonGasYellowVentEnvironment"
+  }
+  idRef {
+    id: "5394f74c366236d829003a37"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_poisongasYellowvent"
+  gridPoint {
+    x: -33
+    y: 6
+    z: -30
+  }
+  orientation: ORIENTATION_E
+  properties {
+    property_id: "fxScript"
+    string_value: "PoisonGasYellowVentEnvironment"
+  }
+  idRef {
+    id: "5394f74d366236d829003a38"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_poisongasYellowvent"
+  gridPoint {
+    x: -33
+    y: 6
+    z: -29
+  }
+  orientation: ORIENTATION_E
+  properties {
+    property_id: "fxScript"
+    string_value: "PoisonGasYellowVentEnvironment"
+  }
+  idRef {
+    id: "5394f74d366236d829003a39"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_poisongasYellowvent"
+  gridPoint {
+    x: -32
+    y: 6
+    z: -29
+  }
+  orientation: ORIENTATION_E
+  properties {
+    property_id: "fxScript"
+    string_value: "PoisonGasYellowVentEnvironment"
+  }
+  idRef {
+    id: "5394f74e366236d829003a3a"
+  }
+  lod: 0
+}
+props {
+  name: "vfx_fx_poisongasYellowvent"
+  gridPoint {
+    x: -34
+    y: 6
+    z: -46
+  }
+  orientation: ORIENTATION_E
+  properties {
+    property_id: "fxScript"
+    string_value: "PoisonGasYellowVentEnvironment"
+  }
+  idRef {
+    id: "5394f750366236d829003a3b"
   }
   lod: 0
 }

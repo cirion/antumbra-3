@@ -56,6 +56,44 @@ triggers {
         }
       }
     }
+    ops {
+      functionName: "Kill Actor"
+      args {
+        call_value {
+          functionName: "All Actors With Tag"
+          args {
+            call_value {
+              functionName: "Get Map Item (SenseTagList)"
+              args {
+                string_value: "isTirGrunt"
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Preset Value (int)"
+              args {
+                string_value: "AllOrAny"
+              }
+              args {
+                int_value: 0
+              }
+            }
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "DeathMethod"
+          }
+          args {
+            int_value: 3
+          }
+        }
+      }
+    }
   }
   isActive: true
   idRef {
@@ -75,63 +113,6 @@ triggers {
   conditions {
   }
   actions {
-    ops {
-      functionName: "Delete Props by Tag"
-      args {
-        call_value {
-          functionName: "Get Map Item (SenseTagList)"
-          args {
-            string_value: "wall1"
-          }
-        }
-      }
-      args {
-        float_value: -1
-      }
-      args {
-        call_value {
-          functionName: "Everywhere"
-        }
-      }
-    }
-    ops {
-      functionName: "Delete Props by Tag"
-      args {
-        call_value {
-          functionName: "Get Map Item (SenseTagList)"
-          args {
-            string_value: "wall2"
-          }
-        }
-      }
-      args {
-        float_value: -1
-      }
-      args {
-        call_value {
-          functionName: "Everywhere"
-        }
-      }
-    }
-    ops {
-      functionName: "Delete Props by Tag"
-      args {
-        call_value {
-          functionName: "Get Map Item (SenseTagList)"
-          args {
-            string_value: "wall3"
-          }
-        }
-      }
-      args {
-        float_value: -1
-      }
-      args {
-        call_value {
-          functionName: "Everywhere"
-        }
-      }
-    }
     ops {
       functionName: "Kill Actor"
       args {
@@ -5653,6 +5634,31 @@ triggers {
         }
       }
     }
+    ops {
+      functionName: "Clear All Waypoints"
+    }
+    ops {
+      functionName: "Set Waypoint on Actor"
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "PrimaryOrSecondary"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (Actor)"
+          args {
+            string_value: "5384a9f2643431616b8564a0"
+          }
+        }
+      }
+    }
   }
   isActive: true
   idRef {
@@ -5815,6 +5821,31 @@ triggers {
         }
       }
     }
+    ops {
+      functionName: "Clear All Waypoints"
+    }
+    ops {
+      functionName: "Set Waypoint on Actor"
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "PrimaryOrSecondary"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (Actor)"
+          args {
+            string_value: "537bde8f6434310a674f3274"
+          }
+        }
+      }
+    }
   }
   isActive: true
   idRef {
@@ -5932,6 +5963,9 @@ triggers {
         }
       }
     }
+    ops {
+      functionName: "Clear All Waypoints"
+    }
   }
   isActive: true
   idRef {
@@ -6016,59 +6050,10 @@ triggers {
   name: "Tir Taunts"
   events {
     ops {
-      functionName: "On Actor Damage"
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "HPOrAP"
-          }
-          args {
-            int_value: 0
-          }
-        }
-      }
+      functionName: "On Actor Start Turn"
     }
   }
   conditions {
-    ops {
-      functionName: "Compare Actor Team"
-      args {
-        call_value {
-          functionName: "Triggering Target Actor"
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "IsOrIsNot"
-          }
-          args {
-            int_value: 1
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (string)"
-          args {
-            string_value: "FactionList"
-          }
-          args {
-            int_value: 0
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Map Item (SceneDimension)"
-          args {
-            string_value: "Default"
-          }
-        }
-      }
-    }
     ops {
       functionName: "Evaluate Tag for Actor"
       args {
@@ -6149,6 +6134,31 @@ triggers {
         int_value: 0
       }
     }
+    ops {
+      functionName: "Comparison (int)"
+      args {
+        call_value {
+          functionName: "Get Variable (int)"
+          args {
+            string_value: "tirSpawnState"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "Comparison Ops"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        int_value: 1
+      }
+    }
   }
   actions {
     ops {
@@ -6195,6 +6205,24 @@ triggers {
       }
     }
     ops {
+      functionName: "Add Camera Point of Interest (Actors)"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Triggering Actor"
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        float_value: 3
+      }
+    }
+    ops {
       functionName: "Trigger: Wait Until Triggered Again"
     }
     ops {
@@ -6238,6 +6266,24 @@ triggers {
       }
       args {
         float_value: 0
+      }
+    }
+    ops {
+      functionName: "Add Camera Point of Interest (Actors)"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Triggering Actor"
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        float_value: 3
       }
     }
     ops {
@@ -6290,6 +6336,27 @@ triggers {
       }
     }
     ops {
+      functionName: "Add Camera Point of Interest (Actors)"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Player)"
+              args {
+                int_value: 1
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        float_value: 3
+      }
+    }
+    ops {
       functionName: "Trigger: Wait Until Triggered Again"
     }
     ops {
@@ -6314,7 +6381,7 @@ triggers {
         }
       }
       args {
-        string_value: "Do you think we could try shooting the walls? I think I see some cracks to the west..."
+        string_value: "Can we try shooting the walls? I think I see some cracks to the west..."
       }
       args {
         float_value: 0
@@ -6336,6 +6403,49 @@ triggers {
       }
       args {
         float_value: 0
+      }
+    }
+    ops {
+      functionName: "Set Waypoint on Actor"
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "PrimaryOrSecondary"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (Actor)"
+          args {
+            string_value: "5384a9ad643431616b85649c"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Add Camera Point of Interest (Actors)"
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Player)"
+              args {
+                int_value: 1
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        float_value: 3
       }
     }
   }
@@ -8407,6 +8517,140 @@ triggers {
   isActive: true
   idRef {
     id: "538b95bf3662365821004681"
+  }
+  elseActions {
+  }
+  is_oneshot: false
+}
+triggers {
+  name: "Tir Free Move"
+  events {
+    ops {
+      functionName: "On New Round"
+      args {
+        call_value {
+          functionName: "Get Map Item (SceneDimension)"
+          args {
+            string_value: "Default"
+          }
+        }
+      }
+    }
+  }
+  conditions {
+    ops {
+      functionName: "Comparison (int)"
+      args {
+        call_value {
+          functionName: "Get Count of Alive Actors"
+          args {
+            call_value {
+              functionName: "All Actors on Team"
+              args {
+                call_value {
+                  functionName: "Get Preset Value (string)"
+                  args {
+                    string_value: "FactionList"
+                  }
+                  args {
+                    int_value: 1
+                  }
+                }
+              }
+              args {
+                call_value {
+                  functionName: "Get Preset Value (int)"
+                  args {
+                    string_value: "AllOrAny"
+                  }
+                  args {
+                    int_value: 0
+                  }
+                }
+              }
+              args {
+                call_value {
+                  functionName: "Get Map Item (SceneDimension)"
+                  args {
+                    string_value: "Default"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "Comparison Ops"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        int_value: 1
+      }
+    }
+    ops {
+      functionName: "Comparison (int)"
+      args {
+        call_value {
+          functionName: "Get Variable (int)"
+          args {
+            string_value: "tirSpawnState"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "Comparison Ops"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        int_value: 1
+      }
+    }
+  }
+  actions {
+    ops {
+      functionName: "Isolated Team Turn"
+      args {
+        call_value {
+          functionName: "Get Preset Value (string)"
+          args {
+            string_value: "FactionList"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (SceneDimension)"
+          args {
+            string_value: "Default"
+          }
+        }
+      }
+      args {
+        int_value: 1
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "5394f537366236d8290039ea"
   }
   elseActions {
   }
