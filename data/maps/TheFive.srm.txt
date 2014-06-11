@@ -1,6 +1,6 @@
-minX: -88
+minX: -84
 minZ: -39
-numX: 125
+numX: 121
 numZ: 68
 props {
   name: "barrens_ground_twoLaneWhite01"
@@ -17067,30 +17067,6 @@ props {
   lod: 0
 }
 props {
-  name: "vfx_fx_barrelFire"
-  gridPoint {
-    x: -28
-    y: 0
-    z: 15
-  }
-  orientation: ORIENTATION_S
-  properties {
-    property_id: "fxScript"
-    string_value: "EnvironmentLoopBarrelFire"
-  }
-  lod: 0
-}
-props {
-  name: "system_invisible_blockMove"
-  gridPoint {
-    x: -28
-    y: 0
-    z: 15
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
   name: "system_invisible_blockMove"
   gridPoint {
     x: -49
@@ -17717,20 +17693,6 @@ props {
   properties {
     property_id: "fxScript"
     string_value: "PoisonGasVentEnvironment"
-  }
-  lod: 0
-}
-props {
-  name: "vfx_fx_roach"
-  gridPoint {
-    x: -88
-    y: 0
-    z: 6
-  }
-  orientation: ORIENTATION_S
-  properties {
-    property_id: "fxScript"
-    string_value: "EnvironmentLoopRoachScurry"
   }
   lod: 0
 }
