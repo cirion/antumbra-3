@@ -391,6 +391,77 @@ triggers {
         }
       }
     }
+    ops {
+      functionName: "Activate Actor Spawner"
+      args {
+        call_value {
+          functionName: "Get Map Item (Actor Reference)"
+          args {
+            string_value: "53992d1a366236bc29002d7e"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Activate Actor Spawner"
+      args {
+        call_value {
+          functionName: "Get Map Item (Actor Reference)"
+          args {
+            string_value: "53992d1a366236bc29002d7d"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Kill Actor"
+      args {
+        call_value {
+          functionName: "All Actors on Team"
+          args {
+            call_value {
+              functionName: "Get Preset Value (string)"
+              args {
+                string_value: "FactionList"
+              }
+              args {
+                int_value: 2
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Preset Value (int)"
+              args {
+                string_value: "AllOrAny"
+              }
+              args {
+                int_value: 0
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Map Item (SceneDimension)"
+              args {
+                string_value: "Matrix"
+              }
+            }
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "DeathMethod"
+          }
+          args {
+            int_value: 3
+          }
+        }
+      }
+    }
   }
   isActive: false
   idRef {
@@ -3714,21 +3785,67 @@ triggers {
 triggers {
   name: "CheckAndDisableMeatWorld"
   events {
+    ops {
+      functionName: "On Actor Alive"
+    }
   }
   conditions {
     ops {
-      functionName: "Evaluate If Actor is Inside Region"
+      functionName: "Actor is a Persona"
       args {
         call_value {
-          functionName: "All Actors on Team"
+          functionName: "Triggering Actor"
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Invert Bool"
+      args {
+        call_value {
+          functionName: "Evaluate If Actor is Inside Region"
           args {
             call_value {
-              functionName: "Get Preset Value (string)"
+              functionName: "All Actors on Team"
               args {
-                string_value: "FactionList"
+                call_value {
+                  functionName: "Get Preset Value (string)"
+                  args {
+                    string_value: "FactionList"
+                  }
+                  args {
+                    int_value: 1
+                  }
+                }
               }
               args {
-                int_value: 1
+                call_value {
+                  functionName: "Get Preset Value (int)"
+                  args {
+                    string_value: "AllOrAny"
+                  }
+                  args {
+                    int_value: 1
+                  }
+                }
+              }
+              args {
+                call_value {
+                  functionName: "Get Map Item (SceneDimension)"
+                  args {
+                    string_value: "Default"
+                  }
+                }
               }
             }
           }
@@ -3736,7 +3853,7 @@ triggers {
             call_value {
               functionName: "Get Preset Value (int)"
               args {
-                string_value: "AllOrAny"
+                string_value: "AreOrAreNot"
               }
               args {
                 int_value: 1
@@ -3745,30 +3862,11 @@ triggers {
           }
           args {
             call_value {
-              functionName: "Get Map Item (SceneDimension)"
+              functionName: "Get Map Item (Region)"
               args {
-                string_value: "Default"
+                string_value: "537a9988643431b04e37eee5"
               }
             }
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "AreOrAreNot"
-          }
-          args {
-            int_value: 0
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Map Item (Region)"
-          args {
-            string_value: "537a9988643431b04e37eee5"
           }
         }
       }
@@ -3842,7 +3940,7 @@ triggers {
       }
     }
   }
-  isActive: false
+  isActive: true
   idRef {
     id: "5377ed44366236840d001d90"
   }
@@ -4185,7 +4283,7 @@ triggers {
         call_value {
           functionName: "Get Map Item (SceneDimension)"
           args {
-            string_value: "Default"
+            string_value: "Matrix"
           }
         }
       }
@@ -4219,7 +4317,7 @@ triggers {
         call_value {
           functionName: "Get Map Item (Region)"
           args {
-            string_value: "5377eecb366236840d001d93"
+            string_value: "537ce043643431520477f882"
           }
         }
       }
@@ -4391,128 +4489,6 @@ triggers {
   elseActions {
   }
   is_oneshot: false
-}
-triggers {
-  name: "SpawnICCamera"
-  events {
-    ops {
-      functionName: "On Region Enter"
-      args {
-        call_value {
-          functionName: "Get Map Item (Region)"
-          args {
-            string_value: "5377eecb366236840d001d93"
-          }
-        }
-      }
-    }
-  }
-  conditions {
-    ops {
-      functionName: "Compare Actor Team"
-      args {
-        call_value {
-          functionName: "Triggering Actor"
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "IsOrIsNot"
-          }
-          args {
-            int_value: 1
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (string)"
-          args {
-            string_value: "FactionList"
-          }
-          args {
-            int_value: 0
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Map Item (SceneDimension)"
-          args {
-            string_value: "Default"
-          }
-        }
-      }
-    }
-  }
-  actions {
-    ops {
-      functionName: "Activate Actor Spawner By Tag"
-      args {
-        call_value {
-          functionName: "Get Map Item (SenseTagList)"
-          args {
-            string_value: "squadCamera"
-          }
-        }
-      }
-    }
-    ops {
-      functionName: "Order Actor to Seek And Destroy (Team)"
-      args {
-        call_value {
-          functionName: "All Actors With Tag"
-          args {
-            call_value {
-              functionName: "Get Map Item (SenseTagList)"
-              args {
-                string_value: "squadCamera"
-              }
-            }
-          }
-          args {
-            call_value {
-              functionName: "Get Preset Value (int)"
-              args {
-                string_value: "AllOrAny"
-              }
-              args {
-                int_value: 0
-              }
-            }
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (string)"
-          args {
-            string_value: "FactionList"
-          }
-          args {
-            int_value: 0
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Map Item (SceneDimension)"
-          args {
-            string_value: "Matrix"
-          }
-        }
-      }
-    }
-  }
-  isActive: true
-  idRef {
-    id: "5377fbfc366236840d001f77"
-  }
-  elseActions {
-  }
-  is_oneshot: true
 }
 triggers {
   name: "Kill Switch IC"
@@ -5874,6 +5850,17 @@ triggers {
         }
       }
     }
+    ops {
+      functionName: "Invert Bool"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "debugging"
+          }
+        }
+      }
+    }
   }
   actions {
     ops {
@@ -5992,6 +5979,17 @@ triggers {
           functionName: "Get Map Item (SceneDimension)"
           args {
             string_value: "Matrix"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Invert Bool"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "debugging"
           }
         }
       }
@@ -6118,6 +6116,17 @@ triggers {
         }
       }
     }
+    ops {
+      functionName: "Invert Bool"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "debugging"
+          }
+        }
+      }
+    }
   }
   actions {
     ops {
@@ -6240,6 +6249,17 @@ triggers {
         }
       }
     }
+    ops {
+      functionName: "Invert Bool"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "debugging"
+          }
+        }
+      }
+    }
   }
   actions {
     ops {
@@ -6358,6 +6378,17 @@ triggers {
           functionName: "Get Map Item (SceneDimension)"
           args {
             string_value: "Matrix"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Invert Bool"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "debugging"
           }
         }
       }
@@ -20641,6 +20672,188 @@ characters {
     scale_character_sheet: true
   }
 }
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -27
+    y: 0
+    z: 3
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "53992d1a366236bc29002d7d"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Seattle:Core/HumanMale"
+    character_sheet_id: "a3_crew_norton_Lv4"
+    equipment_sheet_id: "a3_crew_norton_Lv4"
+    character_mod {
+      stats {
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        magic: 0
+        hp: 0
+        ap: 0
+        armor: 0
+        force: 0
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+        ranged_combat: 0
+        close_combat: 0
+        throwing_weapons: 0
+        spellcasting: 0
+        decking: 0
+        conjuring: 0
+        spirit_summoning: 0
+        drone_control: 0
+        biotech: 0
+        dodge: 0
+        etiquette_corporate: 0
+        etiquette_security: 0
+        etiquette_gang: 0
+        etiquette_socialite: 0
+        chi_casting: 0
+        etiquette_shadowrunner: 0
+        etiquette_street: 0
+        etiquette_academic: 0
+      }
+      specializations {
+        pistol: 0
+        rifle: 0
+        shotgun: 0
+        smg: 0
+        edged: 0
+        unarmed: 0
+        spirit_control: 0
+        esp_control: 0
+        drone_combat: 0
+      }
+      archetypeName: "Player"
+      attitude: AttitudeBoss
+      vulnerabilities {
+      }
+    }
+    team_id: "Shadowrunners"
+    char_name: "Emperor Norton"
+    GeneralTags: "norton"
+    GeneralTags: "isNorton"
+    enabled_at_start: false
+    pc_spawn_number: -1
+    hiring_type: HiringType_Hireable
+    portrait {
+      filename: "EmperorNorton"
+    }
+    description_bio: "Emperor of California and Protector of UCAS"
+    portrait_code_override: "s5h5c6b1c6"
+    karma: 4
+    hiring_cost_override: 0
+    id: "a3_crew_lv4_norton"
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: -25
+    y: 0
+    z: 2
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "53992d1a366236bc29002d7e"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Seattle:Gangers/ElfMaleGangerDreads"
+    character_sheet_id: "a3_crew_elorn_Lv4"
+    equipment_sheet_id: "a3_crew_elorn_Lv4"
+    character_mod {
+      stats {
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        magic: 0
+        hp: 0
+        ap: 0
+        armor: 0
+        force: 0
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+        ranged_combat: 0
+        close_combat: 0
+        throwing_weapons: 0
+        spellcasting: 0
+        decking: 0
+        conjuring: 0
+        spirit_summoning: 0
+        drone_control: 0
+        biotech: 0
+        dodge: 0
+        etiquette_corporate: 0
+        etiquette_security: 0
+        etiquette_gang: 0
+        etiquette_socialite: 0
+        chi_casting: 0
+        etiquette_shadowrunner: 0
+        etiquette_street: 0
+        etiquette_academic: 0
+      }
+      specializations {
+        pistol: 0
+        rifle: 0
+        shotgun: 0
+        smg: 0
+        edged: 0
+        unarmed: 0
+        spirit_control: 0
+        esp_control: 0
+        drone_combat: 0
+      }
+      archetypeName: "Player"
+      attitude: AttitudeAggressive
+      vulnerabilities {
+      }
+    }
+    team_id: "Shadowrunners"
+    char_name: "Elorn"
+    GeneralTags: "isElorn"
+    GeneralTags: "isWanderer"
+    enabled_at_start: false
+    pc_spawn_number: -1
+    hiring_type: HiringType_Hireable
+    portrait {
+      filename: "pc_elfmale_06_dreads"
+    }
+    description_bio: "An occasionally-despondent elf who takes the defense of his family and his home very seriously."
+    portrait_code_override: "s1h1c4b0t0"
+    karma: 4
+    hiring_cost_override: 0
+    id: "a3_crew_elorn_lv4"
+  }
+}
 variables {
   int_value: 8
   variableref_value {
@@ -20758,6 +20971,14 @@ variables {
   variableref_value {
     scope: TsVariableScope_Scene
     name: "shouldAutosave"
+    typeName: "bool"
+  }
+}
+variables {
+  bool_value: false
+  variableref_value {
+    scope: TsVariableScope_Scene
+    name: "debugging"
     typeName: "bool"
   }
 }
