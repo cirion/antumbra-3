@@ -197,41 +197,11 @@ triggers {
         call_value {
           functionName: "Get Map Item (Actor Reference)"
           args {
-            string_value: "539782d8643431f6188fb493"
-          }
-        }
-      }
-    }
-    ops {
-      functionName: "Activate Actor Spawner"
-      args {
-        call_value {
-          functionName: "Get Map Item (Actor Reference)"
-          args {
             string_value: "53977054643431d314082ca1"
           }
         }
       }
     }
-  }
-  isActive: false
-  idRef {
-    id: "5378273a366236101d004965"
-  }
-  elseActions {
-  }
-  is_oneshot: true
-}
-triggers {
-  name: "Debug Aggro Triggers"
-  events {
-    ops {
-      functionName: "On Map Start"
-    }
-  }
-  conditions {
-  }
-  actions {
     ops {
       functionName: "Kill Actor"
       args {
@@ -265,7 +235,56 @@ triggers {
             string_value: "DeathMethod"
           }
           args {
-            int_value: 3
+            int_value: 0
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Kill Actor"
+      args {
+        call_value {
+          functionName: "All Actors on Team"
+          args {
+            call_value {
+              functionName: "Get Preset Value (string)"
+              args {
+                string_value: "FactionList"
+              }
+              args {
+                int_value: 3
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Preset Value (int)"
+              args {
+                string_value: "AllOrAny"
+              }
+              args {
+                int_value: 0
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Map Item (SceneDimension)"
+              args {
+                string_value: "Matrix"
+              }
+            }
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "DeathMethod"
+          }
+          args {
+            int_value: 0
           }
         }
       }
@@ -273,7 +292,7 @@ triggers {
   }
   isActive: false
   idRef {
-    id: "53908354643431812c2750f4"
+    id: "5378273a366236101d004965"
   }
   elseActions {
   }
@@ -5020,18 +5039,56 @@ triggers {
 triggers {
   name: "CheckAndDisableMeatWorld"
   events {
+    ops {
+      functionName: "On Actor Alive"
+    }
   }
   conditions {
     ops {
-      functionName: "Evaluate If Actor is Inside Region"
+      functionName: "Invert Bool"
       args {
         call_value {
-          functionName: "All Actors on Team"
+          functionName: "Evaluate If Actor is Inside Region"
           args {
             call_value {
-              functionName: "Get Preset Value (string)"
+              functionName: "All Actors on Team"
               args {
-                string_value: "FactionList"
+                call_value {
+                  functionName: "Get Preset Value (string)"
+                  args {
+                    string_value: "FactionList"
+                  }
+                  args {
+                    int_value: 1
+                  }
+                }
+              }
+              args {
+                call_value {
+                  functionName: "Get Preset Value (int)"
+                  args {
+                    string_value: "AllOrAny"
+                  }
+                  args {
+                    int_value: 1
+                  }
+                }
+              }
+              args {
+                call_value {
+                  functionName: "Get Map Item (SceneDimension)"
+                  args {
+                    string_value: "Default"
+                  }
+                }
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Preset Value (int)"
+              args {
+                string_value: "AreOrAreNot"
               }
               args {
                 int_value: 1
@@ -5040,41 +5097,30 @@ triggers {
           }
           args {
             call_value {
-              functionName: "Get Preset Value (int)"
+              functionName: "Get Map Item (Region)"
               args {
-                string_value: "AllOrAny"
-              }
-              args {
-                int_value: 0
+                string_value: "53666daf3662362409007fa5"
               }
             }
           }
-          args {
-            call_value {
-              functionName: "Get Map Item (SceneDimension)"
-              args {
-                string_value: "Default"
-              }
-            }
-          }
+        }
+      }
+    }
+    ops {
+      functionName: "Actor is a Persona"
+      args {
+        call_value {
+          functionName: "Triggering Actor"
         }
       }
       args {
         call_value {
           functionName: "Get Preset Value (int)"
           args {
-            string_value: "AreOrAreNot"
+            string_value: "IsOrIsNot"
           }
           args {
-            int_value: 0
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Map Item (Region)"
-          args {
-            string_value: "53666daf3662362409007fa5"
+            int_value: 1
           }
         }
       }
@@ -5148,7 +5194,7 @@ triggers {
       }
     }
   }
-  isActive: false
+  isActive: true
   idRef {
     id: "5377ed44366236840d001d90"
   }
@@ -5491,7 +5537,7 @@ triggers {
         call_value {
           functionName: "Get Map Item (SceneDimension)"
           args {
-            string_value: "Default"
+            string_value: "Matrix"
           }
         }
       }
@@ -5752,6 +5798,39 @@ triggers {
         }
       }
     }
+    ops {
+      functionName: "Comparison (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "debugging"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
   }
   actions {
     ops {
@@ -5885,6 +5964,39 @@ triggers {
         }
       }
     }
+    ops {
+      functionName: "Comparison (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "debugging"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
   }
   actions {
     ops {
@@ -6014,6 +6126,39 @@ triggers {
           functionName: "Get Map Item (SceneDimension)"
           args {
             string_value: "Matrix"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Comparison (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "debugging"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 0
           }
         }
       }
@@ -18859,7 +19004,7 @@ characters {
 characters {
   name: "chars_icon_playerIcon"
   gridPoint {
-    x: -56
+    x: -57
     y: 0
     z: -4
   }
