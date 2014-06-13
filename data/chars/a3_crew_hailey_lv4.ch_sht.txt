@@ -1,5 +1,5 @@
 unique_id: "a3_crew_hailey_Lv4"
-archetypeName: "Non-Combatant"
+archetypeName: "Player"
 attitude: AttitudeAggressive
 stats {
   body: 5
@@ -26,7 +26,7 @@ stats {
   is_strict: 0
 }
 skills {
-  ranged_combat: 0
+  ranged_combat: 3
   close_combat: 0
   throwing_weapons: 2
   spellcasting: 0
