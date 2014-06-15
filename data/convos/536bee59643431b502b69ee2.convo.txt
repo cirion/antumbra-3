@@ -481,6 +481,101 @@ nodes {
           int_value: 1
         }
       }
+      ops {
+        functionName: "Comparison (int)"
+        args {
+          call_value {
+            functionName: "Get Story Variable (int)"
+            args {
+              string_value: "531d26a736623648180018bf"
+            }
+            args {
+              string_value: "Global_numMissionsCompleted"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+        args {
+          int_value: 0
+        }
+      }
+    }
+    nextNodeIndex: 63
+    hideIfUnavailable: true
+    onlyOnce: true
+    idRef {
+      id: "539d0811366236ec19005e1b"
+    }
+  }
+  branches {
+    responseText: "Travel to Colma."
+    conditions {
+      ops {
+        functionName: "Comparison (int)"
+        args {
+          call_value {
+            functionName: "Get Story Variable (int)"
+            args {
+              string_value: "531d26a736623648180018bf"
+            }
+            args {
+              string_value: "Global_MissionState_Colma"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 0
+            }
+          }
+        }
+        args {
+          int_value: 1
+        }
+      }
+      ops {
+        functionName: "Comparison (int)"
+        args {
+          call_value {
+            functionName: "Get Story Variable (int)"
+            args {
+              string_value: "531d26a736623648180018bf"
+            }
+            args {
+              string_value: "Global_numMissionsCompleted"
+            }
+          }
+        }
+        args {
+          call_value {
+            functionName: "Get Preset Value (int)"
+            args {
+              string_value: "Comparison Ops"
+            }
+            args {
+              int_value: 2
+            }
+          }
+        }
+        args {
+          int_value: 0
+        }
+      }
     }
     actions {
       ops {
@@ -533,7 +628,7 @@ nodes {
         }
       }
     }
-    nextNodeIndex: 63
+    nextNodeIndex: 64
     hideIfUnavailable: true
   }
   branches {
@@ -4339,9 +4434,25 @@ nodes {
 }
 nodes {
   idRef {
-    id: "536d9c6d366236081a002a21"
+    id: "539d0813366236ec19005e1d"
   }
   index: 63
+  text: "{{GM}}Your base is not yet ready to accommodate Norton\'s Army. Complete other preparations first.{{/GM}}"
+  branches {
+    responseText: ""
+    nextNodeIndex: 0
+    auxiliaryLink: true
+  }
+  nodeType: ConversationNodeType_Simple
+  sourceInSceneRef {
+    id: "536c5f88366236d41e0027f2"
+  }
+}
+nodes {
+  idRef {
+    id: "536d9c6d366236081a002a21"
+  }
+  index: 64
   text: "Are you sure? This is the point of no return. Please be sure all your affairs are in order.\n\nIf you choose to proceed, you will receive a final assortment of equipment based on your total preparedness up until this point. You will be able to distribute this equipment once the battle starts."
   branches {
     responseText: "I am ready."
