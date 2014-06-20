@@ -9263,31 +9263,6 @@ props {
   lod: 0
 }
 props {
-  name: "vfx_fx_dustDevil"
-  gridPoint {
-    x: -10
-    y: 0
-    z: -60
-  }
-  orientation: ORIENTATION_S
-  properties {
-    property_id: "fxScript"
-    string_value: "EnvironmentLoopDustDevil"
-  }
-  GeneralTags: "isBridgeDestructionProp"
-  displayName: "Dust Devil"
-  idRef {
-    id: "5374e9476434316b133335de"
-  }
-  interactionRoot {
-    isEnabled: true
-    interactionRadius: 1
-    dummyInteraciton {
-    }
-  }
-  lod: 0
-}
-props {
   name: "system_invisible_blockMove"
   gridPoint {
     x: -64
