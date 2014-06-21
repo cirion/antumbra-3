@@ -2540,48 +2540,48 @@ nodes {
     id: "536c006e643431b502b6a30a"
   }
   index: 28
-  text: "{{GM}}You show your tri-vid rig to Kali.{{/GM}} \n\nThat\342\200\231ll be perfect! It\342\200\231ll give a nice lo-fi, cinema verite look to it. Very classy. And I\342\200\231ve heard that you hooked up with some talent right here in Antumbra. All right, then, let\342\200\231s start shooting!"
+  text: "{{GM}}You show your tri-vid equipment to Kali.{{/GM}} \n\nGreat choice! That rig will give you a nice lo-fi, cinema verite look. Very classy. And I hear that you\'ve hooked up with some talent right here in Eclipse. All right, then, let\342\200\231s start shooting!"
   branches {
-    responseText: ""
+    responseText: "{{GM}}Start the shoot!{{/GM}}"
+    actions {
+      ops {
+        functionName: "Fade Camera Out"
+        args {
+          float_value: 3
+        }
+        args {
+          float_value: 0
+        }
+      }
+      ops {
+        functionName: "Fade Camera In"
+        args {
+          float_value: 3
+        }
+        args {
+          float_value: 3
+        }
+      }
+    }
     nextNodeIndex: 29
   }
   nodeType: ConversationNodeType_Simple
 }
 nodes {
   idRef {
-    id: "536c00ae643431b502b6a30d"
+    id: "53a60461366236c81a003ad4"
   }
   index: 29
-  text: "{{GM}}Start the shoot!{{/GM}}"
+  text: "{{GM}}Several hours later...{{/GM}}"
   branches {
     responseText: ""
     nextNodeIndex: 30
   }
   nodeType: ConversationNodeType_Simple
-  actions {
-    ops {
-      functionName: "Fade Camera Out"
-      args {
-        float_value: 3
-      }
-      args {
-        float_value: 0
-      }
-    }
-    ops {
-      functionName: "Fade Camera In"
-      args {
-        float_value: 3
-      }
-      args {
-        float_value: 3
-      }
-    }
-  }
 }
 nodes {
   idRef {
-    id: "536c0123643431b502b6a310"
+    id: "53a60467366236c81a003ad7"
   }
   index: 30
   text: "Phew! You must be exhausted. That was amazing, though. Lots of energy, I was very impressed by your performance. I can\342\200\231t wait for this to be shown to millions of people!"
@@ -2697,7 +2697,7 @@ nodes {
 }
 nodes {
   idRef {
-    id: "536c0142643431b502b6a313"
+    id: "53a60467366236c81a003ada"
   }
   index: 31
   text: "I hope you\342\200\231re ready to get even more fans than ever before. Once word spreads that a real-life $(story.Global_Trideo_Genre) star is recruiting people to save CalFree, you\342\200\231ll be swarmed with groupies. Enjoy it!"
@@ -2728,7 +2728,7 @@ nodes {
 }
 nodes {
   idRef {
-    id: "536c025a643431b502b6a316"
+    id: "53a60467366236c81a003add"
   }
   index: 32
   text: "Oh, here\342\200\231s an advance for the trideo. I\342\200\231ll handle all licensing and merchandising rights. Once you earn back your advance, we can start talking royalties. As always, it\342\200\231s been a pleasure working with you!"
@@ -3379,7 +3379,7 @@ nodes {
     id: "536bf02f643431b502b69f12"
   }
   index: 50
-  text: "I wanted to personally talk with you about our shared goals. I can certainly understand your desire for independence; I didn\342\200\231t get where I am today by following others\342\200\231 orders. Still, it would be foolish to refuse my aid. Tir hates you at least as much as it hates me, and like it or not, I\342\200\231m afraid we\342\200\231re in this together.\n"
+  text: "I wanted to personally talk with you about our shared goals. I can certainly understand your desire for independence; I didn\342\200\231t get where I am today by following others\342\200\231 orders.\n\nStill, it would be foolish to refuse my aid. Tir hates you at least as much as it hates me, and like it or not, I\342\200\231m afraid we\342\200\231re in this together.\n"
   branches {
     responseText: ""
     nextNodeIndex: 48
