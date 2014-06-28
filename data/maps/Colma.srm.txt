@@ -71695,3 +71695,45 @@ props {
   }
   lod: 0
 }
+props {
+  name: "asylum_decor_doctorBag"
+  gridPoint {
+    x: -41
+    y: -1
+    z: -182
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "53ae3146366236101400587b"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    pickupItem {
+      itemName: "HealthPack"
+      destroyOnPickup: true
+    }
+  }
+  lod: 0
+}
+props {
+  name: "asylum_decor_doctorBag"
+  gridPoint {
+    x: -20
+    y: -1
+    z: -180
+  }
+  orientation: ORIENTATION_S
+  idRef {
+    id: "53ae314f366236101400587c"
+  }
+  interactionRoot {
+    isEnabled: true
+    interactionRadius: 1
+    pickupItem {
+      itemName: "HealthPack"
+      destroyOnPickup: true
+    }
+  }
+  lod: 0
+}
