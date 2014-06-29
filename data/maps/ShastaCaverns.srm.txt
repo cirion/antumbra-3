@@ -13,16 +13,6 @@ props {
   lod: 0
 }
 props {
-  name: "undergroundBase_floorDecoration_crack01"
-  gridPoint {
-    x: -2
-    y: 0
-    z: -19
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
   name: "undergroundBase_floor_dirt03"
   gridPoint {
     x: -30
@@ -13401,46 +13391,6 @@ props {
   lod: 0
 }
 props {
-  name: "undergroundBase_clutter_rock01"
-  gridPoint {
-    x: -49
-    y: 0
-    z: 1
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "undergroundBase_clutter_rock02"
-  gridPoint {
-    x: -47
-    y: 0
-    z: 7
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "undergroundBase_clutter_rock03"
-  gridPoint {
-    x: -45
-    y: 0
-    z: 3
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "undergroundBase_clutter_rock04"
-  gridPoint {
-    x: -45
-    y: 0
-    z: 6
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
   name: "undergroundBase_clutter_rock05"
   gridPoint {
     x: 23
@@ -13458,86 +13408,6 @@ props {
     dummyInteraciton {
     }
   }
-  lod: 0
-}
-props {
-  name: "undergroundBase_clutter_rock06"
-  gridPoint {
-    x: -42
-    y: 0
-    z: 8
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "undergroundBase_clutter_rock07"
-  gridPoint {
-    x: -38
-    y: 0
-    z: 12
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "undergroundBase_clutter_rock08"
-  gridPoint {
-    x: -43
-    y: 0
-    z: 11
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "undergroundBase_clutter_rock09"
-  gridPoint {
-    x: -47
-    y: 0
-    z: 10
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "cemetery_misc_rock01"
-  gridPoint {
-    x: -46
-    y: 0
-    z: 13
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "cemetery_misc_rock02"
-  gridPoint {
-    x: -50
-    y: 0
-    z: 12
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "cemetery_misc_rock03"
-  gridPoint {
-    x: -48
-    y: 0
-    z: 14
-  }
-  orientation: ORIENTATION_S
-  lod: 0
-}
-props {
-  name: "cemetery_misc_rock04"
-  gridPoint {
-    x: -48
-    y: 0
-    z: 12
-  }
-  orientation: ORIENTATION_S
   lod: 0
 }
 props {

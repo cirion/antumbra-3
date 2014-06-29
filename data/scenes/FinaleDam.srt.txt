@@ -518,7 +518,7 @@ triggers {
             string_value: "WithOrWithout"
           }
           args {
-            int_value: 0
+            int_value: 1
           }
         }
       }
@@ -8920,7 +8920,7 @@ triggers {
     ops {
       functionName: "Trigger: Wait for Rounds"
       args {
-        int_value: 5
+        int_value: 4
       }
       args {
         call_value {
@@ -9136,6 +9136,23 @@ triggers {
             int_value: 0
           }
         }
+      }
+    }
+    ops {
+      functionName: "Add To Variable (int)"
+      args {
+        call_value {
+          functionName: "Get Story Variable (int)"
+          args {
+            string_value: "531d26a736623648180018bf"
+          }
+          args {
+            string_value: "CharacterScaleAmount"
+          }
+        }
+      }
+      args {
+        int_value: 1
       }
     }
   }
@@ -10152,7 +10169,7 @@ triggers {
   is_oneshot: true
 }
 triggers {
-  name: "Tir Reinforces"
+  name: "Tir Reinforces Low"
   events {
     ops {
       functionName: "On New Round"
@@ -10251,6 +10268,31 @@ triggers {
         }
       }
     }
+    ops {
+      functionName: "Comparison (int)"
+      args {
+        call_value {
+          functionName: "Get Variable (int)"
+          args {
+            string_value: "tabithaFleeingState"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "Comparison Ops"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        int_value: 0
+      }
+    }
   }
   actions {
     ops {
@@ -10268,10 +10310,7 @@ triggers {
       functionName: "Display Text over Actor"
       args {
         call_value {
-          functionName: "Get Map Item (Actor)"
-          args {
-            string_value: "537a41b06434313b4381eb10"
-          }
+          functionName: "Last Created Actor"
         }
       }
       args {
@@ -17879,6 +17918,234 @@ triggers {
   }
   is_oneshot: true
 }
+triggers {
+  name: "Tir Reinforces High"
+  events {
+    ops {
+      functionName: "On New Round"
+      args {
+        call_value {
+          functionName: "Get Map Item (SceneDimension)"
+          args {
+            string_value: "Default"
+          }
+        }
+      }
+    }
+  }
+  conditions {
+    ops {
+      functionName: "Comparison (bool)"
+      args {
+        call_value {
+          functionName: "Get Variable (bool)"
+          args {
+            string_value: "FightStarted"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "IsOrIsNot"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "bool"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Comparison (int)"
+      args {
+        call_value {
+          functionName: "Get Count of Alive Actors"
+          args {
+            call_value {
+              functionName: "All Actors With Tag"
+              args {
+                call_value {
+                  functionName: "Get Map Item (SenseTagList)"
+                  args {
+                    string_value: "isTirGrunt"
+                  }
+                }
+              }
+              args {
+                call_value {
+                  functionName: "Get Preset Value (int)"
+                  args {
+                    string_value: "AllOrAny"
+                  }
+                  args {
+                    int_value: 0
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "Comparison Ops"
+          }
+          args {
+            int_value: 4
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Variable (int)"
+          args {
+            string_value: "TirGruntThreshold"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Comparison (int)"
+      args {
+        call_value {
+          functionName: "Get Variable (int)"
+          args {
+            string_value: "tabithaFleeingState"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "Comparison Ops"
+          }
+          args {
+            int_value: 2
+          }
+        }
+      }
+      args {
+        int_value: 0
+      }
+    }
+  }
+  actions {
+    ops {
+      functionName: "Activate Actor Spawner By Tag"
+      args {
+        call_value {
+          functionName: "Get Map Item (SenseTagList)"
+          args {
+            string_value: "isTirSpawner2"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Display Text over Actor"
+      args {
+        call_value {
+          functionName: "Last Created Actor"
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "TextPopupStyle"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        string_value: "Tir reinforcements arrive!"
+      }
+      args {
+        float_value: 0
+      }
+      args {
+        float_value: 0
+      }
+      args {
+        float_value: 0
+      }
+      args {
+        float_value: 0
+      }
+      args {
+        float_value: 3
+      }
+      args {
+        float_value: 3
+      }
+      args {
+        float_value: 0
+      }
+    }
+    ops {
+      functionName: "Order Actor to Seek And Destroy (ThreatType)"
+      args {
+        call_value {
+          functionName: "All Actors With Tag"
+          args {
+            call_value {
+              functionName: "Get Map Item (SenseTagList)"
+              args {
+                string_value: "isTirGrunt"
+              }
+            }
+          }
+          args {
+            call_value {
+              functionName: "Get Preset Value (int)"
+              args {
+                string_value: "AllOrAny"
+              }
+              args {
+                int_value: 0
+              }
+            }
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "ThreatType"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "53af2793366236740e001a53"
+  }
+  elseActions {
+  }
+  is_oneshot: false
+}
 regions {
   name: "Matrix Entrance to Hub"
   position {
@@ -18869,6 +19136,7 @@ characters {
     team_id: "Civilians"
     char_name: "Hans Brackhaus"
     pc_spawn_number: -1
+    ai_ignores: true
     uninjurable: true
     unkillable: true
     portrait {
@@ -19739,10 +20007,22 @@ characters {
   lod: 0
   character_instance {
     prefab_name: "Seattle:Story/TirTairngireGuard"
-    character_sheet_id: "Lonestar_Lv1_Human_Pistol"
-    equipment_sheet_id: "Lonestar_Lv1_Pistol_Gear"
+    character_sheet_id: "Lonestar_Lv2_Human_Pistol"
+    equipment_sheet_id: "Lonestar_Lv2_Pistol_Gear"
     character_mod {
       stats {
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        magic: 0
+        hp: 0
+        ap: 0
+        armor: 0
+        force: 0
         morale: 0
         discipline: 0
         awareness: 0
@@ -19752,9 +20032,38 @@ characters {
         move_speed: 0
       }
       skills {
+        ranged_combat: 0
+        close_combat: 0
+        throwing_weapons: 0
+        spellcasting: 0
+        decking: 0
+        conjuring: 0
+        spirit_summoning: 0
+        drone_control: 0
+        biotech: 0
+        dodge: 0
+        etiquette_corporate: 0
+        etiquette_security: 0
+        etiquette_gang: 0
+        etiquette_socialite: 0
+        chi_casting: 0
+        etiquette_shadowrunner: 0
+        etiquette_street: 0
+        etiquette_academic: 0
       }
       specializations {
+        pistol: 0
+        rifle: 0
+        shotgun: 0
+        smg: 0
+        edged: 0
+        unarmed: 0
+        spirit_control: 0
+        esp_control: 0
+        drone_combat: 0
       }
+      archetypeName: "Guard - Seek And Destroy"
+      attitude: AttitudeAggressive
       vulnerabilities {
       }
     }
@@ -19768,7 +20077,7 @@ characters {
     portrait {
       filename: ""
     }
-    karma: 30
+    karma: 37
     scale_character_sheet: true
   }
 }
@@ -19790,10 +20099,22 @@ characters {
   lod: 0
   character_instance {
     prefab_name: "Seattle:Story/TirTairngireGuard"
-    character_sheet_id: "Lonestar_Lv1_Ork_Shotgun"
-    equipment_sheet_id: "Lonestar_Lv1_Shotgun_Gear"
+    character_sheet_id: "Lonestar_Lv2_Ork_Shotgun"
+    equipment_sheet_id: "Lonestar_Lv2_Shotgun_Gear"
     character_mod {
       stats {
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        magic: 0
+        hp: 0
+        ap: 0
+        armor: 0
+        force: 0
         morale: 0
         discipline: 0
         awareness: 0
@@ -19803,9 +20124,38 @@ characters {
         move_speed: 0
       }
       skills {
+        ranged_combat: 0
+        close_combat: 0
+        throwing_weapons: 0
+        spellcasting: 0
+        decking: 0
+        conjuring: 0
+        spirit_summoning: 0
+        drone_control: 0
+        biotech: 0
+        dodge: 0
+        etiquette_corporate: 0
+        etiquette_security: 0
+        etiquette_gang: 0
+        etiquette_socialite: 0
+        chi_casting: 0
+        etiquette_shadowrunner: 0
+        etiquette_street: 0
+        etiquette_academic: 0
       }
       specializations {
+        pistol: 0
+        rifle: 0
+        shotgun: 0
+        smg: 0
+        edged: 0
+        unarmed: 0
+        spirit_control: 0
+        esp_control: 0
+        drone_combat: 0
       }
+      archetypeName: "Guard - Seek And Destroy"
+      attitude: AttitudeAggressive
       vulnerabilities {
       }
     }
@@ -19819,7 +20169,7 @@ characters {
     portrait {
       filename: ""
     }
-    karma: 33
+    karma: 41
     scale_character_sheet: true
   }
 }
@@ -22181,6 +22531,466 @@ characters {
     id: "a3_crew_elorn_lv3"
   }
 }
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: 14
+    y: 0
+    z: -41
+  }
+  orientation: ORIENTATION_N
+  GeneralTags: "isTirGrunt"
+  GeneralTags: "isTirSpawner2"
+  GeneralTags: ""
+  displayName: "Final Tir Soldier - Pistol"
+  idRef {
+    id: "53af2688366236740e001a4e"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Seattle:Story/TirTairngireGuard"
+    character_sheet_id: "Lonestar_Lv3_Human_Pistol"
+    equipment_sheet_id: "Lonestar_Lv3_Pistol_Gear"
+    character_mod {
+      stats {
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        magic: 0
+        hp: 0
+        ap: 0
+        armor: 0
+        force: 0
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+        ranged_combat: 0
+        close_combat: 0
+        throwing_weapons: 0
+        spellcasting: 0
+        decking: 0
+        conjuring: 0
+        spirit_summoning: 0
+        drone_control: 0
+        biotech: 0
+        dodge: 0
+        etiquette_corporate: 0
+        etiquette_security: 0
+        etiquette_gang: 0
+        etiquette_socialite: 0
+        chi_casting: 0
+        etiquette_shadowrunner: 0
+        etiquette_street: 0
+        etiquette_academic: 0
+      }
+      specializations {
+        pistol: 0
+        rifle: 0
+        shotgun: 0
+        smg: 0
+        edged: 0
+        unarmed: 0
+        spirit_control: 0
+        esp_control: 0
+        drone_combat: 0
+      }
+      archetypeName: "Guard - Seek And Destroy"
+      attitude: AttitudeAggressive
+      vulnerabilities {
+      }
+    }
+    team_id: "Tir"
+    char_name: "Tir Soldier"
+    GeneralTags: "isTirGrunt"
+    GeneralTags: "isTirSpawner2"
+    GeneralTags: ""
+    enabled_at_start: false
+    pc_spawn_number: -1
+    portrait {
+      filename: ""
+    }
+    karma: 52
+    scale_character_sheet: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: 14
+    y: 0
+    z: -43
+  }
+  orientation: ORIENTATION_N
+  GeneralTags: "isTirGrunt"
+  GeneralTags: "isTirSpawner2"
+  GeneralTags: ""
+  displayName: "Final Tir Captain"
+  idRef {
+    id: "53af26bc366236740e001a4f"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Berlin:Aztechnology/ElfMaleAztechGuard"
+    character_sheet_id: "Lonestar_Lv2_Captain"
+    equipment_sheet_id: "Lonestar_Lv2_Captain_Gear"
+    character_mod {
+      stats {
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        magic: 0
+        hp: 0
+        ap: 0
+        armor: 0
+        force: 0
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+        ranged_combat: 0
+        close_combat: 0
+        throwing_weapons: 0
+        spellcasting: 0
+        decking: 0
+        conjuring: 0
+        spirit_summoning: 0
+        drone_control: 0
+        biotech: 0
+        dodge: 0
+        etiquette_corporate: 0
+        etiquette_security: 0
+        etiquette_gang: 0
+        etiquette_socialite: 0
+        chi_casting: 0
+        etiquette_shadowrunner: 0
+        etiquette_street: 0
+        etiquette_academic: 0
+      }
+      specializations {
+        pistol: 0
+        rifle: 0
+        shotgun: 0
+        smg: 0
+        edged: 0
+        unarmed: 0
+        spirit_control: 0
+        esp_control: 0
+        drone_combat: 0
+      }
+      archetypeName: "Guard - Seek And Destroy"
+      attitude: AttitudeAggressive
+      vulnerabilities {
+      }
+    }
+    team_id: "Tir"
+    char_name: "Tir Captain"
+    GeneralTags: "isTirGrunt"
+    GeneralTags: "isTirSpawner2"
+    GeneralTags: ""
+    enabled_at_start: false
+    pc_spawn_number: -1
+    portrait {
+      filename: ""
+    }
+    karma: 52
+    scale_character_sheet: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: 13
+    y: 0
+    z: -44
+  }
+  orientation: ORIENTATION_N
+  GeneralTags: "isTirGrunt"
+  GeneralTags: "isTirSpawner2"
+  GeneralTags: ""
+  displayName: "High Tir Soldier - Shotgun"
+  idRef {
+    id: "53af26e3366236740e001a50"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Seattle:Story/TirTairngireGuard"
+    character_sheet_id: "Lonestar_Lv3_Ork_Shotgun"
+    equipment_sheet_id: "Lonestar_Lv3_Shotgun_Gear"
+    character_mod {
+      stats {
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        magic: 0
+        hp: 0
+        ap: 0
+        armor: 0
+        force: 0
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+        ranged_combat: 0
+        close_combat: 0
+        throwing_weapons: 0
+        spellcasting: 0
+        decking: 0
+        conjuring: 0
+        spirit_summoning: 0
+        drone_control: 0
+        biotech: 0
+        dodge: 0
+        etiquette_corporate: 0
+        etiquette_security: 0
+        etiquette_gang: 0
+        etiquette_socialite: 0
+        chi_casting: 0
+        etiquette_shadowrunner: 0
+        etiquette_street: 0
+        etiquette_academic: 0
+      }
+      specializations {
+        pistol: 0
+        rifle: 0
+        shotgun: 0
+        smg: 0
+        edged: 0
+        unarmed: 0
+        spirit_control: 0
+        esp_control: 0
+        drone_combat: 0
+      }
+      archetypeName: "Guard - Seek And Destroy"
+      attitude: AttitudeAggressive
+      vulnerabilities {
+      }
+    }
+    team_id: "Tir"
+    char_name: "Tir Soldier"
+    GeneralTags: "isTirGrunt"
+    GeneralTags: "isTirSpawner2"
+    GeneralTags: ""
+    enabled_at_start: false
+    pc_spawn_number: -1
+    portrait {
+      filename: ""
+    }
+    karma: 52
+    scale_character_sheet: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: 12
+    y: 0
+    z: -43
+  }
+  orientation: ORIENTATION_N
+  GeneralTags: "isTirGrunt"
+  GeneralTags: "isTirSpawner2"
+  GeneralTags: ""
+  displayName: "High Tir Mage"
+  idRef {
+    id: "53af2702366236740e001a51"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Berlin:Aztechnology/ElfMaleAztechBloodMage"
+    character_sheet_id: "Lonestar_Lv2_Human_Mage"
+    equipment_sheet_id: "Lonestar_Lv2_Mage_Gear"
+    character_mod {
+      stats {
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        magic: 0
+        hp: 0
+        ap: 0
+        armor: 0
+        force: 0
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+        ranged_combat: 0
+        close_combat: 0
+        throwing_weapons: 0
+        spellcasting: 0
+        decking: 0
+        conjuring: 0
+        spirit_summoning: 0
+        drone_control: 0
+        biotech: 0
+        dodge: 0
+        etiquette_corporate: 0
+        etiquette_security: 0
+        etiquette_gang: 0
+        etiquette_socialite: 0
+        chi_casting: 0
+        etiquette_shadowrunner: 0
+        etiquette_street: 0
+        etiquette_academic: 0
+      }
+      specializations {
+        pistol: 0
+        rifle: 0
+        shotgun: 0
+        smg: 0
+        edged: 0
+        unarmed: 0
+        spirit_control: 0
+        esp_control: 0
+        drone_combat: 0
+      }
+      archetypeName: "Guard - Seek And Destroy"
+      attitude: AttitudeAggressive
+      vulnerabilities {
+      }
+    }
+    team_id: "Tir"
+    char_name: "Tir Mage"
+    GeneralTags: "isTirGrunt"
+    GeneralTags: "isTirSpawner2"
+    GeneralTags: ""
+    enabled_at_start: false
+    pc_spawn_number: -1
+    portrait {
+      filename: ""
+    }
+    karma: 43
+    scale_character_sheet: true
+  }
+}
+characters {
+  name: "chars_icon_playerIcon"
+  gridPoint {
+    x: 12
+    y: 0
+    z: -41
+  }
+  orientation: ORIENTATION_N
+  GeneralTags: "isTirGrunt"
+  GeneralTags: "isTirSpawner2"
+  GeneralTags: ""
+  displayName: "High Tir Soldier - SMG"
+  idRef {
+    id: "53af271a366236740e001a52"
+  }
+  lod: 0
+  character_instance {
+    prefab_name: "Seattle:Story/TirTairngireGuard"
+    character_sheet_id: "Lonestar_Lv2_Heavy_SMG"
+    equipment_sheet_id: "Lonestar_Lv2_SMG_Gear"
+    character_mod {
+      stats {
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        magic: 0
+        hp: 0
+        ap: 0
+        armor: 0
+        force: 0
+        morale: 0
+        discipline: 0
+        awareness: 0
+        perception: 0
+        authority: 0
+        protect_tether_range: 0
+        move_speed: 0
+      }
+      skills {
+        ranged_combat: 0
+        close_combat: 0
+        throwing_weapons: 0
+        spellcasting: 0
+        decking: 0
+        conjuring: 0
+        spirit_summoning: 0
+        drone_control: 0
+        biotech: 0
+        dodge: 0
+        etiquette_corporate: 0
+        etiquette_security: 0
+        etiquette_gang: 0
+        etiquette_socialite: 0
+        chi_casting: 0
+        etiquette_shadowrunner: 0
+        etiquette_street: 0
+        etiquette_academic: 0
+      }
+      specializations {
+        pistol: 0
+        rifle: 0
+        shotgun: 0
+        smg: 0
+        edged: 0
+        unarmed: 0
+        spirit_control: 0
+        esp_control: 0
+        drone_combat: 0
+      }
+      archetypeName: "Guard - Seek And Destroy"
+      attitude: AttitudeAggressive
+      vulnerabilities {
+      }
+    }
+    team_id: "Tir"
+    char_name: "Tir Soldier"
+    GeneralTags: "isTirGrunt"
+    GeneralTags: "isTirSpawner2"
+    GeneralTags: ""
+    enabled_at_start: false
+    pc_spawn_number: -1
+    portrait {
+      filename: ""
+    }
+    karma: 47
+    scale_character_sheet: true
+  }
+}
 variables {
   string_value: ""
   variableref_value {
@@ -22342,7 +23152,7 @@ variables {
   }
 }
 variables {
-  int_value: 30
+  int_value: 25
   variableref_value {
     scope: TsVariableScope_Scene
     name: "tophetRageTime"

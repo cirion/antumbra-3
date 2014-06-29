@@ -122,83 +122,7 @@ triggers {
             call_value {
               functionName: "Get Map Item (SenseTagList)"
               args {
-                string_value: "wall1Target"
-              }
-            }
-          }
-          args {
-            call_value {
-              functionName: "Get Preset Value (int)"
-              args {
-                string_value: "AllOrAny"
-              }
-              args {
-                int_value: 0
-              }
-            }
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "DeathMethod"
-          }
-          args {
-            int_value: 3
-          }
-        }
-      }
-    }
-    ops {
-      functionName: "Kill Actor"
-      args {
-        call_value {
-          functionName: "All Actors With Tag"
-          args {
-            call_value {
-              functionName: "Get Map Item (SenseTagList)"
-              args {
-                string_value: "wall2Target"
-              }
-            }
-          }
-          args {
-            call_value {
-              functionName: "Get Preset Value (int)"
-              args {
-                string_value: "AllOrAny"
-              }
-              args {
-                int_value: 0
-              }
-            }
-          }
-        }
-      }
-      args {
-        call_value {
-          functionName: "Get Preset Value (int)"
-          args {
-            string_value: "DeathMethod"
-          }
-          args {
-            int_value: 3
-          }
-        }
-      }
-    }
-    ops {
-      functionName: "Kill Actor"
-      args {
-        call_value {
-          functionName: "All Actors With Tag"
-          args {
-            call_value {
-              functionName: "Get Map Item (SenseTagList)"
-              args {
-                string_value: "wall1"
+                string_value: "isCritter"
               }
             }
           }
@@ -234,6 +158,65 @@ triggers {
           functionName: "Get Map Item (Actor Reference)"
           args {
             string_value: "5383d75e36623684130008db"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Add Item to Actor"
+      args {
+        call_value {
+          functionName: "Get Map Item (Item)"
+          args {
+            string_value: "a3-spelunking_gear"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Specific Actor"
+          args {
+            call_value {
+              functionName: "Get Map Item (Player)"
+              args {
+                int_value: 0
+              }
+            }
+          }
+          args {
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Set Region Enabled"
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "EnableOrDisable"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Map Item (Region)"
+          args {
+            string_value: "537678c86434316a34fc4627"
           }
         }
       }
@@ -1202,7 +1185,7 @@ triggers {
   is_oneshot: false
 }
 triggers {
-  name: "Spawn New Pistol"
+  name: "Spawn New Pistol + Mage"
   events {
     ops {
       functionName: "On New Round"
@@ -1373,6 +1356,17 @@ triggers {
       }
     }
     ops {
+      functionName: "Activate Actor Spawner"
+      args {
+        call_value {
+          functionName: "Get Map Item (Actor Reference)"
+          args {
+            string_value: "537bd9c764343129595f8916"
+          }
+        }
+      }
+    }
+    ops {
       functionName: "Order Actor to Hunt And Destroy (ThreatType)"
       args {
         call_value {
@@ -1431,7 +1425,7 @@ triggers {
   is_oneshot: false
 }
 triggers {
-  name: "Spawn New Shotgun"
+  name: "Spawn New Shotgun + Pistol"
   events {
     ops {
       functionName: "On New Round"
@@ -1602,6 +1596,17 @@ triggers {
       }
     }
     ops {
+      functionName: "Activate Actor Spawner"
+      args {
+        call_value {
+          functionName: "Get Map Item (Actor Reference)"
+          args {
+            string_value: "537bd9c764343129595f8915"
+          }
+        }
+      }
+    }
+    ops {
       functionName: "Order Actor to Hunt And Destroy (ThreatType)"
       args {
         call_value {
@@ -1660,7 +1665,7 @@ triggers {
   is_oneshot: false
 }
 triggers {
-  name: "Spawn New SMG"
+  name: "Spawn New SMG + Shotgun"
   events {
     ops {
       functionName: "On New Round"
@@ -1831,6 +1836,17 @@ triggers {
       }
     }
     ops {
+      functionName: "Activate Actor Spawner"
+      args {
+        call_value {
+          functionName: "Get Map Item (Actor Reference)"
+          args {
+            string_value: "537bd9c764343129595f8917"
+          }
+        }
+      }
+    }
+    ops {
       functionName: "Order Actor to Hunt And Destroy (ThreatType)"
       args {
         call_value {
@@ -1889,7 +1905,7 @@ triggers {
   is_oneshot: false
 }
 triggers {
-  name: "Spawn New Mage"
+  name: "Spawn New Mage + Captain"
   events {
     ops {
       functionName: "On New Round"
@@ -2054,6 +2070,17 @@ triggers {
         call_value {
           functionName: "Get Map Item (Actor Reference)"
           args {
+            string_value: "537bd9c764343129595f8914"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Activate Actor Spawner"
+      args {
+        call_value {
+          functionName: "Get Map Item (Actor Reference)"
+          args {
             string_value: "537bd9c764343129595f8916"
           }
         }
@@ -2118,7 +2145,7 @@ triggers {
   is_oneshot: false
 }
 triggers {
-  name: "Spawn New Captain"
+  name: "Spawn New Captain + SMG"
   events {
     ops {
       functionName: "On New Round"
@@ -2284,6 +2311,17 @@ triggers {
           functionName: "Get Map Item (Actor Reference)"
           args {
             string_value: "537bd9c764343129595f8914"
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Activate Actor Spawner"
+      args {
+        call_value {
+          functionName: "Get Map Item (Actor Reference)"
+          args {
+            string_value: "537bd9c764343129595f8913"
           }
         }
       }
@@ -8592,7 +8630,7 @@ triggers {
         }
       }
       args {
-        int_value: 1
+        int_value: 2
       }
     }
     ops {
@@ -8648,9 +8686,147 @@ triggers {
       }
     }
   }
-  isActive: true
+  isActive: false
   idRef {
     id: "5394f537366236d8290039ea"
+  }
+  elseActions {
+  }
+  is_oneshot: false
+}
+triggers {
+  name: "Stupid workaround for incorrect vars on round advance"
+  events {
+    ops {
+      functionName: "On New Round"
+      args {
+        call_value {
+          functionName: "Get Map Item (SceneDimension)"
+          args {
+            string_value: "Default"
+          }
+        }
+      }
+    }
+  }
+  conditions {
+  }
+  actions {
+    ops {
+      functionName: "Log Debug Message"
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "Log Levels"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Append (string)"
+          args {
+            call_value {
+              functionName: "Convert (int) to (string)"
+              args {
+                call_value {
+                  functionName: "Get Count of Alive Actors"
+                  args {
+                    call_value {
+                      functionName: "All Actors on Team"
+                      args {
+                        call_value {
+                          functionName: "Get Preset Value (string)"
+                          args {
+                            string_value: "FactionList"
+                          }
+                          args {
+                            int_value: 1
+                          }
+                        }
+                      }
+                      args {
+                        call_value {
+                          functionName: "Get Preset Value (int)"
+                          args {
+                            string_value: "AllOrAny"
+                          }
+                          args {
+                            int_value: 0
+                          }
+                        }
+                      }
+                      args {
+                        call_value {
+                          functionName: "Get Map Item (SceneDimension)"
+                          args {
+                            string_value: "Default"
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+          args {
+            string_value: "Alive Tir fighters: "
+          }
+        }
+      }
+    }
+    ops {
+      functionName: "Trigger: Run Alternate Trigger"
+      args {
+        call_value {
+          functionName: "Get Map Item (Trigger)"
+          args {
+            string_value: "5394f537366236d8290039ea"
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WaitOrNot"
+          }
+          args {
+            int_value: 0
+          }
+        }
+      }
+      args {
+        call_value {
+          functionName: "Get Preset Value (int)"
+          args {
+            string_value: "WithOrWithout"
+          }
+          args {
+            int_value: 1
+          }
+        }
+      }
+    }
+  }
+  isActive: true
+  idRef {
+    id: "53af51e6366236740e001a54"
   }
   elseActions {
   }
@@ -9310,7 +9486,7 @@ characters {
     char_name: "Tir Soldier"
     GeneralTags: "isTirGrunt"
     GeneralTags: ""
-    enabled_at_start: false
+    enabled_at_start: true
     pc_spawn_number: -1
     portrait {
       filename: ""
@@ -9359,7 +9535,7 @@ characters {
     char_name: "Tir Captain"
     GeneralTags: "isTirGrunt"
     GeneralTags: ""
-    enabled_at_start: false
+    enabled_at_start: true
     pc_spawn_number: -1
     portrait {
       filename: ""
@@ -9408,7 +9584,7 @@ characters {
     char_name: "Tir Soldier"
     GeneralTags: "isTirGrunt"
     GeneralTags: ""
-    enabled_at_start: false
+    enabled_at_start: true
     pc_spawn_number: -1
     portrait {
       filename: ""
@@ -9457,7 +9633,7 @@ characters {
     char_name: "Tir Mage"
     GeneralTags: "isTirGrunt"
     GeneralTags: ""
-    enabled_at_start: false
+    enabled_at_start: true
     pc_spawn_number: -1
     portrait {
       filename: ""
@@ -9506,7 +9682,7 @@ characters {
     char_name: "Tir Soldier"
     GeneralTags: "isTirGrunt"
     GeneralTags: ""
-    enabled_at_start: false
+    enabled_at_start: true
     pc_spawn_number: -1
     portrait {
       filename: ""
@@ -11446,251 +11622,6 @@ characters {
     has_fist: false
   }
 }
-characters {
-  name: "chars_icon_playerIcon"
-  gridPoint {
-    x: -1
-    y: 0
-    z: -31
-  }
-  orientation: ORIENTATION_N
-  GeneralTags: "isTirGrunt"
-  GeneralTags: ""
-  displayName: "Tir Soldier - Pistol"
-  idRef {
-    id: "5384b5e3643431616b85651c"
-  }
-  lod: 0
-  character_instance {
-    prefab_name: "Seattle:Story/TirTairngireGuard"
-    character_sheet_id: "Lonestar_Lv1_Human_Pistol"
-    equipment_sheet_id: "Lonestar_Lv1_Pistol_Gear"
-    character_mod {
-      stats {
-        morale: 0
-        discipline: 0
-        awareness: 0
-        perception: 0
-        authority: 0
-        protect_tether_range: 0
-        move_speed: 0
-      }
-      skills {
-      }
-      specializations {
-      }
-      vulnerabilities {
-      }
-    }
-    team_id: "Civilians"
-    char_name: "Tir Soldier"
-    GeneralTags: "isTirGrunt"
-    GeneralTags: ""
-    enabled_at_start: true
-    pc_spawn_number: -1
-    portrait {
-      filename: ""
-    }
-    karma: 30
-    scale_character_sheet: true
-  }
-}
-characters {
-  name: "chars_icon_playerIcon"
-  gridPoint {
-    x: -1
-    y: 0
-    z: -30
-  }
-  orientation: ORIENTATION_N
-  GeneralTags: "isTirGrunt"
-  GeneralTags: ""
-  displayName: "Tir Soldier - SMG"
-  idRef {
-    id: "5384b5e7643431616b85651d"
-  }
-  lod: 0
-  character_instance {
-    prefab_name: "Seattle:Story/TirTairngireGuard"
-    character_sheet_id: "Lonestar_Lv1_Heavy_SMG"
-    equipment_sheet_id: "Lonestar_Lv1_SMG_Gear"
-    character_mod {
-      stats {
-        morale: 0
-        discipline: 0
-        awareness: 0
-        perception: 0
-        authority: 0
-        protect_tether_range: 0
-        move_speed: 0
-      }
-      skills {
-      }
-      specializations {
-      }
-      vulnerabilities {
-      }
-    }
-    team_id: "Civilians"
-    char_name: "Tir Soldier"
-    GeneralTags: "isTirGrunt"
-    GeneralTags: ""
-    enabled_at_start: true
-    pc_spawn_number: -1
-    portrait {
-      filename: ""
-    }
-    karma: 39
-    scale_character_sheet: true
-  }
-}
-characters {
-  name: "chars_icon_playerIcon"
-  gridPoint {
-    x: -1
-    y: 0
-    z: -29
-  }
-  orientation: ORIENTATION_W
-  GeneralTags: "isTirGrunt"
-  GeneralTags: ""
-  displayName: "Tir Mage"
-  idRef {
-    id: "5384b5ea643431616b85651e"
-  }
-  lod: 0
-  character_instance {
-    prefab_name: "Berlin:Aztechnology/ElfMaleAztechBloodMage"
-    character_sheet_id: "Lonestar_Lv1_Human_Mage"
-    equipment_sheet_id: "Lonestar_Lv1_Mage_Gear"
-    character_mod {
-      stats {
-        morale: 0
-        discipline: 0
-        awareness: 0
-        perception: 0
-        authority: 0
-        protect_tether_range: 0
-        move_speed: 0
-      }
-      skills {
-      }
-      specializations {
-      }
-      vulnerabilities {
-      }
-    }
-    team_id: "Civilians"
-    char_name: "Tir Mage"
-    GeneralTags: "isTirGrunt"
-    GeneralTags: ""
-    enabled_at_start: true
-    pc_spawn_number: -1
-    portrait {
-      filename: ""
-    }
-    karma: 40
-    scale_character_sheet: true
-  }
-}
-characters {
-  name: "chars_icon_playerIcon"
-  gridPoint {
-    x: -1
-    y: 0
-    z: -28
-  }
-  orientation: ORIENTATION_W
-  GeneralTags: "isTirGrunt"
-  GeneralTags: ""
-  displayName: "Tir Soldier - Shotgun"
-  idRef {
-    id: "5384b5ee643431616b85651f"
-  }
-  lod: 0
-  character_instance {
-    prefab_name: "Seattle:Story/TirTairngireGuard"
-    character_sheet_id: "Lonestar_Lv1_Ork_Shotgun"
-    equipment_sheet_id: "Lonestar_Lv1_Shotgun_Gear"
-    character_mod {
-      stats {
-        morale: 0
-        discipline: 0
-        awareness: 0
-        perception: 0
-        authority: 0
-        protect_tether_range: 0
-        move_speed: 0
-      }
-      skills {
-      }
-      specializations {
-      }
-      vulnerabilities {
-      }
-    }
-    team_id: "Civilians"
-    char_name: "Tir Soldier"
-    GeneralTags: "isTirGrunt"
-    GeneralTags: ""
-    enabled_at_start: true
-    pc_spawn_number: -1
-    portrait {
-      filename: ""
-    }
-    karma: 33
-    scale_character_sheet: true
-  }
-}
-characters {
-  name: "chars_icon_playerIcon"
-  gridPoint {
-    x: 0
-    y: 0
-    z: -28
-  }
-  orientation: ORIENTATION_W
-  GeneralTags: "isTirGrunt"
-  GeneralTags: ""
-  displayName: "Tir Captain"
-  idRef {
-    id: "5384b5f2643431616b856520"
-  }
-  lod: 0
-  character_instance {
-    prefab_name: "Berlin:Aztechnology/ElfMaleAztechGuard"
-    character_sheet_id: "Lonestar_Lv1_Captain"
-    equipment_sheet_id: "Lonestar_Lv1_Captain_Gear"
-    character_mod {
-      stats {
-        morale: 0
-        discipline: 0
-        awareness: 0
-        perception: 0
-        authority: 0
-        protect_tether_range: 0
-        move_speed: 0
-      }
-      skills {
-      }
-      specializations {
-      }
-      vulnerabilities {
-      }
-    }
-    team_id: "Civilians"
-    char_name: "Tir Captain"
-    GeneralTags: "isTirGrunt"
-    GeneralTags: ""
-    enabled_at_start: true
-    pc_spawn_number: -1
-    portrait {
-      filename: ""
-    }
-    karma: 44
-    scale_character_sheet: true
-  }
-}
 variables {
   int_value: 0
   variableref_value {
@@ -11724,7 +11655,7 @@ variables {
   }
 }
 variables {
-  int_value: 2
+  int_value: 1
   variableref_value {
     scope: TsVariableScope_Scene
     name: "roundsBeforeSpawnStarts"
