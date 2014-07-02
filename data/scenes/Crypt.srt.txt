@@ -17011,9 +17011,9 @@ characters {
         willpower: 0
         essence: 0
         magic: 0
-        hp: 160
+        hp: 110
         ap: 0
-        armor: 0
+        armor: -1
         force: 0
         morale: 0
         discipline: 0
@@ -17034,7 +17034,7 @@ characters {
         spirit_summoning: 0
         drone_control: 0
         biotech: 0
-        dodge: 0
+        dodge: -1
         etiquette_corporate: 0
         etiquette_security: 0
         etiquette_gang: 0
@@ -17069,7 +17069,7 @@ characters {
     portrait {
       filename: "Generic_Spirit_Fire"
     }
-    karma: 85
+    karma: 82
     scale_character_sheet: true
     has_fist: true
   }
