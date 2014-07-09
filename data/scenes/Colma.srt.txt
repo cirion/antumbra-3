@@ -271,18 +271,18 @@ triggers {
         call_value {
           functionName: "Get Map Item (Actor Reference)"
           args {
-            string_value: "539911b73662361803004d68"
+            string_value: "539911b73662361803004d69"
           }
         }
       }
     }
     ops {
-      functionName: "Activate Actor Spawner"
+      functionName: "Delete Prop"
       args {
         call_value {
-          functionName: "Get Map Item (Actor Reference)"
+          functionName: "Get Map Item (Prop)"
           args {
-            string_value: "539911b73662361803004d69"
+            string_value: "521a82b43662367c1d007347"
           }
         }
       }
@@ -12874,11 +12874,24 @@ characters {
   }
   lod: 0
   character_instance {
-    character_sheet_id: "Ghoul_Lv1"
+    prefab_name: "Seattle:Creature/CreatureGhoulHumanFemale"
+    character_sheet_id: "a3_badguy_ghoul_Lv1"
     equipment_sheet_id: "Ghoul_Lv1_Gear"
     character_mod {
       stats {
-        morale: 0
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        magic: 0
+        hp: 0
+        ap: 0
+        armor: 0
+        force: 0
+        morale: -1
         discipline: 0
         awareness: 0
         perception: 0
@@ -12887,9 +12900,37 @@ characters {
         move_speed: 0
       }
       skills {
+        ranged_combat: 0
+        close_combat: 0
+        throwing_weapons: 0
+        spellcasting: 0
+        decking: 0
+        conjuring: 0
+        spirit_summoning: 0
+        drone_control: 0
+        biotech: 0
+        dodge: 0
+        etiquette_corporate: 0
+        etiquette_security: 0
+        etiquette_gang: 0
+        etiquette_socialite: 0
+        chi_casting: 0
+        etiquette_shadowrunner: 0
+        etiquette_street: 0
+        etiquette_academic: 0
       }
       specializations {
+        pistol: 0
+        rifle: 0
+        shotgun: 0
+        smg: 0
+        edged: 0
+        unarmed: 0
+        spirit_control: 0
+        esp_control: 0
+        drone_combat: 0
       }
+      archetypeName: "Guard - Seek And Destroy"
       attitude: AttitudeCautious
       attackRandom: AttackStyle_CycleAll
       vulnerabilities {
@@ -12904,7 +12945,7 @@ characters {
     portrait {
       filename: ""
     }
-    hiring_set_randomizer: "ghoul"
+    karma: 58
     scale_character_sheet: true
   }
 }
@@ -12924,11 +12965,24 @@ characters {
   }
   lod: 0
   character_instance {
-    character_sheet_id: "Ghoul_Lv1"
+    prefab_name: "Seattle:Creature/CreatureGhoulHumanMale"
+    character_sheet_id: "a3_badguy_ghoul_Lv1"
     equipment_sheet_id: "Ghoul_Lv1_Gear"
     character_mod {
       stats {
-        morale: 0
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        magic: 0
+        hp: 0
+        ap: 0
+        armor: 0
+        force: 0
+        morale: -1
         discipline: 0
         awareness: 0
         perception: 0
@@ -12937,9 +12991,37 @@ characters {
         move_speed: 0
       }
       skills {
+        ranged_combat: 0
+        close_combat: 0
+        throwing_weapons: 0
+        spellcasting: 0
+        decking: 0
+        conjuring: 0
+        spirit_summoning: 0
+        drone_control: 0
+        biotech: 0
+        dodge: 0
+        etiquette_corporate: 0
+        etiquette_security: 0
+        etiquette_gang: 0
+        etiquette_socialite: 0
+        chi_casting: 0
+        etiquette_shadowrunner: 0
+        etiquette_street: 0
+        etiquette_academic: 0
       }
       specializations {
+        pistol: 0
+        rifle: 0
+        shotgun: 0
+        smg: 0
+        edged: 0
+        unarmed: 0
+        spirit_control: 0
+        esp_control: 0
+        drone_combat: 0
       }
+      archetypeName: "Guard - Seek And Destroy"
       attitude: AttitudeCautious
       attackRandom: AttackStyle_CycleAll
       vulnerabilities {
@@ -12954,7 +13036,7 @@ characters {
     portrait {
       filename: ""
     }
-    hiring_set_randomizer: "ghoul"
+    karma: 58
     scale_character_sheet: true
   }
 }
@@ -12974,11 +13056,24 @@ characters {
   }
   lod: 0
   character_instance {
-    character_sheet_id: "Ghoul_Lv1"
+    prefab_name: "Seattle:Creature/CreatureGhoulHumanMale"
+    character_sheet_id: "a3_badguy_ghoul_Lv1"
     equipment_sheet_id: "Ghoul_Lv1_Gear"
     character_mod {
       stats {
-        morale: 0
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        magic: 0
+        hp: 0
+        ap: 0
+        armor: 0
+        force: 0
+        morale: -1
         discipline: 0
         awareness: 0
         perception: 0
@@ -12987,9 +13082,37 @@ characters {
         move_speed: 0
       }
       skills {
+        ranged_combat: 0
+        close_combat: 0
+        throwing_weapons: 0
+        spellcasting: 0
+        decking: 0
+        conjuring: 0
+        spirit_summoning: 0
+        drone_control: 0
+        biotech: 0
+        dodge: 0
+        etiquette_corporate: 0
+        etiquette_security: 0
+        etiquette_gang: 0
+        etiquette_socialite: 0
+        chi_casting: 0
+        etiquette_shadowrunner: 0
+        etiquette_street: 0
+        etiquette_academic: 0
       }
       specializations {
+        pistol: 0
+        rifle: 0
+        shotgun: 0
+        smg: 0
+        edged: 0
+        unarmed: 0
+        spirit_control: 0
+        esp_control: 0
+        drone_combat: 0
       }
+      archetypeName: "Guard - Seek And Destroy"
       attitude: AttitudeCautious
       attackRandom: AttackStyle_CycleAll
       vulnerabilities {
@@ -13004,7 +13127,7 @@ characters {
     portrait {
       filename: ""
     }
-    hiring_set_randomizer: "ghoul"
+    karma: 58
     scale_character_sheet: true
   }
 }
@@ -13024,11 +13147,24 @@ characters {
   }
   lod: 0
   character_instance {
-    character_sheet_id: "Ghoul_Lv1"
+    prefab_name: "Seattle:Creature/CreatureGhoulHumanFemale"
+    character_sheet_id: "a3_badguy_ghoul_Lv1"
     equipment_sheet_id: "Ghoul_Lv1_Gear"
     character_mod {
       stats {
-        morale: 0
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        magic: 0
+        hp: 0
+        ap: 0
+        armor: 0
+        force: 0
+        morale: -1
         discipline: 0
         awareness: 0
         perception: 0
@@ -13037,9 +13173,37 @@ characters {
         move_speed: 0
       }
       skills {
+        ranged_combat: 0
+        close_combat: 0
+        throwing_weapons: 0
+        spellcasting: 0
+        decking: 0
+        conjuring: 0
+        spirit_summoning: 0
+        drone_control: 0
+        biotech: 0
+        dodge: 0
+        etiquette_corporate: 0
+        etiquette_security: 0
+        etiquette_gang: 0
+        etiquette_socialite: 0
+        chi_casting: 0
+        etiquette_shadowrunner: 0
+        etiquette_street: 0
+        etiquette_academic: 0
       }
       specializations {
+        pistol: 0
+        rifle: 0
+        shotgun: 0
+        smg: 0
+        edged: 0
+        unarmed: 0
+        spirit_control: 0
+        esp_control: 0
+        drone_combat: 0
       }
+      archetypeName: "Guard - Seek And Destroy"
       attitude: AttitudeCautious
       attackRandom: AttackStyle_CycleAll
       vulnerabilities {
@@ -13054,7 +13218,7 @@ characters {
     portrait {
       filename: ""
     }
-    hiring_set_randomizer: "ghoul"
+    karma: 58
     scale_character_sheet: true
   }
 }
@@ -13074,11 +13238,24 @@ characters {
   }
   lod: 0
   character_instance {
-    character_sheet_id: "Ghoul_Lv1"
+    prefab_name: "Seattle:Creature/CreatureGhoulHumanMale"
+    character_sheet_id: "a3_badguy_ghoul_Lv1"
     equipment_sheet_id: "Ghoul_Lv1_Gear"
     character_mod {
       stats {
-        morale: 0
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        magic: 0
+        hp: 0
+        ap: 0
+        armor: 0
+        force: 0
+        morale: -1
         discipline: 0
         awareness: 0
         perception: 0
@@ -13087,9 +13264,37 @@ characters {
         move_speed: 0
       }
       skills {
+        ranged_combat: 0
+        close_combat: 0
+        throwing_weapons: 0
+        spellcasting: 0
+        decking: 0
+        conjuring: 0
+        spirit_summoning: 0
+        drone_control: 0
+        biotech: 0
+        dodge: 0
+        etiquette_corporate: 0
+        etiquette_security: 0
+        etiquette_gang: 0
+        etiquette_socialite: 0
+        chi_casting: 0
+        etiquette_shadowrunner: 0
+        etiquette_street: 0
+        etiquette_academic: 0
       }
       specializations {
+        pistol: 0
+        rifle: 0
+        shotgun: 0
+        smg: 0
+        edged: 0
+        unarmed: 0
+        spirit_control: 0
+        esp_control: 0
+        drone_combat: 0
       }
+      archetypeName: "Guard - Seek And Destroy"
       attitude: AttitudeCautious
       attackRandom: AttackStyle_CycleAll
       vulnerabilities {
@@ -13104,7 +13309,7 @@ characters {
     portrait {
       filename: ""
     }
-    hiring_set_randomizer: "ghoul"
+    karma: 58
     scale_character_sheet: true
   }
 }
@@ -13124,11 +13329,24 @@ characters {
   }
   lod: 0
   character_instance {
-    character_sheet_id: "Ghoul_Lv1"
+    prefab_name: "Seattle:Creature/CreatureGhoulHumanMale"
+    character_sheet_id: "a3_badguy_ghoul_Lv1"
     equipment_sheet_id: "Ghoul_Lv1_Gear"
     character_mod {
       stats {
-        morale: 0
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        magic: 0
+        hp: 0
+        ap: 0
+        armor: 0
+        force: 0
+        morale: -1
         discipline: 0
         awareness: 0
         perception: 0
@@ -13137,9 +13355,37 @@ characters {
         move_speed: 0
       }
       skills {
+        ranged_combat: 0
+        close_combat: 0
+        throwing_weapons: 0
+        spellcasting: 0
+        decking: 0
+        conjuring: 0
+        spirit_summoning: 0
+        drone_control: 0
+        biotech: 0
+        dodge: 0
+        etiquette_corporate: 0
+        etiquette_security: 0
+        etiquette_gang: 0
+        etiquette_socialite: 0
+        chi_casting: 0
+        etiquette_shadowrunner: 0
+        etiquette_street: 0
+        etiquette_academic: 0
       }
       specializations {
+        pistol: 0
+        rifle: 0
+        shotgun: 0
+        smg: 0
+        edged: 0
+        unarmed: 0
+        spirit_control: 0
+        esp_control: 0
+        drone_combat: 0
       }
+      archetypeName: "Guard - Seek And Destroy"
       attitude: AttitudeCautious
       attackRandom: AttackStyle_CycleAll
       vulnerabilities {
@@ -13154,7 +13400,7 @@ characters {
     portrait {
       filename: ""
     }
-    hiring_set_randomizer: "ghoul"
+    karma: 58
     scale_character_sheet: true
   }
 }
@@ -13174,11 +13420,24 @@ characters {
   }
   lod: 0
   character_instance {
-    character_sheet_id: "Ghoul_Lv1"
+    prefab_name: "Seattle:Creature/CreatureGhoulHumanFemale"
+    character_sheet_id: "a3_badguy_ghoul_Lv1"
     equipment_sheet_id: "Ghoul_Lv1_Gear"
     character_mod {
       stats {
-        morale: 0
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        magic: 0
+        hp: 0
+        ap: 0
+        armor: 0
+        force: 0
+        morale: -1
         discipline: 0
         awareness: 0
         perception: 0
@@ -13187,9 +13446,37 @@ characters {
         move_speed: 0
       }
       skills {
+        ranged_combat: 0
+        close_combat: 0
+        throwing_weapons: 0
+        spellcasting: 0
+        decking: 0
+        conjuring: 0
+        spirit_summoning: 0
+        drone_control: 0
+        biotech: 0
+        dodge: 0
+        etiquette_corporate: 0
+        etiquette_security: 0
+        etiquette_gang: 0
+        etiquette_socialite: 0
+        chi_casting: 0
+        etiquette_shadowrunner: 0
+        etiquette_street: 0
+        etiquette_academic: 0
       }
       specializations {
+        pistol: 0
+        rifle: 0
+        shotgun: 0
+        smg: 0
+        edged: 0
+        unarmed: 0
+        spirit_control: 0
+        esp_control: 0
+        drone_combat: 0
       }
+      archetypeName: "Guard - Seek And Destroy"
       attitude: AttitudeCautious
       attackRandom: AttackStyle_CycleAll
       vulnerabilities {
@@ -13204,7 +13491,7 @@ characters {
     portrait {
       filename: ""
     }
-    hiring_set_randomizer: "ghoul"
+    karma: 58
     scale_character_sheet: true
   }
 }
@@ -13224,11 +13511,24 @@ characters {
   }
   lod: 0
   character_instance {
-    character_sheet_id: "Ghoul_Lv1"
+    prefab_name: "Seattle:Creature/CreatureGhoulHumanFemale"
+    character_sheet_id: "a3_badguy_ghoul_Lv1"
     equipment_sheet_id: "Ghoul_Lv1_Gear"
     character_mod {
       stats {
-        morale: 0
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        magic: 0
+        hp: 0
+        ap: 0
+        armor: 0
+        force: 0
+        morale: -1
         discipline: 0
         awareness: 0
         perception: 0
@@ -13237,9 +13537,37 @@ characters {
         move_speed: 0
       }
       skills {
+        ranged_combat: 0
+        close_combat: 0
+        throwing_weapons: 0
+        spellcasting: 0
+        decking: 0
+        conjuring: 0
+        spirit_summoning: 0
+        drone_control: 0
+        biotech: 0
+        dodge: 0
+        etiquette_corporate: 0
+        etiquette_security: 0
+        etiquette_gang: 0
+        etiquette_socialite: 0
+        chi_casting: 0
+        etiquette_shadowrunner: 0
+        etiquette_street: 0
+        etiquette_academic: 0
       }
       specializations {
+        pistol: 0
+        rifle: 0
+        shotgun: 0
+        smg: 0
+        edged: 0
+        unarmed: 0
+        spirit_control: 0
+        esp_control: 0
+        drone_combat: 0
       }
+      archetypeName: "Guard - Seek And Destroy"
       attitude: AttitudeCautious
       attackRandom: AttackStyle_CycleAll
       vulnerabilities {
@@ -13254,7 +13582,7 @@ characters {
     portrait {
       filename: ""
     }
-    hiring_set_randomizer: "ghoul"
+    karma: 58
     scale_character_sheet: true
   }
 }
@@ -13349,11 +13677,24 @@ characters {
   }
   lod: 0
   character_instance {
-    character_sheet_id: "Ghoul_Lv1"
+    prefab_name: "Seattle:Creature/CreatureGhoulHumanMale"
+    character_sheet_id: "a3_badguy_ghoul_Lv1"
     equipment_sheet_id: "Ghoul_Lv1_Gear"
     character_mod {
       stats {
-        morale: 0
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        magic: 0
+        hp: 0
+        ap: 0
+        armor: 0
+        force: 0
+        morale: -1
         discipline: 0
         awareness: 0
         perception: 0
@@ -13362,9 +13703,37 @@ characters {
         move_speed: 0
       }
       skills {
+        ranged_combat: 0
+        close_combat: 0
+        throwing_weapons: 0
+        spellcasting: 0
+        decking: 0
+        conjuring: 0
+        spirit_summoning: 0
+        drone_control: 0
+        biotech: 0
+        dodge: 0
+        etiquette_corporate: 0
+        etiquette_security: 0
+        etiquette_gang: 0
+        etiquette_socialite: 0
+        chi_casting: 0
+        etiquette_shadowrunner: 0
+        etiquette_street: 0
+        etiquette_academic: 0
       }
       specializations {
+        pistol: 0
+        rifle: 0
+        shotgun: 0
+        smg: 0
+        edged: 0
+        unarmed: 0
+        spirit_control: 0
+        esp_control: 0
+        drone_combat: 0
       }
+      archetypeName: "Guard - Seek And Destroy"
       attitude: AttitudeCautious
       attackRandom: AttackStyle_CycleAll
       vulnerabilities {
@@ -13379,7 +13748,7 @@ characters {
     portrait {
       filename: ""
     }
-    hiring_set_randomizer: "ghoul"
+    karma: 58
     scale_character_sheet: true
   }
 }
@@ -13399,11 +13768,24 @@ characters {
   }
   lod: 0
   character_instance {
-    character_sheet_id: "Ghoul_Lv1"
+    prefab_name: "Seattle:Creature/CreatureGhoulHumanFemale"
+    character_sheet_id: "a3_badguy_ghoul_Lv1"
     equipment_sheet_id: "Ghoul_Lv1_Gear"
     character_mod {
       stats {
-        morale: 0
+        body: 0
+        quickness: 0
+        strength: 0
+        charisma: 0
+        intelligence: 0
+        willpower: 0
+        essence: 0
+        magic: 0
+        hp: 0
+        ap: 0
+        armor: 0
+        force: 0
+        morale: -1
         discipline: 0
         awareness: 0
         perception: 0
@@ -13412,9 +13794,37 @@ characters {
         move_speed: 0
       }
       skills {
+        ranged_combat: 0
+        close_combat: 0
+        throwing_weapons: 0
+        spellcasting: 0
+        decking: 0
+        conjuring: 0
+        spirit_summoning: 0
+        drone_control: 0
+        biotech: 0
+        dodge: 0
+        etiquette_corporate: 0
+        etiquette_security: 0
+        etiquette_gang: 0
+        etiquette_socialite: 0
+        chi_casting: 0
+        etiquette_shadowrunner: 0
+        etiquette_street: 0
+        etiquette_academic: 0
       }
       specializations {
+        pistol: 0
+        rifle: 0
+        shotgun: 0
+        smg: 0
+        edged: 0
+        unarmed: 0
+        spirit_control: 0
+        esp_control: 0
+        drone_combat: 0
       }
+      archetypeName: "Guard - Seek And Destroy"
       attitude: AttitudeCautious
       attackRandom: AttackStyle_CycleAll
       vulnerabilities {
@@ -13429,7 +13839,7 @@ characters {
     portrait {
       filename: ""
     }
-    hiring_set_randomizer: "ghoul"
+    karma: 58
     scale_character_sheet: true
   }
 }
